@@ -12,7 +12,7 @@ const App: React.FC = () => {
     return "Hello, " + person.firstName + " " + person.lastName;
   }
 
-  let user = { firstName: "Jane", middleName: 'Doe', lastName: "User" };
+  let user = {firstName: "Jane", middleName: 'Doe', lastName: "User"}
 
   return (
     <div className="App">
@@ -22,6 +22,6 @@ const App: React.FC = () => {
       </header>
     </div>
   );
-}
+};
 
 export default App;
