@@ -1,13 +1,29 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-  sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Open+Sans&display=swap');
+html {
+  font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+  color: white;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-  monospace;
+  body {
+    margin: 0;
+
+    h1, h2, h3 {
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-family: Merriweather, serif;
+      font-size: 2.5vw;
+      font-weight: normal;
+    }
+
+    h2 {
+      font-size: 1.5vw;
+    }
+
+    h3 {
+      font-size: 1vw;
+    }
+  }
 }
