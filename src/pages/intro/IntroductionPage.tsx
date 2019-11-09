@@ -1,5 +1,8 @@
 import React, {useState} from 'react';
-import {Carousel, CarouselControl, CarouselItem} from 'reactstrap';
+import {Carousel, CarouselItem} from 'reactstrap';
+import {RoundButton} from '../../components/RoundButton';
+import iconArrowLeft from '../../res/icons/arrow_left.svg'
+import iconArrowRight from '../../res/icons/arrow_right.svg'
 import './IntroductionPage.scss';
 import {Slide01} from './Slide01';
 import {Slide02} from './Slide02';
@@ -45,16 +48,18 @@ export const IntroductionPage: React.FC = () => {
                 previous={previous}
                 interval={false}>
         {slides}
-        <CarouselControl className={activeIndex === 0 ? 'hide' : 'show'}
-                         direction="prev"
-                         directionText="Previous"
-                         onClickHandler={previous}/>
-        <CarouselControl className={activeIndex === slides.length - 1 ? 'hide' : 'show'}
-                         direction="next"
-                         directionText="Next"
-                         onClickHandler={next}/>
-
       </Carousel>
+
+      <div className='navigation'>
+        <RoundButton onClick={previous}
+                     isActive={activeIndex !== 0}
+                     icon={iconArrowLeft}
+                     size='4rem'/>
+        <RoundButton onClick={next}
+                     isActive={activeIndex < slides.length - 1}
+                     icon={iconArrowRight}
+                     size='4rem'/>
+      </div>
     </div>
   )
 }

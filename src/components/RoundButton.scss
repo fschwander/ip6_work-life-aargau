@@ -1,0 +1,22 @@
+.RoundButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px white solid;
+  border-radius: 50%;
+  transition: 50ms linear;
+
+  &.enabled:hover {
+    box-shadow: 0 0 6px 2px white;
+  }
+
+  &.disabled {
+    opacity: 0.3;
+  }
+
+  p {
+    margin: 0;
+  }
+
+}
