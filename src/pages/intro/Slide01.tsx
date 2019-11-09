@@ -7,7 +7,7 @@ export class Slide01 extends Component {
     const rootStyle = {backgroundImage: `url(${bgImage})`}
 
     return (
-      <div className='Slide01 slide'
+      <div className='Slide01 slide-element'
            style={rootStyle}>
         <h3>Willkomen bei</h3>
         <h2>Work-Life Aargau</h2>
