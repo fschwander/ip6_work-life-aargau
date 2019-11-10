@@ -14,7 +14,7 @@
       flex-direction: column;
 
       // TODO: add real detection for mobile screens
-      @media screen and (max-height: 700px) {
+      @media screen and (max-aspect-ratio: 2/3) and (max-height: 700px) {
         height: calc(100vh - 72px);
       }
     }
