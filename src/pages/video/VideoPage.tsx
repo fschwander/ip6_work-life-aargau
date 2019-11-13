@@ -7,10 +7,9 @@ export const VideoPage: React.FC = () => {
 
   return (
     <div className='VideoPage full-screen'>
-      <ReactPlayer url={weLoveAargau}
-                   playing
-                   loop
-                   className='player'/>
+      <ReactPlayer className='player'
+                   url={weLoveAargau}
+                   playing loop playsinline/>
     </div>
   )
 
