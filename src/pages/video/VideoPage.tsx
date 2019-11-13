@@ -1,15 +1,12 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './VideoPage.scss';
 
-export class VideoPage extends Component{
+export const VideoPage: React.FC = () => {
 
-
-  render() {
-    return (
-      <div className='VideoPage'>
-        sup
-      </div>
-    )
-  }
+  return (
+    <div className='VideoPage'>
+      sup
+    </div>
+  )
 
 }

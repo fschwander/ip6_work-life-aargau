@@ -31,6 +31,12 @@ html {
       margin: 0.2rem 0 0.6rem;
     }
 
+    a {
+      &:hover {
+        font-weight: bolder;
+      }
+    }
+
     button {
       background-color: transparent;
       &:focus {

@@ -3,19 +3,26 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@types/jest": "24.0.22",
-    "@types/node": "12.12.6",
-    "@types/react": "16.9.11",
-    "@types/react-dom": "16.9.3",
     "bootstrap": "^4.3.1",
     "node-sass": "^4.13.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
+    "react-router-bootstrap": "latest",
+    "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0",
     "reactstrap": "^8.1.1",
     "tslint": "^5.20.1",
     "tslint-react": "^4.1.0",
     "typescript": "3.7.2"
+  },
+  "devDependencies": {
+    "@types/jest": "24.0.22",
+    "@types/node": "12.12.6",
+    "@types/react": "16.9.11",
+    "@types/react-dom": "16.9.3",
+    "@types/react-router-dom": "^5.1.2",
+    "@types/react-router-bootstrap": "^0.24.5",
+    "@types/reactstrap": "^8.0.6"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -37,8 +44,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@types/reactstrap": "^8.0.6"
   }
 }

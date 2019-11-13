@@ -1,14 +1,29 @@
 import React from 'react';
+import {LinkContainer} from 'react-router-bootstrap';
 import {Collapse, Nav, Navbar, NavbarToggler, NavItem, NavLink} from 'reactstrap';
 import './Navigation.scss';
 
-export const Navigation: React.FC = () => {
+interface NavigationProps {
+  navItems: Array<Object>
+}
+
+export const Navigation: React.FC<NavigationProps> = props => {
   const [collapsed, setCollapsed] = React.useState(true);
 
   const toggleNavbar = () => setCollapsed(!collapsed);
 
-  return (
+  const navItems = props.navItems.map((item: any, index: number) => (
+      <LinkContainer to={item.link} key={index}>
+        <NavItem>
+          <NavLink>
+            {item.name}
+          </NavLink>
+        </NavItem>
+      </LinkContainer>
+    )
+  )
 
+  return (
     <div className={'Navigation ' + (collapsed ? 'collapsed' : 'open')}>
       <Navbar>
         <NavbarToggler onClick={toggleNavbar}
@@ -19,14 +34,7 @@ export const Navigation: React.FC = () => {
         </NavbarToggler>
 
         <Collapse isOpen={!collapsed} navbar>
-          <Nav navbar>
-            <NavItem>
-              <NavLink href="/components/">Components</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
-            </NavItem>
-          </Nav>
+          <Nav navbar>{navItems}</Nav>
         </Collapse>
       </Navbar>
 

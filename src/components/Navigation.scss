@@ -11,6 +11,13 @@
     background: linear-gradient(to bottom, #0002 60%, #00000001);
   }
 
+  .nav-item {
+    text-align: center;
+    &:hover {
+      cursor: grab;
+    }
+  }
+
   .navbar-toggler-icon, .navbar-toggler, .navbar-brand, .nav-link, .navbar-toggler-bar {
     color: white;
     border-color: transparent;
