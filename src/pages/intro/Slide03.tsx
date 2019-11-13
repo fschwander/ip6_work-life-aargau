@@ -7,7 +7,7 @@ export class Slide03 extends Component {
     const rootStyle = {backgroundImage: `url(${bgImage})`}
 
     return (
-      <div className='Slide03 slide-element'
+      <div className='Slide03 slide-element full-screen'
            style={rootStyle}>
       </div>
     )
