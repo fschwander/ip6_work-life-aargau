@@ -1,13 +1,13 @@
 import React from 'react';
 import weLoveAargau from '../../res/videos/weLoveAargau.mp4';
-import {FullScreenVideo} from './FullScreenVideo';
+import {VideoFullScreen} from '../../components/VideoFullScreen';
 import './VideoPage.scss';
 
 export const VideoPage: React.FC = () => {
 
   return (
     <div className='VideoPage full-screen'>
-      <FullScreenVideo source={weLoveAargau}/>
+      <VideoFullScreen source={weLoveAargau}/>
     </div>
   )
 

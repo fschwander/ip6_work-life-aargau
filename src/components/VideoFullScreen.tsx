@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 import ReactPlayer from 'react-player';
-import './FullScreenVideo.scss';
+import './VideoFullScreen.scss';
 
 interface FullScreenVideoProps {
   source:string
 }
 
-export class FullScreenVideo extends Component<FullScreenVideoProps> {
+export class VideoFullScreen extends Component<FullScreenVideoProps> {
 
   constructor(props: FullScreenVideoProps) {
     super(props);
@@ -18,10 +18,10 @@ export class FullScreenVideo extends Component<FullScreenVideoProps> {
 
   render() {
     return(
-      <div className='FullScreenVideo'>
+      <div className='VideoFullScreen'>
         <ReactPlayer className='player full-screen'
                      url={this.props.source}
-                     playing loop playsinline/>
+                     playing muted loop playsinline/>
       </div>
     )
   }
