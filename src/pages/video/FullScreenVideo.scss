@@ -1,0 +1,9 @@
+.FullScreenVideo {
+  .player {
+    overflow: hidden;
+
+    video {
+      object-fit: cover;
+    }
+  }
+}

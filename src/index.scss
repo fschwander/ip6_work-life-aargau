@@ -39,22 +39,23 @@ html {
 
     button {
       background-color: transparent;
+
       &:focus {
         outline: unset;
       }
     }
 
     .full-screen {
-      width: 100vw;
-      height: 100vh;
+      width: 100vw !important;
+      height: 100vh !important;
 
       // TODO: add real detection for mobile screens
       @media screen and (max-aspect-ratio: 3/4) {
-        height: calc(100vh - 72px);
+        height: calc(100vh - 72px) !important;
       }
     }
 
-    @media screen and (max-width: 1200px){
+    @media screen and (max-width: 1200px) {
       h1 {
         font-size: 2rem;
       }
