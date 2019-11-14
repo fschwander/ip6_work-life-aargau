@@ -1,27 +1,49 @@
 import React, {Component} from 'react';
 import ReactPlayer from 'react-player';
 import './VideoFullScreen.scss';
+import {Spinner} from 'reactstrap';
 
 interface FullScreenVideoProps {
-  source:string
+  source: string
 }
 
-export class VideoFullScreen extends Component<FullScreenVideoProps> {
+interface VideoFullScreenState {
+  isPlaying: boolean,
+  isBuffering: boolean
+}
+
+export class VideoFullScreen extends Component<FullScreenVideoProps, VideoFullScreenState> {
 
   constructor(props: FullScreenVideoProps) {
     super(props);
 
     this.state = {
-      isPlaying: false
-    }
+      isPlaying: false,
+      isBuffering: true
+    };
+
+    this.onReady = this.onReady.bind(this)
+  }
+
+  onReady() {
+    console.log('on ready...');
+    this.setState({isBuffering: false})
   }
 
   render() {
-    return(
-      <div className='VideoFullScreen'>
-        <ReactPlayer className='player full-screen'
+    return (
+      <div className='VideoFullScreen full-screen'>
+        <div className='loading-container' style={{opacity: this.state.isBuffering ? 1 : 0}}>
+          <Spinner color='light'/>
+          <p>Einen Moment, bitte...</p>
+        </div>
+
+        <ReactPlayer className='player'
                      url={this.props.source}
-                     playing muted loop playsinline/>
+                     playing muted loop playsinline
+                     onReady={this.onReady}
+                     width='100%'
+                     height='100%'/>
       </div>
     )
   }
