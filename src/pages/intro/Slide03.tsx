@@ -1,5 +1,6 @@
-import bgImage from '../../res/imgs/galerie_picture_974.jpg'
 import React, {Component} from 'react';
+import bgImage from '../../res/imgs/galerie_picture_974.jpg'
+import {ReactComponent as SVGImage} from '../../res/imgs/galerie_picture_974.svg'
 
 export class Slide03 extends Component {
 
@@ -9,6 +10,7 @@ export class Slide03 extends Component {
     return (
       <div className='Slide03 slide-element full-screen'
            style={rootStyle}>
+        <SVGImage/>
       </div>
     )
   }
