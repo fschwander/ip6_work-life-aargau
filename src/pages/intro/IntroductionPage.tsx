@@ -8,7 +8,7 @@ import {Slide01} from './Slide01';
 import {Slide02} from './Slide02';
 import {Slide03} from './Slide03';
 
-const items = [<Slide03/>, <Slide01/>, <Slide02/>]
+const items = [<Slide01/>, <Slide02/>, <Slide03/>]
 
 export const IntroductionPage: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState(0);

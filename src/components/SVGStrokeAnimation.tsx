@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import './SVGStrokeAnimation.scss'
 
 interface SVGStrokeAnimationProps {
-  svgImage: React.FC
+  svgComponent: React.FC
 }
 
 export class SVGStrokeAnimation extends Component<SVGStrokeAnimationProps> {
@@ -12,7 +12,7 @@ export class SVGStrokeAnimation extends Component<SVGStrokeAnimationProps> {
   }
 
   render() {
-    const SVGImage = this.props.svgImage;
+    const SVGImage = this.props.svgComponent;
 
     return (
       <div className='SVGStrokeAnimation'>
@@ -22,6 +22,7 @@ export class SVGStrokeAnimation extends Component<SVGStrokeAnimationProps> {
   }
 
   componentDidMount(): void {
+    console.log('did mount');
     const pathElements = Array.prototype.slice.call(document.getElementsByTagName('path'))
     const lineElements = Array.prototype.slice.call(document.getElementsByTagName('line'))
     const polylineElements = Array.prototype.slice.call(document.getElementsByTagName('polyline'))
@@ -32,10 +33,10 @@ export class SVGStrokeAnimation extends Component<SVGStrokeAnimationProps> {
       .concat(polylineElements)
       .concat(polygonElements)
 
-    Array.from(allElements).forEach(el => {
-      let totalLength = el.getTotalLength().toString();
-      el.style.strokeDasharray = totalLength;
-      el.style.strokeDashoffset = totalLength;
-    })
+    // Array.from(allElements).forEach(el => {
+    //   let totalLength = el.getTotalLength().toString();
+    //   el.style.strokeDasharray = totalLength;
+    //   el.style.strokeDashoffset = totalLength;
+    // })
   }
 }

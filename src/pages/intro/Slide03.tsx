@@ -12,7 +12,7 @@ export class Slide03 extends Component {
       <div className='Slide03 slide-element full-screen'
            style={rootStyle}>
 
-        <SVGStrokeAnimation svgImage={SVGImage}/>
+        <SVGStrokeAnimation svgComponent={SVGImage}/>
       </div>
     )
   }
