@@ -33,10 +33,10 @@ export class SVGStrokeAnimation extends Component<SVGStrokeAnimationProps> {
       .concat(polylineElements)
       .concat(polygonElements)
 
-    // Array.from(allElements).forEach(el => {
-    //   let totalLength = el.getTotalLength().toString();
-    //   el.style.strokeDasharray = totalLength;
-    //   el.style.strokeDashoffset = totalLength;
-    // })
+    Array.from(allElements).forEach(el => {
+      let totalLength = el.getTotalLength().toString();
+      el.style.strokeDasharray = totalLength;
+      el.style.strokeDashoffset = totalLength;
+    })
   }
 }

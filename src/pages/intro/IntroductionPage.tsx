@@ -8,47 +8,29 @@ import {Slide01} from './Slide01';
 import {Slide02} from './Slide02';
 import {Slide03} from './Slide03';
 
-const items = [<Slide01/>, <Slide02/>, <Slide03/>]
 
 export const IntroductionPage: React.FC = () => {
+  const items = [<Slide01/>, <Slide02/>, <Slide03/>]
+
   const [activeIndex, setActiveIndex] = useState(0);
-  const [animating, setAnimating] = useState(false);
+  const [activePage, setActivePage] = useState(items[activeIndex])
 
   const next = () => {
-    if (animating) {
-      return;
-    }
     const nextIndex = activeIndex === items.length - 1 ? items.length - 1 : activeIndex + 1;
     setActiveIndex(nextIndex);
+    setActivePage(items[nextIndex])
   }
 
   const previous = () => {
-    if (animating) {
-      return;
-    }
     const nextIndex = activeIndex === 0 ? 0 : activeIndex - 1;
     setActiveIndex(nextIndex);
+    setActivePage(items[nextIndex])
   }
-
-  const slides = items.map((item, i) => {
-    return (
-      <CarouselItem
-        onExiting={() => setAnimating(true)}
-        onExited={() => setAnimating(false)}
-        key={i}>
-        {item}
-      </CarouselItem>
-    );
-  });
 
   return (
     <div className='IntroductionPage'>
-      <Carousel activeIndex={activeIndex}
-                next={next}
-                previous={previous}
-                interval={false}>
-        {slides}
-      </Carousel>
+
+      {activePage}
 
       <div className='navigation'>
         <RoundButton onClick={previous}
@@ -56,7 +38,7 @@ export const IntroductionPage: React.FC = () => {
                      icon={iconArrowLeft}
                      size='4rem'/>
         <RoundButton onClick={next}
-                     isActive={activeIndex < slides.length - 1}
+                     isActive={activeIndex < items.length - 1}
                      icon={iconArrowRight}
                      size='4rem'/>
       </div>
