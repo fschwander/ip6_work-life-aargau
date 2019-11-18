@@ -7,10 +7,6 @@ interface SVGStrokeAnimationProps {
 
 export class SVGStrokeAnimation extends Component<SVGStrokeAnimationProps> {
 
-  constructor(props: SVGStrokeAnimationProps) {
-    super(props);
-  }
-
   render() {
     const SVGImage = this.props.svgComponent;
 
@@ -22,7 +18,6 @@ export class SVGStrokeAnimation extends Component<SVGStrokeAnimationProps> {
   }
 
   componentDidMount(): void {
-    console.log('did mount');
     const pathElements = Array.prototype.slice.call(document.getElementsByTagName('path'))
     const lineElements = Array.prototype.slice.call(document.getElementsByTagName('line'))
     const polylineElements = Array.prototype.slice.call(document.getElementsByTagName('polyline'))

@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import {Carousel, CarouselItem} from 'reactstrap';
 import {RoundButton} from '../../components/RoundButton';
 import iconArrowLeft from '../../res/icons/arrow_left.svg'
 import iconArrowRight from '../../res/icons/arrow_right.svg'
