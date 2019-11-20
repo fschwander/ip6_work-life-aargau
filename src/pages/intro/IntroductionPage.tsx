@@ -1,12 +1,12 @@
 import React, {useState} from 'react';
 import {RoundButton} from '../../components/RoundButton';
+import {SlideFullScreen} from '../../components/SlideFullScreen';
 import iconArrowLeft from '../../res/icons/arrow_left.svg'
 import iconArrowRight from '../../res/icons/arrow_right.svg'
 import './IntroductionPage.scss';
 import {Slide01} from './Slide01';
 import {Slide02} from './Slide02';
 import {Slide03} from './Slide03';
-
 
 export const IntroductionPage: React.FC = () => {
   const items = [<Slide01/>, <Slide02/>, <Slide03/>]
@@ -29,7 +29,12 @@ export const IntroductionPage: React.FC = () => {
   return (
     <div className='IntroductionPage'>
 
-      {activePage}
+      <SlideFullScreen>
+        <Slide01/>
+        <Slide02/>
+        <Slide03/>
+      </SlideFullScreen>
+
 
       <div className='navigation'>
         <RoundButton onClick={previous}
