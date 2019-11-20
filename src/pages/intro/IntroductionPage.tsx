@@ -35,11 +35,11 @@ export const IntroductionPage: React.FC = () => {
         <RoundButton onClick={previous}
                      isActive={activeIndex !== 0}
                      icon={iconArrowLeft}
-                     size='4rem'/>
+                     size='3.5rem'/>
         <RoundButton onClick={next}
                      isActive={activeIndex < items.length - 1}
                      icon={iconArrowRight}
-                     size='4rem'/>
+                     size='3.5rem'/>
       </div>
     </div>
   )

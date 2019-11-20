@@ -8,7 +8,7 @@
   transition: 50ms linear;
 
   &.enabled:hover {
-    box-shadow: 0 0 6px 2px white;
+    background:rgba(255, 255, 255, 0.2)
   }
 
   &.disabled {
