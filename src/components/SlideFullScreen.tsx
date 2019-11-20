@@ -9,7 +9,7 @@ interface SlideFullScreenProps {
 export const SlideFullScreen: React.FC<SlideFullScreenProps> = props => {
 
   const getSlides = () => {
-    return props.children.map((slide:object, index:number) => {
+    return props.children.map((slide: object, index: number) => {
       let isActive = index === props.activeIndex;
 
       return <React.Fragment key={index}>

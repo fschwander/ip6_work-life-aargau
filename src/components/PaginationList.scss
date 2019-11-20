@@ -1,4 +1,4 @@
-.pagination-list {
+.PaginationList {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,21 +6,18 @@
 
 
   .pagination-button {
-    width:.4rem;
+    width: .4rem;
     height: .4rem;
     background-color: white;
     border-radius: 50%;
     margin: .2rem;
 
     &.enabled:hover {
-      background:rgba(255, 255, 255, 0.8)
+      background: rgba(255, 255, 255, 0.8)
     }
 
     &.disabled {
       opacity: 0.5;
     }
   }
-
-
-
 }

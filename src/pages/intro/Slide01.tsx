@@ -3,7 +3,8 @@ import {SVGStrokeAnimation} from '../../components/SVGStrokeAnimation';
 import bgImage from '../../res/imgs/galerie_picture_905.jpg'
 import {ReactComponent as SVGImage} from '../../res/imgs/galerie_picture_905.svg'
 
-interface SlideProps {}
+interface SlideProps {
+}
 
 interface SlideState {
   isActive: boolean
@@ -20,7 +21,7 @@ export class Slide01 extends Component<SlideProps, SlideState> {
 
   render() {
     const rootStyle = {backgroundImage: `url(${bgImage})`}
-    const rootClass = 'Slide01 slide slide-element full-screen ' + (this.state.isActive ? 'isActive':'')
+    const rootClass = 'Slide01 slide slide-element full-screen ' + (this.state.isActive ? 'isActive' : '')
 
     return (
       <div className={rootClass}
@@ -38,6 +39,6 @@ export class Slide01 extends Component<SlideProps, SlideState> {
   }
 
   componentWillUnmount(): void {
-    this.setState({isActive:false})
+    this.setState({isActive: false})
   }
 }

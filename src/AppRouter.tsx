@@ -3,7 +3,7 @@ import {HashRouter, Redirect, Route, Switch} from 'react-router-dom';
 import {Navigation} from './components/Navigation';
 import App from './pages/App';
 import {IntroductionPage} from './pages/intro/IntroductionPage';
-import {VideoPage} from './pages/video/VideoPage';
+import {VideoPage} from './pages/main/VideoPage';
 
 export const AppRouter: React.FC = () => {
 
@@ -16,7 +16,7 @@ export const AppRouter: React.FC = () => {
     {
       name: 'Video',
       component: VideoPage,
-      link: '/video'
+      link: '/main'
     }
   ];
 

@@ -25,8 +25,7 @@ export const IntroductionPage: React.FC = () => {
     setActiveIndex(nextIndex);
   }
 
-  const setElementIndex = (index:number) => {
-    console.log(index)
+  const setElementIndex = (index: number) => {
     setActiveIndex(index)
   }
 

@@ -10,7 +10,6 @@ interface PaginationListProps {
 
 export class PaginationList extends Component<PaginationListProps> {
 
-
   getNofItems() {
     let items = [];
     for (let i = 0; i < this.props.nofElements; i++) {
@@ -22,9 +21,8 @@ export class PaginationList extends Component<PaginationListProps> {
   }
 
   render() {
-
     return (
-      <div className={'pagination-list'}>
+      <div className={'PaginationList'}>
         {this.getNofItems()}
       </div>
 
