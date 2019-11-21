@@ -37,12 +37,27 @@ html {
       }
     }
 
-    button {
+    button, .button {
       background-color: transparent;
 
       &:focus {
         outline: unset;
       }
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &.disabled {
+        cursor: default;
+        opacity: 0.5;
+      }
+
+      &.inactive {
+        cursor: pointer;
+        opacity: 0.5;
+      }
+
     }
 
     .full-screen {

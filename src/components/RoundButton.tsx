@@ -27,7 +27,7 @@ export class RoundButton extends Component<RoundButtonProps> {
 
   render() {
     return (
-      <div className={`RoundButton ${this.props.isActive ? 'enabled' : 'disabled'}`}
+      <div className={`RoundButton button ${this.props.isActive ? 'enabled' : 'disabled'}`}
            style={{width: this.props.size, height: this.props.size}}
            onClick={this.handleClick}>
         <img src={this.props.icon} alt='icon'/>

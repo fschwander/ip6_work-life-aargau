@@ -13,7 +13,7 @@ export class PaginationList extends Component<PaginationListProps> {
   getNofItems() {
     let items = [];
     for (let i = 0; i < this.props.nofElements; i++) {
-      items.push(<div className={`pagination-button ${this.props.activeIndex === i ? 'enabled' : 'disabled'}`}
+      items.push(<div className={`pagination-button button ${this.props.activeIndex === i ? 'active' : 'inactive'}`}
                       onClick={() => this.props.setElementIndex(i)}
                       key={i}/>)
     }
