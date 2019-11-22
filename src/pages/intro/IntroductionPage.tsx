@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {PaginationList} from '../../components/PaginationList';
-import {RoundButton} from '../../components/RoundButton';
+import {CircleButton} from '../../components/CircleButton';
 import {SlideFullScreen} from '../../components/SlideFullScreen';
 import iconArrowLeft from '../../res/icons/arrow_left.svg'
 import iconArrowRight from '../../res/icons/arrow_right.svg'
@@ -41,18 +41,18 @@ export const IntroductionPage: React.FC = () => {
       </SlideFullScreen>
 
       <div className='navigation'>
-        <RoundButton onClick={previous}
-                     isActive={activeIndex !== 0}
-                     icon={iconArrowLeft}
-                     size='3.5rem'/>
+        <CircleButton onClick={previous}
+                      isActive={activeIndex !== 0}
+                      icon={iconArrowLeft}
+                      size='3.5rem'/>
         <PaginationList
           setElementIndex={setElementIndex}
           activeIndex={activeIndex}
           nofElements={items.length}/>
-        <RoundButton onClick={next}
-                     isActive={activeIndex < items.length - 1}
-                     icon={iconArrowRight}
-                     size='3.5rem'/>
+        <CircleButton onClick={next}
+                      isActive={activeIndex < items.length - 1}
+                      icon={iconArrowRight}
+                      size='3.5rem'/>
 
 
       </div>
