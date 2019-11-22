@@ -1,0 +1,12 @@
+.RectButton {
+  border: 2px white solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem 4rem;
+
+  p {
+    text-transform: uppercase;
+    margin: 0;
+  }
+}

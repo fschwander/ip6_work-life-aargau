@@ -10,4 +10,13 @@
       margin: 1rem;
     }
   }
+
+  .Slide03 {
+    .RectButton {
+      position: absolute;
+      left: 50%;
+      bottom: 16%;
+      transform: translateX(-50%);
+    }
+  }
 }

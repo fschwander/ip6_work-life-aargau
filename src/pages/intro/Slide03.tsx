@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {RectButton} from '../../components/RectButton';
 import {SVGStrokeAnimation} from '../../components/SVGStrokeAnimation';
 import bgImage from '../../res/imgs/galerie_picture_974.jpg'
 import {ReactComponent as SVGImage} from '../../res/imgs/galerie_picture_974.svg'
@@ -18,6 +19,9 @@ export class Slide03 extends Component<SlideProps, SlideState> {
     this.state = {
       isActive: false
     }
+  }
+
+  redirectToMainPage() {
 
   }
 
@@ -30,6 +34,11 @@ export class Slide03 extends Component<SlideProps, SlideState> {
            style={rootStyle}>
 
         <SVGStrokeAnimation svgComponent={SVGImage} isActive={this.props.isActive}/>
+
+        <RectButton className='go-to-main-button'
+                    text='Abenteuer starten'
+                    isActive={true}
+                    onClick={this.redirectToMainPage}/>
       </div>
     )
   }
