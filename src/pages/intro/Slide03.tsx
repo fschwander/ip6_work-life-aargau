@@ -4,6 +4,7 @@ import bgImage from '../../res/imgs/galerie_picture_974.jpg'
 import {ReactComponent as SVGImage} from '../../res/imgs/galerie_picture_974.svg'
 
 interface SlideProps {
+  isActive: boolean
 }
 
 interface SlideState {
@@ -28,7 +29,7 @@ export class Slide03 extends Component<SlideProps, SlideState> {
       <div className={rootClass}
            style={rootStyle}>
 
-        <SVGStrokeAnimation svgComponent={SVGImage}/>
+        <SVGStrokeAnimation svgComponent={SVGImage} isActive={this.props.isActive}/>
       </div>
     )
   }

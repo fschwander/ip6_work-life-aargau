@@ -2,22 +2,35 @@ import React, {Component} from 'react';
 import './SVGStrokeAnimation.scss'
 
 interface SVGStrokeAnimationProps {
-  svgComponent: React.FC
+  svgComponent: React.FC,
+  isActive: boolean
 }
 
 export class SVGStrokeAnimation extends Component<SVGStrokeAnimationProps> {
+  rootRef: React.RefObject<HTMLDivElement>;
+
+  constructor(props: SVGStrokeAnimationProps) {
+    super(props);
+
+    this.rootRef = React.createRef();
+
+  }
 
   render() {
     const SVGImage = this.props.svgComponent;
 
     return (
-      <div className='SVGStrokeAnimation'>
+      <div className={`SVGStrokeAnimation ${this.props.isActive ? 'is-active' : ''}`} ref={this.rootRef}>
         <SVGImage/>
       </div>
     )
   }
 
   componentDidMount(): void {
+    this.startDashOffsetAnimation()
+  }
+
+  startDashOffsetAnimation() {
     const pathElements = Array.prototype.slice.call(document.getElementsByTagName('path'))
     const lineElements = Array.prototype.slice.call(document.getElementsByTagName('line'))
     const polylineElements = Array.prototype.slice.call(document.getElementsByTagName('polyline'))

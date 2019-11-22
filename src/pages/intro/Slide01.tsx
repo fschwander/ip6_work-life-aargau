@@ -4,6 +4,7 @@ import bgImage from '../../res/imgs/galerie_picture_905.jpg'
 import {ReactComponent as SVGImage} from '../../res/imgs/galerie_picture_905.svg'
 
 interface SlideProps {
+  isActive: boolean
 }
 
 interface SlideState {
@@ -29,7 +30,7 @@ export class Slide01 extends Component<SlideProps, SlideState> {
         <h3>Willkomen bei</h3>
         <h2>Work-Life Aargau</h2>
         <h1>Eine interaktive Platform über den Kanton Aargau</h1>
-        <SVGStrokeAnimation svgComponent={SVGImage}/>
+        <SVGStrokeAnimation svgComponent={SVGImage} isActive={this.props.isActive}/>
       </div>
     )
   }

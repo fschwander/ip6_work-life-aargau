@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import bgImage from '../../res/imgs/galerie_picture_966.jpg'
 
 interface SlideProps {
+  isActive: boolean
 }
 
 interface SlideState {
