@@ -1,16 +1,21 @@
 import React from "react";
-import './CircleButton.scss'
+import './RoundButton.scss'
 
-interface CircleButtonProps {
-  size: string,
+interface RoundButtonProps {
   onClick: Function,
   isActive?: boolean,
   icon?: string,
   text?: string,
+  size?: string,
   optionalText?: string
 }
 
-export const CircleButton: React.FC<CircleButtonProps> = props => {
+export const RoundButton: React.FC<RoundButtonProps> = props => {
+
+  const style = {
+    width: props.size === undefined ? '3.5rem' : props.size,
+    height: props.size === undefined ? '3.5rem' : props.size
+  };
 
   const handleClick = () => {
     if (!props.isActive) {
@@ -20,8 +25,8 @@ export const CircleButton: React.FC<CircleButtonProps> = props => {
   };
 
   return (
-    <div className={`CircleButton button ${props.isActive ? 'enabled' : 'disabled'}`}
-         style={{width: props.size, height: props.size}}
+    <div className={`RoundButton button ${props.isActive ? 'enabled' : 'disabled'}`}
+         style={style}
          onClick={handleClick}>
       <img src={props.icon} alt='icon'/>
       <p>{props.text}</p>
