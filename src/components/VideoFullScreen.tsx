@@ -26,7 +26,6 @@ export class VideoFullScreen extends Component<FullScreenVideoProps, VideoFullSc
   }
 
   onReady() {
-    console.log('on ready...');
     this.setState({isBuffering: false})
   }
 
