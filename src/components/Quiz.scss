@@ -1,3 +1,22 @@
 .Quiz {
+  width: 380px;
 
+  p {
+    text-align: left;
+  }
+
+  .choice-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .RectButton {
+      width: 47%;
+
+      p {
+        font-size: 14px;
+        text-transform: unset;
+      }
+    }
+  }
 }

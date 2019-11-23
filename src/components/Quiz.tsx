@@ -24,12 +24,15 @@ export const Quiz: React.FC<QuizProps> = props => {
   const q = props.question;
 
   return (
-    <div className={`Quiz ${props.className}`}>
-      <p><b>Quiz </b>{q.title}</p>
-      <p>{q.subtitle}</p>
-      <p className='choice-container'>
-        {q.choices.map(c => <RectButton onClick={() => console.log('clicked')} text={c.text}/>)}
-      </p>
+    <div className={`Quiz ${props.className !== undefined ? props.className : ''}`}>
+      <p className='highlighted'><b>Quiz </b>{q.title}</p>
+      <p className='large'>{q.subtitle}</p>
+      <div className='choice-container'>
+        {q.choices.map((c, i) => <RectButton key={i}
+                                             onClick={() => console.log('clicked')}
+                                             text={c.text}/>)
+        }
+      </div>
       <p>{q.answer}</p>
     </div>
   )
