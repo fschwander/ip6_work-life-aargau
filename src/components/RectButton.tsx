@@ -4,7 +4,7 @@ import './RectButton.scss'
 interface RectButtonProps {
   className?: string,
   onClick: Function,
-  isActive: boolean,
+  isActive?: boolean,
   text: string,
   width?: string,
   height?: string
@@ -12,15 +12,17 @@ interface RectButtonProps {
 
 export const RectButton: React.FC<RectButtonProps> = props => {
 
+  const buttonIsActive = props.isActive === undefined ? true : props.isActive;
+
   const handleClick = () => {
-    if (!props.isActive) {
+    if (!buttonIsActive) {
       return;
     }
     props.onClick()
   };
 
   return (
-    <div className={`RectButton button ${props.isActive ? 'enabled' : 'disabled'}`}
+    <div className={`RectButton button ${buttonIsActive ? 'enabled' : 'disabled'}`}
          onClick={handleClick}>
       <p>{props.text}</p>
     </div>

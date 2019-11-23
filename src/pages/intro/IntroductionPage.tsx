@@ -14,10 +14,12 @@ export const IntroductionPage: React.FC = () => {
 
   // TODO: add keys dynamically?
   const items = [
-    <Slide01 key='0' isActive={activeIndex === 0}/>,
-    <Slide02 key='1' isActive={activeIndex === 1}/>,
-    <Slide03 key='2' isActive={activeIndex === 2}/>
+    <Slide02 key='1' isActive={activeIndex === 0}/>,
   ]
+
+  //   <Slide01 key='0' isActive={activeIndex === 0}/>,
+  // <Slide02 key='1' isActive={activeIndex === 1}/>,
+  //   <Slide03 key='2' isActive={activeIndex === 2}/>
 
   const next = () => {
     const nextIndex = activeIndex === items.length - 1 ? items.length - 1 : activeIndex + 1;
