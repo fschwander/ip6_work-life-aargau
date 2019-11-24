@@ -40,7 +40,7 @@ export const IntroductionPage: React.FC = () => {
         {items}
       </SlideFullScreen>
 
-      <div className='navigation'>
+      <div className='slide-navigation'>
         <RoundButton onClick={previous}
                      isActive={activeIndex !== 0}
                      icon={iconArrowLeft}/>
