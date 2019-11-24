@@ -71,15 +71,18 @@ export class Quiz extends Component<QuizProps, QuizState> {
 
     return (
       <div className={`Quiz ${className !== undefined ? className : ''}`}>
-        <p className='highlighted'><b>Quiz </b>{question.title}</p>
-        <p className='large'>{question.subtitle}</p>
-        <div className='choice-container'>
-          {question.choices.map((c, i) => <RectButton key={i}
-                                                      isActive={!c.wasSelected || (c.wasSelected && c.isCorrect)}
-                                                      onClick={() => this.selectChoice(c)}
-                                                      text={c.text}/>)}
+        <span className='border-line'/>
+        <div className='text-container'>
+          <p className='highlighted'><b>Quiz </b>{question.title}</p>
+          <p className='large'>{question.subtitle}</p>
+          <div className='choice-container'>
+            {question.choices.map((c, i) => <RectButton key={i}
+                                                        isActive={!c.wasSelected || (c.wasSelected && c.isCorrect)}
+                                                        onClick={() => this.selectChoice(c)}
+                                                        text={c.text}/>)}
+          </div>
+          <p className='answer-container'>{response}</p>
         </div>
-        <p className='answer-container'>{response}</p>
       </div>
     )
   }
