@@ -12,7 +12,8 @@ interface QuestionObject {
 interface ChoiceObject {
   text: string,
   isCorrect: boolean,
-  wasSelected: boolean
+  wasSelected: boolean,
+  isActive?: boolean
 }
 
 interface QuizProps {
@@ -38,14 +39,17 @@ export class Quiz extends Component<QuizProps, QuizState> {
     }
   }
 
-  selectChoice = (choice: ChoiceObject) => {
+  selectChoice = (c: ChoiceObject) => {
     this.setState({quizStarted: true})
-    choice.wasSelected = true;
+    c.wasSelected = true;
 
-    if (choice.isCorrect) {
+    if (c.isCorrect) {
       this.setState({quizAnsweredCorrectly: true})
+      this.props.question.choices.forEach(c => c.isActive = c.isCorrect)
+    } else {
+      c.isActive = !c.wasSelected || (c.wasSelected && c.isCorrect)
     }
-    this.updateResponse(choice.isCorrect);
+    this.updateResponse(c.isCorrect);
   }
 
   updateResponse = (wasCorrect: boolean): void => {
@@ -77,7 +81,7 @@ export class Quiz extends Component<QuizProps, QuizState> {
           <p className='large'>{question.subtitle}</p>
           <div className='choice-container'>
             {question.choices.map((c, i) => <RectButton key={i}
-                                                        isActive={!c.wasSelected || (c.wasSelected && c.isCorrect)}
+                                                        isActive={c.isActive}
                                                         onClick={() => this.selectChoice(c)}
                                                         text={c.text}/>)}
           </div>
