@@ -11,12 +11,20 @@
     justify-content: space-between;
 
     .RectButton {
-      width: 47%;
+      width: 48%;
+        padding: 0.2rem;
+        margin: 0.3rem 0;
 
       p {
         font-size: 14px;
         text-transform: unset;
       }
     }
+  }
+
+  .answer-container {
+    font-size: 14px;
+    margin-top: 0.5rem;
+    position: absolute;
   }
 }
