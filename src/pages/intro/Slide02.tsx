@@ -12,15 +12,15 @@ export const Slide02: React.FC<SlideProps> = props => {
 
   const questions = [
     {
-      title: "Promotion vom Aargau",
-      subtitle: "Was macht den Aargau berühmt?",
+      title: "über den Aargau",
+      subtitle: "Wofür ist der Aargau bekannt?",
       choices: [
         {text: "Wintersport", isCorrect: false, wasSelected: false},
         {text: "Land der Seen", isCorrect: false, wasSelected: false},
         {text: "Socken und Rüebli", isCorrect: true, wasSelected: false},
         {text: "Hohe Berge", isCorrect: false, wasSelected: false},
       ],
-      answer: "Weisse Socken und Rüeblitorte machen den Kanton berühmt. Zu sehen gibt es aber noch einiges mehr."
+      answer: "Weisse Socken und die Rüeblitorte machen den Kanton berühmt. Zum Glück gibt es aber noch einiges mehr zu sehen."
     }
   ]
 

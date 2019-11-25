@@ -85,7 +85,7 @@ export class Quiz extends Component<QuizProps, QuizState> {
                                                         onClick={() => this.selectChoice(c)}
                                                         text={c.text}/>)}
           </div>
-          <p className='answer-container'>{response}</p>
+          <p className='answer-container small'>{response}</p>
         </div>
       </div>
     )
