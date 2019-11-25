@@ -64,7 +64,7 @@ export class Quiz extends Component<QuizProps, QuizState> {
     if (wasCorrect) {
       this.setState({response: 'Richtig! ' + question.answer});
     } else {
-      const responseIndex = Math.floor(Math.random() * (wrongResponses.length - 1))
+      const responseIndex = Math.floor(Math.random() * wrongResponses.length)
       this.setState({response: wrongResponses[responseIndex]})
     }
   }
