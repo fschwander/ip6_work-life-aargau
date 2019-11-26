@@ -55,10 +55,16 @@ export class Quiz extends Component<QuizProps, QuizState> {
   updateResponse = (wasCorrect: boolean): void => {
     const {question} = this.props;
     const wrongResponses = [
-      'Leider nein... Versuch es weiter',
-      'Falsch. Versuch\'s noch mal, das kannst du besser',
-      'Hmmm, wirklich?... Das war falsch',
-      'Netter Versuch - aber trozdem falsche Antwort',
+      'Leider nein... Versuch es weiter.',
+      'Falsch. Versuch\'s noch mal.',
+      'Ganz falsch. Das solltest du besser wissen.',
+      'Hmmm, wirklich?... Das war falsch.',
+      'Wie kommst du auf so eine Antwort? Falsch... :)',
+      'Wie Donald Trump gerne sagt: WROOOOOOONG!',
+      'Netter Versuch - aber trozdem falsch.',
+      'Jaaaa, also... Ähm, nein. Einfach nein.',
+      'Falsch. Habt ihr so was nicht in der Schule gelernt?',
+      '¯\\_(ツ)_/¯ Falsch!'
     ]
 
     if (wasCorrect) {
