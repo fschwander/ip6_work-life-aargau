@@ -1,44 +1,31 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Interactive platform about the promotion of the Canton of Aargau
+(Work in progress) Bachelor thesis, due date: March 20th 2020.
 
-## Available Scripts
+Progress can be viewed [here](http://www.ip6.fabianschwander.ch).
 
-In the project directory, you can run:
+## Technologies
 
-### `yarn start`
+Created with React, TypeScript and D3. 
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Goal
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+The goal is not to find out why people do not want to work in the canton of Aargau, the goal is to give people the possibility to explore the canton in a likable/entertaining way with the information that is available
 
-### `yarn test`
+## Research questions
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- How relevant positive information about the canton of Aargau, such as affordable living costs, but also other lightly stated "fun aspects" can be used for economic promotion of the region through a visualisation that entertains end-user and eventually motivates him/her to seek for a job in  the canton of Aargau?
+- What information visualisation techniques can be used in order to achieve the above statement and potentially, to lead to decent user's enjoyment experience deriving from testing results? 
 
-### `yarn build`
+## Authors
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Fabian Schwander, iCompetence
+- Matej Zmitko, iCompetence
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Coaches
+- Prof. Dr. Doris Agotai
+- Dr. Arzu Çöltekin
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Customer
+[Work - Life - Aargau](https://www.ag.ch/de/verwaltung/dvi/wirtschaft_arbeit/aargau_services_neu/fachkraefte_1/work_life_aargau_fuer_aargauer_unternehmen/departement_detailseite_95.jsp)
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
