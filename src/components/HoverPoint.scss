@@ -1,0 +1,25 @@
+.HoverPoint {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+
+  .circle {
+    border-radius: 50%;
+    position: absolute;
+    background-color: white;
+
+    &.outer-circle {
+      width: 100%;
+      height: 100%;
+      opacity: 0.5;
+    }
+
+    &.inner-circle {
+      width: 35%;
+      height: 35%;
+    }
+  }
+}
