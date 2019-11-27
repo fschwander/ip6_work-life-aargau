@@ -9,7 +9,9 @@
   .circle {
     border-radius: 50%;
     position: absolute;
+    transition: 0.2s ease-in-out;
     background-color: white;
+    cursor: pointer;
 
     &.outer-circle {
       width: 100%;
@@ -20,6 +22,20 @@
     &.inner-circle {
       width: 35%;
       height: 35%;
+      border: 3px white solid;
+    }
+  }
+
+  &.is-active {
+    .circle {
+      &.outer-circle {
+        transform: scale(1.1);
+        transform-origin: center;
+      }
+
+      &.inner-circle {
+        background-color: #7EE2D1;
+      }
     }
   }
 }

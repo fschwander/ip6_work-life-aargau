@@ -9,7 +9,7 @@ export const VideoPage: React.FC = () => {
   return (
     <div className='VideoPage full-screen'>
       <VideoFullScreen source={weLoveAargau}/>
-      <HoverPoint className={'hiking-path'} mouseOverFct={() => console.log('mouse over')}/>
+      <HoverPoint className={''} mouseOverFct={() => console.log('mouse over')}/>
     </div>
   )
 
