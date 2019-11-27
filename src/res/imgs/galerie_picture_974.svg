@@ -1,263 +1,397 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="2048px" height="1304px" preserveAspectRatio="xMidYMid slice" viewBox="0 0 2048 1304" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
     <title>galerie_picture_974</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+        <polyline id="path-1" points="-8.52651283e-14 208.172904 -8.52651283e-14 164.399166 6.4171465 153.612918 13.5776547 153.612918 19.1917535 164.399166 19.1917535 173.702079 22.7620599 173.702079 22.7620599 85.3758976 22.7620599 65.4701287 17.9887586 65.4701287 37.750474 23.9159653 39.4772375 0.482442597 42.5383513 22.235349 56.1962357 51.7950103 55.3992059 43.3082304 61.5152242 43.3082304 61.5152242 36.2390151 66.6191501 36.2390151 66.6191501 28.9887982 71.2946443 28.9887982 71.2946443 21.2626764 74.1265837 21.2626764 74.1265837 12.5864368 76.6587902 8.04447868 76.0695329 4.8465894 78.6316083 6.18006296 80.1609528 1.59777385 82.0288494 3.57159225 84.7702053 3.96696993 80.900208 8.04447868 83.9616852 14.2184815 89.9621884 14.2184815 89.9621884 21.2626764 96.0799 25.7606529 105.475481 25.7606529 105.475481 33.4980519 111.829403 33.4980519 111.829403 41.7637955 116.740019 41.7637955 116.740019 48.4704436 122.504937 48.4704436 122.504937 56.9865446 125.240353 56.9865446 125.240353 64.2553693 129.316381 64.2553693 129.316381 60.2299144 199.654848 60.2299144 194.633187 56.4824426 226.818389 56.4824426 242.480479 59.5707135 298.652743 59.3543373 298.806028 52.9311743 373.018333 53.1721348 476.707095 53.1721348 497.182356 79.122458 500.938319 111.39898 497.182356 115.24958 307.865542 111.39898 298.806028 53.1721348 298.806028 107.678392 125.240353 107.531407 127.852257 74.0977609 120.675344 74.0977609 120.675344 69.3591241 114.219206 69.3591241 114.219206 60.2299144 107.631299 60.2299144 107.631299 51.7950103 102.797058 51.7950103 102.797058 43.3082304 97.4330304 43.3082304 97.4330304 34.2380683 92.7918339 34.2380683 92.7918339 27.7010462 86.4533662 27.7010462 86.4533662 20.2649516 83.9616852 20.2649516 83.9616852 14.2184815"></polyline>
+        <linearGradient x1="50.1875509%" y1="0.747136729%" x2="75.4692829%" y2="101.460632%" id="linearGradient-3">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="36.1777886%"></stop>
+            <stop stop-color="#FFFFFF" offset="36.8548197%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50.1864529%" y1="0.747136729%" x2="75.3201649%" y2="101.460632%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="36.1777886%"></stop>
+            <stop stop-color="#FFFFFF" offset="36.8548197%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50.1874836%" y1="0.747136729%" x2="75.4601397%" y2="101.460632%" id="linearGradient-5">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="36.1777886%"></stop>
+            <stop stop-color="#FFFFFF" offset="36.8548197%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50.1867245%" y1="0.747136729%" x2="75.3570529%" y2="101.460632%" id="linearGradient-6">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="36.1777886%"></stop>
+            <stop stop-color="#FFFFFF" offset="36.8548197%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50.1935424%" y1="0.747136729%" x2="76.2829192%" y2="101.460632%" id="linearGradient-7">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="36.1777886%"></stop>
+            <stop stop-color="#FFFFFF" offset="36.8548197%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50.1999372%" y1="0.747136729%" x2="77.1513341%" y2="101.460632%" id="linearGradient-8">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="36.1777886%"></stop>
+            <stop stop-color="#FFFFFF" offset="36.8548197%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50.2017114%" y1="0.747136729%" x2="77.3922607%" y2="101.460632%" id="linearGradient-9">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="38.0800263%"></stop>
+            <stop stop-color="#FFFFFF" offset="38.6864317%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50.2010519%" y1="0.747136729%" x2="77.3027039%" y2="101.460632%" id="linearGradient-10">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="38.0800263%"></stop>
+            <stop stop-color="#FFFFFF" offset="38.6864317%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50.199792%" y1="0.747136729%" x2="77.1316111%" y2="101.460632%" id="linearGradient-11">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="38.0800263%"></stop>
+            <stop stop-color="#FFFFFF" offset="38.6864317%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50.2007996%" y1="0.747136729%" x2="77.2684477%" y2="101.460632%" id="linearGradient-12">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="38.0800263%"></stop>
+            <stop stop-color="#FFFFFF" offset="38.6864317%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50.2010379%" y1="0.747136729%" x2="77.3007987%" y2="101.460632%" id="linearGradient-13">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="38.0800263%"></stop>
+            <stop stop-color="#FFFFFF" offset="38.6864317%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50.2170776%" y1="0.747136729%" x2="79.4789817%" y2="101.460632%" id="linearGradient-14">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="47.4163422%"></stop>
+            <stop stop-color="#FFFFFF" offset="48.2700364%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50.2225953%" y1="0.747136729%" x2="80.2282885%" y2="101.460632%" id="linearGradient-15">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="59.1740088%"></stop>
+            <stop stop-color="#FFFFFF" offset="59.7644531%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50.1843039%" y1="0.747136729%" x2="75.0283425%" y2="101.460632%" id="linearGradient-16">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="38.0800263%"></stop>
+            <stop stop-color="#FFFFFF" offset="38.6864317%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="65.5923095%" y1="-14.5636059%" x2="94.9551834%" y2="100%" id="linearGradient-17">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="29.3655487%"></stop>
+            <stop stop-color="#FFFFFF" offset="29.487492%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="65.5642538%" y1="-14.5636059%" x2="94.874294%" y2="100%" id="linearGradient-18">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="29.3655487%"></stop>
+            <stop stop-color="#FFFFFF" offset="29.487492%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="65.5380524%" y1="-14.5636059%" x2="94.7987511%" y2="100%" id="linearGradient-19">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="29.3655487%"></stop>
+            <stop stop-color="#FFFFFF" offset="29.487492%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="65.3794879%" y1="-14.5636059%" x2="94.3415838%" y2="100%" id="linearGradient-20">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="29.3655487%"></stop>
+            <stop stop-color="#FFFFFF" offset="29.487492%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="65.2494703%" y1="-14.5636059%" x2="93.9667215%" y2="100%" id="linearGradient-21">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="29.3655487%"></stop>
+            <stop stop-color="#FFFFFF" offset="29.487492%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="65.2935081%" y1="-14.5636059%" x2="94.0936898%" y2="100%" id="linearGradient-22">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="29.3655487%"></stop>
+            <stop stop-color="#FFFFFF" offset="29.487492%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="65.3466668%" y1="-14.5636059%" x2="94.246955%" y2="100%" id="linearGradient-23">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="29.3655487%"></stop>
+            <stop stop-color="#FFFFFF" offset="29.487492%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="65.1442626%" y1="-14.5636059%" x2="93.6633907%" y2="100%" id="linearGradient-24">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="29.3655487%"></stop>
+            <stop stop-color="#FFFFFF" offset="29.487492%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="65.1598719%" y1="-14.5636059%" x2="93.7083948%" y2="100%" id="linearGradient-25">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="29.3655487%"></stop>
+            <stop stop-color="#FFFFFF" offset="29.487492%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="65.1894728%" y1="-14.5636059%" x2="93.7937392%" y2="100%" id="linearGradient-26">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="29.3655487%"></stop>
+            <stop stop-color="#FFFFFF" offset="29.487492%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50.702686%" y1="-14.5636059%" x2="52.0259589%" y2="100%" id="linearGradient-27">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="29.3655487%"></stop>
+            <stop stop-color="#FFFFFF" offset="29.487492%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-28">
             <stop stop-color="#FFFFFF" stop-opacity="0.05" offset="0%"></stop>
             <stop stop-color="#FFFFFF" stop-opacity="0.1" offset="100%"></stop>
         </linearGradient>
-        <polyline id="path-2" points="4.26325641e-13 207.690461 4.26325641e-13 163.916723 6.4171465 153.130475 13.5776547 153.130475 19.1917535 163.916723 19.1917535 173.219636 22.7620599 173.219636 22.7620599 84.893455 22.7620599 64.9876861 17.9887586 64.9876861 37.750474 23.4335227 39.4772375 1.42108547e-13 42.5383513 21.7529064 56.1962357 51.3125677 55.3992059 42.8257878 61.5152242 42.8257878 61.5152242 35.7565725 66.6191501 35.7565725 66.6191501 28.5063556 71.2946443 28.5063556 71.2946443 20.7802338 74.1265837 20.7802338 74.1265837 12.1039942 76.6587902 7.56203609 76.0695329 4.3641468 78.6316083 5.69762036 80.1609528 1.11533125 82.0288494 3.08914966 84.7702053 3.48452733 80.900208 7.56203609 83.9616852 13.7360389 89.9621884 13.7360389 89.9621884 20.7802338 96.0799 25.2782103 105.475481 25.2782103 105.475481 33.0156093 111.829403 33.0156093 111.829403 41.2813529 116.740019 41.2813529 116.740019 47.988001 122.504937 47.988001 122.504937 56.504102 125.240353 56.504102 125.240353 63.7729267 129.316381 63.7729267 129.316381 59.7474718 199.654848 59.7474718 194.926855 56.504102 197.435281 52.6896922 202.541168 38.86774 218.179697 25.2782103 222.195517 2.38967332 226.160763 24.504065 238.248203 33.0156093 244.760242 47.5127751 248.555656 47.5127751 248.555656 39.9501615 256.975482 39.9501615 256.975482 47.5127751 260.917492 47.5127751 260.917492 39.9501615 268.218889 39.9501615 268.218889 47.988001 273.040129 47.988001 273.040129 39.9501615 280.218167 39.9501615 280.218167 47.988001 284.915023 47.988001 284.915023 39.9501615 291.251079 39.9501615 295.146957 39.9501615 298.21828 34.5325925 298.806028 21.7529064 304.564929 16.1915049 307.865542 19.782509 312.458138 13.7360389 313.980437 1.42108547e-13 315.514423 13.7360389 339.062851 13.7360389 341.235311 0.568361598 342.646253 13.7360389 373.018333 52.6896922 476.707095 52.6896922 497.182356 78.6400154 500.938319 110.916537 497.182356 114.767138 307.865542 110.916537 298.806028 52.6896922 298.806028 107.195949 125.240353 107.048964 127.852257 73.6153183 120.675344 73.6153183 120.675344 68.8766815 114.219206 68.8766815 114.219206 59.7474718 107.631299 59.7474718 107.631299 51.3125677 102.797058 51.3125677 102.797058 42.8257878 97.4330304 42.8257878 97.4330304 33.7556257 92.7918339 33.7556257 92.7918339 27.2186036 86.4533662 27.2186036 86.4533662 19.782509 83.9616852 19.782509 83.9616852 13.7360389"></polyline>
-        <polyline id="path-4" points="-3.41060513e-13 48.944048 45.6431072 2.08242363e-14 147.166472 -1.42108547e-14 209.240641 71.1531467 187.671944 88.5805039 76.4013712 88.5805039"></polyline>
-        <polygon id="path-6" points="-4.54747351e-13 57.5817836 68.8699236 2.65826584 207.820114 0 241.723466 33.1422208 275.426729 52.0120295 275.426729 57.5817836"></polygon>
+        <polyline id="path-29" points="0 207.998642 0 164.224904 6.4171465 153.438657 13.5776547 153.438657 19.1917535 164.224904 19.1917535 173.527817 22.7620599 173.527817 22.7620599 85.2016361 22.7620599 65.2958673 17.9887586 65.2958673 37.750474 23.7417038 39.4772375 0.308181156 42.5383513 22.0610876 56.1962357 51.6207489 55.3992059 43.133969 61.5152242 43.133969 61.5152242 36.0647537 66.6191501 36.0647537 66.6191501 28.8145367 71.2946443 28.8145367 71.2946443 21.088415 74.1265837 21.088415 74.1265837 12.4121754 76.6587902 7.87021724 76.0695329 4.67232796 78.6316083 6.00580151 80.1609528 1.4235124 82.0288494 3.39733081 84.7702053 3.79270849 80.900208 7.87021724 83.9616852 14.0442201 89.9621884 14.0442201 89.9621884 21.088415 96.0799 25.5863914 105.475481 25.5863914 105.475481 33.3237905 111.829403 33.3237905 111.829403 41.5895341 116.740019 41.5895341 116.740019 48.2961821 122.504937 48.2961821 122.504937 56.8122832 125.240353 56.8122832 125.240353 64.0811078 129.316381 64.0811078 129.316381 60.0556529 199.654848 60.0556529 194.926855 56.8122832 197.435281 52.9978734 202.541168 39.1759211 218.179697 25.5863914 222.195517 2.69785448 226.160763 24.8122461 238.248203 33.3237905 244.760242 47.8209563 248.555656 47.8209563 248.555656 40.2583426 256.975482 40.2583426 256.975482 47.8209563 260.917492 47.8209563 260.917492 40.2583426 268.218889 40.2583426 268.218889 48.2961821 273.040129 48.2961821 273.040129 40.2583426 280.218167 40.2583426 280.218167 48.2961821 284.915023 48.2961821 284.915023 40.2583426 291.251079 40.2583426 295.146957 40.2583426 298.21828 34.8407736 298.806028 22.0610876 304.564929 16.4996861 307.865542 20.0906902 312.458138 14.0442201 313.980437 0.308181156 315.514423 14.0442201 339.062851 14.0442201 341.235311 0.876542754 342.646253 14.0442201 373.018333 52.9978734 476.707095 52.9978734 497.182356 78.9481965 500.938319 111.224718 497.182356 115.075319 307.865542 111.224718 298.806028 52.9978734 298.806028 107.50413 125.240353 107.357145 127.852257 73.9234995 120.675344 73.9234995 120.675344 69.1848626 114.219206 69.1848626 114.219206 60.0556529 107.631299 60.0556529 107.631299 51.6207489 102.797058 51.6207489 102.797058 43.133969 97.4330304 43.133969 97.4330304 34.0638068 92.7918339 34.0638068 92.7918339 27.5267847 86.4533662 27.5267847 86.4533662 20.0906902 83.9616852 20.0906902 83.9616852 14.0442201"></polyline>
+        <polyline id="path-31" points="0.370420688 49.8895419 46.0135279 0.945493912 150.341717 0.859571901 213.199654 71.9454939 191.08025 89.5259979 76.7717919 89.5259979"></polyline>
+        <polygon id="path-33" points="0.766888501 58.5132579 69.6368121 3.58974017 208.587003 0.93147433 242.490355 34.0736951 276.193618 52.9435039 276.193618 58.5132579"></polygon>
     </defs>
     <g id="galerie_picture_974" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group-14" transform="translate(657.000000, 322.000000)">
-            <g id="Path-33" transform="translate(0.000000, 198.000000)">
-                <mask id="mask-3" fill="white">
-                    <use xlink:href="#path-2"></use>
+        <g id="Group-14" transform="translate(657.000000, 519.000000)">
+            <g id="first_bottom" transform="translate(0.000000, 0.517557)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
                 </mask>
-                <use id="Path-11" stroke="#FFFFFF" stroke-width="2" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
-                <g id="Path-9" mask="url(#mask-3)" stroke="#FFFFFF" stroke-width="0.5">
-                    <g transform="translate(319.352357, 93.704290) rotate(-20.000000) translate(-319.352357, -93.704290) translate(141.852357, -151.795710)">
-                        <line x1="22.7246835" y1="59.0468609" x2="22.7246835" y2="429.725888" id="Path-8"></line>
-                        <line x1="29.0664557" y1="67.4051415" x2="29.0664557" y2="490.796004" id="Path-8"></line>
-                        <line x1="36.4651899" y1="53.2542899" x2="36.4651899" y2="476.645153" id="Path-8"></line>
-                        <line x1="42.806962" y1="6.33502538" x2="42.806962" y2="429.725888" id="Path-8"></line>
-                        <line x1="49.1487342" y1="6.33502538" x2="49.1487342" y2="429.725888" id="Path-8"></line>
-                        <line x1="56.5474684" y1="6.33502538" x2="56.5474684" y2="429.725888" id="Path-8"></line>
-                        <line x1="62.8892405" y1="6.33502538" x2="62.8892405" y2="429.725888" id="Path-8"></line>
-                        <line x1="70.2879747" y1="6.33502538" x2="70.2879747" y2="429.725888" id="Path-8"></line>
-                        <line x1="76.6297468" y1="6.33502538" x2="76.6297468" y2="429.725888" id="Path-8"></line>
-                        <path d="M67.0800083,0.557141944 L67.0800083,164.302838 M82.971519,172.090278 L82.971519,429.725888" id="Shape"></path>
-                        <path d="M74.4787425,0.557141944 L74.4787425,166.962997 M90.3702532,174.531944 L90.3702532,429.725888" id="Shape"></path>
-                        <path d="M80.8205147,0.557141944 L80.8205147,169.583597 M96.7120253,176.846709 L96.7120253,429.725888" id="Shape"></path>
-                        <path d="M88.2192488,0.557141944 L88.2192488,172.508021 M104.110759,179.244886 L104.110759,429.725888" id="Shape"></path>
-                        <path d="M94.561021,0.557141944 L94.561021,176.305403 M110.452532,183.60907 L110.452532,429.725888" id="Shape"></path>
-                        <path d="M100.902793,0.557141944 L100.902793,177.278683 M116.794304,187.121429 L116.794304,429.725888" id="Shape"></path>
-                        <path d="M108.301527,0.557141944 L108.301527,180.895183 M124.193038,190.570534 L124.193038,429.725888" id="Shape"></path>
-                        <path d="M114.643299,0.557141944 L114.643299,185.290032 M130.53481,192.478875 L130.53481,429.725888" id="Shape"></path>
-                        <path d="M122.042034,0.557141944 L122.042034,188.190604 M137.933544,194.890426 L137.933544,429.725888" id="Shape"></path>
-                        <path d="M128.383806,0.557141944 L128.383806,190.626336 M144.275316,197.490009 L144.275316,429.725888" id="Shape"></path>
-                        <path d="M134.725578,0.557141944 L134.725578,192.898291 M150.617089,199.868067 L150.617089,429.725888" id="Shape"></path>
-                        <path d="M142.124312,0.557141944 L142.124312,195.579151 M158.015823,202.755967 L158.015823,429.725888" id="Shape"></path>
-                        <path d="M148.466084,0.557141944 L148.466084,197.834585 M164.357595,204.87717 L164.357595,429.725888" id="Shape"></path>
-                        <path d="M155.864818,0.557141944 L155.462491,200.341715 M171.756329,208.443392 L171.756329,429.725888" id="Shape"></path>
-                        <path d="M162.206591,0.557141944 C162.233555,135.251009 162.247037,202.597942 162.247037,202.597942 M178.098101,202.764785 L178.098101,429.725888" id="Shape"></path>
-                        <path d="M168.548363,0.557141944 L169.086498,205.295173 M184.439873,205.03035 L184.439873,429.725888" id="Shape"></path>
-                        <path d="M175.947097,0.557141944 L175.947097,200.728154 M191.838608,207.711867 L191.838608,429.725888" id="Shape"></path>
-                        <path d="M182.288869,0.557141944 L182.288869,203.075703 M198.18038,210.050842 L198.18038,429.725888" id="Shape"></path>
-                        <path d="M189.687603,0.557141944 L189.687603,205.629909 M205.579114,212.420874 L205.579114,429.725888" id="Shape"></path>
-                        <path d="M196.029375,0.557141944 L196.029375,208.113401 M211.920886,214.909023 L211.920886,429.725888" id="Shape"></path>
-                        <path d="M202.371148,0.557141944 L202.371148,210.386635 M218.262658,217.377985 L218.262658,429.725888" id="Shape"></path>
-                        <path d="M209.769882,0.557141944 L209.769882,212.948896 M225.661392,219.762356 L225.661392,429.725888" id="Shape"></path>
-                        <path d="M216.111654,0.557141944 L216.111654,215.249663 M232.003165,222.342237 L232.003165,429.725888" id="Shape"></path>
-                        <path d="M223.510388,0.557141944 L223.510388,218.097454 M239.401899,224.988698 L239.401899,429.725888" id="Shape"></path>
-                        <path d="M230.462924,3.08496595 L230.462924,220.625278" id="Shape-Copy"></path>
-                        <path d="M236.42224,5.25167224 L236.42224,222.791984" id="Shape-Copy-2"></path>
-                        <line x1="245.743671" y1="6.33502538" x2="245.743671" y2="429.725888" id="Path-8"></line>
-                        <line x1="252.085443" y1="6.33502538" x2="252.085443" y2="429.725888" id="Path-8"></line>
-                        <line x1="259.484177" y1="6.33502538" x2="259.484177" y2="429.725888" id="Path-8"></line>
-                        <line x1="265.825949" y1="6.33502538" x2="265.825949" y2="429.725888" id="Path-8"></line>
-                        <line x1="273.224684" y1="6.33502538" x2="273.224684" y2="429.725888" id="Path-8"></line>
-                        <line x1="279.566456" y1="6.33502538" x2="279.566456" y2="429.725888" id="Path-8"></line>
-                        <line x1="285.908228" y1="6.33502538" x2="285.908228" y2="429.725888" id="Path-8"></line>
-                        <line x1="293.306962" y1="6.33502538" x2="293.306962" y2="429.725888" id="Path-8"></line>
-                        <line x1="299.648734" y1="6.33502538" x2="299.648734" y2="429.725888" id="Path-8"></line>
-                        <line x1="307.047468" y1="6.33502538" x2="307.047468" y2="429.725888" id="Path-8"></line>
-                        <line x1="313.389241" y1="6.33502538" x2="313.389241" y2="429.725888" id="Path-8"></line>
-                        <line x1="319.731013" y1="6.33502538" x2="319.731013" y2="429.725888" id="Path-8"></line>
-                        <line x1="327.129747" y1="6.33502538" x2="327.129747" y2="429.725888" id="Path-8"></line>
-                        <line x1="333.471519" y1="6.33502538" x2="333.471519" y2="429.725888" id="Path-8"></line>
-                        <line x1="340.870253" y1="6.33502538" x2="340.870253" y2="429.725888" id="Path-8"></line>
-                        <line x1="347.212025" y1="6.33502538" x2="347.212025" y2="429.725888" id="Path-8"></line>
-                        <line x1="353.553797" y1="6.33502538" x2="353.553797" y2="429.725888" id="Path-8"></line>
-                        <line x1="17.4398734" y1="49.5443228" x2="17.4398734" y2="420.22335" id="Path-8-Copy"></line>
-                        <line x1="0.528481013" y1="174.98185" x2="0.528481013" y2="191.842829" id="Path"></line>
-                        <line x1="6.87025316" y1="6.33502538" x2="6.87025316" y2="429.725888" id="Path-8"></line>
-                        <line x1="13.2120253" y1="6.33502538" x2="13.2120253" y2="429.725888" id="Path-8"></line>
+                <g id="Path-11"></g>
+                <g id="Group-3" mask="url(#mask-2)" stroke-width="0.5">
+                    <g transform="translate(93.490582, 0.000000)">
+                        <line x1="35.5539798" y1="6.99618293" x2="48.2674841" y2="112.811912" id="Path-8" stroke="#FFFFFF" transform="translate(41.910732, 59.904047) rotate(-20.000000) translate(-41.910732, -59.904047) "></line>
+                        <line x1="43.3423219" y1="6.88496496" x2="56.0558263" y2="113.14056" id="Path-8" stroke="#FFFFFF" transform="translate(49.699074, 60.012763) rotate(-20.000000) translate(-49.699074, -60.012763) "></line>
+                        <line x1="50.1816321" y1="6.86995793" x2="62.8951365" y2="112.96732" id="Path-8" stroke="#FFFFFF" transform="translate(56.538384, 59.918639) rotate(-20.000000) translate(-56.538384, -59.918639) "></line>
+                        <line x1="56.9101061" y1="6.73655047" x2="69.6236105" y2="112.989186" id="Path-8" stroke="#FFFFFF" transform="translate(63.266858, 59.862868) rotate(-20.000000) translate(-63.266858, -59.862868) "></line>
+                        <line x1="63.6805542" y1="6.89169853" x2="76.3940586" y2="112.953141" id="Path-8" stroke="#FFFFFF" transform="translate(70.037306, 59.922420) rotate(-20.000000) translate(-70.037306, -59.922420) "></line>
+                        <line x1="71.588031" y1="6.82488782" x2="84.3015353" y2="113.206277" id="Path-8" stroke="#FFFFFF" transform="translate(77.944783, 60.015582) rotate(-20.000000) translate(-77.944783, -60.015582) "></line>
+                        <line x1="78.3221063" y1="6.78887189" x2="91.0356107" y2="113.16153" id="Path-8" stroke="#FFFFFF" transform="translate(84.678859, 59.975201) rotate(-20.000000) translate(-84.678859, -59.975201) "></line>
+                        <line x1="86.251078" y1="6.92132447" x2="98.9645824" y2="113.333516" id="Path-8" stroke="#FFFFFF" transform="translate(92.607830, 60.127420) rotate(-20.000000) translate(-92.607830, -60.127420) "></line>
+                        <line x1="92.2871975" y1="2.68592353" x2="104.924593" y2="113.221286" id="Path-8" stroke="#FFFFFF" transform="translate(98.605895, 57.953605) rotate(-20.000000) translate(-98.605895, -57.953605) "></line>
+                        <line x1="80.9566087" y1="9.70581308" x2="130.956609" y2="108.279606" id="Path" stroke="url(#linearGradient-3)"></line>
+                        <line x1="88.7442433" y1="9.46971171" x2="138.744243" y2="108.333344" id="Path" stroke="url(#linearGradient-4)"></line>
+                        <line x1="95.4952563" y1="9.47586596" x2="145.495256" y2="108.067357" id="Path" stroke="url(#linearGradient-5)"></line>
+                        <line x1="103.268017" y1="9.19889929" x2="153.268017" y2="107.990595" id="Path" stroke="url(#linearGradient-6)"></line>
+                        <line x1="110.719972" y1="11.1308772" x2="160.719972" y2="108.166909" id="Path" stroke="url(#linearGradient-7)"></line>
+                        <line x1="117.880586" y1="12.2624003" x2="167.880586" y2="107.734009" id="Path" stroke="url(#linearGradient-8)"></line>
+                        <line x1="126.012786" y1="12.9729831" x2="176.012786" y2="108.023808" id="Path" stroke="url(#linearGradient-9)"></line>
+                        <line x1="132.624793" y1="12.5972228" x2="182.624793" y2="107.80381" id="Path" stroke="url(#linearGradient-10)"></line>
+                        <line x1="140.402128" y1="12.3328242" x2="190.402128" y2="107.839128" id="Path" stroke="url(#linearGradient-11)"></line>
+                        <line x1="146.895481" y1="12.1145968" x2="197.250554" y2="108.057499" id="Path" stroke="url(#linearGradient-12)"></line>
+                        <line x1="153.754864" y1="11.9088392" x2="204.023215" y2="107.629742" id="Path" stroke="url(#linearGradient-13)"></line>
+                        <line x1="161.422361" y1="12.1705373" x2="205.16216" y2="92.3236449" id="Path" stroke="url(#linearGradient-14)"></line>
+                        <line x1="168.379295" y1="12.1145968" x2="205.16216" y2="78.6784725" id="Path" stroke="url(#linearGradient-15)"></line>
+                        <line x1="175.167724" y1="9.9824426" x2="226.441509" y2="111.954026" id="Path" stroke="url(#linearGradient-16)"></line>
+                        <line x1="180.837655" y1="5.99521362" x2="233.837655" y2="111.820216" id="Path" stroke="url(#linearGradient-17)"></line>
+                        <line x1="187.571841" y1="5.95513402" x2="240.571841" y2="111.875472" id="Path" stroke="url(#linearGradient-18)"></line>
+                        <line x1="195.441509" y1="5.94441966" x2="248.441509" y2="111.954026" id="Path" stroke="url(#linearGradient-19)"></line>
+                        <line x1="202.200802" y1="5.97332359" x2="255.200802" y2="112.528015" id="Path" stroke="url(#linearGradient-20)"></line>
+                        <line x1="209.963937" y1="5.66990864" x2="262.963937" y2="112.67788" id="Path" stroke="url(#linearGradient-21)"></line>
+                        <line x1="216.774251" y1="5.83899064" x2="269.774251" y2="112.692786" id="Path" stroke="url(#linearGradient-22)"></line>
+                        <line x1="223.578002" y1="5.99004197" x2="276.578002" y2="112.658614" id="Path" stroke="url(#linearGradient-23)"></line>
+                        <line x1="231.346041" y1="5.70010177" x2="284.346041" y2="113.079124" id="Path" stroke="url(#linearGradient-24)"></line>
+                        <line x1="238.187728" y1="5.95538259" x2="291.187728" y2="113.27911" id="Path" stroke="url(#linearGradient-25)"></line>
+                        <line x1="246.045407" y1="5.91172704" x2="299.045407" y2="113.130828" id="Path" stroke="url(#linearGradient-26)"></line>
+                        <line x1="272.685751" y1="-0.434797066" x2="285.399255" y2="119.143472" id="Path-8" stroke="url(#linearGradient-27)" transform="translate(279.042503, 59.354337) rotate(-20.000000) translate(-279.042503, -59.354337) "></line>
+                        <line x1="279.418519" y1="-0.560846448" x2="292.132024" y2="119.181578" id="Path-8" stroke="#FFFFFF" transform="translate(285.775272, 59.310366) rotate(-20.000000) translate(-285.775272, -59.310366) "></line>
+                        <line x1="287.280947" y1="-0.548154294" x2="299.994452" y2="119.107669" id="Path-8" stroke="#FFFFFF" transform="translate(293.637700, 59.279757) rotate(-20.000000) translate(-293.637700, -59.279757) "></line>
+                        <line x1="294.074479" y1="-1" x2="306.787983" y2="119.805459" id="Path-8" stroke="#FFFFFF" transform="translate(300.431231, 59.402730) rotate(-20.000000) translate(-300.431231, -59.402730) "></line>
+                        <line x1="302.010789" y1="-0.589228918" x2="314.724293" y2="119.739451" id="Path-8" stroke="#FFFFFF" transform="translate(308.367541, 59.575111) rotate(-20.000000) translate(-308.367541, -59.575111) "></line>
+                        <line x1="308.841715" y1="-0.451692147" x2="321.555219" y2="120.053341" id="Path-8" stroke="#FFFFFF" transform="translate(315.198467, 59.800824) rotate(-20.000000) translate(-315.198467, -59.800824) "></line>
+                        <line x1="315.676248" y1="-0.37227549" x2="328.389752" y2="120.445172" id="Path-8" stroke="#FFFFFF" transform="translate(322.033000, 60.036449) rotate(-20.000000) translate(-322.033000, -60.036449) "></line>
+                        <line x1="323.3689" y1="-0.821874496" x2="336.082405" y2="119.900647" id="Path-8" stroke="#FFFFFF" transform="translate(329.725653, 59.539386) rotate(-20.000000) translate(-329.725653, -59.539386) "></line>
+                        <line x1="330.234052" y1="-0.813236121" x2="342.947557" y2="120.531505" id="Path-8" stroke="#FFFFFF" transform="translate(336.590804, 59.859134) rotate(-20.000000) translate(-336.590804, -59.859134) "></line>
+                        <line x1="338.090648" y1="-0.598365276" x2="350.804152" y2="120.223371" id="Path-8" stroke="#FFFFFF" transform="translate(344.447400, 59.812503) rotate(-20.000000) translate(-344.447400, -59.812503) "></line>
+                        <line x1="344.885853" y1="-0.639735974" x2="357.599357" y2="120.519881" id="Path-8" stroke="#FFFFFF" transform="translate(351.242605, 59.940072) rotate(-20.000000) translate(-351.242605, -59.940072) "></line>
+                        <line x1="351.674338" y1="-0.70265849" x2="364.387842" y2="120.801021" id="Path-8" stroke="#FFFFFF" transform="translate(358.031090, 60.049181) rotate(-20.000000) translate(-358.031090, -60.049181) "></line>
+                        <line x1="359.703012" y1="-0.285616042" x2="372.416517" y2="121.236278" id="Path-8" stroke="#FFFFFF" transform="translate(366.059764, 60.475331) rotate(-20.000000) translate(-366.059764, -60.475331) "></line>
+                        <line x1="366.346061" y1="-0.808144943" x2="379.059565" y2="121.177856" id="Path-8" stroke="#FFFFFF" transform="translate(372.702813, 60.184856) rotate(-20.000000) translate(-372.702813, -60.184856) "></line>
+                        <line x1="374.353667" y1="2.44689331" x2="387.067171" y2="118.65935" id="Path-8" stroke="#FFFFFF" transform="translate(380.710419, 60.553122) rotate(-20.000000) translate(-380.710419, -60.553122) "></line>
+                        <line x1="379.943236" y1="20.6270366" x2="392.656741" y2="94.1094351" id="Path-8" stroke="#FFFFFF" transform="translate(386.299989, 57.368236) rotate(-20.000000) translate(-386.299989, -57.368236) "></line>
+                        <line x1="28.9477381" y1="6.51181783" x2="41.6612424" y2="113.393734" id="Path-8-Copy" stroke="#FFFFFF" transform="translate(35.304490, 59.952776) rotate(-20.000000) translate(-35.304490, -59.952776) "></line>
+                        <line x1="15" y1="35.2816722" x2="27.9139059" y2="112.097688" id="Path" stroke="#FFFFFF" transform="translate(21.456953, 73.689680) rotate(-20.000000) translate(-21.456953, -73.689680) "></line>
+                        <line x1="17.4126287" y1="10.7658743" x2="30.1261331" y2="113.056732" id="Path-8" stroke="#FFFFFF" transform="translate(23.769381, 61.911303) rotate(-20.000000) translate(-23.769381, -61.911303) "></line>
+                        <line x1="23.4621125" y1="6.99783444" x2="36.1756169" y2="112.98221" id="Path-8" stroke="#FFFFFF" transform="translate(29.818865, 59.990022) rotate(-20.000000) translate(-29.818865, -59.990022) "></line>
                     </g>
                 </g>
             </g>
-            <polyline id="Path-2" stroke="#FFFFFF" stroke-width="2" points="195 254 226.818389 254 242.751416 257 298 257"></polyline>
-            <polyline id="Path-3" stroke="#FFFFFF" stroke-width="2" points="298 251 302.84502 244.231309 313 212"></polyline>
-            <line x1="298" y1="250.5" x2="373" y2="250.5" id="Path-4" stroke="#FFFFFF" stroke-width="2"></line>
-            <g id="Path-34" transform="translate(424.000000, 202.000000)">
-                <mask id="mask-5" fill="white">
-                    <use xlink:href="#path-4"></use>
+            <g id="first_top" transform="translate(0.000000, 0.691819)">
+                <mask id="mask-30" fill="white">
+                    <use xlink:href="#path-29"></use>
                 </mask>
-                <use id="Path-12" stroke="#FFFFFF" stroke-width="2" fill-opacity="0.05" fill="#FFFFFF" xlink:href="#path-4"></use>
-                <g id="Path-9-Copy" mask="url(#mask-5)" stroke="#FFFFFF" stroke-width="0.5">
-                    <g transform="translate(186.305434, 66.444417) rotate(-20.000000) translate(-186.305434, -66.444417) translate(2.305434, -146.055583)">
-                        <line x1="36.4070352" y1="52.8958683" x2="36.4070352" y2="139.9057" id="Path-8"></line>
-                        <line x1="42.7386935" y1="61.2833303" x2="42.7386935" y2="142.099206" id="Path-8"></line>
-                        <line x1="50.1256281" y1="47.0830738" x2="50.1256281" y2="144.471305" id="Path-8"></line>
-                        <line x1="56.4572864" y1="4.60643944e-17" x2="56.4572864" y2="146.888142" id="Path-8"></line>
-                        <line x1="62.7889447" y1="4.60643944e-17" x2="62.7889447" y2="149.550648" id="Path-8"></line>
-                        <line x1="70.1758794" y1="0" x2="70.1758794" y2="167.848191" id="Path"></line>
-                        <line x1="76.5075377" y1="0" x2="76.5075377" y2="424.869048" id="Path-8"></line>
-                        <line x1="83.8944724" y1="0" x2="83.8944724" y2="424.869048" id="Path-8"></line>
-                        <line x1="90.2261307" y1="0" x2="90.2261307" y2="424.869048" id="Path-8"></line>
-                        <line x1="96.5577889" y1="0" x2="96.5577889" y2="424.869048" id="Path-8"></line>
-                        <line x1="103.944724" y1="0" x2="103.944724" y2="424.869048" id="Path-8"></line>
-                        <line x1="110.276382" y1="0" x2="110.276382" y2="424.869048" id="Path-8"></line>
-                        <line x1="117.663317" y1="0" x2="117.663317" y2="424.869048" id="Path-8"></line>
-                        <line x1="123.994975" y1="0" x2="123.994975" y2="424.869048" id="Path-8"></line>
-                        <line x1="130.326633" y1="0" x2="130.326633" y2="424.869048" id="Path-8"></line>
-                        <line x1="137.713568" y1="0" x2="137.713568" y2="424.869048" id="Path-8"></line>
-                        <line x1="144.045226" y1="0" x2="144.045226" y2="424.869048" id="Path-8"></line>
-                        <line x1="151.432161" y1="0" x2="151.432161" y2="424.869048" id="Path-8"></line>
-                        <line x1="157.763819" y1="0" x2="157.763819" y2="424.869048" id="Path-8"></line>
-                        <line x1="164.095477" y1="0" x2="164.095477" y2="424.869048" id="Path-8"></line>
-                        <line x1="171.482412" y1="0" x2="171.482412" y2="424.869048" id="Path-8"></line>
-                        <line x1="177.81407" y1="0" x2="177.81407" y2="424.869048" id="Path-8"></line>
-                        <line x1="185.201005" y1="0" x2="185.201005" y2="424.869048" id="Path-8"></line>
-                        <line x1="191.532663" y1="0" x2="191.532663" y2="424.869048" id="Path-8"></line>
-                        <line x1="197.864322" y1="0" x2="197.864322" y2="424.869048" id="Path-8"></line>
-                        <line x1="205.251256" y1="0" x2="205.251256" y2="424.869048" id="Path-8"></line>
-                        <line x1="211.582915" y1="0" x2="211.582915" y2="424.869048" id="Path-8"></line>
-                        <line x1="218.969849" y1="0" x2="218.969849" y2="424.869048" id="Path-8"></line>
-                        <line x1="225.301508" y1="0" x2="225.301508" y2="424.869048" id="Path-8"></line>
-                        <line x1="231.633166" y1="0" x2="231.633166" y2="424.869048" id="Path-8"></line>
-                        <line x1="239.020101" y1="0" x2="239.020101" y2="424.869048" id="Path-8"></line>
-                        <line x1="245.351759" y1="0" x2="245.351759" y2="424.869048" id="Path-8"></line>
-                        <line x1="252.738693" y1="0" x2="252.738693" y2="424.869048" id="Path-8"></line>
-                        <line x1="259.070352" y1="0" x2="259.070352" y2="424.869048" id="Path-8"></line>
-                        <line x1="265.40201" y1="0" x2="265.40201" y2="424.869048" id="Path-8"></line>
-                        <line x1="272.788945" y1="0" x2="272.788945" y2="424.869048" id="Path-8"></line>
-                        <line x1="279.120603" y1="0" x2="279.120603" y2="424.869048" id="Path-8"></line>
-                        <line x1="286.507538" y1="0" x2="286.507538" y2="424.869048" id="Path-8"></line>
-                        <line x1="292.839196" y1="0" x2="292.839196" y2="424.869048" id="Path-8"></line>
-                        <line x1="299.170854" y1="0" x2="299.170854" y2="424.869048" id="Path-8"></line>
-                        <line x1="306.557789" y1="0" x2="306.557789" y2="424.869048" id="Path-8"></line>
-                        <line x1="312.889447" y1="0" x2="312.889447" y2="424.869048" id="Path-8"></line>
-                        <line x1="320.276382" y1="0" x2="320.276382" y2="424.869048" id="Path-8"></line>
-                        <line x1="326.60804" y1="0" x2="326.60804" y2="424.869048" id="Path-8"></line>
-                        <line x1="332.939698" y1="0" x2="332.939698" y2="424.869048" id="Path-8"></line>
-                        <line x1="340.326633" y1="0" x2="340.326633" y2="424.869048" id="Path-8"></line>
-                        <line x1="346.658291" y1="0" x2="346.658291" y2="424.869048" id="Path-8"></line>
-                        <line x1="354.045226" y1="0" x2="354.045226" y2="424.869048" id="Path-8"></line>
-                        <line x1="360.376884" y1="0" x2="360.376884" y2="424.869048" id="Path-8"></line>
-                        <line x1="366.708543" y1="0" x2="366.708543" y2="424.869048" id="Path-8"></line>
-                        <line x1="31.1306533" y1="43.3601541" x2="31.1306533" y2="137.589175" id="Path"></line>
-                        <line x1="0.527638191" y1="0" x2="0.527638191" y2="424.869048" id="Path-8"></line>
-                        <line x1="6.85929648" y1="0" x2="6.85929648" y2="424.869048" id="Path-8"></line>
-                        <line x1="14.2462312" y1="4.60643944e-17" x2="14.2462312" y2="131.748807" id="Path-8"></line>
-                        <line x1="20.5778894" y1="4.60643944e-17" x2="20.5778894" y2="133.851918" id="Path-8"></line>
-                        <line x1="26.9095477" y1="-7.54672974e-13" x2="26.9095477" y2="136.363673" id="Path-8"></line>
+                <use id="Path-11-Copy" stroke="#FFFFFF" stroke-width="2" fill="url(#linearGradient-28)" xlink:href="#path-29"></use>
+                <g id="Group-4" mask="url(#mask-30)" stroke="#FFFFFF" stroke-width="0.5">
+                    <g transform="translate(172.456646, -34.000000)">
+                        <line x1="-3.73216271e-13" y1="36.1598406" x2="28.3581502" y2="90.4367142" id="Path-Copy-24"></line>
+                        <line x1="3.70284492" y1="25.1870766" x2="36.1903204" y2="90.5542643" id="Path-Copy-23"></line>
+                        <line x1="9.02348208" y1="21.256725" x2="42.8917664" y2="90.2076849" id="Path-Copy-22"></line>
+                        <line x1="14.750755" y1="15.5906314" x2="50.7100851" y2="90.2143819" id="Path-Copy-21"></line>
+                        <line x1="19.6903135" y1="10.5350179" x2="58.3998508" y2="91.3363479" id="Path-Copy-20"></line>
+                        <line x1="21.5291924" y1="0.308181156" x2="66.2183985" y2="92.8234667" id="Path-Copy-19"></line>
+                        <line x1="37.1441006" y1="17.4216625" x2="74.3082011" y2="93.0679854" id="Path-Copy-18"></line>
+                        <line x1="50.2060234" y1="33.1128745" x2="81.1304545" y2="93.3479053" id="Path-Copy-17"></line>
+                        <line x1="55.1934936" y1="26.0550411" x2="88.9423589" y2="93.4297751" id="Path-Copy-16"></line>
+                        <line x1="62.5343456" y1="27.7319349" x2="95.7662922" y2="93.6456104" id="Path-Copy-15"></line>
+                        <line x1="72.1480009" y1="34.3439551" x2="102.539419" y2="93.219948" id="Path-Copy-14"></line>
+                        <line x1="76.2738214" y1="26.0427832" x2="110.027601" y2="93.4296049" id="Path-Copy-13"></line>
+                        <line x1="86.0894726" y1="34.3971519" x2="116.306279" y2="93.396452" id="Path-Copy-12"></line>
+                        <line x1="90.2777013" y1="25.9698418" x2="123.843879" y2="94.1120398" id="Path-Copy-11"></line>
+                        <line x1="97.3541521" y1="25.3734107" x2="128.446016" y2="86.7569129" id="Path-Copy-10"></line>
+                        <line x1="99.9039163" y1="14.3622531" x2="135.172667" y2="86.7644875" id="Path-Copy-9"></line>
+                        <line x1="103.86273" y1="4.06494975" x2="143.074589" y2="86.9019844" id="Path-Copy-8"></line>
+                        <polyline id="Path-Copy-7" points="110.514844 3.86773679 112.20807 8.37438967 149.72832 87.0364208"></polyline>
+                        <line x1="116.931573" y1="1.66097657e-12" x2="157.427553" y2="86.8808353" id="Path-Copy-6"></line>
+                        <line x1="123.850379" y1="0.452772845" x2="164.235353" y2="86.9350595" id="Path-Copy-5"></line>
+                        <line x1="130.458137" y1="0.072385596" x2="171.005156" y2="86.8656936" id="Path-Copy-4"></line>
+                        <line x1="138.402785" y1="0.286446994" x2="178.71602" y2="86.9185321" id="Path-Copy-3"></line>
+                        <line x1="146.272789" y1="3.31204658" x2="185.399068" y2="86.707492" id="Path-Copy-2"></line>
+                        <line x1="160.892268" y1="21.4598962" x2="193.412107" y2="87.0098498" id="Path-Copy"></line>
                     </g>
                 </g>
             </g>
-            <g id="Path-35" transform="translate(601.000000, 244.000000)">
-                <mask id="mask-7" fill="white">
-                    <use xlink:href="#path-6"></use>
+            <g id="middle" transform="translate(423.629579, 4.054506)">
+                <mask id="mask-32" fill="white">
+                    <use xlink:href="#path-31"></use>
                 </mask>
-                <use id="Path-13" stroke="#FFFFFF" stroke-width="2" fill-opacity="0.05" fill="#FFFFFF" xlink:href="#path-6"></use>
-                <g id="Path-9-Copy" mask="url(#mask-7)" stroke="#FFFFFF" stroke-width="0.5">
-                    <g transform="translate(50.163234, -18.815612) rotate(-20.000000) translate(-50.163234, 18.815612) translate(-133.836766, -260.815612)">
-                        <line x1="36.4827586" y1="52.647328" x2="36.4827586" y2="422.872727" id="Path-8"></line>
-                        <line x1="42.8275862" y1="60.99538" x2="42.8275862" y2="483.868107" id="Path-8"></line>
-                        <line x1="50.2298851" y1="46.8618459" x2="50.2298851" y2="469.734573" id="Path-8"></line>
-                        <line x1="56.5747126" y1="0" x2="56.5747126" y2="422.872727" id="Path-8"></line>
-                        <line x1="62.9195402" y1="0" x2="62.9195402" y2="422.872727" id="Path-8"></line>
-                        <line x1="70.3218391" y1="0" x2="70.3218391" y2="422.872727" id="Path-8"></line>
-                        <line x1="76.6666667" y1="0" x2="76.6666667" y2="422.872727" id="Path-8"></line>
-                        <line x1="84.0689655" y1="0" x2="84.0689655" y2="422.872727" id="Path-8"></line>
-                        <line x1="90.4137931" y1="0" x2="90.4137931" y2="422.872727" id="Path-8"></line>
-                        <line x1="96.7586207" y1="0" x2="96.7586207" y2="422.872727" id="Path-8"></line>
-                        <line x1="104.16092" y1="0" x2="104.16092" y2="422.872727" id="Path-8"></line>
-                        <line x1="110.505747" y1="0" x2="110.505747" y2="422.872727" id="Path-8"></line>
-                        <line x1="117.908046" y1="0" x2="117.908046" y2="422.872727" id="Path-8"></line>
-                        <line x1="124.252874" y1="0" x2="124.252874" y2="422.872727" id="Path-8"></line>
-                        <line x1="130.597701" y1="0" x2="130.597701" y2="422.872727" id="Path-8"></line>
-                        <line x1="138" y1="0" x2="138" y2="422.872727" id="Path-8"></line>
-                        <line x1="144.344828" y1="0" x2="144.344828" y2="422.872727" id="Path-8"></line>
-                        <line x1="151.747126" y1="0" x2="151.747126" y2="422.872727" id="Path-8"></line>
-                        <line x1="158.091954" y1="0" x2="158.091954" y2="422.872727" id="Path-8"></line>
-                        <line x1="164.436782" y1="0" x2="164.436782" y2="422.872727" id="Path-8"></line>
-                        <line x1="171.83908" y1="0" x2="171.83908" y2="422.872727" id="Path-8"></line>
-                        <line x1="178.183908" y1="0" x2="178.183908" y2="422.872727" id="Path-8"></line>
-                        <line x1="185.586207" y1="0" x2="185.586207" y2="422.872727" id="Path-8"></line>
-                        <line x1="191.931034" y1="0" x2="191.931034" y2="422.872727" id="Path-8"></line>
-                        <line x1="198.275862" y1="0" x2="198.275862" y2="422.872727" id="Path-8"></line>
-                        <line x1="205.678161" y1="0" x2="205.678161" y2="422.872727" id="Path-8"></line>
-                        <line x1="212.022989" y1="0" x2="212.022989" y2="422.872727" id="Path-8"></line>
-                        <line x1="219.425287" y1="0" x2="219.425287" y2="422.872727" id="Path-8"></line>
-                        <line x1="225.770115" y1="0" x2="225.770115" y2="422.872727" id="Path-8"></line>
-                        <line x1="232.114943" y1="0" x2="232.114943" y2="422.872727" id="Path-8"></line>
-                        <line x1="239.517241" y1="0" x2="239.517241" y2="422.872727" id="Path-8"></line>
-                        <line x1="245.862069" y1="0" x2="245.862069" y2="422.872727" id="Path-8"></line>
-                        <line x1="253.264368" y1="0" x2="253.264368" y2="422.872727" id="Path-8"></line>
-                        <line x1="259.609195" y1="0" x2="259.609195" y2="422.872727" id="Path-8"></line>
-                        <line x1="265.954023" y1="0" x2="265.954023" y2="422.872727" id="Path-8"></line>
-                        <line x1="273.356322" y1="0" x2="273.356322" y2="422.872727" id="Path-8"></line>
-                        <line x1="279.701149" y1="0" x2="279.701149" y2="422.872727" id="Path-8"></line>
-                        <line x1="287.103448" y1="0" x2="287.103448" y2="422.872727" id="Path-8"></line>
-                        <line x1="293.448276" y1="0" x2="293.448276" y2="422.872727" id="Path-8"></line>
-                        <line x1="299.793103" y1="0" x2="299.793103" y2="422.872727" id="Path-8"></line>
-                        <line x1="307.195402" y1="0" x2="307.195402" y2="422.872727" id="Path-8"></line>
-                        <line x1="313.54023" y1="0" x2="313.54023" y2="422.872727" id="Path-8"></line>
-                        <line x1="320.942529" y1="0" x2="320.942529" y2="422.872727" id="Path-8"></line>
-                        <line x1="327.287356" y1="0" x2="327.287356" y2="422.872727" id="Path-8"></line>
-                        <line x1="333.632184" y1="0" x2="333.632184" y2="422.872727" id="Path-8"></line>
-                        <line x1="341.034483" y1="0" x2="341.034483" y2="422.872727" id="Path-8"></line>
-                        <line x1="347.37931" y1="0" x2="347.37931" y2="422.872727" id="Path-8"></line>
-                        <line x1="354.781609" y1="0" x2="354.781609" y2="422.872727" id="Path-8"></line>
-                        <line x1="361.126437" y1="0" x2="361.126437" y2="422.872727" id="Path-8"></line>
-                        <line x1="367.471264" y1="0" x2="367.471264" y2="422.872727" id="Path-8"></line>
-                        <line x1="31.1954023" y1="43.1564189" x2="31.1954023" y2="413.381818" id="Path-8-Copy"></line>
-                        <line x1="0.528735632" y1="0" x2="0.528735632" y2="422.872727" id="Path-8"></line>
-                        <line x1="6.87356322" y1="0" x2="6.87356322" y2="422.872727" id="Path-8"></line>
-                        <line x1="14.2758621" y1="0" x2="14.2758621" y2="422.872727" id="Path-8"></line>
-                        <line x1="20.6206897" y1="0" x2="20.6206897" y2="422.872727" id="Path-8"></line>
-                        <line x1="26.9655172" y1="0" x2="26.9655172" y2="422.872727" id="Path-8"></line>
+                <use id="Path-12" stroke="#FFFFFF" stroke-width="2" fill-opacity="0.05" fill="#FFFFFF" xlink:href="#path-31"></use>
+                <g id="Group-2" mask="url(#mask-32)" stroke="#FFFFFF" stroke-width="0.5">
+                    <g transform="translate(-27.590437, -66.542486)">
+                        <line x1="27.5244792" y1="30.8985922" x2="35.7053539" y2="120.290338" id="Path-8" transform="translate(31.614917, 75.594465) rotate(-20.000000) translate(-31.614917, -75.594465) "></line>
+                        <line x1="33.2637595" y1="25.3455435" x2="41.4446342" y2="120.355412" id="Path-8" transform="translate(37.354197, 72.850478) rotate(-20.000000) translate(-37.354197, -72.850478) "></line>
+                        <line x1="40.0204937" y1="19.3993992" x2="48.2013684" y2="120.233602" id="Path-8" transform="translate(44.110931, 69.816500) rotate(-20.000000) translate(-44.110931, -69.816500) "></line>
+                        <line x1="45.7507466" y1="13.5718235" x2="53.9316213" y2="120.523598" id="Path-8" transform="translate(49.841184, 67.047711) rotate(-20.000000) translate(-49.841184, -67.047711) "></line>
+                        <line x1="51.6969585" y1="8.72334212" x2="59.8778332" y2="121.021184" id="Path-8" transform="translate(55.787396, 64.872263) rotate(-20.000000) translate(-55.787396, -64.872263) "></line>
+                        <line x1="61.0790899" y1="1.74112157" x2="69.2599645" y2="136.361888" id="Path" transform="translate(65.169527, 69.051505) rotate(-20.000000) translate(-65.169527, -69.051505) "></line>
+                        <line x1="71.8145974" y1="-2.47700292" x2="79.9954721" y2="162.546081" id="Path-8" transform="translate(75.905035, 80.034539) rotate(-20.000000) translate(-75.905035, -80.034539) "></line>
+                        <line x1="79.6207993" y1="-2.79959569" x2="87.801674" y2="162.567497" id="Path-8" transform="translate(83.711237, 79.883950) rotate(-20.000000) translate(-83.711237, -79.883950) "></line>
+                        <line x1="86.3424671" y1="-2.93478907" x2="94.5233418" y2="162.61289" id="Path-8" transform="translate(90.432904, 79.839051) rotate(-20.000000) translate(-90.432904, -79.839051) "></line>
+                        <line x1="92.9961761" y1="-2.91824249" x2="101.177051" y2="162.133113" id="Path-8" transform="translate(97.086613, 79.607435) rotate(-20.000000) translate(-97.086613, -79.607435) "></line>
+                        <line x1="100.991719" y1="-2.85135626" x2="109.172594" y2="162.805471" id="Path-8" transform="translate(105.082157, 79.977058) rotate(-20.000000) translate(-105.082157, -79.977058) "></line>
+                        <line x1="107.678283" y1="-2.85118638" x2="115.859158" y2="162.522606" id="Path-8" transform="translate(111.768720, 79.835710) rotate(-20.000000) translate(-111.768720, -79.835710) "></line>
+                        <line x1="115.514971" y1="-2.75029907" x2="123.695845" y2="162.28806" id="Path-8" transform="translate(119.605408, 79.768881) rotate(-20.000000) translate(-119.605408, -79.768881) "></line>
+                        <line x1="122.20922" y1="-2.93847088" x2="130.390095" y2="162.235771" id="Path-8" transform="translate(126.299658, 79.648650) rotate(-20.000000) translate(-126.299658, -79.648650) "></line>
+                        <line x1="129.028457" y1="-2.86634392" x2="137.209332" y2="162.60998" id="Path-8" transform="translate(133.118894, 79.871818) rotate(-20.000000) translate(-133.118894, -79.871818) "></line>
+                        <line x1="136.833681" y1="-2.66445907" x2="145.014556" y2="162.101547" id="Path-8" transform="translate(140.924119, 79.718544) rotate(-20.000000) translate(-140.924119, -79.718544) "></line>
+                        <line x1="143.659248" y1="-3" x2="151.840122" y2="162.918206" id="Path-8" transform="translate(147.749685, 79.959103) rotate(-20.000000) translate(-147.749685, -79.959103) "></line>
+                        <line x1="151.396053" y1="-2.90272671" x2="159.576928" y2="162.138424" id="Path-8" transform="translate(155.486490, 79.617849) rotate(-20.000000) translate(-155.486490, -79.617849) "></line>
+                        <line x1="158.245422" y1="-2.83225096" x2="166.426297" y2="162.679863" id="Path-8" transform="translate(162.335860, 79.923806) rotate(-20.000000) translate(-162.335860, -79.923806) "></line>
+                        <line x1="164.901094" y1="-2.96816691" x2="173.081969" y2="162.363335" id="Path-8" transform="translate(168.991532, 79.697584) rotate(-20.000000) translate(-168.991532, -79.697584) "></line>
+                        <line x1="172.438849" y1="-2.72059687" x2="180.93426" y2="162.123307" id="Path-8" transform="translate(176.686555, 79.701355) rotate(-20.000000) translate(-176.686555, -79.701355) "></line>
+                        <line x1="182.81907" y1="10.814164" x2="190.158225" y2="162.044879" id="Path-8" transform="translate(186.488647, 86.429521) rotate(-20.000000) translate(-186.488647, -86.429521) "></line>
+                        <line x1="191.77421" y1="25.4888" x2="199.752209" y2="157.735666" id="Path-8" transform="translate(195.763209, 91.612233) rotate(-20.000000) translate(-195.763209, -91.612233) "></line>
+                        <line x1="199.018751" y1="36.4015323" x2="207.586999" y2="153.271297" id="Path-8" transform="translate(203.302875, 94.836415) rotate(-20.000000) translate(-203.302875, -94.836415) "></line>
+                        <line x1="207.461466" y1="49.9770583" x2="216.136312" y2="148.43854" id="Path-8" transform="translate(211.798889, 99.207799) rotate(-20.000000) translate(-211.798889, -99.207799) "></line>
+                        <line x1="22.621096" y1="35.3304977" x2="30.8019707" y2="119.768781" id="Path" transform="translate(26.711533, 77.549639) rotate(-20.000000) translate(-26.711533, -77.549639) "></line>
+                        <line x1="13" y1="44.3515052" x2="21.1808747" y2="119.58872" id="Path-8" transform="translate(17.090437, 81.970112) rotate(-20.000000) translate(-17.090437, -81.970112) "></line>
+                        <line x1="18.847688" y1="39.0950184" x2="27.0285626" y2="119.952927" id="Path-8" transform="translate(22.938125, 79.523973) rotate(-20.000000) translate(-22.938125, -79.523973) "></line>
                     </g>
                 </g>
             </g>
-            <polyline id="Path-14" stroke="#FFFFFF" stroke-width="2" points="866 302 866 426 848.890979 426 841.239727 415.426447 803.138257 402.939864 789.785305 383.940756 739 383.940756"></polyline>
-            <polyline id="Path-15" stroke="#FFFFFF" stroke-width="2" points="754 462 754 413.286597 754 405.790743 731.593345 375.285328 712.032787 375.285328 712.032787 368.805994 706.211402 364 701.313922 371.960535 701.313922 375.285328 681.935405 375.285328 670.879863 368.805994 652.043553 368.805994 634 379.167841"></polyline>
-            <polyline id="Path-16" stroke="#FFFFFF" stroke-width="2" points="754 413 649 413 666.372482 374"></polyline>
-            <polyline id="Path-18" stroke="#FFFFFF" stroke-width="2" points="866 321.430634 940.582089 321.430634 958.764268 316 993.115861 337.645069 1060.97 337.645069 1060.97 333.978299 1167.85438 333.978299 1167.85438 326.822535 1193.71159 326.822535 1198.63168 333.978299 1198.63168 343.145225 1216.83451 343.145225 1217.52068 337.645069 1245.6061 337.645069 1251.12191 340.300796 1251.12191 393.516333 1251.12191 407.895703 1275 433.682276 1275 450"></polyline>
-            <line x1="898.604204" y1="320.655946" x2="898.602611" y2="340.073878" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(898.603408, 330.364912) rotate(-20.000000) translate(-898.603408, -330.364912) "></line>
-            <line x1="905.179056" y1="320.448774" x2="905.177506" y2="339.34877" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(905.178281, 329.898772) rotate(-20.000000) translate(-905.178281, -329.898772) "></line>
-            <line x1="913.241934" y1="320.996311" x2="913.240385" y2="339.869207" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(913.241159, 330.432759) rotate(-20.000000) translate(-913.241159, -330.432759) "></line>
-            <line x1="919.930241" y1="320.909725" x2="919.928703" y2="339.647017" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(919.929472, 330.278371) rotate(-20.000000) translate(-919.929472, -330.278371) "></line>
-            <line x1="926.697287" y1="320.678919" x2="926.695701" y2="340.001661" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(926.696494, 330.340290) rotate(-20.000000) translate(-926.696494, -330.340290) "></line>
-            <line x1="934.539981" y1="320.776901" x2="934.538424" y2="339.761519" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(934.539202, 330.269210) rotate(-20.000000) translate(-934.539202, -330.269210) "></line>
-            <line x1="941.322616" y1="320.981192" x2="941.321075" y2="339.766928" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(941.321846, 330.374060) rotate(-20.000000) translate(-941.321846, -330.374060) "></line>
-            <line x1="948.839975" y1="319.110591" x2="948.838286" y2="339.706724" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(948.839130, 329.408657) rotate(-20.000000) translate(-948.839130, -329.408657) "></line>
-            <line x1="955.313184" y1="317.40522" x2="955.311336" y2="339.920596" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(955.312260, 328.662908) rotate(-20.000000) translate(-955.312260, -328.662908) "></line>
-            <line x1="961.676104" y1="315.577994" x2="961.674129" y2="339.650224" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(961.675117, 327.614109) rotate(-20.000000) translate(-961.675117, -327.614109) "></line>
-            <line x1="970.50626" y1="320.77976" x2="970.504705" y2="339.734814" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(970.505482, 330.257287) rotate(-20.000000) translate(-970.505482, -330.257287) "></line>
-            <line x1="978.228411" y1="326.508717" x2="978.227355" y2="339.380801" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(978.227883, 332.944759) rotate(-20.000000) translate(-978.227883, -332.944759) "></line>
-            <line x1="987.284213" y1="333.058339" x2="987.283696" y2="339.358098" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(987.283955, 336.208219) rotate(-20.000000) translate(-987.283955, -336.208219) "></line>
-            <path d="" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(1070.543047, 1.500000) rotate(-20.000000) translate(-1070.543047, -1.500000) "></path>
-            <line x1="892.908938" y1="320.705783" x2="892.907386" y2="339.612712" id="Path-8-Copy" stroke="#FFFFFF" stroke-width="0.5" transform="translate(892.908162, 330.159247) rotate(-20.000000) translate(-892.908162, -330.159247) "></line>
-            <path d="" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(744.469707, 120.180990) rotate(-20.000000) translate(-744.469707, -120.180990) "></path>
-            <path d="" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(870.347587, 339.209844) rotate(-20.000000) translate(-870.347587, -339.209844) "></path>
-            <line x1="874.874339" y1="320.858854" x2="874.872835" y2="339.188855" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(874.873587, 330.023855) rotate(-20.000000) translate(-874.873587, -330.023855) "></line>
-            <line x1="881.682985" y1="320.616402" x2="881.681413" y2="339.783743" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(881.682199, 330.200073) rotate(-20.000000) translate(-881.682199, -330.200073) "></line>
-            <line x1="888.338387" y1="320.395543" x2="888.336819" y2="339.514947" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(888.337603, 329.955245) rotate(-20.000000) translate(-888.337603, -329.955245) "></line>
-            <polyline id="Path-19" stroke="#FFFFFF" stroke-width="2" points="866 339.5 929.92078 339.5 943.287962 339.5 990 339.5"></polyline>
-            <path d="M496.674362,467 L500,360 L417.43955,360 L417.43955,393.522703 C410.795177,393.522703 403.536006,393.522703 395.662038,393.522703 C387.78807,393.522703 376.358913,390.846321 361.374567,385.493558 L317.433949,379.543597 L298.886595,379.543597 L298.886595,393.522703 L270.851159,393.522703 L266.816668,401.758566 L256.375239,396.442555 L231.139011,393.522703 L223.083094,396.442555 L223.083094,418.120958 L206.122657,418.120958 L206.122657,396.442555 L182.770479,385.493558 L157.441833,385.493558 L145.430546,405.755281 L124.486905,406.066274 L124.486905,390.251999 L92.1179062,390.251999 L84.0895693,368.887378 L81.2042927,368.887378 L78.7506938,371.759803 L78.7506938,382.281734 L73.8214768,382.281734 L73.8214768,368.260129 L64.4707635,368.260129 L61.8845376,372.261191 L61.8845376,382.281734 L56.4847253,382.281734 L56.4847253,368.260129 L47.8332479,368.260129 L45.6213476,372.261191 L45.6213476,381.894368 L39.1922681,381.894368 L39.1922681,368.260129 L32.1026142,368.260129 L30.5738195,371.759803 L24,371.759803" id="Path-22" stroke="#FFFFFF" stroke-width="2" fill-opacity="0.05" fill="#FFFFFF"></path>
-            <line x1="307.5" y1="309" x2="307.5" y2="379" id="Path-23" stroke="#FFFFFF" stroke-width="2"></line>
-            <line x1="337.5" y1="310" x2="337.5" y2="380" id="Path-24" stroke="#FFFFFF" stroke-width="2"></line>
-            <line x1="500.5" y1="309" x2="500.5" y2="360" id="Path-25" stroke="#FFFFFF" stroke-width="2"></line>
-            <line x1="415.5" y1="311" x2="415.5" y2="359" id="Path-26" stroke="#FFFFFF" stroke-width="2"></line>
-            <polyline id="Path-27" stroke="#FFFFFF" stroke-width="2" points="634 302 634 325.433238 623.574748 325.433238 623.574748 337 619.92354 337 619.92354 325.433238 609.927877 325.433238 609.927877 337 606.308202 337 606.308202 325.433238 596.232102 325.433238 596.232102 337 591.273149 337 591.273149 325.433238 582.955272 325.433238 582.955272 337 578.402526 337 578.402526 325.433238 568.915628 325.433238 568.915628 337 564.840814 337 564.840814 325.433238 553.966374 325.433238 553.966374 336.076328 551.010307 336.076328 551.010307 325.433238 542 325.433238"></polyline>
-            <line x1="931.5" y1="340" x2="931.5" y2="377" id="Path-28" stroke="#FFFFFF" stroke-width="2"></line>
-            <line x1="943.5" y1="339" x2="943.5" y2="403" id="Path-28-Copy" stroke="#FFFFFF" stroke-width="2"></line>
-            <polyline id="Path-28-Copy-2" stroke="#FFFFFF" stroke-width="2" points="985.5 340 985.5 376.803698 985.5 407"></polyline>
-            <path d="M358.103169,384 L398.896831,384 C402.879028,352.015274 396.080085,335.68852 378.5,335.019738 C360.919915,334.350955 354.120972,350.677709 358.103169,384 Z" id="Path-32" stroke="#FFFFFF" stroke-width="2"></path>
-            <line x1="689.5" y1="302" x2="689.5" y2="374" id="Path-94" stroke="#FFFFFF" stroke-width="2"></line>
-            <line x1="23" y1="262.5" x2="46" y2="262.5" id="Path-95" stroke="#FFFFFF" stroke-width="2"></line>
-            <polyline id="Path-96" stroke="#FFFFFF" stroke-width="2" points="23 287 35.7872601 287 35.7872601 277.071312 41.2136014 277.071312 41.2136014 268.796794 46.789845 268.796794 46.789845 259.891563 51.8286793 259.891563 51.8286793 252 57 252"></polyline>
-            <line x1="38" y1="221.5" x2="43" y2="221.5" id="Path-97" stroke="#FFFFFF" stroke-width="2"></line>
-            <line x1="40.5" y1="263" x2="40.5" y2="221" id="Path-98" stroke="#FFFFFF" stroke-width="0.5"></line>
-            <path d="M23,263 C24.895143,261.504578 27.1672618,257.484456 29.8163564,250.939634 C32.4654509,244.394813 35.8599988,234.414934 40,221" id="Path-99" stroke="#FFFFFF" stroke-width="0.5"></path>
-            <line x1="0" y1="361.5" x2="19" y2="361.5" id="Path-100" stroke="#FFFFFF" stroke-width="2"></line>
-            <polyline id="Path-101" stroke="#FFFFFF" stroke-width="2" points="8 350 9 341 10 350"></polyline>
+            <g id="2nd-last" transform="translate(600.233111, 46.068526)">
+                <mask id="mask-34" fill="white">
+                    <use xlink:href="#path-33"></use>
+                </mask>
+                <use id="Path-13" stroke="#FFFFFF" stroke-width="2" fill-opacity="0.05" fill="#FFFFFF" xlink:href="#path-33"></use>
+                <g id="Group" mask="url(#mask-34)" stroke="#FFFFFF" stroke-width="0.5">
+                    <g transform="translate(-25.854276, -81.060027)" id="Path-8">
+                        <line x1="16" y1="51.4354" x2="18.7085524" y2="142.74971" transform="translate(17.354276, 97.092555) rotate(-20.000000) translate(-17.354276, -97.092555) "></line>
+                        <line x1="22.0727895" y1="47.2662564" x2="24.7813419" y2="143.186488" transform="translate(23.427066, 95.226372) rotate(-20.000000) translate(-23.427066, -95.226372) "></line>
+                        <line x1="28.0367796" y1="43.1324123" x2="30.745332" y2="142.990119" transform="translate(29.391056, 93.061266) rotate(-20.000000) translate(-29.391056, -93.061266) "></line>
+                        <line x1="35.0352093" y1="37.6026607" x2="37.7437617" y2="143.690178" transform="translate(36.389485, 90.646419) rotate(-20.000000) translate(-36.389485, -90.646419) "></line>
+                        <line x1="41.0573957" y1="33.7727319" x2="43.7659481" y2="143.509679" transform="translate(42.411672, 88.641205) rotate(-20.000000) translate(-42.411672, -88.641205) "></line>
+                        <line x1="47.987218" y1="28.6747251" x2="50.6957704" y2="143.400998" transform="translate(49.341494, 86.037862) rotate(-20.000000) translate(-49.341494, -86.037862) "></line>
+                        <line x1="53.9900663" y1="24.2480063" x2="56.6986187" y2="143.711028" transform="translate(55.344343, 83.979517) rotate(-20.000000) translate(-55.344343, -83.979517) "></line>
+                        <line x1="59.9483739" y1="19.8136806" x2="62.6569263" y2="143.783915" transform="translate(61.302650, 81.798798) rotate(-20.000000) translate(-61.302650, -81.798798) "></line>
+                        <line x1="67.0255182" y1="15.0483083" x2="69.7340706" y2="144.152128" transform="translate(68.379794, 79.600218) rotate(-20.000000) translate(-68.379794, -79.600218) "></line>
+                        <line x1="72.9913731" y1="10.5975644" x2="75.6999255" y2="144.282906" transform="translate(74.345649, 77.440235) rotate(-20.000000) translate(-74.345649, -77.440235) "></line>
+                        <line x1="79.9322484" y1="5.5724449" x2="82.6408008" y2="144.162074" transform="translate(81.286525, 74.867259) rotate(-20.000000) translate(-81.286525, -74.867259) "></line>
+                        <line x1="85.9862498" y1="1.59820409" x2="88.6948022" y2="144.300709" transform="translate(87.340526, 72.949457) rotate(-20.000000) translate(-87.340526, -72.949457) "></line>
+                        <line x1="92.3756652" y1="-0.338234435" x2="95.0842176" y2="144.244627" transform="translate(93.729941, 71.953196) rotate(-20.000000) translate(-93.729941, -71.953196) "></line>
+                        <line x1="100.347629" y1="-0.139798984" x2="103.056181" y2="144.566025" transform="translate(101.701905, 72.213113) rotate(-20.000000) translate(-101.701905, -72.213113) "></line>
+                        <line x1="106.995728" y1="-0.447251843" x2="109.70428" y2="144.302411" transform="translate(108.350004, 71.927580) rotate(-20.000000) translate(-108.350004, -71.927580) "></line>
+                        <line x1="114.771263" y1="-0.853491655" x2="117.479815" y2="144.149116" transform="translate(116.125539, 71.647812) rotate(-20.000000) translate(-116.125539, -71.647812) "></line>
+                        <line x1="121.631939" y1="-0.818997333" x2="124.340491" y2="144.711658" transform="translate(122.986215, 71.946330) rotate(-20.000000) translate(-122.986215, -71.946330) "></line>
+                        <line x1="128.353478" y1="-0.781721833" x2="131.06203" y2="144.506867" transform="translate(129.707754, 71.862572) rotate(-20.000000) translate(-129.707754, -71.862572) "></line>
+                        <line x1="136.228243" y1="-0.774502811" x2="138.936795" y2="144.485378" transform="translate(137.582519, 71.855437) rotate(-20.000000) translate(-137.582519, -71.855437) "></line>
+                        <line x1="142.826385" y1="-1.30815737" x2="145.534937" y2="144.173454" transform="translate(144.180661, 71.432648) rotate(-20.000000) translate(-144.180661, -71.432648) "></line>
+                        <line x1="150.76187" y1="-1.52996751" x2="153.470423" y2="144.714651" transform="translate(152.116147, 71.592342) rotate(-20.000000) translate(-152.116147, -71.592342) "></line>
+                        <line x1="157.479023" y1="-1.58913087" x2="160.187576" y2="144.582197" transform="translate(158.833300, 71.496533) rotate(-20.000000) translate(-158.833300, -71.496533) "></line>
+                        <line x1="164.20474" y1="-1.7000341" x2="166.913293" y2="144.548542" transform="translate(165.559017, 71.424254) rotate(-20.000000) translate(-165.559017, -71.424254) "></line>
+                        <line x1="172.021442" y1="-1.95014011" x2="174.729995" y2="144.465324" transform="translate(173.375719, 71.257592) rotate(-20.000000) translate(-173.375719, -71.257592) "></line>
+                        <line x1="178.827364" y1="-1.75931879" x2="181.535916" y2="144.570663" transform="translate(180.181640, 71.405672) rotate(-20.000000) translate(-180.181640, -71.405672) "></line>
+                        <line x1="186.703488" y1="-1.82998262" x2="189.41204" y2="144.634527" transform="translate(188.057764, 71.402272) rotate(-20.000000) translate(-188.057764, -71.402272) "></line>
+                        <line x1="193.352332" y1="-2.03760274" x2="196.060885" y2="144.275176" transform="translate(194.706608, 71.118787) rotate(-20.000000) translate(-194.706608, -71.118787) "></line>
+                        <line x1="200.073277" y1="-2.30020419" x2="202.78183" y2="144.366997" transform="translate(201.427553, 71.033396) rotate(-20.000000) translate(-201.427553, -71.033396) "></line>
+                        <line x1="207.925056" y1="-2.58848061" x2="210.633608" y2="144.514693" transform="translate(209.279332, 70.963106) rotate(-20.000000) translate(-209.279332, -70.963106) "></line>
+                        <line x1="214.631298" y1="-2.67460587" x2="217.33985" y2="144.349248" transform="translate(215.985574, 70.837321) rotate(-20.000000) translate(-215.985574, -70.837321) "></line>
+                        <line x1="222.512076" y1="-3" x2="225.220629" y2="144.693415" transform="translate(223.866352, 70.846707) rotate(-20.000000) translate(-223.866352, -70.846707) "></line>
+                        <line x1="229.654759" y1="-0.399213619" x2="232.363311" y2="144.239278" transform="translate(231.009035, 71.920032) rotate(-20.000000) translate(-231.009035, -71.920032) "></line>
+                        <line x1="238.420413" y1="10.6863222" x2="241.128966" y2="144.218548" transform="translate(239.774690, 77.452435) rotate(-20.000000) translate(-239.774690, -77.452435) "></line>
+                        <line x1="248.377481" y1="22.6754877" x2="251.086033" y2="143.657271" transform="translate(249.731757, 83.166379) rotate(-20.000000) translate(-249.731757, -83.166379) "></line>
+                        <line x1="256.865196" y1="32.4273212" x2="259.573748" y2="143.442979" transform="translate(258.219472, 87.935150) rotate(-20.000000) translate(-258.219472, -87.935150) "></line>
+                        <line x1="265.760792" y1="37.9846031" x2="268.469344" y2="143.480846" transform="translate(267.115068, 90.732725) rotate(-20.000000) translate(-267.115068, -90.732725) "></line>
+                        <line x1="273.251667" y1="42.4242268" x2="275.960219" y2="143.101172" transform="translate(274.605943, 92.762699) rotate(-20.000000) translate(-274.605943, -92.762699) "></line>
+                        <line x1="280.927726" y1="47.6884356" x2="283.636279" y2="142.914493" transform="translate(282.282002, 95.301464) rotate(-20.000000) translate(-282.282002, -95.301464) "></line>
+                    </g>
+                </g>
+            </g>
+            <line x1="898.604204" y1="123.655946" x2="898.602611" y2="143.073878" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(898.603408, 133.364912) rotate(-20.000000) translate(-898.603408, -133.364912) "></line>
+            <line x1="905.179056" y1="123.448774" x2="905.177506" y2="142.34877" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(905.178281, 132.898772) rotate(-20.000000) translate(-905.178281, -132.898772) "></line>
+            <line x1="913.241934" y1="123.996311" x2="913.240385" y2="142.869207" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(913.241159, 133.432759) rotate(-20.000000) translate(-913.241159, -133.432759) "></line>
+            <line x1="919.930241" y1="123.909725" x2="919.928703" y2="142.647017" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(919.929472, 133.278371) rotate(-20.000000) translate(-919.929472, -133.278371) "></line>
+            <line x1="926.697287" y1="123.678919" x2="926.695701" y2="143.001661" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(926.696494, 133.340290) rotate(-20.000000) translate(-926.696494, -133.340290) "></line>
+            <line x1="934.539981" y1="123.776901" x2="934.538424" y2="142.761519" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(934.539202, 133.269210) rotate(-20.000000) translate(-934.539202, -133.269210) "></line>
+            <line x1="941.322616" y1="123.981192" x2="941.321075" y2="142.766928" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(941.321846, 133.374060) rotate(-20.000000) translate(-941.321846, -133.374060) "></line>
+            <line x1="948.839975" y1="122.110591" x2="948.838286" y2="142.706724" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(948.839130, 132.408657) rotate(-20.000000) translate(-948.839130, -132.408657) "></line>
+            <line x1="955.313184" y1="120.40522" x2="955.311336" y2="142.920596" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(955.312260, 131.662908) rotate(-20.000000) translate(-955.312260, -131.662908) "></line>
+            <line x1="961.676104" y1="118.577994" x2="961.674129" y2="142.650224" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(961.675117, 130.614109) rotate(-20.000000) translate(-961.675117, -130.614109) "></line>
+            <line x1="970.50626" y1="123.77976" x2="970.504705" y2="142.734814" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(970.505482, 133.257287) rotate(-20.000000) translate(-970.505482, -133.257287) "></line>
+            <line x1="978.228411" y1="129.508717" x2="978.227355" y2="142.380801" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(978.227883, 135.944759) rotate(-20.000000) translate(-978.227883, -135.944759) "></line>
+            <line x1="986.284213" y1="136.058339" x2="986.283696" y2="142.358098" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(986.283955, 139.208219) rotate(-20.000000) translate(-986.283955, -139.208219) "></line>
+            <line x1="892.908938" y1="123.705783" x2="892.907386" y2="142.612712" id="Path-8-Copy" stroke="#FFFFFF" stroke-width="0.5" transform="translate(892.908162, 133.159247) rotate(-20.000000) translate(-892.908162, -133.159247) "></line>
+            <line x1="874.874339" y1="123.858854" x2="874.872835" y2="142.188855" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(874.873587, 133.023855) rotate(-20.000000) translate(-874.873587, -133.023855) "></line>
+            <line x1="868.440083" y1="127.068889" x2="868.43885" y2="142.089099" id="Path-8-Copy-2" stroke="#FFFFFF" stroke-width="0.5" transform="translate(868.439467, 134.578994) rotate(-20.000000) translate(-868.439467, -134.578994) "></line>
+            <line x1="881.682985" y1="123.616402" x2="881.681413" y2="142.783743" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(881.682199, 133.200073) rotate(-20.000000) translate(-881.682199, -133.200073) "></line>
+            <line x1="888.338387" y1="123.395543" x2="888.336819" y2="142.514947" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(888.337603, 132.955245) rotate(-20.000000) translate(-888.337603, -132.955245) "></line>
+            <polyline id="Path-2" stroke="#FFFFFF" stroke-width="2" points="195 57 226.818389 57 242.751416 60 298 60"></polyline>
+            <polyline id="Path-3" stroke="#FFFFFF" stroke-width="2" points="298 54 302.84502 47.2313088 313 15"></polyline>
+            <line x1="298" y1="53.5" x2="373" y2="53.5" id="Path-4" stroke="#FFFFFF" stroke-width="2"></line>
+            <polyline id="Path-14" stroke="#FFFFFF" stroke-width="2" points="866 105 866 229 848.890979 229 841.239727 218.426447 803.138257 205.939864 789.785305 186.940756 739 186.940756"></polyline>
+            <polyline id="Path-15" stroke="#FFFFFF" stroke-width="2" points="754 265 754 216.286597 754 208.790743 731.593345 178.285328 712.032787 178.285328 712.032787 171.805994 706.211402 167 701.313922 174.960535 701.313922 178.285328 681.935405 178.285328 670.879863 171.805994 652.043553 171.805994 634 182.167841"></polyline>
+            <polyline id="Path-16" stroke="#FFFFFF" stroke-width="2" points="754 216 649 216 670.492194 171.996731"></polyline>
+            <polyline id="Path-18" stroke="#FFFFFF" stroke-width="2" points="866 124.430634 940.582089 124.430634 958.764268 119 993.115861 140.645069 1060.97 140.645069 1060.97 136.978299 1167.85438 136.978299 1167.85438 129.822535 1193.71159 129.822535 1198.63168 136.978299 1198.63168 146.145225 1216.83451 146.145225 1217.52068 140.645069 1245.6061 140.645069 1251.12191 143.300796 1251.12191 196.516333 1251.12191 210.895703 1275 236.682276 1275 253"></polyline>
+            <polyline id="Path-19" stroke="#FFFFFF" stroke-width="2" points="866 142.5 929.92078 142.5 943.287962 142.5 993.672617 142.5"></polyline>
+            <path d="M496.674362,270 L500,163 L415.43955,163 L415.43955,196.522703 C410.12851,196.522703 403.536006,196.522703 395.662038,196.522703 C387.78807,196.522703 376.358913,193.846321 361.374567,188.493558 L317.433949,182.543597 L298.886595,182.543597 L298.886595,196.522703 L270.851159,196.522703 L266.816668,204.758566 L256.375239,199.442555 L231.139011,196.522703 L223.083094,199.442555 L223.083094,221.120958 L206.122657,221.120958 L206.122657,199.442555 L182.770479,188.493558 L157.441833,188.493558 L145.430546,208.755281 L124.486905,209.066274 L124.486905,193.251999 L92.1179062,193.251999 L84.0895693,171.887378 L81.2042927,171.887378 L78.7506938,174.759803 L78.7506938,185.281734 L73.8214768,185.281734 L73.8214768,171.260129 L64.4707635,171.260129 L61.8845376,175.261191 L61.8845376,185.281734 L56.4847253,185.281734 L56.4847253,171.260129 L47.8332479,171.260129 L45.6213476,175.261191 L45.6213476,184.894368 L39.1922681,184.894368 L39.1922681,171.260129 L32.1026142,171.260129 L30.5738195,174.759803 L24,174.759803" id="Path-22" stroke="#FFFFFF" stroke-width="2" fill-opacity="0.05" fill="#FFFFFF"></path>
+            <line x1="307.5" y1="112" x2="307.5" y2="182" id="Path-23" stroke="#FFFFFF" stroke-width="2"></line>
+            <line x1="337.5" y1="113" x2="337.5" y2="185" id="Path-24" stroke="#FFFFFF" stroke-width="2"></line>
+            <line x1="500.5" y1="112" x2="500.5" y2="163" id="Path-25" stroke="#FFFFFF" stroke-width="2"></line>
+            <line x1="415.5" y1="114" x2="415.5" y2="162" id="Path-26" stroke="#FFFFFF" stroke-width="2"></line>
+            <polyline id="Path-27" stroke="#FFFFFF" stroke-width="2" points="634 105 634 128.433238 623.574748 128.433238 623.574748 140 619.92354 140 619.92354 128.433238 609.927877 128.433238 609.927877 140 606.308202 140 606.308202 128.433238 596.232102 128.433238 596.232102 140 591.273149 140 591.273149 128.433238 582.955272 128.433238 582.955272 140 578.402526 140 578.402526 128.433238 568.915628 128.433238 568.915628 140 564.840814 140 564.840814 128.433238 553.966374 128.433238 553.966374 139.076328 551.010307 139.076328 551.010307 128.433238 542 128.433238"></polyline>
+            <line x1="931.5" y1="143" x2="931.5" y2="180" id="Path-28" stroke="#FFFFFF" stroke-width="2"></line>
+            <line x1="943.5" y1="142" x2="943.5" y2="206" id="Path-28-Copy" stroke="#FFFFFF" stroke-width="2"></line>
+            <polyline id="Path-28-Copy-2" stroke="#FFFFFF" stroke-width="2" points="985.5 143 985.5 179.803698 985.5 210"></polyline>
+            <path d="M358.103169,187 L398.896831,187 C402.879028,155.015274 396.080085,138.68852 378.5,138.019738 C360.919915,137.350955 354.120972,153.677709 358.103169,187 Z" id="Path-32" stroke="#FFFFFF" stroke-width="2"></path>
+            <line x1="689.5" y1="105" x2="689.5" y2="177" id="Path-94" stroke="#FFFFFF" stroke-width="2"></line>
+            <line x1="23" y1="65.5" x2="46" y2="65.5" id="Path-95" stroke="#FFFFFF" stroke-width="2"></line>
+            <polyline id="Path-96" stroke="#FFFFFF" stroke-width="2" points="23 90 35.7872601 90 35.7872601 80.0713125 41.2136014 80.0713125 41.2136014 71.7967944 46.789845 71.7967944 46.789845 62.8915631 51.8286793 62.8915631 51.8286793 55 57 55"></polyline>
+            <line x1="38" y1="24.5" x2="43" y2="24.5" id="Path-97" stroke="#FFFFFF" stroke-width="2"></line>
+            <line x1="40.5" y1="66" x2="40.5" y2="24" id="Path-98" stroke="#FFFFFF" stroke-width="0.5"></line>
+            <path d="M23,66 C24.895143,64.5045782 27.1672618,60.4844563 29.8163564,53.9396345 C32.4654509,47.3948126 35.8599988,37.4149345 40,24" id="Path-99" stroke="#FFFFFF" stroke-width="0.5"></path>
+            <line x1="0" y1="164.5" x2="19" y2="164.5" id="Path-100" stroke="#FFFFFF" stroke-width="2"></line>
+            <polyline id="Path-101" stroke="#FFFFFF" stroke-width="2" points="8 153 9 144 10 153"></polyline>
         </g>
     </g>
 </svg>
