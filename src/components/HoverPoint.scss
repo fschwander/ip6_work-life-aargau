@@ -31,10 +31,12 @@
       &.outer-circle {
         transform: scale(1.1);
         transform-origin: center;
+
       }
 
       &.inner-circle {
-        background-color: #7EE2D1;
+        transform: scale(1.1);
+        transform-origin: center;
       }
     }
   }

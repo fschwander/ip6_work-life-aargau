@@ -3,8 +3,8 @@ import './HoverPoint.scss';
 
 interface HoverPointProps {
   className: string,
-  mouseEnter: Function,
-  mouseLeave: Function,
+  mouseEnter?: Function,
+  mouseLeave?: Function,
   mouseClicked: Function
 }
 
@@ -12,12 +12,16 @@ export const HoverPoint: React.FC<HoverPointProps> = props => {
   const [isActive, setIsActive] = useState(false);
 
   const onMouseEnter = () => {
-    props.mouseEnter();
+    if (props.mouseEnter !== undefined) {
+      props.mouseEnter();
+    }
     setIsActive(true)
   }
 
   const onMouseLeave = () => {
-    props.mouseLeave();
+    if (props.mouseLeave !== undefined) {
+      props.mouseLeave();
+    }
     setIsActive(false)
   }
 
