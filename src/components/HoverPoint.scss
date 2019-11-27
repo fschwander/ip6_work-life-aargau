@@ -1,7 +1,6 @@
 .HoverPoint {
   cursor: pointer;
   border-radius: 50%;
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,8 +8,8 @@
   height: 2rem;
 
   .circle {
-    position: absolute;
-    transition: 0.3s ease-in-out;
+    position: relative;
+    transition: 0.4s ease-in-out;
     background-color: white;
     border-radius: 50%;
 
@@ -21,9 +20,11 @@
     }
 
     &.inner-circle {
+      position: absolute;
       width: 35%;
       height: 35%;
-      border: 6px white solid;
+      border: 3px white solid;
+      transition: 0.2s ease-in-out;
     }
   }
 
@@ -36,7 +37,6 @@
 
       &.inner-circle {
         background-color: #7EE2D1;
-        border: 3px white solid;
       }
     }
   }
