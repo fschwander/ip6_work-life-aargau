@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './EntryLabel.scss'
 
 interface EntryLabelProps {
   text: string
@@ -8,8 +8,9 @@ interface EntryLabelProps {
 export const EntryLabel: React.FC <EntryLabelProps> = props => {
 
   return (
-    <div className='entry label'>
-      <h3 className='large'>{props.text}</h3>
+    <div className='EntryLabel'>
+      <h3>{props.text}</h3>
+      <div className='label-line'/>
     </div>
   )
 }

@@ -1,4 +1,17 @@
 .EntryLabel {
+  $line-height: 2px;
+
+  h3 {
+    margin: unset;
+    border-bottom: $line-height solid white;
+  }
+
+  .label-line {
+    width: 100px;
+    border-bottom: $line-height solid white;
+    transform: translateY(2*-$line-height) rotate(135deg) ;
+    transform-origin: left bottom;
+  }
 
 
 
