@@ -24,6 +24,10 @@
         padding: 0.2rem;
         margin: 0.3rem 0 0.1rem;
 
+        &.disabled {
+          animation: flashWrongAnswer 0.4s ease-in-out;
+        }
+
         p {
           font-size: 14px;
           text-transform: unset;
@@ -35,6 +39,13 @@
       font-size: 14px;
       margin-top: 0.4rem;
       position: absolute;
+    }
+  }
+
+  @keyframes flashWrongAnswer {
+    from {
+      opacity: 1;
+      background-color: white;
     }
   }
 }
