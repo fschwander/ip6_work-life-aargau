@@ -2,6 +2,7 @@
   z-index: -1;
 
   svg {
+    pointer-events: none; // hides the tooltip when hovering
     position: absolute;
     left: 0;
     top: 0;
