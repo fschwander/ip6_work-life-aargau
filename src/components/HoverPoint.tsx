@@ -4,7 +4,8 @@ import './HoverPoint.scss';
 interface HoverPointProps {
   className: string,
   mouseEnter: Function,
-  mouseLeave: Function
+  mouseLeave: Function,
+  mouseClicked: Function
 }
 
 export const HoverPoint: React.FC<HoverPointProps> = props => {
@@ -21,7 +22,7 @@ export const HoverPoint: React.FC<HoverPointProps> = props => {
   }
 
   const onClick = () => {
-    console.log('clicked');
+    props.mouseClicked();
   }
 
   return (

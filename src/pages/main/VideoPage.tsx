@@ -5,15 +5,23 @@ import weLoveAargau from '../../res/videos/weLoveAargau.mp4';
 import './VideoPage.scss';
 
 export const VideoPage: React.FC = () => {
-  const [playVideo, setPlayVideo] = React.useState(true)
+  const [isPlaying, setIsPlaying] = React.useState(true)
+
+  const pauseVideo = () => {
+    setIsPlaying(false)
+  }
+
+  const playVideo = () => {
+    setIsPlaying(true)
+  }
 
   return (
     <div className='VideoPage full-screen'>
-      <VideoFullScreen source={weLoveAargau} playVideo={playVideo}/>
+      <VideoFullScreen source={weLoveAargau} playVideo={isPlaying}/>
       <HoverPoint className={''}
-                  mouseEnter={() => setPlayVideo(false)}
-                  mouseLeave={() => setPlayVideo(true)}
-      />
+                  mouseEnter={pauseVideo}
+                  mouseLeave={playVideo}
+                  mouseClicked={() => console.log('mouse clicked...')}/>
     </div>
   )
 }
