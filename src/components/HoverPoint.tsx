@@ -30,8 +30,8 @@ export const HoverPoint: React.FC<HoverPointProps> = props => {
          onMouseEnter={onMouseEnter}
          onMouseLeave={onMouseLeave}
          onClick={onClick}>
-      <div className='circle outer-circle'/>
-      <div className='circle inner-circle'/>
+      <div className='circle button outer-circle'/>
+      <div className='circle button inner-circle'/>
     </div>
   )
 }

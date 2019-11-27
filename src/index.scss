@@ -58,16 +58,16 @@ html {
     button, .button {
       background-color: transparent;
 
-      &:not(.disabled):hover {
-        background: rgba(255, 255, 255, 0.2)
-      }
-
       &:focus {
         outline: unset;
       }
 
       &:hover {
         cursor: pointer;
+      }
+
+      &.enabled:hover {
+        background: rgba(255, 255, 255, 0.2)
       }
 
       &.disabled {
