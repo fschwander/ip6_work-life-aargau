@@ -10,6 +10,8 @@
   }
 
   .text-container {
+    position: relative;
+
     p {
       text-align: left;
     }
@@ -34,7 +36,6 @@
         }
       }
     }
-
     .answer-container {
       font-size: 14px;
       margin-top: 0.4rem;
