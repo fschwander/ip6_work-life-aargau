@@ -1,10 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './QuizBox.scss'
 import {EntryLabel} from './EntryLabel';
 import {HoverPoint} from './HoverPoint';
 import {Quiz} from './Quiz';
 
-export const QuizBox: React.FC = (props) => {
+
+interface QuizBoxProps {
+  // questions:Object
+}
+
+export const QuizBox: React.FC<QuizBoxProps> = (props) => {
+
+  const [isOpen, setIsOpen] = useState(false)
+
 
   const questions = [
     {
@@ -19,7 +27,7 @@ export const QuizBox: React.FC = (props) => {
       answer: "Weisse Socken und die Rüeblitorte machen den Kanton berühmt. Zum Glück gibt es aber noch einiges mehr zu sehen."
     },
     {
-      title: "über den Aargau",
+      title: "Unterhaltung",
       subtitle: "Wie gröss is das Wanderwegnetzt des kanton Aargau?",
       choices: [
         {text: "5 Kilometer", isCorrect: false, wasSelected: false},
@@ -30,7 +38,7 @@ export const QuizBox: React.FC = (props) => {
       answer: "Weisse Socken und die Rüeblitorte machen den Kanton berühmt. Zum Glück gibt es aber noch einiges mehr zu sehen."
     },
     {
-      title: "über den Aargau",
+      title: "Interessenpunkte",
       subtitle: "Wann wurde das Schloss Lenzburg gebaut?",
       choices: [
         {text: "vor dem Christus", isCorrect: false, wasSelected: false},
@@ -47,11 +55,11 @@ export const QuizBox: React.FC = (props) => {
 
     <div className='question-container'>
       <div className='label'>
-        <EntryLabel text={questions[2].title}/>
+        <EntryLabel text={questions[0].title}/>
         <HoverPoint className={'hover-point'}
-                    mouseClicked={() => {console.log()}}/>
+                    mouseClicked={() => setIsOpen(!isOpen)}/>
       </div>
-      <Quiz question={questions[2]}/>
+      <Quiz question={questions[0]} className={isOpen ? 'open' : 'closed'}/>
     </div>
 
 
