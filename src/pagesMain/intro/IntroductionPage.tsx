@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import {PaginationList} from '../../components/buttons/PaginationList';
 import {RoundButton} from '../../components/buttons/RoundButton';
-import {SlideFullScreen} from '../../components/SlideFullScreen';
 import iconArrowLeft from '../../res/icons/arrow_left.svg'
 import iconArrowRight from '../../res/icons/arrow_right.svg'
 import './IntroductionPage.scss';
@@ -33,12 +32,22 @@ export const IntroductionPage: React.FC = () => {
     setActiveIndex(index)
   }
 
-  return (
-    <div className='IntroductionPage'>
+  const getAllSlides = () => {
+    return items.map((slide: object, i: number) => {
+      let isActive = i === activeIndex;
 
-      <SlideFullScreen activeIndex={activeIndex}>
-        {items}
-      </SlideFullScreen>
+      return <React.Fragment key={i}>
+        <div className={'slide ' + (isActive ? 'isActive' : '')}>{slide}</div>
+      </React.Fragment>
+    })
+  }
+
+  return (
+    <div className='IntroductionPage full-screen'>
+
+      <div className='slides-container'>
+        {getAllSlides()}
+      </div>
 
       <div className='slide-navigation'>
         <RoundButton onClick={previous}
@@ -51,9 +60,8 @@ export const IntroductionPage: React.FC = () => {
         <RoundButton onClick={next}
                      isActive={activeIndex < items.length - 1}
                      icon={iconArrowRight}/>
-
-
       </div>
+
     </div>
   )
 }
