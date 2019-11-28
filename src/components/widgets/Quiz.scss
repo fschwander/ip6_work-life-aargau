@@ -10,6 +10,7 @@
 
   &.closed {
     opacity: 0;
+    pointer-events: none;
   }
 
   .border-line {

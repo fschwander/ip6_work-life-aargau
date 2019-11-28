@@ -14,7 +14,7 @@ interface QuestionObject {
 interface ChoiceObject {
   text: string,
   isCorrect: boolean,
-  wasSelected: boolean,
+  wasSelected?: boolean,
   isActive?: boolean
 }
 

@@ -10,7 +10,7 @@ interface EntryLabelProps {
 
 export const EntryLabel: React.FC<EntryLabelProps> = props => {
   let lineHeight = 2;
-  let deg = (props.orientation === 'left' ? props.lineRotationInDeg + 90 : props.lineRotationInDeg + 270) % 360;
+  let deg = (props.orientation === 'left' ? props.lineRotationInDeg: props.lineRotationInDeg + 180) % 360;
 
   const getLineTransform = (): number => {
     switch (props.orientation) {
@@ -71,7 +71,7 @@ export const EntryLabel: React.FC<EntryLabelProps> = props => {
 
   const lineStyle = {
     width: `${props.lineWidth}px`,
-    transform: `translateY(${lineTranslate}px) rotate(${deg}deg)`,
+    transform: `translateY(${lineTranslate}px) rotate(${deg * -1}deg)`,
     transformOrigin: lineTransformOrigin
   }
 
