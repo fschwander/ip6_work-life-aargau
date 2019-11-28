@@ -6,8 +6,7 @@ export class TravelingDistancePage extends Component {
   render() {
     return(
       <div className='TravelingDistancePage'>
-        foo
-
+        Add genious content here
       </div>
     )
   }
