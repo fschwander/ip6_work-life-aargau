@@ -1,5 +1,6 @@
 .EntryLabel {
   $line-height: 2px;
+  position: relative;
 
   h3 {
     margin: unset;
@@ -9,5 +10,11 @@
   .label-line {
     position: absolute;
     border-bottom: $line-height solid white;
+  }
+
+  &.right {
+    .label-line {
+      right: 0;
+    }
   }
 }

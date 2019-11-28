@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
-import './QuizBox.scss'
 import {EntryLabel} from './EntryLabel';
 import {HoverPoint} from './HoverPoint';
 import {Quiz} from './Quiz';
+import './QuizBox.scss'
 
 interface QuestionObject {
   title: string,
@@ -19,21 +19,24 @@ interface ChoiceObject {
 }
 
 interface QuizBoxProps {
-  question:QuestionObject,
+  question: QuestionObject,
   lineWidth: number,
-  lineRotationInDeg: number
+  lineRotationInDeg: number,
+  orientation?: string
 }
 
 export const QuizBox: React.FC<QuizBoxProps> = (props) => {
 
   const [isOpen, setIsOpen] = useState(false)
+  const orientation = props.orientation === undefined ? 'left' : props.orientation;
 
-  return(
-    <div className='question-container'>
+  return (
+    <div className={`QuizBox question-container ${props.orientation}`}>
       <div className='label'>
         <EntryLabel text={props.question.title}
                     lineWidth={props.lineWidth}
-                    lineRotationInDeg={props.lineRotationInDeg}/>
+                    lineRotationInDeg={props.lineRotationInDeg}
+                    orientation={orientation}/>
         <HoverPoint className={'hover-point'}
                     mouseClicked={() => setIsOpen(!isOpen)}/>
       </div>

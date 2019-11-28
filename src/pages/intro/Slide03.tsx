@@ -67,9 +67,9 @@ export const Slide03: React.FC<SlideProps> = props => {
                   isActive={true}
                   onClick={redirectToMainPage}/>
 
-      <QuizBox question={questions[0]}/>
-      <QuizBox question={questions[1]}/>
-      <QuizBox question={questions[2]}/>
+      <QuizBox question={questions[0]} lineWidth={100} lineRotationInDeg={135}/>
+      <QuizBox question={questions[1]} lineWidth={150} lineRotationInDeg={270}/>
+      <QuizBox question={questions[2]} lineWidth={120} lineRotationInDeg={45} orientation='right'/>
 
     </div>
   )
