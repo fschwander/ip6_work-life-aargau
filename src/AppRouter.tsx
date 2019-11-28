@@ -1,9 +1,9 @@
 import React from 'react';
 import {HashRouter, Redirect, Route, Switch} from 'react-router-dom';
 import {Navigation} from './components/widgets/Navigation';
-import App from './pagesMain/App';
-import {IntroductionPage} from './pagesMain/intro/IntroductionPage';
-import {VideoPage} from './pagesMain/video/VideoPage';
+import App from './pages/App';
+import {IntroductionPage} from './pages/intro/IntroductionPage';
+import {VideoPage} from './pages/video/VideoPage';
 
 export const AppRouter: React.FC = () => {
 
