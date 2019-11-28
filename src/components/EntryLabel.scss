@@ -11,6 +11,7 @@
     border-bottom: $line-height solid white;
     transform: translateY(2*-$line-height) rotate(135deg) ;
     transform-origin: left bottom;
+    position: absolute;
   }
 
 
