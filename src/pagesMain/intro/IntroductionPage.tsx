@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import {PaginationList} from '../../components/PaginationList';
-import {RoundButton} from '../../components/RoundButton';
+import {PaginationList} from '../../components/buttons/PaginationList';
+import {RoundButton} from '../../components/buttons/RoundButton';
 import {SlideFullScreen} from '../../components/SlideFullScreen';
 import iconArrowLeft from '../../res/icons/arrow_left.svg'
 import iconArrowRight from '../../res/icons/arrow_right.svg'

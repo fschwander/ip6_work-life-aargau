@@ -1,6 +1,6 @@
 import React, {CSSProperties, useState} from 'react';
-import {EntryLabel} from './EntryLabel';
-import {HoverPoint} from './HoverPoint';
+import {EntryLabel} from '../labels/EntryLabel';
+import {HoverPoint} from '../buttons/HoverPoint';
 import {Quiz} from './Quiz';
 import './QuizBox.scss'
 

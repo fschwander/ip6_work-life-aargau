@@ -1,6 +1,6 @@
 import React from 'react';
-import {QuizBox} from '../../components/QuizBox';
-import {SVGStrokeAnimation} from '../../components/SVGStrokeAnimation';
+import {QuizBox} from '../../components/widgets/QuizBox';
+import {SVGStrokeAnimation} from '../../components/animations/SVGStrokeAnimation';
 import bgImage from '../../res/imgs/galerie_picture_905.jpg'
 import {ReactComponent as SVGImage} from '../../res/imgs/galerie_picture_905.svg'
 

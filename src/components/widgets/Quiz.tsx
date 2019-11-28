@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './Quiz.scss'
-import {RectButton} from './RectButton';
+import {RectButton} from '../buttons/RectButton';
 
 interface QuestionObject {
   title: string,

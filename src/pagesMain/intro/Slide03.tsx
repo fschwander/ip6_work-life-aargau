@@ -1,8 +1,8 @@
 import React from 'react';
 import {useHistory} from 'react-router-dom';
-import {QuizBox} from '../../components/QuizBox';
-import {RectButton} from '../../components/RectButton';
-import {SVGStrokeAnimation} from '../../components/SVGStrokeAnimation';
+import {QuizBox} from '../../components/widgets/QuizBox';
+import {RectButton} from '../../components/buttons/RectButton';
+import {SVGStrokeAnimation} from '../../components/animations/SVGStrokeAnimation';
 import bgImage from '../../res/imgs/galerie_picture_974.jpg'
 import {ReactComponent as SVGImage} from '../../res/imgs/galerie_picture_974.svg'
 
@@ -53,7 +53,7 @@ export const Slide03: React.FC<SlideProps> = props => {
   ]
 
   const redirectToMainPage = () => {
-    history.push('/main')
+    history.push('/video')
   }
 
   return (

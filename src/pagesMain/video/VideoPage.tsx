@@ -1,6 +1,6 @@
 import React from 'react';
-import {HoverPoint} from '../../components/HoverPoint';
-import {VideoFullScreen} from '../../components/VideoFullScreen';
+import {HoverPoint} from '../../components/buttons/HoverPoint';
+import {VideoFullScreen} from '../../components/animations/VideoFullScreen';
 import weLoveAargau from '../../res/videos/weLoveAargau.mp4';
 import './VideoPage.scss';
 
