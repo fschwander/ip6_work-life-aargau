@@ -67,6 +67,10 @@ export const Slide03: React.FC<SlideProps> = props => {
                   isActive={true}
                   onClick={redirectToMainPage}/>
 
+      <QuizBox question={questions[0]}/>
+      <QuizBox question={questions[1]}/>
+      <QuizBox question={questions[2]}/>
+
     </div>
   )
 }
