@@ -87,7 +87,7 @@ export class Quiz extends Component<QuizProps, QuizState> {
       <div className={`Quiz ${className !== undefined ? className : ''}`}>
         <span className='border-line'/>
         <div className='text-container'>
-          <p className='highlighted'><b>Quiz </b>{question.title}</p>
+          <p className='highlighted'><b>Quiz </b>über den Aargau</p>
           <p className='large'>{question.subtitle}</p>
           <div className='choice-container'>
             {question.choices.map((c, i) => <RectButton key={i}
