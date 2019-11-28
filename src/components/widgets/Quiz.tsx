@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import './Quiz.scss'
 import {RectButton} from '../buttons/RectButton';
+import './Quiz.scss'
 
 interface QuestionObject {
   title: string,
@@ -12,7 +12,7 @@ interface QuestionObject {
 interface ChoiceObject {
   text: string,
   isCorrect: boolean,
-  wasSelected: boolean,
+  wasSelected?: boolean,
   isActive?: boolean
 }
 
@@ -38,6 +38,8 @@ export class Quiz extends Component<QuizProps, QuizState> {
       quizAnsweredCorrectly: false,
       response: '',
     }
+
+    props.question.choices.forEach(c => c.wasSelected = true)
   }
 
   selectChoice = (c: ChoiceObject) => {
