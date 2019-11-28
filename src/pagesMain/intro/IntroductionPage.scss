@@ -11,7 +11,10 @@
 
       &.isActive {
         opacity: 1;
-        z-index: 1;
+      }
+
+      &:not(.isActive) {
+        pointer-events: none;
       }
 
       .slide-element {
@@ -33,7 +36,6 @@
     bottom: 0;
     right: 0;
     margin: 1rem 4rem 1rem 1rem;
-    z-index: 1000;
 
     .RoundButton {
       margin: 1rem;
