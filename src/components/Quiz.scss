@@ -2,6 +2,15 @@
   width: 350px;
   display: flex;
   flex-direction: row;
+  transition: .5s ease-in opacity;
+
+  &.open {
+    opacity: 1;
+  }
+
+  &.closed {
+    opacity: 0;
+  }
 
   .border-line {
     margin: 1rem 0;
