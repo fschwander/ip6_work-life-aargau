@@ -45,10 +45,22 @@
         }
       }
     }
+
     .answer-container {
       font-size: 14px;
       margin-top: 0.4rem;
       position: absolute;
+    }
+  }
+
+  &.right {
+    flex-direction: row-reverse;
+    transform: translateX(-45%);
+
+    .border-line {
+      border-left: unset;
+      border-right: 2px white solid;
+
     }
   }
 

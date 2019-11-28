@@ -13,15 +13,10 @@ export const IntroductionPage: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   // TODO: add keys dynamically?
-  // const items = [
-  //   <Slide01 key='0' isActive={activeIndex === 0}/>,
-  //   <Slide02 key='1' isActive={activeIndex === 1}/>,
-  //   <Slide03 key='2' isActive={activeIndex === 2}/>
-  // ]
-
   const items = [
-    <Slide02 key='1' isActive={activeIndex === 0}/>,
-    <Slide03 key='2' isActive={activeIndex === 1}/>
+    <Slide01 key='0' isActive={activeIndex === 0}/>,
+    <Slide02 key='1' isActive={activeIndex === 1}/>,
+    <Slide03 key='2' isActive={activeIndex === 2}/>
   ]
 
   const next = () => {

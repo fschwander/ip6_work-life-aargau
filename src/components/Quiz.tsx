@@ -18,7 +18,8 @@ interface ChoiceObject {
 
 interface QuizProps {
   className?: string
-  question: QuestionObject
+  question: QuestionObject,
+  orientation: string
 }
 
 interface QuizState {
@@ -81,10 +82,10 @@ export class Quiz extends Component<QuizProps, QuizState> {
 
   render() {
     const {response} = this.state;
-    const {question, className} = this.props;
+    const {question, className, orientation} = this.props;
 
     return (
-      <div className={`Quiz ${className !== undefined ? className : ''}`}>
+      <div className={`Quiz ${className !== undefined ? className : ''} ${orientation}`}>
         <span className='border-line'/>
         <div className='text-container'>
           <p className='highlighted'><b>Quiz </b>über den Aargau</p>
