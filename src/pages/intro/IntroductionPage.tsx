@@ -1,5 +1,5 @@
 import React from 'react';
-import {TravelingDistancePage} from '../../pagesSide/travelingDistance/TravelingDistancePage';
+import {TravelingDistancePage} from '../side/travelingDistance/TravelingDistancePage';
 import backgroundImg from './../../res/imgs/galerie_picture_905.jpg'
 import './IntroductionPage.scss';
 
