@@ -26,7 +26,7 @@ export const Slide02: React.FC<SlideProps> = props => {
     },
     {
       title: "Unterhaltung",
-      subtitle: "Wie gröss is das Wanderwegnetzt des kanton Aargau?",
+      subtitle: "Wie gross ist das Wandernetzwerk vom Kanton Aargau?",
       choices: [
         {text: "5 Kilometer", isCorrect: false, wasSelected: false},
         {text: "540 Kilometer", isCorrect: false, wasSelected: false},
@@ -36,7 +36,7 @@ export const Slide02: React.FC<SlideProps> = props => {
       answer: "Weisse Socken und die Rüeblitorte machen den Kanton berühmt. Zum Glück gibt es aber noch einiges mehr zu sehen."
     },
     {
-      title: "Interessenpunkte",
+      title: "Geschichte",
       subtitle: "Wann wurde das Schloss Lenzburg gebaut?",
       choices: [
         {text: "vor dem Christus", isCorrect: false, wasSelected: false},
@@ -52,7 +52,8 @@ export const Slide02: React.FC<SlideProps> = props => {
     <div className={rootClass}
          style={rootStyle}>
       <SVGStrokeAnimation svgComponent={SVGImage} isActive={props.isActive}/>
-      <QuizBox question={questions[2]} lineWidth={120} lineRotationInDeg={45}/>
+      <QuizBox question={questions[0]} lineWidth={120} lineRotationInDeg={45}/>
+      <QuizBox question={questions[1]} lineWidth={120} lineRotationInDeg={135} orientation='right'/>
       <QuizBox question={questions[2]} lineWidth={120} lineRotationInDeg={135} orientation='right'/>
     </div>
   )

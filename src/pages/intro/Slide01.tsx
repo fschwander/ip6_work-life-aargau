@@ -1,5 +1,4 @@
 import React from 'react';
-import {Quiz} from '../../components/Quiz';
 import bgImage from '../../res/imgs/galerie_picture_966.jpg'
 
 interface SlideProps {
@@ -9,8 +8,6 @@ interface SlideProps {
 export const Slide01: React.FC<SlideProps> = props => {
   const rootStyle = {backgroundImage: `url(${bgImage})`}
   const rootClass = 'Slide01 slide slide-element full-screen ' + (props.isActive ? 'isActive' : '')
-
-
 
   return (
     <div className={rootClass}
