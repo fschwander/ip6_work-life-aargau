@@ -10,26 +10,29 @@ interface EntryLabelProps {
 
 export const EntryLabel: React.FC<EntryLabelProps> = props => {
   let lineHeight = 2;
-  let deg = props.lineRotationInDeg;
+  let deg = (props.orientation === 'left' ? props.lineRotationInDeg + 90 : props.lineRotationInDeg + 270) % 360;
+  // let deg = 10
+
+  console.log(props.lineRotationInDeg, deg);
 
   const getLineTransform = (): number => {
     switch (props.orientation) {
       case 'left':
-        if (deg <= 90) {
+        if (deg < 90) {
           return -lineHeight;
-        } else if (deg > 90 && deg <= 180) {
+        } else if (deg > 90 && deg < 180) {
           return -2 * lineHeight;
-        } else if (deg > 180 && deg <= 270) {
+        } else if (deg >= 180 && deg < 270) {
           return 0
         } else {
           return -lineHeight
         }
       case 'right':
-        if (deg <= 90) {
+        if (deg < 90) {
           return -lineHeight;
-        } else if (deg > 90 && deg <= 180) {
+        } else if (deg > 90 && deg < 180) {
           return 0;
-        } else if (deg > 180 && deg <= 270) {
+        } else if (deg >= 180 && deg < 270) {
           return -2 * lineHeight
         } else {
           return -lineHeight
@@ -37,7 +40,6 @@ export const EntryLabel: React.FC<EntryLabelProps> = props => {
       default:
         return 0;
     }
-
   }
 
   const getTransformOrigin = (): string => {
@@ -62,11 +64,8 @@ export const EntryLabel: React.FC<EntryLabelProps> = props => {
         } else {
           return 'right top'
         }
-
       default:
-        console.log('no value', deg, props.orientation);
         return 'left bottom';
-
     }
   }
 
@@ -75,7 +74,7 @@ export const EntryLabel: React.FC<EntryLabelProps> = props => {
 
   const lineStyle = {
     width: `${props.lineWidth}px`,
-    transform: `translateY(${lineTranslate}px) rotate(${props.lineRotationInDeg}deg)`,
+    transform: `translateY(${lineTranslate}px) rotate(${deg}deg)`,
     transformOrigin: lineTransformOrigin
   }
 
