@@ -10,29 +10,33 @@ interface EntryLabelProps {
 
 export const EntryLabel: React.FC<EntryLabelProps> = props => {
   let lineHeight = 2;
-  let deg = (props.orientation === 'left' ? props.lineRotationInDeg: props.lineRotationInDeg + 180) % 360;
+  let deg = props.lineRotationInDeg;
+
+  if (deg < 0 || deg > 360) {
+    console.warn('Wrong values for line rotation: value should be between 0 an 360 but was ', props.lineRotationInDeg);
+  }
 
   const getLineTransform = (): number => {
     switch (props.orientation) {
       case 'left':
         if (deg < 90) {
           return -lineHeight;
-        } else if (deg > 90 && deg < 180) {
-          return -2 * lineHeight;
-        } else if (deg >= 180 && deg < 270) {
+        } else if (deg >= 90 && deg < 180) {
           return 0
+        } else if (deg >= 180 && deg < 270) {
+          return -2 * lineHeight
         } else {
           return -lineHeight
         }
       case 'right':
         if (deg < 90) {
+          return 0
+        } else if (deg >= 90 && deg < 180) {
           return -lineHeight;
-        } else if (deg > 90 && deg < 180) {
-          return 0;
         } else if (deg >= 180 && deg < 270) {
-          return -2 * lineHeight
+          return -lineHeight;
         } else {
-          return -lineHeight
+          return -2 * lineHeight;
         }
       default:
         return 0;
@@ -45,33 +49,38 @@ export const EntryLabel: React.FC<EntryLabelProps> = props => {
         if (deg <= 90) {
           return 'left top'
         } else if (deg < 180) {
-          return 'left bottom';
-        } else if (deg < 270) {
           return 'left top'
+        } else if (deg < 270) {
+          return 'left bottom'
         } else {
           return 'left bottom'
         }
       case 'right':
         if (deg <= 90) {
-          return 'right bottom'
+          return 'right top'
         } else if (deg < 180) {
           return 'right top';
         } else if (deg < 270) {
           return 'right bottom'
         } else {
-          return 'right top'
+          return 'right bottom'
         }
       default:
         return 'left bottom';
     }
   }
 
+  const getRealLineRotation = (): number => {
+    return (props.orientation === 'left' ? props.lineRotationInDeg : props.lineRotationInDeg + 180) % 360;
+  }
+
   let lineTranslate = getLineTransform()
   let lineTransformOrigin = getTransformOrigin()
+  let realLineRotation = getRealLineRotation()
 
   const lineStyle = {
     width: `${props.lineWidth}px`,
-    transform: `translateY(${lineTranslate}px) rotate(${deg * -1}deg)`,
+    transform: `translateY(${lineTranslate}px) rotate(${realLineRotation * -1}deg)`,
     transformOrigin: lineTransformOrigin
   }
 

@@ -52,9 +52,10 @@ export const Slide02: React.FC<SlideProps> = props => {
     <div className={rootClass}
          style={rootStyle}>
       <SVGStrokeAnimation svgComponent={SVGImage} isActive={props.isActive}/>
-      <QuizBox question={questions[0]} lineWidth={120} lineRotationInDeg={45}/>
-      <QuizBox question={questions[1]} lineWidth={120} lineRotationInDeg={135} orientation='right'/>
-      <QuizBox question={questions[2]} lineWidth={120} lineRotationInDeg={135} orientation='right'/>
+      <QuizBox question={questions[0]} lineWidth={120} lineRotationInDeg={0}   orientation='left'/>
+      <QuizBox question={questions[1]} lineWidth={120} lineRotationInDeg={90}  orientation='left'/>
+      <QuizBox question={questions[2]} lineWidth={120} lineRotationInDeg={180} orientation='left'/>
+      <QuizBox question={questions[2]} lineWidth={120} lineRotationInDeg={360} orientation='left'/>
     </div>
   )
 }
