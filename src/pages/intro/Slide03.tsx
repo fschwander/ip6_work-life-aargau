@@ -1,10 +1,10 @@
 import React from 'react';
 import {useHistory} from 'react-router-dom';
-import {QuizBox} from '../../components/widgets/QuizBox';
-import {RectButton} from '../../components/buttons/RectButton';
 import {SVGStrokeAnimation} from '../../components/animations/SVGStrokeAnimation';
-import bgImage from '../../res/imgs/galerie_picture_974.jpg'
-import {ReactComponent as SVGImage} from '../../res/imgs/galerie_picture_974.svg'
+import {RectButton} from '../../components/buttons/RectButton';
+import {QuizBox} from '../../components/widgets/QuizBox';
+import bgImage from '../../res/imgs/galerie_picture_905.jpg'
+import {ReactComponent as SVGImage} from '../../res/imgs/galerie_picture_905.svg'
 
 interface SlideProps {
   isActive: boolean
@@ -18,37 +18,28 @@ export const Slide03: React.FC<SlideProps> = props => {
 
   const questions = [
     {
-      title: "Jobs",
-      subtitle: "Wofür ist der Aargau bekannt?",
+      className: "quiz-companies",
+      title: "Firmen",
+      subtitle: "Welche der folgenden Firmen haben einen Standort im Kanton Aargau?",
       choices: [
-        {text: "Wintersport", isCorrect: false},
-        {text: "Land der Seen", isCorrect: false},
-        {text: "Socken und Rüebli", isCorrect: true},
-        {text: "Hohe Berge", isCorrect: false}
+        {text: "Mammut", isCorrect: true},
+        {text: "Roche", isCorrect: true},
+        {text: "Novartis", isCorrect: true},
+        {text: "Apple", isCorrect: false}
       ],
-      answer: "Weisse Socken und die Rüeblitorte machen den Kanton berühmt. Zum Glück gibt es aber noch einiges mehr zu sehen."
+      answer: "Alle diese Firmen haben Standorte im Aargau. Und alle suchen nach Fachkräften!"
     },
     {
+      className: "quiz-jobs",
       title: "Arbeitsplätze",
-      subtitle: "Wie gröss is das Wanderwegnetzt des kanton Aargau?",
+      subtitle: "Was für Arbeitskräfte fehlen dem Aargau am meisten?",
       choices: [
-        {text: "5 Kilometer", isCorrect: false},
-        {text: "540 Kilometer", isCorrect: false},
-        {text: "1'630 Kilometer", isCorrect: true},
-        {text: "12'530 Kilometer", isCorrect: false}
+        {text: "keine", isCorrect: false},
+        {text: "alle", isCorrect: false},
+        {text: "Fachkräfte", isCorrect: true},
+        {text: "ich", isCorrect: true}
       ],
-      answer: "Weisse Socken und die Rüeblitorte machen den Kanton berühmt. Zum Glück gibt es aber noch einiges mehr zu sehen."
-    },
-    {
-      title: "Unternehmen",
-      subtitle: "Wann wurde das Schloss Lenzburg gebaut?",
-      choices: [
-        {text: "vor dem Christus", isCorrect: false},
-        {text: "im 12. Jahrhundert", isCorrect: true},
-        {text: "im 16. Jahrhundert", isCorrect: false},
-        {text: "im 18. Jahrhundert", isCorrect: false}
-      ],
-      answer: "Weisse Socken und die Rüeblitorte machen den Kanton berühmt. Zum Glück gibt es aber noch einiges mehr zu sehen."
+      answer: "Der Kanton Aargau braucht dich! Durch den Fachkräftemangel hast du die Qual der Wahl."
     }
   ]
 
@@ -62,14 +53,19 @@ export const Slide03: React.FC<SlideProps> = props => {
 
       <SVGStrokeAnimation svgComponent={SVGImage} isActive={props.isActive}/>
 
-      <RectButton className='go-to-main-button'
+
+
+      <QuizBox question={questions[0]} lineWidth={200} lineRotationInDeg={320} orientation='right'/>
+      <QuizBox question={questions[1]} lineWidth={250} lineRotationInDeg={235}/>
+
+      <div className='bottom-element text-container'>
+        <p>Du interessierst dich für die <b>Firmen</b> im Kanton Aargau?</p>
+        <p>Entdecke <b>interessante Arbeitsplätze</b> und vieles mehr. Los geht's!</p>
+      </div>
+      <RectButton className='bottom-element go-to-main-button'
                   text='Abenteuer starten'
                   isActive={true}
                   onClick={redirectToMainPage}/>
-
-      <QuizBox question={questions[0]} lineWidth={100} lineRotationInDeg={135}/>
-      <QuizBox question={questions[1]} lineWidth={150} lineRotationInDeg={270}/>
-      <QuizBox question={questions[2]} lineWidth={120} lineRotationInDeg={45} orientation='right'/>
 
     </div>
   )

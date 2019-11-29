@@ -12,11 +12,14 @@ export const Slide01: React.FC<SlideProps> = props => {
   return (
     <div className={rootClass}
          style={rootStyle}>
-      <h3>Willkomen bei</h3>
-      <h2>Work-Life Aargau</h2>
-      <h1>Eine interaktive <br/>
-        Platform über den <br/>
-        Kanton Aargau</h1>
+      <div>
+        <h3>Willkomen bei</h3>
+        <h2>Work-Life Aargau</h2>
+        <h1>Eine interaktive <br/>
+          Platform über den <br/>
+          Kanton Aargau</h1>
+      </div>
+      <p className='bottom-element'>Lerne den Kanton Aargau auf eine <b>neue Art kennen</b>.</p>
     </div>
   )
 }

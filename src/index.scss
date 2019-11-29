@@ -22,6 +22,7 @@ html {
     }
 
     h2 {
+
       font-size: 1.5rem;
       margin: 0.3rem 0 0.8rem;
     }
@@ -33,6 +34,7 @@ html {
 
     p {
       margin: unset;
+      font-family: "Open Sans", sans-serif;
 
       &.highlighted {
         text-transform: uppercase;

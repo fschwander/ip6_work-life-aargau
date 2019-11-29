@@ -42,17 +42,73 @@
     }
   }
 
-  .Slide02 {
+  .slide {
+    .bottom-element {
+      position: absolute;
+      vertical-align: center;
+      bottom: 10vh;
+    }
 
+    &.Slide02 {
+      .quiz-reputation {
+        transform: translate(-100px, -370px);
+      }
+
+      .quiz-history {
+        transform: translate(-450px, 120px);
+      }
+
+      .quiz-sport {
+        transform: translate(300px, -300px);
+      }
+    }
+
+    &.Slide03 {
+      .quiz-companies {
+        transform: translate(-500px, -30px);
+      }
+
+      .quiz-jobs {
+        transform: translate(270px, -110px);
+      }
+
+      .bottom-element {
+        &.text-container, &.go-to-main-button {
+          opacity: 0;
+        }
+      }
+
+      &.isActive {
+        .bottom-element {
+          &.text-container {
+            opacity: 1;
+            animation: fade-out 1s ease-out 5s forwards;
+          }
+
+          &.go-to-main-button {
+            opacity: 0;
+            padding: 0.5rem 3.5rem;
+            animation: fade-in 1s ease-in 6s forwards;
+          }
+        }
+      }
+    }
   }
 
-  .Slide03 {
-    .go-to-main-button {
-      position: absolute;
-      left: 50%;
-      bottom: 10%;
-      transform: translateX(-50%);
-      padding: 0.5rem 3.5rem;
+  @keyframes fade-out {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
     }
   }
 }

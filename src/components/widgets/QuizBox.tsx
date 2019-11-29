@@ -5,6 +5,7 @@ import {Quiz} from './Quiz';
 import './QuizBox.scss'
 
 interface QuestionObject {
+  className: string,
   title: string,
   subtitle: string,
   choices: Array<ChoiceObject>,
@@ -41,7 +42,7 @@ export const QuizBox: React.FC<QuizBoxProps> = (props) => {
   const verticalOrientation: CSSProperties = {flexDirection: getVerticalOrientation()}
 
   return (
-    <div className={`QuizBox question-container ${props.orientation}`} style={verticalOrientation}>
+    <div className={`QuizBox ${props.question.className} ${props.orientation}`} style={verticalOrientation}>
       <div className='label'>
         <EntryLabel text={props.question.title}
                     lineWidth={props.lineWidth}
