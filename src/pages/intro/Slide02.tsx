@@ -31,9 +31,9 @@ export const Slide02: React.FC<SlideProps> = props => {
       subtitle: "Warum prangt an der Mauer vom Schloss Lenzburg ein Berner Wappen?",
       choices: [
         {text: "Ist halt schön", isCorrect: false},
-        {text: "Antike Vandalen", isCorrect: false},
+        {text: "Frühes Graffiti", isCorrect: false},
         {text: "Bernerherrschaft", isCorrect: true},
-        {text: "Berner Mauern", isCorrect: false},
+        {text: "Bärenfans", isCorrect: false},
       ],
       answer: "Richtig! Vom 15. bis 18. Jahrhundert gehörte des Schloss und seine Umgebung zu Bern. Durch die Gründung vom Aargau um 1803 ging der Besitz zum heutigen Kanton."
     },

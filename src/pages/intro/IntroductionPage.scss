@@ -55,11 +55,11 @@
       }
 
       .quiz-history {
-        transform: translate(340px, -280px);
+        transform: translate(340px, -260px);
       }
 
       .quiz-sport {
-        transform: translate(-450px, 120px);
+        transform: translate(-650px, 120px);
       }
 
       // TODO: all animations should be done with GSAP
@@ -84,7 +84,7 @@
 
     &.Slide03 {
       .quiz-companies {
-        transform: translate(-500px, -30px);
+        transform: translate(-650px, -50px);
       }
 
       .quiz-jobs {
