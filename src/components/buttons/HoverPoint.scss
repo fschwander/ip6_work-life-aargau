@@ -6,6 +6,10 @@
   width: 32px;
   height: 32px;
 
+  &.hover-point-quiz {
+    transform: translateY(-30px);
+  }
+
   .circle {
     position: relative;
     transition: 0.4s ease-in-out;
