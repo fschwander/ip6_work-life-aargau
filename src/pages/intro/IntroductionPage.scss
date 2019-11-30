@@ -55,11 +55,11 @@
       }
 
       .quiz-history {
-        transform: translate(-450px, 120px);
+        transform: translate(340px, -280px);
       }
 
       .quiz-sport {
-        transform: translate(300px, -300px);
+        transform: translate(-450px, 120px);
       }
 
       // TODO: all animations should be done with GSAP
@@ -72,11 +72,11 @@
           animation: fade-in .5s ease-in 3.5s forwards;
         }
 
-        .quiz-history {
+        .quiz-sport {
           animation: fade-in .5s ease-in 4.5s forwards;
         }
 
-        .quiz-sport {
+        .quiz-history {
           animation: fade-in .5s ease-in 5.5s forwards;
         }
       }
@@ -120,13 +120,13 @@
         .bottom-element {
           &.text-container {
             opacity: 1;
-            animation: fade-out 1s ease-out 5s forwards;
+            animation: fade-out 1s ease-out 7s forwards;
           }
 
           &.go-to-main-button {
             opacity: 0;
             padding: 0.5rem 3.5rem;
-            animation: fade-in 1s ease-in 6s forwards;
+            animation: fade-in 1s ease-in 8s forwards;
           }
         }
       }

@@ -55,8 +55,8 @@ export const Slide03: React.FC<SlideProps> = props => {
 
 
 
-      <QuizBox question={questions[0]} lineWidth={200} lineRotationInDeg={320} orientation='right'/>
-      <QuizBox question={questions[1]} lineWidth={250} lineRotationInDeg={235}/>
+      <QuizBox question={questions[0]} lineLength={200} lineRotationInDeg={320} orientation='right'/>
+      <QuizBox question={questions[1]} lineLength={250} lineRotationInDeg={235}/>
 
       <div className='bottom-element text-container'>
         <p>Du interessierst dich für die <b>Firmen</b> im Kanton Aargau?</p>

@@ -55,9 +55,9 @@ export const Slide02: React.FC<SlideProps> = props => {
     <div className={rootClass}
          style={rootStyle}>
       <SVGStrokeAnimation svgComponent={SVGImage} isActive={props.isActive}/>
-      <QuizBox question={questions[0]} lineWidth={120} lineRotationInDeg={300} orientation='left'/>
-      <QuizBox question={questions[1]} lineWidth={130} lineRotationInDeg={40} orientation='right'/>
-      <QuizBox question={questions[2]} lineWidth={160} lineRotationInDeg={245} orientation='left'/>
+      <QuizBox question={questions[0]} lineLength={120} lineRotationInDeg={300} orientation='left'/>
+      <QuizBox question={questions[1]} lineLength={170} lineRotationInDeg={255} orientation='left'/>
+      <QuizBox question={questions[2]} lineLength={130} lineRotationInDeg={40} orientation='right'/>
 
       <div className='bottom-element'>
         <p>Du möchtest mehr wissen über für das <b>Leben</b> im Kanton Aargau?</p>

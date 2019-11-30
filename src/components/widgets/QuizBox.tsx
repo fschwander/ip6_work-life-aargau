@@ -21,7 +21,7 @@ interface ChoiceObject {
 
 interface QuizBoxProps {
   question: QuestionObject,
-  lineWidth: number,
+  lineLength: number,
   lineRotationInDeg: number,
   orientation?: string
 }
@@ -45,7 +45,7 @@ export const QuizBox: React.FC<QuizBoxProps> = (props) => {
     <div className={`QuizBox ${props.question.className} ${props.orientation}`} style={verticalOrientation}>
       <div className='label'>
         <EntryLabel text={props.question.title}
-                    lineWidth={props.lineWidth}
+                    lineWidth={props.lineLength}
                     lineRotationInDeg={props.lineRotationInDeg}
                     orientation={orientation}/>
         <HoverPoint className={'hover-point'}
