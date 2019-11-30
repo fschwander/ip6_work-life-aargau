@@ -19,6 +19,7 @@ export const Slide01: React.FC<SlideProps> = props => {
           Platform über den <br/>
           Kanton Aargau</h1>
       </div>
+      <div className='intro-background-gradient'/>
       <p className='bottom-element'>Lerne den Kanton Aargau auf eine <b>neue Art</b> kennen.</p>
     </div>
   )

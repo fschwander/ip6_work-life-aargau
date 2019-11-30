@@ -54,6 +54,7 @@ export const Slide02: React.FC<SlideProps> = props => {
   return (
     <div className={rootClass}
          style={rootStyle}>
+      <div className='intro-background-gradient'/>
       <SVGStrokeAnimation svgComponent={SVGImage} isActive={props.isActive}/>
       <QuizBox question={questions[0]} lineLength={120} lineRotationInDeg={300} orientation='left'/>
       <QuizBox question={questions[1]} lineLength={100} lineRotationInDeg={255} orientation='left'/>

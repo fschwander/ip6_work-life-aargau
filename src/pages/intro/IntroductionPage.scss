@@ -1,5 +1,17 @@
 .IntroductionPage {
 
+  .intro-background-gradient {
+    background: linear-gradient(rgba(0,0,0,0.01), rgba(0,0,0,0.7));
+    width: 100%;
+    bottom: 0;
+    height: 50%;
+    position: absolute;
+  }
+
+  .page-headline {
+    z-index: 1;
+  }
+
   .slides-container {
     position: relative;
     width: 100%;
