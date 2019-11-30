@@ -33,7 +33,7 @@ export const QuizBox: React.FC<QuizBoxProps> = (props) => {
 
   const getVerticalOrientation = () => {
     if (orientation === 'left' && props.lineRotationInDeg > 270) {
-      return 'column-reverse'
+      return 'row'
     } else {
       return 'column'
     }
