@@ -20,26 +20,26 @@ export const Slide03: React.FC<SlideProps> = props => {
     {
       className: "quiz-companies",
       title: "Firmen",
-      subtitle: "Welche der folgenden Firmen haben einen Standort im Kanton Aargau?",
+      subtitle: "Welche der folgenden Firmen hat einen wichtigen Standort im Kanton Aargau?",
       choices: [
         {text: "Mammut", isCorrect: true},
         {text: "Roche", isCorrect: true},
         {text: "Novartis", isCorrect: true},
         {text: "Apple", isCorrect: false}
       ],
-      answer: "Alle diese Firmen haben Standorte im Aargau. Und alle suchen nach Fachkräften!"
+      answer: "Richtig! Alle diese Firmen haben Standorte im Aargau. Und alle suchen nach Fachkräften!"
     },
     {
       className: "quiz-jobs",
       title: "Arbeitsplätze",
-      subtitle: "Was für Arbeitskräfte fehlen dem Aargau am meisten?",
+      subtitle: "Welche Arbeitskräfte fehlen dem Aargau am meisten?",
       choices: [
-        {text: "keine", isCorrect: false},
-        {text: "alle", isCorrect: false},
+        {text: "Keine", isCorrect: false},
+        {text: "Alle", isCorrect: false},
         {text: "Fachkräfte", isCorrect: true},
-        {text: "ich", isCorrect: true}
+        {text: "Du", isCorrect: true}
       ],
-      answer: "Der Kanton Aargau braucht dich! Durch den Fachkräftemangel hast du die Qual der Wahl."
+      answer: "Richtig, der Kanton Aargau braucht Dich! Durch den Fachkräftemangel hast du die Qual der Wahl."
     }
   ]
 

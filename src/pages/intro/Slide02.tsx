@@ -35,19 +35,19 @@ export const Slide02: React.FC<SlideProps> = props => {
         {text: "Bernerherrschaft", isCorrect: true},
         {text: "Berner Mauern", isCorrect: false},
       ],
-      answer: "Im 15. bis 18. Jahrhundert gehörte des Schloss und seine Umgebung zu Bern. Durch die Gründung vom Aargau um 1803 ging der Besitz zum heutigen Kanton."
+      answer: "Richtig! Vom 15. bis 18. Jahrhundert gehörte des Schloss und seine Umgebung zu Bern. Durch die Gründung vom Aargau um 1803 ging der Besitz zum heutigen Kanton."
     },
     {
       className: "quiz-sport",
       title: "Sport",
-      subtitle: "Welcher Kanton hat das längste Netzwerk von Fahrradwegen?",
+      subtitle: "Welcher Schweizer Kanton hat das längste Netzwerk von Fahrradwegen?",
       choices: [
         {text: "Bern", isCorrect: false},
         {text: "Aargau", isCorrect: true},
         {text: "Zürich", isCorrect: false},
         {text: "Genf", isCorrect: false},
       ],
-      answer: "Von wegen, Aargauerinnen und Aargauer können nur Auto fahren: Kein anderer Kanton besitzt mehr Fahrradwege!"
+      answer: "Richtig! Von wegen, Aargauerinnen und Aargauer können nur Auto fahren: Kein anderer Kanton besitzt mehr Fahrradwege!"
     }
   ]
 

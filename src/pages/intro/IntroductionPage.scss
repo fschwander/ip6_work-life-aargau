@@ -61,6 +61,25 @@
       .quiz-sport {
         transform: translate(300px, -300px);
       }
+
+      // TODO: all animations should be done with GSAP
+      &.isActive {
+        .quiz-reputation, .quiz-history, .quiz-sport {
+          opacity: 0;
+        }
+
+        .quiz-reputation {
+          animation: fade-in .5s ease-in 3.5s forwards;
+        }
+
+        .quiz-history {
+          animation: fade-in .5s ease-in 4.5s forwards;
+        }
+
+        .quiz-sport {
+          animation: fade-in .5s ease-in 5.5s forwards;
+        }
+      }
     }
 
     &.Slide03 {
@@ -78,7 +97,26 @@
         }
       }
 
+      // TODO: all animations should be done with GSAP
       &.isActive {
+        .quiz-companies, .quiz-jobs {
+          opacity: 0;
+        }
+
+        .quiz-companies {
+          animation: fade-in .5s ease-in 3.5s forwards;
+        }
+
+        .quiz-jobs {
+          animation: fade-in .5s ease-in 4.5s forwards;
+        }
+
+        .bottom-element {
+          &.text-container, &.go-to-main-button {
+            opacity: 0;
+          }
+        }
+
         .bottom-element {
           &.text-container {
             opacity: 1;
