@@ -18,8 +18,7 @@ export const VideoPage: React.FC = () => {
   return (
     <div className='VideoPage full-screen'>
       <VideoFullScreen source={weLoveAargau} playVideo={isPlaying}/>
-      <HoverPoint className={'test-hover-point'}
-                  mouseEnter={pauseVideo}
+      <HoverPoint mouseEnter={pauseVideo}
                   mouseLeave={playVideo}
                   mouseClicked={() => console.log('mouse clicked...')}/>
     </div>

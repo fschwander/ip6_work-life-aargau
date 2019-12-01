@@ -48,8 +48,7 @@ export const QuizBox: React.FC<QuizBoxProps> = (props) => {
                     lineWidth={props.lineLength}
                     lineRotationInDeg={props.lineRotationInDeg}
                     orientation={orientation}/>
-        <HoverPoint className={'hover-point-quiz'}
-                    mouseClicked={() => setIsOpen(!isOpen)}/>
+        <HoverPoint mouseClicked={() => setIsOpen(!isOpen)}/>
       </div>
       <Quiz question={props.question}
             className={isOpen ? 'open' : 'closed'}

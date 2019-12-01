@@ -6,6 +6,10 @@
 
   .label {
     display: flex;
+
+    .HoverPoint {
+      transform: translateY(-30px);
+    }
   }
 
   &.right {
