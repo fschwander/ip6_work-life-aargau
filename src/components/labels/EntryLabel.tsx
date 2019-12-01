@@ -9,7 +9,7 @@ interface EntryLabelProps {
 }
 
 export const EntryLabel: React.FC<EntryLabelProps> = props => {
-  let lineHeight = 2;
+  let lineHeight = 1;
   let deg = props.lineRotationInDeg;
 
   if (deg < 0 || deg > 360) {
@@ -24,7 +24,7 @@ export const EntryLabel: React.FC<EntryLabelProps> = props => {
         } else if (deg >= 90 && deg < 180) {
           return 0
         } else if (deg >= 180 && deg < 270) {
-          return lineHeight
+          return -2 * lineHeight
         } else {
           return -lineHeight
         }
@@ -36,7 +36,7 @@ export const EntryLabel: React.FC<EntryLabelProps> = props => {
         } else if (deg >= 180 && deg < 270) {
           return -lineHeight;
         } else {
-          return lineHeight;
+          return -2 * lineHeight;
         }
       default:
         return 0;
