@@ -1,5 +1,4 @@
 import React from 'react';
-import './EntryLabel.scss'
 
 interface EntryLabelProps {
   text: string,

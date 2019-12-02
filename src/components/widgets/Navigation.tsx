@@ -1,7 +1,6 @@
 import React from 'react';
 import {LinkContainer} from 'react-router-bootstrap';
 import {Collapse, Nav, Navbar, NavbarToggler, NavItem, NavLink} from 'reactstrap';
-import './Navigation.scss';
 
 interface NavigationProps {
   navItems: Array<Object>

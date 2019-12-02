@@ -2,7 +2,6 @@ import React from 'react';
 import {HoverPoint} from '../../components/buttons/HoverPoint';
 import {VideoFullScreen} from '../../components/animations/VideoFullScreen';
 import weLoveAargau from '../../res/videos/weLoveAargau.mp4';
-import './VideoPage.scss';
 
 export const VideoPage: React.FC = () => {
   const [isPlaying, setIsPlaying] = React.useState(true)

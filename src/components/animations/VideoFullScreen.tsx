@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import ReactPlayer from 'react-player';
 import {Spinner} from 'reactstrap';
-import './VideoFullScreen.scss';
 
 interface FullScreenVideoProps {
   source: string,

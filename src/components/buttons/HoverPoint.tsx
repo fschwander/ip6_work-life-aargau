@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import './HoverPoint.scss';
 
 interface HoverPointProps {
   mouseEnter?: Function,

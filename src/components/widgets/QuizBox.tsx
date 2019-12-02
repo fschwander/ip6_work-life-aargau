@@ -2,7 +2,6 @@ import React, {CSSProperties, useState} from 'react';
 import {EntryLabel} from '../labels/EntryLabel';
 import {HoverPoint} from '../buttons/HoverPoint';
 import {Quiz} from './Quiz';
-import './QuizBox.scss'
 
 interface QuestionObject {
   className: string,

@@ -3,7 +3,6 @@ import {PaginationList} from '../../components/buttons/PaginationList';
 import {RoundButton} from '../../components/buttons/RoundButton';
 import iconArrowLeft from '../../res/icons/arrow_left.svg'
 import iconArrowRight from '../../res/icons/arrow_right.svg'
-import './IntroductionPage.scss';
 import {Slide01} from './Slide01';
 import {Slide02} from './Slide02';
 import {Slide03} from './Slide03';
