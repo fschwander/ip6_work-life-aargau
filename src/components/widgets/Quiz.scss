@@ -16,7 +16,7 @@
   .border-line {
     margin: 1rem 0;
     padding: 0.8rem;
-    border-left: 2px white solid;
+    border-left: $lineThin white solid;
   }
 
   .text-container {
@@ -48,7 +48,8 @@
     }
 
     .answer-container {
-      font-size: 14px;
+      background-color: $backgroundTransparentDark;
+      padding: 0 0.3em;
       margin-top: 0.4rem;
       position: absolute;
     }
@@ -56,12 +57,10 @@
 
   &.right {
     flex-direction: row-reverse;
-    transform: translateX(-50%);
 
     .border-line {
       border-left: unset;
-      border-right: 2px white solid;
-
+      border-right: $lineThin white solid;
     }
   }
 

@@ -1,8 +1,8 @@
 import React from 'react';
-import {QuizBox} from '../../components/widgets/QuizBox';
 import {SVGStrokeAnimation} from '../../components/animations/SVGStrokeAnimation';
-import bgImage from '../../res/imgs/galerie_picture_905.jpg'
-import {ReactComponent as SVGImage} from '../../res/imgs/galerie_picture_905.svg'
+import {QuizBox} from '../../components/widgets/QuizBox';
+import bgImage from '../../res/imgs/galerie_picture_974.jpg'
+import {ReactComponent as SVGImage} from '../../res/imgs/galerie_picture_974.svg'
 
 interface SlideProps {
   isActive: boolean
@@ -14,7 +14,8 @@ export const Slide02: React.FC<SlideProps> = props => {
 
   const questions = [
     {
-      title: "Freizeit",
+      className: "quiz-reputation",
+      title: "Reputation",
       subtitle: "Wofür ist der Aargau bekannt?",
       choices: [
         {text: "Wintersport", isCorrect: false},
@@ -25,36 +26,44 @@ export const Slide02: React.FC<SlideProps> = props => {
       answer: "Weisse Socken und die Rüeblitorte machen den Kanton berühmt. Zum Glück gibt es aber noch einiges mehr zu sehen."
     },
     {
-      title: "Unterhaltung",
-      subtitle: "Wie gross ist das Wandernetzwerk vom Kanton Aargau?",
+      className: "quiz-history",
+      title: "Geschichte",
+      subtitle: "Warum prangt an der Mauer vom Schloss Lenzburg ein Berner Wappen?",
       choices: [
-        {text: "5 Kilometer", isCorrect: false},
-        {text: "540 Kilometer", isCorrect: false},
-        {text: "1'630 Kilometer", isCorrect: true},
-        {text: "12'530 Kilometer", isCorrect: false},
+        {text: "Ist halt schön", isCorrect: false},
+        {text: "Frühes Graffiti", isCorrect: false},
+        {text: "Bernerherrschaft", isCorrect: true},
+        {text: "Bärenfans", isCorrect: false},
       ],
-      answer: "Weisse Socken und die Rüeblitorte machen den Kanton berühmt. Zum Glück gibt es aber noch einiges mehr zu sehen."
+      answer: "Richtig! Vom 15. bis 18. Jahrhundert gehörte des Schloss und seine Umgebung zu Bern. Durch die Gründung vom Aargau um 1803 ging der Besitz zum heutigen Kanton."
     },
     {
-      title: "Geschichte",
-      subtitle: "Wann wurde das Schloss Lenzburg gebaut?",
+      className: "quiz-sport",
+      title: "Freizeit",
+      subtitle: "Welcher Schweizer Kanton hat das längste Netzwerk von Fahrradwegen?",
       choices: [
-        {text: "vor dem Christus", isCorrect: false},
-        {text: "im 12. Jahrhundert", isCorrect: true},
-        {text: "im 16. Jahrhundert", isCorrect: false},
-        {text: "im 18. Jahrhundert", isCorrect: false},
+        {text: "Bern", isCorrect: false},
+        {text: "Aargau", isCorrect: true},
+        {text: "Zürich", isCorrect: false},
+        {text: "Genf", isCorrect: false},
       ],
-      answer: "Weisse Socken und die Rüeblitorte machen den Kanton berühmt. Zum Glück gibt es aber noch einiges mehr zu sehen."
+      answer: "Richtig! Von wegen, Aargauerinnen und Aargauer können nur Auto fahren: Kein anderer Kanton besitzt mehr Fahrradwege!"
     }
   ]
 
   return (
     <div className={rootClass}
          style={rootStyle}>
+      <div className='intro-background-gradient'/>
       <SVGStrokeAnimation svgComponent={SVGImage} isActive={props.isActive}/>
-      <QuizBox question={questions[0]} lineWidth={120} lineRotationInDeg={45}/>
-      <QuizBox question={questions[1]} lineWidth={120} lineRotationInDeg={135} orientation='right'/>
-      <QuizBox question={questions[2]} lineWidth={120} lineRotationInDeg={135} orientation='right'/>
+      <QuizBox question={questions[0]} lineLength={120} lineRotationInDeg={300} orientation='left'/>
+      <QuizBox question={questions[1]} lineLength={130} lineRotationInDeg={235} orientation='left'/>
+      <QuizBox question={questions[2]} lineLength={80} lineRotationInDeg={40} orientation='right'/>
+
+      <div className='bottom-element'>
+        <p>Du möchtest mehr wissen über für das <b>Leben</b> im Kanton Aargau?</p>
+        <p><b>Perfekt!</b> Dann ist diese Platform genau das Richtige für dich.</p>
+      </div>
     </div>
   )
 }

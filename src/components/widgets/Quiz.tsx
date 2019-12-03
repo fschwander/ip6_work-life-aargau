@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {RectButton} from '../buttons/RectButton';
-import './Quiz.scss'
 
 interface QuestionObject {
   title: string,
@@ -71,7 +70,7 @@ export class Quiz extends Component<QuizProps, QuizState> {
     ]
 
     if (wasCorrect) {
-      this.setState({response: 'Richtig! ' + question.answer});
+      this.setState({response: question.answer});
     } else {
       const getRandomIndex = () => Math.floor(Math.random() * wrongResponses.length)
       let randomIndex = getRandomIndex();

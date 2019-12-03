@@ -1,3 +1,23 @@
+@import "../variables";
+/**
+ * Insert all stylesheets of components here
+ * (must be below variables.scss, but after that the order does not matter)
+ */
+@import '../index.scss';
+@import '../components/animations/VideoFullScreen';
+@import '../components/animations/SVGStrokeAnimation.scss';
+@import '../components/buttons/HoverPoint.scss';
+@import '../components/buttons/PaginationList.scss';
+@import '../components/buttons/RectButton.scss';
+@import '../components/buttons/RoundButton.scss';
+@import '../components/labels/EntryLabel.scss';
+@import '../components/widgets/Navigation.scss';
+@import '../components/widgets/Quiz.scss';
+@import '../components/widgets/QuizBox.scss';
+@import '../pages/intro/IntroductionPage.scss';
+@import '../pages/video/VideoPage.scss';
+@import '../pages/side/travelingDistance/TravelingDistancePage.scss';
+
 .App {
   text-align: center;
   background-color: #282c34;

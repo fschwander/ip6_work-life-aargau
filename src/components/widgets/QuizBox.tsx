@@ -2,9 +2,9 @@ import React, {CSSProperties, useState} from 'react';
 import {EntryLabel} from '../labels/EntryLabel';
 import {HoverPoint} from '../buttons/HoverPoint';
 import {Quiz} from './Quiz';
-import './QuizBox.scss'
 
 interface QuestionObject {
+  className: string,
   title: string,
   subtitle: string,
   choices: Array<ChoiceObject>,
@@ -20,7 +20,7 @@ interface ChoiceObject {
 
 interface QuizBoxProps {
   question: QuestionObject,
-  lineWidth: number,
+  lineLength: number,
   lineRotationInDeg: number,
   orientation?: string
 }
@@ -32,7 +32,7 @@ export const QuizBox: React.FC<QuizBoxProps> = (props) => {
 
   const getVerticalOrientation = () => {
     if (orientation === 'left' && props.lineRotationInDeg > 270) {
-      return 'column-reverse'
+      return 'row'
     } else {
       return 'column'
     }
@@ -41,14 +41,13 @@ export const QuizBox: React.FC<QuizBoxProps> = (props) => {
   const verticalOrientation: CSSProperties = {flexDirection: getVerticalOrientation()}
 
   return (
-    <div className={`QuizBox question-container ${props.orientation}`} style={verticalOrientation}>
+    <div className={`QuizBox ${props.question.className} ${props.orientation}`} style={verticalOrientation}>
       <div className='label'>
         <EntryLabel text={props.question.title}
-                    lineWidth={props.lineWidth}
+                    lineWidth={props.lineLength}
                     lineRotationInDeg={props.lineRotationInDeg}
                     orientation={orientation}/>
-        <HoverPoint className={'hover-point'}
-                    mouseClicked={() => setIsOpen(!isOpen)}/>
+        <HoverPoint mouseClicked={() => setIsOpen(!isOpen)}/>
       </div>
       <Quiz question={props.question}
             className={isOpen ? 'open' : 'closed'}

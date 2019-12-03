@@ -1,14 +1,20 @@
 .QuizBox {
   display: flex;
+  position: absolute;
+  left: 50%;
+  top: 50%;
 
   .label {
     display: flex;
+
+    .HoverPoint {
+      transform: translateY(-30px);
+    }
   }
 
   &.right {
     .label {
       flex-direction: row-reverse;
-      justify-content: flex-end;
     }
   }
 }

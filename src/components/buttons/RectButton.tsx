@@ -1,5 +1,4 @@
 import React from 'react';
-import './RectButton.scss'
 
 interface RectButtonProps {
   className?: string,

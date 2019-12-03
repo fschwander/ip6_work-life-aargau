@@ -16,12 +16,15 @@ html {
 
     h1 {
       font-family: Merriweather, serif;
-      font-size: 2.5rem;
+      font-size: 2.2rem;
       font-weight: normal;
       margin: 0.5rem 0 1rem;
+      line-height: 3.2rem;
+      letter-spacing: .3rem;
     }
 
     h2 {
+      font-weight: 700;
       font-size: 1.5rem;
       margin: 0.3rem 0 0.8rem;
     }
@@ -33,6 +36,7 @@ html {
 
     p {
       margin: unset;
+      font-family: "Open Sans", sans-serif;
 
       &.highlighted {
         text-transform: uppercase;
@@ -67,7 +71,7 @@ html {
       }
 
       &.enabled:hover {
-        background: rgba(255, 255, 255, 0.2)
+        background: $backgroundTransparentLight;
       }
 
       &.disabled {

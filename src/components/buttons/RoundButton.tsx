@@ -1,5 +1,4 @@
 import React from "react";
-import './RoundButton.scss'
 
 interface RoundButtonProps {
   onClick: Function,

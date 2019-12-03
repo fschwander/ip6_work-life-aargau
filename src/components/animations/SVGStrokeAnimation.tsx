@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import './SVGStrokeAnimation.scss'
 
 interface SVGStrokeAnimationProps {
   svgComponent: React.FC,

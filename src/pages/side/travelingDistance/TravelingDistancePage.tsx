@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import './TravelingDistancePage.scss'
 
 export class TravelingDistancePage extends Component {
 
