@@ -39,7 +39,7 @@ export const Slide02: React.FC<SlideProps> = props => {
     },
     {
       className: "quiz-sport",
-      title: "Sport",
+      title: "Freizeit",
       subtitle: "Welcher Schweizer Kanton hat das längste Netzwerk von Fahrradwegen?",
       choices: [
         {text: "Bern", isCorrect: false},
