@@ -1,15 +1,15 @@
 import React from 'react';
 import {SVGStrokeAnimation} from '../../components/animations/SVGStrokeAnimation';
 import {QuizBox} from '../../components/widgets/QuizBox';
-import bgImage from '../../res/imgs/galerie_picture_974.jpg'
-import {ReactComponent as SVGImage} from '../../res/imgs/galerie_picture_974.svg'
+import lenzburgImg from '../../res/imgs/AT_SCHLOSS_LENZBURG.jpg'
+import {ReactComponent as lenzburgSvg} from '../../res/imgs/AT_SCHLOSS_LENZBURG.svg'
 
 interface SlideProps {
   isActive: boolean
 }
 
 export const Slide02: React.FC<SlideProps> = props => {
-  const rootStyle = {backgroundImage: `url(${bgImage})`}
+  const rootStyle = {backgroundImage: `url(${lenzburgImg})`}
   const rootClass = 'Slide02 slide slide-element full-screen ' + (props.isActive ? 'isActive' : '')
 
   const questions = [
@@ -55,7 +55,7 @@ export const Slide02: React.FC<SlideProps> = props => {
     <div className={rootClass}
          style={rootStyle}>
       <div className='intro-background-gradient'/>
-      <SVGStrokeAnimation svgComponent={SVGImage} isActive={props.isActive}/>
+      <SVGStrokeAnimation svgComponent={lenzburgSvg} isActive={props.isActive}/>
       <QuizBox question={questions[0]} lineLength={120} lineRotationInDeg={300} orientation='left'/>
       <QuizBox question={questions[1]} lineLength={130} lineRotationInDeg={235} orientation='left'/>
       <QuizBox question={questions[2]} lineLength={80} lineRotationInDeg={40} orientation='right'/>

@@ -1,5 +1,5 @@
 import React from 'react';
-import bgImage from '../../res/imgs/galerie_picture_966.jpg'
+import bgImage from '../../res/imgs/AT_LAUFENBURG.jpg'
 
 interface SlideProps {
   isActive: boolean

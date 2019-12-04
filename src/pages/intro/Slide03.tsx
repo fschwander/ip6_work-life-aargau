@@ -3,8 +3,8 @@ import {useHistory} from 'react-router-dom';
 import {SVGStrokeAnimation} from '../../components/animations/SVGStrokeAnimation';
 import {RectButton} from '../../components/buttons/RectButton';
 import {QuizBox} from '../../components/widgets/QuizBox';
-import bgImage from '../../res/imgs/galerie_picture_905.jpg'
-import {ReactComponent as SVGImage} from '../../res/imgs/galerie_picture_905.svg'
+import bgImage from '../../res/imgs/AT_PSI_VILLIGEN.jpg'
+import {ReactComponent as SVGImage} from '../../res/imgs/AT_PSI_VILLIGEN.svg'
 
 interface SlideProps {
   isActive: boolean
@@ -56,7 +56,7 @@ export const Slide03: React.FC<SlideProps> = props => {
 
 
       <QuizBox question={questions[0]} lineLength={100} lineRotationInDeg={320} orientation='right'/>
-      <QuizBox question={questions[1]} lineLength={150} lineRotationInDeg={235} orientation='left'/>
+      <QuizBox question={questions[1]} lineLength={200} lineRotationInDeg={235} orientation='left'/>
 
       <div className='bottom-element text-container'>
         <p>Du interessierst dich für die <b>Firmen</b> im Kanton Aargau?</p>
