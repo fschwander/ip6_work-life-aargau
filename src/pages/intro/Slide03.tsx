@@ -50,7 +50,8 @@ export const Slide03: React.FC<SlideProps> = props => {
   return (
     <div className={rootClass}
          style={rootStyle}>
-      <div className='intro-background-gradient'/>
+      <span className='background-filter'/>
+
       <SVGStrokeAnimation svgComponent={SVGImage} isActive={props.isActive}/>
 
 

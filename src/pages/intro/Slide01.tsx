@@ -12,6 +12,7 @@ export const Slide01: React.FC<SlideProps> = props => {
   return (
     <div className={rootClass}
          style={rootStyle}>
+      <span className='background-filter'/>
 
       <div className='page-headline'>
         <h3>Willkommen bei</h3>
@@ -20,7 +21,7 @@ export const Slide01: React.FC<SlideProps> = props => {
           Platform über den <br/>
           Kanton Aargau</h1>
       </div>
-      <div className='intro-background-gradient'/>
+
       <p className='bottom-element'>Lerne den Kanton Aargau auf eine <b>neue Art</b> kennen.</p>
     </div>
   )
