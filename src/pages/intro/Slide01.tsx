@@ -18,7 +18,7 @@ export const Slide01: React.FC<SlideProps> = props => {
         <h3>Willkommen bei</h3>
         <h2>Work Life Aargau</h2>
         <h1>Eine interaktive <br/>
-          Platform über den <br/>
+          Plattform über den <br/>
           Kanton Aargau</h1>
       </div>
 
