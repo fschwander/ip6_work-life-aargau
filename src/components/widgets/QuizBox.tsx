@@ -42,7 +42,8 @@ export const QuizBox: React.FC<QuizBoxProps> = (props) => {
   const verticalOrientation: CSSProperties = {flexDirection: getVerticalOrientation()}
 
   return (
-    <div className={`QuizBox ${props.question.className} ${props.orientation}`} style={verticalOrientation}
+    <div className={`QuizBox ${props.question.className} ${props.orientation} ${isOpen ? 'is-open': 'is-closed'}`}
+         style={verticalOrientation}
          onMouseLeave={() => setIsOpen(false)}>
       <div className='label'>
         <EntryLabel text={props.question.title}
