@@ -1,4 +1,4 @@
-import React, {CSSProperties, useEffect, useState} from 'react';
+import React, {CSSProperties, useState} from 'react';
 import {HoverPoint} from '../buttons/HoverPoint';
 import {EntryLabel} from '../labels/EntryLabel';
 import {Quiz} from './Quiz';
@@ -50,8 +50,7 @@ export const QuizBox: React.FC<QuizBoxProps> = (props) => {
                     lineWidth={props.lineLength}
                     lineRotationInDeg={props.lineRotationInDeg}
                     orientation={orientation}/>
-        <HoverPoint mouseClicked={() => setIsOpen(!isOpen)}
-                    mouseEnter={() => setIsOpen(true)}/>
+        <HoverPoint onMouseEnter={() => setIsOpen(true)}/>
       </div>
       <Quiz question={props.question}
             className={isOpen ? 'open' : 'closed'}
