@@ -64,7 +64,7 @@
 
     &.Slide02 {
       .quiz-reputation {
-        transform: translate(-200px, -270px);
+        transform: translate(-200px, -320px);
       }
 
       .quiz-history {
@@ -81,16 +81,16 @@
           opacity: 0;
         }
 
-        .quiz-reputation {
-          animation: fade-in 1s ease-in 4s forwards;
-        }
-
         .quiz-sport {
           animation: fade-in 1s ease-in 5s forwards;
         }
 
         .quiz-history {
           animation: fade-in 1s ease-in 6s forwards;
+        }
+
+        .quiz-reputation {
+          animation: fade-in 1s ease-in 7s forwards;
         }
       }
     }
@@ -133,14 +133,14 @@
         .bottom-element {
           &.text-container {
             opacity: 1;
-            animation: fade-out 1s ease-out 7s forwards;
+            animation: fade-out 1s ease-out 12s forwards;
           }
 
           &.go-to-main-button {
             font-size: 1rem;
             opacity: 0;
             padding: 0.5rem 3.5rem;
-            animation: fade-in 1s ease-in 8s forwards;
+            animation: fade-in 1s ease-in 13s forwards;
           }
         }
       }

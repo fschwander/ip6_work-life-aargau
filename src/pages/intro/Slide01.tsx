@@ -14,8 +14,8 @@ export const Slide01: React.FC<SlideProps> = props => {
          style={rootStyle}>
 
       <div className='page-headline'>
-        <h3>Willkomen bei</h3>
-        <h2>Work-Life Aargau</h2>
+        <h3>Willkommen bei</h3>
+        <h2>Work Life Aargau</h2>
         <h1>Eine interaktive <br/>
           Platform über den <br/>
           Kanton Aargau</h1>

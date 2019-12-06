@@ -41,9 +41,9 @@ export const QuizBox: React.FC<QuizBoxProps> = (props) => {
 
   const verticalOrientation: CSSProperties = {flexDirection: getVerticalOrientation()}
 
-  useEffect(() =>  {
-    if(quizAnsweredCorrectly) {
-      setTimeout(()=> setIsOpen(false), 8000)
+  useEffect(() => {
+    if (quizAnsweredCorrectly) {
+      setTimeout(() => setIsOpen(false), 12000)
     }
   });
 
