@@ -3,6 +3,8 @@
   position: absolute;
   left: 50%;
   top: 50%;
+  transform: translate(-4rem, -4rem);
+  padding: 4rem;
 
   .label {
     display: flex;

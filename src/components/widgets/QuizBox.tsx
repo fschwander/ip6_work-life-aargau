@@ -41,20 +41,16 @@ export const QuizBox: React.FC<QuizBoxProps> = (props) => {
 
   const verticalOrientation: CSSProperties = {flexDirection: getVerticalOrientation()}
 
-  useEffect(() => {
-    if (quizAnsweredCorrectly) {
-      setTimeout(() => setIsOpen(false), 12000)
-    }
-  });
-
   return (
-    <div className={`QuizBox ${props.question.className} ${props.orientation}`} style={verticalOrientation}>
+    <div className={`QuizBox ${props.question.className} ${props.orientation}`} style={verticalOrientation}
+         onMouseLeave={() => setIsOpen(false)}>
       <div className='label'>
         <EntryLabel text={props.question.title}
                     lineWidth={props.lineLength}
                     lineRotationInDeg={props.lineRotationInDeg}
                     orientation={orientation}/>
-        <HoverPoint mouseClicked={() => setIsOpen(!isOpen)}/>
+        <HoverPoint mouseClicked={() => setIsOpen(!isOpen)}
+                    mouseEnter={() => setIsOpen(true)}/>
       </div>
       <Quiz question={props.question}
             className={isOpen ? 'open' : 'closed'}
