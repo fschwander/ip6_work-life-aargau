@@ -18,12 +18,13 @@ interface ChoiceObject {
 interface QuizProps {
   className?: string
   question: QuestionObject,
-  orientation: string
+  orientation: string,
+  quizAnsweredCorrectly: boolean,
+  setQuizAnsweredCorrectly: Function
 }
 
 interface QuizState {
   quizStarted: boolean,
-  quizAnsweredCorrectly: boolean,
   response: string
 }
 
@@ -34,7 +35,6 @@ export class Quiz extends Component<QuizProps, QuizState> {
 
     this.state = {
       quizStarted: false,
-      quizAnsweredCorrectly: false,
       response: '',
     }
 
@@ -46,7 +46,7 @@ export class Quiz extends Component<QuizProps, QuizState> {
     c.wasSelected = true;
 
     if (c.isCorrect) {
-      this.setState({quizAnsweredCorrectly: true})
+      this.props.setQuizAnsweredCorrectly(true)
       this.props.question.choices.forEach(c => c.isActive = c.isCorrect)
     } else {
       c.isActive = !c.wasSelected || (c.wasSelected && c.isCorrect)

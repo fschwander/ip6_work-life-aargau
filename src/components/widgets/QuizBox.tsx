@@ -1,6 +1,6 @@
-import React, {CSSProperties, useState} from 'react';
-import {EntryLabel} from '../labels/EntryLabel';
+import React, {CSSProperties, useEffect, useState} from 'react';
 import {HoverPoint} from '../buttons/HoverPoint';
+import {EntryLabel} from '../labels/EntryLabel';
 import {Quiz} from './Quiz';
 
 interface QuestionObject {
@@ -28,6 +28,7 @@ interface QuizBoxProps {
 export const QuizBox: React.FC<QuizBoxProps> = (props) => {
 
   const [isOpen, setIsOpen] = useState(false)
+  const [quizAnsweredCorrectly, setQuizAnsweredCorrectly] = useState(false);
   const orientation = props.orientation === undefined ? 'left' : props.orientation;
 
   const getVerticalOrientation = () => {
@@ -40,6 +41,12 @@ export const QuizBox: React.FC<QuizBoxProps> = (props) => {
 
   const verticalOrientation: CSSProperties = {flexDirection: getVerticalOrientation()}
 
+  useEffect(() =>  {
+    if(quizAnsweredCorrectly) {
+      setTimeout(()=> setIsOpen(false), 8000)
+    }
+  });
+
   return (
     <div className={`QuizBox ${props.question.className} ${props.orientation}`} style={verticalOrientation}>
       <div className='label'>
@@ -51,7 +58,11 @@ export const QuizBox: React.FC<QuizBoxProps> = (props) => {
       </div>
       <Quiz question={props.question}
             className={isOpen ? 'open' : 'closed'}
-            orientation={orientation}/>
+            orientation={orientation}
+            quizAnsweredCorrectly={quizAnsweredCorrectly}
+            setQuizAnsweredCorrectly={setQuizAnsweredCorrectly}/>
     </div>
   )
 }
+
+
