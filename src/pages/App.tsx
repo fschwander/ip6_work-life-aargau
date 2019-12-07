@@ -9,8 +9,7 @@ const App: React.FC = (props) => {
       return (
         <UncontrolledAlert>
           <h2>Mobile nicht unterstützt</h2>
-          <p>Bei dieser Website handelt es sich um einen Prototypen und kleine Screens werden noch nicht
-            unterstützt.</p>
+          <p>Bei dieser Website handelt es sich um einen Prototypen und noch sind nicht alle Funktionen implementiert.</p>
           <p>Wir empfehlen auf einen grossen Bildschirm zu wechseln. </p>
         </UncontrolledAlert>)
     }
