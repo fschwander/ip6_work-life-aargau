@@ -20,7 +20,7 @@ const App: React.FC = (props) => {
   return (
     <div className="App">
       {props.children}
-      {throwAlertOnMobile()}
+      {/*{throwAlertOnMobile()}*/}
     </div>
   );
 };

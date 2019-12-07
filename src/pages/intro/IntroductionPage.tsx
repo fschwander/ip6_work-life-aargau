@@ -33,10 +33,8 @@ export const IntroductionPage: React.FC = () => {
 
   const getAllSlides = () => {
     return items.map((slide: object, i: number) => {
-      let isActive = i === activeIndex;
-
       return <React.Fragment key={i}>
-        <div className={'slide ' + (isActive ? 'isActive' : '')}>{slide}</div>
+        {slide}
       </React.Fragment>
     })
   }

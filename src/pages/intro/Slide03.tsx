@@ -14,7 +14,7 @@ export const Slide03: React.FC<SlideProps> = props => {
   const history = useHistory()
 
   const rootStyle = {backgroundImage: `url(${bgImage})`}
-  const rootClass = 'Slide03 slide slide-element full-screen ' + (props.isActive ? 'isActive' : '')
+  const rootClass = 'Slide03 slide full-screen ' + (props.isActive ? 'isActive' : '')
 
   const questions = [
     {

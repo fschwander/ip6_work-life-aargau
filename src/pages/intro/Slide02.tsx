@@ -10,7 +10,7 @@ interface SlideProps {
 
 export const Slide02: React.FC<SlideProps> = props => {
   const rootStyle = {backgroundImage: `url(${lenzburgImg})`}
-  const rootClass = 'Slide02 slide slide-element full-screen ' + (props.isActive ? 'isActive' : '')
+  const rootClass = 'Slide02 slide full-screen ' + (props.isActive ? 'isActive' : '')
 
   const questions = [
     {
