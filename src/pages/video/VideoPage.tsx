@@ -1,7 +1,7 @@
 import React from 'react';
 import {VideoFullScreen} from '../../components/animations/VideoFullScreen';
 import {HoverPointWithLabel} from '../../components/buttons/HoverPointWithLabel';
-import placeholderVideo from '../../res/videos/testVideo.mp4';
+import videoBaden from '../../res/videos/baden.mp4';
 
 export const VideoPage: React.FC = () => {
   const [isPlaying, setIsPlaying] = React.useState(true)
@@ -16,11 +16,16 @@ export const VideoPage: React.FC = () => {
 
   return (
     <div className='VideoPage full-screen'>
-      <VideoFullScreen source={placeholderVideo} playVideo={isPlaying}/>
-      <HoverPointWithLabel className='hiking-trails'
+      <VideoFullScreen source={videoBaden} playVideo={isPlaying}/>
+      <HoverPointWithLabel className={`hiking-trails`}
+                           text='Wanderwege'
                            onActivate={pauseVideo}
-                           onDeactivate={playVideo}
-                           text='Wanderwege'/>
+                           onDeactivate={playVideo}/>
+      <HoverPointWithLabel className={`cie-mammut`}
+                           text='Mammut'
+                           type='company'
+                           onActivate={pauseVideo}
+                           onDeactivate={playVideo}/>
     </div>
   )
 }

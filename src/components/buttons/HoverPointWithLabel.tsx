@@ -2,8 +2,9 @@ import React, {useState} from 'react';
 import {HoverPoint} from './HoverPoint';
 
 interface Props {
-  className: string,
+  className?: string,
   text: string,
+  type?: string,
   onActivate: Function,
   onDeactivate: Function
 }
@@ -22,11 +23,11 @@ export const HoverPointWithLabel: React.FC<Props> = props => {
   }
 
   return (
-    <div className={`HoverPointWithLabel ${props.className} ${isActive ? 'is-active' : ''}`}
+    <div className={`HoverPointWithLabel ${props.className} ${isActive ? 'is-active' : ''} ${props.type !== undefined ? props.type : ''}`}
          onMouseLeave={onDeactivate}>
       <HoverPoint onMouseEnter={onActivate}
                   onClick={() => console.log('clicked')}/>
-      <h4>{props.text}</h4>
+      <h4 className='label'>{props.text}</h4>
     </div>
   )
 }

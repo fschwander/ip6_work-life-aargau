@@ -8,10 +8,21 @@
     transform: translateX(50%);
   }
 
-  h4 {
+  .label {
     background-color: white;
     color: black;
     padding: .5rem 1rem;
     margin: .5rem 0;
+  }
+
+  &.company {
+    .HoverPoint .circle {
+      background-color: $clrHighlight;
+      border-color: $clrHighlight;
+    }
+
+    .label {
+      background-color: $clrHighlight;
+    }
   }
 }
