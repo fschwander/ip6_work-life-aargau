@@ -3,18 +3,18 @@ import {PaginationList} from '../../components/buttons/PaginationList';
 import {RoundButton} from '../../components/buttons/RoundButton';
 import iconArrowLeft from '../../res/icons/arrow_left.svg'
 import iconArrowRight from '../../res/icons/arrow_right.svg'
-import {Slide01} from './Slide01';
-import {Slide02} from './Slide02';
-import {Slide03} from './Slide03';
+import {SlideLanding} from './SlideLanding';
+import {SlideLife} from './SlideLife';
+import {SlideWork} from './SlideWork';
 
 export const IntroductionPage: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   // TODO: add keys dynamically?
   const items = [
-    <Slide01 key='0' isActive={activeIndex === 0}/>,
-    <Slide02 key='1' isActive={activeIndex === 1}/>,
-    <Slide03 key='2' isActive={activeIndex === 2}/>
+    <SlideLanding key='0' isActive={activeIndex === 0}/>,
+    <SlideLife key='1' isActive={activeIndex === 1}/>,
+    <SlideWork key='2' isActive={activeIndex === 2}/>
   ]
 
   const next = () => {

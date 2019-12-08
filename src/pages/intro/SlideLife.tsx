@@ -8,9 +8,9 @@ interface SlideProps {
   isActive: boolean
 }
 
-export const Slide02: React.FC<SlideProps> = props => {
+export const SlideLife: React.FC<SlideProps> = props => {
   const rootStyle = {backgroundImage: `url(${lenzburgImg})`}
-  const rootClass = 'Slide02 slide full-screen ' + (props.isActive ? 'isActive' : '')
+  const rootClass = 'SlideLife slide full-screen ' + (props.isActive ? 'isActive' : '')
 
   const questions = [
     {

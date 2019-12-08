@@ -5,9 +5,9 @@ interface SlideProps {
   isActive: boolean
 }
 
-export const Slide01: React.FC<SlideProps> = props => {
+export const SlideLanding: React.FC<SlideProps> = props => {
   const rootStyle = {backgroundImage: `url(${bgImage})`}
-  const rootClass = 'Slide01 slide full-screen ' + (props.isActive ? 'isActive' : '')
+  const rootClass = 'SlideLanding slide full-screen ' + (props.isActive ? 'isActive' : '')
 
   return (
     <div className={rootClass}
