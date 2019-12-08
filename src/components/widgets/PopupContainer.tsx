@@ -15,11 +15,13 @@ export const PopupContainer: React.FC<Props> = props => {
     } else if (rootRef.current != null) {
       // TODO: is not optimal, add better way to remove this component or children
       rootRef.current.remove()
+    } else {
+      console.warn('could not remove node');
     }
   }
 
   return (
-    <div className='PopupContainer full-screen'>
+    <div className='PopupContainer full-screen' ref={rootRef}>
       <div className='content-container'>
         {props.children}
         <RoundButton onClick={closeNode} icon={closeIcon} isActive={true}/>

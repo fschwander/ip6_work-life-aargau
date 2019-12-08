@@ -10,11 +10,13 @@
 
   .content-container {
     position: relative;
+
+    .RoundButton {
+      position: absolute;
+      top: 0;
+      transform: translateX(-120%);
+    }
   }
 
-  .RoundButton {
-    position: absolute;
-    top: 0;
-    transform: translateX(-120%);
-  }
+
 }

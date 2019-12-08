@@ -28,30 +28,29 @@
   align-items: center;
   justify-content: center;
 
-  .alert {
-    position: absolute;
-    width: 95vw;
-    border-radius: .2rem;
-    border-color: #222;
+  .PopupContainer {
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 4rem 2rem 5rem;
-    background-color: #222;
-    color: white;
 
-    button {
-      font-size: 4rem;
-    }
+    .content-container {
+      width: 90vw;
+      border-radius: .2rem;
+      background-color: #222;
+      padding: 3rem 2rem 2rem;
 
-    h2 {
-      padding: 1rem 0;
-    }
+      .RoundButton {
+        transform: unset;
+        position: unset;
+        margin: 2rem auto;
+      }
 
-    p {
-      width: 80%;
-      padding-bottom: .5rem;
+      h2 {
+        padding: .5rem 0;
+      }
+
+      p {
+        padding-bottom: .5rem;
+      }
     }
   }
 }

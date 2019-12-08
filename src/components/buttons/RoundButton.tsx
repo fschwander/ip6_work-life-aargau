@@ -27,9 +27,9 @@ export const RoundButton: React.FC<RoundButtonProps> = props => {
     <div className={`RoundButton button ${props.isActive ? 'enabled' : 'disabled'}`}
          style={style}
          onClick={handleClick}>
-      <img src={props.icon} alt='icon'/>
-      <p>{props.text}</p>
-      <p><i>{props.optionalText}</i></p>
+      {props.icon ? <img src={props.icon} alt='icon'/> : null}
+      {props.text? <p>{props.text}</p> : null}
+      {props.optionalText ? <p><i>{props.optionalText}</i></p> : null}
     </div>
   )
 }
