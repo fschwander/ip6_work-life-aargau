@@ -1,8 +1,9 @@
 import React from 'react';
 import {VideoFullScreen} from '../../components/animations/VideoFullScreen';
 import {HoverPointWithLabel} from '../../components/buttons/HoverPointWithLabel';
+import {PopupContainer} from '../../components/widgets/PopupContainer';
+import {ReactComponent as PlaceholderImg} from '../../pages/video/placeholderContent.svg';
 import videoBaden from '../../res/videos/baden.mp4';
-import {SlideHikingTrails} from './SlideHikingTrails';
 
 export const VideoPage: React.FC = () => {
   const [isPlaying, setIsPlaying] = React.useState(true)
@@ -16,7 +17,7 @@ export const VideoPage: React.FC = () => {
     setIsPlaying(true)
   }
 
-  const getSlideHikingTrails = () => <SlideHikingTrails onClose={setPopupContainer}/>
+  const getSlideHikingTrails = () => <PlaceholderImg/>
 
   return (
     <div className='VideoPage full-screen'>
@@ -35,9 +36,10 @@ export const VideoPage: React.FC = () => {
                            onMouseLeave={playVideo}
                            onClick={() => setPopupContainer(getSlideHikingTrails)}/>
 
-      <div className='popup-container'>
-        {popupComponent}
-      </div>
+      {popupComponent !== undefined ?
+        <PopupContainer onClose={setPopupContainer}>
+          {popupComponent}
+        </PopupContainer> : null}
 
     </div>
   )
