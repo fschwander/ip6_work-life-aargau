@@ -14,13 +14,12 @@
     align-items: center;
 
     .content-container {
-      width: 600px;
-      height: 400px;
-      background-color: deeppink;
+      position: relative;
     }
 
     .RoundButton {
       position: absolute;
+      top: 0;
       transform: translateX(-120%);
     }
   }
