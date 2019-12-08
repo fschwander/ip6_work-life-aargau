@@ -15,6 +15,13 @@
     margin: .5rem 0;
   }
 
+  &.left {
+    align-items: flex-start;
+    .HoverPoint {
+      transform: translateX(-50%);
+    }
+  }
+
   &.company {
     .HoverPoint .circle {
       background-color: $clrHighlight;

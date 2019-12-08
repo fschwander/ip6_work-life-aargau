@@ -23,6 +23,7 @@ export const VideoPage: React.FC = () => {
                            onDeactivate={playVideo}/>
       <HoverPointWithLabel className={`cie-mammut`}
                            text='Mammut'
+                           hOrientation='left'
                            type='company'
                            onActivate={pauseVideo}
                            onDeactivate={playVideo}/>

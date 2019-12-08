@@ -5,12 +5,21 @@ interface Props {
   className?: string,
   text: string,
   type?: string,
+  hOrientation?: string,
   onActivate: Function,
   onDeactivate: Function
 }
 
 export const HoverPointWithLabel: React.FC<Props> = props => {
   const [isActive, setIsActive] = useState(false);
+
+  const getRootClass = () => {
+    let rootClass = `HoverPointWithLabel ${props.className}`;
+    rootClass += isActive ? ' is-active' : '';
+    rootClass += props.type !== undefined ? ' ' + props.type : '';
+    rootClass += props.hOrientation !== undefined ? ' ' + props.hOrientation : '';
+    return rootClass;
+  }
 
   const onActivate = () => {
     props.onActivate();
@@ -23,10 +32,12 @@ export const HoverPointWithLabel: React.FC<Props> = props => {
   }
 
   return (
-    <div className={`HoverPointWithLabel ${props.className} ${isActive ? 'is-active' : ''} ${props.type !== undefined ? props.type : ''}`}
-         onMouseLeave={onDeactivate}>
-      <HoverPoint onMouseEnter={onActivate}
-                  onClick={() => console.log('clicked')}/>
+    <div
+      className={getRootClass()}
+      onMouseLeave={onDeactivate}>
+      <HoverPoint
+        onMouseEnter={onActivate}
+        onClick={() => console.log('clicked')}/>
       <h4 className='label'>{props.text}</h4>
     </div>
   )
