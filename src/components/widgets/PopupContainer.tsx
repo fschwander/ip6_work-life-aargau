@@ -6,7 +6,7 @@ interface Props {
   onClose: Function
 }
 
-export const PopupContainer: React.FC<Props> = props => {
+export const PopupContainer: React.FC<Props> = props => {f
 
   return (
     <div className='PopupContainer full-screen'>
