@@ -1,6 +1,6 @@
 import React from 'react';
-import {HoverPoint} from '../../components/buttons/HoverPoint';
 import {VideoFullScreen} from '../../components/animations/VideoFullScreen';
+import {HoverPointWithLabel} from '../../components/buttons/HoverPointWithLabel';
 import placeholderVideo from '../../res/videos/testVideo.mp4';
 
 export const VideoPage: React.FC = () => {
@@ -17,9 +17,10 @@ export const VideoPage: React.FC = () => {
   return (
     <div className='VideoPage full-screen'>
       <VideoFullScreen source={placeholderVideo} playVideo={isPlaying}/>
-      <HoverPoint onMouseEnter={pauseVideo}
-                  onMouseLeave={playVideo}
-                  onClick={() => console.log('mouse clicked...')}/>
+      <HoverPointWithLabel className='hiking-trails'
+                           onActivate={pauseVideo}
+                           onDeactivate={playVideo}
+                           text='Wanderwege'/>
     </div>
   )
 }

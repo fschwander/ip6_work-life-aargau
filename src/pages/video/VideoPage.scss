@@ -1,7 +1,14 @@
 .VideoPage {
-  .HoverPoint {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .HoverPointWithLabel {
     position: absolute;
-    left: 30%;
-    top: 30%;
+
+    &.hiking-trails {
+      left: 30%;
+      top: 30%;
+    }
   }
 }

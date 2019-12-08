@@ -5,7 +5,7 @@ import './App.scss';
 const App: React.FC = (props) => {
 
   const throwAlertOnMobile = () => {
-    if(window.innerWidth < 700 || window.innerHeight < 800) {
+    if(window.innerWidth < 700 || window.innerHeight < 600) {
       return (
         <UncontrolledAlert>
           <h2>Mobile nicht unterstützt</h2>
