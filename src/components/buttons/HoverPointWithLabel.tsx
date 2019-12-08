@@ -6,8 +6,9 @@ interface Props {
   text: string,
   type?: string,
   hOrientation?: string,
-  onActivate: Function,
-  onDeactivate: Function
+  onMouseEnter: Function,
+  onMouseLeave: Function,
+  onClick?: Function
 }
 
 export const HoverPointWithLabel: React.FC<Props> = props => {
@@ -22,13 +23,19 @@ export const HoverPointWithLabel: React.FC<Props> = props => {
   }
 
   const onActivate = () => {
-    props.onActivate();
+    props.onMouseEnter();
     setIsActive(true);
   }
 
   const onDeactivate = () => {
-    props.onDeactivate();
+    props.onMouseLeave();
     setIsActive(false);
+  }
+
+  const onClick =() => {
+    if(props.onClick !== undefined) {
+      props.onClick();
+    }
   }
 
   return (
@@ -37,7 +44,7 @@ export const HoverPointWithLabel: React.FC<Props> = props => {
       onMouseLeave={onDeactivate}>
       <HoverPoint
         onMouseEnter={onActivate}
-        onClick={() => console.log('clicked')}/>
+        onClick={onClick}/>
       <h4 className='label'>{props.text}</h4>
     </div>
   )
