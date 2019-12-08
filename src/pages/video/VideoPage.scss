@@ -18,6 +18,11 @@
       height: 400px;
       background-color: deeppink;
     }
+
+    .RoundButton {
+      position: absolute;
+      transform: translateX(-120%);
+    }
   }
 
   .HoverPointWithLabel {
