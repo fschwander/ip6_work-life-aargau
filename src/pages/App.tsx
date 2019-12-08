@@ -3,23 +3,24 @@ import {PopupContainer} from '../components/widgets/PopupContainer';
 import './App.scss';
 
 const App: React.FC = (props) => {
+  const [showOnMobileAlert, setShowOnMobileAlert] = React.useState(false)
 
-  const throwAlertOnMobile = () => {
+  useEffect(() => {
     if (window.innerWidth < 700 || window.innerHeight < 600) {
-      return (
-        <PopupContainer>
-          <h2>Mobile nicht unterstützt</h2>
-          <p>Bei dieser Website handelt es sich um einen Prototypen und noch sind nicht alle Funktionen
-            implementiert.</p>
-          <p>Wir empfehlen auf einen grossen Bildschirm zu wechseln. </p>
-        </PopupContainer>)
+      setShowOnMobileAlert(true)
     }
-  }
+  }, [])
 
   return (
     <div className="App">
       {props.children}
-      {throwAlertOnMobile()}
+      {showOnMobileAlert ?
+        <PopupContainer onClose={() => setShowOnMobileAlert(false)}>
+          <h2>Mobile nicht unterstützt</h2>
+          <p>Bei dieser Website handelt es sich um einen Prototypen und noch sind nicht alle Funktionen
+            implementiert.</p>
+          <p>Wir empfehlen auf einen grossen Bildschirm zu wechseln. </p>
+        </PopupContainer> : null}
     </div>
   );
 };
