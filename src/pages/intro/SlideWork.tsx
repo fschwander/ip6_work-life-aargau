@@ -1,6 +1,6 @@
 import React from 'react';
 import {useHistory} from 'react-router-dom';
-import {SVGStrokeAnimation} from '../../components/animations/SVGStrokeAnimation';
+import {AnimatedSVG} from '../../components/containers/AnimatedSVG';
 import {RectButton} from '../../components/buttons/RectButton';
 import {QuizBox} from '../../components/widgets/QuizBox';
 import bgImage from '../../res/imgs/AT_PSI_VILLIGEN.jpg'
@@ -52,7 +52,7 @@ export const SlideWork: React.FC<SlideProps> = props => {
          style={rootStyle}>
       <span className='background-filter'/>
 
-      <SVGStrokeAnimation svgComponent={SVGImage} isActive={props.isActive}/>
+      <AnimatedSVG svgComponent={SVGImage} isActive={props.isActive}/>
 
 
 

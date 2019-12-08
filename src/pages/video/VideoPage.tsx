@@ -1,7 +1,7 @@
 import React from 'react';
-import {VideoFullScreen} from '../../components/animations/VideoFullScreen';
+import {BackgroundVideo} from '../../components/containers/BackgroundVideo';
 import {HoverPointWithLabel} from '../../components/buttons/HoverPointWithLabel';
-import {PopupContainer} from '../../components/widgets/PopupContainer';
+import {PopupContainer} from '../../components/containers/PopupContainer';
 import {ReactComponent as HikingTrailsPlaceholder} from './placeholderHikingTrails.svg';
 import {ReactComponent as MammutPlaceholder} from './placeholderMammut.svg';
 import videoBaden from '../../res/videos/baden.mp4';
@@ -23,7 +23,7 @@ export const VideoPage: React.FC = () => {
 
   return (
     <div className='VideoPage full-screen'>
-      <VideoFullScreen source={videoBaden} playVideo={isPlaying}/>
+      <BackgroundVideo source={videoBaden} playVideo={isPlaying}/>
 
       <HoverPointWithLabel className={`hiking-trails`}
                            text='Wanderwege'

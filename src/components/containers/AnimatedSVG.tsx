@@ -1,14 +1,14 @@
 import React, {Component} from 'react';
 
-interface SVGStrokeAnimationProps {
+interface Props {
   svgComponent: React.FC,
   isActive: boolean
 }
 
-export class SVGStrokeAnimation extends Component<SVGStrokeAnimationProps> {
+export class AnimatedSVG extends Component<Props> {
   rootRef: React.RefObject<HTMLDivElement>;
 
-  constructor(props: SVGStrokeAnimationProps) {
+  constructor(props: Props) {
     super(props);
 
     this.rootRef = React.createRef();
@@ -19,7 +19,7 @@ export class SVGStrokeAnimation extends Component<SVGStrokeAnimationProps> {
     const SVGImage = this.props.svgComponent;
 
     return (
-      <div className={`SVGStrokeAnimation ${this.props.isActive ? 'is-active' : ''}`} ref={this.rootRef}>
+      <div className={`AnimatedSVG ${this.props.isActive ? 'is-active' : ''}`} ref={this.rootRef}>
         <SVGImage/>
       </div>
     )

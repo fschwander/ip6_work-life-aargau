@@ -1,5 +1,5 @@
 import React from 'react';
-import {SVGStrokeAnimation} from '../../components/animations/SVGStrokeAnimation';
+import {AnimatedSVG} from '../../components/containers/AnimatedSVG';
 import {QuizBox} from '../../components/widgets/QuizBox';
 import lenzburgImg from '../../res/imgs/AT_SCHLOSS_LENZBURG.jpg'
 import {ReactComponent as lenzburgSvg} from '../../res/imgs/AT_SCHLOSS_LENZBURG.svg'
@@ -56,7 +56,7 @@ export const SlideLife: React.FC<SlideProps> = props => {
          style={rootStyle}>
       <span className='background-filter'/>
 
-      <SVGStrokeAnimation svgComponent={lenzburgSvg} isActive={props.isActive}/>
+      <AnimatedSVG svgComponent={lenzburgSvg} isActive={props.isActive}/>
       <QuizBox question={questions[0]} lineLength={140} lineRotationInDeg={300} orientation='left'/>
       <QuizBox question={questions[1]} lineLength={130} lineRotationInDeg={235} orientation='left'/>
       <QuizBox question={questions[2]} lineLength={80} lineRotationInDeg={40} orientation='right'/>

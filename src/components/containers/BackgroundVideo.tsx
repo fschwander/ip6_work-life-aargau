@@ -12,7 +12,7 @@ interface VideoFullScreenState {
   isBuffering: boolean
 }
 
-export class VideoFullScreen extends Component<FullScreenVideoProps, VideoFullScreenState> {
+export class BackgroundVideo extends Component<FullScreenVideoProps, VideoFullScreenState> {
 
   constructor(props: FullScreenVideoProps) {
     super(props);
@@ -31,7 +31,7 @@ export class VideoFullScreen extends Component<FullScreenVideoProps, VideoFullSc
 
   render() {
     return (
-      <div className='VideoFullScreen'>
+      <div className='BackgroundVideo'>
         <div className='loading-container' style={{opacity: this.state.isBuffering ? 1 : 0}}>
           <Spinner color='light'/>
           <p>Einen Moment, bitte...</p>

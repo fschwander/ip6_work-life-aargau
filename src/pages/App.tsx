@@ -1,5 +1,5 @@
-import React from 'react';
-import {PopupContainer} from '../components/widgets/PopupContainer';
+import React, {useEffect} from 'react';
+import {PopupContainer} from '../components/containers/PopupContainer';
 import './App.scss';
 
 const App: React.FC = (props) => {
