@@ -5,6 +5,7 @@ import {RectButton} from '../../components/buttons/RectButton';
 import {QuizBox} from '../../components/widgets/QuizBox';
 import bgImage from '../../res/imgs/AT_PSI_VILLIGEN.jpg'
 import {ReactComponent as SVGImage} from '../../res/imgs/AT_PSI_VILLIGEN.svg'
+import {questions} from '../../res/data/questions'
 
 interface SlideProps {
   isActive: boolean
@@ -16,33 +17,6 @@ export const SlideWork: React.FC<SlideProps> = props => {
   const rootStyle = {backgroundImage: `url(${bgImage})`}
   const rootClass = 'SlideWork slide full-screen ' + (props.isActive ? 'isActive' : '')
 
-  const questions = [
-    {
-      className: "quiz-companies",
-      title: "Firmen",
-      subtitle: "Welche der folgenden Firmen hat einen wichtigen Standort im Kanton Aargau?",
-      choices: [
-        {text: "Mammut", isCorrect: true},
-        {text: "Roche", isCorrect: true},
-        {text: "Novartis", isCorrect: true},
-        {text: "Apple", isCorrect: false}
-      ],
-      answer: "Richtig! Alle diese Firmen haben Standorte im Aargau. Und alle suchen nach Fachkräften!"
-    },
-    {
-      className: "quiz-jobs",
-      title: "Arbeitsplätze",
-      subtitle: "Welche Arbeitskräfte fehlen dem Aargau am meisten?",
-      choices: [
-        {text: "Keine", isCorrect: false},
-        {text: "Alle", isCorrect: false},
-        {text: "Fachkräfte", isCorrect: true},
-        {text: "Du", isCorrect: true}
-      ],
-      answer: "Richtig, der Kanton Aargau braucht Dich! Durch den Fachkräftemangel hast du die Qual der Wahl."
-    }
-  ]
-
   const redirectToMainPage = () => {
     history.push('/video')
   }
@@ -51,23 +25,20 @@ export const SlideWork: React.FC<SlideProps> = props => {
     <div className={rootClass}
          style={rootStyle}>
       <span className='background-filter'/>
-
       <AnimatedSVG svgComponent={SVGImage} isActive={props.isActive}/>
 
-
-
-      <QuizBox question={questions[0]} lineLength={100} lineRotationInDeg={320} orientation='right'/>
-      <QuizBox question={questions[1]} lineLength={200} lineRotationInDeg={235} orientation='left'/>
+      <QuizBox question={questions.companies} lineLength={100} lineRotationInDeg={320} orientation='right'/>
+      <QuizBox question={questions.jobs} lineLength={200} lineRotationInDeg={235} orientation='left'/>
 
       <div className='bottom-element text-container'>
         <p>Du interessierst dich für die <b>Firmen</b> im Kanton Aargau?</p>
         <p>Entdecke <b>interessante Arbeitsplätze</b> und vieles mehr. Los geht's!</p>
       </div>
+
       <RectButton className='bottom-element go-to-main-button'
                   text='Abenteuer starten'
                   isActive={true}
                   onClick={redirectToMainPage}/>
-
     </div>
   )
 }
