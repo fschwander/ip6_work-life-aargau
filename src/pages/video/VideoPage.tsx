@@ -19,16 +19,13 @@ export const VideoPage: React.FC = () => {
     setIsPlaying(true)
   }
 
-  const getSlideHikingTrails = () => <HikingTrailsPlaceholder/>
-  const getSlideMammut = () => <MammutPlaceholder/>
-
   return (
     <div className='VideoPage full-screen'>
       <BackgroundVideo source={videoBaden} playVideo={isPlaying}/>
 
       <HoverPointWithLabel className={`hiking-trails`}
                            text='Wanderwege'
-                           onClick={() => setPopupContainer(getSlideHikingTrails)}
+                           onClick={() => setPopupContainer(<HikingTrailsPlaceholder/>)}
                            onMouseEnter={pauseVideo}
                            onMouseLeave={playVideo}/>
       <HoverPointWithLabel className={`cie-mammut`}
@@ -37,9 +34,8 @@ export const VideoPage: React.FC = () => {
                            type='company'
                            onMouseEnter={pauseVideo}
                            onMouseLeave={playVideo}
-                           onClick={() => setPopupContainer(getSlideMammut)}/>
+                           onClick={() => setPopupContainer(<MammutPlaceholder/>)}/>
       <LocationLabel/>
-
 
       {popupComponent !== undefined ?
         <PopupContainer onClose={setPopupContainer}>
