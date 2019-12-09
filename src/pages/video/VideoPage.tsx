@@ -2,6 +2,7 @@ import React from 'react';
 import {BackgroundVideo} from '../../components/containers/BackgroundVideo';
 import {HoverPointWithLabel} from '../../components/buttons/HoverPointWithLabel';
 import {PopupContainer} from '../../components/containers/PopupContainer';
+import {LocationLabel} from '../../components/labels/LocationLabel';
 import {ReactComponent as HikingTrailsPlaceholder} from './placeholderHikingTrails.svg';
 import {ReactComponent as MammutPlaceholder} from './placeholderMammut.svg';
 import videoBaden from '../../res/videos/baden.mp4';
@@ -37,6 +38,8 @@ export const VideoPage: React.FC = () => {
                            onMouseEnter={pauseVideo}
                            onMouseLeave={playVideo}
                            onClick={() => setPopupContainer(getSlideMammut)}/>
+      <LocationLabel/>
+
 
       {popupComponent !== undefined ?
         <PopupContainer onClose={setPopupContainer}>

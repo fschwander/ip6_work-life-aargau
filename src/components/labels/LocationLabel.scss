@@ -1,0 +1,40 @@
+.LocationLabel {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  text-align: left;
+  margin: 0 0 2rem 4rem;
+
+  .horizontal-container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding-top: .5rem;
+
+    & > :not(:last-child) {
+      margin-right: 1.5rem;
+    }
+
+    .icon-container {
+      img {
+        padding-bottom: .4rem;
+      }
+    }
+  }
+
+  .slider {
+    display: flex;
+    flex-direction: row;
+    border: $lineThin white solid;
+    border-radius: 1rem;
+    padding: 0 0.5rem 0 1rem;
+
+    img {
+      padding: .5rem;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+}
