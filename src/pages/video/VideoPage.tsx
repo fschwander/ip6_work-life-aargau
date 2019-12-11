@@ -3,9 +3,9 @@ import {BackgroundVideo} from '../../components/containers/BackgroundVideo';
 import {HoverPointWithLabel} from '../../components/buttons/HoverPointWithLabel';
 import {PopupContainer} from '../../components/containers/PopupContainer';
 import {LocationLabel} from '../../components/labels/LocationLabel';
-import {ReactComponent as HikingTrailsPlaceholder} from './placeholderHikingTrails.svg';
 import {ReactComponent as MammutPlaceholder} from './placeholderMammut.svg';
 import videoBaden from '../../res/videos/baden.mp4';
+import {VideoOverlay} from './VideoOverlay';
 
 export const VideoPage: React.FC = () => {
   const [isPlaying, setIsPlaying] = React.useState(true)
@@ -25,7 +25,7 @@ export const VideoPage: React.FC = () => {
 
       <HoverPointWithLabel className={`hiking-trails`}
                            text='Wanderwege'
-                           onClick={() => setPopupContainer(<HikingTrailsPlaceholder/>)}
+                           onClick={() => setPopupContainer(<VideoOverlay/>)}
                            onMouseEnter={pauseVideo}
                            onMouseLeave={playVideo}/>
       <HoverPointWithLabel className={`cie-mammut`}
@@ -35,6 +35,7 @@ export const VideoPage: React.FC = () => {
                            onMouseEnter={pauseVideo}
                            onMouseLeave={playVideo}
                            onClick={() => setPopupContainer(<MammutPlaceholder/>)}/>
+
       <LocationLabel/>
 
       {popupComponent !== undefined ?
