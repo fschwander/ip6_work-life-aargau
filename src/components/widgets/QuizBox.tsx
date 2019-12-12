@@ -1,12 +1,12 @@
 import React, {CSSProperties, useState} from 'react';
-import {QuestionObject} from '../../res/data/questionsData';
+import {QuestionInterface} from '../../interfaces/QuestionInterface';
 import {HoverPoint} from '../buttons/HoverPoint';
 import {EntryLabel} from '../labels/EntryLabel';
 import {Quiz} from './Quiz';
 
 interface QuizBoxProps {
   className: string,
-  question: QuestionObject,
+  question: QuestionInterface,
   lineLength: number,
   lineRotationInDeg: number,
   orientation?: string

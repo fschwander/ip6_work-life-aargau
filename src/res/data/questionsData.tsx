@@ -1,23 +1,11 @@
-export interface QuestionObject {
-  title: string,
-  subtitle: string,
-  choices: Array<ChoiceObject>,
-  answer: string
-}
-
-export interface ChoiceObject {
-  text: string,
-  isCorrect: boolean,
-  wasSelected?: boolean,
-  isActive?: boolean
-}
+import {QuestionInterface} from '../../interfaces/QuestionInterface';
 
 interface QuestionsData {
-  reputation: QuestionObject,
-  history: QuestionObject,
-  sport: QuestionObject,
-  companies: QuestionObject,
-  jobs: QuestionObject
+  reputation: QuestionInterface,
+  history: QuestionInterface,
+  sport: QuestionInterface,
+  companies: QuestionInterface,
+  jobs: QuestionInterface
 }
 
 export const questions: QuestionsData = {

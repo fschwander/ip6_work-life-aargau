@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
-import {ChoiceObject, QuestionObject} from '../../res/data/questionsData';
+import {ChoiceInterface, QuestionInterface} from '../../interfaces/QuestionInterface';
 import {RectButton} from '../buttons/RectButton';
 
 interface QuizProps {
   className?: string
-  question: QuestionObject,
+  question: QuestionInterface,
   orientation: string,
   quizAnsweredCorrectly: boolean,
   setQuizAnsweredCorrectly: Function
@@ -28,7 +28,7 @@ export class Quiz extends Component<QuizProps, QuizState> {
     props.question.choices.forEach(c => c.wasSelected = true)
   }
 
-  selectChoice = (c: ChoiceObject) => {
+  selectChoice = (c: ChoiceInterface) => {
     this.setState({quizStarted: true})
     c.wasSelected = true;
 
