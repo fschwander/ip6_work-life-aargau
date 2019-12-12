@@ -1,12 +1,41 @@
 // icons
 import iconClimbing from '../../res/icons/climbing.svg'
 import iconHiking from '../../res/icons/hiking.svg'
-
 // images
 import imgHikingTrails from '../../res/imgs/ol_hikingtrails.jpg'
 
+export interface VideoOverlayData {
+  header: {
+    title: string,
+    text: string,
+    items: Array<TextItem>
+  }
+  topics: Array<ImageItem>,
+  graph: {
+    title: string
+  },
+  details: {
+    image: string,
+    title: string,
+    items: Array<TextItem>
+  }
+}
 
-export const overlays = {
+interface ImageItem {
+  icon: string,
+  text: string
+}
+
+interface TextItem {
+  text: string,
+  value: string
+}
+
+interface Overlays {
+  hikingTrails: VideoOverlayData
+}
+
+export const videoOverlays = {
   hikingTrails: {
     header: {
       title: "Wanderwege",

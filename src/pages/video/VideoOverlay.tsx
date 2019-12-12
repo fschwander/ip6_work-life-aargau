@@ -1,36 +1,10 @@
 import React from 'react';
 import iconArrowLeft from '../../res/icons/arrow2_left.svg'
 import iconArrowRight from '../../res/icons/arrow2_right.svg'
+import {VideoOverlayData} from '../../res/data/videoOverlays';
 
 interface Props {
-  data: OverlayData
-}
-
-interface OverlayData {
-  header: {
-    title: string,
-    text: string,
-    items: Array<TextItem>
-  }
-  topics: Array<ImageItem>,
-  graph: {
-    title: string
-  },
-  details: {
-    image: string,
-    title: string,
-    items: Array<TextItem>
-  }
-}
-
-interface ImageItem {
-  icon: string,
-  text: string
-}
-
-interface TextItem {
-  text: string,
-  value: string
+  data: VideoOverlayData
 }
 
 export const VideoOverlay: React.FC<Props> = props => {
