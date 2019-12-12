@@ -1,5 +1,5 @@
 import React from 'react';
-import {VideoOverlayInterface} from '../../interfaces/VideoOverlayInterface';
+import {VideoOverlayInterface} from '../../res/data/video/VideoOverlayInterface';
 import iconArrowLeft from '../../res/icons/arrow2_left.svg'
 import iconArrowRight from '../../res/icons/arrow2_right.svg'
 

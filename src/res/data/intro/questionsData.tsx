@@ -1,4 +1,4 @@
-import {QuestionInterface} from '../../interfaces/QuestionInterface';
+import {QuestionInterface} from './QuestionInterface';
 
 interface QuestionsData {
   reputation: QuestionInterface,

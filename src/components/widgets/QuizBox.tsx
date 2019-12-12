@@ -1,5 +1,5 @@
 import React, {CSSProperties, useState} from 'react';
-import {QuestionInterface} from '../../interfaces/QuestionInterface';
+import {QuestionInterface} from '../../res/data/intro/QuestionInterface';
 import {HoverPoint} from '../buttons/HoverPoint';
 import {EntryLabel} from '../labels/EntryLabel';
 import {Quiz} from './Quiz';
