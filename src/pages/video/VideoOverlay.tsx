@@ -1,7 +1,7 @@
 import React from 'react';
 import iconArrowLeft from '../../res/icons/arrow2_left.svg'
 import iconArrowRight from '../../res/icons/arrow2_right.svg'
-import {VideoOverlayData} from '../../res/data/videoOverlays';
+import {VideoOverlayData} from '../../res/data/videoOverlaysData';
 
 interface Props {
   data: VideoOverlayData

@@ -1,24 +1,11 @@
 import React, {CSSProperties, useState} from 'react';
+import {QuestionObject} from '../../res/data/questionsData';
 import {HoverPoint} from '../buttons/HoverPoint';
 import {EntryLabel} from '../labels/EntryLabel';
 import {Quiz} from './Quiz';
 
-interface QuestionObject {
-  className: string,
-  title: string,
-  subtitle: string,
-  choices: Array<ChoiceObject>,
-  answer: string
-}
-
-interface ChoiceObject {
-  text: string,
-  isCorrect: boolean,
-  wasSelected?: boolean,
-  isActive?: boolean
-}
-
 interface QuizBoxProps {
+  className: string,
   question: QuestionObject,
   lineLength: number,
   lineRotationInDeg: number,
@@ -42,7 +29,7 @@ export const QuizBox: React.FC<QuizBoxProps> = (props) => {
   const verticalOrientation: CSSProperties = {flexDirection: getVerticalOrientation()}
 
   return (
-    <div className={`QuizBox ${props.question.className} ${props.orientation} ${isOpen ? 'is-open': 'is-closed'}`}
+    <div className={`QuizBox ${props.className} ${props.orientation} ${isOpen ? 'is-open': 'is-closed'}`}
          style={verticalOrientation}
          onMouseLeave={() => setIsOpen(false)}>
       <div className='label'>

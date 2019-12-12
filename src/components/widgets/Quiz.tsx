@@ -1,19 +1,6 @@
 import React, {Component} from 'react';
+import {ChoiceObject, QuestionObject} from '../../res/data/questionsData';
 import {RectButton} from '../buttons/RectButton';
-
-interface QuestionObject {
-  title: string,
-  subtitle: string,
-  choices: Array<ChoiceObject>,
-  answer: string
-}
-
-interface ChoiceObject {
-  text: string,
-  isCorrect: boolean,
-  wasSelected?: boolean,
-  isActive?: boolean
-}
 
 interface QuizProps {
   className?: string

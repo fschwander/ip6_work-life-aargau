@@ -5,7 +5,7 @@ import {RectButton} from '../../components/buttons/RectButton';
 import {QuizBox} from '../../components/widgets/QuizBox';
 import bgImage from '../../res/imgs/AT_PSI_VILLIGEN.jpg'
 import {ReactComponent as SVGImage} from '../../res/imgs/AT_PSI_VILLIGEN.svg'
-import {questions} from '../../res/data/questions'
+import {questions} from '../../res/data/questionsData'
 
 interface SlideProps {
   isActive: boolean
@@ -27,8 +27,10 @@ export const SlideWork: React.FC<SlideProps> = props => {
       <span className='background-filter'/>
       <AnimatedSVG svgComponent={SVGImage} isActive={props.isActive}/>
 
-      <QuizBox question={questions.companies} lineLength={100} lineRotationInDeg={320} orientation='right'/>
-      <QuizBox question={questions.jobs} lineLength={200} lineRotationInDeg={235} orientation='left'/>
+      <QuizBox className="quiz-companies" question={questions.companies}
+               lineLength={100} lineRotationInDeg={320} orientation='right'/>
+      <QuizBox className="quiz-jobs" question={questions.jobs}
+               lineLength={200} lineRotationInDeg={235} orientation='left'/>
 
       <div className='bottom-element text-container'>
         <p>Du interessierst dich für die <b>Firmen</b> im Kanton Aargau?</p>

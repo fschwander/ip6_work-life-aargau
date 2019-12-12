@@ -35,7 +35,7 @@ interface Overlays {
   hikingTrails: VideoOverlayData
 }
 
-export const videoOverlays = {
+export const videoOverlaysData = {
   hikingTrails: {
     header: {
       title: "Wanderwege",
