@@ -1,3 +1,50 @@
+const emptyObject: VideoOverlayInterface = {
+  header: {
+    title: "",
+    text: "",
+    items: [
+      {
+        text: "",
+        value: ""
+      },
+      {
+        text: "",
+        value: ""
+      }
+    ]
+  },
+
+  topics: [
+    {
+      icon: "",
+      text: ""
+    },
+    {
+      icon: "",
+      text: ""
+    }
+  ],
+
+  graph: {
+    title: ""
+  },
+
+  details: {
+    image: "",
+    title: "",
+    items: [
+      {
+        text: "",
+        value: ""
+      },
+      {
+        text: "",
+        value: ""
+      }
+    ]
+  }
+}
+
 export interface VideoOverlayInterface {
   header: {
     title: string,
@@ -15,12 +62,12 @@ export interface VideoOverlayInterface {
   }
 }
 
-interface ImageItem {
+export interface ImageItem {
   icon: string,
   text: string
 }
 
-interface TextItem {
+export interface TextItem {
   text: string,
   value: string
 }
