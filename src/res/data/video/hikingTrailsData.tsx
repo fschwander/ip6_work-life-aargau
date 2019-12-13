@@ -1,9 +1,11 @@
+import {Constants} from '../../../services/Constants';
 import {VideoOverlayInterface} from './VideoOverlayInterface'
 import iconClimbing from '../../icons/climbing.svg'
 import iconHiking from '../../icons/hiking.svg'
 import imgHikingTrails from '../../imgs/ol_hikingtrails.jpg'
 
 export const hikingTrailsData: VideoOverlayInterface = {
+  type: Constants.TYPE_LIFE,
   header: {
     title: "Wanderwege",
     text: "Wanderer sind auf den gut beschilderten Wegen unterwegs und staunen über die landschaftliche Vielfalt der Region.",

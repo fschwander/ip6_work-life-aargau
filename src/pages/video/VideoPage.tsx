@@ -25,14 +25,14 @@ export const VideoPage: React.FC = () => {
       <BackgroundVideo source={videoBaden} playVideo={isPlaying}/>
 
       <HoverPointWithLabel className={`hiking-trails`}
-                           text='Wanderwege'
+                           text={hikingTrailsData.header.title}
                            onClick={() => setPopupContainer(<VideoOverlay data={hikingTrailsData}/>)}
                            onMouseEnter={pauseVideo}
                            onMouseLeave={playVideo}/>
       <HoverPointWithLabel className={`cie-mammut`}
-                           text='Mammut'
+                           text={mammutData.header.title}
+                           type={mammutData.type}
                            hOrientation='left'
-                           type='company'
                            onMouseEnter={pauseVideo}
                            onMouseLeave={playVideo}
                            onClick={() => setPopupContainer(<VideoOverlay data={mammutData}/>)}/>

@@ -1,4 +1,5 @@
 const emptyObject: VideoOverlayInterface = {
+  type: "",
   header: {
     title: "",
     text: "",
@@ -46,6 +47,7 @@ const emptyObject: VideoOverlayInterface = {
 }
 
 export interface VideoOverlayInterface {
+  type: string,
   header: {
     title: string,
     text: string,
