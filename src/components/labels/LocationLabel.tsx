@@ -1,13 +1,13 @@
 import React, {useEffect, useState} from 'react';
+import iconArrowDown from '../../res/icons/arrow_down.svg'
 import iconWeather from '../../res/icons/location.svg'
 import iconLocation from '../../res/icons/location.svg'
 import iconTime from '../../res/icons/time.svg'
 import iconWind from '../../res/icons/wind.svg'
-import iconArrowDown from '../../res/icons/arrow_down.svg'
 
 export const LocationLabel: React.FC = () => {
 
-  const getLocalTime = ():string =>  {
+  const getLocalTime = (): string => {
     let date = new Date();
     return date.getUTCHours() + 1 + ':' + ('0' + date.getUTCMinutes()).slice(-2)
   }
@@ -15,7 +15,10 @@ export const LocationLabel: React.FC = () => {
   const [time, setTime] = useState(getLocalTime);
 
   useEffect(() => {
-    setInterval(() => setTime(getLocalTime), 1000)
+    const clockInterval = setInterval(() => setTime(getLocalTime), 1000);
+    return () => {
+      clearInterval(clockInterval)
+    }
   }, []);
 
   return (
