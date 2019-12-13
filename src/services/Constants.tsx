@@ -1,10 +1,10 @@
 export class Constants {
 
   public static get TYPE_WORK(): string {
-    return "TYPE_WORK";
+    return "type-work";
   }
 
   public static get TYPE_LIFE(): string {
-    return "TYPE_LIFE";
+    return "type-life";
   }
 }

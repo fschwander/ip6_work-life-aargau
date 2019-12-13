@@ -1,4 +1,4 @@
-.HoverPointWithLabel {
+.OverlayHoverPoint {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -22,7 +22,7 @@
     }
   }
 
-  &.company {
+  &.type-work {
     .HoverPoint .circle {
       background-color: $clrHighlight;
       border-color: $clrHighlight;

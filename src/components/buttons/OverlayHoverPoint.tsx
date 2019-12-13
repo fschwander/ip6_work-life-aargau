@@ -1,23 +1,24 @@
 import React, {useState} from 'react';
+import {VideoOverlay} from '../../pages/video/VideoOverlay';
+import {VideoOverlayInterface} from '../../res/data/video/VideoOverlayInterface';
 import {HoverPoint} from './HoverPoint';
 
 interface Props {
   className?: string,
-  text: string,
-  type?: string,
+  data: VideoOverlayInterface,
   hOrientation?: string,
   onMouseEnter: Function,
   onMouseLeave: Function,
-  onClick?: Function
+  setPopupContainer: Function
 }
 
-export const HoverPointWithLabel: React.FC<Props> = props => {
+export const OverlayHoverPoint: React.FC<Props> = props => {
+  const {data} = props;
   const [isActive, setIsActive] = useState(false);
 
   const getRootClass = () => {
-    let rootClass = `HoverPointWithLabel ${props.className}`;
+    let rootClass = `OverlayHoverPoint ${props.className} ${data.type}`;
     rootClass += isActive ? ' is-active' : '';
-    rootClass += props.type !== undefined ? ' ' + props.type : '';
     rootClass += props.hOrientation !== undefined ? ' ' + props.hOrientation : '';
     return rootClass;
   }
@@ -32,20 +33,12 @@ export const HoverPointWithLabel: React.FC<Props> = props => {
     setIsActive(false);
   }
 
-  const onClick =() => {
-    if(props.onClick !== undefined) {
-      props.onClick();
-    }
-  }
-
   return (
-    <div
-      className={getRootClass()}
-      onMouseLeave={onDeactivate}>
-      <HoverPoint
-        onMouseEnter={onActivate}
-        onClick={onClick}/>
-      <h4 className='label'>{props.text}</h4>
+    <div className={getRootClass()}
+         onMouseLeave={onDeactivate}>
+      <HoverPoint onMouseEnter={onActivate}
+                  onClick={() => props.setPopupContainer(<VideoOverlay data={data}/>)}/>
+      <h4 className='label'>{data.header.title}</h4>
     </div>
   )
 }
