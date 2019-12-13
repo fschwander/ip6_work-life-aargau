@@ -47,15 +47,6 @@ export const VideoOverlay: React.FC<Props> = props => {
           <img src={data.details.image} alt={data.details.title}/>
         </div>
 
-        <div className='box-explanation'>
-          <h3>{data.header.title}</h3>
-          {
-            data.header.items.map(d =>
-              <h3 key={d.text}>{d.text} <span>{d.value}</span></h3>
-            )
-          }
-        </div>
-
         <div className='box-footer'>
           <div className='nav-container horizontal-container'>
             <img src={iconArrowLeft} alt='arrow left'/>
@@ -68,6 +59,15 @@ export const VideoOverlay: React.FC<Props> = props => {
             )
           }
         </div>
+      </div>
+
+      <div className={`box-explanation ${data.type}`}>
+        <h3>{data.header.title}</h3>
+        {
+          data.header.items.map(d =>
+            <h3 key={d.text}>{d.text} <span>{d.value}</span></h3>
+          )
+        }
       </div>
 
     </div>

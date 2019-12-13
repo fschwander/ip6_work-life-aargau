@@ -14,6 +14,8 @@
     width: 400px;
 
     .header-container {
+      max-width: 95%;
+
       h4 {
         opacity: 0.3;
       }
@@ -47,28 +49,6 @@
       }
     }
 
-    .box-explanation {
-      position: absolute;
-      right: 2rem;
-      bottom: 5rem;
-      width: 100%;
-      transform: translateX(100%);
-
-      h3, h4, p {
-        width: fit-content;
-        background-color: black;
-        padding: .6rem 1rem;
-        margin: unset;
-
-        &:first-child {
-          padding-top: .8rem;
-          padding-bottom: .8rem;
-          background-color: white;
-          color: black;
-        }
-      }
-    }
-
     .box-footer {
       position: absolute;
       left: 0;
@@ -76,11 +56,46 @@
       transform: translate(-3rem, 4rem);
       background-color: black;
       padding: 1.5rem 4rem 1.5rem 1.5rem;
+      white-space: nowrap;
 
       .nav-container {
         img {
           padding: 0 .6rem .8rem 0;
         }
+      }
+    }
+  }
+
+  .box-explanation {
+    position: absolute;
+    right: 3rem;
+    bottom: 6rem;
+    width: 100%;
+    transform: translateX(100%);
+
+    h3 {
+      width: fit-content;
+      background-color: black;
+      padding: .6rem 1rem;
+      margin: unset;
+
+      &:first-child {
+        padding-top: .8rem;
+        padding-bottom: .8rem;
+        background-color: white;
+        color: black;
+      }
+    }
+
+    &.type-work {
+      left: 2rem;
+      transform: translateX(-100%);
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+
+      h3:first-child {
+        background-color: $clrHighlight;
       }
     }
   }

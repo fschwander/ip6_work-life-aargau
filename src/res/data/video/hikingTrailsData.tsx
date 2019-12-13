@@ -32,6 +32,10 @@ export const hikingTrailsData: VideoOverlayInterface = {
     {
       icon: iconHiking,
       text: "Freizeit"
+    },
+    {
+      icon: iconHiking,
+      text: "Freizeit"
     }
   ],
   graph: {
