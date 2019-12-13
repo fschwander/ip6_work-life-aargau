@@ -38,7 +38,7 @@ export const VideoOverlay: React.FC<Props> = props => {
 
         <div className='graph-container'>
           <h3>{data.graph.title}</h3>
-          <p>//Graph placeholder//</p>
+          {data.graph.chartComponent}
         </div>
       </div>
 

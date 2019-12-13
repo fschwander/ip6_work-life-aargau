@@ -1,3 +1,5 @@
+import React from 'react';
+
 export interface VideoOverlayInterface {
   type: string,
   header: {
@@ -7,7 +9,8 @@ export interface VideoOverlayInterface {
   }
   topics: Array<ImageItem>,
   graph: {
-    title: string
+    title: string,
+    chartComponent: any
   },
   details: {
     image: string,
@@ -55,7 +58,8 @@ const emptyObject: VideoOverlayInterface = {
   ],
 
   graph: {
-    title: ""
+    title: "",
+    chartComponent: React.Component
   },
 
   details: {
