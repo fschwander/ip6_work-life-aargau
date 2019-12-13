@@ -3,8 +3,8 @@ import {OverlayHoverPoint} from '../../components/buttons/OverlayHoverPoint';
 import {BackgroundVideo} from '../../components/containers/BackgroundVideo';
 import {PopupContainer} from '../../components/containers/PopupContainer';
 import {LocationLabel} from '../../components/labels/LocationLabel';
-import {hikingTrailsData} from '../../res/data/video/hikingTrailsData'
-import {mammutData} from '../../res/data/video/mammutData';
+import {HikingTrails} from '../../res/data/video/HikingTrails'
+import {Mammut} from '../../res/data/video/Mammut';
 import videoBaden from '../../res/videos/baden.mp4';
 
 export const VideoPage: React.FC = () => {
@@ -24,12 +24,12 @@ export const VideoPage: React.FC = () => {
       <BackgroundVideo source={videoBaden} playVideo={isPlaying}/>
 
       <OverlayHoverPoint className={`hiking-trails`}
-                         data={hikingTrailsData}
+                         data={new HikingTrails().getData}
                          onMouseEnter={pauseVideo}
                          onMouseLeave={playVideo}
                          setPopupContainer={setPopupContainer}/>
       <OverlayHoverPoint className={`cie-mammut`}
-                         data={mammutData}
+                         data={new Mammut().getData}
                          hOrientation='left'
                          onMouseEnter={pauseVideo}
                          onMouseLeave={playVideo}

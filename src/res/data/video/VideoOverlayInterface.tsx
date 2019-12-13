@@ -1,3 +1,31 @@
+export interface VideoOverlayInterface {
+  type: string,
+  header: {
+    title: string,
+    text: string,
+    items: Array<TextItem>
+  }
+  topics: Array<ImageItem>,
+  graph: {
+    title: string
+  },
+  details: {
+    image: string,
+    title: string,
+    items: Array<TextItem>
+  }
+}
+
+export interface ImageItem {
+  icon: string,
+  text: string
+}
+
+export interface TextItem {
+  text: string,
+  value: string
+}
+
 const emptyObject: VideoOverlayInterface = {
   type: "",
   header: {
@@ -44,32 +72,4 @@ const emptyObject: VideoOverlayInterface = {
       }
     ]
   }
-}
-
-export interface VideoOverlayInterface {
-  type: string,
-  header: {
-    title: string,
-    text: string,
-    items: Array<TextItem>
-  }
-  topics: Array<ImageItem>,
-  graph: {
-    title: string
-  },
-  details: {
-    image: string,
-    title: string,
-    items: Array<TextItem>
-  }
-}
-
-export interface ImageItem {
-  icon: string,
-  text: string
-}
-
-export interface TextItem {
-  text: string,
-  value: string
 }
