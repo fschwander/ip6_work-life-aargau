@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import iconWeather from '../../res/icons/location.svg'
 import iconLocation from '../../res/icons/location.svg'
 import iconTime from '../../res/icons/time.svg'
@@ -7,10 +7,16 @@ import iconArrowDown from '../../res/icons/arrow_down.svg'
 
 export const LocationLabel: React.FC = () => {
 
-  const getCurrentTime = () => {
+  const getLocalTime = ():string =>  {
     let date = new Date();
     return date.getUTCHours() + 1 + ':' + ('0' + date.getUTCMinutes()).slice(-2)
   }
+
+  const [time, setTime] = useState(getLocalTime);
+
+  useEffect(() => {
+    setInterval(() => setTime(getLocalTime), 1000)
+  }, []);
 
   return (
     <div className='LocationLabel'>
@@ -18,7 +24,7 @@ export const LocationLabel: React.FC = () => {
       <div className='horizontal-container'>
         <div className='icon-container'>
           <img src={iconTime} alt='icon'/>
-          <p><b>{getCurrentTime()}</b></p>
+          <p><b>{time}</b></p>
         </div>
         <div className='icon-container'>
           <img src={iconWeather} alt='icon'/>
