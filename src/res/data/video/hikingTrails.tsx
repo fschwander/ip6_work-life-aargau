@@ -43,18 +43,20 @@ export const hikingTrails: VideoOverlayInterface = {
       {name: 'mittel bis schwer', value: 58}
     ]}/>
   },
-  details: {
-    image: imgHikingTrails,
-    title: "Wein-Wanderung",
-    items: [
-      {
-        text: "Länge",
-        value: "32 km"
-      },
-      {
-        text: "Schwierigkeit",
-        value: "leicht"
-      }
-    ]
-  }
+  details: [
+    {
+      image: imgHikingTrails,
+      title: "Wein-Wanderung",
+      items: [
+        {
+          text: "Länge",
+          value: "32 km"
+        },
+        {
+          text: "Schwierigkeit",
+          value: "leicht"
+        }
+      ]
+    }
+  ]
 }

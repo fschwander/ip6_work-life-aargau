@@ -12,11 +12,7 @@ export interface VideoOverlayInterface {
     title: string,
     chartComponent: any
   },
-  details: {
-    image: string,
-    title: string,
-    items: Array<TextItem>
-  }
+  details: Array<DetailsItem>
 }
 
 export interface ImageItem {
@@ -27,6 +23,12 @@ export interface ImageItem {
 export interface TextItem {
   text: string,
   value: string
+}
+
+interface DetailsItem {
+  image: string,
+  title: string,
+  items: Array<TextItem>
 }
 
 const emptyObject: VideoOverlayInterface = {
@@ -62,18 +64,20 @@ const emptyObject: VideoOverlayInterface = {
     chartComponent: React.Component
   },
 
-  details: {
-    image: "",
-    title: "",
-    items: [
-      {
-        text: "",
-        value: ""
-      },
-      {
-        text: "",
-        value: ""
-      }
-    ]
-  }
+  details: [
+    {
+      image: "",
+      title: "",
+      items: [
+        {
+          text: "",
+          value: ""
+        },
+        {
+          text: "",
+          value: ""
+        }
+      ]
+    },
+  ]
 }

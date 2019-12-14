@@ -2,7 +2,8 @@ import React from 'react';
 import {Constants} from '../../../services/Constants';
 import iconClimbing from '../../icons/climbing.svg'
 import iconHiking from '../../icons/hiking.svg'
-import imgMain from '../../imgs/ol_mammut.svg'
+import imgDetails from '../../imgs/ol_mammut.svg'
+import imgDetails2 from '../../imgs/ol_mammut2.jpg'
 import {VideoOverlayInterface} from './VideoOverlayInterface'
 
 export const mammut: VideoOverlayInterface = {
@@ -36,21 +37,33 @@ export const mammut: VideoOverlayInterface = {
     chartComponent: React.Component
   },
 
-  details: {
-    image: imgMain,
-    title: "Mammut",
-    items: [
-      {
-        text: "Mitarbeiter_innen",
-        value: "882 (2018)"
-      }, {
-        text: "Gründung",
-        value: "1862"
-      }, {
-        text: "Offene Stellen",
-        value: "viele!"
-      }
-    ]
-  }
+  details: [
+    {
+      image: imgDetails,
+      title: "Mammut",
+      items: [
+        {
+          text: "Angestellte",
+          value: "882 (2018)"
+        }, {
+          text: "Gründung",
+          value: "1862"
+        }, {
+          text: "Offene Stellen",
+          value: "viele!"
+        }
+      ]
+    },
+    {
+      image: imgDetails2,
+      title: "Waste no waste",
+      items: [
+        {
+          text: "Kampagne",
+          value: "Produkte aus Reststücken"
+        }
+      ]
+    }
+  ]
 }
 

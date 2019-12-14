@@ -6,7 +6,6 @@ import {LocationLabel} from '../../components/labels/LocationLabel';
 import {hikingTrails} from '../../res/data/video/hikingTrails'
 import {mammut} from '../../res/data/video/mammut';
 import videoBaden from '../../res/videos/baden.mp4';
-import {VideoOverlay} from './VideoOverlay';
 
 export const VideoPage: React.FC = () => {
   const [isPlaying, setIsPlaying] = React.useState(true)
@@ -38,14 +37,10 @@ export const VideoPage: React.FC = () => {
 
       <LocationLabel/>
 
-      {/*todo: remove*/}
-      <PopupContainer onClose={setPopupContainer}>
-        <VideoOverlay data={hikingTrails}/>
-      </PopupContainer>
-      {/*{popupComponent !== undefined ?*/}
-      {/*  <PopupContainer onClose={setPopupContainer}>*/}
-      {/*    {popupComponent}*/}
-      {/*  </PopupContainer> : null}*/}
+      {popupComponent !== undefined ?
+        <PopupContainer onClose={setPopupContainer}>
+          {popupComponent}
+        </PopupContainer> : null}
 
     </div>
   )

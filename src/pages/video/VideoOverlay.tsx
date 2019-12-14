@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {VideoOverlayInterface} from '../../res/data/video/VideoOverlayInterface';
 import iconArrowLeft from '../../res/icons/arrow2_left.svg'
 import iconArrowRight from '../../res/icons/arrow2_right.svg'
@@ -8,8 +8,19 @@ interface Props {
 }
 
 export const VideoOverlay: React.FC<Props> = props => {
-
   const {data} = props;
+
+  const [activeDetail, setActiveDetail] = useState(0);
+
+  const nextDetail = () => {
+    const nextIndex = (activeDetail + 1) % props.data.details.length
+    setActiveDetail(nextIndex)
+  }
+
+  const prevDetails = () => {
+    const prevIndex = activeDetail > 0 ? activeDetail - 1 : props.data.details.length - 1;
+    setActiveDetail(prevIndex)
+  }
 
   return (
     <div className='VideoOverlay horizontal-container'>
@@ -44,17 +55,19 @@ export const VideoOverlay: React.FC<Props> = props => {
 
       <div className='box-right vertical-container'>
         <div className='details-container'>
-          <img src={data.details.image} alt={data.details.title}/>
+          <img src={data.details[activeDetail].image} alt={data.details[activeDetail].title}/>
         </div>
 
         <div className='box-footer'>
-          <div className='nav-container horizontal-container'>
-            <img src={iconArrowLeft} alt='arrow left'/>
-            <img src={iconArrowRight} alt='arrow right'/>
-          </div>
-          <h3>{data.details.title}</h3>
+          {data.details.length > 1 ?
+            <div className='nav-container horizontal-container'>
+              <img className='button' src={iconArrowLeft} alt='arrow left' onClick={prevDetails}/>
+              <img className='button' src={iconArrowRight} alt='arrow right' onClick={nextDetail}/>
+            </div> : null
+          }
+          <h3>{data.details[activeDetail].title}</h3>
           {
-            data.details.items.map(d =>
+            data.details[activeDetail].items.map(d =>
               <p key={d.text}>{d.text} <span>{d.value}</span></p>
             )
           }
