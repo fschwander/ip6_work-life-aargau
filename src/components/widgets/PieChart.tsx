@@ -11,14 +11,13 @@ interface PieChartProps {
 }
 
 export const PieChart: React.FC<PieChartProps> = props => {
-  const chartRef: React.RefObject<HTMLDivElement> = React.createRef();
-
   const [activeIndex, setActiveIndex] = useState(0);
 
+  const chartRef: React.RefObject<HTMLDivElement> = React.createRef();
+  const size = 200;
+  const strokeWidth = 3;
+
   const initChart = () => {
-    const {data} = props;
-    const size = 200;
-    const strokeWidth = 2;
     const container = d3.select(chartRef.current);
 
     const chart = container.append('svg')
@@ -32,40 +31,48 @@ export const PieChart: React.FC<PieChartProps> = props => {
       .sort(null)
       .value(d => d.value);
 
-    const arcs = pie(data);
-
-    const arc = d3.arc<any>()
-      .innerRadius(0)
-      .outerRadius((d,i) => {
-        const radiusSize = (size - strokeWidth) / 2;
-        if (i === activeIndex) {
-          return  radiusSize;
-        } else {
-          return radiusSize * 0.95;
-        }
-      });
+    const arcs = pie(props.data);
 
     plotArea.selectAll('path')
       .data(arcs)
       .enter()
       .append('path')
-      .classed('is-active', (d,i) => i === activeIndex)
-      .attr('stroke-width', 2)
+      .attr('class', 'button')
+  };
+
+  const updateChart = () => {
+    const arc = d3.arc<any>()
+      .innerRadius(0)
+      .outerRadius((d, i) => {
+        const radiusSize = (size - strokeWidth) / 2;
+        if (i === activeIndex) {
+          return radiusSize;
+        } else {
+          return radiusSize * 0.95;
+        }
+      });
+
+    d3.select(chartRef.current).selectAll('path')
+      .classed('is-active', (d, i) => i === activeIndex)
+      .attr('stroke-width', strokeWidth)
       .attr('d', arc)
-      .on('click', (d,i) => {
+      .on('click', (d, i) => {
         setActiveIndex(i)
       });
-  }
+  };
 
-  // executed on component did init
-  useEffect(() => {
+  /**
+   * executed on component did init
+   */  useEffect(() => {
     initChart()
-  },[])
+  }, []);
 
-  // executed on component did init and component did update
+  /**
+   * executed on component did init and component did update
+   */
   useEffect(() => {
-
-  })
+    updateChart();
+  });
 
   return (
     <div className='PieChart'>
