@@ -1,5 +1,5 @@
 import * as d3 from 'd3';
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 
 interface DataInterface {
   name: string,
@@ -12,6 +12,8 @@ interface PieChartProps {
 
 export const PieChart: React.FC<PieChartProps> = props => {
   const chartRef: React.RefObject<HTMLDivElement> = React.createRef();
+
+  const [activeIndex, setActiveIndex] = useState(0);
 
   const initChart = () => {
     const {data} = props;
@@ -34,19 +36,36 @@ export const PieChart: React.FC<PieChartProps> = props => {
 
     const arc = d3.arc<any>()
       .innerRadius(0)
-      .outerRadius((size - strokeWidth) / 2);
+      .outerRadius((d,i) => {
+        const radiusSize = (size - strokeWidth) / 2;
+        if (i === activeIndex) {
+          return  radiusSize;
+        } else {
+          return radiusSize * 0.95;
+        }
+      });
 
     plotArea.selectAll('path')
       .data(arcs)
       .enter()
       .append('path')
+      .classed('is-active', (d,i) => i === activeIndex)
       .attr('stroke-width', 2)
-      .attr('d', arc);
+      .attr('d', arc)
+      .on('click', (d,i) => {
+        setActiveIndex(i)
+      });
   }
 
+  // executed on component did init
   useEffect(() => {
     initChart()
-  }, [])
+  },[])
+
+  // executed on component did init and component did update
+  useEffect(() => {
+
+  })
 
   return (
     <div className='PieChart'>
