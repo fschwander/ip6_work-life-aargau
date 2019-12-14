@@ -40,7 +40,7 @@ export const hikingTrails: VideoOverlayInterface = {
     title: "Anspruchsniveaus der Wanderwege",
     chartComponent: <PieChart data={[
       {name: 'leicht', value: 42},
-      {name: 'mittelschwer, schwer', value: 58}
+      {name: 'mittel bis schwer', value: 58}
     ]}/>
   },
   details: {

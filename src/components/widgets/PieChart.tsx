@@ -75,8 +75,21 @@ export const PieChart: React.FC<PieChartProps> = props => {
   });
 
   return (
-    <div className='PieChart'>
+    <div className='PieChart horizontal-container'>
       <div className='chart-container' ref={chartRef}/>
+      <ul className='label-container'>
+        {props.data.map((d, i) => {
+          return (
+            <li key={d.name + i}
+                className={`button ${activeIndex === i ? 'is-active' : 'is-inactive'}`}
+                onClick={() => setActiveIndex(i)}>
+              <div>
+                <h2>{d.value}%</h2>
+                <p>{d.name}</p>
+              </div>
+            </li>)
+        })}
+      </ul>
 
     </div>
   )
