@@ -1,10 +1,10 @@
 import React from 'react';
 import {PieChart} from '../../../components/widgets/PieChart';
 import {Constants} from '../../../services/Constants';
-import {VideoOverlayInterface} from './VideoOverlayInterface'
 import iconClimbing from '../../icons/climbing.svg'
 import iconHiking from '../../icons/hiking.svg'
 import imgHikingTrails from '../../imgs/ol_hikingtrails.jpg'
+import {VideoOverlayInterface} from './VideoOverlayInterface'
 
 export const hikingTrails: VideoOverlayInterface = {
   type: Constants.TYPE_LIFE,
@@ -37,8 +37,11 @@ export const hikingTrails: VideoOverlayInterface = {
     }
   ],
   graph: {
-    title: "Schwierigkeitsgrade der Wege",
-    chartComponent: <PieChart/>
+    title: "Anspruchsniveaus der Wanderwege",
+    chartComponent: <PieChart data={[
+      {name: 'leicht', value: 42},
+      {name: 'mittelschwer, schwer', value: 58}
+    ]}/>
   },
   details: {
     image: imgHikingTrails,

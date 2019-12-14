@@ -1,5 +1,4 @@
 import React from 'react';
-import {PieChart} from '../../../components/widgets/PieChart';
 import {Constants} from '../../../services/Constants';
 import iconClimbing from '../../icons/climbing.svg'
 import iconHiking from '../../icons/hiking.svg'
@@ -34,7 +33,7 @@ export const mammut: VideoOverlayInterface = {
 
   graph: {
     title: "Nettoumsatz der Mammut Sports Group",
-    chartComponent: <PieChart/>
+    chartComponent: React.Component
   },
 
   details: {

@@ -1,3 +1,16 @@
 .PieChart {
+  .chart-container {
+    width: 160px;
 
+    svg {
+      path {
+        fill: $clrGray;
+        stroke: $clrDark;
+
+        &.is-active{
+          fill: $clrHighlight;
+        }
+      }
+    }
+  }
 }

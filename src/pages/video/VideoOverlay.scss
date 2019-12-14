@@ -6,7 +6,7 @@
   padding: 3rem 2rem 1.5rem 3rem;
 
   span {
-    opacity: 0.4;
+    opacity: $defaultOpacity;
   }
 
   .box-left {
@@ -17,7 +17,7 @@
       max-width: 95%;
 
       h4 {
-        opacity: 0.3;
+        opacity: $defaultOpacity;
       }
     }
 

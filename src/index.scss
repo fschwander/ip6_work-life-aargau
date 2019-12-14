@@ -83,12 +83,12 @@ html {
 
       &.disabled {
         cursor: default;
-        opacity: 0.5;
+        opacity: $defaultOpacity;
       }
 
       &.inactive {
         cursor: pointer;
-        opacity: 0.5;
+        opacity: $defaultOpacity;
       }
     }
 

@@ -1,6 +1,7 @@
-
 // colors
 $clrHighlight: #7EE2D1 !default;
+$clrDark: #343741 !default;
+$clrGray: #3E414C !default;;
 
 $backgroundTransparentDark: rgba(0, 0, 0, 0.6) !default;
 $backgroundTransparentLight: rgba(255, 255, 255, 0.2) !default;
@@ -13,3 +14,6 @@ $lineThick: 2px !default;
 $fontSmall: 14px !default;
 $fontMedium: 16px !default;
 $fontLarge: 18px !default;
+
+// values
+$defaultOpacity: 0.4 !default;
