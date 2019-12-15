@@ -29,6 +29,7 @@ export interface TextItem {
 interface DetailsItem {
   image: string,
   title: string,
+  linkIcon?: LinkIcon,
   items: Array<TextItem>
 }
 

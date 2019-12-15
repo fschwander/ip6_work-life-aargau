@@ -64,6 +64,10 @@ export const mammut: VideoOverlayInterface = {
     {
       image: imgDetails2,
       title: "Waste no waste",
+      linkIcon: {
+        icon: iconLink,
+        link: 'https://www.mammut.com/ch/de/stories/mammut-praesentiert-t-shirts-aus-leftover-stoffen/'
+      },
       items: [
         {
           text: "Kampagne",

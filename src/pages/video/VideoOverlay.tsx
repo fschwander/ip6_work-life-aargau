@@ -66,7 +66,15 @@ export const VideoOverlay: React.FC<Props> = props => {
               <img className='button' src={iconArrowRight} alt='arrow right' onClick={nextDetail}/>
             </div> : null
           }
-          <h3>{data.details[activeDetail].title}</h3>
+          <div className='horizontal-container'>
+            <h3>{data.details[activeDetail].title}</h3>
+            {
+              data.details[activeDetail].linkIcon !== undefined ?
+                <RoundButton onClick={() => window.open(data.details[activeDetail].linkIcon!.link, '_blank')}
+                             icon={data.details[activeDetail].linkIcon!.icon}
+                             size='1.2rem'/> : null
+            }
+          </div>
           {
             data.details[activeDetail].items.map(d =>
               <p key={d.text}>{d.text} <span>{d.value}</span></p>
@@ -82,7 +90,7 @@ export const VideoOverlay: React.FC<Props> = props => {
             <div className='horizontal-container' key={d.text}>
               <h3>{d.text} <span>{d.value} </span></h3>
               {d.linkIcon !== undefined ?
-                <RoundButton onClick={() => window.open(d.linkIcon !== undefined ? d.linkIcon.link : '', '_blank')}
+                <RoundButton onClick={() => window.open(d.linkIcon!.link, '_blank')}
                              icon={d.linkIcon.icon}
                              size='1.2rem'/> : null
               }
