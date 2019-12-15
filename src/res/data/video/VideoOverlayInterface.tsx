@@ -1,4 +1,5 @@
 import React from 'react';
+import {PlaceholderChart} from './PlaceholderChart';
 
 export interface VideoOverlayInterface {
   type: string,
@@ -68,7 +69,7 @@ const emptyObject: VideoOverlayInterface = {
 
   graph: {
     title: "",
-    chartComponent: ""
+    chartComponent: <PlaceholderChart/>
   },
 
   details: [

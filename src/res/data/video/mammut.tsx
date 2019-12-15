@@ -1,11 +1,11 @@
 import React from 'react';
-import {HoverPoint} from '../../../components/buttons/HoverPoint';
 import {Constants} from '../../../services/Constants';
 import iconClimbing from '../../icons/climbing.svg'
 import iconHiking from '../../icons/hiking.svg'
 import iconLink from '../../icons/link.svg'
 import imgDetails from '../../imgs/ol_mammut.svg'
 import imgDetails2 from '../../imgs/ol_mammut2.jpg'
+import {PlaceholderChart} from './PlaceholderChart';
 import {VideoOverlayInterface} from './VideoOverlayInterface'
 
 export const mammut: VideoOverlayInterface = {
@@ -43,7 +43,7 @@ export const mammut: VideoOverlayInterface = {
 
   graph: {
     title: "Nettoumsatz der Mammut Sports Group",
-    chartComponent: <HoverPoint/>
+    chartComponent: <PlaceholderChart/>
   },
 
   details: [
