@@ -22,13 +22,19 @@ export interface ImageItem {
 
 export interface TextItem {
   text: string,
-  value: string
+  value: string,
+  linkIcon?: LinkIcon
 }
 
 interface DetailsItem {
   image: string,
   title: string,
   items: Array<TextItem>
+}
+
+interface LinkIcon {
+  icon: string,
+  link: string
 }
 
 const emptyObject: VideoOverlayInterface = {
@@ -61,7 +67,7 @@ const emptyObject: VideoOverlayInterface = {
 
   graph: {
     title: "",
-    chartComponent: React.Component
+    chartComponent: ""
   },
 
   details: [

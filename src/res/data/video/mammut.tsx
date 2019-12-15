@@ -1,7 +1,9 @@
 import React from 'react';
+import {HoverPoint} from '../../../components/buttons/HoverPoint';
 import {Constants} from '../../../services/Constants';
 import iconClimbing from '../../icons/climbing.svg'
 import iconHiking from '../../icons/hiking.svg'
+import iconLink from '../../icons/link.svg'
 import imgDetails from '../../imgs/ol_mammut.svg'
 import imgDetails2 from '../../imgs/ol_mammut2.jpg'
 import {VideoOverlayInterface} from './VideoOverlayInterface'
@@ -13,11 +15,18 @@ export const mammut: VideoOverlayInterface = {
     text: "Bei Mammut erwarten dich Begeisterung und Leidenschaft für den Bergsport. Wir wissen aus eigener Erfahrung, welchen Anforderungen Outdoor-Produkte gerecht werden müssen.",
     items: [
       {
-        text: "Standort",
-        value: "Seon"
+        text: "Angestellte",
+        value: "882 (2018)"
       }, {
-        text: "Entfernung nach Baden",
-        value: "30 km"
+        text: "Gründung",
+        value: "1862"
+      }, {
+        text: "Offene Stellen",
+        value: "viele!",
+        linkIcon: {
+          icon: iconLink,
+          link: 'https://www.mammut.com/ch/de/company/jobs/'
+        }
       }
     ]
   },
@@ -34,7 +43,7 @@ export const mammut: VideoOverlayInterface = {
 
   graph: {
     title: "Nettoumsatz der Mammut Sports Group",
-    chartComponent: React.Component
+    chartComponent: <HoverPoint/>
   },
 
   details: [
@@ -43,14 +52,12 @@ export const mammut: VideoOverlayInterface = {
       title: "Mammut",
       items: [
         {
-          text: "Angestellte",
-          value: "882 (2018)"
-        }, {
-          text: "Gründung",
-          value: "1862"
-        }, {
-          text: "Offene Stellen",
-          value: "viele!"
+          text: "Standort",
+          value: "Seon"
+        },
+        {
+          text: "Entfernung nach Baden",
+          value: "30 km"
         }
       ]
     },

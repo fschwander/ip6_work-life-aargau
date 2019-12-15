@@ -11,7 +11,7 @@
   .content-container {
     position: relative;
 
-    .RoundButton {
+    & > .RoundButton {
       position: absolute;
       top: 0;
       transform: translateX(-120%);

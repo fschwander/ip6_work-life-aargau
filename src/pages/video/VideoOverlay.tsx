@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {RoundButton} from '../../components/buttons/RoundButton';
 import {VideoOverlayInterface} from '../../res/data/video/VideoOverlayInterface';
 import iconArrowLeft from '../../res/icons/arrow2_left.svg'
 import iconArrowRight from '../../res/icons/arrow2_right.svg'
@@ -78,7 +79,14 @@ export const VideoOverlay: React.FC<Props> = props => {
         <h3>{data.header.title}</h3>
         {
           data.header.items.map(d =>
-            <h3 key={d.text}>{d.text} <span>{d.value}</span></h3>
+            <div className='horizontal-container' key={d.text}>
+              <h3>{d.text} <span>{d.value} </span></h3>
+              {d.linkIcon !== undefined ?
+                <RoundButton onClick={() => window.open(d.linkIcon !== undefined ? d.linkIcon.link : '', '_blank')}
+                             icon={d.linkIcon.icon}
+                             size='1.2rem'/> : null
+              }
+            </div>
           )
         }
       </div>

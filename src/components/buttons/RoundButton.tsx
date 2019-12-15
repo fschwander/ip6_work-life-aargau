@@ -17,18 +17,17 @@ export const RoundButton: React.FC<RoundButtonProps> = props => {
   };
 
   const handleClick = () => {
-    if (!props.isActive) {
-      return;
+    if (props.isActive || props.isActive === undefined) {
+      props.onClick()
     }
-    props.onClick()
   };
 
   return (
-    <div className={`RoundButton button ${props.isActive ? 'enabled' : 'disabled'}`}
+    <div className={`RoundButton button ${props.isActive || props.isActive === undefined ? 'enabled' : 'disabled'}`}
          style={style}
          onClick={handleClick}>
       {props.icon ? <img src={props.icon} alt='icon'/> : null}
-      {props.text? <p>{props.text}</p> : null}
+      {props.text ? <p>{props.text}</p> : null}
       {props.optionalText ? <p><i>{props.optionalText}</i></p> : null}
     </div>
   )

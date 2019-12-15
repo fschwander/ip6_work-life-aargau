@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="2px" height="10px" viewBox="0 0 2 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon/info" transform="translate(-11.000000, -7.000000)" fill-rule="nonzero">
+            <g id="la-informacion.1">
+                <g id="Group" transform="translate(2.000000, 2.000000)">
+                    <g transform="translate(8.285714, 4.476190)">
+                        <path d="M1.71428571,10.047619 C1.45238095,10.047619 1.23809524,9.83333333 1.23809524,9.57142857 L1.23809524,4.4411306 C1.23809524,4.17922583 1.45238095,3.96494012 1.71428571,3.96494012 C1.97619048,3.96494012 2.19047619,4.17922583 2.19047619,4.4411306 L2.19047619,9.57142857 C2.19047619,9.83333333 1.97619048,10.047619 1.71428571,10.047619 Z" id="Path" stroke="#5A5E6B" stroke-width="0.5" fill="#5A5E6B"></path>
+                        <g>
+                            <circle id="Oval" cx="1.71428571" cy="1.71428571" r="1"></circle>
+                            <path d="M1.71428571,2.42857143 C1.30952381,2.42857143 1,2.11904762 1,1.71428571 C1,1.30952381 1.30952381,1 1.71428571,1 C2.11904762,1 2.42857143,1.30952381 2.42857143,1.71428571 C2.42857143,2.11904762 2.11904762,2.42857143 1.71428571,2.42857143 Z" id="Shape" stroke="#5A5E6B" stroke-width="0.5" fill="#5A5E6B"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
