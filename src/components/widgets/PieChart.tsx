@@ -1,5 +1,5 @@
 import * as d3 from 'd3';
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 
 interface DataInterface {
   name: string,
@@ -12,6 +12,7 @@ interface PieChartProps {
 
 export const PieChart: React.FC<PieChartProps> = props => {
   const [activeIndex, setActiveIndex] = useState(0);
+  const isInitialMount = useRef(true);
 
   const chartRef: React.RefObject<HTMLDivElement> = React.createRef();
   const size = 200;
@@ -61,16 +62,13 @@ export const PieChart: React.FC<PieChartProps> = props => {
       });
   };
 
-  /**
-   * executed on component did init
-   */  useEffect(() => {
-    initChart()
-  }, []);
-
-  /**
-   * executed on component did init and component did update
-   */
   useEffect(() => {
+    // code for on init in here
+    if (isInitialMount.current) {
+      isInitialMount.current = false;
+      initChart();
+    }
+    // code for on update here
     updateChart();
   });
 

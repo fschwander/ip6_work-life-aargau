@@ -37,13 +37,11 @@ export const VideoOverlay: React.FC<Props> = props => {
           <h3>Themen</h3>
           <div className='horizontal-container'>
             {
-              data.topics.map(d => (
-                  <div className='horizontal-container' key={d.text}>
-                    <img src={d.icon} alt={d.text}/>
-                    <p>{d.text}</p>
-                  </div>
-                )
-              )
+              data.topics.map(d =>
+                <div className='horizontal-container' key={d.text}>
+                  <img src={d.icon} alt={d.text}/>
+                  <p>{d.text}</p>
+                </div>)
             }
           </div>
         </div>
@@ -60,11 +58,12 @@ export const VideoOverlay: React.FC<Props> = props => {
         </div>
 
         <div className='box-footer'>
-          {data.details.length > 1 ?
-            <div className='nav-container horizontal-container'>
-              <img className='button' src={iconArrowLeft} alt='arrow left' onClick={prevDetails}/>
-              <img className='button' src={iconArrowRight} alt='arrow right' onClick={nextDetail}/>
-            </div> : null
+          {
+            data.details.length > 1 ?
+              <div className='nav-container horizontal-container'>
+                <img className='button' src={iconArrowLeft} alt='arrow left' onClick={prevDetails}/>
+                <img className='button' src={iconArrowRight} alt='arrow right' onClick={nextDetail}/>
+              </div> : null
           }
           <div className='horizontal-container'>
             <h3>{data.details[activeDetail].title}</h3>
@@ -77,8 +76,7 @@ export const VideoOverlay: React.FC<Props> = props => {
           </div>
           {
             data.details[activeDetail].items.map(d =>
-              <p key={d.text}>{d.text} <span>{d.value}</span></p>
-            )
+              <p key={d.text}>{d.text} <span>{d.value}</span></p>)
           }
         </div>
       </div>
@@ -92,11 +90,9 @@ export const VideoOverlay: React.FC<Props> = props => {
               {d.linkIcon !== undefined ?
                 <RoundButton onClick={() => window.open(d.linkIcon!.link, '_blank')}
                              icon={d.linkIcon.icon}
-                             size='1.2rem'/> : null
-              }
+                             size='1.2rem'/> : null}
             </div>
-          )
-        }
+          )}
       </div>
 
     </div>

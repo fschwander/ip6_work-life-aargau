@@ -6,7 +6,6 @@ import {LocationLabel} from '../../components/labels/LocationLabel';
 import {hikingTrails} from '../../res/data/video/hikingTrails'
 import {mammut} from '../../res/data/video/mammut';
 import videoBaden from '../../res/videos/baden.mp4';
-import {VideoOverlay} from './VideoOverlay';
 
 export const VideoPage: React.FC = () => {
   const [isPlaying, setIsPlaying] = React.useState(true)
