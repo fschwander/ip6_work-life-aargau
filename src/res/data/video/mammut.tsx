@@ -5,8 +5,7 @@ import iconHiking from '../../icons/hiking.svg'
 import iconLink from '../../icons/link.svg'
 import imgDetails from '../../imgs/ol_mammut.svg'
 import imgDetails2 from '../../imgs/ol_mammut2.jpg'
-import {PlaceholderChart} from './PlaceholderChart';
-import {VideoOverlayInterface} from './VideoOverlayInterface'
+import {PlaceholderChart, VideoOverlayInterface} from './VideoOverlayInterface'
 
 export const mammut: VideoOverlayInterface = {
   type: Constants.TYPE_WORK,

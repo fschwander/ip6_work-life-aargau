@@ -10,14 +10,14 @@ export const hikingTrails: VideoOverlayInterface = {
   type: Constants.TYPE_LIFE,
   header: {
     title: "Wanderwege",
-    text: "Wanderer sind auf den gut beschilderten Wegen unterwegs und staunen über die landschaftliche Vielfalt der Region.",
+    text: "Wanderinnen und Wanderer sind auf den gut beschilderten Wegen unterwegs und staunen über die landschaftliche Vielfalt der Region.",
     items: [
       {
         text: "Anzahl Wanderwege",
         value: "218"
       },
       {
-        text: "Länge",
+        text: "Gesamtlänge",
         value: "6530 km"
       },
       {
@@ -40,8 +40,7 @@ export const hikingTrails: VideoOverlayInterface = {
     title: "Anspruchsniveaus der Wanderwege",
     chartComponent: <PieChart data={[
       {name: 'leicht', value: 42},
-      {name: 'mittel bis schwer', value: 58}
-    ]}/>
+      {name: 'mittel bis schwer', value: 58}]}/>
   },
   details: [
     {
