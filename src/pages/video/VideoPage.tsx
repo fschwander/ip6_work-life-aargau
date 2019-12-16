@@ -35,17 +35,19 @@ export const VideoPage: React.FC = () => {
     <div className='VideoPage full-screen'>
       <BackgroundVideo source={videoBaden} playVideo={isPlaying}/>
 
-      <OverlayHoverPoint className={`hiking-trails`}
-                         data={hikingTrails}
-                         onMouseEnter={pauseVideo}
-                         onMouseLeave={playVideo}
-                         onPointClicked={openOverlay}/>
-      <OverlayHoverPoint className={`cie-mammut`}
-                         data={mammut}
-                         hOrientation='left'
-                         onMouseEnter={pauseVideo}
-                         onMouseLeave={playVideo}
-                         onPointClicked={openOverlay}/>
+      <div className={`overlay-hover-point-container ${popupComponent === undefined ? 'show' : 'hide'}`}>
+        <OverlayHoverPoint className={`hiking-trails`}
+                           data={hikingTrails}
+                           onMouseEnter={pauseVideo}
+                           onMouseLeave={playVideo}
+                           onPointClicked={openOverlay}/>
+        <OverlayHoverPoint className={`cie-mammut`}
+                           data={mammut}
+                           hOrientation='left'
+                           onMouseEnter={pauseVideo}
+                           onMouseLeave={playVideo}
+                           onPointClicked={openOverlay}/>
+      </div>
 
       <LocationLabel/>
 

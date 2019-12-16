@@ -3,17 +3,25 @@
   justify-content: center;
   align-items: center;
 
-  .OverlayHoverPoint {
-    position: absolute;
+  .overlay-hover-point-container {
+    transition: opacity .2s ease-out;
 
-    &.hiking-trails {
-      left: 20%;
-      top: 30%;
+    &.hide {
+      opacity: 0;
     }
 
-    &.cie-mammut {
-      right: 20%;
-      bottom: 30%;
+    .OverlayHoverPoint {
+      position: absolute;
+
+      &.hiking-trails {
+        left: 20%;
+        top: 30%;
+      }
+
+      &.cie-mammut {
+        right: 20%;
+        bottom: 30%;
+      }
     }
   }
 }
