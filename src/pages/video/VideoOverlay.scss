@@ -76,26 +76,22 @@
     position: absolute;
     right: 3rem;
     bottom: 6rem;
-    width: 100%;
     transform: translateX(100%);
 
-    h3 {
+    h3, div:not(.RoundButton) {
       width: fit-content;
       margin: unset;
     }
 
-    & > h3, div:not(.RoundButton) {
-      background-color: black;
-      padding: .6rem 1rem;
+    & > h3 {
+      padding: .8rem 1rem;
+      background-color: white;
+      color: black;
     }
 
-    div {
-      &:first-child h3 {
-        padding-top: .8rem;
-        padding-bottom: .8rem;
-        background-color: white;
-        color: black;
-      }
+    div:not(.RoundButton) {
+      background-color: black;
+      padding: .6rem 1rem;
     }
 
     &.type-work {

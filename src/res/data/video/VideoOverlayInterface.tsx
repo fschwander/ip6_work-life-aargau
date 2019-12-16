@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {ReactElement} from 'react';
 
 export interface VideoOverlayInterface {
   type: string,
@@ -10,7 +10,7 @@ export interface VideoOverlayInterface {
   topics: Array<ImageItem>,
   graph: {
     title: string,
-    chartComponent: any
+    chartComponent: ReactElement
   },
   details: Array<DetailsItem>
 }
@@ -23,17 +23,17 @@ export interface ImageItem {
 export interface TextItem {
   text: string,
   value: string,
-  linkIcon?: LinkIcon
+  linkIcon?: LinkItem
 }
 
 interface DetailsItem {
   image: string,
   title: string,
-  linkIcon?: LinkIcon,
+  linkIcon?: LinkItem,
   items: Array<TextItem>
 }
 
-interface LinkIcon {
+interface LinkItem {
   icon: string,
   link: string
 }
