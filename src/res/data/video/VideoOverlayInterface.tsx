@@ -39,60 +39,9 @@ interface LinkIcon {
 }
 
 /**
- * Stencil for new object overlay data
+ * Placeholder chart for time during implementation
+ * todo: remove this component when implementation of overlays is finished
  */
-const emptyObject: VideoOverlayInterface = {
-  type: "",
-  header: {
-    title: "",
-    text: "",
-    items: [
-      {
-        text: "",
-        value: ""
-      },
-      {
-        text: "",
-        value: ""
-      }
-    ]
-  },
-
-  topics: [
-    {
-      icon: "",
-      text: ""
-    },
-    {
-      icon: "",
-      text: ""
-    }
-  ],
-
-  graph: {
-    title: "",
-    chartComponent: <PlaceholderChart/>
-  },
-
-  details: [
-    {
-      image: "",
-      title: "",
-      items: [
-        {
-          text: "",
-          value: ""
-        },
-        {
-          text: "",
-          value: ""
-        }
-      ]
-    },
-  ]
-}
-
-// todo: remove this component when placeholder is no longer needed
 export const PlaceholderChart: React.FC = () => {
   return (
     <div style={{
