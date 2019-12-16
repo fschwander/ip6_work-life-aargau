@@ -1,6 +1,6 @@
 import {QuestionInterface} from './QuestionInterface';
 
-interface QuestionsData {
+interface Questions {
   reputation: QuestionInterface,
   history: QuestionInterface,
   sport: QuestionInterface,
@@ -8,7 +8,7 @@ interface QuestionsData {
   jobs: QuestionInterface
 }
 
-export const questions: QuestionsData = {
+export const questions: Questions = {
   reputation: {
     title: "Prestige",
     subtitle: "Wofür ist der Aargau bekannt?",

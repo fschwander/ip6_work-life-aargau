@@ -3,7 +3,7 @@ import {AnimatedSVG} from '../../components/containers/AnimatedSVG';
 import {QuizBox} from '../../components/widgets/QuizBox';
 import lenzburgImg from '../../res/imgs/AT_SCHLOSS_LENZBURG.jpg'
 import {ReactComponent as lenzburgSvg} from '../../res/imgs/AT_SCHLOSS_LENZBURG.svg'
-import {questions} from '../../res/data/intro/questionsData'
+import {questions} from '../../res/data/intro/questions'
 
 interface SlideProps {
   isActive: boolean
