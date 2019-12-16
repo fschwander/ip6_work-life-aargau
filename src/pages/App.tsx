@@ -15,7 +15,7 @@ const App: React.FC = (props) => {
     <div className="App">
       {props.children}
       {showOnMobileAlert ?
-        <PopupContainer onClose={() => setShowOnMobileAlert(false)}>
+        <PopupContainer onCloseButtonClicked={() => setShowOnMobileAlert(false)}>
           <h2>Mobile nicht unterstützt</h2>
           <p>Bei dieser Website handelt es sich um einen Prototypen und noch sind nicht alle Funktionen
             implementiert.</p>

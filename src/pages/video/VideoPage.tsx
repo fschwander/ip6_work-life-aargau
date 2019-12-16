@@ -16,6 +16,18 @@ export const VideoPage: React.FC = () => {
   }
 
   const playVideo = () => {
+    if (popupComponent === undefined) {
+      setIsPlaying(true)
+    }
+  }
+
+  const openOverlay = (overlay: any) => {
+    setPopupContainer(overlay)
+    setIsPlaying(false);
+  }
+
+  const closeOverlay = () => {
+    setPopupContainer(undefined);
     setIsPlaying(true)
   }
 
@@ -27,18 +39,18 @@ export const VideoPage: React.FC = () => {
                          data={hikingTrails}
                          onMouseEnter={pauseVideo}
                          onMouseLeave={playVideo}
-                         setPopupContainer={setPopupContainer}/>
+                         onPointClicked={openOverlay}/>
       <OverlayHoverPoint className={`cie-mammut`}
                          data={mammut}
                          hOrientation='left'
                          onMouseEnter={pauseVideo}
                          onMouseLeave={playVideo}
-                         setPopupContainer={setPopupContainer}/>
+                         onPointClicked={openOverlay}/>
 
       <LocationLabel/>
 
       {popupComponent !== undefined ?
-        <PopupContainer onClose={setPopupContainer}>
+        <PopupContainer onCloseButtonClicked={closeOverlay}>
           {popupComponent}
         </PopupContainer> : null}
 

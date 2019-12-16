@@ -9,7 +9,7 @@ interface Props {
   hOrientation?: string,
   onMouseEnter: Function,
   onMouseLeave: Function,
-  setPopupContainer: Function
+  onPointClicked: Function
 }
 
 export const OverlayHoverPoint: React.FC<Props> = props => {
@@ -33,11 +33,15 @@ export const OverlayHoverPoint: React.FC<Props> = props => {
     setIsActive(false);
   }
 
+  const openOverlay = () => {
+    props.onPointClicked(<VideoOverlay data={data}/>)
+  }
+
   return (
     <div className={getRootClass()}
          onMouseLeave={onDeactivate}>
       <HoverPoint onMouseEnter={onActivate}
-                  onClick={() => props.setPopupContainer(<VideoOverlay data={data}/>)}/>
+                  onClick={openOverlay}/>
       <h4 className='label'>{data.header.title}</h4>
     </div>
   )

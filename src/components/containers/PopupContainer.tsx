@@ -3,7 +3,7 @@ import closeIcon from '../../res/icons/close.svg';
 import {RoundButton} from '../buttons/RoundButton';
 
 interface Props {
-  onClose: Function
+  onCloseButtonClicked: Function
 }
 
 export const PopupContainer: React.FC<Props> = props => {
@@ -12,7 +12,7 @@ export const PopupContainer: React.FC<Props> = props => {
     <div className='PopupContainer full-screen'>
       <div className='content-container'>
         {props.children}
-        <RoundButton onClick={props.onClose} icon={closeIcon} isActive={true}/>
+        <RoundButton onClick={props.onCloseButtonClicked} icon={closeIcon} isActive={true}/>
       </div>
     </div>
   )
