@@ -1,0 +1,16 @@
+.VideoPage {
+
+  .baden-v-slide {
+    .OverlayHoverPoint {
+      &.hiking-trails {
+        left: 20%;
+        top: 30%;
+      }
+
+      &.cie-mammut {
+        right: 20%;
+        bottom: 30%;
+      }
+    }
+  }
+}

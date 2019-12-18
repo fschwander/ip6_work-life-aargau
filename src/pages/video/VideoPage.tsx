@@ -6,8 +6,9 @@ import {VideoSlide, VideoSlideProps} from './VideoSlide';
 
 export const VideoPage: React.FC = () => {
 
-  const vSlideData: Array<VideoSlideProps> = [
+  const slides: Array<VideoSlideProps> = [
     {
+      className: 'baden-v-slide',
       title: 'Die Stadt Baden',
       videoSrc: videoBaden,
       hoverPoints: [
@@ -18,7 +19,7 @@ export const VideoPage: React.FC = () => {
   ]
 
   const vSlides = [
-    <VideoSlide {...vSlideData[0]} />
+    <VideoSlide {...slides[0]} />
   ]
 
   return (

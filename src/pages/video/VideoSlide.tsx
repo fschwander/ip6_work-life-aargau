@@ -6,6 +6,7 @@ import {LocationLabel} from '../../components/labels/LocationLabel';
 import {VideoOverlayInterface} from '../../res/data/video/VideoOverlayInterface';
 
 export interface VideoSlideProps {
+  className: string,
   title: string,
   videoSrc: string,
   hoverPoints: Array<{
@@ -39,7 +40,7 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
   }
 
   return (
-    <div className='VideoSlide full-screen'>
+    <div className={`VideoSlide ${props.className} full-screen`}>
       <BackgroundVideo source={props.videoSrc} playVideo={isPlaying}/>
 
       <div className={`overlay-hover-point-container ${popupComponent === undefined ? 'show' : 'hide'}`}>
