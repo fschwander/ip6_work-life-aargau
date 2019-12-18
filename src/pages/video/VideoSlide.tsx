@@ -30,6 +30,10 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
     }
   }
 
+  const onVideoEnded = () => {
+    console.log('video ended...');
+  }
+
   const openOverlay = (overlay: any) => {
     setPopupContainer(overlay)
     setIsPlaying(false);
@@ -42,7 +46,7 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
 
   return (
     <div className={`VideoSlide ${props.className} full-screen`}>
-      <BackgroundVideo source={props.videoSrc} playVideo={isPlaying}/>
+      <BackgroundVideo source={props.videoSrc} playVideo={isPlaying} onVideoEnded={onVideoEnded}/>
 
       <div className={`overlay-hover-point-container ${popupComponent === undefined ? 'show' : 'hide'}`}>
 

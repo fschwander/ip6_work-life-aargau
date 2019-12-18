@@ -4,7 +4,8 @@ import {Spinner} from 'reactstrap';
 
 interface FullScreenVideoProps {
   source: string,
-  playVideo: boolean
+  playVideo: boolean,
+  onVideoEnded: Function
 }
 
 interface VideoFullScreenState {
@@ -40,8 +41,9 @@ export class BackgroundVideo extends Component<FullScreenVideoProps, VideoFullSc
         <ReactPlayer className='player'
                      url={this.props.source}
                      playing={this.props.playVideo}
-                     muted loop playsinline
+                     muted playsinline
                      onReady={this.onReady}
+                     onEnded={() => this.props.onVideoEnded()}
                      width='100%'
                      height='100%'/>
       </div>
