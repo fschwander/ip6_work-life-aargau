@@ -1,117 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="1920px" height="1080px" viewBox="0 0 1920 1080" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="1920px" height="1080px" preserveAspectRatio="xMidYMid slice" viewBox="0 0 1920 1080" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
     <title>baden-short@1x</title>
     <desc>Created with Sketch.</desc>
     <g id="baden-short" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="lafarge-holcim" transform="translate(1454.749970, 508.699988)" stroke="#FFFFFF">
-            <line x1="74.4769238" y1="2" x2="71.4307172" y2="162.412308" id="Path-50" stroke-dasharray="1.149999976158142,1.149999976158142"></line>
-            <line x1="59.5269241" y1="2" x2="58.7721911" y2="36.5458708" id="Path-50-Copy-8" stroke-dasharray="1.149999976158142"></line>
-            <line x1="104.376923" y1="2" x2="101.258201" y2="158.168886" id="Path-50-Copy-2" stroke-dasharray="1.149999976158142"></line>
-            <line x1="119.326923" y1="2" x2="115.671158" y2="186.058272" id="Path-50-Copy-3" stroke-dasharray="1.149999976158142,1.149999976158142"></line>
-            <path d="M134.276923,2 L131.471524,120.034802 M131.225659,130.379383 L129.628874,197.562789" id="Shape" stroke-dasharray="1.149999976158142,1.149999976158142"></path>
-            <line x1="164.176922" y1="2" x2="158.608994" y2="218.018823" id="Path-50-Copy-6" stroke-dasharray="1.149999976158142"></line>
-            <line x1="179.126922" y1="2" x2="178.257143" y2="48.7263467" id="Path-50-Copy-7" stroke-dasharray="1.149999976158142"></line>
-            <path d="M14.2696358,47.5763467 L30.8799012,49.2629264 M45.6119639,50.834812 L61.6485673,51.8131728 L176.499217,51.8131728" id="Shape" stroke-dasharray="1.149999976158142"></path>
-            <path d="M0.83572418,11.9049174 L37.1454178,15.2226193 M54.0499989,16.1631735 L192.686093,16.1631735" id="Shape" stroke-dasharray="1.149999976158142"></path>
-            <path d="M14.2696358,80.084443 L60.3995383,85.1631721 L175.538925,85.1631721" id="Path-51-Copy-4" stroke-dasharray="1.149999976158142"></path>
-            <path d="M14.2696358,94.029136 L59.59578,100.113172 L175.418888,100.113172" id="Path-51-Copy-5" stroke-dasharray="1.149999976158142"></path>
-            <path d="M11.2292658,122.834921 L58.3394515,130.013171 L174.657305,130.013171" id="Path-51-Copy-7" stroke-dasharray="1.149999976158142"></path>
-            <path d="M11.2292658,136.737176 L56.4231075,144.963171 L174.186892,144.963171" id="Path-51-Copy-8" stroke-dasharray="1.149999976158142"></path>
-            <line x1="101.393643" y1="174.86317" x2="173.203079" y2="174.86317" id="Path-51-Copy-10" stroke-dasharray="1.149999976158142"></line>
-            <line x1="122.417073" y1="189.81317" x2="172.884333" y2="189.81317" id="Path-51-Copy-11" stroke-dasharray="1.149999976158142"></line>
-            <path d="M89.4269235,2 L87.6643402,83.3703116 M87.6643402,83.3703116 L85.8549923,166.89953" id="Shape" stroke-width="2"></path>
-            <line x1="149.226922" y1="2" x2="145.113887" y2="208.109504" id="Path-50-Copy-5" stroke-width="2"></line>
-            <path d="M3.90972802,25.4760401 L35.4168074,28.463696 M50.675645,29.9631733 L192.686093,29.9631733" id="Shape" stroke-width="2"></path>
-            <polyline id="Path-51-Copy-3" stroke-width="2" points="13.208556 64.6894671 60.4984873 70.2131724 176.234813 70.2131724"></polyline>
-            <polyline id="Path-51-Copy-6" stroke-width="2" points="11.2292658 108.504752 59.1521314 115.063171 174.815461 115.063171"></polyline>
-            <polyline id="Path-51-Copy-9" stroke-width="2" points="10.0792659 148.638178 63.7419074 159.913171 173.247687 159.913171"></polyline>
-            <line x1="140.996785" y1="204.76317" x2="172.536389" y2="204.76317" id="Path-51-Copy-12" stroke-width="2"></line>
-            <line x1="24.5747685" y1="0.164757876" x2="20.2696358" y2="173.606151" id="Path-39" stroke-dasharray="1"></line>
-            <path d="M36.090647,2 L35.6065256,39.1724757 M35.2560401,53.292527 L32.2696358,173.606151" id="Shape" stroke-dasharray="1"></path>
-            <path d="M49.4267183,2 L49.2786681,12.0937903 M48.5195787,42.6753141 L45.2696358,173.606151" id="Shape" stroke-dasharray="1"></path>
+        <g id="lafarge-holcim" transform="translate(1504.000000, 515.000000)" stroke="#FFFFFF">
+            <line x1="78" y1="2" x2="75" y2="171" id="Path-50" stroke-dasharray="1.149999976158142,1.149999976158142"></line>
+            <line x1="62.8773665" y1="2" x2="62.1226335" y2="39" id="Path-50-Copy-8" stroke-dasharray="1.149999976158142"></line>
+            <line x1="110" y1="2" x2="107" y2="168" id="Path-50-Copy-2" stroke-dasharray="1.149999976158142"></line>
+            <line x1="126" y1="2" x2="122" y2="197" id="Path-50-Copy-3" stroke-dasharray="1.149999976158142,1.149999976158142"></line>
+            <path d="M142,2 L138.982176,127.541465 M138.717694,138.543929 L137,210" id="Shape" stroke-dasharray="1.149999976158142,1.149999976158142"></path>
+            <line x1="174" y1="2" x2="168" y2="231" id="Path-50-Copy-6" stroke-dasharray="1.149999976158142"></line>
+            <line x1="189.878164" y1="2" x2="189.121836" y2="52" id="Path-50-Copy-7" stroke-dasharray="1.149999976158142"></line>
+            <path d="M14,51 L31.7130206,52.950865 M47.4231446,54.7690636 L64.5244177,55.9007326 L187,55.9007326" id="Shape" stroke-dasharray="1.149999976158142"></path>
+            <path d="M0,12 L38.6091386,15.4321602 M56.5842645,16.4051629 L204,16.4051629" id="Shape" stroke-dasharray="1.149999976158142"></path>
+            <path d="M15,85 L63.9133012,91 L186,91" id="Path-51-Copy-4" stroke-dasharray="1.149999976158142"></path>
+            <path d="M15,99 L63.0968452,106 L186,106" id="Path-51-Copy-5" stroke-dasharray="1.149999976158142"></path>
+            <path d="M11,130 L61.1576861,138 L185,138" id="Path-51-Copy-7" stroke-dasharray="1.149999976158142"></path>
+            <path d="M11,145 L58.9789428,154 L184,154" id="Path-51-Copy-8" stroke-dasharray="1.149999976158142"></path>
+            <line x1="107" y1="185.5" x2="183" y2="185.5" id="Path-51-Copy-10" stroke-dasharray="1.149999976158142"></line>
+            <line x1="129" y1="201.5" x2="183" y2="201.5" id="Path-51-Copy-11" stroke-dasharray="1.149999976158142"></line>
+            <path d="M93,2 L91.0261845,87.8609739 M91.0261845,87.8609739 L89,176" id="Shape" stroke-width="2"></path>
+            <line x1="157" y1="2" x2="153" y2="220" id="Path-50-Copy-5" stroke-width="2"></line>
+            <path d="M3,26 L36.3803221,29.5411821 M52.5463687,31.3184691 L203,31.3184691" id="Shape" stroke-width="2"></path>
+            <polyline id="Path-51-Copy-3" stroke-width="2" points="14 68 64.1830705 74 187 74"></polyline>
+            <polyline id="Path-51-Copy-6" stroke-width="2" points="11 115 61.973608 122 185 122"></polyline>
+            <polyline id="Path-51-Copy-9" stroke-width="2" points="10 158 67.2249188 170 184 170"></polyline>
+            <line x1="149" y1="217.5" x2="182" y2="217.5" id="Path-51-Copy-12" stroke-width="2"></line>
+            <line x1="25" y1="-1.62536651e-13" x2="20" y2="183" id="Path-39" stroke-dasharray="1"></line>
+            <path d="M37.7470533,2 L37.2723023,41.2073249 M36.9286006,56.1003184 L34,183" id="Shape" stroke-dasharray="1"></path>
+            <path d="M51.5352721,2 L51.3737531,12.6463319 M50.5456057,44.9019113 L47,183" id="Shape" stroke-dasharray="1"></path>
         </g>
-        <g id="rent" transform="translate(777.225170, 616.392691)" stroke="#FFFFFF">
-            <line x1="15" y1="78.2247043" x2="62.221114" y2="1.58490574e-13" id="Path-44-Copy-2" stroke-dasharray="1"></line>
-            <line x1="2" y1="78.2247043" x2="49.221114" y2="3.05928811e-14" id="Path-44-Copy-17" stroke-dasharray="1"></line>
-            <line x1="27" y1="79.2247043" x2="74.221114" y2="1" id="Path-44-Copy-10" stroke-width="2"></line>
-            <line x1="50.610557" y1="83.6095208" x2="102" y2="1" id="Path-44-Copy-11" stroke-dasharray="1"></line>
-            <line x1="74.9158355" y1="87.2165284" x2="124.354492" y2="4.0973902" id="Path-44-Copy-12" stroke-dasharray="1"></line>
-            <line x1="96.681201" y1="99.0180075" x2="152.641488" y2="6.35911348" id="Path-44-Copy-13" stroke-width="2"></line>
-            <line x1="121.661345" y1="93.6625791" x2="173.774362" y2="9.35027347" id="Path-44-Copy-14" stroke-dasharray="1"></line>
-            <line x1="147.717853" y1="98.368054" x2="199.716955" y2="11.3016981" id="Path-44-Copy-15" stroke-dasharray="1"></line>
-            <path d="M172.415044,102.699782 L224.271101,13.376047" id="Shape" stroke-width="2"></path>
-            <line x1="197" y1="85.2247043" x2="239.500493" y2="14.3086504" id="Path-44-Copy-18" fill="#D8D8D8" stroke-dasharray="1"></line>
-            <line x1="39" y1="82.2247043" x2="86.9786574" y2="2.74508223" id="Path-44-Copy-3" stroke-dasharray="1"></line>
-            <line x1="63" y1="85.2247043" x2="112.957498" y2="2.46701055" id="Path-44-Copy-5" stroke-width="2"></line>
-            <line x1="87" y1="89.2247043" x2="137.664898" y2="5.35992605" id="Path-44-Copy-6" stroke-dasharray="1"></line>
-            <line x1="105.90265" y1="101.224704" x2="162.471069" y2="7.95968652" id="Path-44-Copy-7" stroke-dasharray="1"></line>
-            <line x1="135" y1="97.2247043" x2="187.632192" y2="10.0362139" id="Path-44-Copy-8" stroke-width="2"></line>
-            <line x1="159" y1="101.224704" x2="212.638263" y2="12.3695952" id="Path-44-Copy-9" stroke-dasharray="1"></line>
-            <line x1="39" y1="7.95968652" x2="235.244046" y2="31.4476054" id="Path-44" stroke-width="2"></line>
-            <line x1="32" y1="19.9596865" x2="227.244046" y2="45.4476054" id="Path-44-Copy-16" stroke-dasharray="1"></line>
-            <line x1="22" y1="32.9596865" x2="217.244046" y2="58.4476054" id="Path-44-Copy-21" stroke-dasharray="1"></line>
-            <line x1="14" y1="43.9596865" x2="208.244046" y2="70.4476054" id="Path-44-Copy-19" stroke-width="2"></line>
-            <line x1="-1.42108547e-14" y1="67.9596865" x2="187.244046" y2="96.4476054" id="Path-44-Copy-20" stroke-dasharray="1"></line>
-            <line x1="8" y1="55.9596865" x2="195.244046" y2="84.4476054" id="Path-44-Copy-22" stroke-dasharray="1"></line>
+        <g id="rent" transform="translate(767.000000, 630.000000)" stroke="#FFFFFF">
+            <line x1="16" y1="84" x2="67" y2="2.33146835e-15" id="Path-44-Copy-2" stroke-dasharray="1"></line>
+            <line x1="2" y1="84" x2="53" y2="2.33146835e-15" id="Path-44-Copy-17" stroke-dasharray="1"></line>
+            <line x1="29" y1="85" x2="80" y2="1" id="Path-44-Copy-10" stroke-width="2"></line>
+            <line x1="54" y1="89" x2="109" y2="1" id="Path-44-Copy-11" stroke-dasharray="1"></line>
+            <line x1="80" y1="93" x2="133" y2="4" id="Path-44-Copy-12" stroke-dasharray="1"></line>
+            <line x1="103" y1="106" x2="163" y2="7" id="Path-44-Copy-13" stroke-width="2"></line>
+            <line x1="130" y1="100" x2="186" y2="10" id="Path-44-Copy-14" stroke-dasharray="1"></line>
+            <line x1="158" y1="105" x2="214" y2="12" id="Path-44-Copy-15" stroke-dasharray="1"></line>
+            <path d="M184.5348,109.775381 L240,14" id="Shape" stroke-width="2"></path>
+            <line x1="211" y1="91" x2="257" y2="15" id="Path-44-Copy-18" fill="#D8D8D8" stroke-dasharray="1"></line>
+            <line x1="42" y1="88" x2="93" y2="3" id="Path-44-Copy-3" stroke-dasharray="1"></line>
+            <line x1="68" y1="91" x2="121" y2="2" id="Path-44-Copy-5" stroke-width="2"></line>
+            <line x1="93" y1="96" x2="147" y2="6" id="Path-44-Copy-6" stroke-dasharray="1"></line>
+            <line x1="113" y1="108" x2="174" y2="8" id="Path-44-Copy-7" stroke-dasharray="1"></line>
+            <line x1="145" y1="104" x2="201" y2="11" id="Path-44-Copy-8" stroke-width="2"></line>
+            <line x1="170" y1="108" x2="227" y2="13" id="Path-44-Copy-9" stroke-dasharray="1"></line>
+            <line x1="42" y1="9" x2="252" y2="34" id="Path-44" stroke-width="2"></line>
+            <line x1="34" y1="21" x2="243" y2="48" id="Path-44-Copy-16" stroke-dasharray="1"></line>
+            <line x1="24" y1="35" x2="233" y2="62" id="Path-44-Copy-21" stroke-dasharray="1"></line>
+            <line x1="15" y1="47" x2="223" y2="75" id="Path-44-Copy-19" stroke-width="2"></line>
+            <line x1="0" y1="73" x2="201" y2="103" id="Path-44-Copy-20" stroke-dasharray="1"></line>
+            <line x1="8" y1="60" x2="209" y2="90" id="Path-44-Copy-22" stroke-dasharray="1"></line>
         </g>
-        <g id="culture_and_history" transform="translate(1271.811438, 231.302940)" stroke="#FFFFFF">
-            <line x1="143.991555" y1="104.391015" x2="143.991555" y2="142.893899" id="Path-66" stroke-width="0.5" stroke-dasharray="1,1"></line>
-            <line x1="175.991555" y1="108.391015" x2="175.991555" y2="146.893899" id="Path-66-Copy-2" stroke-width="0.5" stroke-dasharray="1,1"></line>
-            <line x1="187.991555" y1="108.391015" x2="187.991555" y2="146.893899" id="Path-66-Copy-3" stroke-width="0.5" stroke-dasharray="1,1"></line>
-            <line x1="117.991555" y1="109.391015" x2="116.954365" y2="149.573267" id="Path-66-Copy-5" stroke-width="0.5" stroke-dasharray="1,1"></line>
-            <line x1="124.991555" y1="109.391015" x2="123.954365" y2="149.573267" id="Path-66-Copy-12" stroke-width="0.5" stroke-dasharray="1,1"></line>
-            <line x1="11.1885616" y1="112.428426" x2="10.7151681" y2="145.893899" id="Path-67-Copy-5" stroke-width="0.5" stroke-dasharray="1,1"></line>
-            <line x1="43.1885616" y1="112.428426" x2="42.9518648" y2="129.922648" id="Path-67-Copy-7" stroke-width="0.5" stroke-dasharray="1,1"></line>
-            <line x1="58.7151681" y1="112.428426" x2="58.7151681" y2="120.893899" id="Path-67-Copy-8" stroke-width="0.5" stroke-dasharray="1,1"></line>
-            <line x1="19.1885616" y1="112.428426" x2="19.1885616" y2="131.893899" id="Path-67-Copy" stroke-width="0.5" stroke-dasharray="1,1"></line>
-            <line x1="35.1885616" y1="112.428426" x2="35.1885616" y2="131.893899" id="Path-67-Copy-2" stroke-width="0.5" stroke-dasharray="1,1"></line>
-            <line x1="68.9240031" y1="112.428426" x2="68.1885616" y2="151.255287" id="Path-67-Copy-4" stroke-width="0.5" stroke-dasharray="1,1"></line>
-            <line x1="130.053555" y1="69.6591958" x2="130.053555" y2="93.7591657" id="Path-68"></line>
-            <line x1="91.2105558" y1="106.391015" x2="89.1582419" y2="156.960586" id="Path-66-Copy-7" stroke-width="0.5" stroke-dasharray="1,1"></line>
-            <line x1="100.210556" y1="106.391015" x2="98.2945851" y2="153.601053" id="Path-66-Copy-11" stroke-width="0.5" stroke-dasharray="1,1"></line>
-            <line x1="166.991555" y1="104.391015" x2="166.991555" y2="142.893899" id="Path-66-Copy-9" stroke-width="0.5" stroke-dasharray="1,1"></line>
-            <line x1="151.991555" y1="104.391015" x2="151.991555" y2="142.893899" id="Path-66-Copy-10" stroke-width="0.5" stroke-dasharray="1,1"></line>
-            <path d="M-9.9475983e-14,117.161162 L51.1885616,117.161162 L84.8231085,114.661162 L116.954365,115.69706 L135.559233,114.661162 L166.991555,114.661162 M166.991555,112.661162 L192.105281,112.661162" id="Shape"></path>
-            <path d="M-9.9475983e-14,125.161162 L51.1885616,125.161162 M63.9555261,124.212215 L84.8231085,122.661162 L116.954365,123.69706 L135.559233,122.661162 L166.991555,122.661162 M166.991555,120.661162 L192.105281,120.661162" id="Shape" stroke-width="0.5" stroke-dasharray="1,1"></path>
-            <path d="M-9.9475983e-14,141.161162 L14.0132444,141.161162 M65.5805239,140.091432 L84.8231085,138.661162 L116.954365,139.69706 L135.559233,138.661162 L166.991555,138.661162 M166.991555,136.661162 L192.105281,136.661162" id="Shape"></path>
-            <path d="M66.3013701,148.037853 L84.8231085,146.661162 L116.954365,147.69706 L135.559233,146.661162 L166.991555,146.661162 M166.991555,144.661162 L192.105281,144.661162" id="Shape" stroke-width="0.5" stroke-dasharray="1,1"></path>
-            <line x1="124.47296" y1="75.8830687" x2="145.954077" y2="75.8830687" id="Path-70" stroke-width="0.5" stroke-dasharray="1,1"></line>
-            <line x1="124.47296" y1="91.8830687" x2="130.954077" y2="91.8830687" id="Path-70-Copy-2" stroke-width="0.5" stroke-dasharray="1,1"></line>
-            <line x1="142.860797" y1="102.400883" x2="157.186453" y2="88.0092689" id="Path-72" stroke-width="0.5" stroke-dasharray="1,1"></line>
-            <line x1="160.201732" y1="102.400883" x2="164.750658" y2="97.6393385" id="Path-74" stroke-width="0.5" stroke-dasharray="1,1"></line>
-            <line x1="145.053555" y1="92.8777937" x2="153.652631" y2="102.400883" id="Path-76" stroke-width="0.5" stroke-dasharray="1,1"></line>
-            <line x1="158.991555" y1="104.391015" x2="158.991555" y2="142.893899" id="Path-66-Copy"></line>
-            <line x1="107.991555" y1="107.391015" x2="106.685872" y2="152.677009" id="Path-66-Copy-6"></line>
-            <line x1="4.18856161" y1="112.428426" x2="3.71516807" y2="145.893899" id="Path-67"></line>
-            <line x1="27.1885616" y1="112.428426" x2="27.1885616" y2="130.357512" id="Path-67-Copy-6"></line>
-            <line x1="51.1885616" y1="112.428426" x2="51.1885616" y2="125.893899" id="Path-67-Copy-3"></line>
-            <line x1="78.9240031" y1="110.428426" x2="78.0562824" y2="150.444689" id="Path-67-Copy-9"></line>
-            <line x1="139.053555" y1="69.6591958" x2="139.053555" y2="85.7591657" id="Path-68-Copy"></line>
-            <line x1="181.991555" y1="108.391015" x2="181.991555" y2="146.893899" id="Path-66-Copy-8"></line>
-            <line x1="131.991555" y1="107.391015" x2="130.991555" y2="152.677009" id="Path-66-Copy-4"></line>
-            <path d="M-1.13686838e-13,133.161162 L21.8534566,133.161162 M62.8375402,132.295313 L84.8231085,130.661162 L116.954365,131.69706 L135.559233,130.661162 L166.991555,130.661162 M166.991555,128.661162 L192.105281,128.661162" id="Shape" stroke-width="0.5" stroke-dasharray="1"></path>
-            <line x1="124.47296" y1="83.8830687" x2="145.954077" y2="83.8830687" id="Path-70-Copy"></line>
-            <path d="M139.053555,85.7591657 L131.991555,96.0750903 L122.727659,106.391015" id="Path-71" stroke-width="0.5" stroke-dasharray="1"></path>
-            <path d="M145.053555,85.7591657 L137.991555,96.0750903 L128.727659,106.391015" id="Path-71-Copy" stroke-width="0.5" stroke-dasharray="1"></path>
-            <line x1="151.023625" y1="102.400883" x2="161.201732" y2="92.8777937" id="Path-73"></line>
-            <line x1="149.305331" y1="88.0092689" x2="161.201732" y2="102.400883" id="Path-75"></line>
-            <line x1="140.986637" y1="97.6393385" x2="145.954077" y2="102.400883" id="Path-77"></line>
-            <line x1="122.727659" y1="102.400883" x2="135.213518" y2="102.400883" id="Path-80" stroke-width="0.5" stroke-dasharray="1"></line>
-            <line x1="132.436224" y1="90.8830687" x2="146.954077" y2="90.8830687" id="Path-78" stroke-width="0.5" stroke-dasharray="1"></line>
-            <line x1="128.061313" y1="96.6393385" x2="140.919497" y2="96.6393385" id="Path-79"></line>
-            <line x1="130.991555" y1="67.9045184" x2="129.053555" y2="62.4258905" id="Path-81"></line>
-            <line x1="136.991555" y1="67.9045184" x2="135.053555" y2="62.4258905" id="Path-81-Copy" stroke-width="0.5" stroke-dasharray="1"></line>
-            <line x1="142.991555" y1="67.9045184" x2="141.053555" y2="62.4258905" id="Path-81-Copy-2"></line>
-            <line x1="143.022555" y1="26.7005043" x2="143.237307" y2="1.53479022e-13" id="Path-82" stroke-width="0.5" stroke-dasharray="1"></line>
-            <line x1="137.069324" y1="26.1823941" x2="137.345089" y2="0.540611447" id="Path-82-Copy-2" stroke-width="0.5"></line>
-            <path d="M135.7403,4.49936343 L139.679564,4.49936343 L152.022125,4.49936343" id="Path-83" stroke-width="0.5" stroke-dasharray="1"></path>
-            <polyline id="Path-83-Copy" points="135.352989 9.49936343 139.679564 9.49936343 152.022125 9.49936343"></polyline>
-            <path d="M135.352989,14.4993634 L139.679564,14.4993634 L152.022125,14.4993634" id="Path-83-Copy-2" stroke-width="0.5" stroke-dasharray="1"></path>
-            <path d="M134.938039,19.4993634 L139.679564,19.4993634 L152.022125,19.4993634" id="Path-83-Copy-3" stroke-width="0.5" stroke-dasharray="1"></path>
-            <polyline id="Path-83-Copy-4" points="134.938039 24.4993634 139.679564 24.4993634 152.022125 24.4993634"></polyline>
-            <line x1="148.022555" y1="26.7005043" x2="148.289566" y2="-1.31468321e-14" id="Path-82-Copy"></line>
+        <g id="culture_and_history" transform="translate(1279.000000, 217.000000)" stroke="#FFFFFF">
+            <line x1="152.5" y1="111" x2="152.5" y2="151" id="Path-66" stroke-width="0.5" stroke-dasharray="1,1"></line>
+            <line x1="186.5" y1="115" x2="186.5" y2="155" id="Path-66-Copy-2" stroke-width="0.5" stroke-dasharray="1,1"></line>
+            <line x1="199.5" y1="115" x2="199.5" y2="155" id="Path-66-Copy-3" stroke-width="0.5" stroke-dasharray="1,1"></line>
+            <line x1="125" y1="116" x2="124" y2="159" id="Path-66-Copy-5" stroke-width="0.5" stroke-dasharray="1,1"></line>
+            <line x1="133" y1="116" x2="132" y2="159" id="Path-66-Copy-12" stroke-width="0.5" stroke-dasharray="1,1"></line>
+            <line x1="11.7366968" y1="119" x2="11.2633032" y2="154" id="Path-67-Copy-5" stroke-width="0.5" stroke-dasharray="1,1"></line>
+            <line x1="46.6183484" y1="120" x2="46.3816516" y2="139" id="Path-67-Copy-7" stroke-width="0.5" stroke-dasharray="1,1"></line>
+            <line x1="62.5" y1="119" x2="62.5" y2="128" id="Path-67-Copy-8" stroke-width="0.5" stroke-dasharray="1,1"></line>
+            <line x1="21.5" y1="120" x2="21.5" y2="141" id="Path-67-Copy" stroke-width="0.5" stroke-dasharray="1,1"></line>
+            <line x1="36.5" y1="120" x2="36.5" y2="141" id="Path-67-Copy-2" stroke-width="0.5" stroke-dasharray="1,1"></line>
+            <line x1="72.8677207" y1="119" x2="72.1322793" y2="161" id="Path-67-Copy-4" stroke-width="0.5" stroke-dasharray="1,1"></line>
+            <line x1="138.5" y1="74" x2="138.5" y2="100" id="Path-68"></line>
+            <line x1="96" y1="113" x2="94" y2="167" id="Path-66-Copy-7" stroke-width="0.5" stroke-dasharray="1,1"></line>
+            <line x1="107" y1="113" x2="105" y2="163" id="Path-66-Copy-11" stroke-width="0.5" stroke-dasharray="1,1"></line>
+            <line x1="177.5" y1="111" x2="177.5" y2="151" id="Path-66-Copy-9" stroke-width="0.5" stroke-dasharray="1,1"></line>
+            <line x1="162.5" y1="111" x2="162.5" y2="151" id="Path-66-Copy-10" stroke-width="0.5" stroke-dasharray="1,1"></line>
+            <path d="M0,126 L54.3580401,126 L90.0751611,123 L124.195911,124.243077 L143.95275,123 L177.331289,123 M177.331289,120.6 L204,120.6" id="Shape"></path>
+            <path d="M0,133.454545 L54.3580401,133.454545 M67.9155058,132.41933 L90.0751611,130.727273 L124.195911,131.857343 L143.95275,130.727273 L177.331289,130.727273 M177.331289,128.545455 L204,128.545455" id="Shape" stroke-width="0.5" stroke-dasharray="1,1"></path>
+            <path d="M0,150.454545 L14.8809124,150.454545 M69.6411197,149.287567 L90.0751611,147.727273 L124.195911,148.857343 L143.95275,147.727273 L177.331289,147.727273 M177.331289,145.545455 L204,145.545455" id="Shape"></path>
+            <path d="M70,158 L89.7284244,156.2244 L123.953023,157.560459 L143.769993,156.2244 L177.250121,156.2244 M177.250121,153.64488 L204,153.64488" id="Shape" stroke-width="0.5" stroke-dasharray="1,1"></path>
+            <line x1="132" y1="81.5" x2="155" y2="81.5" id="Path-70" stroke-width="0.5" stroke-dasharray="1,1"></line>
+            <line x1="132" y1="96.5" x2="139" y2="96.5" id="Path-70-Copy-2" stroke-width="0.5" stroke-dasharray="1,1"></line>
+            <line x1="152" y1="109" x2="168" y2="93" id="Path-72" stroke-width="0.5" stroke-dasharray="1,1"></line>
+            <line x1="171" y1="109" x2="176" y2="104" id="Path-74" stroke-width="0.5" stroke-dasharray="1,1"></line>
+            <line x1="154" y1="99" x2="163" y2="109" id="Path-76" stroke-width="0.5" stroke-dasharray="1,1"></line>
+            <line x1="169.5" y1="111" x2="169.5" y2="151" id="Path-66-Copy"></line>
+            <line x1="115" y1="114" x2="114" y2="162" id="Path-66-Copy-6"></line>
+            <line x1="4.73669677" y1="119" x2="4.26330323" y2="154" id="Path-67"></line>
+            <line x1="28.5" y1="119" x2="28.5" y2="139" id="Path-67-Copy-6"></line>
+            <line x1="54.5" y1="119" x2="54.5" y2="134" id="Path-67-Copy-3"></line>
+            <line x1="83.9338604" y1="117" x2="83.0661396" y2="160" id="Path-67-Copy-9"></line>
+            <line x1="147.5" y1="74" x2="147.5" y2="92" id="Path-68-Copy"></line>
+            <line x1="193.5" y1="115" x2="193.5" y2="155" id="Path-66-Copy-8"></line>
+            <line x1="140" y1="114" x2="139" y2="162" id="Path-66-Copy-4"></line>
+            <path d="M0,141.454545 L23.2065726,141.454545 M66.7282967,140.509983 L90.0751611,138.727273 L124.195911,139.857343 L143.95275,138.727273 L177.331289,138.727273 M177.331289,136.545455 L204,136.545455" id="Shape" stroke-width="0.5" stroke-dasharray="1"></path>
+            <line x1="132" y1="88.5" x2="155" y2="88.5" id="Path-70-Copy"></line>
+            <path d="M147,90 L139.213842,101.5 L129,113" id="Path-71" stroke-width="0.5" stroke-dasharray="1"></path>
+            <path d="M154,90 L146.213842,101.5 L136,113" id="Path-71-Copy" stroke-width="0.5" stroke-dasharray="1"></path>
+            <line x1="161" y1="109" x2="172" y2="99" id="Path-73"></line>
+            <line x1="159" y1="93" x2="171" y2="109" id="Path-75"></line>
+            <line x1="150" y1="104" x2="155" y2="109" id="Path-77"></line>
+            <line x1="130" y1="108.5" x2="143" y2="108.5" id="Path-80" stroke-width="0.5" stroke-dasharray="1"></line>
+            <line x1="141" y1="95.5" x2="157" y2="95.5" id="Path-78" stroke-width="0.5" stroke-dasharray="1"></line>
+            <line x1="136" y1="102.5" x2="149" y2="102.5" id="Path-79"></line>
+            <line x1="139" y1="72" x2="137" y2="66" id="Path-81"></line>
+            <line x1="145" y1="72" x2="143" y2="66" id="Path-81-Copy" stroke-width="0.5" stroke-dasharray="1"></line>
+            <line x1="152" y1="72" x2="150" y2="66" id="Path-81-Copy-2"></line>
+            <line x1="151.392624" y1="28" x2="151.607376" y2="9.9475983e-14" id="Path-82" stroke-width="0.5" stroke-dasharray="1"></line>
+            <line x1="145.362118" y1="28" x2="145.637882" y2="0" id="Path-82-Copy-2" stroke-width="0.5"></line>
+            <path d="M144,4.5 L148.354963,4.5 L162,4.5" id="Path-83" stroke-width="0.5" stroke-dasharray="1"></path>
+            <polyline id="Path-83-Copy" points="144 9.5 148.672009 9.5 162 9.5"></polyline>
+            <path d="M144,16.5 L148.672009,16.5 L162,16.5" id="Path-83-Copy-2" stroke-width="0.5" stroke-dasharray="1"></path>
+            <path d="M143,21.5 L148.273269,21.5 L162,21.5" id="Path-83-Copy-3" stroke-width="0.5" stroke-dasharray="1"></path>
+            <polyline id="Path-83-Copy-4" points="143 26.5 148.273269 26.5 162 26.5"></polyline>
+            <line x1="157.366495" y1="28" x2="157.633505" y2="-9.9475983e-14" id="Path-82-Copy"></line>
+            <line x1="131" y1="70.5" x2="154" y2="70.5" id="Path-45" stroke-width="0.5" stroke-dasharray="1"></line>
         </g>
-        <line x1="1396.2844" y1="296.468145" x2="1416.86499" y2="296.468145" id="Path-45" stroke="#FFFFFF" stroke-width="0.5" stroke-dasharray="1"></line>
     </g>
 </svg>

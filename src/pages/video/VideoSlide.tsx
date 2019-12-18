@@ -1,9 +1,11 @@
 import React from 'react';
 import {OverlayHoverPoint} from '../../components/buttons/OverlayHoverPoint';
+import {AnimatedSVG} from '../../components/containers/AnimatedSVG';
 import {BackgroundVideo} from '../../components/containers/BackgroundVideo';
 import {PopupContainer} from '../../components/containers/PopupContainer';
 import {LocationLabel} from '../../components/labels/LocationLabel';
 import {VideoOverlayInterface} from '../../res/data/video/VideoOverlayInterface';
+import {ReactComponent as SVGImage} from '../../res/videos/baden-short.svg';
 
 export interface VideoSlideProps {
   className: string,
@@ -18,6 +20,7 @@ export interface VideoSlideProps {
 
 export const VideoSlide: React.FC<VideoSlideProps> = props => {
   const [isPlaying, setIsPlaying] = React.useState(true)
+  const [animationStarted, setAnimationStarted] = React.useState(false);
   const [popupComponent, setPopupContainer] = React.useState();
 
   const pauseVideo = () => {
@@ -31,7 +34,7 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
   }
 
   const onVideoEnded = () => {
-    console.log('video ended...');
+    setAnimationStarted(true);
   }
 
   const openOverlay = (overlay: any) => {
@@ -47,15 +50,14 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
   return (
     <div className={`VideoSlide ${props.className} full-screen`}>
       <BackgroundVideo source={props.videoSrc} playVideo={isPlaying} onVideoEnded={onVideoEnded}/>
+      <AnimatedSVG svgComponent={SVGImage} isActive={animationStarted}/>
 
-      <div className={`overlay-hover-point-container ${popupComponent === undefined ? 'show' : 'hide'}`}>
+      <div className={`overlay-hover-point-container ${animationStarted ? 'show' : 'hide'}`}>
 
         {props.hoverPoints.map((d, i) => <OverlayHoverPoint className={d.className}
                                                             key={d.className + i}
                                                             data={d.data}
                                                             hOrientation={d.hOrientation !== undefined ? d.hOrientation : undefined}
-                                                            onMouseEnter={pauseVideo}
-                                                            onMouseLeave={playVideo}
                                                             onPointClicked={openOverlay}/>)}
       </div>
 

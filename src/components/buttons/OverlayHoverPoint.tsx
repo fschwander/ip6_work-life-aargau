@@ -7,8 +7,8 @@ interface Props {
   className?: string,
   data: VideoOverlayInterface,
   hOrientation?: string,
-  onMouseEnter: Function,
-  onMouseLeave: Function,
+  onMouseEnter?: Function,
+  onMouseLeave?: Function,
   onPointClicked: Function
 }
 
@@ -24,12 +24,16 @@ export const OverlayHoverPoint: React.FC<Props> = props => {
   }
 
   const onActivate = () => {
-    props.onMouseEnter();
+    if (props.onMouseEnter !== undefined) {
+      props.onMouseEnter();
+    }
     setIsActive(true);
   }
 
   const onDeactivate = () => {
-    props.onMouseLeave();
+    if (props.onMouseLeave) {
+      props.onMouseLeave();
+    }
     setIsActive(false);
   }
 
