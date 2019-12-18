@@ -13,7 +13,7 @@ export const VideoPage: React.FC = () => {
       videoSrc: videoBaden,
       hoverPoints: [
         {className: 'hiking-trails', data: hikingTrails},
-        {className: 'cie-mammut', data: mammut}
+        {className: 'cie-mammut', data: mammut, hOrientation: 'left'}
       ]
     }
   ]

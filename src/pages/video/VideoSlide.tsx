@@ -11,6 +11,7 @@ export interface VideoSlideProps {
   videoSrc: string,
   hoverPoints: Array<{
     className: string,
+    hOrientation?: string,
     data: VideoOverlayInterface
   }>
 }
@@ -48,6 +49,7 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
         {props.hoverPoints.map((d, i) => <OverlayHoverPoint className={d.className}
                                                             key={d.className + i}
                                                             data={d.data}
+                                                            hOrientation={d.hOrientation !== undefined ? d.hOrientation : undefined}
                                                             onMouseEnter={pauseVideo}
                                                             onMouseLeave={playVideo}
                                                             onPointClicked={openOverlay}/>)}
