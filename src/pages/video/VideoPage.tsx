@@ -1,6 +1,6 @@
 import React from 'react';
-import {hikingTrails} from '../../res/data/video/hikingTrails';
-import {mammut} from '../../res/data/video/mammut';
+import {hikingTrails} from './data/hikingTrails';
+import {mammut} from './data/mammut';
 import videoBaden from '../../res/videos/baden-short.mp4';
 import {VideoSlide, VideoSlideProps} from './VideoSlide';
 

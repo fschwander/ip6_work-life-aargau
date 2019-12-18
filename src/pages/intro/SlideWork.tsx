@@ -5,7 +5,7 @@ import {RectButton} from '../../components/buttons/RectButton';
 import {QuizBox} from '../../components/widgets/QuizBox';
 import bgImage from '../../res/imgs/AT_PSI_VILLIGEN.jpg'
 import {ReactComponent as SVGImage} from '../../res/imgs/AT_PSI_VILLIGEN.svg'
-import {questions} from '../../res/data/intro/questions'
+import {questions} from './data/questions'
 
 interface SlideProps {
   isActive: boolean

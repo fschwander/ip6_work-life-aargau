@@ -40,7 +40,7 @@ interface LinkItem {
 
 /**
  * Placeholder chart for time during implementation
- * todo: remove this component when implementation of overlays is finished
+ * todo: remove this component when implementation of data is finished
  */
 export const PlaceholderChart: React.FC = () => {
   return (

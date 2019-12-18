@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {ChoiceInterface, QuestionInterface} from '../../res/data/intro/QuestionInterface';
+import {ChoiceInterface, QuestionInterface} from '../../pages/intro/data/QuestionInterface';
 import {RectButton} from '../buttons/RectButton';
 
 interface QuizProps {

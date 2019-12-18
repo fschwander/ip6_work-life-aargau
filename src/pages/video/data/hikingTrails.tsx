@@ -1,9 +1,9 @@
 import React from 'react';
 import {PieChart} from '../../../components/widgets/PieChart';
 import {Constants} from '../../../services/Constants';
-import iconClimbing from '../../icons/climbing.svg'
-import iconHiking from '../../icons/hiking.svg'
-import imgHikingTrails from '../../imgs/ol_hikingtrails.jpg'
+import iconClimbing from '../../../res/icons/climbing.svg'
+import iconHiking from '../../../res/icons/hiking.svg'
+import imgHikingTrails from '../../../res/imgs/ol_hikingtrails.jpg'
 import {VideoOverlayInterface} from './VideoOverlayInterface'
 
 export const hikingTrails: VideoOverlayInterface = {

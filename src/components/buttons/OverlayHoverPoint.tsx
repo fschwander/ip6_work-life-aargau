@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {VideoOverlay} from '../../pages/video/VideoOverlay';
-import {VideoOverlayInterface} from '../../res/data/video/VideoOverlayInterface';
+import {VideoOverlayInterface} from '../../pages/video/data/VideoOverlayInterface';
 import {HoverPoint} from './HoverPoint';
 
 interface Props {

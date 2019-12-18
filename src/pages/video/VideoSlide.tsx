@@ -4,7 +4,7 @@ import {AnimatedSVG} from '../../components/containers/AnimatedSVG';
 import {BackgroundVideo} from '../../components/containers/BackgroundVideo';
 import {PopupContainer} from '../../components/containers/PopupContainer';
 import {LocationLabel} from '../../components/labels/LocationLabel';
-import {VideoOverlayInterface} from '../../res/data/video/VideoOverlayInterface';
+import {VideoOverlayInterface} from './data/VideoOverlayInterface';
 import {ReactComponent as SVGImage} from '../../res/videos/baden-short.svg';
 
 export interface VideoSlideProps {
