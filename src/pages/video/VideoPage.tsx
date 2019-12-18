@@ -1,7 +1,7 @@
 import React from 'react';
+import videoBaden from '../../res/videos/baden-short.mp4';
 import {hikingTrails} from './data/hikingTrails';
 import {mammut} from './data/mammut';
-import videoBaden from '../../res/videos/baden-short.mp4';
 import {VideoSlide, VideoSlideProps} from './VideoSlide';
 
 export const VideoPage: React.FC = () => {
@@ -12,8 +12,33 @@ export const VideoPage: React.FC = () => {
       title: 'Die Stadt Baden',
       videoSrc: videoBaden,
       hoverPoints: [
-        {className: 'hiking-trails', data: hikingTrails},
-        {className: 'cie-mammut', data: mammut}
+        {
+          title: 'Baumaterialien',
+          subtitle: 'Zement, Beton...',
+          className: 'cie-mammut',
+          data: mammut,
+          lineLength: 85,
+          lineRotation: 70,
+          orientation: 'right'
+        },
+        {
+          title: 'Kultur & Geschichte',
+          subtitle: 'Historische Highlights',
+          className: 'culture-and-history',
+          data: hikingTrails,
+          lineLength: 60,
+          lineRotation: 70,
+          orientation: 'right'
+        },
+        {
+          title: 'Deine Vorteile',
+          subtitle: 'Erschwingliche Miete',
+          className: 'hiking-trails',
+          data: hikingTrails,
+          lineLength: 60,
+          lineRotation: 300,
+          orientation: 'right'
+        }
       ]
     }
   ]

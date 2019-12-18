@@ -3,18 +3,26 @@ import {OverlayHoverPoint} from '../../components/buttons/OverlayHoverPoint';
 import {AnimatedSVG} from '../../components/containers/AnimatedSVG';
 import {BackgroundVideo} from '../../components/containers/BackgroundVideo';
 import {PopupContainer} from '../../components/containers/PopupContainer';
+import {EntryLabel} from '../../components/labels/EntryLabel';
 import {LocationLabel} from '../../components/labels/LocationLabel';
-import {VideoOverlayInterface} from './data/VideoOverlayInterface';
 import {ReactComponent as SVGImage} from '../../res/videos/baden-short.svg';
+import {VideoOverlayInterface} from './data/VideoOverlayInterface';
 
 export interface VideoSlideProps {
   className: string,
   title: string,
   videoSrc: string,
-  hoverPoints: Array<{
-    className: string,
-    data: VideoOverlayInterface
-  }>
+  hoverPoints: Array<HoverPointItems>
+}
+
+interface HoverPointItems {
+  title: string,
+  subtitle: string,
+  className: string,
+  data: VideoOverlayInterface,
+  lineLength: number,
+  lineRotation: number,
+  orientation: string
 }
 
 export const VideoSlide: React.FC<VideoSlideProps> = props => {
@@ -40,11 +48,16 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
 
       <div className={`overlay-hover-point-container ${animationStarted ? 'show' : 'hide'}`}>
 
-        {props.hoverPoints.map((d, i) => <OverlayHoverPoint className={d.className}
-                                                            key={d.className + i}
-                                                            data={d.data}
-                                                            onPointClicked={openOverlay}/>)}
+        {props.hoverPoints.map((d, i) => <div className={d.className} key={d.className + i}>
+          <OverlayHoverPoint data={d.data}
+                             onPointClicked={openOverlay}/>
+          <EntryLabel text={d.title}
+                      lineWidth={d.lineLength}
+                      lineRotationInDeg={d.lineRotation}
+                      orientation={d.orientation}/>
+        </div>)}
       </div>
+
 
       <LocationLabel title={props.title}/>
 

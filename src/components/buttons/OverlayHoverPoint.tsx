@@ -16,7 +16,8 @@ export const OverlayHoverPoint: React.FC<Props> = props => {
   const [isActive, setIsActive] = useState(false);
 
   const getRootClass = () => {
-    let rootClass = `OverlayHoverPoint ${props.className} ${data.type}`;
+    let rootClass = `OverlayHoverPoint ${data.type}`;
+    rootClass += props.className !== undefined ? ' ' + props.className : '';
     rootClass += isActive ? ' is-active' : '';
     return rootClass;
   }

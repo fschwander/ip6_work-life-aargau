@@ -1,16 +1,29 @@
 .VideoPage {
 
   .baden-v-slide {
-    .OverlayHoverPoint {
-      &.hiking-trails {
-        left: 20%;
-        top: 30%;
-      }
+    .hiking-trails {
+      transform: translate(-270px, 70px);
 
-      &.cie-mammut {
-        right: 20%;
-        bottom: 30%;
+      .EntryLabel {
+        transform: translate(-10px, -50px);
+      }
+    }
+
+    .culture-and-history {
+      transform: translate(210px, -180px);
+      .EntryLabel {
+        transform: translate(-90px, 90px);
+      }
+    }
+
+    .cie-mammut {
+      transform: translate(300px, 60px);
+
+      .EntryLabel {
+        transform: translate(-70px, 100px);
+
       }
     }
   }
 }
+
