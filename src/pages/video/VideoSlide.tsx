@@ -19,19 +19,8 @@ export interface VideoSlideProps {
 }
 
 export const VideoSlide: React.FC<VideoSlideProps> = props => {
-  const [isPlaying, setIsPlaying] = React.useState(true)
   const [animationStarted, setAnimationStarted] = React.useState(false);
   const [popupComponent, setPopupContainer] = React.useState();
-
-  const pauseVideo = () => {
-    setIsPlaying(false)
-  }
-
-  const playVideo = () => {
-    if (popupComponent === undefined) {
-      setIsPlaying(true)
-    }
-  }
 
   const onVideoEnded = () => {
     setAnimationStarted(true);
@@ -39,17 +28,15 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
 
   const openOverlay = (overlay: any) => {
     setPopupContainer(overlay)
-    setIsPlaying(false);
   }
 
   const closeOverlay = () => {
     setPopupContainer(undefined);
-    setIsPlaying(true)
   }
 
   return (
     <div className={`VideoSlide ${props.className} full-screen`}>
-      <BackgroundVideo source={props.videoSrc} playVideo={isPlaying} onVideoEnded={onVideoEnded}/>
+      <BackgroundVideo source={props.videoSrc} playVideo={true} onVideoEnded={onVideoEnded}/>
       <AnimatedSVG svgComponent={SVGImage} isActive={animationStarted}/>
 
       <div className={`overlay-hover-point-container ${animationStarted ? 'show' : 'hide'}`}>
