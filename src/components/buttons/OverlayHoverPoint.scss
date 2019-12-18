@@ -4,22 +4,11 @@
   align-items: flex-end;
   padding: 1.5rem 2rem;
 
-  .HoverPoint {
-    transform: translateX(50%);
-  }
-
   .label {
     background-color: white;
     color: black;
     padding: .5rem 1rem;
     margin: .5rem 0;
-  }
-
-  &.left {
-    align-items: flex-start;
-    .HoverPoint {
-      transform: translateX(-50%);
-    }
   }
 
   &.type-work {

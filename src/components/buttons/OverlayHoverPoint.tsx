@@ -6,7 +6,6 @@ import {HoverPoint} from './HoverPoint';
 interface Props {
   className?: string,
   data: VideoOverlayInterface,
-  hOrientation?: string,
   onMouseEnter?: Function,
   onMouseLeave?: Function,
   onPointClicked: Function
@@ -19,7 +18,6 @@ export const OverlayHoverPoint: React.FC<Props> = props => {
   const getRootClass = () => {
     let rootClass = `OverlayHoverPoint ${props.className} ${data.type}`;
     rootClass += isActive ? ' is-active' : '';
-    rootClass += props.hOrientation !== undefined ? ' ' + props.hOrientation : '';
     return rootClass;
   }
 
@@ -46,7 +44,6 @@ export const OverlayHoverPoint: React.FC<Props> = props => {
          onMouseLeave={onDeactivate}>
       <HoverPoint onMouseEnter={onActivate}
                   onClick={openOverlay}/>
-      <h4 className='label'>{data.header.title}</h4>
     </div>
   )
 }
