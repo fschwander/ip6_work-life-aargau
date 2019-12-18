@@ -5,7 +5,11 @@ import iconLocation from '../../res/icons/location.svg'
 import iconTime from '../../res/icons/time.svg'
 import iconWind from '../../res/icons/wind.svg'
 
-export const LocationLabel: React.FC = () => {
+interface LocationLabelProps {
+  title: string
+}
+
+export const LocationLabel: React.FC<LocationLabelProps> = props => {
 
   const getLocalTime = (): string => {
     let date = new Date();
@@ -23,7 +27,7 @@ export const LocationLabel: React.FC = () => {
 
   return (
     <div className='LocationLabel'>
-      <h2>Die Stadt Baden</h2>
+      <h2>{props.title}</h2>
       <div className='horizontal-container'>
         <div className='icon-container'>
           <img src={iconTime} alt='icon'/>

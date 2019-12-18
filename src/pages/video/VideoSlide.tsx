@@ -3,21 +3,18 @@ import {OverlayHoverPoint} from '../../components/buttons/OverlayHoverPoint';
 import {BackgroundVideo} from '../../components/containers/BackgroundVideo';
 import {PopupContainer} from '../../components/containers/PopupContainer';
 import {LocationLabel} from '../../components/labels/LocationLabel';
-import {hikingTrails} from '../../res/data/video/hikingTrails'
-import {mammut} from '../../res/data/video/mammut';
 import {VideoOverlayInterface} from '../../res/data/video/VideoOverlayInterface';
-import videoBaden from '../../res/videos/baden.mp4';
 
 export interface VideoSlideProps {
+  title: string,
   videoSrc: string,
-  hoverPoints: {
+  hoverPoints: Array<{
     className: string,
     data: VideoOverlayInterface
-  },
-  locationData: any
+  }>
 }
 
-export const VideoSlide: React.FC = () => {
+export const VideoSlide: React.FC<VideoSlideProps> = props => {
   const [isPlaying, setIsPlaying] = React.useState(true)
   const [popupComponent, setPopupContainer] = React.useState();
 
@@ -43,23 +40,19 @@ export const VideoSlide: React.FC = () => {
 
   return (
     <div className='VideoSlide full-screen'>
-      <BackgroundVideo source={videoBaden} playVideo={isPlaying}/>
+      <BackgroundVideo source={props.videoSrc} playVideo={isPlaying}/>
 
       <div className={`overlay-hover-point-container ${popupComponent === undefined ? 'show' : 'hide'}`}>
-        <OverlayHoverPoint className={`hiking-trails`}
-                           data={hikingTrails}
-                           onMouseEnter={pauseVideo}
-                           onMouseLeave={playVideo}
-                           onPointClicked={openOverlay}/>
-        <OverlayHoverPoint className={`cie-mammut`}
-                           data={mammut}
-                           hOrientation='left'
-                           onMouseEnter={pauseVideo}
-                           onMouseLeave={playVideo}
-                           onPointClicked={openOverlay}/>
+
+        {props.hoverPoints.map((d, i) => <OverlayHoverPoint className={d.className}
+                                                            key={d.className + i}
+                                                            data={d.data}
+                                                            onMouseEnter={pauseVideo}
+                                                            onMouseLeave={playVideo}
+                                                            onPointClicked={openOverlay}/>)}
       </div>
 
-      <LocationLabel/>
+      <LocationLabel title={props.title}/>
 
       {popupComponent !== undefined ?
         <PopupContainer onCloseButtonClicked={closeOverlay}>
