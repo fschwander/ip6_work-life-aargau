@@ -1,27 +1,38 @@
 .VideoPage {
 
+  h3, p {
+    font-size: .9rem;
+  }
+
+  .HoverPoint {
+    position: absolute;
+  }
+
   .baden-v-slide {
     .hiking-trails {
-      transform: translate(-270px, 70px);
+      transform: translate(-400px, 40px);
 
-      .EntryLabel {
-        transform: translate(-10px, -50px);
+      .HoverPoint {
+        left: 40px;
+        top: 50px;
       }
     }
 
     .culture-and-history {
-      transform: translate(210px, -180px);
-      .EntryLabel {
-        transform: translate(-90px, 90px);
+      transform: translate(140px, -70px);
+
+      .HoverPoint {
+        left: 50px;
+        top: -50px;
       }
     }
 
     .cie-mammut {
-      transform: translate(300px, 60px);
+      transform: translate(400px, 140px);
 
-      .EntryLabel {
-        transform: translate(-70px, 100px);
-
+      .HoverPoint {
+        left: 90px;
+        top: -100px;
       }
     }
   }

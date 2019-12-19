@@ -52,6 +52,7 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
         {props.hoverPoints.map((d, i) => <div className={d.className} key={d.className + i}>
           <HoverPoint onClick={() => openOverlay(<VideoOverlay data={d.data}/>)}/>
           <EntryLabel text={d.title}
+                      subtitle={d.subtitle}
                       lineWidth={d.lineLength}
                       lineRotationInDeg={d.lineRotation}
                       orientation={d.orientation}/>
