@@ -1,5 +1,4 @@
 import React from 'react';
-import {OverlayHoverPoint} from '../../components/buttons/OverlayHoverPoint';
 import {AnimatedSVG} from '../../components/containers/AnimatedSVG';
 import {BackgroundVideo} from '../../components/containers/BackgroundVideo';
 import {PopupContainer} from '../../components/containers/PopupContainer';
@@ -7,6 +6,8 @@ import {EntryLabel} from '../../components/labels/EntryLabel';
 import {LocationLabel} from '../../components/labels/LocationLabel';
 import {ReactComponent as SVGImage} from '../../res/videos/baden-short.svg';
 import {VideoOverlayInterface} from './data/VideoOverlayInterface';
+import {HoverPoint} from "../../components/buttons/HoverPoint";
+import {VideoOverlay} from "./VideoOverlay";
 
 export interface VideoSlideProps {
   className: string,
@@ -49,8 +50,7 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
       <div className={`overlay-hover-point-container ${animationStarted ? 'show' : 'hide'}`}>
 
         {props.hoverPoints.map((d, i) => <div className={d.className} key={d.className + i}>
-          <OverlayHoverPoint data={d.data}
-                             onPointClicked={openOverlay}/>
+          <HoverPoint onClick={() => openOverlay(<VideoOverlay data={d.data}/>)}/>
           <EntryLabel text={d.title}
                       lineWidth={d.lineLength}
                       lineRotationInDeg={d.lineRotation}
