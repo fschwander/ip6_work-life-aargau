@@ -49,14 +49,22 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
 
       <div className={`overlay-hover-point-container ${animationStarted ? 'show' : 'hide'}`}>
 
-        {props.hoverPoints.map((d, i) => <div className={d.className} key={d.className + i}>
-          <HoverPoint onClick={() => openOverlay(<VideoOverlay data={d.data}/>)}/>
-          <EntryLabel text={d.title}
-                      subtitle={d.subtitle}
-                      lineWidth={d.lineLength}
-                      lineRotationInDeg={d.lineRotation}
-                      orientation={d.orientation}/>
-        </div>)}
+        {props.hoverPoints.map((d, i) => {
+          return <div className={`anim-group ${d.className}`}
+                      key={d.className + i}
+                      style={{
+                        transition: '1.5s ease-in-out',
+                        transitionDelay: 2 * i + 's',
+                        opacity: animationStarted ? 1 : 0
+                      }}>
+            <HoverPoint onClick={() => openOverlay(<VideoOverlay data={d.data}/>)}/>
+            <EntryLabel text={d.title}
+                        subtitle={d.subtitle}
+                        lineWidth={d.lineLength}
+                        lineRotationInDeg={d.lineRotation}
+                        orientation={d.orientation}/>
+          </div>
+        })}
       </div>
 
 
