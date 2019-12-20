@@ -1,35 +1,15 @@
-import React, {Component} from 'react';
+import React, {useEffect} from 'react';
 
 interface Props {
   svgComponent: React.FC,
   isActive: boolean
 }
 
-export class AnimatedSVG extends Component<Props> {
-  rootRef: React.RefObject<HTMLDivElement>;
+export const AnimatedSVG: React.FC<Props> = props => {
+  const rootRef: React.RefObject<HTMLDivElement> = React.createRef();
+  const SVGImage = props.svgComponent;
 
-  constructor(props: Props) {
-    super(props);
-
-    this.rootRef = React.createRef();
-
-  }
-
-  render() {
-    const SVGImage = this.props.svgComponent;
-
-    return (
-      <div className={`AnimatedSVG ${this.props.isActive ? 'is-active' : ''}`} ref={this.rootRef}>
-        <SVGImage/>
-      </div>
-    )
-  }
-
-  componentDidMount(): void {
-    this.startDashOffsetAnimation()
-  }
-
-  startDashOffsetAnimation() {
+  const initValuesForAnimation = () => {
     const pathElements = Array.prototype.slice.call(document.getElementsByTagName('path'))
     const lineElements = Array.prototype.slice.call(document.getElementsByTagName('line'))
     const polylineElements = Array.prototype.slice.call(document.getElementsByTagName('polyline'))
@@ -46,4 +26,14 @@ export class AnimatedSVG extends Component<Props> {
       el.style.strokeDashoffset = totalLength;
     })
   }
+
+  useEffect(() => {
+    initValuesForAnimation();
+  })
+
+  return (
+    <div className={`AnimatedSVG ${props.isActive ? 'is-active' : ''}`} ref={rootRef}>
+      <SVGImage/>
+    </div>
+  )
 }
