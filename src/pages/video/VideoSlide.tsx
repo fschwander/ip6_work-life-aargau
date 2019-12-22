@@ -1,4 +1,4 @@
-import React, {CSSProperties, useEffect} from 'react';
+import React, {CSSProperties, useState} from 'react';
 import {AnimatedSVG} from '../../components/containers/AnimatedSVG';
 import {BackgroundVideo} from '../../components/containers/BackgroundVideo';
 import {PopupContainer} from '../../components/containers/PopupContainer';
@@ -27,8 +27,8 @@ interface HoverPointItems {
 }
 
 export const VideoSlide: React.FC<VideoSlideProps> = props => {
-  const [animationStarted, setAnimationStarted] = React.useState(false);
-  const [popupComponent, setPopupContainer] = React.useState();
+  const [animationStarted, setAnimationStarted] = useState(false);
+  const [popupComponent, setPopupContainer] = useState();
 
   const animationStaggerInSec: number = 3;
 
@@ -51,13 +51,6 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
       opacity: animationStarted ? 1 : 0
     }
   }
-
-  useEffect(() => {
-    return () => {
-      console.log('did unmount');
-      setAnimationStarted(false)
-    }
-  }, [])
 
   return (
     <div className={`VideoSlide ${props.className} full-screen`}>
@@ -90,7 +83,6 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
           </div>
         })}
       </div>
-
 
       <LocationLabel title={props.title}/>
 
