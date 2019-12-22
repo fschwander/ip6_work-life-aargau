@@ -4,57 +4,6 @@
     <title>baden-short@1x</title>
     <desc>Created with Sketch.</desc>
     <g id="baden-short" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="lafarge-holcim" transform="translate(1504.000000, 515.000000)" stroke="#FFFFFF">
-            <line x1="78" y1="2" x2="75" y2="171" id="Path-50" stroke-dasharray="1.149999976158142,1.149999976158142"></line>
-            <line x1="62.8773665" y1="2" x2="62.1226335" y2="39" id="Path-50-Copy-8" stroke-dasharray="1.149999976158142"></line>
-            <line x1="110" y1="2" x2="107" y2="168" id="Path-50-Copy-2" stroke-dasharray="1.149999976158142"></line>
-            <line x1="126" y1="2" x2="122" y2="197" id="Path-50-Copy-3" stroke-dasharray="1.149999976158142,1.149999976158142"></line>
-            <path d="M142,2 L138.982176,127.541465 M138.717694,138.543929 L137,210" id="Shape" stroke-dasharray="1.149999976158142,1.149999976158142"></path>
-            <line x1="174" y1="2" x2="168" y2="231" id="Path-50-Copy-6" stroke-dasharray="1.149999976158142"></line>
-            <line x1="189.878164" y1="2" x2="189.121836" y2="52" id="Path-50-Copy-7" stroke-dasharray="1.149999976158142"></line>
-            <path d="M14,51 L31.7130206,52.950865 M47.4231446,54.7690636 L64.5244177,55.9007326 L187,55.9007326" id="Shape" stroke-dasharray="1.149999976158142"></path>
-            <path d="M0,12 L38.6091386,15.4321602 M56.5842645,16.4051629 L204,16.4051629" id="Shape" stroke-dasharray="1.149999976158142"></path>
-            <path d="M15,85 L63.9133012,91 L186,91" id="Path-51-Copy-4" stroke-dasharray="1.149999976158142"></path>
-            <path d="M15,99 L63.0968452,106 L186,106" id="Path-51-Copy-5" stroke-dasharray="1.149999976158142"></path>
-            <path d="M11,130 L61.1576861,138 L185,138" id="Path-51-Copy-7" stroke-dasharray="1.149999976158142"></path>
-            <path d="M11,145 L58.9789428,154 L184,154" id="Path-51-Copy-8" stroke-dasharray="1.149999976158142"></path>
-            <line x1="107" y1="185.5" x2="183" y2="185.5" id="Path-51-Copy-10" stroke-dasharray="1.149999976158142"></line>
-            <line x1="129" y1="201.5" x2="183" y2="201.5" id="Path-51-Copy-11" stroke-dasharray="1.149999976158142"></line>
-            <path d="M93,2 L91.0261845,87.8609739 M91.0261845,87.8609739 L89,176" id="Shape" stroke-width="2"></path>
-            <line x1="157" y1="2" x2="153" y2="220" id="Path-50-Copy-5" stroke-width="2"></line>
-            <path d="M3,26 L36.3803221,29.5411821 M52.5463687,31.3184691 L203,31.3184691" id="Shape" stroke-width="2"></path>
-            <polyline id="Path-51-Copy-3" stroke-width="2" points="14 68 64.1830705 74 187 74"></polyline>
-            <polyline id="Path-51-Copy-6" stroke-width="2" points="11 115 61.973608 122 185 122"></polyline>
-            <polyline id="Path-51-Copy-9" stroke-width="2" points="10 158 67.2249188 170 184 170"></polyline>
-            <line x1="149" y1="217.5" x2="182" y2="217.5" id="Path-51-Copy-12" stroke-width="2"></line>
-            <line x1="25" y1="-1.62536651e-13" x2="20" y2="183" id="Path-39" stroke-dasharray="1"></line>
-            <path d="M37.7470533,2 L37.2723023,41.2073249 M36.9286006,56.1003184 L34,183" id="Shape" stroke-dasharray="1"></path>
-            <path d="M51.5352721,2 L51.3737531,12.6463319 M50.5456057,44.9019113 L47,183" id="Shape" stroke-dasharray="1"></path>
-        </g>
-        <g id="rent" transform="translate(767.000000, 630.000000)" stroke="#FFFFFF">
-            <line x1="16" y1="84" x2="67" y2="2.33146835e-15" id="Path-44-Copy-2" stroke-dasharray="1"></line>
-            <line x1="2" y1="84" x2="53" y2="2.33146835e-15" id="Path-44-Copy-17" stroke-dasharray="1"></line>
-            <line x1="29" y1="85" x2="80" y2="1" id="Path-44-Copy-10" stroke-width="2"></line>
-            <line x1="54" y1="89" x2="109" y2="1" id="Path-44-Copy-11" stroke-dasharray="1"></line>
-            <line x1="80" y1="93" x2="133" y2="4" id="Path-44-Copy-12" stroke-dasharray="1"></line>
-            <line x1="103" y1="106" x2="163" y2="7" id="Path-44-Copy-13" stroke-width="2"></line>
-            <line x1="130" y1="100" x2="186" y2="10" id="Path-44-Copy-14" stroke-dasharray="1"></line>
-            <line x1="158" y1="105" x2="214" y2="12" id="Path-44-Copy-15" stroke-dasharray="1"></line>
-            <path d="M184.5348,109.775381 L240,14" id="Shape" stroke-width="2"></path>
-            <line x1="211" y1="91" x2="257" y2="15" id="Path-44-Copy-18" fill="#D8D8D8" stroke-dasharray="1"></line>
-            <line x1="42" y1="88" x2="93" y2="3" id="Path-44-Copy-3" stroke-dasharray="1"></line>
-            <line x1="68" y1="91" x2="121" y2="2" id="Path-44-Copy-5" stroke-width="2"></line>
-            <line x1="93" y1="96" x2="147" y2="6" id="Path-44-Copy-6" stroke-dasharray="1"></line>
-            <line x1="113" y1="108" x2="174" y2="8" id="Path-44-Copy-7" stroke-dasharray="1"></line>
-            <line x1="145" y1="104" x2="201" y2="11" id="Path-44-Copy-8" stroke-width="2"></line>
-            <line x1="170" y1="108" x2="227" y2="13" id="Path-44-Copy-9" stroke-dasharray="1"></line>
-            <line x1="42" y1="9" x2="252" y2="34" id="Path-44" stroke-width="2"></line>
-            <line x1="34" y1="21" x2="243" y2="48" id="Path-44-Copy-16" stroke-dasharray="1"></line>
-            <line x1="24" y1="35" x2="233" y2="62" id="Path-44-Copy-21" stroke-dasharray="1"></line>
-            <line x1="15" y1="47" x2="223" y2="75" id="Path-44-Copy-19" stroke-width="2"></line>
-            <line x1="0" y1="73" x2="201" y2="103" id="Path-44-Copy-20" stroke-dasharray="1"></line>
-            <line x1="8" y1="60" x2="209" y2="90" id="Path-44-Copy-22" stroke-dasharray="1"></line>
-        </g>
         <g id="culture_and_history" transform="translate(1279.000000, 217.000000)" stroke="#FFFFFF">
             <line x1="152.5" y1="111" x2="152.5" y2="151" id="Path-66" stroke-width="0.5" stroke-dasharray="1,1"></line>
             <line x1="186.5" y1="115" x2="186.5" y2="155" id="Path-66-Copy-2" stroke-width="0.5" stroke-dasharray="1,1"></line>

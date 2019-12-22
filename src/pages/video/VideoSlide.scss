@@ -3,19 +3,19 @@
   justify-content: center;
   align-items: center;
 
-  .overlay-hover-point-container {
-    transition: opacity .2s ease-out;
+  h3, p {
+    font-size: .9rem;
+  }
+
+  .HoverPoint {
+    position: absolute;
+  }
+
+  .anim-group-container {
     display: flex;
 
     &.hide {
       opacity: 0;
-    }
-
-    .OverlayHoverPoint {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
     }
   }
 }

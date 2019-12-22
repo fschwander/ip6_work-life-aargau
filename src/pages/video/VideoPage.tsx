@@ -3,6 +3,9 @@ import videoBaden from '../../res/videos/baden-short.mp4';
 import {hikingTrails} from './data/hikingTrails';
 import {mammut} from './data/mammut';
 import {VideoSlide, VideoSlideProps} from './VideoSlide';
+import {ReactComponent as svgRuine} from '../../res/videos/baden-short-ruine.svg';
+import {ReactComponent as svgRoof} from '../../res/videos/baden-short-roof.svg';
+import {ReactComponent as svgTower} from '../../res/videos/baden-short-tower.svg';
 
 export const VideoPage: React.FC = () => {
 
@@ -13,19 +16,11 @@ export const VideoPage: React.FC = () => {
       videoSrc: videoBaden,
       hoverPoints: [
         {
-          title: 'Baumaterialien',
-          subtitle: 'Zement, Beton...',
-          className: 'cie-mammut',
-          data: mammut,
-          lineLength: 85,
-          lineRotation: 70,
-          orientation: 'right'
-        },
-        {
           title: 'Kultur & Geschichte',
           subtitle: 'Historische Highlights',
           className: 'culture-and-history',
-          data: hikingTrails,
+          overlayData: hikingTrails,
+          svgComponent: svgRuine,
           lineLength: 60,
           lineRotation: 70,
           orientation: 'right'
@@ -34,10 +29,21 @@ export const VideoPage: React.FC = () => {
           title: 'Deine Vorteile',
           subtitle: 'Erschwingliche Miete',
           className: 'hiking-trails',
-          data: hikingTrails,
+          overlayData: hikingTrails,
+          svgComponent: svgRoof,
           lineLength: 60,
           lineRotation: 300,
           orientation: 'right'
+        },
+        {
+          title: 'Baumaterialien',
+          subtitle: 'Zement, Beton...',
+          className: 'cie-mammut',
+          overlayData: mammut,
+          svgComponent: svgTower,
+          lineLength: 85,
+          lineRotation: 70,
+          orientation: 'right',
         }
       ]
     }

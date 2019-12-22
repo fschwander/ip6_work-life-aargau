@@ -1,16 +1,9 @@
 .VideoPage {
 
-  h3, p {
-    font-size: .9rem;
-  }
-
-  .HoverPoint {
-    position: absolute;
-  }
-
   .baden-v-slide {
+
     .hiking-trails {
-      transform: translate(-400px, 40px);
+      transform: translate(-250px, 40px);
 
       .HoverPoint {
         left: 40px;
@@ -19,7 +12,7 @@
     }
 
     .culture-and-history {
-      transform: translate(140px, -70px);
+      transform: translate(250px, -70px);
 
       .HoverPoint {
         left: 50px;
@@ -28,7 +21,7 @@
     }
 
     .cie-mammut {
-      transform: translate(420px, 140px);
+      transform: translate(90px, 140px);
 
       .HoverPoint {
         left: 70px;
