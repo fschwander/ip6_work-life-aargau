@@ -7,12 +7,12 @@
     font-size: .9rem;
   }
 
-  .HoverPoint {
-    position: absolute;
-  }
-
   .anim-group-container {
     display: flex;
+
+    .HoverPoint {
+      position: absolute;
+    }
 
     &.hide {
       opacity: 0;

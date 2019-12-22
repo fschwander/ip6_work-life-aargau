@@ -2,6 +2,7 @@ import React, {useEffect} from 'react';
 
 interface Props {
   svgComponent: React.FC,
+  animationDelay?: number,
   isActive: boolean
 }
 
@@ -10,21 +11,24 @@ export const AnimatedSVG: React.FC<Props> = props => {
   const SVGImage = props.svgComponent;
 
   const initValuesForAnimation = () => {
-    const pathElements = Array.prototype.slice.call(document.getElementsByTagName('path'))
-    const lineElements = Array.prototype.slice.call(document.getElementsByTagName('line'))
-    const polylineElements = Array.prototype.slice.call(document.getElementsByTagName('polyline'))
-    const polygonElements = Array.prototype.slice.call(document.getElementsByTagName('polygon'))
+    if(rootRef.current !== null) {
+      const pathElements = Array.prototype.slice.call(rootRef.current.getElementsByTagName('path'))
+      const lineElements = Array.prototype.slice.call(rootRef.current.getElementsByTagName('line'))
+      const polylineElements = Array.prototype.slice.call(rootRef.current.getElementsByTagName('polyline'))
+      const polygonElements = Array.prototype.slice.call(rootRef.current.getElementsByTagName('polygon'))
 
-    let allElements = pathElements
-      .concat(lineElements)
-      .concat(polylineElements)
-      .concat(polygonElements)
+      let allElements = pathElements
+        .concat(lineElements)
+        .concat(polylineElements)
+        .concat(polygonElements)
 
-    Array.from(allElements).forEach(el => {
-      let totalLength = el.getTotalLength().toString();
-      el.style.strokeDasharray = totalLength;
-      el.style.strokeDashoffset = totalLength;
-    })
+      Array.from(allElements).forEach(el => {
+        let totalLength = el.getTotalLength().toString();
+        el.style.strokeDasharray = totalLength;
+        el.style.strokeDashoffset = totalLength;
+        el.style.animationDelay = (props.animationDelay ? props.animationDelay : 0) + 's';
+      })
+    }
   }
 
   useEffect(() => {
