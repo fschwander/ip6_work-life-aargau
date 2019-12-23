@@ -32,7 +32,7 @@ export class BackgroundVideo extends Component<FullScreenVideoProps, VideoFullSc
 
   render() {
     return (
-      <div className='BackgroundVideo'>
+      <div className='BackgroundVideo full-screen'>
         <div className='loading-container' style={{opacity: this.state.isBuffering ? 1 : 0}}>
           <Spinner color='light'/>
           <p>Einen Moment, bitte...</p>
