@@ -10,10 +10,6 @@
     padding-left: 1.5rem;
   }
 
-  .transparent {
-    opacity: 0.5;
-  }
-
   .timeline-items {
 
     .item {
@@ -41,6 +37,10 @@
           background-color: white;
           overflow: hidden;
           border: unset;
+
+          &.transparent {
+            opacity: 0.5;
+          }
         }
 
         &.large-point span {
@@ -50,8 +50,12 @@
       }
 
       .horizontal-line {
-        width: 2rem;
+        width: 1.2rem;
         border-bottom: $lineThin white solid;
+
+        &.transparent {
+          opacity: 0;
+        }
       }
     }
   }

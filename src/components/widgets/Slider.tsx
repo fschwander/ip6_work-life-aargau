@@ -8,7 +8,7 @@ interface SliderProps {
 export const Slider: React.FC<SliderProps> = props => {
 
   return (
-    <div className='Slider button horizontal-container'>
+    <div className='Slider button border-button horizontal-container'>
       <p>Baden</p>
       <img src={iconArrowDown} alt='icon'/>
     </div>

@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  border: $lineThin white solid;
   border-radius: 1rem;
+  border-width: $lineThin !important;
   padding: 0 0.5rem 0 1rem;
 
   img {
