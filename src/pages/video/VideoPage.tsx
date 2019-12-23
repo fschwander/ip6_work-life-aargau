@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {VideoSlide} from './VideoSlide';
 import {videoSlides} from "./data/videoSlides";
+import {Timeline} from "../../components/widgets/TimeLine";
 
 export const VideoPage: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -9,19 +10,10 @@ export const VideoPage: React.FC = () => {
     return <VideoSlide key={i} {...videoSlides[i]}/>
   })
 
-  const TimeLine = () => {
-    return <div className='TimeLine'>
-      {videoSlides.map((d, i) => {
-        return <div className={`button `} key={i}
-                    onClick={() => setActiveIndex(i)}/>
-      })}
-    </div>
-  }
-
   return (
     <div className='VideoPage'>
       {vSlides[activeIndex]}
-      <TimeLine/>
+      <Timeline nofItems={vSlides.length} onClick={setActiveIndex} />
     </div>
   )
 }

@@ -1,0 +1,24 @@
+.TimeLine {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  padding: 3rem 5rem;
+
+  .button {
+    padding: .5rem;
+    opacity: .7;
+    background-color: white;
+    border-radius: 50%;
+    transition: opacity .3s ease-in-out;
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
