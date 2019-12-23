@@ -1,4 +1,6 @@
 import React, {ReactElement} from "react";
+import iconLocation from "../../res/icons/location.svg";
+import {Slider} from "./Slider";
 
 interface TimeLineProps {
   onClick: Function,
@@ -20,7 +22,8 @@ export const Timeline: React.FC<TimeLineProps> = props => {
                key={i} onClick={() => props.onClick(i)}>
             <span className={`${i > props.activeIndex ? 'transparent' : ''}`}/>
           </div>
-          {i < props.nofIndexes - 1 ? <span className={`horizontal-line ${i >= props.activeIndex ? 'transparent' : ''}`}/> : null}
+          {i < props.nofIndexes - 1 ?
+            <span className={`horizontal-line ${i >= props.activeIndex ? 'transparent' : ''}`}/> : null}
         </div>)
     }
     return items;
@@ -28,7 +31,13 @@ export const Timeline: React.FC<TimeLineProps> = props => {
 
   return (
     <div className='TimeLine'>
-      {getTimeLineItems()}
+      <Slider/>
+
+      <img src={iconLocation} alt='icon'/>
+
+      <div className='timeline-items horizontal-container'>
+        {getTimeLineItems()}
+      </div>
     </div>
   )
 };
