@@ -13,6 +13,7 @@ export const videoSlides: Array<VideoSlideProps> = [
     className: 'aarau-slide1',
     title: 'Die Stadt Aarau',
     videoSrc: videoAarau1,
+    isMainPoint: true,
     hoverPoints: [{
       title: 'Kultur & Geschichte',
       subtitle: 'Historische Highlights',

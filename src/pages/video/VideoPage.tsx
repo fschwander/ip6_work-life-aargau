@@ -13,9 +13,11 @@ export const VideoPage: React.FC = () => {
   return (
     <div className='VideoPage'>
       {slideComponents[activeIndex]}
-      <Timeline nofItems={slideComponents.length} onClick={setActiveIndex}
+      <Timeline onClick={setActiveIndex}
+                nofIndexes={slideComponents.length}
+                activeIndex={activeIndex}
                 itemsArray={videoSlides.map((d) => {
-                  return {isMainPoint: d.isMainPoint}
+                  return {isMainPoint: d.isMainPoint ? d.isMainPoint : false}
                 })}/>
     </div>
   )
