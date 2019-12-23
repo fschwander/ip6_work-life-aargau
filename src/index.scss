@@ -2,6 +2,7 @@
 
 html {
   font-family: 'Open Sans', sans-serif;
+  cursor: default;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
@@ -77,8 +78,12 @@ html {
         cursor: pointer;
       }
 
-      &.enabled:hover {
-        background: $backgroundTransparentLight;
+      &.border-button {
+        border: $lineThick white solid;
+
+        &:not(.disabled):hover {
+          background: $backgroundTransparentLight;
+        }
       }
 
       &.disabled {

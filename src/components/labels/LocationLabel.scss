@@ -16,25 +16,14 @@
     }
 
     .icon-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+
       img {
         padding-bottom: .4rem;
       }
-    }
-  }
-
-  .slider {
-    display: flex;
-    flex-direction: row;
-    border: $lineThin white solid;
-    border-radius: 1rem;
-    padding: 0 0.5rem 0 1rem;
-
-    img {
-      padding: .5rem;
-    }
-
-    p {
-      font-size: 14px;
     }
   }
 }

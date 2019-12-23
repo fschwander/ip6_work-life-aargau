@@ -1,4 +1,4 @@
-import React, {CSSProperties} from 'react';
+import React, {CSSProperties, useState} from 'react';
 import {AnimatedSVG} from '../../components/containers/AnimatedSVG';
 import {BackgroundVideo} from '../../components/containers/BackgroundVideo';
 import {PopupContainer} from '../../components/containers/PopupContainer';
@@ -11,6 +11,7 @@ import {VideoOverlay} from "./VideoOverlay";
 export interface VideoSlideProps {
   className: string,
   title: string,
+  isMainPoint?: boolean,
   videoSrc: string,
   hoverPoints: Array<HoverPointItems>
 }
@@ -27,8 +28,8 @@ interface HoverPointItems {
 }
 
 export const VideoSlide: React.FC<VideoSlideProps> = props => {
-  const [animationStarted, setAnimationStarted] = React.useState(false);
-  const [popupComponent, setPopupContainer] = React.useState();
+  const [animationStarted, setAnimationStarted] = useState(false);
+  const [popupComponent, setPopupContainer] = useState();
 
   const animationStaggerInSec: number = 3;
 
@@ -80,7 +81,6 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
           </div>
         })}
       </div>
-
 
       <LocationLabel title={props.title}/>
 

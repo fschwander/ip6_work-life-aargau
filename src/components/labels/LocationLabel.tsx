@@ -1,7 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import iconArrowDown from '../../res/icons/arrow_down.svg'
 import iconWeather from '../../res/icons/location.svg'
-import iconLocation from '../../res/icons/location.svg'
 import iconTime from '../../res/icons/time.svg'
 import iconWind from '../../res/icons/wind.svg'
 
@@ -42,13 +40,6 @@ export const LocationLabel: React.FC<LocationLabelProps> = props => {
           <p><b>14.5</b>km/h</p>
         </div>
 
-      </div>
-      <div className='horizontal-container'>
-        <div className='slider'>
-          <p className='highlighted'>Baden</p>
-          <img src={iconArrowDown} alt='icon'/>
-        </div>
-        <img src={iconLocation} alt='icon'/>
       </div>
     </div>
   )

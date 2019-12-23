@@ -23,7 +23,7 @@ export const RoundButton: React.FC<RoundButtonProps> = props => {
   };
 
   return (
-    <div className={`RoundButton button ${props.isActive || props.isActive === undefined ? 'enabled' : 'disabled'}`}
+    <div className={`RoundButton button border-button ${props.isActive || props.isActive === undefined ? 'enabled' : 'disabled'}`}
          style={style}
          onClick={handleClick}>
       {props.icon ? <img src={props.icon} alt='icon'/> : null}
