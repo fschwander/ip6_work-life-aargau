@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import ReactPlayer from 'react-player';
 import {Spinner} from 'reactstrap';
 
@@ -8,45 +8,24 @@ interface FullScreenVideoProps {
   onVideoEnded: Function
 }
 
-interface VideoFullScreenState {
-  isPlaying: boolean,
-  isBuffering: boolean
-}
+export const BackgroundVideo: React.FC<FullScreenVideoProps> = props => {
+  const [isBuffering, setIsBuffering] = React.useState(false);
 
-export class BackgroundVideo extends Component<FullScreenVideoProps, VideoFullScreenState> {
-
-  constructor(props: FullScreenVideoProps) {
-    super(props);
-
-    this.state = {
-      isPlaying: false,
-      isBuffering: true
-    };
-
-    this.onReady = this.onReady.bind(this)
-  }
-
-  onReady() {
-    this.setState({isBuffering: false})
-  }
-
-  render() {
     return (
       <div className='BackgroundVideo full-screen'>
-        <div className='loading-container' style={{opacity: this.state.isBuffering ? 1 : 0}}>
+        <div className='loading-container' style={{opacity: isBuffering ? 1 : 0}}>
           <Spinner color='light'/>
           <p>Einen Moment, bitte...</p>
         </div>
 
         <ReactPlayer className='player'
-                     url={this.props.source}
-                     playing={this.props.playVideo}
+                     url={props.source}
+                     playing={props.playVideo}
                      muted playsinline
-                     onReady={this.onReady}
-                     onEnded={() => this.props.onVideoEnded()}
+                     onReady={() => setIsBuffering(false)}
+                     onEnded={() => props.onVideoEnded()}
                      width='100%'
                      height='100%'/>
       </div>
     )
-  }
 }
