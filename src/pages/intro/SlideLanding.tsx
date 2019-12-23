@@ -6,13 +6,11 @@ interface SlideProps {
 }
 
 export const SlideLanding: React.FC<SlideProps> = props => {
-  const rootStyle = {backgroundImage: `url(${bgImage})`}
   const rootClass = 'SlideLanding slide full-screen ' + (props.isActive ? 'isActive' : '')
 
   return (
-    <div className={rootClass}
-         style={rootStyle}>
-      <span className='background-filter'/>
+    <div className={rootClass}>
+      <span className='background-image' style={{backgroundImage: `url(${bgImage})`}}/>
 
       <div className='page-headline'>
         <h3>Willkommen bei</h3>

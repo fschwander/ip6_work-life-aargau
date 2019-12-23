@@ -10,13 +10,12 @@ interface SlideProps {
 }
 
 export const SlideLife: React.FC<SlideProps> = props => {
-  const rootStyle = {backgroundImage: `url(${lenzburgImg})`}
   const rootClass = 'SlideLife slide full-screen ' + (props.isActive ? 'isActive' : '')
 
   return (
-    <div className={rootClass}
-         style={rootStyle}>
-      <span className='background-filter'/>
+    <div className={rootClass}>
+      <span className='background-image' style={{backgroundImage: `url(${lenzburgImg})`}}/>
+
       <AnimatedSVG svgComponent={lenzburgSvg} isActive={props.isActive}/>
 
       <QuizBox className="quiz-reputation" question={questions.reputation}

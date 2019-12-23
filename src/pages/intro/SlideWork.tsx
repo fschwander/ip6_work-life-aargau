@@ -14,7 +14,6 @@ interface SlideProps {
 export const SlideWork: React.FC<SlideProps> = props => {
   const history = useHistory()
 
-  const rootStyle = {backgroundImage: `url(${bgImage})`}
   const rootClass = 'SlideWork slide full-screen ' + (props.isActive ? 'isActive' : '')
 
   const redirectToMainPage = () => {
@@ -22,9 +21,9 @@ export const SlideWork: React.FC<SlideProps> = props => {
   }
 
   return (
-    <div className={rootClass}
-         style={rootStyle}>
-      <span className='background-filter'/>
+    <div className={rootClass}>
+      <span className='background-image' style={{backgroundImage: `url(${bgImage})`}}/>
+
       <AnimatedSVG svgComponent={SVGImage} isActive={props.isActive}/>
 
       <QuizBox className="quiz-companies" question={questions.companies}
