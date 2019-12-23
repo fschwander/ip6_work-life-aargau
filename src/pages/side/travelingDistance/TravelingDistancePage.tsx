@@ -1,12 +1,10 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-export class TravelingDistancePage extends Component {
+export const TravelingDistancePage: React.FC = () => {
 
-  render() {
-    return(
-      <div className='TravelingDistancePage'>
-        Add genious content here
-      </div>
-    )
-  }
+  return (
+    <div className='TravelingDistancePage'>
+      Add genious content here
+    </div>
+  )
 }
