@@ -1,9 +1,10 @@
-import React, {useState} from 'react';
+import React, {CSSProperties, useState} from 'react';
 
 interface HoverPointProps {
   onMouseEnter?: Function,
   onMouseLeave?: Function,
-  onClick?: Function
+  onClick?: Function,
+  style?: CSSProperties
 }
 
 export const HoverPoint: React.FC<HoverPointProps> = props => {
@@ -33,7 +34,8 @@ export const HoverPoint: React.FC<HoverPointProps> = props => {
     <div className={`HoverPoint ${isActive ? 'is-active' : ''} ${props.onClick !== undefined ? 'button' : ''}`}
          onMouseEnter={onMouseEnter}
          onMouseLeave={onMouseLeave}
-         onClick={onClick}>
+         onClick={onClick}
+         style={props.style}>
       <div className='circle outer-circle'/>
       <div className='circle inner-circle'/>
     </div>

@@ -44,7 +44,7 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
     setPopupContainer(undefined);
   }
 
-  const getStyles = (i: number, delay: number): CSSProperties => {
+  const getTransitionStyles = (i: number, delay: number): CSSProperties => {
     return {
       transition: 'opacity 1s ease-in-out',
       transitionDelay: i * animationStaggerInSec + delay + 's',
@@ -66,18 +66,15 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
                          animationDelay={i * animationStaggerInSec}/>
 
             <div className={`label-container ${d.className}`}>
+              <HoverPoint style={getTransitionStyles(i, 0)}
+                          onClick={() => openOverlay(<VideoOverlay data={d.overlayData}/>)}/>
 
-              <div style={getStyles(i, 0)}>
-                <HoverPoint onClick={() => openOverlay(<VideoOverlay data={d.overlayData}/>)}/>
-              </div>
-
-              <div style={getStyles(i, 2)}>
-                <EntryLabel text={d.title}
-                            subtitle={d.subtitle}
-                            lineWidth={d.lineLength}
-                            lineRotationInDeg={d.lineRotation}
-                            orientation={d.orientation}/>
-              </div>
+              <EntryLabel text={d.title}
+                          subtitle={d.subtitle}
+                          lineWidth={d.lineLength}
+                          lineRotationInDeg={d.lineRotation}
+                          orientation={d.orientation}
+                          style={getTransitionStyles(i, 2)}/>
             </div>
 
           </div>
