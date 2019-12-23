@@ -22,7 +22,7 @@ export const SlideWork: React.FC<SlideProps> = props => {
 
   return (
     <div className={rootClass}>
-      <span className='background-image' style={{backgroundImage: `url(${bgImage})`}}/>
+      <span className='background-image transparent-filter' style={{backgroundImage: `url(${bgImage})`}}/>
 
       <AnimatedSVG svgComponent={SVGImage} isActive={props.isActive}/>
 

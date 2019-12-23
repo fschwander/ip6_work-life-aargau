@@ -12,7 +12,7 @@ export const BackgroundVideo: React.FC<FullScreenVideoProps> = props => {
   const [isBuffering, setIsBuffering] = React.useState(false);
 
     return (
-      <div className='BackgroundVideo full-screen'>
+      <div className='BackgroundVideo transparent-filter full-screen'>
         <div className='loading-container' style={{opacity: isBuffering ? 1 : 0}}>
           <Spinner color='light'/>
           <p>Einen Moment, bitte...</p>

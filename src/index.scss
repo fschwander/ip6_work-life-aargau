@@ -108,6 +108,17 @@ html {
       }
     }
 
+    .transparent-filter:after {
+      position: absolute;
+      pointer-events: none;
+      content: '';
+      display: block;
+      bottom: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, $backgroundFilter 50%);
+      width: 100%;
+      height: 100%;
+    }
+
     .horizontal-container {
       display: flex;
     }

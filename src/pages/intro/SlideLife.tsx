@@ -14,7 +14,7 @@ export const SlideLife: React.FC<SlideProps> = props => {
 
   return (
     <div className={rootClass}>
-      <span className='background-image' style={{backgroundImage: `url(${lenzburgImg})`}}/>
+      <span className='background-image transparent-filter' style={{backgroundImage: `url(${lenzburgImg})`}}/>
 
       <AnimatedSVG svgComponent={lenzburgSvg} isActive={props.isActive}/>
 

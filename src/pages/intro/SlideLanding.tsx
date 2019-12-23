@@ -10,7 +10,7 @@ export const SlideLanding: React.FC<SlideProps> = props => {
 
   return (
     <div className={rootClass}>
-      <span className='background-image' style={{backgroundImage: `url(${bgImage})`}}/>
+      <span className='background-image transparent-filter' style={{backgroundImage: `url(${bgImage})`}}/>
 
       <div className='page-headline'>
         <h3>Willkommen bei</h3>
