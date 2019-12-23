@@ -1,11 +1,11 @@
-import videoBaden from "../../../res/videos/baden-short.mp4";
+import videoBaden from "../../../res/videos/baden1.mp4";
 import videoAarau1 from "../../../res/videos/aarau1.mp4";
 import videoAarau2 from "../../../res/videos/aarau2.mp4";
 import {hikingTrails} from "./hikingTrails";
 import {mammut} from "./mammut";
-import {ReactComponent as svgRuine} from "../../../res/videos/baden-short-ruine.svg";
-import {ReactComponent as svgRoof} from "../../../res/videos/baden-short-roof.svg";
-import {ReactComponent as svgTower} from "../../../res/videos/baden-short-tower.svg";
+import {ReactComponent as svgRuine} from "../../../res/videos/baden1-ruine.svg";
+import {ReactComponent as svgRoof} from "../../../res/videos/baden1-roof.svg";
+import {ReactComponent as svgTower} from "../../../res/videos/baden1-tower.svg";
 import {VideoSlideProps} from "../VideoSlide";
 
 export const videoSlides: Array<VideoSlideProps> = [
