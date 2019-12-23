@@ -42,6 +42,7 @@ export const videoSlides: Array<VideoSlideProps> = [
   {
     className: 'baden-slide1',
     title: 'Die Stadt Baden',
+    isMainPoint: true,
     videoSrc: videoBaden,
     hoverPoints: [
       {

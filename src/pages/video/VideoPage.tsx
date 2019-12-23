@@ -6,14 +6,17 @@ import {Timeline} from "../../components/widgets/TimeLine";
 export const VideoPage: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const vSlides = videoSlides.map((d, i) => {
+  const slideComponents = videoSlides.map((d, i) => {
     return <VideoSlide key={i} {...videoSlides[i]}/>
   })
 
   return (
     <div className='VideoPage'>
-      {vSlides[activeIndex]}
-      <Timeline nofItems={vSlides.length} onClick={setActiveIndex} />
+      {slideComponents[activeIndex]}
+      <Timeline nofItems={slideComponents.length} onClick={setActiveIndex}
+                itemsArray={videoSlides.map((d) => {
+                  return {isMainPoint: d.isMainPoint}
+                })}/>
     </div>
   )
 }
