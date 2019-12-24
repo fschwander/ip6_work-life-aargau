@@ -18,7 +18,7 @@ export const videoSlides: Array<VideoSlideProps> = [
     hoverPoints: [{
       title: 'Kultur & Geschichte',
       subtitle: 'Historische Highlights',
-      className: 'penis',
+      className: 'happy-new-year',
       overlayData: hikingTrails,
       svgComponent: svgAarau1,
       lineLength: 60,
