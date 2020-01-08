@@ -1,10 +1,12 @@
-import React from 'react';
+import React, {CSSProperties} from 'react';
 
 interface EntryLabelProps {
   text: string,
+  subtitle?: string,
   lineWidth: number,
   lineRotationInDeg: number,
-  orientation: string
+  orientation: string,
+  style?: CSSProperties
 }
 
 export const EntryLabel: React.FC<EntryLabelProps> = props => {
@@ -84,9 +86,10 @@ export const EntryLabel: React.FC<EntryLabelProps> = props => {
   }
 
   return (
-    <div className={`EntryLabel ${props.orientation}`}>
+    <div className={`EntryLabel ${props.orientation}`} style={props.style}>
       <h3>{props.text}</h3>
       <div className='label-line' style={lineStyle}/>
+      {props.subtitle !== undefined ? <p>{props.subtitle}</p> : null}
     </div>
   )
 }

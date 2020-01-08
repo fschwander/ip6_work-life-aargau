@@ -1,32 +1,26 @@
-import React, {Component} from "react";
+import React from "react";
 
 interface PaginationListProps {
   setElementIndex: Function,
   nofElements: number,
   activeIndex: number
-
 }
 
-export class PaginationList extends Component<PaginationListProps> {
+export const PaginationList: React.FC<PaginationListProps> = props => {
 
-  getNofItems() {
+  const getNofItems = () => {
     let items = [];
-    for (let i = 0; i < this.props.nofElements; i++) {
-      items.push(<div className={`pagination-button button ${this.props.activeIndex === i ? 'active' : 'inactive'}`}
-                      onClick={() => this.props.setElementIndex(i)}
+    for (let i = 0; i < props.nofElements; i++) {
+      items.push(<div className={`pagination-button button ${props.activeIndex === i ? 'active' : 'inactive'}`}
+                      onClick={() => props.setElementIndex(i)}
                       key={i}/>)
     }
     return items
   }
 
-  render() {
-    return (
-      <div className={'PaginationList'}>
-        {this.getNofItems()}
-      </div>
-
-    )
-
-  }
-
+  return (
+    <div className={'PaginationList'}>
+      {getNofItems()}
+    </div>
+  )
 }

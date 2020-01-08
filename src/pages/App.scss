@@ -4,19 +4,26 @@
  * (must be below variables.scss, but after that the order does not matter)
  */
 @import '../index.scss';
-@import '../components/animations/VideoFullScreen';
-@import '../components/animations/SVGStrokeAnimation.scss';
+@import '../components/containers/BackgroundVideo';
+@import '../components/containers/AnimatedSVG';
 @import '../components/buttons/HoverPoint.scss';
 @import '../components/buttons/PaginationList.scss';
 @import '../components/buttons/RectButton.scss';
 @import '../components/buttons/SelectionChip.scss';
 @import '../components/buttons/RoundButton.scss';
 @import '../components/labels/EntryLabel.scss';
+@import '../components/labels/LocationLabel.scss';
 @import '../components/widgets/Navigation.scss';
+@import '../components/widgets/PieChart.scss';
+@import '../components/widgets/Slider.scss';
 @import '../components/widgets/Quiz.scss';
 @import '../components/widgets/QuizBox.scss';
+@import '../components/widgets/TimeLine.scss';
+@import '../components/containers/PopupContainer';
 @import '../pages/intro/IntroductionPage.scss';
-@import '../pages/video/VideoPage.scss';
+@import '../pages/video/VideoPage';
+@import '../pages/video/VideoSlide';
+@import '../pages/video/VideoOverlay.scss';
 @import '../pages/side/travelingDistance/TravelingDistancePage.scss';
 
 .App {
@@ -26,4 +33,30 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  & > .PopupContainer {
+    display: flex;
+    justify-content: center;
+
+    .content-container {
+      width: 90vw;
+      border-radius: .2rem;
+      background-color: #222;
+      padding: 3rem 2rem 2rem;
+
+      .RoundButton {
+        transform: unset;
+        position: unset;
+        margin: 2rem auto;
+      }
+
+      h2 {
+        padding: .5rem 0;
+      }
+
+      p {
+        padding-bottom: .5rem;
+      }
+    }
+  }
 }

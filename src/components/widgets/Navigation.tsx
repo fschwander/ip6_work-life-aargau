@@ -14,8 +14,8 @@ export const Navigation: React.FC<NavigationProps> = props => {
   const navItems = props.navItems.map((item: any, index: number) => (
       <LinkContainer to={item.link} key={index}>
         <NavItem>
-          <NavLink>
-            {item.name}
+          <NavLink onClick={toggleNavbar}>
+            <h2>{item.name}</h2>
           </NavLink>
         </NavItem>
       </LinkContainer>

@@ -5,22 +5,42 @@
   padding: 0.75rem 0.5rem;
   top: 0;
   left: 0;
-  z-index: 100;
-  transition: 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
 
   button, a {
     pointer-events: auto;
   }
 
   &.open {
-    background: linear-gradient(to bottom, #0002 60%, #00000001);
+    background: linear-gradient(to bottom, #0001 40%, #00000001);
   }
 
-  .nav-item {
-    text-align: center;
+  .navbar {
+    flex-wrap: nowrap;
+    align-items: flex-start;
 
-    &:hover {
-      cursor: grab;
+    .navbar-nav {
+      flex-direction: row;
+      justify-content: flex-end;
+
+      .nav-item {
+        min-width: 8vw;
+        margin: 0 2vw;
+        text-align: center;
+
+        .nav-link {
+          padding: unset;
+        }
+
+        &.active {
+          border-bottom: white $lineThick solid;
+        }
+
+        &:hover {
+          cursor: grab;
+          color: $clrHighlight;
+        }
+      }
     }
   }
 
@@ -41,11 +61,11 @@
       width: 100%;
       height: $lineThick;
       left: 0;
-      transition: 200ms ease-in-out;
+      transition: transform 200ms ease-in-out;
 
       &.top {
         top: 0;
-        transform-origin: center left;
+        transform-origin: left center ;
       }
 
       &.center {
@@ -55,7 +75,7 @@
 
       &.bottom {
         bottom: 0;
-        transform-origin: center left;
+        transform-origin: left center;
       }
     }
 
@@ -78,4 +98,5 @@
       }
     }
   }
+
 }

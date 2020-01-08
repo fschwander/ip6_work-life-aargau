@@ -2,11 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  align-self: flex-end;
   flex-direction: column;
-  border: $lineThick white solid;
   border-radius: 50%;
-  transition: 50ms linear;
 
   p {
     margin: 0;

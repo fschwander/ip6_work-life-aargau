@@ -1,25 +1,35 @@
 .IntroductionPage {
-
-  .intro-background-gradient {
-    background: linear-gradient(rgba(0,0,0,0.01), rgba(0,0,0,0.7));
-    width: 100%;
-    bottom: 0;
-    height: 50%;
-    position: absolute;
-  }
+  overflow: hidden;
+  position: relative;
 
   .page-headline {
-    z-index: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .slides-container {
     position: relative;
-    width: 100%;
-    height: 100%;
 
     .slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
       transition: opacity 0.5s ease-in-out;
       opacity: 0;
+
+
+      .background-image {
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+      }
 
       &.isActive {
         opacity: 1;
@@ -27,18 +37,6 @@
 
       &:not(.isActive) {
         pointer-events: none;
-      }
-
-      .slide-element {
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
       }
     }
   }
@@ -62,9 +60,9 @@
       font-size: 1.2rem;
     }
 
-    &.Slide02 {
+    &.SlideLife {
       .quiz-reputation {
-        transform: translate(-200px, -270px);
+        transform: translate(-200px, -320px);
       }
 
       .quiz-history {
@@ -81,10 +79,6 @@
           opacity: 0;
         }
 
-        .quiz-reputation {
-          animation: fade-in 1s ease-in 4s forwards;
-        }
-
         .quiz-sport {
           animation: fade-in 1s ease-in 5s forwards;
         }
@@ -92,16 +86,20 @@
         .quiz-history {
           animation: fade-in 1s ease-in 6s forwards;
         }
+
+        .quiz-reputation {
+          animation: fade-in 1s ease-in 7s forwards;
+        }
       }
     }
 
-    &.Slide03 {
+    &.SlideWork {
       .quiz-companies {
-        transform: translate(-680px, 60px);
+        transform: translate(-680px, -80px);
       }
 
       .quiz-jobs {
-        transform: translate(220px, -80px);
+        transform: translate(220px, -150px);
       }
 
       .bottom-element {
@@ -133,14 +131,14 @@
         .bottom-element {
           &.text-container {
             opacity: 1;
-            animation: fade-out 1s ease-out 7s forwards;
+            animation: fade-out 1s ease-out 9s forwards;
           }
 
           &.go-to-main-button {
             font-size: 1rem;
             opacity: 0;
             padding: 0.5rem 3.5rem;
-            animation: fade-in 1s ease-in 8s forwards;
+            animation: fade-in 1s ease-in 11s forwards;
           }
         }
       }

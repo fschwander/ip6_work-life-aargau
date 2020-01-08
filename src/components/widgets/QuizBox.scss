@@ -1,8 +1,15 @@
+$padding: 6rem;
+
 .QuizBox {
   display: flex;
   position: absolute;
-  left: 50%;
-  top: 50%;
+  left: calc(50% - #{$padding});
+  top: calc(50% - #{$padding});
+  padding: $padding;
+
+  &.is-open {
+    z-index: 100;
+  }
 
   .label {
     display: flex;

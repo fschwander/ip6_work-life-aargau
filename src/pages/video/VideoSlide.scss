@@ -1,0 +1,20 @@
+.VideoSlide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h3, p {
+    font-size: .9rem;
+  }
+
+  .anim-group-container {
+
+    .HoverPoint {
+      position: absolute;
+    }
+
+    &.hide {
+      opacity: 0;
+    }
+  }
+}

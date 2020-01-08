@@ -21,7 +21,7 @@ export const RectButton: React.FC<RectButtonProps> = props => {
   };
 
   return (
-    <div className={`RectButton ${props.className} button ${buttonIsActive ? 'enabled' : 'disabled'}`}
+    <div className={`RectButton ${props.className} button border-button ${buttonIsActive ? 'enabled' : 'disabled'}`}
          onClick={handleClick}>
       <p>{props.text}</p>
     </div>

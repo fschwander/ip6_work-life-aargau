@@ -1,39 +1,43 @@
-import React, {useState} from 'react';
+import React, {CSSProperties, useState} from 'react';
 
 interface HoverPointProps {
-  mouseEnter?: Function,
-  mouseLeave?: Function,
-  mouseClicked: Function
+  onMouseEnter?: Function,
+  onMouseLeave?: Function,
+  onClick?: Function,
+  style?: CSSProperties
 }
 
 export const HoverPoint: React.FC<HoverPointProps> = props => {
   const [isActive, setIsActive] = useState(false);
 
   const onMouseEnter = () => {
-    if (props.mouseEnter !== undefined) {
-      props.mouseEnter();
+    if (props.onMouseEnter !== undefined) {
+      props.onMouseEnter();
     }
     setIsActive(true)
   }
 
   const onMouseLeave = () => {
-    if (props.mouseLeave !== undefined) {
-      props.mouseLeave();
+    if (props.onMouseLeave !== undefined) {
+      props.onMouseLeave();
     }
     setIsActive(false)
   }
 
   const onClick = () => {
-    props.mouseClicked();
+    if (props.onClick !== undefined) {
+      props.onClick();
+    }
   }
 
   return (
-    <div className={`HoverPoint ${isActive ? 'is-active' : ''}`}
+    <div className={`HoverPoint ${isActive ? 'is-active' : ''} ${props.onClick !== undefined ? 'button' : ''}`}
          onMouseEnter={onMouseEnter}
          onMouseLeave={onMouseLeave}
-         onClick={onClick}>
-      <div className='circle button outer-circle'/>
-      <div className='circle button inner-circle'/>
+         onClick={onClick}
+         style={props.style}>
+      <div className='circle outer-circle'/>
+      <div className='circle inner-circle'/>
     </div>
   )
 }

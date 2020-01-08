@@ -1,25 +1,24 @@
-import React from 'react';
-import {HoverPoint} from '../../components/buttons/HoverPoint';
-import {VideoFullScreen} from '../../components/animations/VideoFullScreen';
-import placeholderVideo from '../../res/videos/testVideo.mp4';
+import React, {useState} from 'react';
+import {VideoSlide} from './VideoSlide';
+import {videoSlides} from "./data/videoSlides";
+import {Timeline} from "../../components/widgets/TimeLine";
 
 export const VideoPage: React.FC = () => {
-  const [isPlaying, setIsPlaying] = React.useState(true)
+  const [activeIndex, setActiveIndex] = useState(0);
 
-  const pauseVideo = () => {
-    setIsPlaying(false)
-  }
-
-  const playVideo = () => {
-    setIsPlaying(true)
-  }
+  const slideComponents = videoSlides.map((d, i) => {
+    return <VideoSlide key={i} {...videoSlides[i]}/>
+  })
 
   return (
-    <div className='VideoPage full-screen'>
-      <VideoFullScreen source={placeholderVideo} playVideo={isPlaying}/>
-      <HoverPoint mouseEnter={pauseVideo}
-                  mouseLeave={playVideo}
-                  mouseClicked={() => console.log('mouse clicked...')}/>
+    <div className='VideoPage'>
+      {slideComponents[activeIndex]}
+      <Timeline onClick={setActiveIndex}
+                nofIndexes={slideComponents.length}
+                activeIndex={activeIndex}
+                itemsArray={videoSlides.map((d) => {
+                  return {isMainPoint: d.isMainPoint ? d.isMainPoint : false}
+                })}/>
     </div>
   )
 }

@@ -35,8 +35,8 @@ export const AppRouter: React.FC = () => {
 
   return (
     <HashRouter>
-      <Navigation navItems={pages}/>
       <App>{pageContent}</App>
+      <Navigation navItems={pages}/>
     </HashRouter>
   )
 }
