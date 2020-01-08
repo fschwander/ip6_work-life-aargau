@@ -10,7 +10,6 @@ export const TravelingDistancePage: React.FC = () => {
 
   const [lakesVisible, setLakesVisible] = useState(true);
   const [cantonsVisible, setCantonsVisible] = useState(true);
-  const [citiesVisible, setCitiesVisible] = useState(true);
   const [trainsVisible, setTrainsVisible] = useState(true);
   // const [airportsVisible, setAirportsVisible] = useState(true);
   // const [motorwaysVisible, setMotorwaysVisible] = useState(true);
@@ -74,12 +73,10 @@ export const TravelingDistancePage: React.FC = () => {
 
   return (
     <div className='TravelingDistancePage'>
-      <div className='TravellingIntroduction'>
         <h2>Der Aargau is gut vernetzt</h2>
         <p><b>DER KANTON, der im Zentrum der Schweiz und Europas liegt.</b></p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt ipsum ac erat mattis, in imperdiet
           lectus sagittis. </p>
-      </div>
       <h3>Karte Einstellungnen</h3>
 
       <div className='chipWrapper'>
