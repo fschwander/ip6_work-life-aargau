@@ -185,54 +185,54 @@
                     </text>
                 </g>
                 <g id="cities" transform="translate(46.105202, 87.174804)" fill="#FFFFFF">
-                    <g id="city-zurich" transform="translate(320.965211, 27.983600)">
-                        <circle id="Oval" opacity="0.100000001" cx="13.4244005" cy="13.4244005" r="13.4244005"></circle>
-                        <circle id="Oval-Copy-6" cx="13.4244005" cy="13.4244005" r="4.88160017"></circle>
-                    </g>
-                    <g id="city-aarau" transform="translate(253.843209, 27.983600)">
-                        <circle id="Oval" opacity="0.100000001" cx="13.4244005" cy="13.4244005" r="13.4244005"></circle>
-                        <circle id="Oval-Copy-6" cx="13.4244005" cy="13.4244005" r="4.88160017"></circle>
-                    </g>
-                    <g id="city-basel" transform="translate(195.843209, 0.983600)">
-                        <circle id="Oval" opacity="0.100000001" cx="13.4244005" cy="13.4244005" r="13.4244005"></circle>
-                        <circle id="Oval-Copy-6" cx="13.4244005" cy="13.4244005" r="4.88160017"></circle>
-                    </g>
-                    <g id="city-lausanne" transform="translate(69.562802, 189.076406)">
-                        <circle id="Oval" opacity="0.100000001" cx="13.4244005" cy="13.4244005" r="13.4244005"></circle>
-                        <circle id="Oval-Copy-6" cx="13.4244005" cy="13.4244005" r="4.88160017"></circle>
-                    </g>
-                    <g id="city-lucerne" transform="translate(288.974406, 87.876008)">
-                        <circle id="Oval" opacity="0.100000001" cx="13.4244005" cy="13.4244005" r="13.4244005"></circle>
-                        <circle id="Oval-Copy-6" cx="13.4244005" cy="13.4244005" r="4.88160017"></circle>
-                    </g>
-                    <g id="city-chur" transform="translate(447.894798, 121.825196)">
-                        <circle id="Oval" opacity="0.100000001" cx="13.4244005" cy="13.4244005" r="13.4244005"></circle>
-                        <circle id="Oval-Copy-6" cx="12.4244005" cy="13.4244005" r="4.88160017"></circle>
-                    </g>
-                    <g id="city-geneva" transform="translate(0.000000, 253.757608)">
-                        <circle id="Oval" opacity="0.100000001" cx="13.4244005" cy="13.4244005" r="13.4244005"></circle>
-                        <circle id="Oval-Copy-6" cx="13.4244005" cy="13.4244005" r="4.88160017"></circle>
-                    </g>
-                    <g id="city-stgallen" transform="translate(428.360415, 23.102000)">
-                        <circle id="Oval" opacity="0.100000001" cx="13.4244005" cy="13.4244005" r="13.4244005"></circle>
-                        <circle id="Oval-Copy-6" cx="13.4244005" cy="13.4244005" r="4.88160017"></circle>
-                    </g>
-                    <g id="city-bern" transform="translate(179.398806, 109.750403)">
-                        <circle id="Oval" opacity="0.100000001" cx="13.4244005" cy="13.4244005" r="13.4244005"></circle>
-                        <circle id="Oval-Copy-6" cx="13.4244005" cy="13.4244005" r="4.88160017"></circle>
-                    </g>
-                    <g id="city-interlaken" transform="translate(231.894798, 166.825196)">
-                        <circle id="Oval" opacity="0.100000001" cx="13.4244005" cy="13.4244005" r="13.4244005"></circle>
-                        <circle id="Oval-Copy-6" cx="13.4244005" cy="13.4244005" r="4.88160017"></circle>
-                    </g>
-                    <g id="city-lugano" transform="translate(373.894798, 285.825196)">
-                        <circle id="Oval" opacity="0.100000001" cx="13.4244005" cy="13.4244005" r="13.4244005"></circle>
-                        <circle id="Oval-Copy-6" cx="13.4244005" cy="13.4244005" r="4.88160017"></circle>
-                    </g>
-                    <g id="city-brig" transform="translate(245.894798, 231.825196)">
-                        <circle id="Oval" opacity="0.100000001" cx="13.4244005" cy="13.4244005" r="13.4244005"></circle>
-                        <circle id="Oval-Copy-6" cx="13.4244005" cy="13.4244005" r="4.88160017"></circle>
-                    </g>
+<!--                    <g id="city-zurich" transform="translate(320.965211, 27.983600)">-->
+<!--                        <circle id="Oval" opacity="0.100000001" cx="13.4244005" cy="13.4244005" r="13.4244005"></circle>-->
+<!--                        <circle id="Oval-Copy-6" cx="13.4244005" cy="13.4244005" r="4.88160017"></circle>-->
+<!--                    </g>-->
+<!--                    <g id="city-aarau" transform="translate(253.843209, 27.983600)">-->
+<!--                        <circle id="Oval" opacity="0.100000001" cx="13.4244005" cy="13.4244005" r="13.4244005"></circle>-->
+<!--                        <circle id="Oval-Copy-6" cx="13.4244005" cy="13.4244005" r="4.88160017"></circle>-->
+<!--                    </g>-->
+<!--                    <g id="city-basel" transform="translate(195.843209, 0.983600)">-->
+<!--                        <circle id="Oval" opacity="0.100000001" cx="13.4244005" cy="13.4244005" r="13.4244005"></circle>-->
+<!--                        <circle id="Oval-Copy-6" cx="13.4244005" cy="13.4244005" r="4.88160017"></circle>-->
+<!--                    </g>-->
+<!--                    <g id="city-lausanne" transform="translate(69.562802, 189.076406)">-->
+<!--                        <circle id="Oval" opacity="0.100000001" cx="13.4244005" cy="13.4244005" r="13.4244005"></circle>-->
+<!--                        <circle id="Oval-Copy-6" cx="13.4244005" cy="13.4244005" r="4.88160017"></circle>-->
+<!--                    </g>-->
+<!--                    <g id="city-lucerne" transform="translate(288.974406, 87.876008)">-->
+<!--                        <circle id="Oval" opacity="0.100000001" cx="13.4244005" cy="13.4244005" r="13.4244005"></circle>-->
+<!--                        <circle id="Oval-Copy-6" cx="13.4244005" cy="13.4244005" r="4.88160017"></circle>-->
+<!--                    </g>-->
+<!--                    <g id="city-chur" transform="translate(447.894798, 121.825196)">-->
+<!--                        <circle id="Oval" opacity="0.100000001" cx="13.4244005" cy="13.4244005" r="13.4244005"></circle>-->
+<!--                        <circle id="Oval-Copy-6" cx="12.4244005" cy="13.4244005" r="4.88160017"></circle>-->
+<!--                    </g>-->
+<!--                    <g id="city-geneva" transform="translate(0.000000, 253.757608)">-->
+<!--                        <circle id="Oval" opacity="0.100000001" cx="13.4244005" cy="13.4244005" r="13.4244005"></circle>-->
+<!--                        <circle id="Oval-Copy-6" cx="13.4244005" cy="13.4244005" r="4.88160017"></circle>-->
+<!--                    </g>-->
+<!--                    <g id="city-stgallen" transform="translate(428.360415, 23.102000)">-->
+<!--                        <circle id="Oval" opacity="0.100000001" cx="13.4244005" cy="13.4244005" r="13.4244005"></circle>-->
+<!--                        <circle id="Oval-Copy-6" cx="13.4244005" cy="13.4244005" r="4.88160017"></circle>-->
+<!--                    </g>-->
+<!--                    <g id="city-bern" transform="translate(179.398806, 109.750403)">-->
+<!--                        <circle id="Oval" opacity="0.100000001" cx="13.4244005" cy="13.4244005" r="13.4244005"></circle>-->
+<!--                        <circle id="Oval-Copy-6" cx="13.4244005" cy="13.4244005" r="4.88160017"></circle>-->
+<!--                    </g>-->
+<!--                    <g id="city-interlaken" transform="translate(231.894798, 166.825196)">-->
+<!--                        <circle id="Oval" opacity="0.100000001" cx="13.4244005" cy="13.4244005" r="13.4244005"></circle>-->
+<!--                        <circle id="Oval-Copy-6" cx="13.4244005" cy="13.4244005" r="4.88160017"></circle>-->
+<!--                    </g>-->
+<!--                    <g id="city-lugano" transform="translate(373.894798, 285.825196)">-->
+<!--                        <circle id="Oval" opacity="0.100000001" cx="13.4244005" cy="13.4244005" r="13.4244005"></circle>-->
+<!--                        <circle id="Oval-Copy-6" cx="13.4244005" cy="13.4244005" r="4.88160017"></circle>-->
+<!--                    </g>-->
+<!--                    <g id="city-brig" transform="translate(245.894798, 231.825196)">-->
+<!--                        <circle id="Oval" opacity="0.100000001" cx="13.4244005" cy="13.4244005" r="13.4244005"></circle>-->
+<!--                        <circle id="Oval-Copy-6" cx="13.4244005" cy="13.4244005" r="4.88160017"></circle>-->
+<!--                    </g>-->
                 </g>
             </g>
         </g>

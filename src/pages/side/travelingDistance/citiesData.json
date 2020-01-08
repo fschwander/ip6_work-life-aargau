@@ -1,0 +1,112 @@
+[
+  {
+    "city": "Bern",
+    "x": 179.398806,
+    "y": 109.750403,
+    "travel-times": [
+      {
+        "Aaarau": 180,
+        "Bern": 0
+      }
+    ]
+  },
+  {
+    "city": "Geneva",
+    "x": 279.398806,
+    "y": 309.750403,
+    "travel-times": [
+      {
+        "Aaarau": 180,
+        "Bern": 0
+      }
+    ]
+  },
+  {
+    "city": "Brig",
+    "x": 279.398806,
+    "y": 309.750403,
+    "travel-times": [
+      {
+        "Aaarau": 180,
+        "Bern": 0
+      }
+    ]
+  },
+  {
+    "city": "Lugano",
+    "x": 279.398806,
+    "y": 309.750403,
+    "travel-times": [
+      {
+        "Aaarau": 180,
+        "Bern": 0
+      }
+    ]
+  },
+  {
+    "city": "Chur",
+    "x": 279.398806,
+    "y": 309.750403,
+    "travel-times": [
+      {
+        "Aaarau": 180,
+        "Bern": 0
+      }
+    ]
+  },
+  {
+    "city": "Lucerne",
+    "x": 279.398806,
+    "y": 309.750403,
+    "travel-times": [
+      {
+        "Aaarau": 180,
+        "Bern": 0
+      }
+    ]
+  },
+  {
+    "city": "Lausanne",
+    "x": 279.398806,
+    "y": 309.750403,
+    "travel-times": [
+      {
+        "Aaarau": 180,
+        "Bern": 0
+      }
+    ]
+  },
+  {
+    "city": "Aarau",
+    "x": 279.398806,
+    "y": 309.750403,
+    "travel-times": [
+      {
+        "Aaarau": 180,
+        "Bern": 0
+      }
+    ]
+  },
+  {
+    "city": "Basel",
+    "x": 279.398806,
+    "y": 309.750403,
+    "travel-times": [
+      {
+        "Aaarau": 180,
+        "Bern": 0
+      }
+    ]
+  },
+  {
+    "city": "Zurich",
+    "x": 279.398806,
+    "y": 309.750403,
+    "travel-times": [
+      {
+        "Aaarau": 180,
+        "Bern": 0
+      }
+    ]
+  }
+]
