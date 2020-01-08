@@ -1,5 +1,6 @@
 .SelectionChip {
-  border: $lineThick white solid;
+  //border: $lineThick white solid;
+  background-color: white !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,5 +9,14 @@
   p {
     text-transform: uppercase;
     margin: 0;
+    color: black;
+    font-size: .8rem;
+    font-weight: bold;
+    padding: .2rem 1rem .2rem 1rem;
+
+  }
+
+  &.hover {
+    background-color: deeppink;
   }
 }
