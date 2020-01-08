@@ -1,9 +1,27 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 import {SelectionChip} from '../../../components/buttons/SelectionChip';
 import {ReactComponent as MapSVG} from '../../../res/imgs/map.svg'
 
 export const TravelingDistancePage: React.FC = () => {
+  const isInitialMount = useRef(true)
 
+  const initMap = () => {
+    console.log('init');
+  }
+
+  const updateChart = () => {
+    console.log('update');
+  }
+
+
+  useEffect(() => {
+    if(isInitialMount.current) {
+      isInitialMount.current = false;
+      initMap();
+    }
+    updateChart()
+
+  })
 
 
   return (
