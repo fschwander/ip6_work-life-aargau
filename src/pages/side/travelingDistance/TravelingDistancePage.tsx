@@ -22,6 +22,9 @@ export const TravelingDistancePage: React.FC = () => {
     const mapSVG = d3.select(svgRef.current)
     // console.log(svgRef, svgRef.current, mapSVG);
 
+    d3.selectAll('#lakes')
+      .attr('opacity',lakesVisible ? 1 : 0)
+
   }
 
 
@@ -48,8 +51,9 @@ export const TravelingDistancePage: React.FC = () => {
       </div>
       <h3>Karte Einstellungnen</h3>
 
-      <SelectionChip
-        text={'Zugnetz'}/>
+      <SelectionChip text={'Zug'}/>
+      <SelectionChip text={'Seen'}
+                     onClick={() => setLakesVisible(!lakesVisible)}/>
 
       <MapSVG ref={svgRef}/>
 

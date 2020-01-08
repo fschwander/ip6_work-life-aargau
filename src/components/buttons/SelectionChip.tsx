@@ -1,16 +1,23 @@
 import React from "react";
 
 interface SelectionChipProps {
-  text: string
+  text: string,
+  onClick?: Function
 }
 
 export const SelectionChip: React.FC<SelectionChipProps> = props => {
 
 
+  const onClick = () => {
+    if (props.onClick !== undefined) {
+      props.onClick();
+    }
+  }
+
   return (
 
 
-    <div className={`SelectionChip button`}>
+    <div className={`SelectionChip button`} onClick={onClick}>
       <p>{props.text}</p>
     </div>
 
