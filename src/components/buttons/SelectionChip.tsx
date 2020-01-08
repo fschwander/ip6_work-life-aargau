@@ -10,7 +10,7 @@ export const SelectionChip: React.FC<SelectionChipProps> = props => {
   return (
 
 
-    <div className={`SelectionChip`}>
+    <div className={`SelectionChip button`}>
       <p>{props.text}</p>
     </div>
 

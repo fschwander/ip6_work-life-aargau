@@ -1,6 +1,6 @@
 import React from 'react';
 import {TravelingDistancePage} from '../side/travelingDistance/TravelingDistancePage';
-import backgroundImg from './../../res/imgs/galerie_picture_905.jpg'
+import backgroundImg from './../../res/imgs/AT_LAUFENBURG.jpg'
 import './IntroductionPage.scss';
 
 export const IntroductionPage: React.FC = () => {
