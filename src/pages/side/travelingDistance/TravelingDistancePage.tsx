@@ -73,6 +73,7 @@ export const TravelingDistancePage: React.FC = () => {
 
   return (
     <div className='TravelingDistancePage'>
+      <div className='ContentContainer'>
         <h2>Der Aargau is gut vernetzt</h2>
         <p><b>DER KANTON, der im Zentrum der Schweiz und Europas liegt.</b></p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt ipsum ac erat mattis, in imperdiet
@@ -89,6 +90,7 @@ export const TravelingDistancePage: React.FC = () => {
 
       </div>
       <MapSVG ref={svgRef}/>
+      </div>
 
     </div>
   )
