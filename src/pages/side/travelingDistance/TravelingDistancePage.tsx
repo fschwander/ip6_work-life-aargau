@@ -1,9 +1,17 @@
-import React, {useEffect, useRef} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import {SelectionChip} from '../../../components/buttons/SelectionChip';
-import {ReactComponent as MapSVG} from '../../../res/imgs/map.svg'
+import {ReactComponent as MapSVG} from '../../../res/imgs/map.svg';
+import * as d3 from 'd3';
 
 export const TravelingDistancePage: React.FC = () => {
   const isInitialMount = useRef(true)
+  const svgRef: React.RefObject<SVGSVGElement> = React.createRef();
+
+  const [lakesVisible, setLakesVisible] = useState(true);
+  const [cantonsVisible, setCantonsVisible] = useState(true);
+  const [citiesVisible, setCitiesVisible] = useState(true);
+  const [trainsVisible, setTrainsVisible] = useState(true);
+  // const [motorwaysVisible, setMotorwaysVisible] = useState(true);
 
   const initMap = () => {
     console.log('init');
@@ -11,6 +19,9 @@ export const TravelingDistancePage: React.FC = () => {
 
   const updateChart = () => {
     console.log('update');
+    const mapSVG = d3.select(svgRef.current)
+    // console.log(svgRef, svgRef.current, mapSVG);
+
   }
 
 
@@ -22,6 +33,9 @@ export const TravelingDistancePage: React.FC = () => {
     updateChart()
 
   })
+
+
+
 
 
   return (
@@ -37,7 +51,7 @@ export const TravelingDistancePage: React.FC = () => {
       <SelectionChip
         text={'Zugnetz'}/>
 
-      <MapSVG/>
+      <MapSVG ref={svgRef}/>
 
     </div>
   )
