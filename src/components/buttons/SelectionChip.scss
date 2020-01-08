@@ -1,0 +1,12 @@
+.SelectionChip {
+  border: $lineThick white solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+
+  p {
+    text-transform: uppercase;
+    margin: 0;
+  }
+}
