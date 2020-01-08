@@ -2,7 +2,7 @@ import React from "react";
 
 interface SelectionChipProps {
   text: string,
-  onClick?: Function
+  onClick: Function
 }
 
 export const SelectionChip: React.FC<SelectionChipProps> = props => {

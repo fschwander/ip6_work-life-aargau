@@ -15,6 +15,8 @@ export const TravelingDistancePage: React.FC = () => {
 
   const initMap = () => {
     console.log('init');
+
+
   }
 
   const updateChart = () => {
@@ -22,8 +24,13 @@ export const TravelingDistancePage: React.FC = () => {
     const mapSVG = d3.select(svgRef.current)
     // console.log(svgRef, svgRef.current, mapSVG);
 
-    d3.selectAll('#lakes')
+    mapSVG.selectAll('#lakes')
       .attr('opacity',lakesVisible ? 1 : 0)
+
+    mapSVG.selectAll('#trains')
+      .attr('opacity',trainsVisible ? 1 : 0)
+
+
 
   }
 
@@ -51,7 +58,8 @@ export const TravelingDistancePage: React.FC = () => {
       </div>
       <h3>Karte Einstellungnen</h3>
 
-      <SelectionChip text={'Zug'}/>
+      <SelectionChip text={'Zug'}
+                     onClick={() => setTrainsVisible(!trainsVisible)}/>
       <SelectionChip text={'Seen'}
                      onClick={() => setLakesVisible(!lakesVisible)}/>
 
