@@ -1,6 +1,6 @@
 .SelectionChip {
   //border: $lineThick white solid;
-  background-color: white !important;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,5 +17,14 @@
 
   }
 
+  &.is-active {
+    background-color: white;
+  }
+
+  &.inactive {
+    background-color: unset;
+    color: deeppink;
+
+  }
 
 }
