@@ -11,16 +11,15 @@ export const TravelingDistancePage: React.FC = () => {
   const [lakesVisible, setLakesVisible] = useState(true);
   const [cantonsVisible, setCantonsVisible] = useState(true);
   const [trainsVisible, setTrainsVisible] = useState(true);
+  const [cityActive, setCityActive] = useState(false);
   // const [airportsVisible, setAirportsVisible] = useState(true);
   // const [motorwaysVisible, setMotorwaysVisible] = useState(true);
 
   const initMap = () => {
-    console.log('init');
     setupCities()
   }
 
   const updateChart = () => {
-    console.log('update');
     // console.log(svgRef, svgRef.current, mapSVG);
     const mapSVG = d3.select(svgRef.current)
 
@@ -32,17 +31,24 @@ export const TravelingDistancePage: React.FC = () => {
 
     mapSVG.selectAll('#cantons')
       .attr('opacity', cantonsVisible ? .5 : 0)
+
+    mapSVG.selectAll('.city')
+      .attr('opacity', cityActive ? 0 : 1)
   }
 
   const setupCities = () => {
     const cityGroup = d3.select(svgRef.current).select('#cities')
       .selectAll('g')
-      .data(citiesData).enter().append('g')
+      .data(citiesData).enter().append('g').attr('class',d => {
+        return `city ${d.city}`
+      })
+
 
     cityGroup.attr('transform', d => {
       console.log(d);
       return `translate(${d.x},${d.y})`
     })
+
 
     cityGroup.append('circle')
       .attr('r', 5)
@@ -57,8 +63,12 @@ export const TravelingDistancePage: React.FC = () => {
       .attr('opacity', 0.2)
       .attr('fill', 'white')
       .attr('class', 'button')
-      .on('click', d => console.log('click', d)) // todo: set state of active city here
-
+      // .on('click', d => console.log('click', d.city)) // todo: set state of active city here
+      .on('click', d => {
+        //how to select d.city?
+        setCityActive(!cityActive)
+      }) // todo: set state of active city here
+    // ${isActive ? 'is-active' : ''}
     console.log(citiesData);
   }
 
