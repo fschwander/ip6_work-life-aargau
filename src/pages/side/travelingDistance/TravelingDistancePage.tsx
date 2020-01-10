@@ -33,29 +33,30 @@ export const TravelingDistancePage: React.FC = () => {
     mapSVG.selectAll('#cantons')
       .attr('opacity', cantonsVisible ? .5 : 0)
 
-    // mapSVG.selectAll('.city')
-    //   .attr('opacity', cityActive ? 0 : 1)
+    mapSVG.selectAll('.city')
+      .selectAll('circle')
+      .classed('is-active', d => d === cityActive)
+      .attr('fill', d => d === cityActive ? '#7EE2D1' : 'white')
+
   }
 
   const setupCities = () => {
     const cityGroup = d3.select(svgRef.current).select('#cities')
       .selectAll('g')
       .data(citiesData).enter().append('g').attr('class', d => {
-        return `city ${d.city}`
+        return `city ${d.city} `
       })
 
-
     cityGroup.attr('transform', d => {
-      console.log(d);
       return `translate(${d.x},${d.y})`
     })
-
 
     cityGroup.append('circle')
       .attr('r', 5)
       .attr('cx', 13)
       .attr('cy', 13)
       .attr('fill', 'white')
+      .attr('class','inner-circle')
 
     cityGroup.append('circle')
       .attr('r', 13)
@@ -63,10 +64,9 @@ export const TravelingDistancePage: React.FC = () => {
       .attr('cy', 13)
       .attr('opacity', 0.2)
       .attr('fill', 'white')
-      .attr('class', 'button')
+      .attr('class', 'outer-circle button')
       .on('click', d => setCityActive(d))
 
-    console.log(citiesData);
   }
 
   useEffect(() => {
@@ -86,9 +86,6 @@ export const TravelingDistancePage: React.FC = () => {
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt ipsum ac erat mattis, in imperdiet
           lectus sagittis. </p>
 
-        {/* todo: remove */}
-        {cityActive !== undefined ? <p style={{color: "deeppink"}}>Jetzt aktiv: {console.log("city: ",cityActive)}</p> : null}
-
         <h3>Karte Einstellungnen</h3>
 
         <div className='chipWrapper'>
@@ -99,9 +96,9 @@ export const TravelingDistancePage: React.FC = () => {
           <SelectionChip text={'Kantonen'}
                          onClick={() => setCantonsVisible(!cantonsVisible)}/>
 
-      </div>
-      <MapSVG ref={svgRef}/>
-      <TravelTimes/>
+        </div>
+        <MapSVG ref={svgRef}/>
+        <TravelTimes/>
       </div>
 
     </div>
