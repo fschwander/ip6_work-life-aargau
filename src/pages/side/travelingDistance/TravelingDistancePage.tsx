@@ -1,5 +1,6 @@
 import React, {useEffect, useRef, useState} from 'react';
 import {SelectionChip} from '../../../components/buttons/SelectionChip';
+import {TravelTimes} from '../../../components/widgets/TravelTimes';
 import {ReactComponent as MapSVG} from '../../../res/imgs/map.svg';
 import * as d3 from 'd3';
 import citiesData from './citiesData.json'
@@ -100,6 +101,7 @@ export const TravelingDistancePage: React.FC = () => {
 
       </div>
       <MapSVG ref={svgRef}/>
+      <TravelTimes/>
       </div>
 
     </div>
