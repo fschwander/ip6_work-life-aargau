@@ -5,19 +5,37 @@
     "y": 109.750403,
     "travel-times": [
       {
-        "Aaarau": 180,
-        "Bern": 0
+        "Aarau": 40,
+        "Bern": 0,
+        "Geneva": 104,
+        "Brig": 65,
+        "Lugano": 202,
+        "Chur": 139,
+        "Lucerne": 60,
+        "Lausanne": 66,
+        "Basel": 56,
+        "Zurich": 56,
+        "StGallen": 123
       }
     ]
   },
   {
-    "city": "Geneva",
+    "city": "Geneve",
     "x": 0,
     "y": 253.757608,
     "travel-times": [
       {
-        "Aaarau": 180,
-        "Bern": 0
+        "Aarau": 138,
+        "Bern": 104,
+        "Geneva": 0,
+        "Brig": 144,
+        "Lugano": 313,
+        "Chur": 248,
+        "Lucerne": 173,
+        "Lausanne": 36,
+        "Basel": 164,
+        "Zurich": 164,
+        "StGallen": 233
       }
     ]
   },
@@ -27,8 +45,17 @@
     "y": 231.825196,
     "travel-times": [
       {
-        "Aaarau": 180,
-        "Bern": 0
+        "Aarau": 114,
+        "Bern": 64,
+        "Geneva": 144,
+        "Brig": 0,
+        "Lugano": 222,
+        "Chur": 211,
+        "Lucerne": 131,
+        "Lausanne": 83,
+        "Basel": 132,
+        "Zurich": 128,
+        "StGallen": 195
       }
     ]
   },
@@ -38,8 +65,17 @@
     "y": 285.825196,
     "travel-times": [
       {
-        "Aaarau": 180,
-        "Bern": 0
+        "Aarau": 151,
+        "Bern": 202,
+        "Geneva": 313,
+        "Brig": 222,
+        "Lugano": 0,
+        "Chur": 220,
+        "Lucerne": 125,
+        "Lausanne": 276,
+        "Basel": 193,
+        "Zurich": 136,
+        "StGallen": 202
       }
     ]
   },
@@ -49,19 +85,37 @@
     "y": 121.825196,
     "travel-times": [
       {
-        "Aaarau": 180,
-        "Bern": 0
+        "Aarau": 110,
+        "Bern": 139,
+        "Geneva": 248,
+        "Brig": 211,
+        "Lugano": 220,
+        "Chur": 0,
+        "Lucerne": 128,
+        "Lausanne": 212,
+        "Basel": 136,
+        "Zurich": 75,
+        "StGallen": 83
       }
     ]
   },
   {
-    "city": "Lucerne",
+    "city": "Luzern",
     "x": 288.974406,
     "y": 87.876008,
     "travel-times": [
       {
-        "Aaarau": 180,
-        "Bern": 0
+        "Aarau": 40,
+        "Bern": 60,
+        "Geneva": 173,
+        "Brig": 131,
+        "Lugano": 125,
+        "Chur": 128,
+        "Lucerne": 0,
+        "Lausanne": 137,
+        "Basel": 62,
+        "Zurich": 45,
+        "StGallen": 120
       }
     ]
   },
@@ -71,8 +125,17 @@
     "y": 189.076406,
     "travel-times": [
       {
-        "Aaarau": 180,
-        "Bern": 0
+        "Aarau": 118,
+        "Bern": 66,
+        "Geneva": 36,
+        "Brig": 83,
+        "Lugano": 276,
+        "Chur": 212,
+        "Lucerne": 137,
+        "Lausanne": 0,
+        "Basel": 132,
+        "Zurich": 128,
+        "StGallen": 195
       }
     ]
   },
@@ -82,8 +145,17 @@
     "y": 27.983600,
     "travel-times": [
       {
-        "Aaarau": 180,
-        "Bern": 0
+        "Aarau": 0,
+        "Bern": 40,
+        "Geneva": 138,
+        "Brig": 114,
+        "Lugano": 151,
+        "Chur": 110,
+        "Lucerne": 40,
+        "Lausanne": 118,
+        "Basel": 38,
+        "Zurich": 24,
+        "StGallen": 102
       }
     ]
   },
@@ -93,8 +165,17 @@
     "y": 0.983600,
     "travel-times": [
       {
-        "Aaarau": 180,
-        "Bern": 0
+        "Aarau": 38,
+        "Bern": 56,
+        "Geneva": 164,
+        "Brig": 132,
+        "Lugano": 193,
+        "Chur": 136,
+        "Lucerne": 62,
+        "Lausanne": 132,
+        "Basel": 0,
+        "Zurich": 53,
+        "StGallen": 122
       }
     ]
   },
@@ -104,8 +185,37 @@
     "y": 27.983600,
     "travel-times": [
       {
-        "Aaarau": 180,
-        "Bern": 0
+        "Aarau": 24,
+        "Bern": 56,
+        "Geneva": 164,
+        "Brig": 128,
+        "Lugano": 136,
+        "Chur": 75,
+        "Lucerne": 45,
+        "Lausanne": 128,
+        "Basel": 53,
+        "Zurich": 0,
+        "StGallen": 62
+      }
+    ]
+  },
+  {
+    "city": "St. Gallen",
+    "x": 428.360415,
+    "y": 23.102000,
+    "travel-times": [
+      {
+        "Aarau": 102,
+        "Bern": 123,
+        "Geneva": 233,
+        "Brig": 195,
+        "Lugano": 202,
+        "Chur": 83,
+        "Lucerne": 120,
+        "Lausanne": 195,
+        "Basel": 122,
+        "Zurich": 62,
+        "StGallen": 0
       }
     ]
   }
