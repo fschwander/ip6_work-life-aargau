@@ -12,7 +12,7 @@ export const TravelingDistancePage: React.FC = () => {
   const [lakesVisible, setLakesVisible] = useState(true);
   const [cantonsVisible, setCantonsVisible] = useState(true);
   const [trainsVisible, setTrainsVisible] = useState(true);
-  const [cityActive, setCityActive] = useState(false);
+  const [cityActive, setCityActive] = useState();
   // const [airportsVisible, setAirportsVisible] = useState(true);
   // const [motorwaysVisible, setMotorwaysVisible] = useState(true);
 
@@ -33,14 +33,14 @@ export const TravelingDistancePage: React.FC = () => {
     mapSVG.selectAll('#cantons')
       .attr('opacity', cantonsVisible ? .5 : 0)
 
-    mapSVG.selectAll('.city')
-      .attr('opacity', cityActive ? 0 : 1)
+    // mapSVG.selectAll('.city')
+    //   .attr('opacity', cityActive ? 0 : 1)
   }
 
   const setupCities = () => {
     const cityGroup = d3.select(svgRef.current).select('#cities')
       .selectAll('g')
-      .data(citiesData).enter().append('g').attr('class',d => {
+      .data(citiesData).enter().append('g').attr('class', d => {
         return `city ${d.city}`
       })
 
@@ -64,12 +64,8 @@ export const TravelingDistancePage: React.FC = () => {
       .attr('opacity', 0.2)
       .attr('fill', 'white')
       .attr('class', 'button')
-      // .on('click', d => console.log('click', d.city)) // todo: set state of active city here
-      .on('click', d => {
-        //how to select d.city?
-        setCityActive(!cityActive)
-      }) // todo: set state of active city here
-    // ${isActive ? 'is-active' : ''}
+      .on('click', d => setCityActive(d))
+
     console.log(citiesData);
   }
 
@@ -89,15 +85,19 @@ export const TravelingDistancePage: React.FC = () => {
         <p><b>DER KANTON, der im Zentrum der Schweiz und Europas liegt.</b></p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt ipsum ac erat mattis, in imperdiet
           lectus sagittis. </p>
-      <h3>Karte Einstellungnen</h3>
 
-      <div className='chipWrapper'>
-      <SelectionChip text={'Zug'}
-                     onClick={() => setTrainsVisible(!trainsVisible)}/>
-      <SelectionChip text={'Seen'}
-                     onClick={() => setLakesVisible(!lakesVisible)}/>
-      <SelectionChip text={'Kantonen'}
-                     onClick={() => setCantonsVisible(!cantonsVisible)}/>
+        {/* todo: remove */}
+        {cityActive !== undefined ? <p style={{color: "deeppink"}}>Jetzt aktiv: {console.log("city: ",cityActive)}</p> : null}
+
+        <h3>Karte Einstellungnen</h3>
+
+        <div className='chipWrapper'>
+          <SelectionChip text={'Zug'}
+                         onClick={() => setTrainsVisible(!trainsVisible)}/>
+          <SelectionChip text={'Seen'}
+                         onClick={() => setLakesVisible(!lakesVisible)}/>
+          <SelectionChip text={'Kantonen'}
+                         onClick={() => setCantonsVisible(!cantonsVisible)}/>
 
       </div>
       <MapSVG ref={svgRef}/>
