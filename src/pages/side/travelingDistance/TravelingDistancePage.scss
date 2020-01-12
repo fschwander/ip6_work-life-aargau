@@ -47,6 +47,8 @@
         background-color: $clrHighlight;
         height: .5rem;
         border-radius: 2rem;
+        //animation:active-bar 2s ease-out;
+        transition: width 2s;
       }
     }
     .content-container {
@@ -60,3 +62,4 @@
     }
   }
 }
+
