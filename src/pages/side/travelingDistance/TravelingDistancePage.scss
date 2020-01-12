@@ -5,6 +5,7 @@
   height: 100vh;
   width: 50%;
   text-align: left;
+  overflow-y: scroll;
 
   .chipWrapper {
     display: flex;
@@ -21,5 +22,38 @@
     height: 100%;
   }
 
+  .travel-distances {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1rem 1rem 0rem 1rem;
 
+    .icon-container {
+      min-width: 3rem;
+      height: 3rem;
+      background-color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .background-bar {
+      width: 100%;
+      background-color: #5C6587;
+      height: .5rem;
+      border-radius: 2rem;
+
+      .active-bar {
+        background-color: #7EE2D1;
+        width: 50px;
+        height: .5rem;
+        border-radius: 2rem;
+      }
+    }
+    .content-container {
+      width: 100%;
+      margin-left: 1rem;
+    }
+  }
 }

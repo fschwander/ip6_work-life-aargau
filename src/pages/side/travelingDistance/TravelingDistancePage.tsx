@@ -1,9 +1,9 @@
 import React, {useEffect, useRef, useState} from 'react';
-import {SelectionChip} from '../../../components/buttons/SelectionChip';
-import {TravelTimes} from '../../../components/widgets/TravelTimes';
+import {SelectionChip} from './SelectionChip';
 import {ReactComponent as MapSVG} from '../../../res/imgs/map.svg';
 import * as d3 from 'd3';
-import citiesData from './citiesData.json'
+import iconTrain from '../../../res/icons/train.svg';
+import citiesData from './citiesData1.json'
 
 export const TravelingDistancePage: React.FC = () => {
   const isInitialMount = useRef(true)
@@ -56,7 +56,7 @@ export const TravelingDistancePage: React.FC = () => {
       .attr('cx', 13)
       .attr('cy', 13)
       .attr('fill', 'white')
-      .attr('class','inner-circle')
+      .attr('class', 'inner-circle')
 
     cityGroup.append('circle')
       .attr('r', 13)
@@ -78,6 +78,78 @@ export const TravelingDistancePage: React.FC = () => {
 
   })
 
+  const getTravelTimesBars = () => {
+
+    let citiesArray = citiesData
+    let array = [{foo: 1}, {foo: 2}, {foo: 3}]
+
+    // return (
+    //   // console.log(cityActive.city)
+    //   citiesArray.map(el => {
+    //     return (
+    //       Object.values(el.traveltimes).map(bel => {
+    //         // return(
+    //         //   console.log(Object.values(bel))
+    //         // )
+    //       })
+    //
+    //     )
+    //   })
+    // )
+
+    return (
+      citiesArray.map((el, i) => {
+        return (
+          <div className='travel-distances' key={el.city + i}>
+            <div className='icon-container' style={{width: '3.5rem'}}>
+              <img src={iconTrain} alt='icon'/>
+            </div>
+            <div className='content-container'>
+              <h4>{Object.values(el.city)}</h4>
+              {
+                el.traveltimes.map(time => {
+                  let activeCity = cityActive.city
+                  return (
+                    console.log(time.activeCity)
+                  )
+                })
+              }
+              <div className='background-bar' style={{backgroundColor: "#5C6587"}}>
+                <div className='active-bar'/>
+              </div>
+            </div>
+          </div>
+        )
+      }))
+
+    // return (
+    //   citiesArray.map((el,i) => {
+    //     return (
+    //       <div className='travel-distances' key={el.city + i}>
+    //         <div className='icon-container' style={{width: '3.5rem'}}>
+    //           <img src={iconTrain} alt='icon'/>
+    //         </div>
+    //         <div className='content-container'>
+    //           <h4>{Object.values(el.city)}</h4>
+    //           {
+    //             el.traveltimes.map(subitem => {
+    //               return (
+    //                console.log((<div>{Object.values(subitem)}</div>))
+    //               )
+    //             })
+    //           }
+    //           {/*<h4>{cityActive.traveltimes[0].Aarau}</h4>*/}
+    //           {/*<h4>{el.traveltimes[1].Aarau !== undefined ? el.traveltimes[1].Aarau : null}</h4>*/}
+    //           <div className='background-bar' style={{backgroundColor: "#5C6587"}}>
+    //             <div className='active-bar'/>
+    //           </div>
+    //         </div>
+    //       </div>
+    //     )
+    //   }))
+
+  }
+
   return (
     <div className='TravelingDistancePage'>
       <div className='ContentContainer'>
@@ -98,7 +170,9 @@ export const TravelingDistancePage: React.FC = () => {
 
         </div>
         <MapSVG ref={svgRef}/>
-        <TravelTimes/>
+
+        {cityActive !== undefined ? getTravelTimesBars() : null}
+        {/*{getTravelTimesBars()}*/}
       </div>
 
     </div>
