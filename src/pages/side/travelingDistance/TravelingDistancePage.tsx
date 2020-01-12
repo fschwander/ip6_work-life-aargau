@@ -86,7 +86,7 @@ export const TravelingDistancePage: React.FC = () => {
       time: number
     }
 
-    const calculateTime = (n: any) => {
+    const convertTimeToHours = (n: any) => {
       if (n > 60) {
         let num = n
         let hours = (num / 60);
@@ -100,19 +100,16 @@ export const TravelingDistancePage: React.FC = () => {
 
     }
 
-    const calculateTimes = (t: any) => {
+    const calculateMaxTravelTime = (t: any) => {
 
-      let res = Math.max.apply(Math, citiesArray.map(function(o: any) {
-        return o.time;
+      return Math.max.apply(Math, citiesArray.map(function(el: any) {
+        return el.time;
       }))
-      // console.log(res)
-      return res
     }
-
 
     return (
       citiesArray.map((el: Destination, i: Number) => {
-        calculateTimes(el.time)
+        calculateMaxTravelTime(el.time)
         if (el.time === 0) {
           return null;
         }
@@ -124,10 +121,10 @@ export const TravelingDistancePage: React.FC = () => {
             <div className='content-container'>
               <div className='label-container'>
                 <h4>{el.startingPoint + " - " + cityActive.city}</h4>
-                <h4>{calculateTime(el.time)}</h4>
+                <h4>{convertTimeToHours(el.time)}</h4>
               </div>
               <div className='background-bar' style={{backgroundColor: "#5C6587"}}>
-                <div className='active-bar' style={{width: el.time / calculateTimes(el.time) * 100 + "%"}}/>
+                <div className='active-bar' style={{width: el.time / calculateMaxTravelTime(el.time) * 100 + "%"}}/>
               </div>
             </div>
           </div>
