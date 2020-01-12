@@ -3,7 +3,7 @@ import {SelectionChip} from './SelectionChip';
 import {ReactComponent as MapSVG} from '../../../res/imgs/map.svg';
 import * as d3 from 'd3';
 import iconTrain from '../../../res/icons/train.svg';
-import citiesData from './citiesData1.json'
+import citiesData from './citiesData.json'
 
 export const TravelingDistancePage: React.FC = () => {
   const isInitialMount = useRef(true)
@@ -80,7 +80,7 @@ export const TravelingDistancePage: React.FC = () => {
 
   const getTravelTimesBars = () => {
 
-    let citiesArray = citiesData
+    let citiesArray = cityActive.traveltimes
     let array = [{foo: 1}, {foo: 2}, {foo: 3}]
 
     // return (
@@ -98,21 +98,17 @@ export const TravelingDistancePage: React.FC = () => {
     // )
 
     return (
-      citiesArray.map((el, i) => {
+      Object.values(citiesArray).map((el, i) => {
         return (
-          <div className='travel-distances' key={el.city + i}>
+          <div className='travel-distances' >
             <div className='icon-container' style={{width: '3.5rem'}}>
               <img src={iconTrain} alt='icon'/>
             </div>
             <div className='content-container'>
-              <h4>{Object.values(el.city)}</h4>
+              <h4>{cityActive.city}</h4>
+              {/*here I need el.startingPoint instead of cityActive.city*/}
               {
-                el.traveltimes.map(time => {
-                  let activeCity = cityActive.city
-                  return (
-                    console.log(time.activeCity)
-                  )
-                })
+                console.log(el)
               }
               <div className='background-bar' style={{backgroundColor: "#5C6587"}}>
                 <div className='active-bar'/>
