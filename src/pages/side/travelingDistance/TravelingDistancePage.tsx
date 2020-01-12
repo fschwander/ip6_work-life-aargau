@@ -78,10 +78,16 @@ export const TravelingDistancePage: React.FC = () => {
 
   })
 
+
   const getTravelTimesBars = () => {
 
     let citiesArray = cityActive.traveltimes
     let array = [{foo: 1}, {foo: 2}, {foo: 3}]
+
+    interface Destination {
+      startingPoint: string,
+      time: number
+    }
 
     // return (
     //   // console.log(cityActive.city)
@@ -97,26 +103,26 @@ export const TravelingDistancePage: React.FC = () => {
     //   })
     // )
 
+    // todo: get max time dynamically
+    let maxValue = 160;
+
     return (
-      Object.values(citiesArray).map((el, i) => {
+      citiesArray.map((el: Destination, i: number) => {
         return (
-          <div className='travel-distances' >
+          <div className='travel-distances' key={el.startingPoint}>
             <div className='icon-container' style={{width: '3.5rem'}}>
               <img src={iconTrain} alt='icon'/>
             </div>
             <div className='content-container'>
-              <h4>{cityActive.city}</h4>
-              {/*here I need el.startingPoint instead of cityActive.city*/}
-              {
-                console.log(el)
-              }
+              <h4>{el.startingPoint}</h4>
               <div className='background-bar' style={{backgroundColor: "#5C6587"}}>
-                <div className='active-bar'/>
+                <div className='active-bar' style={{width: el.time/maxValue * 100 + "%"}}/>
               </div>
             </div>
           </div>
         )
-      }))
+      })
+    )
 
     // return (
     //   citiesArray.map((el,i) => {
