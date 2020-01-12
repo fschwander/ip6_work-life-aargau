@@ -111,7 +111,11 @@ export const TravelingDistancePage: React.FC = () => {
 
 
     return (
-      citiesArray.map((el: Destination, i: number) => {
+      citiesArray.map((el: Destination, i: Number) => {
+        calculateTimes(el.time)
+        if (el.time === 0) {
+          return null;
+        }
         return (
           <div className='travel-distances' key={el.startingPoint}>
             <div className='icon-container'>
