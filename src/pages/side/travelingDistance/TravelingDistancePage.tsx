@@ -66,7 +66,6 @@ export const TravelingDistancePage: React.FC = () => {
       .attr('fill', 'white')
       .attr('class', 'outer-circle button')
       .on('click', d => setCityActive(d))
-
   }
 
   useEffect(() => {
@@ -78,77 +77,59 @@ export const TravelingDistancePage: React.FC = () => {
 
   })
 
-
   const getTravelTimesBars = () => {
 
     let citiesArray = cityActive.traveltimes
-    let array = [{foo: 1}, {foo: 2}, {foo: 3}]
 
     interface Destination {
       startingPoint: string,
       time: number
     }
 
-    // return (
-    //   // console.log(cityActive.city)
-    //   citiesArray.map(el => {
-    //     return (
-    //       Object.values(el.traveltimes).map(bel => {
-    //         // return(
-    //         //   console.log(Object.values(bel))
-    //         // )
-    //       })
-    //
-    //     )
-    //   })
-    // )
+    const calculateTime = (n: any) => {
+      if (n > 60) {
+        let num = n
+        let hours = (num / 60);
+        let rhours = Math.floor(hours);
+        let pminutes = (hours - rhours) * 60;
+        let rminutes = Math.round(pminutes);
 
-    // todo: get max time dynamically
-    let maxValue = 160;
+        return [rhours + " STD " + rminutes + " MIN"]
+      }
+      return [n + " MIN"]
+
+    }
+
+    const calculateTimes = (t: any) => {
+
+      let res = Math.max.apply(Math, citiesArray.map(function(o: any) {
+        return o.time;
+      }))
+      // console.log(res)
+      return res
+    }
+
 
     return (
       citiesArray.map((el: Destination, i: number) => {
         return (
           <div className='travel-distances' key={el.startingPoint}>
-            <div className='icon-container' style={{width: '3.5rem'}}>
+            <div className='icon-container'>
               <img src={iconTrain} alt='icon'/>
             </div>
             <div className='content-container'>
-              <h4>{el.startingPoint}</h4>
+              <div className='label-container'>
+                <h4>{el.startingPoint + " - " + cityActive.city}</h4>
+                <h4>{calculateTime(el.time)}</h4>
+              </div>
               <div className='background-bar' style={{backgroundColor: "#5C6587"}}>
-                <div className='active-bar' style={{width: el.time/maxValue * 100 + "%"}}/>
+                <div className='active-bar' style={{width: el.time / calculateTimes(el.time) * 100 + "%"}}/>
               </div>
             </div>
           </div>
         )
       })
     )
-
-    // return (
-    //   citiesArray.map((el,i) => {
-    //     return (
-    //       <div className='travel-distances' key={el.city + i}>
-    //         <div className='icon-container' style={{width: '3.5rem'}}>
-    //           <img src={iconTrain} alt='icon'/>
-    //         </div>
-    //         <div className='content-container'>
-    //           <h4>{Object.values(el.city)}</h4>
-    //           {
-    //             el.traveltimes.map(subitem => {
-    //               return (
-    //                console.log((<div>{Object.values(subitem)}</div>))
-    //               )
-    //             })
-    //           }
-    //           {/*<h4>{cityActive.traveltimes[0].Aarau}</h4>*/}
-    //           {/*<h4>{el.traveltimes[1].Aarau !== undefined ? el.traveltimes[1].Aarau : null}</h4>*/}
-    //           <div className='background-bar' style={{backgroundColor: "#5C6587"}}>
-    //             <div className='active-bar'/>
-    //           </div>
-    //         </div>
-    //       </div>
-    //     )
-    //   }))
 
   }
 
@@ -174,7 +155,6 @@ export const TravelingDistancePage: React.FC = () => {
         <MapSVG ref={svgRef}/>
 
         {cityActive !== undefined ? getTravelTimesBars() : null}
-        {/*{getTravelTimesBars()}*/}
       </div>
 
     </div>
