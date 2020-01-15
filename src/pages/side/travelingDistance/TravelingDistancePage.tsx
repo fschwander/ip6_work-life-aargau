@@ -2,7 +2,6 @@ import React, {useEffect, useRef, useState} from 'react';
 import {SelectionChip} from './SelectionChip';
 import {ReactComponent as MapSVG} from '../../../res/imgs/map.svg';
 import * as d3 from 'd3';
-import iconTrain from '../../../res/icons/train.svg';
 import citiesData from './citiesData.json'
 
 interface Props {
@@ -19,8 +18,9 @@ export const TravelingDistancePage: React.FC<Props> = props => {
   const [trainsVisible, setTrainsVisible] = useState(true);
   const [cityActive, setCityActive] = useState();
   const [cityHovered, setCityHovered] = useState();
-  const [legendeActive, setLegendeActive] = useState(true);
-  // const [motorwaysVisible, setMotorwaysVisible] = useState(true);
+  const [legendeTrainActive, setLegendeTrainActive] = useState(true);
+  const [legendeCarActive, setLegendeCarActive] = useState(true);
+  const [motorwaysVisible, setMotorwaysVisible] = useState(true);
 
   const initMap = () => {
     setupCities()
@@ -35,6 +35,9 @@ export const TravelingDistancePage: React.FC<Props> = props => {
 
     mapSVG.selectAll('#trains')
       .attr('opacity', trainsVisible ? 1 : 0)
+
+    mapSVG.selectAll('#motorways')
+      .attr('opacity', motorwaysVisible ? 1 : 0)
 
     mapSVG.selectAll('#cantons')
       .attr('opacity', cantonsVisible ? .5 : 0)
@@ -59,18 +62,25 @@ export const TravelingDistancePage: React.FC<Props> = props => {
       .style('visibility', d => d === cityActive ? 'visible' : 'hidden')
       .text(`${cityActive !== undefined ? cityActive.city : null}`)
 
-
     mapSVG.selectAll('.city')
       .selectAll('.rect-city-hover')
       .attr("width", `${cityHovered !== undefined ? cityHovered.city.length * 15 + 'px' : 0}`)
       .style('transform', `translate(-${cityHovered !== undefined ? (cityHovered.city === 'Lausanne' ? 41 + 'px' : cityHovered.city.length > 8 ? 57 + 'px' : cityHovered.city.length === 6 ? 31 + 'px' : cityHovered.city.length === 4 && cityHovered.city !== 'Chur' ? 22 + 'px' : cityHovered.city.length === 5 ? 26 + 'px' : cityHovered.city === 'Chur' ? 18 + 'px' : 40 + 'px') : 20 + 'px'},-40px)`)
-      .style('visibility', d => d === cityHovered ? 'visible': 'hidden')
+      .style('visibility', d => d === cityHovered ? 'visible' : 'hidden')
 
     mapSVG.selectAll('.city')
       .selectAll('.rect-city-active')
       .attr("width", `${cityActive !== undefined ? cityActive.city.length * 15 + 'px' : 0}`)
       .style('transform', `translate(-${cityActive !== undefined ? (cityActive.city === 'Lausanne' ? 41 + 'px' : cityActive.city.length > 8 ? 57 + 'px' : cityActive.city.length === 6 ? 31 + 'px' : cityActive.city.length === 4 && cityActive.city !== 'Chur' ? 22 + 'px' : cityActive.city.length === 5 ? 26 + 'px' : cityActive.city === 'Chur' ? 18 + 'px' : 40 + 'px') : 20 + 'px'},-40px)`)
       .style('visibility', d => d === cityActive ? 'visible' : 'hidden')
+
+    mapSVG.selectAll('#motorways')
+      .selectAll('polyline')
+      .attr("stroke", 'red')
+
+    mapSVG.selectAll('#trains')
+      .selectAll('polyline')
+      .attr("stroke", '#7EE2D1')
 
   }
 
@@ -129,7 +139,6 @@ export const TravelingDistancePage: React.FC<Props> = props => {
       .attr("height", '40px')
       .style("fill", "white")
 
-
   }
 
   const initValuesForAnimation = () => {
@@ -154,9 +163,7 @@ export const TravelingDistancePage: React.FC<Props> = props => {
     initValuesForAnimation();
   })
 
-  const getTravelTimesBars = () => {
-
-    let citiesArray = cityActive.traveltimes
+  const getTravelTimesBars = (data: any) => {
 
     interface Destination {
       startingPoint: string,
@@ -178,35 +185,34 @@ export const TravelingDistancePage: React.FC<Props> = props => {
 
     const calculateMaxTravelTime = (t: any) => {
 
-      return Math.max.apply(Math, citiesArray.map(function(el: any) {
+      return Math.max.apply(Math, data.map(function(el: any) {
         return el.time;
       }))
     }
 
     return (
-      citiesArray.sort((a: any, b: any) => (a.time > b.time) ? 1 : -1)
+      data.sort((a: any, b: any) => (a.time > b.time) ? 1 : -1)
         .map((el: Destination, i: Number) => {
-        calculateMaxTravelTime(el.time)
-        if (el.time === 0) {
-          return null;
-        }
-        return (
-          <div className='travel-distances' key={el.startingPoint}>
-            <div className='icon-container'>
-              <img src={iconTrain} alt='icon'/>
-            </div>
-            <div className='content-container'>
-              <div className='label-container'>
-                <h4>{el.startingPoint}</h4>
-                <h4>{convertTimeToHours(el.time)}</h4>
+          calculateMaxTravelTime(el.time)
+          if (el.time === 0) {
+            return null;
+          }
+          return (
+            <div className='travel-distances' key={el.startingPoint}>
+              <div className='icon-container'>
               </div>
-              <div className='background-bar' style={{backgroundColor: "#5C6587"}}>
-                <div className='active-bar' style={{width: el.time / calculateMaxTravelTime(el.time) * 100 + "%"}}/>
+              <div className='content-container'>
+                <div className='label-container'>
+                  <h4>{el.startingPoint}</h4>
+                  <h4>{convertTimeToHours(el.time)}</h4>
+                </div>
+                <div className='background-bar' style={{backgroundColor: "#5C6587"}}>
+                  <div className='active-bar' style={{width: el.time / calculateMaxTravelTime(el.time) * 100 + "%"}}/>
+                </div>
               </div>
             </div>
-          </div>
-        )
-      })
+          )
+        })
     )
   }
 
@@ -224,11 +230,14 @@ export const TravelingDistancePage: React.FC<Props> = props => {
 
         <div className='chipWrapper'>
           <SelectionChip text={'Zug'}
-                         onClick={() => [setTrainsVisible(!trainsVisible), setLegendeActive(!legendeActive)]}/>
+                         onClick={() => [setTrainsVisible(!trainsVisible), setLegendeTrainActive(!legendeTrainActive)]}/>
+          <SelectionChip text={'Autobahn'}
+                         onClick={() => [setMotorwaysVisible(!motorwaysVisible), setLegendeCarActive(!legendeCarActive)]}/>
           <SelectionChip text={'Seen'}
                          onClick={() => setLakesVisible(!lakesVisible)}/>
           <SelectionChip text={'Kantonen'}
                          onClick={() => setCantonsVisible(!cantonsVisible)}/>
+
 
         </div>
         <MapSVG ref={svgRef}/>
@@ -238,7 +247,15 @@ export const TravelingDistancePage: React.FC<Props> = props => {
         </div>
         <div className='MapInfo'>*<i>Bei der Fahrt mit der Zug wird die schnellste Verbindung angezeigt.<br/> Bei der Fahrt mit dem Auto wird der schnellste Route mit dem Auto unter Berücksichtigung der Staufreiheit bei Einhaltung der Verkehrsregeln angezeigt.</i></div>
 
-        {cityActive !== undefined ? getTravelTimesBars() : null}
+        <div className='TravelTimesWrapper'>
+          <div className={`TravelTimesTrain ${trainsVisible ? '' : 'is-hidden'}`}>
+            {cityActive !== undefined ? getTravelTimesBars(cityActive.traveltimes_train) : null}
+          </div>
+          <div className={`TravelTimesCar ${motorwaysVisible ? '' : 'is-hidden'}`}>
+            {cityActive !== undefined ? getTravelTimesBars(cityActive.traveltimes_car) : null}
+          </div>
+        </div>
+
       </div>
 
     </div>
