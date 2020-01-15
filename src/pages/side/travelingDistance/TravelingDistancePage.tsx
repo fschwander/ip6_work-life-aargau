@@ -165,8 +165,7 @@ export const TravelingDistancePage: React.FC<Props> = props => {
 
     const convertTimeToHours = (n: any) => {
       if (n > 60) {
-        let num = n
-        let hours = (num / 60);
+        let hours = (n / 60);
         let rhours = Math.floor(hours);
         let pminutes = (hours - rhours) * 60;
         let rminutes = Math.round(pminutes);
