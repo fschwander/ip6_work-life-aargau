@@ -241,11 +241,20 @@ export const TravelingDistancePage: React.FC<Props> = props => {
 
         </div>
         <MapSVG ref={svgRef}/>
-        <div className={`TravelingLegende ${legendeActive ? 'is-active' : ''}`}>
-          <p className='Label'>Zugnetz</p>
-          <div className='ColorPoint'/>
+        <div className='LegendeWrapper'>
+          <div className={`TravelingLegende ${legendeTrainActive ? 'is-active' : ''}`}>
+            <div className='ColorPointTrain'/>
+            <p className='Label'>Zugnetz</p>
+          </div>
+          <div className={`TravelingLegende ${legendeCarActive ? 'is-active' : ''}`}>
+            <div className='ColorPointCar'/>
+            <p className='Label'>Autobahn</p>
+          </div>
         </div>
-        <div className='MapInfo'>*<i>Bei der Fahrt mit der Zug wird die schnellste Verbindung angezeigt.<br/> Bei der Fahrt mit dem Auto wird der schnellste Route mit dem Auto unter Berücksichtigung der Staufreiheit bei Einhaltung der Verkehrsregeln angezeigt.</i></div>
+
+        <div className='MapInfo'>*<i>Bei der Fahrt mit der Zug wird die schnellste Verbindung angezeigt.<br/> Bei der
+          Fahrt mit dem Auto wird der schnellste Route mit dem Auto unter Berücksichtigung der Staufreiheit bei
+          Einhaltung der Verkehrsregeln angezeigt.</i></div>
 
         <div className='TravelTimesWrapper'>
           <div className={`TravelTimesTrain ${trainsVisible ? '' : 'is-hidden'}`}>
