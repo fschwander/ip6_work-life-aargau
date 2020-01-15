@@ -27,7 +27,7 @@ export const TravelingDistancePage: React.FC<Props> = props => {
   }
 
   const updateChart = () => {
-    // console.log(svgRef, svgRef.current, mapSVG);
+    // console.log(svgRef, svgRef.current);
     const mapSVG = d3.select(svgRef.current)
 
     mapSVG.selectAll('#lakes')
@@ -185,7 +185,8 @@ export const TravelingDistancePage: React.FC<Props> = props => {
     }
 
     return (
-      citiesArray.map((el: Destination, i: Number) => {
+      citiesArray.sort((a: any, b: any) => (a.time > b.time) ? 1 : -1)
+        .map((el: Destination, i: Number) => {
         calculateMaxTravelTime(el.time)
         if (el.time === 0) {
           return null;
@@ -197,7 +198,7 @@ export const TravelingDistancePage: React.FC<Props> = props => {
             </div>
             <div className='content-container'>
               <div className='label-container'>
-                <h4>{el.startingPoint + " - " + cityActive.city}</h4>
+                <h4>{el.startingPoint}</h4>
                 <h4>{convertTimeToHours(el.time)}</h4>
               </div>
               <div className='background-bar' style={{backgroundColor: "#5C6587"}}>
