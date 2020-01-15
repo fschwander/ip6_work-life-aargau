@@ -22,7 +22,7 @@
       },
       {
         "startingPoint": "Lugano",
-        "time": 202
+        "time": 203
       },
       {
         "startingPoint": "Chur",
@@ -47,6 +47,10 @@
       {
         "startingPoint": "StGallen",
         "time": 123
+      },
+      {
+        "startingPoint": "Interlaken",
+        "time": 52
       }
     ]
   },
@@ -98,6 +102,10 @@
       {
         "startingPoint": "StGallen",
         "time": 233
+      },
+      {
+        "startingPoint": "Interlaken",
+        "time": 168
       }
     ]
   },
@@ -149,6 +157,10 @@
       {
         "startingPoint": "StGallen",
         "time": 195
+      },
+      {
+        "startingPoint": "Interlaken",
+        "time": 63
       }
     ]
   },
@@ -163,7 +175,7 @@
       },
       {
         "startingPoint" :"Bern",
-        "time": 202
+        "time": 203
       },
       {
         "startingPoint": "Geneva",
@@ -200,6 +212,10 @@
       {
         "startingPoint": "StGallen",
         "time": 202
+      },
+      {
+        "startingPoint": "Interlaken",
+        "time": 262
       }
     ]
   },
@@ -251,6 +267,10 @@
       {
         "startingPoint": "StGallen",
         "time": 83
+      },
+      {
+        "startingPoint": "Interlaken",
+        "time": 202
       }
     ]
   },
@@ -261,7 +281,7 @@
     "traveltimes": [
       {
         "startingPoint" :"Aarau",
-        "time": 40
+        "time": 52
       },
       {
         "startingPoint" :"Bern",
@@ -302,6 +322,10 @@
       {
         "startingPoint": "StGallen",
         "time": 120
+      },
+      {
+        "startingPoint": "Interlaken",
+        "time": 111
       }
     ]
   },
@@ -353,6 +377,10 @@
       {
         "startingPoint": "StGallen",
         "time": 195
+      },
+      {
+        "startingPoint": "Interlaken",
+        "time": 130
       }
     ]
   },
@@ -387,7 +415,7 @@
       },
       {
         "startingPoint": "Lucerne",
-        "time": 40
+        "time": 52
       },
       {
         "startingPoint": "Lausanne",
@@ -404,6 +432,10 @@
       {
         "startingPoint": "StGallen",
         "time": 102
+      },
+      {
+        "startingPoint": "Interlaken",
+        "time": 103
       }
     ]
   },
@@ -455,6 +487,10 @@
       {
         "startingPoint": "StGallen",
         "time": 122
+      },
+      {
+        "startingPoint": "Interlaken",
+        "time": 121
       }
     ]
   },
@@ -506,6 +542,10 @@
       {
         "startingPoint": "StGallen",
         "time": 62
+      },
+      {
+        "startingPoint": "Interlaken",
+        "time": 118
       }
     ]
   },
@@ -556,6 +596,65 @@
       },
       {
         "startingPoint": "StGallen",
+        "time": 0
+      },
+      {
+        "startingPoint": "Interlaken",
+        "time": 185
+      }
+    ]
+  },
+  {
+    "city": "Interlaken",
+    "x": 231.894798,
+    "y": 166.825196,
+    "traveltimes": [
+      {
+        "startingPoint" :"Aarau",
+        "time": 103
+      },
+      {
+        "startingPoint" :"Bern",
+        "time": 52
+      },
+      {
+        "startingPoint": "Geneva",
+        "time": 168
+      },
+      {
+        "startingPoint": "Brig",
+        "time": 63
+      },
+      {
+        "startingPoint": "Lugano",
+        "time": 262
+      },
+      {
+        "startingPoint": "Chur",
+        "time": 202
+      },
+      {
+        "startingPoint": "Lucerne",
+        "time": 111
+      },
+      {
+        "startingPoint": "Lausanne",
+        "time": 130
+      },
+      {
+        "startingPoint": "Basel",
+        "time": 121
+      },
+      {
+        "startingPoint": "Zurich",
+        "time": 118
+      },
+      {
+        "startingPoint": "StGallen",
+        "time": 185
+      },
+      {
+        "startingPoint": "Interlaken",
         "time": 0
       }
     ]
