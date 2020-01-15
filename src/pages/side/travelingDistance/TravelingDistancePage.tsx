@@ -114,7 +114,7 @@ export const TravelingDistancePage: React.FC<Props> = props => {
       .on('mouseout', d => setCityHovered(undefined))
 
     cityGroup.append('text')
-      .attr('class','text-city-active')
+      .attr('class', 'text-city-active')
       .attr('fill', 'black')
       .attr('background-color', 'red')
       .attr('font-size', '1rem')
@@ -122,7 +122,7 @@ export const TravelingDistancePage: React.FC<Props> = props => {
       .style('text-transform', 'uppercase')
 
     cityGroup.append('text')
-      .attr('class','text-city-hover')
+      .attr('class', 'text-city-hover')
       .attr('fill', 'black')
       .attr('background-color', 'red')
       .attr('font-size', '1rem')
@@ -130,12 +130,12 @@ export const TravelingDistancePage: React.FC<Props> = props => {
       .style('text-transform', 'uppercase')
 
     cityGroup.insert("rect", "text")
-      .attr('class','rect-city-active')
+      .attr('class', 'rect-city-active')
       .attr("height", '40px')
       .style("fill", "#7EE2D1")
 
     cityGroup.insert("rect", "text")
-      .attr('class','rect-city-hover')
+      .attr('class', 'rect-city-hover')
       .attr("height", '40px')
       .style("fill", "white")
 
