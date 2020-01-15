@@ -5,7 +5,12 @@ import * as d3 from 'd3';
 import iconTrain from '../../../res/icons/train.svg';
 import citiesData from './citiesData.json'
 
-export const TravelingDistancePage: React.FC = () => {
+interface Props {
+  svgComponent: React.FC,
+  animationDuration?: number,
+}
+
+export const TravelingDistancePage: React.FC<Props> = props => {
   const isInitialMount = useRef(true)
   const svgRef: React.RefObject<SVGSVGElement> = React.createRef();
 
@@ -42,6 +47,31 @@ export const TravelingDistancePage: React.FC = () => {
       .classed('is-active', d => d === cityActive)
       .attr('fill', d => d === cityActive ? '#7EE2D1' : 'white')
 
+    mapSVG.selectAll('.city')
+      .selectAll('.text-city-hover')
+      .style('transform', `translate(-${cityHovered !== undefined ? ((cityHovered.city.length) * 3) : 0}px,-15px)`)
+      .style('visibility', d => d === cityHovered ? 'visible' : 'hidden')
+      .text(`${cityHovered !== undefined ? cityHovered.city : null}`)
+
+    mapSVG.selectAll('.city')
+      .selectAll('.text-city-active')
+      .style('transform', `translate(-${cityActive !== undefined ? ((cityActive.city.length) * 3) : 0}px,-15px)`)
+      .style('visibility', d => d === cityActive ? 'visible' : 'hidden')
+      .text(`${cityActive !== undefined ? cityActive.city : null}`)
+
+
+    mapSVG.selectAll('.city')
+      .selectAll('.rect-city-hover')
+      .attr("width", `${cityHovered !== undefined ? cityHovered.city.length * 15 + 'px' : 0}`)
+      .style('transform', `translate(-${cityHovered !== undefined ? (cityHovered.city === 'Lausanne' ? 41 + 'px' : cityHovered.city.length > 8 ? 57 + 'px' : cityHovered.city.length === 6 ? 31 + 'px' : cityHovered.city.length === 4 && cityHovered.city !== 'Chur' ? 22 + 'px' : cityHovered.city.length === 5 ? 26 + 'px' : cityHovered.city === 'Chur' ? 18 + 'px' : 40 + 'px') : 20 + 'px'},-40px)`)
+      .style('visibility', d => d === cityHovered ? 'visible': 'hidden')
+
+    mapSVG.selectAll('.city')
+      .selectAll('.rect-city-active')
+      .attr("width", `${cityActive !== undefined ? cityActive.city.length * 15 + 'px' : 0}`)
+      .style('transform', `translate(-${cityActive !== undefined ? (cityActive.city === 'Lausanne' ? 41 + 'px' : cityActive.city.length > 8 ? 57 + 'px' : cityActive.city.length === 6 ? 31 + 'px' : cityActive.city.length === 4 && cityActive.city !== 'Chur' ? 22 + 'px' : cityActive.city.length === 5 ? 26 + 'px' : cityActive.city === 'Chur' ? 18 + 'px' : 40 + 'px') : 20 + 'px'},-40px)`)
+      .style('visibility', d => d === cityActive ? 'visible' : 'hidden')
+
   }
 
   const setupCities = () => {
@@ -70,6 +100,49 @@ export const TravelingDistancePage: React.FC = () => {
       .attr('fill', 'white')
       .attr('class', 'outer-circle button')
       .on('click', d => setCityActive(d))
+      .on('mouseover', d => setCityHovered(d))
+      .on('mouseout', d => setCityHovered(undefined))
+
+    cityGroup.append('text')
+      .attr('class','text-city-active')
+      .attr('fill', 'black')
+      .attr('background-color', 'red')
+      .attr('font-size', '1rem')
+      .attr('font-weight', '700')
+      .style('text-transform', 'uppercase')
+
+    cityGroup.append('text')
+      .attr('class','text-city-hover')
+      .attr('fill', 'black')
+      .attr('background-color', 'red')
+      .attr('font-size', '1rem')
+      .attr('font-weight', '700')
+      .style('text-transform', 'uppercase')
+
+    cityGroup.insert("rect", "text")
+      .attr('class','rect-city-active')
+      .attr("height", '40px')
+      .style("fill", "#7EE2D1")
+
+    cityGroup.insert("rect", "text")
+      .attr('class','rect-city-hover')
+      .attr("height", '40px')
+      .style("fill", "white")
+
+
+  }
+
+  const initValuesForAnimation = () => {
+    if (svgRef.current !== null) {
+      const pathElements = Array.prototype.slice.call(svgRef.current.getElementsByTagName('polyline'))
+
+      Array.from(pathElements).forEach(el => {
+        let totalLength = el.getTotalLength().toString();
+        el.style.strokeDasharray = totalLength;
+        el.style.strokeDashoffset = totalLength;
+        el.style.animationDuration = (props.animationDuration ? props.animationDuration : 4) + 's';
+      })
+    }
   }
 
   useEffect(() => {
@@ -135,7 +208,6 @@ export const TravelingDistancePage: React.FC = () => {
         )
       })
     )
-
   }
 
   return (
@@ -150,7 +222,7 @@ export const TravelingDistancePage: React.FC = () => {
 
         <div className='chipWrapper'>
           <SelectionChip text={'Zug'}
-                         onClick={() => setTrainsVisible(!trainsVisible)}/>
+                         onClick={() => [setTrainsVisible(!trainsVisible), setLegendeActive(!legendeActive)]}/>
           <SelectionChip text={'Seen'}
                          onClick={() => setLakesVisible(!lakesVisible)}/>
           <SelectionChip text={'Kantonen'}
