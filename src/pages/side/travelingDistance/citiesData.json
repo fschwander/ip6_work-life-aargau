@@ -177,7 +177,7 @@
       },
       {
         "startingPoint": "Lugano",
-        "time": 253
+        "time": 283
       },
       {
         "startingPoint": "Chur",
@@ -321,7 +321,7 @@
     "traveltimes_train": [
       {
         "startingPoint" :"Aarau",
-        "time": 151
+        "time": 191
       },
       {
         "startingPoint" :"Bern",
@@ -341,7 +341,7 @@
       },
       {
         "startingPoint": "Chur",
-        "time": 220
+        "time": 160
       },
       {
         "startingPoint": "Lucerne",
@@ -371,7 +371,7 @@
     "traveltimes_car": [
       {
         "startingPoint" :"Aarau",
-        "time": 205
+        "time": 161
       },
       {
         "startingPoint" :"Bern",
@@ -379,7 +379,7 @@
       },
       {
         "startingPoint": "Geneva",
-        "time": 313
+        "time": 283
       },
       {
         "startingPoint": "Brig",
@@ -407,7 +407,7 @@
       },
       {
         "startingPoint": "Zurich",
-        "time": 161
+        "time": 149
       },
       {
         "startingPoint": "St. Gallen",
@@ -492,7 +492,7 @@
       },
       {
         "startingPoint": "Lugano",
-        "time": 120
+        "time": 160
       },
       {
         "startingPoint": "Chur",
@@ -730,7 +730,7 @@
       },
       {
         "startingPoint": "Interlaken",
-        "time": 205
+        "time": 106
       }
     ]
   },
@@ -757,7 +757,7 @@
       },
       {
         "startingPoint": "Lugano",
-        "time": 151
+        "time": 191
       },
       {
         "startingPoint": "Chur",
@@ -807,7 +807,7 @@
       },
       {
         "startingPoint": "Lugano",
-        "time": 205
+        "time": 161
       },
       {
         "startingPoint": "Chur",
@@ -936,11 +936,11 @@
       },
       {
         "startingPoint": "St. Gallen",
-        "time": 207
+        "time": 109
       },
       {
         "startingPoint": "Interlaken",
-        "time": 98
+        "time": 97
       }
     ]
   },
@@ -1017,7 +1017,7 @@
       },
       {
         "startingPoint": "Lugano",
-        "time": 259
+        "time": 159
       },
       {
         "startingPoint": "Chur",
@@ -1100,7 +1100,7 @@
       },
       {
         "startingPoint": "Interlaken",
-        "time": 185
+        "time": 183
       }
     ],
     "traveltimes_car": [
@@ -1138,7 +1138,7 @@
       },
       {
         "startingPoint": "Basel",
-        "time": 207
+        "time": 109
       },
       {
         "startingPoint": "Zurich",
@@ -1201,7 +1201,7 @@
       },
       {
         "startingPoint": "St. Gallen",
-        "time": 185
+        "time": 183
       },
       {
         "startingPoint": "Interlaken",
@@ -1239,11 +1239,11 @@
       },
       {
         "startingPoint": "Lausanne",
-        "time": 206
+        "time": 106
       },
       {
         "startingPoint": "Basel",
-        "time": 186
+        "time": 97
       },
       {
         "startingPoint": "Zurich",
