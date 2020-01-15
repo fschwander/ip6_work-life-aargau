@@ -248,7 +248,7 @@ export const TravelingDistancePage: React.FC<Props> = props => {
           </div>
           <div className={`TravelingLegende ${legendeCarActive ? 'is-active' : ''}`}>
             <div className='ColorPointCar'/>
-            <p className='Label'>Autobahn</p>
+            <p className='Label'>Autobahnen</p>
           </div>
         </div>
 
