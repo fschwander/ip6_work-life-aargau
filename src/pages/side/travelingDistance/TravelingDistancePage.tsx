@@ -13,7 +13,8 @@ export const TravelingDistancePage: React.FC = () => {
   const [cantonsVisible, setCantonsVisible] = useState(true);
   const [trainsVisible, setTrainsVisible] = useState(true);
   const [cityActive, setCityActive] = useState();
-  // const [airportsVisible, setAirportsVisible] = useState(true);
+  const [cityHovered, setCityHovered] = useState();
+  const [legendeActive, setLegendeActive] = useState(true);
   // const [motorwaysVisible, setMotorwaysVisible] = useState(true);
 
   const initMap = () => {
@@ -32,6 +33,9 @@ export const TravelingDistancePage: React.FC = () => {
 
     mapSVG.selectAll('#cantons')
       .attr('opacity', cantonsVisible ? .5 : 0)
+
+    mapSVG.select('.TravelingLegende')
+      .attr('opacity', trainsVisible ? 1 : 0)
 
     mapSVG.selectAll('.city')
       .selectAll('circle')
@@ -74,7 +78,7 @@ export const TravelingDistancePage: React.FC = () => {
       initMap();
     }
     updateChart()
-
+    initValuesForAnimation();
   })
 
   const getTravelTimesBars = () => {
@@ -154,6 +158,11 @@ export const TravelingDistancePage: React.FC = () => {
 
         </div>
         <MapSVG ref={svgRef}/>
+        <div className={`TravelingLegende ${legendeActive ? 'is-active' : ''}`}>
+          <p className='Label'>Zugnetz</p>
+          <div className='ColorPoint'/>
+        </div>
+        <div className='MapInfo'>*<i>Bei der Fahrt mit der Zug wird die schnellste Verbindung angezeigt.<br/> Bei der Fahrt mit dem Auto wird der schnellste Route mit dem Auto unter Berücksichtigung der Staufreiheit bei Einhaltung der Verkehrsregeln angezeigt.</i></div>
 
         {cityActive !== undefined ? getTravelTimesBars() : null}
       </div>

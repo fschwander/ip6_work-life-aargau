@@ -61,5 +61,34 @@
       }
     }
   }
+
+  .TravelingLegende {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: -4rem;
+    opacity: 0;
+
+    &.is-active {
+      opacity: 1;
+
+    }
+
+    .ColorPoint {
+      width: .5rem;
+      height: .5rem;
+      background-color: $clrHighlight;
+      border-radius: 50%;
+      margin-right: .5rem;
+    }
+
+    .Label {
+      text-transform: uppercase;
+      font-size: .8rem;
+      font-weight: bold;
+      margin-right: 2rem;
+    }
+  }
 }
 
