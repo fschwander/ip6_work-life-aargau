@@ -64,7 +64,7 @@
       },
       {
         "startingPoint": "Geneva",
-        "time": 148
+        "time": 108
       },
       {
         "startingPoint": "Brig",
@@ -165,7 +165,7 @@
       },
       {
         "startingPoint" :"Bern",
-        "time": 105
+        "time": 108
       },
       {
         "startingPoint": "Geneva",
@@ -181,7 +181,7 @@
       },
       {
         "startingPoint": "Chur",
-        "time": 247
+        "time": 238
       },
       {
         "startingPoint": "Lucerne",
@@ -294,7 +294,7 @@
       },
       {
         "startingPoint": "Lausanne",
-        "time": 203
+        "time": 103
       },
       {
         "startingPoint": "Basel",
@@ -310,7 +310,7 @@
       },
       {
         "startingPoint": "Interlaken",
-        "time": 210
+        "time": 110
       }
     ]
   },
@@ -391,7 +391,7 @@
       },
       {
         "startingPoint": "Chur",
-        "time": 120
+        "time": 114
       },
       {
         "startingPoint": "Lucerne",
@@ -476,7 +476,7 @@
     "traveltimes_car": [
       {
         "startingPoint" :"Aarau",
-        "time": 164
+        "time": 104
       },
       {
         "startingPoint" :"Bern",
@@ -484,7 +484,7 @@
       },
       {
         "startingPoint": "Geneva",
-        "time": 104
+        "time": 238
       },
       {
         "startingPoint": "Brig",
@@ -492,7 +492,7 @@
       },
       {
         "startingPoint": "Lugano",
-        "time": 160
+        "time": 114
       },
       {
         "startingPoint": "Chur",
@@ -500,7 +500,7 @@
       },
       {
         "startingPoint": "Lucerne",
-        "time": 194
+        "time": 94
       },
       {
         "startingPoint": "Lausanne",
@@ -575,7 +575,7 @@
       },
       {
         "startingPoint": "Interlaken",
-        "time": 111
+        "time": 109
       }
     ],
     "traveltimes_car": [
@@ -601,7 +601,7 @@
       },
       {
         "startingPoint": "Chur",
-        "time": 194
+        "time": 94
       },
       {
         "startingPoint": "Lucerne",
@@ -698,7 +698,7 @@
       },
       {
         "startingPoint": "Brig",
-        "time": 203
+        "time": 103
       },
       {
         "startingPoint": "Lugano",
@@ -718,7 +718,7 @@
       },
       {
         "startingPoint": "Basel",
-        "time": 129
+        "time": 130
       },
       {
         "startingPoint": "Zurich",
@@ -811,7 +811,7 @@
       },
       {
         "startingPoint": "Chur",
-        "time": 164
+        "time": 104
       },
       {
         "startingPoint": "Lucerne",
@@ -890,7 +890,7 @@
       },
       {
         "startingPoint": "Interlaken",
-        "time": 121
+        "time": 118
       }
     ],
     "traveltimes_car": [
@@ -924,7 +924,7 @@
       },
       {
         "startingPoint": "Lausanne",
-        "time": 129
+        "time": 130
       },
       {
         "startingPoint": "Basel",
@@ -995,7 +995,7 @@
       },
       {
         "startingPoint": "Interlaken",
-        "time": 118
+        "time": 64
       }
     ],
     "traveltimes_car": [
@@ -1173,7 +1173,7 @@
       },
       {
         "startingPoint": "Brig",
-        "time": 63
+        "time": 64
       },
       {
         "startingPoint": "Lugano",
@@ -1185,7 +1185,7 @@
       },
       {
         "startingPoint": "Lucerne",
-        "time": 111
+        "time": 109
       },
       {
         "startingPoint": "Lausanne",
@@ -1193,11 +1193,11 @@
       },
       {
         "startingPoint": "Basel",
-        "time": 121
+        "time": 118
       },
       {
         "startingPoint": "Zurich",
-        "time": 118
+        "time": 63
       },
       {
         "startingPoint": "St. Gallen",
