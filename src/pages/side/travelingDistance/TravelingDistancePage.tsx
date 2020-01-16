@@ -220,8 +220,8 @@ export const TravelingDistancePage: React.FC<Props> = props => {
     <div className='TravelingDistancePage'>
       <div className='ContentContainer'>
         <h2>Der Aargau is gut vernetzt</h2>
-        <p><b>DER KANTON, der im Zentrum der Schweiz und Europas liegt.</b></p>
-        <p>Diese Visualisierung zeigt, dass der Kanton Aargau ein hervorragender Ausgangspunkt zu jeder grösseren Stadt
+        <p className='SecondaryTitle'><b>DER KANTON, der im Zentrum der Schweiz und Europas liegt.</b></p>
+        <p className='MainContent'>Diese Visualisierung zeigt, dass der Kanton Aargau ein hervorragender Ausgangspunkt zu jeder grösseren Stadt
           der Schweiz ist.
           Du kannst eine Stadt auswählen und sehen, wie lange die Reise von anderen Städten aus dauert.
           Aarau (Stadt im Aargau) ist immer unter den Schnellsten! </p>

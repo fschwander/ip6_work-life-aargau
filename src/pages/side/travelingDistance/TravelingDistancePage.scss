@@ -14,7 +14,14 @@
   }
 
   .ContentContainer {
-    margin: 7rem 2rem 0 2rem;
+    margin: 6rem 2rem 0 2rem;
+
+    .SecondaryTitle {
+      margin-bottom: 1rem;
+    }
+    .MainContent {
+      margin-bottom: 2rem;
+    }
 
     .MapInfo {
       font-size: .8rem;
