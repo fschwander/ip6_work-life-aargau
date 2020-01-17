@@ -34,11 +34,9 @@ The conclusion:
 The canton of Aargau obtained its right to be presented as a canton with great connectivity to other cities in Switzerland. Aarau's worst position among 12 cities (if travelling by train) is 4th, which is only in two cases, in all other cases Aarau does even better.
 The hypothesis has been confirmed, and the canton of Aargau gains its place as one of the best places in Switzerland to start off a journey!
 
-## Storytelling
-
 ## References to the data sources
 
-- For the purposes of the ivis project, an SBB and Google maps served as data sources
+- Google Maps, SBB
 
 ## Authors
 
