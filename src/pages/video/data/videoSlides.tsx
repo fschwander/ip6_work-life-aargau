@@ -3,7 +3,6 @@ import videoAarau1 from "../../../res/videos/aarau1.mp4";
 import videoAarau2 from "../../../res/videos/aarau2.mp4";
 import {hikingTrails} from "./hikingTrails";
 import {mammut} from "./mammut";
-import {ReactComponent as svgAarau1} from "../../../res/videos/aarau1.svg";
 import {ReactComponent as svgRuine} from "../../../res/videos/baden1-ruine.svg";
 import {ReactComponent as svgRoof} from "../../../res/videos/baden1-roof.svg";
 import {ReactComponent as svgTower} from "../../../res/videos/baden1-tower.svg";
@@ -18,9 +17,9 @@ export const videoSlides: Array<VideoSlideProps> = [
     hoverPoints: [{
       title: 'Kultur & Geschichte',
       subtitle: 'Historische Highlights',
-      className: 'happy-new-year',
+      className: 'culture-and-history',
       overlayData: hikingTrails,
-      svgComponent: svgAarau1,
+      svgComponent: svgRoof,
       lineLength: 60,
       lineRotation: 70,
       orientation: 'right'
