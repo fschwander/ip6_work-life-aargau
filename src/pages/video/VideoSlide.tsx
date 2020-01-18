@@ -11,7 +11,7 @@ import {VideoOverlay} from "./VideoOverlay";
 export interface VideoSlideProps {
   className: string,
   title: string,
-  isMainPoint?: boolean,
+  isMainPoint: boolean,
   videoSrc: string,
   hoverPoints: Array<HoverPointItems>
 }

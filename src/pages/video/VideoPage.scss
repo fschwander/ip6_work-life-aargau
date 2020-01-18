@@ -12,6 +12,7 @@
       transform: translate(-170px, 40px);
 
       .HoverPoint {
+        display: none;
         left: 40px;
         top: 50px;
       }
@@ -21,6 +22,7 @@
       transform: translate(210px, -30px);
 
       .HoverPoint {
+        display: none;
         left: 50px;
         top: -50px;
       }
