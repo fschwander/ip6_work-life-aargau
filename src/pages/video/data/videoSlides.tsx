@@ -5,6 +5,7 @@ import videoAarau2 from "../../../res/videos/aarau2.mp4";
 import {hikingTrails} from "./hikingTrails";
 import {mammut} from "./mammut";
 import {ReactComponent as svgRuine} from "../../../res/videos/baden1-ruine.svg";
+import {ReactComponent as svgStairs} from "../../../res/videos/baden2-stairways.svg";
 import {ReactComponent as svgRoof} from "../../../res/videos/baden1-roof.svg";
 import {ReactComponent as svgTower} from "../../../res/videos/baden1-tower.svg";
 import {VideoSlideProps} from "../VideoSlide";
@@ -63,10 +64,20 @@ export const videoSlides: Array<VideoSlideProps> = [
         subtitle: 'Wanderwege',
         className: 'hiking-trails',
         overlayData: hikingTrails,
-        svgComponent: svgRuine,
+        svgComponent: svgStairs,
         lineLength: 60,
         lineRotation: 330,
         orientation: 'right'
+      },
+      {
+        title: 'Bekleidung',
+        subtitle: 'Bergsport, Outdoor...',
+        className: 'mammut',
+        overlayData: mammut,
+        svgComponent: svgStairs,
+        lineLength: 60,
+        lineRotation: 225,
+        orientation: 'left'
       }
     ]
   },
@@ -87,6 +98,8 @@ export const videoSlides: Array<VideoSlideProps> = [
       orientation: 'right'
     },]
   },
+
+  // SEQUENCE 4
   {
     className: 'aarau-slide2',
     title: 'Die Stadt Aarau',
