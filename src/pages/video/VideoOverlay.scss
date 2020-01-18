@@ -30,6 +30,7 @@
       margin: 1.5rem 0;
 
       img {
+        height: 25px;
         margin: 0 .5rem 0 1rem;
       }
     }
@@ -57,7 +58,7 @@
     .box-footer {
       position: absolute;
       left: 0;
-      bottom: 0;
+      bottom: 0px;
       width: 300px;
       transform: translate(-3rem, 4rem);
       background-color: black;

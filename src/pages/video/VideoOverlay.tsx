@@ -3,6 +3,7 @@ import {RoundButton} from '../../components/buttons/RoundButton';
 import {VideoOverlayInterface} from './data/VideoOverlayInterface';
 import iconArrowLeft from '../../res/icons/arrow2_left.svg'
 import iconArrowRight from '../../res/icons/arrow2_right.svg'
+import {Constants} from "../../services/Constants";
 
 interface Props {
   data: VideoOverlayInterface
@@ -28,7 +29,7 @@ export const VideoOverlay: React.FC<Props> = props => {
       <div className='box-left vertical-container'>
 
         <div className='header-container'>
-          <h4>Aargauer</h4>
+          <h4>{data.type === Constants.TYPE_LIFE ? "Aargauer" : "Unternehmen"}</h4>
           <h2>{data.header.title}</h2>
           <p>{data.header.text}</p>
         </div>
