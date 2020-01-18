@@ -8,6 +8,7 @@ import {ReactComponent as svgRuine} from "../../../res/videos/baden1-ruine.svg";
 import {ReactComponent as svgRoof} from "../../../res/videos/baden1-roof.svg";
 import {ReactComponent as svgTower} from "../../../res/videos/baden1-tower.svg";
 import {VideoSlideProps} from "../VideoSlide";
+import {lafargeHolcim} from "./lafargeHolcim";
 
 export const videoSlides: Array<VideoSlideProps> = [
   {
@@ -70,8 +71,8 @@ export const videoSlides: Array<VideoSlideProps> = [
       {
         title: 'Baumaterialien',
         subtitle: 'Zement, Beton...',
-        className: 'cie-mammut',
-        overlayData: mammut,
+        className: 'cie-lafarge-holcim',
+        overlayData: lafargeHolcim,
         svgComponent: svgTower,
         lineLength: 85,
         lineRotation: 70,
