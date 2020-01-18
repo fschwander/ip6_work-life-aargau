@@ -18,6 +18,7 @@ export const videoSlides: Array<VideoSlideProps> = [
     className: 'baden-slide1',
     title: 'Die Stadt Baden',
     videoSrc: videoBaden,
+    isMainPoint: true,
     hoverPoints: [
       {
         title: 'Kultur & Geschichte',
@@ -56,7 +57,7 @@ export const videoSlides: Array<VideoSlideProps> = [
   {
     className: 'baden-slide2',
     title: 'Die Stadt Baden',
-    isMainPoint: true,
+    isMainPoint: false,
     videoSrc: videoBaden2,
     hoverPoints: [
       {
@@ -87,6 +88,7 @@ export const videoSlides: Array<VideoSlideProps> = [
     className: 'aarau-slide1',
     title: 'Die Stadt Aarau',
     videoSrc: videoAarau1,
+    isMainPoint: true,
     hoverPoints: [{
       title: 'Kultur & Geschichte',
       subtitle: 'Historische Highlights',
@@ -103,6 +105,7 @@ export const videoSlides: Array<VideoSlideProps> = [
   {
     className: 'aarau-slide2',
     title: 'Die Stadt Aarau',
+    isMainPoint: false,
     videoSrc: videoAarau2,
     hoverPoints: [{
       title: 'Kultur & Geschichte',
