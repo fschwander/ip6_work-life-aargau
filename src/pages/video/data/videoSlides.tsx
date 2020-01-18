@@ -1,6 +1,5 @@
 import videoBaden from "../../../res/videos/baden1.mp4";
 import videoBaden2 from "../../../res/videos/baden2.mp4";
-import videoBaden3 from "../../../res/videos/baden3.mp4";
 import videoAarau1 from "../../../res/videos/aarau1.mp4";
 import videoAarau2 from "../../../res/videos/aarau2.mp4";
 import {hikingTrails} from "./hikingTrails";
@@ -59,37 +58,19 @@ export const videoSlides: Array<VideoSlideProps> = [
     videoSrc: videoBaden2,
     hoverPoints: [
       {
-        title: 'Kultur & Geschichte',
-        subtitle: 'Historische Highlights',
-        className: 'culture-and-history',
+        title: 'Sport & Freizeit',
+        subtitle: 'Wanderwege',
+        className: 'hiking-trails',
         overlayData: hikingTrails,
         svgComponent: svgRuine,
         lineLength: 60,
-        lineRotation: 70,
+        lineRotation: 330,
         orientation: 'right'
       }
     ]
   },
-
 
   // SEQUENCE 3
-  {
-    className: 'baden-slide3',
-    title: 'Die Stadt Baden',
-    videoSrc: videoBaden3,
-    hoverPoints: [
-      {
-        title: 'Kultur & Geschichte',
-        subtitle: 'Historische Highlights',
-        className: 'culture-and-history',
-        overlayData: hikingTrails,
-        svgComponent: svgRuine,
-        lineLength: 60,
-        lineRotation: 70,
-        orientation: 'right'
-      }
-    ]
-  },
   {
     className: 'aarau-slide1',
     title: 'Die Stadt Aarau',
