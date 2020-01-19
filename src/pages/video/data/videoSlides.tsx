@@ -89,8 +89,8 @@ export const videoSlides: Array<VideoSlideProps> = [
         orientation: 'right'
       },
       {
-        title: 'Bekleidung',
-        subtitle: 'Bergsport, Outdoor...',
+        title: 'Wanderausrüstung',
+        subtitle: 'Rucksäcke, Taschen...',
         className: 'mammut',
         overlayData: mammut,
         svgComponent: svgStairs,
