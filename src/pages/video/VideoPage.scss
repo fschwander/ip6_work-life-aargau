@@ -8,8 +8,17 @@
 
   .baden-slide1 {
 
+    .cie-lafarge-holcim {
+      transform: translate(380px, 170px);
+
+      .HoverPoint {
+        left: 10px;
+        top: -50px;
+      }
+    }
+
     .hiking-trails {
-      transform: translate(-170px, 40px);
+      transform: translate(-170px, 60px);
 
       .HoverPoint {
         display: none;
@@ -19,7 +28,7 @@
     }
 
     .culture-and-history {
-      transform: translate(210px, -30px);
+      transform: translate(260px, -140px);
 
       .HoverPoint {
         display: none;
@@ -28,20 +37,13 @@
       }
     }
 
-    .cie-lafarge-holcim {
-      transform: translate(370px, 130px);
 
-      .HoverPoint {
-        left: 70px;
-        top: -100px;
-      }
-    }
   }
 
   .baden-slide2 {
 
     .hiking-trails {
-       transform: translate(-110px, 150px);
+       transform: translate(-160px, 190px);
 
        .HoverPoint {
          left: 130px;
@@ -50,7 +52,7 @@
      }
 
     .mammut {
-      transform: translate(170px, 20px);
+      transform: translate(160px, 80px);
 
       .HoverPoint {
         left: 0px;

@@ -21,14 +21,14 @@ export const videoSlides: Array<VideoSlideProps> = [
     isMainPoint: true,
     hoverPoints: [
       {
-        title: 'Kultur & Geschichte',
-        subtitle: 'Historische Highlights',
-        className: 'culture-and-history',
-        overlayData: hikingTrails,
-        svgComponent: svgRuine,
-        lineLength: 60,
+        title: 'Turm: Baumaterialien',
+        subtitle: 'Zement, Beton...',
+        className: 'cie-lafarge-holcim',
+        overlayData: lafargeHolcim,
+        svgComponent: svgTower,
+        lineLength: 85,
         lineRotation: 70,
-        orientation: 'right'
+        orientation: 'right',
       },
       {
         title: 'Deine Vorteile',
@@ -41,14 +41,14 @@ export const videoSlides: Array<VideoSlideProps> = [
         orientation: 'right'
       },
       {
-        title: 'Baumaterialien',
-        subtitle: 'Zement, Beton...',
-        className: 'cie-lafarge-holcim',
-        overlayData: lafargeHolcim,
-        svgComponent: svgTower,
-        lineLength: 85,
+        title: 'Kultur & Geschichte',
+        subtitle: 'Historische Highlights',
+        className: 'culture-and-history',
+        overlayData: hikingTrails,
+        svgComponent: svgRuine,
+        lineLength: 60,
         lineRotation: 70,
-        orientation: 'right',
+        orientation: 'right'
       }
     ]
   },
@@ -71,8 +71,8 @@ export const videoSlides: Array<VideoSlideProps> = [
         orientation: 'right'
       },
       {
-        title: 'Bekleidung',
-        subtitle: 'Bergsport, Outdoor...',
+        title: 'Wanderausrüstung',
+        subtitle: 'Rucksäcke, Taschen...',
         className: 'mammut',
         overlayData: mammut,
         svgComponent: svgStairs,
