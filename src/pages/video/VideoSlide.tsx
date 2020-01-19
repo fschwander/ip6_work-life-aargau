@@ -28,7 +28,8 @@ interface HoverPointItems {
   translateX: number,
   translateY: number,
   hoverPointPosLeft: number,
-  hoverPointPosTop: number
+  hoverPointPosTop: number,
+  display?: string
 }
 
 export const VideoSlide: React.FC<VideoSlideProps> = props => {
@@ -78,7 +79,8 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
                           style={{
                             ...hoverPointTransitionStyles,
                             left: `${d.hoverPointPosLeft}px`,
-                            top: `${d.hoverPointPosTop}px`
+                            top: `${d.hoverPointPosTop}px`,
+                            display: `${d.display}`
                           }}/>
 
               <EntryLabel text={d.title}

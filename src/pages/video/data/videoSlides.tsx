@@ -44,6 +44,7 @@ export const videoSlides: Array<VideoSlideProps> = [
         translateY: 40,
         hoverPointPosLeft: 40,
         hoverPointPosTop: 50,
+        display: 'none',
         lineLength: 60,
         lineRotation: 300,
         orientation: 'right'
@@ -58,6 +59,7 @@ export const videoSlides: Array<VideoSlideProps> = [
         translateY: -150,
         hoverPointPosLeft: 50,
         hoverPointPosTop: -50,
+        display: 'none',
         lineLength: 60,
         lineRotation: 70,
         orientation: 'right'
