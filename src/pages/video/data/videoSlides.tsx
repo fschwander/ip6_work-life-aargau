@@ -21,14 +21,18 @@ export const videoSlides: Array<VideoSlideProps> = [
     isMainPoint: true,
     hoverPoints: [
       {
-        title: 'Turm: Baumaterialien',
-        subtitle: 'Zement, Beton...',
-        className: 'cie-lafarge-holcim',
-        overlayData: lafargeHolcim,
-        svgComponent: svgTower,
-        lineLength: 85,
+        title: 'Kultur & Geschichte',
+        subtitle: 'Historische Highlights',
+        className: 'culture-and-history',
+        overlayData: hikingTrails,
+        svgComponent: svgRuine,
+        translateX: 210,
+        translateY: -30,
+        hoverPointPosLeft: 50,
+        hoverPointPosTop: -50,
+        lineLength: 60,
         lineRotation: 70,
-        orientation: 'right',
+        orientation: 'right'
       },
       {
         title: 'Deine Vorteile',
@@ -36,19 +40,27 @@ export const videoSlides: Array<VideoSlideProps> = [
         className: 'hiking-trails',
         overlayData: hikingTrails,
         svgComponent: svgRoof,
+        translateX: -170,
+        translateY: 40,
+        hoverPointPosLeft: 40,
+        hoverPointPosTop: 50,
         lineLength: 60,
         lineRotation: 300,
         orientation: 'right'
       },
       {
-        title: 'Kultur & Geschichte',
-        subtitle: 'Historische Highlights',
-        className: 'culture-and-history',
-        overlayData: hikingTrails,
-        svgComponent: svgRuine,
-        lineLength: 60,
+        title: 'Baumaterialien',
+        subtitle: 'Zement, Beton...',
+        className: 'cie-lafarge-holcim',
+        overlayData: lafargeHolcim,
+        svgComponent: svgTower,
+        translateX: 370,
+        translateY: 130,
+        hoverPointPosLeft: 70,
+        hoverPointPosTop: -100,
+        lineLength: 85,
         lineRotation: 70,
-        orientation: 'right'
+        orientation: 'right',
       }
     ]
   },
@@ -66,18 +78,26 @@ export const videoSlides: Array<VideoSlideProps> = [
         className: 'hiking-trails',
         overlayData: hikingTrails,
         svgComponent: svgStairs,
-        lineLength: 60,
-        lineRotation: 330,
+        translateX: -200,
+        translateY: 40,
+        hoverPointPosLeft: -30,
+        hoverPointPosTop: -40,
+        lineLength: 160,
+        lineRotation: 310,
         orientation: 'right'
       },
       {
-        title: 'Wanderausrüstung',
-        subtitle: 'Rucksäcke, Taschen...',
+        title: 'Bekleidung',
+        subtitle: 'Bergsport, Outdoor...',
         className: 'mammut',
         overlayData: mammut,
         svgComponent: svgStairs,
-        lineLength: 60,
-        lineRotation: 225,
+        translateX: 230,
+        translateY: -60,
+        hoverPointPosLeft: 160,
+        hoverPointPosTop: -20,
+        lineLength: 170,
+        lineRotation: 235,
         orientation: 'left'
       }
     ]
@@ -89,16 +109,22 @@ export const videoSlides: Array<VideoSlideProps> = [
     title: 'Die Stadt Aarau',
     videoSrc: videoAarau1,
     isMainPoint: true,
-    hoverPoints: [{
-      title: 'Kultur & Geschichte',
-      subtitle: 'Historische Highlights',
-      className: 'culture-and-history',
-      overlayData: hikingTrails,
-      svgComponent: svgRoof,
-      lineLength: 60,
-      lineRotation: 70,
-      orientation: 'right'
-    },]
+    hoverPoints: [
+      {
+        title: 'Kultur & Geschichte',
+        subtitle: 'Historische Highlights',
+        className: 'culture-and-history',
+        overlayData: hikingTrails,
+        svgComponent: svgRoof,
+        translateX: 0,
+        translateY: 0,
+        hoverPointPosLeft: 0,
+        hoverPointPosTop: 0,
+        lineLength: 60,
+        lineRotation: 70,
+        orientation: 'right'
+      },
+    ]
   },
 
   // SEQUENCE 4
@@ -107,15 +133,21 @@ export const videoSlides: Array<VideoSlideProps> = [
     title: 'Die Stadt Aarau',
     isMainPoint: false,
     videoSrc: videoAarau2,
-    hoverPoints: [{
-      title: 'Kultur & Geschichte',
-      subtitle: 'Historische Highlights',
-      className: 'culture-and-history',
-      overlayData: hikingTrails,
-      svgComponent: svgTower,
-      lineLength: 60,
-      lineRotation: 210,
-      orientation: 'right'
-    },]
+    hoverPoints: [
+      {
+        title: 'Kultur & Geschichte',
+        subtitle: 'Historische Highlights',
+        className: 'culture-and-history',
+        overlayData: hikingTrails,
+        svgComponent: svgTower,
+        translateX: 0,
+        translateY: 0,
+        hoverPointPosLeft: 0,
+        hoverPointPosTop: 0,
+        lineLength: 60,
+        lineRotation: 210,
+        orientation: 'right'
+      },
+    ]
   },
 ]
