@@ -1,63 +1,10 @@
 .VideoPage {
 
-  .aarau-slide1 {
-    .happy-new-year {
-      opacity: 0;
-    }
-  }
-
-  .baden-slide1 {
-
-    .hiking-trails {
-      transform: translate(-170px, 40px);
-
-      .HoverPoint {
-        display: none;
-        left: 40px;
-        top: 50px;
-      }
-    }
-
-    .culture-and-history {
-      transform: translate(210px, -30px);
-
-      .HoverPoint {
-        display: none;
-        left: 50px;
-        top: -50px;
-      }
-    }
-
-    .cie-lafarge-holcim {
-      transform: translate(370px, 130px);
-
-      .HoverPoint {
-        left: 70px;
-        top: -100px;
-      }
-    }
-  }
-
-  .baden-slide2 {
-
-    .hiking-trails {
-       transform: translate(-110px, 150px);
-
-       .HoverPoint {
-         left: 130px;
-         top: -40px;
-       }
-     }
-
-    .mammut {
-      transform: translate(170px, 20px);
-
-      .HoverPoint {
-        left: 0px;
-        top: -40px;
-      }
-    }
-
+  .TimeLine {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0 4rem 2rem 0;
   }
 }
 

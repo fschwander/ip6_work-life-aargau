@@ -24,7 +24,11 @@ interface HoverPointItems {
   svgComponent: any,
   lineLength: number,
   lineRotation: number,
-  orientation: string
+  orientation: string,
+  translateX: number,
+  translateY: number,
+  hoverPointPosLeft: number,
+  hoverPointPosTop: number
 }
 
 export const VideoSlide: React.FC<VideoSlideProps> = props => {
@@ -60,15 +64,22 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
       <div className={`anim-group-container`}>
 
         {props.hoverPoints.map((d, i) => {
+          const hoverPointTransitionStyles = getTransitionStyles(i, 0)
+
           return <div className={`anim-group`}
                       key={d.className + i}>
             <AnimatedSVG svgComponent={d.svgComponent}
                          isActive={animationStarted}
                          animationDelay={i * animationStaggerInSec}/>
 
-            <div className={`label-container ${d.className}`}>
-              <HoverPoint style={getTransitionStyles(i, 0)}
-                          onClick={() => openOverlay(<VideoOverlay data={d.overlayData}/>)}/>
+            <div className={`label-container ${d.className}`}
+                 style={{transform: `translate(${d.translateX}px,${d.translateY}px)`}}>
+              <HoverPoint onClick={() => openOverlay(<VideoOverlay data={d.overlayData}/>)}
+                          style={{
+                            ...hoverPointTransitionStyles,
+                            left: `${d.hoverPointPosLeft}px`,
+                            top: `${d.hoverPointPosTop}px`
+                          }}/>
 
               <EntryLabel text={d.title}
                           subtitle={d.subtitle}

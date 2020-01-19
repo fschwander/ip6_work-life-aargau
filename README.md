@@ -1,7 +1,7 @@
 # Interactive platform about the promotion of the Canton of Aargau
 (Work in progress) Bachelor thesis, due date: March 20th 2020.
 
-Progress can be viewed [here](http://www.ip6.fabianschwander.ch).
+Progress can be viewed [here](http://www.work-life-aargau.fabianschwander.ch).
 
 ## Technologies
 
