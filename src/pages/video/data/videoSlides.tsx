@@ -21,7 +21,7 @@ export const videoSlides: Array<VideoSlideProps> = [
     isMainPoint: true,
     hoverPoints: [
       {
-        title: 'Baumaterialien',
+        title: 'Turm: Baumaterialien',
         subtitle: 'Zement, Beton...',
         className: 'cie-lafarge-holcim',
         overlayData: lafargeHolcim,
@@ -35,7 +35,7 @@ export const videoSlides: Array<VideoSlideProps> = [
         orientation: 'right',
       },
       {
-        title: 'Deine Vorteile',
+        title: 'Aargauere Vorteile',
         subtitle: 'Erschwingliche Miete',
         className: 'hiking-trails',
         overlayData: hikingTrails,
