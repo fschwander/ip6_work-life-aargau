@@ -1,5 +1,6 @@
 import videoBaden from "../../../res/videos/baden1.mp4";
 import videoBaden2 from "../../../res/videos/baden2.mp4";
+import videoBaden3 from "../../../res/videos/baden3.mp4";
 import videoAarau1 from "../../../res/videos/aarau1.mp4";
 import videoAarau2 from "../../../res/videos/aarau2.mp4";
 import {hikingTrails} from "./hikingTrails";
@@ -18,7 +19,7 @@ export const videoSlides: Array<VideoSlideProps> = [
     className: 'baden-slide1',
     title: 'Die Stadt Baden',
     videoSrc: videoBaden,
-    isMainPoint: true,
+    isMainPoint: false,
     hoverPoints: [
       {
         title: 'Turm: Baumaterialien',
@@ -107,9 +108,9 @@ export const videoSlides: Array<VideoSlideProps> = [
 
   // SEQUENCE 3
   {
-    className: 'aarau-slide1',
-    title: 'Die Stadt Aarau',
-    videoSrc: videoAarau1,
+    className: 'baden-slide3',
+    title: 'Die Stadt Baden',
+    videoSrc: videoBaden3,
     isMainPoint: true,
     hoverPoints: [
       {
@@ -130,6 +131,30 @@ export const videoSlides: Array<VideoSlideProps> = [
   },
 
   // SEQUENCE 4
+  {
+    className: 'aarau-slide1',
+    title: 'Die Stadt Aarau',
+    videoSrc: videoAarau1,
+    isMainPoint: false,
+    hoverPoints: [
+      {
+        title: 'Kultur & Geschichte',
+        subtitle: 'Historische Highlights',
+        className: 'culture-and-history',
+        overlayData: hikingTrails,
+        svgComponent: svgRoof,
+        translateX: 0,
+        translateY: 0,
+        hoverPointPosLeft: 0,
+        hoverPointPosTop: 0,
+        lineLength: 60,
+        lineRotation: 70,
+        orientation: 'right'
+      },
+    ]
+  },
+
+  // SEQUENCE 5
   {
     className: 'aarau-slide2',
     title: 'Die Stadt Aarau',
