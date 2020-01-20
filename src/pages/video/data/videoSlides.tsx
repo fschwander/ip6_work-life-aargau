@@ -22,10 +22,10 @@ export const videoSlides: Array<VideoSlideProps> = [
     isMainPoint: false,
     hoverPoints: [
       {
-        title: 'Turm: Baumaterialien',
-        subtitle: 'Zement, Beton...',
-        className: 'cie-lafarge-holcim',
-        overlayData: lafargeHolcim,
+        title: 'Kultur & Geschichte',
+        subtitle: 'Historische Highlights',
+        className: 'culture-and-history',
+        overlayData: hikingTrails,
         svgComponent: svgTower,
         translateX: 390,
         translateY: 180,
@@ -48,21 +48,6 @@ export const videoSlides: Array<VideoSlideProps> = [
         display: 'none',
         lineLength: 60,
         lineRotation: 300,
-        orientation: 'right'
-      },
-      {
-        title: 'Kultur & Geschichte',
-        subtitle: 'Historische Highlights',
-        className: 'culture-and-history',
-        overlayData: hikingTrails,
-        svgComponent: svgRuine,
-        translateX: 210,
-        translateY: -150,
-        hoverPointPosLeft: 50,
-        hoverPointPosTop: -50,
-        display: 'none',
-        lineLength: 60,
-        lineRotation: 70,
         orientation: 'right'
       }
     ]
