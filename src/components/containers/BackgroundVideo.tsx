@@ -10,22 +10,24 @@ interface FullScreenVideoProps {
 
 export const BackgroundVideo: React.FC<FullScreenVideoProps> = props => {
   const [isBuffering, setIsBuffering] = React.useState(false);
+  const videoRatio = 1920 / 1080;
 
-    return (
-      <div className='BackgroundVideo transparent-filter full-screen'>
-        <div className='loading-container' style={{opacity: isBuffering ? 1 : 0}}>
-          <Spinner color='light'/>
-          <p>Einen Moment, bitte...</p>
-        </div>
+  return (
+    <div className='BackgroundVideo'>
+      <ReactPlayer className='player transparent-filter'
+                   url={props.source}
+                   playing={props.playVideo}
+                   muted={true}
+                   playsinline={true}
+                   width={window.innerHeight * videoRatio}
+                   height={window.innerHeight}
+                   onReady={() => setIsBuffering(false)}
+                   onEnded={() => props.onVideoEnded()}/>
 
-        <ReactPlayer className='player'
-                     url={props.source}
-                     playing={props.playVideo}
-                     muted playsinline
-                     onReady={() => setIsBuffering(false)}
-                     onEnded={() => props.onVideoEnded()}
-                     width='100%'
-                     height='100%'/>
+      <div className='loading-container' style={{opacity: isBuffering ? 1 : 0}}>
+        <Spinner color='light'/>
+        <p>Einen Moment, bitte...</p>
       </div>
-    )
+    </div>
+  )
 }

@@ -59,8 +59,10 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
   }
 
   return (
-    <div className={`VideoSlide ${props.className} full-screen`}>
-      <BackgroundVideo source={props.videoSrc} playVideo={true} onVideoEnded={onVideoEnded}/>
+    <div className={`VideoSlide ${props.className}`}>
+      <BackgroundVideo source={props.videoSrc}
+                       playVideo={true}
+                       onVideoEnded={onVideoEnded}/>
 
       <div className={`anim-group-container`}>
 
@@ -73,23 +75,23 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
                          isActive={animationStarted}
                          animationDelay={i * animationStaggerInSec}/>
 
-            <div className={`label-container ${d.className}`}
-                 style={{transform: `translate(${d.translateX}px,${d.translateY}px)`}}>
-              <HoverPoint onClick={() => openOverlay(<VideoOverlay data={d.overlayData}/>)}
-                          style={{
-                            ...hoverPointTransitionStyles,
-                            left: `${d.hoverPointPosLeft}px`,
-                            top: `${d.hoverPointPosTop}px`,
-                            display: `${d.display}`
-                          }}/>
+            {/*<div className={`label-container ${d.className}`}*/}
+            {/*     style={{transform: `translate(${d.translateX}px,${d.translateY}px)`}}>*/}
+            {/*  <HoverPoint onClick={() => openOverlay(<VideoOverlay data={d.overlayData}/>)}*/}
+            {/*              style={{*/}
+            {/*                ...hoverPointTransitionStyles,*/}
+            {/*                left: `${d.hoverPointPosLeft}px`,*/}
+            {/*                top: `${d.hoverPointPosTop}px`,*/}
+            {/*                display: `${d.display}`*/}
+            {/*              }}/>*/}
 
-              <EntryLabel text={d.title}
-                          subtitle={d.subtitle}
-                          lineWidth={d.lineLength}
-                          lineRotationInDeg={d.lineRotation}
-                          orientation={d.orientation}
-                          style={getTransitionStyles(i, 2)}/>
-            </div>
+            {/*  <EntryLabel text={d.title}*/}
+            {/*              subtitle={d.subtitle}*/}
+            {/*              lineWidth={d.lineLength}*/}
+            {/*              lineRotationInDeg={d.lineRotation}*/}
+            {/*              orientation={d.orientation}*/}
+            {/*              style={getTransitionStyles(i, 2)}/>*/}
+            {/*</div>*/}
 
           </div>
         })}
