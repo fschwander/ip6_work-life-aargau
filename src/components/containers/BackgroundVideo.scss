@@ -15,16 +15,18 @@
 
   .player {
 
+
     //position: absolute;
     //top: 0;
     //left: 0;
-    //overflow: hidden;
+    object-fit: cover;
+    overflow: hidden;
 
     video {
       //width: 100vw !important;
       //min-height: 100vh !important;
 
-      //object-fit: cover;
+      object-fit: cover;
     }
   }
 }
