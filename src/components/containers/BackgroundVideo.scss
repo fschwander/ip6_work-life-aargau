@@ -1,32 +1,19 @@
 .BackgroundVideo {
   position: relative;
-  //position: absolute;
-  //display: flex;
-  //justify-content: center;
-  //align-items: center;
+  overflow: unset !important; // todo: remove
 
-  .loading-container {
+  .video-container {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    transition: 0.5s ease-in-out;
-  }
 
-  .player {
-
-
-    //position: absolute;
-    //top: 0;
-    //left: 0;
-    object-fit: cover;
-    overflow: hidden;
-
-    video {
-      //width: 100vw !important;
-      //min-height: 100vh !important;
-
-      object-fit: cover;
+    .loading-container {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      transition: 0.5s ease-in-out;
     }
   }
 }

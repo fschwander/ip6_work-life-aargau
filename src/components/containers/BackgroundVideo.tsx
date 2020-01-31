@@ -9,57 +9,55 @@ interface FullScreenVideoProps {
 }
 
 export const BackgroundVideo: React.FC<FullScreenVideoProps> = props => {
-  const [isBuffering, setIsBuffering] = React.useState(false);
-  const [size, setSize] = useState({videoWidth: 0, videoHeight: 0, translateX: 0});
+  const [isBuffering, setIsBuffering] = useState(false);
+  const [size, setSize] = useState({videoWidth: 0, videoHeight: 0});
 
   const updateSize = () => {
-    const {innerWidth, innerHeight} = window;
+    const windowWidth = window.screen.width;
+    const windowHeight = window.screen.height;
+
     const videoRatio = 1920 / 1080;
-    let width = innerHeight * videoRatio;
 
-    console.log(innerWidth, innerHeight);
-
-    if (innerWidth / innerHeight < videoRatio) {
-      console.log('if', videoRatio, innerWidth / innerHeight);
+    if (windowWidth / windowHeight < videoRatio) {
       setSize({
-        videoWidth: innerHeight * videoRatio,
-        videoHeight: innerHeight,
-        translateX: innerWidth < width ? (width - innerWidth) / 2 : 0
+        videoWidth: windowHeight * videoRatio,
+        videoHeight: windowHeight
       });
-
     } else {
-      console.log('else', videoRatio, innerWidth / innerHeight);
       setSize({
-        videoWidth: innerWidth,
-        videoHeight: innerWidth / videoRatio,
-        translateX: innerWidth < width ? (width - innerWidth) / 2 : 0
+        videoWidth: windowWidth,
+        videoHeight: windowWidth / videoRatio
       });
     }
-
-
-  }
+  };
 
   useEffect(() => {
-    updateSize()
     window.addEventListener('resize', updateSize);
+    updateSize()
     return () => window.removeEventListener('resize', updateSize);
   }, []);
 
   return (
-    <div className='BackgroundVideo'>
-      <ReactPlayer className='player transparent-filter'
-                   url={props.source}
-                   playing={props.playVideo}
-                   muted={true}
-                   playsinline={true}
-                   width={size.videoWidth}
-                   height={size.videoHeight}
-                   onReady={() => setIsBuffering(false)}
-                   onEnded={() => props.onVideoEnded()}/>
+    <div className='BackgroundVideo full-screen'>
+      <div className='video-container'
+           style={{
+             width: `${size.videoWidth}px`,
+             minHeight: `${size.videoHeight}px`
+           }}>
+        <ReactPlayer className='player transparent-filter'
+                     url={props.source}
+                     playing={props.playVideo}
+                     muted={true}
+                     playsinline={true}
+                     width='100%'
+                     height='100%'
+                     onReady={() => setIsBuffering(false)}
+                     onEnded={() => props.onVideoEnded()}/>
 
-      <div className='loading-container' style={{opacity: isBuffering ? 1 : 0}}>
-        <Spinner color='light'/>
-        <p>Einen Moment, bitte...</p>
+        <div className='loading-container' style={{opacity: isBuffering ? 1 : 0}}>
+          <Spinner color='light'/>
+          <p>Einen Moment, bitte...</p>
+        </div>
       </div>
     </div>
   )
