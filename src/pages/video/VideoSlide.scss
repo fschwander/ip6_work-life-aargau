@@ -10,9 +10,10 @@
   .anim-group-container {
 
     .anim-group {
-      position: absolute;
-      left: 50%;
-      top: 50%;
+
+      .label-container {
+        position: absolute;
+      }
     }
 
     .HoverPoint {

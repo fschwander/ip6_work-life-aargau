@@ -25,8 +25,8 @@ interface HoverPointItems {
   lineLength: number,
   lineRotation: number,
   orientation: string,
-  translateX: number,
-  translateY: number,
+  posLeftInPct: number,
+  posTopInPct: number,
   hoverPointPosLeft: number,
   hoverPointPosTop: number,
   display?: string
@@ -62,40 +62,44 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
     <div className={`VideoSlide ${props.className}`}>
       <BackgroundVideo source={props.videoSrc}
                        playVideo={true}
-                       onVideoEnded={onVideoEnded}/>
+                       onVideoEnded={onVideoEnded}>
 
-      <div className={`anim-group-container`}>
+        <div className={`anim-group-container`}>
 
-        {props.hoverPoints.map((d, i) => {
-          const hoverPointTransitionStyles = getTransitionStyles(i, 0)
+          {props.hoverPoints.map((d, i) => {
+            const hoverPointTransitionStyles = getTransitionStyles(i, 0)
 
-          return <div className={`anim-group`}
-                      key={d.className + i}>
-            <AnimatedSVG svgComponent={d.svgComponent}
-                         isActive={animationStarted}
-                         animationDelay={i * animationStaggerInSec}/>
+            return (
+              <div className={`anim-group`} key={d.className + i}>
 
-            {/*<div className={`label-container ${d.className}`}*/}
-            {/*     style={{transform: `translate(${d.translateX}px,${d.translateY}px)`}}>*/}
-            {/*  <HoverPoint onClick={() => openOverlay(<VideoOverlay data={d.overlayData}/>)}*/}
-            {/*              style={{*/}
-            {/*                ...hoverPointTransitionStyles,*/}
-            {/*                left: `${d.hoverPointPosLeft}px`,*/}
-            {/*                top: `${d.hoverPointPosTop}px`,*/}
-            {/*                display: `${d.display}`*/}
-            {/*              }}/>*/}
+                <AnimatedSVG svgComponent={d.svgComponent}
+                             isActive={animationStarted}
+                             animationDelay={i * animationStaggerInSec}/>
 
-            {/*  <EntryLabel text={d.title}*/}
-            {/*              subtitle={d.subtitle}*/}
-            {/*              lineWidth={d.lineLength}*/}
-            {/*              lineRotationInDeg={d.lineRotation}*/}
-            {/*              orientation={d.orientation}*/}
-            {/*              style={getTransitionStyles(i, 2)}/>*/}
-            {/*</div>*/}
+                <div className={`label-container ${d.className}`}
+                     style={{left: `${d.posLeftInPct}%`, top: `${d.posTopInPct}%`}}>
 
-          </div>
-        })}
-      </div>
+                  <HoverPoint onClick={() => openOverlay(<VideoOverlay data={d.overlayData}/>)}
+                              style={{
+                                ...hoverPointTransitionStyles,
+                                left: `${d.hoverPointPosLeft}px`,
+                                top: `${d.hoverPointPosTop}px`,
+                                display: `${d.display}`
+                              }}/>
+
+                  <EntryLabel text={d.title}
+                              subtitle={d.subtitle}
+                              lineWidth={d.lineLength}
+                              lineRotationInDeg={d.lineRotation}
+                              orientation={d.orientation}
+                              style={getTransitionStyles(i, 2)}/>
+                </div>
+
+              </div>
+            )
+          })}
+        </div>
+      </BackgroundVideo>
 
       <LocationLabel title={props.title}/>
 
