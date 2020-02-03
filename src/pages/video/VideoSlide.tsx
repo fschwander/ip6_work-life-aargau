@@ -65,7 +65,7 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
       <div className={`anim-group-container`}>
 
         {props.hoverPoints.map((d, i) => {
-          const hoverPointTransitionStyles = getTransitionStyles(i, 0)
+          const hoverPointTransitionStyles = getTransitionStyles(i, 3)
 
           return <div className={`anim-group`}
                       key={d.className + i}>
