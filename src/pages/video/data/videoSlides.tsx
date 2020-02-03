@@ -5,6 +5,7 @@ import videoAarau1 from "../../../res/videos/aarau1.mp4";
 import videoAarau2 from "../../../res/videos/aarau2.mp4";
 import {hikingTrails} from "./hikingTrails";
 import {mammut} from "./mammut";
+import {realEstate} from "./realEstate";
 import {ReactComponent as svgRuine} from "../../../res/videos/baden1-ruine.svg";
 import {ReactComponent as svgStairs} from "../../../res/videos/baden2-stairways.svg";
 import {ReactComponent as svgRoof} from "../../../res/videos/baden1-roof.svg";
@@ -36,11 +37,11 @@ export const videoSlides: Array<VideoSlideProps> = [
         orientation: 'right',
       },
       {
-        title: 'Aargauere Vorteile',
-        subtitle: 'Erschwingliche Miete',
-        className: 'hiking-trails',
-        overlayData: hikingTrails,
-        svgComponent: svgRuine,
+        title: 'Gewerbeimmobilien & Areal',
+        subtitle: 'Günstige Preise',
+        className: 'realEstate',
+        overlayData: realEstate,
+        svgComponent: svgRoof,
         translateX: -170,
         translateY: 40,
         hoverPointPosLeft: 40,
@@ -54,7 +55,7 @@ export const videoSlides: Array<VideoSlideProps> = [
         subtitle: 'Lokales Highlight',
         className: 'hiking-trails',
         overlayData: hikingTrails,
-        svgComponent: svgRoof,
+        svgComponent: svgRuine,
         translateX: 210,
         translateY: -150,
         hoverPointPosLeft: 50,
