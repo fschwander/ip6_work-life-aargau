@@ -40,15 +40,29 @@ export const videoSlides: Array<VideoSlideProps> = [
         subtitle: 'Erschwingliche Miete',
         className: 'hiking-trails',
         overlayData: hikingTrails,
-        svgComponent: svgRoof,
+        svgComponent: svgRuine,
         translateX: -170,
         translateY: 40,
         hoverPointPosLeft: 40,
         hoverPointPosTop: 50,
-        display: 'none',
         lineLength: 60,
         lineRotation: 300,
         orientation: 'right'
+      },
+      {
+        title: 'Ruine Stein',
+        subtitle: 'Lokales Highlight',
+        className: 'hiking-trails',
+        overlayData: hikingTrails,
+        svgComponent: svgRoof,
+        translateX: 210,
+        translateY: -150,
+        hoverPointPosLeft: 50,
+        hoverPointPosTop: -50,
+        lineLength: 60,
+        lineRotation: 70,
+        orientation: 'right'
+
       }
     ]
   },
