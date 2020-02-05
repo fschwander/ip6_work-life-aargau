@@ -1,5 +1,5 @@
 import React, {CSSProperties} from 'react';
-import {lineRotationService} from "../../services/lineRotationService";
+import {LineRotationService} from "../../services/LineRotationService";
 
 interface EntryLabelProps {
   text: string,
@@ -16,9 +16,9 @@ export const EntryLabel: React.FC<EntryLabelProps> = props => {
   const orientation = props.orientation;
   const lineHeight = 1;
 
-  const lineTranslate = lineRotationService.getLineTransform(orientation, deg, lineHeight);
-  const lineTransformOrigin = lineRotationService.getTransformOrigin(orientation, deg);
-  const realLineRotation = lineRotationService.getRealLineRotation(orientation, deg);
+  const lineTranslate = LineRotationService.getLineTransform(orientation, deg, lineHeight);
+  const lineTransformOrigin = LineRotationService.getTransformOrigin(orientation, deg);
+  const realLineRotation = LineRotationService.getRealLineRotation(orientation, deg);
 
   const lineStyle = {
     width: `${props.lineWidth}px`,

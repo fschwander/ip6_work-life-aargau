@@ -1,4 +1,4 @@
-export class lineRotationService {
+export class LineRotationService {
 
   static getLineTransform = (orientation:string, deg: number, lineHeight: number): number => {
 
@@ -61,6 +61,18 @@ export class lineRotationService {
 
   static getRealLineRotation = (orientation:string, deg: number): number => {
     return (orientation === 'left' ? deg : deg + 180) % 360 * -1;
+  }
+
+  static calcLineStyle = (orientation: string, deg: number, lineHeight: number, lineLength: number) => {
+    const lineTranslate = LineRotationService.getLineTransform(orientation, deg, lineHeight);
+    const lineTransformOrigin = LineRotationService.getTransformOrigin(orientation, deg);
+    const realLineRotation = LineRotationService.getRealLineRotation(orientation, deg);
+
+    return {
+      width: `${lineLength}px`,
+      transform: `translateY(${lineTranslate}px) rotate(${realLineRotation}deg)`,
+      transformOrigin: lineTransformOrigin
+    }
   }
 
 }
