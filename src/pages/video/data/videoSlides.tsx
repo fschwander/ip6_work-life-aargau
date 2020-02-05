@@ -98,8 +98,8 @@ export const videoSlides: Array<VideoSlideProps> = [
         svgComponent: svgStairs,
         translateX: 230,
         translateY: -60,
-        hoverPointPosLeft: 160,
-        hoverPointPosTop: -20,
+        hoverPointPosLeft: 180,
+        hoverPointPosTop: -25,
         lineLength: 170,
         lineRotation: 235,
         orientation: 'left'
