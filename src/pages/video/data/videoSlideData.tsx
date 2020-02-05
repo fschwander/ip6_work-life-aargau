@@ -26,11 +26,11 @@ export const videoSlideData: Array<VideoSlideProps> = [
         title: 'Ruine Stein',
         svgComponent: svgRuine,
         iconSrc: castleIcon,
-        posLeftInPct: 58,
-        posTopInPct: 38,
+        posLeftInPct: 69,
+        posTopInPct: 33,
         lineLength: 60,
         lineRotation: 40,
-        orientation: 'left'
+        orientation: 'right'
       }
     ],
     hoverPoints: [

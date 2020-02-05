@@ -1,4 +1,4 @@
-import React, {createRef, CSSProperties, useEffect, useState} from 'react';
+import React, {createRef, useEffect, useState} from 'react';
 import {calcLineStyle} from '../../services/lineRotationService';
 import {RoundButton} from "../buttons/RoundButton";
 
@@ -16,23 +16,29 @@ export interface LocationLabelProps {
 
 export const LocationLabel: React.FC<LocationLabelProps> = props => {
   const [deltaValues, setDeltaValues] = useState({deltaX: 0, deltaY: 0})
+  const containerRef: React.RefObject<HTMLDivElement> = createRef();
 
   const lineHeight = 1;
   const lineStyle = calcLineStyle(props.orientation, props.lineRotation, lineHeight, props.lineLength)
-  const containerRef: React.RefObject<HTMLDivElement> = createRef()
 
   const calcContainerTransition = (): void => {
     if (containerRef.current !== null) {
       const width = containerRef.current.offsetWidth;
       const height = containerRef.current.offsetHeight;
-      let deltaX = 0;
-      let deltaY = 0;
+      let deltaX, deltaY;
+
+      const c = props.lineLength;
+      const beta = props.lineRotation;
+
+      const b = c * Math.cos(beta * Math.PI / 180);
+      const a = Math.sqrt(Math.pow(c, 2) - Math.pow(b, 2));
 
       if (props.orientation === 'right') {
-        deltaX = -width;
-        deltaY = -height;
+        deltaX = -width - a;
+        deltaY = -height + b;
       } else {
-        deltaY = -height;
+        deltaX = -a;
+        deltaY = -height + b;
       }
       setDeltaValues({deltaX: deltaX, deltaY: deltaY})
     }
@@ -56,7 +62,8 @@ export const LocationLabel: React.FC<LocationLabelProps> = props => {
 
         <p>{props.subtitle}</p>
         <h4>{props.title}</h4>
-        <div className={`label-line ${props.orientation}`} style={lineStyle}/>
+        <div className={`label-line ${props.orientation}`}
+             style={lineStyle}/>
       </div>
     </div>
   )
