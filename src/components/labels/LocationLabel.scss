@@ -1,4 +1,19 @@
 .LocationLabel {
   position: absolute;
   text-align: left;
+
+  h4 {
+    border-bottom: $lineThin solid white;
+    margin: unset;
+    padding-bottom: 0.2em;
+  }
+
+  .label-line {
+    position: absolute;
+    border-bottom: $lineThin solid white;
+
+    &.right {
+      right: 0;
+    }
+  }
 }

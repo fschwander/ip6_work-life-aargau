@@ -15,18 +15,15 @@ export interface LocationLabelProps {
 
 export const LocationLabel: React.FC<LocationLabelProps> = props => {
   const lineHeight = 1;
-
-  const lineStyle = calcLineStyle(props.orientation,
-    props.lineRotation,
-    lineHeight,
-    props.lineLength)
+  const lineStyle = calcLineStyle(props.orientation, props.lineRotation, lineHeight, props.lineLength)
 
   return (
     <div className='LocationLabel'
          style={{left: `${props.posLeftInPct}%`, top: `${props.posTopInPct}%`}}>
+
       <p>{props.subtitle}</p>
-      <h3>{props.title}</h3>
-      <div className='label-line' style={lineStyle}/>
+      <h4>{props.title}</h4>
+      <div className={`label-line ${props.orientation}`} style={lineStyle}/>
     </div>
   )
 }

@@ -28,8 +28,8 @@ export const videoSlideData: Array<VideoSlideProps> = [
         posLeftInPct: 58,
         posTopInPct: 38,
         lineLength: 60,
-        lineRotation: 300,
-        orientation: 'left'
+        lineRotation: 40,
+        orientation: 'right'
 
       }
     ],

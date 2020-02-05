@@ -12,11 +12,7 @@ interface EntryLabelProps {
 
 export const EntryLabel: React.FC<EntryLabelProps> = props => {
   const lineHeight = 1;
-
-  const lineStyle = calcLineStyle(props.orientation,
-    props.lineRotation,
-    lineHeight,
-    props.lineLength)
+  const lineStyle = calcLineStyle(props.orientation, props.lineRotation, lineHeight, props.lineLength);
 
   return (
     <div className={`EntryLabel ${props.orientation}`} style={props.style}>
