@@ -4,6 +4,7 @@ import videoAarau1 from "../../../res/videos/aarau1.mp4";
 import videoAarau2 from "../../../res/videos/aarau2.mp4";
 import {hikingTrails} from "./hikingTrails";
 import {mammut} from "./mammut";
+import castleIcon from "../../../res/icons/castle.svg"
 import {ReactComponent as svgRuine} from "../../../res/videos/baden1-ruine.svg";
 import {ReactComponent as svgStairs} from "../../../res/videos/baden2-stairways.svg";
 import {ReactComponent as svgRoof} from "../../../res/videos/baden1-roof.svg";
@@ -23,8 +24,8 @@ export const videoSlideData: Array<VideoSlideProps> = [
       {
         subtitle: 'Lokales Highlight',
         title: 'Ruine Stein',
-        svgComponent: svgTower,
-        iconSrc: '',
+        svgComponent: svgRuine,
+        iconSrc: castleIcon,
         posLeftInPct: 58,
         posTopInPct: 38,
         lineLength: 60,

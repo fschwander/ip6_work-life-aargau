@@ -2,10 +2,19 @@
   position: absolute;
   text-align: left;
 
+  p {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+  }
+
   h4 {
     border-bottom: $lineThin solid white;
     margin: unset;
     padding-bottom: 0.2em;
+  }
+
+  .RoundButton {
+    border-width: 1px;
   }
 
   .label-line {
