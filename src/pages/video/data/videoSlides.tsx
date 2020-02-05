@@ -11,6 +11,7 @@ import {ReactComponent as svgRuine} from "../../../res/videos/baden1-ruine.svg";
 import {ReactComponent as svgStairs} from "../../../res/videos/baden2-stairways.svg";
 import {ReactComponent as svgRoof} from "../../../res/videos/baden1-roof.svg";
 import {ReactComponent as svgTower} from "../../../res/videos/baden1-tower.svg";
+import {ReactComponent as svgBridge} from "../../../res/videos/baden3-bridge.svg";
 import {VideoSlideProps} from "../VideoSlide";
 import {lafargeHolcim} from "./lafargeHolcim";
 
@@ -115,15 +116,15 @@ export const videoSlides: Array<VideoSlideProps> = [
     isMainPoint: true,
     hoverPoints: [
       {
-        title: 'Kultur & Geschichte',
-        subtitle: 'Historische Highlights',
+        title: 'Holzbrücke',
+        subtitle: 'lokales Highlight',
         className: 'culture-and-history',
         overlayData: hikingTrails,
-        svgComponent: svgRoof,
-        translateX: 0,
-        translateY: 0,
-        hoverPointPosLeft: 0,
-        hoverPointPosTop: 0,
+        svgComponent: svgBridge,
+        translateX: -20,
+        translateY: -35,
+        hoverPointPosLeft: -30,
+        hoverPointPosTop: -35,
         lineLength: 60,
         lineRotation: 70,
         orientation: 'right'
