@@ -1,6 +1,6 @@
-export class LineRotationService {
+export function calcLineStyle(orientation: string, deg: number, lineHeight: number, lineLength: number) {
 
-  static getLineTransform = (orientation:string, deg: number, lineHeight: number): number => {
+  const getLineTransform = (orientation: string, deg: number, lineHeight: number): number => {
 
     if (deg < 0 || deg > 360) {
       console.warn('Line rotation should be between 0 an 360 but was', deg, 'degrees');
@@ -32,7 +32,7 @@ export class LineRotationService {
     }
   }
 
-  static getTransformOrigin = (orientation:string, deg: number): string => {
+  const getTransformOrigin = (orientation: string, deg: number): string => {
     switch (orientation) {
       case 'left':
         if (deg <= 90) {
@@ -59,20 +59,18 @@ export class LineRotationService {
     }
   }
 
-  static getRealLineRotation = (orientation:string, deg: number): number => {
+  const getRealLineRotation = (orientation: string, deg: number): number => {
     return (orientation === 'left' ? deg : deg + 180) % 360 * -1;
   }
 
-  static calcLineStyle = (orientation: string, deg: number, lineHeight: number, lineLength: number) => {
-    const lineTranslate = LineRotationService.getLineTransform(orientation, deg, lineHeight);
-    const lineTransformOrigin = LineRotationService.getTransformOrigin(orientation, deg);
-    const realLineRotation = LineRotationService.getRealLineRotation(orientation, deg);
 
-    return {
-      width: `${lineLength}px`,
-      transform: `translateY(${lineTranslate}px) rotate(${realLineRotation}deg)`,
-      transformOrigin: lineTransformOrigin
-    }
+  const lineTranslate = getLineTransform(orientation, deg, lineHeight);
+  const lineTransformOrigin = getTransformOrigin(orientation, deg);
+  const realLineRotation = getRealLineRotation(orientation, deg);
+
+  return {
+    width: `${lineLength}px`,
+    transform: `translateY(${lineTranslate}px) rotate(${realLineRotation}deg)`,
+    transformOrigin: lineTransformOrigin
   }
-
 }

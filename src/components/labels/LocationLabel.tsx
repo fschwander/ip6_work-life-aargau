@@ -1,5 +1,5 @@
 import React from 'react';
-import {LineRotationService} from "../../services/LineRotationService";
+import {calcLineStyle} from '../../services/lineRotationService';
 
 export interface LocationLabelProps {
   subtitle: string,
@@ -14,8 +14,12 @@ export interface LocationLabelProps {
 }
 
 export const LocationLabel: React.FC<LocationLabelProps> = props => {
+  const lineHeight = 1;
 
-  const lineStyle = LineRotationService.calcLineStyle(props.orientation,props.lineRotation,1, props.lineLength);
+  const lineStyle = calcLineStyle(props.orientation,
+    props.lineRotation,
+    lineHeight,
+    props.lineLength)
 
   return (
     <div className='LocationLabel'

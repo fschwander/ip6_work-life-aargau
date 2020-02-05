@@ -98,8 +98,8 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
 
                   <EntryLabel text={d.title}
                               subtitle={d.subtitle}
-                              lineWidth={d.lineLength}
-                              lineRotationInDeg={d.lineRotation}
+                              lineLength={d.lineLength}
+                              lineRotation={d.lineRotation}
                               orientation={d.orientation}
                               style={getTransitionStyles(i, 2)}/>
                 </div>
