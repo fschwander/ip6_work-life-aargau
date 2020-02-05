@@ -1,7 +1,5 @@
 import React from 'react';
 import iconLink from '../../../res/icons/link.svg';
-import imgHikingTrails from '../../../res/imgs/ol_hikingtrails.jpg';
-import imgDetails2 from '../../../res/imgs/ol_mammut2.jpg';
 import {Constants} from '../../../services/Constants';
 import {PlaceholderChart, VideoOverlayInterface} from "./VideoOverlayInterface";
 import imgRealEstate from '../../../res/imgs/ol_real-estate.png'
