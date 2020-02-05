@@ -72,7 +72,7 @@ export const VideoOverlay: React.FC<Props> = props => {
               data.details[activeDetail].linkIcon !== undefined ?
                 <RoundButton onClick={() => window.open(data.details[activeDetail].linkIcon!.link, '_blank')}
                              icon={data.details[activeDetail].linkIcon!.icon}
-                             size='1.2rem'/> : null
+                             size='1.4rem'/> : null
             }
           </div>
           {
