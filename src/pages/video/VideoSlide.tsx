@@ -3,7 +3,7 @@ import {AnimatedSVG} from '../../components/containers/AnimatedSVG';
 import {BackgroundVideo} from '../../components/containers/BackgroundVideo';
 import {PopupContainer} from '../../components/containers/PopupContainer';
 import {EntryLabel} from '../../components/labels/EntryLabel';
-import {LocationLabel} from '../../components/labels/LocationLabel';
+import {CurrentLocationDescription} from '../../components/containers/CurrentLocationDescription';
 import {VideoOverlayInterface} from './data/VideoOverlayInterface';
 import {HoverPoint} from "../../components/buttons/HoverPoint";
 import {VideoOverlay} from "./VideoOverlay";
@@ -33,7 +33,7 @@ interface HoverPointItems {
 }
 
 export const VideoSlide: React.FC<VideoSlideProps> = props => {
-  const [animationStarted, setAnimationStarted] = useState(false);
+  const [animationStarted, setAnimationStarted] = useState(true); // todo: set to false
   const [popupComponent, setPopupContainer] = useState();
 
   const animationStaggerInSec: number = 3;
@@ -101,7 +101,7 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
         </div>
       </BackgroundVideo>
 
-      <LocationLabel title={props.title}/>
+      <CurrentLocationDescription title={props.title}/>
 
       {popupComponent !== undefined ?
         <PopupContainer onCloseButtonClicked={closeOverlay}>

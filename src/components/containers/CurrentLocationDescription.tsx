@@ -7,7 +7,7 @@ interface LocationLabelProps {
   title: string
 }
 
-export const LocationLabel: React.FC<LocationLabelProps> = props => {
+export const CurrentLocationDescription: React.FC<LocationLabelProps> = props => {
 
   const getLocalTime = (): string => {
     let date = new Date();
@@ -24,7 +24,7 @@ export const LocationLabel: React.FC<LocationLabelProps> = props => {
   }, []);
 
   return (
-    <div className='LocationLabel'>
+    <div className='CurrentLocationDescription'>
       <h2>{props.title}</h2>
       <div className='horizontal-container'>
         <div className='icon-container'>
