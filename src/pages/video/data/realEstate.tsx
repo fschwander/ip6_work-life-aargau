@@ -4,19 +4,29 @@ import imgHikingTrails from '../../../res/imgs/ol_hikingtrails.jpg';
 import imgDetails2 from '../../../res/imgs/ol_mammut2.jpg';
 import {Constants} from '../../../services/Constants';
 import {PlaceholderChart, VideoOverlayInterface} from "./VideoOverlayInterface";
-import imgRealEstate from '../../../res/imgs/ol_real-estate.jpg'
-import iconRealEstate from '../../../res/imgs/ol_real-estate.svg'
+import imgRealEstate from '../../../res/imgs/ol_real-estate.png'
+import imgRealEstate2 from '../../../res/imgs/ol_real-estate2.png'
+import imgRealEstate3 from '../../../res/imgs/ol_real-estate3.png'
+import iconRealEstate from '../../../res/icons/realestate.svg'
 
 export const realEstate: VideoOverlayInterface = {
   type: Constants.TYPE_LIFE,
   header: {
     title: "Gewerbeimmobilien & Areale",
-    text: "Der Aargau ist ein perfekter Standort für Ihr Unternehmen zu vergleichsweise günstigen Preisen.",
+    text: "Ein perfekter Standort für Unternehmen zu vergleichsweise günstigen Preisen. Suchst du Bauland, eine Liegenschaft, Büroräumlichkeiten oder ein sonstiges Miet- oder Kaufobjekt für gewerbliche Zwecke? Die Standortförderung kennt die interessanten Gewerbeflächen im Kanton Aargau.",
     items: [
+      {
+        text: "Angebot",
+        value: "Bauland, Liegenschaft, Kaufobjekt"
+      },
       {
         text: "Bezugsbereite Immobilien",
         value: "in mehr als 9 Städten"
-      }
+      },
+      {
+        text: "Zukunftsprojekte",
+        value: "mehr als 10"
+      },
     ]
   },
 
@@ -24,10 +34,6 @@ export const realEstate: VideoOverlayInterface = {
     {
       icon: iconRealEstate,
       text: "Immobilien"
-    },
-    {
-      icon: "",
-      text: ""
     }
   ],
 
@@ -37,6 +43,24 @@ export const realEstate: VideoOverlayInterface = {
   },
 
   details: [
+    {
+      image: imgRealEstate2,
+      title: "Technopark Glattacher",
+      linkIcon: {
+        icon: iconLink,
+        link: 'https://www.ag.ch/media/de/kanton_aargau/dvi/dokumente_5/awa_2/aargau_services_1/immobilien_und_areale_technopark_glattacher.pdf'
+      },
+      items: [
+        {
+          text: "Zweck",
+          value: "Büro-, Verkaufs- und Hallenflächen"
+        },
+        {
+          text: "Ort",
+          value: "Etzgen"
+        }
+      ]
+    },
     {
       image: imgRealEstate,
       title: "Gewerbhaus Oberentfelden",
@@ -56,16 +80,20 @@ export const realEstate: VideoOverlayInterface = {
       ]
     },
     {
-      image: imgDetails2,
-      title: "Waste no waste",
+      image: imgRealEstate3,
+      title: "Wetter Immobilien",
       linkIcon: {
         icon: iconLink,
-        link: 'https://www.mammut.com/ch/de/stories/mammut-praesentiert-t-shirts-aus-leftover-stoffen/'
+        link: 'https://www.ag.ch/media/kanton_aargau/dvi/dokumente_5/awa_2/aargau_services_1/Immobilien_Kinziggraben_Gebenstorf-2.pdf'
       },
       items: [
         {
-          text: "Kampagne",
-          value: "Produkte aus Reststücken"
+          text: "Zweck",
+          value: "Büro-/Gewerbeflächen"
+        },
+        {
+          text: "Ort",
+          value: "Gebensdorf"
         }
       ]
     }
