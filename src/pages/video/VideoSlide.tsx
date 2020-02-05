@@ -7,16 +7,18 @@ import {CurrentLocationDescription} from '../../components/containers/CurrentLoc
 import {VideoOverlayInterface} from './data/VideoOverlayInterface';
 import {HoverPoint} from "../../components/buttons/HoverPoint";
 import {VideoOverlay} from "./VideoOverlay";
+import {LocationLabel, LocationLabelProps} from "../../components/labels/LocationLabel";
 
 export interface VideoSlideProps {
   className: string,
   title: string,
   isMainPoint: boolean,
   videoSrc: string,
-  hoverPoints: Array<HoverPointItems>
+  locationPoints: Array<LocationLabelProps>
+  hoverPoints: Array<HoverPointItem>
 }
 
-interface HoverPointItems {
+interface HoverPointItem {
   title: string,
   subtitle: string,
   className: string,
@@ -66,6 +68,12 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
 
         <div className={`anim-group-container`}>
 
+          {props.locationPoints.map((d, i) => {
+            return <div className='anim-group' key={i}>
+              <LocationLabel {...d}/>
+            </div>
+          })}
+
           {props.hoverPoints.map((d, i) => {
             const hoverPointTransitionStyles = getTransitionStyles(i, 0)
 
@@ -75,6 +83,7 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
                 <AnimatedSVG svgComponent={d.svgComponent}
                              isActive={animationStarted}
                              animationDelay={i * animationStaggerInSec}/>
+
 
                 <div className={`label-container ${d.className}`}
                      style={{left: `${d.posLeftInPct}%`, top: `${d.posTopInPct}%`}}>

@@ -11,7 +11,7 @@ import {ReactComponent as svgTower} from "../../../res/videos/baden1-tower.svg";
 import {VideoSlideProps} from "../VideoSlide";
 import {lafargeHolcim} from "./lafargeHolcim";
 
-export const videoSlides: Array<VideoSlideProps> = [
+export const videoSlideData: Array<VideoSlideProps> = [
 
   // SEQUENCE 1
   {
@@ -19,6 +19,20 @@ export const videoSlides: Array<VideoSlideProps> = [
     title: 'Die Stadt Baden',
     videoSrc: videoBaden,
     isMainPoint: true,
+    locationPoints: [
+      {
+        subtitle: 'Lokales Highlight',
+        title: 'Ruine Stein',
+        svgComponent: svgTower,
+        iconSrc: '',
+        posLeftInPct: 58,
+        posTopInPct: 38,
+        lineLength: 60,
+        lineRotation: 300,
+        orientation: 'left'
+
+      }
+    ],
     hoverPoints: [
       {
         title: 'Turm: Baumaterialien',
@@ -48,21 +62,6 @@ export const videoSlides: Array<VideoSlideProps> = [
         lineLength: 60,
         lineRotation: 300,
         orientation: 'right'
-      },
-      {
-        title: 'Kultur & Geschichte',
-        subtitle: 'Historische Highlights',
-        className: 'culture-and-history',
-        overlayData: hikingTrails,
-        svgComponent: svgRuine,
-        posLeftInPct: 58,
-        posTopInPct: 38,
-        hoverPointPosLeft: 50,
-        hoverPointPosTop: -50,
-        display: 'none',
-        lineLength: 60,
-        lineRotation: 70,
-        orientation: 'right'
       }
     ]
   },
@@ -73,6 +72,9 @@ export const videoSlides: Array<VideoSlideProps> = [
     title: 'Die Stadt Baden',
     isMainPoint: false,
     videoSrc: videoBaden2,
+    locationPoints: [
+
+    ],
     hoverPoints: [
       {
         title: 'Sport & Freizeit',
@@ -111,6 +113,9 @@ export const videoSlides: Array<VideoSlideProps> = [
     title: 'Die Stadt Aarau',
     videoSrc: videoAarau1,
     isMainPoint: true,
+    locationPoints: [
+
+    ],
     hoverPoints: [
       {
         title: 'Kultur & Geschichte',
@@ -135,6 +140,9 @@ export const videoSlides: Array<VideoSlideProps> = [
     title: 'Die Stadt Aarau',
     isMainPoint: false,
     videoSrc: videoAarau2,
+    locationPoints: [
+
+    ],
     hoverPoints: [
       {
         title: 'Kultur & Geschichte',
