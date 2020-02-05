@@ -40,13 +40,9 @@ export const videoSlideData: Array<VideoSlideProps> = [
         className: 'cie-lafarge-holcim',
         overlayData: lafargeHolcim,
         svgComponent: svgTower,
-        posLeftInPct: 63,
-        posTopInPct: 65,
-        hoverPointPosLeft: 40,
-        hoverPointPosTop: -40,
-        lineLength: 85,
-        lineRotation: 70,
-        orientation: 'right',
+        posLeftInPct: 68,
+        posTopInPct: 60,
+        orientation: 'left',
       },
       {
         title: 'Aargauer Vorteile',
@@ -54,13 +50,8 @@ export const videoSlideData: Array<VideoSlideProps> = [
         className: 'hiking-trails',
         overlayData: hikingTrails,
         svgComponent: svgRoof,
-        posLeftInPct: 31,
-        posTopInPct: 52,
-        hoverPointPosLeft: 40,
-        hoverPointPosTop: 50,
-        display: 'none',
-        lineLength: 60,
-        lineRotation: 300,
+        posLeftInPct: 26,
+        posTopInPct: 61,
         orientation: 'right'
       }
     ]
@@ -84,10 +75,6 @@ export const videoSlideData: Array<VideoSlideProps> = [
         svgComponent: svgStairs,
         posLeftInPct: 28,
         posTopInPct: 44,
-        hoverPointPosLeft: -30,
-        hoverPointPosTop: -40,
-        lineLength: 160,
-        lineRotation: 310,
         orientation: 'right'
       },
       {
@@ -98,10 +85,6 @@ export const videoSlideData: Array<VideoSlideProps> = [
         svgComponent: svgStairs,
         posLeftInPct: 62,
         posTopInPct: 47,
-        hoverPointPosLeft: 170,
-        hoverPointPosTop: -20,
-        lineLength: 170,
-        lineRotation: 235,
         orientation: 'left'
       }
     ]
@@ -125,10 +108,6 @@ export const videoSlideData: Array<VideoSlideProps> = [
         svgComponent: svgRoof,
         posLeftInPct: 0,
         posTopInPct: 0,
-        hoverPointPosLeft: 0,
-        hoverPointPosTop: 0,
-        lineLength: 60,
-        lineRotation: 70,
         orientation: 'right'
       },
     ]
@@ -152,10 +131,6 @@ export const videoSlideData: Array<VideoSlideProps> = [
         svgComponent: svgTower,
         posLeftInPct: 0,
         posTopInPct: 0,
-        hoverPointPosLeft: 0,
-        hoverPointPosTop: 0,
-        lineLength: 60,
-        lineRotation: 210,
         orientation: 'right'
       },
     ]

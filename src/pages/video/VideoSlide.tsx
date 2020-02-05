@@ -1,14 +1,10 @@
-import React, {CSSProperties, FunctionComponent, SVGProps, useState} from 'react';
+import React, {CSSProperties, useState} from 'react';
 import {AnimatedSVG} from '../../components/containers/AnimatedSVG';
 import {BackgroundVideo} from '../../components/containers/BackgroundVideo';
 import {PopupContainer} from '../../components/containers/PopupContainer';
-import {EntryLabel} from '../../components/labels/EntryLabel';
 import {CurrentLocationDescription} from '../../components/containers/CurrentLocationDescription';
-import {VideoOverlayInterface} from './data/VideoOverlayInterface';
-import {HoverPoint} from "../../components/buttons/HoverPoint";
-import {VideoOverlay} from "./VideoOverlay";
 import {PoiLabel, PoiLabelProps} from "../../components/labels/PoiLabel";
-import {InfoLabelProps} from "../../components/labels/InfoLabel";
+import {InfoLabel, InfoLabelProps} from "../../components/labels/InfoLabel";
 
 export interface VideoSlideProps {
   className: string,
@@ -71,27 +67,7 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
                 <AnimatedSVG svgComponent={d.svgComponent}
                              isActive={animationStarted}
                              animationDelay={i * animationStaggerInSec}/>
-
-
-                <div className={`label-container ${d.className}`}
-                     style={{left: `${d.posLeftInPct}%`, top: `${d.posTopInPct}%`}}>
-
-                  <HoverPoint onClick={() => openOverlay(<VideoOverlay data={d.overlayData}/>)}
-                              style={{
-                                ...hoverPointTransitionStyles,
-                                left: `${d.hoverPointPosLeft}px`,
-                                top: `${d.hoverPointPosTop}px`,
-                                display: `${d.display}`
-                              }}/>
-
-                  <EntryLabel text={d.title}
-                              subtitle={d.subtitle}
-                              lineLength={d.lineLength}
-                              lineRotation={d.lineRotation}
-                              orientation={d.orientation}
-                              style={getTransitionStyles(i, 2)}/>
-                </div>
-
+                <InfoLabel {...d}/>
               </div>
             )
           })}

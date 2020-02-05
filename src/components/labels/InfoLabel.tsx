@@ -1,5 +1,6 @@
 import React, {FunctionComponent, SVGProps} from "react";
 import {VideoOverlayInterface} from "../../pages/video/data/VideoOverlayInterface";
+import {HoverPoint} from "../buttons/HoverPoint";
 
 export interface InfoLabelProps {
   title: string,
@@ -7,21 +8,21 @@ export interface InfoLabelProps {
   className: string,
   overlayData: VideoOverlayInterface,
   svgComponent: FunctionComponent<SVGProps<SVGSVGElement>>,
-  lineLength: number,
-  lineRotation: number,
   orientation: string,
   posLeftInPct: number,
   posTopInPct: number,
-  hoverPointPosLeft: number,
-  hoverPointPosTop: number,
-  display?: string
 }
 
 export const InfoLabel: React.FC<InfoLabelProps> = props => {
 
-  return(
-    <div className='InfoLabel'>
+  return (
+    <div className={`InfoLabel label-container ${props.className} ${props.orientation}`}
+         style={{left: `${props.posLeftInPct}%`, top: `${props.posTopInPct}%`}}>
 
+      <HoverPoint onClick={() => console.log('clicked')}/>
+
+      <p>{props.subtitle}</p>
+      <h4>{props.title}</h4>
     </div>
   )
 }

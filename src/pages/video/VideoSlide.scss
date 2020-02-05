@@ -4,18 +4,6 @@
   align-items: center;
 
   .anim-group-container {
-
-    .anim-group {
-
-      .label-container {
-        position: absolute;
-      }
-    }
-
-    .HoverPoint {
-      position: absolute;
-    }
-
     &.hide {
       opacity: 0;
     }
