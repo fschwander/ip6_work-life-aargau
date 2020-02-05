@@ -1,4 +1,4 @@
-import React, {createRef, FunctionComponent, SVGProps, useEffect, useState} from 'react';
+import React, {createRef, CSSProperties, FunctionComponent, SVGProps, useEffect, useState} from 'react';
 import {calcLineStyle} from '../../services/lineRotationService';
 import {RoundButton} from "../buttons/RoundButton";
 
@@ -11,7 +11,8 @@ export interface PoiLabelProps {
   posTopInPct: number,
   lineLength: number,
   lineRotation: number,
-  orientation: string
+  orientation: string,
+  hoverPointStyles?: CSSProperties
 }
 
 export const PoiLabel: React.FC<PoiLabelProps> = props => {
@@ -53,7 +54,7 @@ export const PoiLabel: React.FC<PoiLabelProps> = props => {
          style={{left: `${props.posLeftInPct}%`, top: `${props.posTopInPct}%`}}>
 
       <div className='transition-container' ref={containerRef}
-           style={{left: deltaValues.deltaX, top: deltaValues.deltaY}}>
+           style={{...props.hoverPointStyles, left: deltaValues.deltaX, top: deltaValues.deltaY}}>
 
         <RoundButton size='2.5em'
                      borderWidth={1}

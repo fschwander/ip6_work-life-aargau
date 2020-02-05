@@ -16,7 +16,7 @@ export interface VideoSlideProps {
 }
 
 export const VideoSlide: React.FC<VideoSlideProps> = props => {
-  const [animationStarted, setAnimationStarted] = useState(true); // todo: set to false
+  const [animationStarted, setAnimationStarted] = useState(false);
   const [popupComponent, setPopupContainer] = useState();
 
   const animationStaggerInSec: number = 3;
@@ -50,24 +50,26 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
         <div className={`anim-group-container`}>
 
           {props.locationPoints.map((d, i) => {
+            const hoverPointStyles = getTransitionStyles(i, 0)
+
             return <div className='anim-group' key={i}>
               <AnimatedSVG svgComponent={d.svgComponent}
                            isActive={animationStarted}
                            animationDelay={i * animationStaggerInSec}/>
-              <PoiLabel {...d}/>
+              <PoiLabel {...d} hoverPointStyles={hoverPointStyles}/>
             </div>
           })}
 
           {props.hoverPoints.map((d, i) => {
-            const hoverPointTransitionStyles = getTransitionStyles(i, 0)
+            let prevIndex = props.locationPoints.length;
+            const hoverPointStyles = getTransitionStyles(prevIndex + i, 0)
 
             return (
               <div className={`anim-group`} key={d.className + i}>
-
                 <AnimatedSVG svgComponent={d.svgComponent}
                              isActive={animationStarted}
-                             animationDelay={i * animationStaggerInSec}/>
-                <InfoLabel {...d}/>
+                             animationDelay={(prevIndex + i) * animationStaggerInSec}/>
+                <InfoLabel {...d} hoverPointStyles={hoverPointStyles}/>
               </div>
             )
           })}
