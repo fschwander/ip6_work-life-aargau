@@ -3,6 +3,7 @@ import videoBaden2 from "../../../res/videos/baden2.mp4";
 import videoBaden3 from "../../../res/videos/baden3.mp4";
 import videoAarau1 from "../../../res/videos/aarau1.mp4";
 import videoAarau2 from "../../../res/videos/aarau2.mp4";
+import {culture} from './culture';
 import {hikingTrails} from "./hikingTrails";
 import {mammut} from "./mammut";
 import {realEstate} from "./realEstate";
@@ -26,7 +27,7 @@ export const videoSlides: Array<VideoSlideProps> = [
         title: 'Kultur & Geschichte',
         subtitle: 'Historische Highlights',
         className: 'culture-and-history',
-        overlayData: hikingTrails,
+        overlayData: culture,
         svgComponent: svgTower,
         translateX: 390,
         translateY: 180,
