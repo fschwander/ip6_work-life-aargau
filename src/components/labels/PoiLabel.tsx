@@ -2,7 +2,7 @@ import React, {createRef, FunctionComponent, SVGProps, useEffect, useState} from
 import {calcLineStyle} from '../../services/lineRotationService';
 import {RoundButton} from "../buttons/RoundButton";
 
-export interface PoiLabelWithPointerProps {
+export interface PoiLabelProps {
   subtitle: string,
   title: string,
   svgComponent: FunctionComponent<SVGProps<SVGSVGElement>>,
@@ -14,7 +14,7 @@ export interface PoiLabelWithPointerProps {
   orientation: string
 }
 
-export const PoiLabelWithPointer: React.FC<PoiLabelWithPointerProps> = props => {
+export const PoiLabel: React.FC<PoiLabelProps> = props => {
   const [deltaValues, setDeltaValues] = useState({deltaX: 0, deltaY: 0})
   const containerRef: React.RefObject<HTMLDivElement> = createRef();
 
@@ -49,7 +49,7 @@ export const PoiLabelWithPointer: React.FC<PoiLabelWithPointerProps> = props => 
   }, []);
 
   return (
-    <div className='PoiLabelWithPointer'
+    <div className='PoiLabel'
          style={{left: `${props.posLeftInPct}%`, top: `${props.posTopInPct}%`}}>
 
       <div className='transition-container' ref={containerRef}

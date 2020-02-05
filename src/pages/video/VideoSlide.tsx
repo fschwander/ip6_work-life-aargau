@@ -7,31 +7,16 @@ import {CurrentLocationDescription} from '../../components/containers/CurrentLoc
 import {VideoOverlayInterface} from './data/VideoOverlayInterface';
 import {HoverPoint} from "../../components/buttons/HoverPoint";
 import {VideoOverlay} from "./VideoOverlay";
-import {PoiLabelWithPointer, PoiLabelWithPointerProps} from "../../components/labels/PoiLabelWithPointer";
+import {PoiLabel, PoiLabelProps} from "../../components/labels/PoiLabel";
+import {InfoLabelProps} from "../../components/labels/InfoLabel";
 
 export interface VideoSlideProps {
   className: string,
   title: string,
   isMainPoint: boolean,
   videoSrc: string,
-  locationPoints: Array<PoiLabelWithPointerProps>
-  hoverPoints: Array<HoverPointItem>
-}
-
-interface HoverPointItem {
-  title: string,
-  subtitle: string,
-  className: string,
-  overlayData: VideoOverlayInterface,
-  svgComponent: FunctionComponent<SVGProps<SVGSVGElement>>,
-  lineLength: number,
-  lineRotation: number,
-  orientation: string,
-  posLeftInPct: number,
-  posTopInPct: number,
-  hoverPointPosLeft: number,
-  hoverPointPosTop: number,
-  display?: string
+  locationPoints: Array<PoiLabelProps>
+  hoverPoints: Array<InfoLabelProps>
 }
 
 export const VideoSlide: React.FC<VideoSlideProps> = props => {
@@ -70,7 +55,10 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
 
           {props.locationPoints.map((d, i) => {
             return <div className='anim-group' key={i}>
-              <PoiLabelWithPointer {...d}/>
+              <AnimatedSVG svgComponent={d.svgComponent}
+                           isActive={animationStarted}
+                           animationDelay={i * animationStaggerInSec}/>
+              <PoiLabel {...d}/>
             </div>
           })}
 
