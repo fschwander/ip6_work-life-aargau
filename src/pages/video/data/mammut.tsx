@@ -21,7 +21,7 @@ export const mammut: VideoOverlayInterface = {
         value: "1862"
       }, {
         text: "Offene Stellen",
-        value: "viele!",
+        value: "6",
         linkIcon: {
           icon: iconLink,
           link: 'https://www.mammut.com/ch/de/company/jobs/'
