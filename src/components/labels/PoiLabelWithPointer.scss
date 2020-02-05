@@ -1,4 +1,4 @@
-.LocationLabel {
+.PoiLabelWithPointer {
   position: absolute;
   text-align: left;
 
@@ -7,12 +7,14 @@
     white-space: nowrap;
 
     p {
+      font-size: 0.8rem;
       text-transform: uppercase;
-      font-size: 0.7rem;
     }
 
     h4 {
+      font-size: 0.9rem;
       border-bottom: $lineThin solid white;
+      font-weight: 800;
       margin: unset;
       padding-bottom: 0.2em;
     }

@@ -1,12 +1,12 @@
-import React, {createRef, useEffect, useState} from 'react';
+import React, {createRef, FunctionComponent, SVGProps, useEffect, useState} from 'react';
 import {calcLineStyle} from '../../services/lineRotationService';
 import {RoundButton} from "../buttons/RoundButton";
 
-export interface LocationLabelProps {
+export interface PoiLabelWithPointerProps {
   subtitle: string,
   title: string,
-  svgComponent: any,
-  iconSrc: any,
+  svgComponent: FunctionComponent<SVGProps<SVGSVGElement>>,
+  iconSrc: string,
   posLeftInPct: number,
   posTopInPct: number,
   lineLength: number,
@@ -14,7 +14,7 @@ export interface LocationLabelProps {
   orientation: string
 }
 
-export const LocationLabel: React.FC<LocationLabelProps> = props => {
+export const PoiLabelWithPointer: React.FC<PoiLabelWithPointerProps> = props => {
   const [deltaValues, setDeltaValues] = useState({deltaX: 0, deltaY: 0})
   const containerRef: React.RefObject<HTMLDivElement> = createRef();
 
@@ -49,13 +49,13 @@ export const LocationLabel: React.FC<LocationLabelProps> = props => {
   }, []);
 
   return (
-    <div className='LocationLabel'
+    <div className='PoiLabelWithPointer'
          style={{left: `${props.posLeftInPct}%`, top: `${props.posTopInPct}%`}}>
 
       <div className='transition-container' ref={containerRef}
            style={{left: deltaValues.deltaX, top: deltaValues.deltaY}}>
 
-        <RoundButton size='2em'
+        <RoundButton size='2.5em'
                      borderWidth={1}
                      icon={props.iconSrc}
                      onClick={() => console.log('clicked')}/>

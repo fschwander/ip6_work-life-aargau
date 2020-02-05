@@ -1,4 +1,4 @@
-import React, {CSSProperties, useState} from 'react';
+import React, {CSSProperties, FunctionComponent, SVGProps, useState} from 'react';
 import {AnimatedSVG} from '../../components/containers/AnimatedSVG';
 import {BackgroundVideo} from '../../components/containers/BackgroundVideo';
 import {PopupContainer} from '../../components/containers/PopupContainer';
@@ -7,14 +7,14 @@ import {CurrentLocationDescription} from '../../components/containers/CurrentLoc
 import {VideoOverlayInterface} from './data/VideoOverlayInterface';
 import {HoverPoint} from "../../components/buttons/HoverPoint";
 import {VideoOverlay} from "./VideoOverlay";
-import {LocationLabel, LocationLabelProps} from "../../components/labels/LocationLabel";
+import {PoiLabelWithPointer, PoiLabelWithPointerProps} from "../../components/labels/PoiLabelWithPointer";
 
 export interface VideoSlideProps {
   className: string,
   title: string,
   isMainPoint: boolean,
   videoSrc: string,
-  locationPoints: Array<LocationLabelProps>
+  locationPoints: Array<PoiLabelWithPointerProps>
   hoverPoints: Array<HoverPointItem>
 }
 
@@ -23,7 +23,7 @@ interface HoverPointItem {
   subtitle: string,
   className: string,
   overlayData: VideoOverlayInterface,
-  svgComponent: any,
+  svgComponent: FunctionComponent<SVGProps<SVGSVGElement>>,
   lineLength: number,
   lineRotation: number,
   orientation: string,
@@ -70,7 +70,7 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
 
           {props.locationPoints.map((d, i) => {
             return <div className='anim-group' key={i}>
-              <LocationLabel {...d}/>
+              <PoiLabelWithPointer {...d}/>
             </div>
           })}
 
