@@ -8,7 +8,7 @@ interface SlideInContainerProps {
 
 export const SlideInContainer: React.FC<SlideInContainerProps> = props => {
 
-  return(
+  return (
     <div className='SlideInContainer'>
       <RoundButton onClick={props.onCloseButtonClicked} icon={closeIcon}/>
       <div className='content-container'>

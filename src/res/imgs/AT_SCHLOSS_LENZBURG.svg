@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="2000px" height="1591px" preserveAspectRatio="xMidYMid slice" viewBox="0 0 2000 1591" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="2000px" height="1591px" preserveAspectRatio="xMidYMid slice" viewBox="0 0 2000 1591" version="1.1"
+     xmlns="http://www.w3.org/2000/svg">
     <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
     <title>AT_SCHLOSS_LENZBURG</title>
     <desc>Created with Sketch.</desc>
@@ -12,196 +13,499 @@
     <g id="Intro-screen" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="AT_SCHLOSS_LENZBURG">
             <g id="Group-14" transform="translate(640.000000, 608.000000)">
-                <polyline id="Path-11" points="0.363461538 202.151672 0.363461538 159.57728 6.56362389 149.086562 13.4820125 149.086562 18.9062808 159.57728 18.9062808 168.625305 22.3558638 168.625305 22.3558638 82.7191515 22.3558638 63.3587761 17.743963 63.3587761 36.8374719 22.9431452 38.5058481 0.151671975 41.4634558 21.3085757 54.6595237 50.058339 53.889444 41.8040863 59.7986602 41.8040863 59.7986602 34.9285588 64.7300062 34.9285588 64.7300062 27.8769887 69.247407 27.8769887 69.247407 20.3625532 71.9835895 20.3625532 71.9835895 11.9240318 74.4301741 7.50651765 73.8608414 4.39624656 76.336285 5.6931846 77.8139175 1.23644453 79.6186545 3.15618276 82.2673165 3.54072758 78.528176 7.50651765 81.4861349 13.5113604 87.283742 13.5113604 87.283742 20.3625532 93.1945944 24.7372906 102.272481 24.7372906 102.272481 32.2626946 108.411557 32.2626946 108.411557 40.301967 113.156129 40.301967 113.156129 46.8248612 118.726117 46.8248612 118.726117 55.1076316 121.369039 55.1076316 121.369039 62.1772995 125.307244 62.1772995 125.307244 58.2621371 193.267344 58.2621371 188.415481 54.6173414 219.512399 54.6173414 234.644904 57.6209975 288.917805 57.4105498 289.065907 51.1633735 360.768857 51.397732 460.951573 51.397732 480.7345 76.6370484 484.363462 108.029233 480.7345 111.774332 297.81909 108.029233 289.065907 51.397732 289.065907 104.410585 121.369039 104.267627 123.892627 71.7500218 116.958388 71.7500218 116.958388 67.1412178 110.720553 67.1412178 110.720553 58.2621371 104.355404 58.2621371 104.355404 50.058339 99.6846242 50.058339 99.6846242 41.8040863 94.5019711 41.8040863 94.5019711 32.9824353 90.0177083 32.9824353 90.0177083 26.6245195 83.8935643 26.6245195 83.8935643 19.3921648 81.4861349 19.3921648 81.4861349 13.5113604"></polyline>
-                <line x1="146.016735" y1="56.4801842" x2="146.016228" y2="104.967393" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(146.016482, 80.723789) rotate(-20.000000) translate(-146.016482, -80.723789) "></line>
-                <line x1="153.552963" y1="56.3725637" x2="153.552451" y2="105.285413" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(153.552707, 80.828988) rotate(-20.000000) translate(-153.552707, -80.828988) "></line>
-                <line x1="160.170877" y1="56.3580418" x2="160.170367" y2="105.117775" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(160.170622, 80.737908) rotate(-20.000000) translate(-160.170622, -80.737908) "></line>
-                <line x1="166.681544" y1="56.2289489" x2="166.681032" y2="105.138933" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(166.681288, 80.683941) rotate(-20.000000) translate(-166.681288, -80.683941) "></line>
-                <line x1="173.232825" y1="56.3790792" x2="173.232315" y2="105.104055" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(173.232570, 80.741567) rotate(-20.000000) translate(-173.232570, -80.741567) "></line>
-                <line x1="180.88433" y1="56.3144297" x2="180.883817" y2="105.349004" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(180.884073, 80.831717) rotate(-20.000000) translate(-180.884073, -80.831717) "></line>
-                <line x1="187.400416" y1="56.2795785" x2="187.399903" y2="105.305704" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(187.400160, 80.792641) rotate(-20.000000) translate(-187.400160, -80.792641) "></line>
-                <line x1="195.072719" y1="56.4077477" x2="195.072206" y2="105.472128" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(195.072462, 80.939938) rotate(-20.000000) translate(-195.072462, -80.939938) "></line>
-                <line x1="200.913464" y1="52.3093249" x2="200.839264" y2="105.36352" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(200.876364, 78.836422) rotate(-20.000000) translate(-200.876364, -78.836422) "></line>
-                <line x1="197.363462" y1="55.151672" x2="216.363462" y2="104.151672" id="Path" stroke="#FFFFFF" stroke-width="0.5"></line>
-                <line x1="205.363462" y1="55.151672" x2="224.363462" y2="104.151672" id="Path" stroke="#FFFFFF" stroke-width="0.5"></line>
-                <line x1="212.363462" y1="55.151672" x2="231.363462" y2="104.151672" id="Path" stroke="#FFFFFF" stroke-width="0.5"></line>
-                <line x1="220.363462" y1="55.151672" x2="239.363462" y2="104.151672" id="Path" stroke="#FFFFFF" stroke-width="0.5"></line>
-                <line x1="228.363462" y1="57.151672" x2="247.363462" y2="104.151672" id="Path" stroke="#FFFFFF" stroke-width="0.5"></line>
-                <line x1="235.363462" y1="58.151672" x2="254.363462" y2="104.151672" id="Path" stroke="#FFFFFF" stroke-width="0.5"></line>
-                <line x1="242.363462" y1="59.151672" x2="261.363462" y2="104.151672" id="Path" stroke="#FFFFFF" stroke-width="0.5"></line>
-                <line x1="248.363462" y1="58.151672" x2="267.363462" y2="104.151672" id="Path" stroke="#FFFFFF" stroke-width="0.5"></line>
-                <line x1="256.363462" y1="58.151672" x2="275.363462" y2="104.151672" id="Path" stroke="#FFFFFF" stroke-width="0.5"></line>
-                <line x1="262.363462" y1="58.151672" x2="281.363462" y2="104.151672" id="Path" stroke="#FFFFFF" stroke-width="0.5"></line>
-                <line x1="269.363462" y1="58.151672" x2="288.363462" y2="104.151672" id="Path" stroke="#FFFFFF" stroke-width="0.5"></line>
-                <line x1="276.363462" y1="58.151672" x2="289.363462" y2="89.151672" id="Path" stroke="#FFFFFF" stroke-width="0.5"></line>
-                <line x1="283.363462" y1="57.151672" x2="289.363462" y2="75.151672" id="Path" stroke="#FFFFFF" stroke-width="0.5"></line>
-                <line x1="289.363462" y1="56.151672" x2="309.363462" y2="108.151672" id="Path" stroke="#FFFFFF" stroke-width="0.5"></line>
-                <line x1="295.363462" y1="52.151672" x2="317.363462" y2="108.151672" id="Path" stroke="#FFFFFF" stroke-width="0.5"></line>
-                <line x1="301.363462" y1="52.151672" x2="323.363462" y2="108.151672" id="Path" stroke="#FFFFFF" stroke-width="0.5"></line>
-                <line x1="309.363462" y1="52.151672" x2="331.363462" y2="108.151672" id="Path" stroke="#FFFFFF" stroke-width="0.5"></line>
-                <line x1="316.363462" y1="52.151672" x2="338.363462" y2="109.151672" id="Path" stroke="#FFFFFF" stroke-width="0.5"></line>
-                <line x1="323.363462" y1="51.151672" x2="345.363462" y2="108.151672" id="Path" stroke="#FFFFFF" stroke-width="0.5"></line>
-                <line x1="330.363462" y1="52.151672" x2="352.363462" y2="109.151672" id="Path" stroke="#FFFFFF" stroke-width="0.5"></line>
-                <line x1="336.363462" y1="52.151672" x2="358.363462" y2="109.151672" id="Path" stroke="#FFFFFF" stroke-width="0.5"></line>
-                <line x1="343.363462" y1="52.151672" x2="365.363462" y2="109.151672" id="Path" stroke="#FFFFFF" stroke-width="0.5"></line>
-                <line x1="350.363462" y1="52.151672" x2="372.363462" y2="109.151672" id="Path" stroke="#FFFFFF" stroke-width="0.5"></line>
-                <line x1="358.363462" y1="52.151672" x2="380.363462" y2="109.151672" id="Path" stroke="#FFFFFF" stroke-width="0.5"></line>
-                <line x1="375.472374" y1="49.289544" x2="375.471727" y2="111.094168" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(375.472051, 80.191856) rotate(-20.000000) translate(-375.472051, -80.191856) "></line>
-                <line x1="381.987197" y1="49.1675713" x2="381.986548" y2="111.131042" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(381.986873, 80.149307) rotate(-20.000000) translate(-381.986873, -80.149307) "></line>
-                <line x1="389.595109" y1="49.1798528" x2="389.594462" y2="111.059523" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(389.594786, 80.119688) rotate(-20.000000) translate(-389.594786, -80.119688) "></line>
-                <line x1="396.168733" y1="48.7426217" x2="396.168073" y2="111.734745" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(396.168403, 80.238683) rotate(-20.000000) translate(-396.168403, -80.238683) "></line>
-                <line x1="403.848134" y1="49.1401078" x2="403.847479" y2="111.670872" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(403.847807, 80.405490) rotate(-20.000000) translate(-403.847807, -80.405490) "></line>
-                <line x1="410.457936" y1="49.273197" x2="410.45728" y2="111.974611" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(410.457608, 80.623904) rotate(-20.000000) translate(-410.457608, -80.623904) "></line>
-                <line x1="417.07123" y1="49.3500459" x2="417.070571" y2="112.35377" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(417.070900, 80.851908) rotate(-20.000000) translate(-417.070900, -80.851908) "></line>
-                <line x1="424.514863" y1="48.9149866" x2="424.514205" y2="111.826855" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(424.514534, 80.370921) rotate(-20.000000) translate(-424.514534, -80.370921) "></line>
-                <line x1="431.157786" y1="48.9233467" x2="431.157121" y2="112.43731" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(431.157454, 80.680328) rotate(-20.000000) translate(-431.157454, -80.680328) "></line>
-                <line x1="438.760053" y1="49.1312678" x2="438.759394" y2="112.139141" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(438.759723, 80.635205) rotate(-20.000000) translate(-438.759723, -80.635205) "></line>
-                <line x1="445.335291" y1="49.0912356" x2="445.334629" y2="112.426062" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(445.334960, 80.758649) rotate(-20.000000) translate(-445.334960, -80.758649) "></line>
-                <line x1="451.904028" y1="49.0303486" x2="451.903362" y2="112.698109" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(451.903695, 80.864229) rotate(-20.000000) translate(-451.903695, -80.864229) "></line>
-                <line x1="459.672806" y1="49.4339042" x2="459.67214" y2="113.11929" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(459.672473, 81.276597) rotate(-20.000000) translate(-459.672473, -81.276597) "></line>
-                <line x1="466.100814" y1="48.9282744" x2="466.100143" y2="113.062757" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(466.100479, 80.995516) rotate(-20.000000) translate(-466.100479, -80.995516) "></line>
-                <line x1="473.849177" y1="52.0780356" x2="473.848564" y2="110.625709" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(473.848871, 81.351872) rotate(-20.000000) translate(-473.848871, -81.351872) "></line>
-                <line x1="479.25759" y1="69.6701628" x2="479.25741" y2="86.8698055" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(479.257500, 78.269984) rotate(-20.000000) translate(-479.257500, -78.269984) "></line>
-                <line x1="139.62435" y1="56.0114852" x2="139.623832" y2="105.530398" id="Path-8-Copy" stroke="#FFFFFF" stroke-width="0.5" transform="translate(139.624091, 80.770941) rotate(-20.000000) translate(-139.624091, -80.770941) "></line>
-                <line x1="126.127962" y1="83.8508814" x2="126.321664" y2="104.276319" id="Path" stroke="#FFFFFF" stroke-width="0.5" transform="translate(126.224813, 94.063600) rotate(-20.000000) translate(-126.224813, -94.063600) "></line>
-                <line x1="128.462621" y1="60.127959" x2="128.462149" y2="105.204302" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(128.462385, 82.666131) rotate(-20.000000) translate(-128.462385, -82.666131) "></line>
-                <line x1="134.316295" y1="56.4817826" x2="134.315786" y2="105.132183" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(134.316041, 80.806983) rotate(-20.000000) translate(-134.316041, -80.806983) "></line>
-                <polyline id="Path-11-Copy" stroke="#FFFFFF" stroke-width="2" fill="url(#linearGradient-1)" points="0.363461538 202.151672 0.363461538 159.57728 6.56362389 149.086562 13.4820125 149.086562 18.9062808 159.57728 18.9062808 168.625305 22.3558638 168.625305 22.3558638 82.7191515 22.3558638 63.3587761 17.743963 63.3587761 36.8374719 22.9431452 38.5058481 0.151671975 41.4634558 21.3085757 54.6595237 50.058339 53.889444 41.8040863 59.7986602 41.8040863 59.7986602 34.9285588 64.7300062 34.9285588 64.7300062 27.8769887 69.247407 27.8769887 69.247407 20.3625532 71.9835895 20.3625532 71.9835895 11.9240318 74.4301741 7.50651765 73.8608414 4.39624656 76.336285 5.6931846 77.8139175 1.23644453 79.6186545 3.15618276 82.2673165 3.54072758 78.528176 7.50651765 81.4861349 13.5113604 87.283742 13.5113604 87.283742 20.3625532 93.1945944 24.7372906 102.272481 24.7372906 102.272481 32.2626946 108.411557 32.2626946 108.411557 40.301967 113.156129 40.301967 113.156129 46.8248612 118.726117 46.8248612 118.726117 55.1076316 121.369039 55.1076316 121.369039 62.1772995 125.307244 62.1772995 125.307244 58.2621371 193.267344 58.2621371 188.69922 55.1076316 191.122828 51.397732 196.056068 37.9544841 211.165809 24.7372906 215.045841 2.47587121 218.877009 23.9843559 230.555735 32.2626946 236.84758 46.362656 240.51466 46.362656 240.51466 39.0072485 248.649785 39.0072485 248.649785 46.362656 252.458503 46.362656 252.458503 39.0072485 259.513017 39.0072485 259.513017 46.8248612 264.171234 46.8248612 264.171234 39.0072485 271.106561 39.0072485 271.106561 46.8248612 275.644601 46.8248612 275.644601 39.0072485 281.766414 39.0072485 285.530561 39.0072485 288.498033 33.7381142 289.065907 21.3085757 294.630081 15.8995497 297.81909 19.3921648 302.256396 13.5113604 303.727221 0.151671975 305.209338 13.5113604 327.961518 13.5113604 330.060521 0.704461169 331.423755 13.5113604 360.768857 51.397732 460.951573 51.397732 480.7345 76.6370484 484.363462 108.029233 480.7345 111.774332 297.81909 108.029233 289.065907 51.397732 289.065907 104.410585 121.369039 104.267627 123.892627 71.7500218 116.958388 71.7500218 116.958388 67.1412178 110.720553 67.1412178 110.720553 58.2621371 104.355404 58.2621371 104.355404 50.058339 99.6846242 50.058339 99.6846242 41.8040863 94.5019711 41.8040863 94.5019711 32.9824353 90.0177083 32.9824353 90.0177083 26.6245195 83.8935643 26.6245195 83.8935643 19.3921648 81.4861349 19.3921648 81.4861349 13.5113604"></polyline>
-                <line x1="192.363462" y1="48.151672" x2="194.363462" y2="54.151672" id="Path-Copy-24" stroke="#FFFFFF" stroke-width="0.5"></line>
-                <line x1="195.363462" y1="37.151672" x2="201.363462" y2="54.151672" id="Path-Copy-23" stroke="#FFFFFF" stroke-width="0.5"></line>
-                <line x1="200.363462" y1="33.151672" x2="208.363462" y2="54.151672" id="Path-Copy-22" stroke="#FFFFFF" stroke-width="0.5"></line>
-                <line x1="205.363462" y1="28.151672" x2="215.363462" y2="53.151672" id="Path-Copy-21" stroke="#FFFFFF" stroke-width="0.5"></line>
-                <line x1="210.363462" y1="23.151672" x2="223.363462" y2="54.151672" id="Path-Copy-20" stroke="#FFFFFF" stroke-width="0.5"></line>
-                <line x1="212.363462" y1="14.151672" x2="230.363462" y2="57.151672" id="Path-Copy-19" stroke="#FFFFFF" stroke-width="0.5"></line>
-                <line x1="228.363462" y1="30.151672" x2="239.363462" y2="56.151672" id="Path-Copy-18" stroke="#FFFFFF" stroke-width="0.5"></line>
-                <line x1="241.363462" y1="45.151672" x2="246.363462" y2="57.151672" id="Path-Copy-17" stroke="#FFFFFF" stroke-width="0.5"></line>
-                <line x1="246.363462" y1="38.151672" x2="254.363462" y2="57.151672" id="Path-Copy-16" stroke="#FFFFFF" stroke-width="0.5"></line>
-                <line x1="252.363462" y1="40.151672" x2="259.363462" y2="58.151672" id="Path-Copy-15" stroke="#FFFFFF" stroke-width="0.5"></line>
-                <line x1="262.363462" y1="46.151672" x2="266.363462" y2="57.151672" id="Path-Copy-14" stroke="#FFFFFF" stroke-width="0.5"></line>
-                <line x1="265.363462" y1="38.151672" x2="273.363462" y2="57.151672" id="Path-Copy-13" stroke="#FFFFFF" stroke-width="0.5"></line>
-                <line x1="275.363462" y1="46.151672" x2="279.363462" y2="57.151672" id="Path-Copy-12" stroke="#FFFFFF" stroke-width="0.5"></line>
-                <line x1="280.363462" y1="38.151672" x2="287.363462" y2="58.151672" id="Path-Copy-11" stroke="#FFFFFF" stroke-width="0.5"></line>
-                <line x1="286.363462" y1="38.151672" x2="291.363462" y2="51.151672" id="Path-Copy-10" stroke="#FFFFFF" stroke-width="0.5"></line>
-                <line x1="289.363462" y1="27.151672" x2="298.363462" y2="50.151672" id="Path-Copy-9" stroke="#FFFFFF" stroke-width="0.5"></line>
-                <line x1="292.363462" y1="18.151672" x2="305.363462" y2="51.151672" id="Path-Copy-8" stroke="#FFFFFF" stroke-width="0.5"></line>
-                <polyline id="Path-Copy-7" stroke="#FFFFFF" stroke-width="0.5" points="298.363462 17.151672 300.029332 21.5085651 311.363462 51.151672"></polyline>
-                <line x1="305.363462" y1="14.151672" x2="319.363462" y2="51.151672" id="Path-Copy-6" stroke="#FFFFFF" stroke-width="0.5"></line>
-                <line x1="312.363462" y1="14.151672" x2="326.363462" y2="51.151672" id="Path-Copy-5" stroke="#FFFFFF" stroke-width="0.5"></line>
-                <line x1="318.363462" y1="14.151672" x2="332.363462" y2="51.151672" id="Path-Copy-4" stroke="#FFFFFF" stroke-width="0.5"></line>
-                <line x1="326.363462" y1="14.151672" x2="340.363462" y2="51.151672" id="Path-Copy-3" stroke="#FFFFFF" stroke-width="0.5"></line>
-                <line x1="334.363462" y1="17.151672" x2="347.363462" y2="51.151672" id="Path-Copy-2" stroke="#FFFFFF" stroke-width="0.5"></line>
-                <line x1="347.363462" y1="34.151672" x2="353.363462" y2="51.151672" id="Path-Copy" stroke="#FFFFFF" stroke-width="0.5"></line>
-                <polyline id="Path-12" stroke="#FFFFFF" stroke-width="2" fill-opacity="0.05" fill="#FFFFFF" points="410.363462 51.1542145 454.541979 4.23404104 555.5225 4.15167197 616.363462 72.2981356 594.953821 89.151672 484.313277 89.151672"></polyline>
-                <line x1="429.292608" y1="33.822765" x2="429.292422" y2="51.5374387" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(429.292515, 42.680102) rotate(-20.000000) translate(-429.292515, -42.680102) "></line>
-                <line x1="434.84613" y1="28.4493096" x2="434.845888" y2="51.600398" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(434.846009, 40.024854) rotate(-20.000000) translate(-434.846009, -40.024854) "></line>
-                <line x1="441.384171" y1="22.6954717" x2="441.38387" y2="51.4825158" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(441.384020, 37.088994) rotate(-20.000000) translate(-441.384020, -37.088994) "></line>
-                <line x1="446.928961" y1="17.0563683" x2="446.928598" y2="51.7631222" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(446.928779, 34.409745) rotate(-20.000000) translate(-446.928779, -34.409745) "></line>
-                <line x1="452.682715" y1="12.3646944" x2="452.682297" y2="52.2446067" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(452.682506, 32.304651) rotate(-20.000000) translate(-452.682506, -32.304651) "></line>
-                <line x1="461.76125" y1="5.60831681" x2="461.760606" y2="67.0891589" id="Path" stroke="#FFFFFF" stroke-width="0.5" transform="translate(461.760928, 36.348738) rotate(-20.000000) translate(-461.760928, -36.348738) "></line>
-                <line x1="472.149391" y1="1.52666053" x2="472.14844" y2="92.426511" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(472.148916, 46.976586) rotate(-20.000000) translate(-472.148916, -46.976586) "></line>
-                <line x1="492.645301" y1="1.09969051" x2="492.644349" y2="92.0268984" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(492.644825, 46.563294) rotate(-20.000000) translate(-492.644825, -46.563294) "></line>
-                <line x1="479.7029" y1="1.2145009" x2="479.701946" y2="92.4472333" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(479.702423, 46.830867) rotate(-20.000000) translate(-479.702423, -46.830867) "></line>
-                <line x1="486.206982" y1="1.08367995" x2="486.206025" y2="92.4911587" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(486.206503, 46.787419) rotate(-20.000000) translate(-486.206503, -46.787419) "></line>
-                <line x1="500.382023" y1="1.16441478" x2="500.381065" y2="92.6775116" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(500.381544, 46.920963) rotate(-20.000000) translate(-500.381544, -46.920963) "></line>
-                <line x1="506.852134" y1="1.16457865" x2="506.851179" y2="92.4037944" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(506.851657, 46.784187) rotate(-20.000000) translate(-506.851657, -46.784187) "></line>
-                <line x1="514.435138" y1="1.26220269" x2="514.434187" y2="92.1768345" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(514.434663, 46.719519) rotate(-20.000000) translate(-514.434663, -46.719519) "></line>
-                <line x1="520.912689" y1="1.08011652" x2="520.911736" y2="92.1262358" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(520.912212, 46.603176) rotate(-20.000000) translate(-520.912212, -46.603176) "></line>
-                <line x1="527.511181" y1="1.14991148" x2="527.510225" y2="92.4883422" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(527.510703, 46.819127) rotate(-20.000000) translate(-527.510703, -46.819127) "></line>
-                <line x1="535.063739" y1="1.34526616" x2="535.06279" y2="91.9963533" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(535.063264, 46.670810) rotate(-20.000000) translate(-535.063264, -46.670810) "></line>
-                <line x1="541.66836" y1="1.02057859" x2="541.6674" y2="92.7866002" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(541.667880, 46.903589) rotate(-20.000000) translate(-541.667880, -46.903589) "></line>
-                <line x1="549.154713" y1="1.11470449" x2="549.153761" y2="92.0320371" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(549.154237, 46.573371) rotate(-20.000000) translate(-549.154237, -46.573371) "></line>
-                <line x1="555.782363" y1="1.18290195" x2="555.781407" y2="92.5559652" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(555.781885, 46.869434) rotate(-20.000000) translate(-555.781885, -46.869434) "></line>
-                <line x1="562.222583" y1="1.05138113" x2="562.221629" y2="92.2496739" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(562.222106, 46.650528) rotate(-20.000000) translate(-562.222106, -46.650528) "></line>
-                <line x1="569.51633" y1="1.29094557" x2="569.819736" y2="92.0174077" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(569.668033, 46.654177) rotate(-20.000000) translate(-569.668033, -46.654177) "></line>
-                <line x1="579.560465" y1="14.3879676" x2="578.745179" y2="91.9415469" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(579.152822, 53.164757) rotate(-20.000000) translate(-579.152822, -53.164757) "></line>
-                <line x1="588.225621" y1="28.5880009" x2="588.028692" y2="87.7717241" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(588.127157, 58.179862) rotate(-20.000000) translate(-588.127157, -58.179862) "></line>
-                <line x1="595.23557" y1="39.1477951" x2="595.609941" y2="83.4517559" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(595.422756, 61.299776) rotate(-20.000000) translate(-595.422756, -61.299776) "></line>
-                <line x1="603.404892" y1="52.2842616" x2="603.882598" y2="78.7753211" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(603.643745, 65.529791) rotate(-20.000000) translate(-603.643745, -65.529791) "></line>
-                <line x1="424.547927" y1="38.1113356" x2="424.547792" y2="51.0327571" id="Path" stroke="#FFFFFF" stroke-width="0.5" transform="translate(424.547859, 44.572046) rotate(-20.000000) translate(-424.547859, -44.572046) "></line>
-                <line x1="415.238229" y1="46.8405909" x2="415.238187" y2="50.8585363" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(415.238208, 48.849564) rotate(-20.000000) translate(-415.238208, -48.849564) "></line>
-                <line x1="420.89665" y1="41.7541069" x2="420.896551" y2="51.2109549" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(420.896600, 46.482531) rotate(-20.000000) translate(-420.896600, -46.482531) "></line>
-                <polygon id="Path-13" stroke="#FFFFFF" stroke-width="2" fill-opacity="0.05" fill="#FFFFFF" points="581.363462 100.151672 647.87625 46.7369147 782.070744 44.151672 814.813723 76.383469 847.363462 94.7349202 847.363462 100.151672"></polygon>
-                <line x1="588.060184" y1="95.3183638" x2="588.060132" y2="100.344621" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(588.060158, 97.831492) rotate(-20.000000) translate(-588.060158, -97.831492) "></line>
-                <line x1="593.936415" y1="91.284057" x2="593.936316" y2="100.767265" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(593.936365, 96.025661) rotate(-20.000000) translate(-593.936365, -96.025661) "></line>
-                <line x1="599.707364" y1="87.2839067" x2="599.707225" y2="100.577239" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(599.707295, 93.930573) rotate(-20.000000) translate(-599.707295, -93.930573) "></line>
-                <line x1="606.479279" y1="81.9329962" x2="606.479077" y2="101.254647" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(606.479178, 91.593821) rotate(-20.000000) translate(-606.479178, -91.593821) "></line>
-                <line x1="612.306539" y1="78.2269322" x2="612.3063" y2="101.079979" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(612.306420, 89.653455) rotate(-20.000000) translate(-612.306420, -89.653455) "></line>
-                <line x1="619.012061" y1="73.2938018" x2="619.011772" y2="100.974804" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(619.011917, 87.134303) rotate(-20.000000) translate(-619.011917, -87.134303) "></line>
-                <line x1="624.820615" y1="69.0102497" x2="624.820278" y2="101.274799" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(624.820447, 85.142524) rotate(-20.000000) translate(-624.820447, -85.142524) "></line>
-                <line x1="630.586069" y1="64.7193365" x2="630.585686" y2="101.34532" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(630.585877, 83.032328) rotate(-20.000000) translate(-630.585877, -83.032328) "></line>
-                <line x1="637.434145" y1="60.1080835" x2="637.43371" y2="101.701616" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(637.433927, 80.904850) rotate(-20.000000) translate(-637.433927, -80.904850) "></line>
-                <line x1="643.206902" y1="55.801283" x2="643.20642" y2="101.828156" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(643.206661, 78.814719) rotate(-20.000000) translate(-643.206661, -78.814719) "></line>
-                <line x1="649.923119" y1="50.9386826" x2="649.922588" y2="101.711222" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(649.922853, 76.324952) rotate(-20.000000) translate(-649.922853, -76.324952) "></line>
-                <line x1="655.781167" y1="47.0929745" x2="655.780594" y2="101.845367" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(655.780880, 74.469171) rotate(-20.000000) translate(-655.780880, -74.469171) "></line>
-                <line x1="661.96376" y1="45.219163" x2="661.963168" y2="101.791095" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(661.963464, 73.505129) rotate(-20.000000) translate(-661.963464, -73.505129) "></line>
-                <line x1="669.677663" y1="45.4111813" x2="669.67707" y2="102.102099" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(669.677367, 73.756640) rotate(-20.000000) translate(-669.677367, -73.756640) "></line>
-                <line x1="676.110556" y1="45.1136714" x2="676.109963" y2="101.84701" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(676.110260, 73.480341) rotate(-20.000000) translate(-676.110260, -73.480341) "></line>
-                <line x1="683.63439" y1="44.7205697" x2="683.633794" y2="101.698672" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(683.634092, 73.209621) rotate(-20.000000) translate(-683.634092, -73.209621) "></line>
-                <line x1="690.272982" y1="44.7539495" x2="690.272381" y2="102.24302" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(690.272681, 73.498485) rotate(-20.000000) translate(-690.272681, -73.498485) "></line>
-                <line x1="696.776937" y1="44.790019" x2="696.776338" y2="102.044852" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(696.776637, 73.417436) rotate(-20.000000) translate(-696.776637, -73.417436) "></line>
-                <line x1="704.396787" y1="44.7970046" x2="704.396189" y2="102.024058" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(704.396488, 73.410531) rotate(-20.000000) translate(-704.396488, -73.410531) "></line>
-                <line x1="710.781341" y1="44.2806085" x2="710.78074" y2="101.722221" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(710.781041, 73.001415) rotate(-20.000000) translate(-710.781041, -73.001415) "></line>
-                <line x1="718.459951" y1="44.0659731" x2="718.459342" y2="102.245915" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(718.459647, 73.155944) rotate(-20.000000) translate(-718.459647, -73.155944) "></line>
-                <line x1="724.959662" y1="44.0087229" x2="724.959054" y2="102.117745" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(724.959358, 73.063234) rotate(-20.000000) translate(-724.959358, -73.063234) "></line>
-                <line x1="731.467661" y1="43.9014063" x2="731.467053" y2="102.085178" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(731.467357, 72.993292) rotate(-20.000000) translate(-731.467357, -72.993292) "></line>
-                <line x1="739.031329" y1="43.659389" x2="739.030719" y2="102.004651" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(739.031024, 72.832020) rotate(-20.000000) translate(-739.031024, -72.832020) "></line>
-                <line x1="745.616935" y1="43.844039" x2="745.616326" y2="102.106583" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(745.616631, 72.975311) rotate(-20.000000) translate(-745.616631, -72.975311) "></line>
-                <line x1="753.238102" y1="43.7756607" x2="753.237491" y2="102.168382" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(753.237797, 72.972021) rotate(-20.000000) translate(-753.237797, -72.972021) "></line>
-                <line x1="759.671716" y1="43.5747546" x2="759.671106" y2="101.820653" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(759.671411, 72.697704) rotate(-20.000000) translate(-759.671411, -72.697704) "></line>
-                <line x1="766.175098" y1="43.3206462" x2="766.174485" y2="101.909503" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(766.174792, 72.615075) rotate(-20.000000) translate(-766.174792, -72.615075) "></line>
-                <line x1="773.772709" y1="43.0416934" x2="773.772091" y2="102.052423" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(773.772400, 72.547058) rotate(-20.000000) translate(-773.772400, -72.547058) "></line>
-                <line x1="780.261863" y1="42.9583532" x2="780.261246" y2="101.892327" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(780.261554, 72.425340) rotate(-20.000000) translate(-780.261554, -72.425340) "></line>
-                <line x1="787.887535" y1="42.6434834" x2="787.886912" y2="102.225363" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(787.887224, 72.434423) rotate(-20.000000) translate(-787.887224, -72.434423) "></line>
-                <line x1="794.798987" y1="45.1601559" x2="794.798394" y2="101.785919" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(794.798690, 73.473037) rotate(-20.000000) translate(-794.798690, -73.473037) "></line>
-                <line x1="803.280831" y1="55.8871702" x2="803.280351" y2="101.765879" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(803.280591, 78.826525) rotate(-20.000000) translate(-803.280591, -78.826525) "></line>
-                <line x1="812.915515" y1="67.4885885" x2="812.915162" y2="101.222777" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(812.915338, 84.355683) rotate(-20.000000) translate(-812.915338, -84.355683) "></line>
-                <line x1="821.128423" y1="76.9250338" x2="821.128171" y2="101.015433" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(821.128297, 88.970234) rotate(-20.000000) translate(-821.128297, -88.970234) "></line>
-                <line x1="829.736031" y1="82.3025856" x2="829.735835" y2="101.052086" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(829.735933, 91.677336) rotate(-20.000000) translate(-829.735933, -91.677336) "></line>
-                <line x1="836.984394" y1="86.5986251" x2="836.984247" y2="100.684699" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(836.984321, 93.641662) rotate(-20.000000) translate(-836.984321, -93.641662) "></line>
-                <line x1="844.411944" y1="91.6925818" x2="844.411852" y2="100.504068" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(844.411898, 96.098325) rotate(-20.000000) translate(-844.411898, -96.098325) "></line>
-                <polyline id="Path-18" stroke="#FFFFFF" stroke-width="2" points="961.438965 136.774806 838.363462 136.774806 838.363462 119.37967 910.574971 119.37967 928.179232 114.151672 961.438965 134.989089 1027.13637 134.989089 1027.13637 131.459139 1130.62345 131.459139 1130.62345 124.570381 1155.65879 124.570381 1160.4225 131.459139 1160.4225 140.284015 1178.04675 140.284015 1178.71111 134.989089 1205.90385 134.989089 1211.24434 137.545722 1211.24434 188.775604 1211.24434 202.618431 1234.36346 227.442818 1234.36346 243.151672"></polyline>
-                <line x1="868.577098" y1="118.523871" x2="869.484634" y2="137.644713" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(869.030866, 128.084292) rotate(-20.000000) translate(-869.030866, -128.084292) "></line>
-                <line x1="874.939113" y1="118.323398" x2="875.846695" y2="136.943056" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(875.392904, 127.633227) rotate(-20.000000) translate(-875.392904, -127.633227) "></line>
-                <line x1="882.740986" y1="118.853228" x2="883.64857" y2="137.446662" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(883.194778, 128.149945) rotate(-20.000000) translate(-883.194778, -128.149945) "></line>
-                <line x1="889.212785" y1="118.769441" x2="890.120381" y2="137.231657" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(889.666583, 128.000549) rotate(-20.000000) translate(-889.666583, -128.000549) "></line>
-                <line x1="895.760778" y1="118.546101" x2="896.668322" y2="137.574832" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(896.214550, 128.060467) rotate(-20.000000) translate(-896.214550, -128.060467) "></line>
-                <line x1="903.349594" y1="118.640914" x2="904.257168" y2="137.342456" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(903.803381, 127.991685) rotate(-20.000000) translate(-903.803381, -127.991685) "></line>
-                <line x1="909.912667" y1="118.838597" x2="910.82026" y2="137.347691" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(910.366463, 128.093144) rotate(-20.000000) translate(-910.366463, -128.093144) "></line>
-                <line x1="917.186691" y1="117.028494" x2="918.094121" y2="137.289431" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(917.640406, 127.158962) rotate(-20.000000) translate(-917.640406, -127.158962) "></line>
-                <line x1="923.450364" y1="115.378277" x2="924.357623" y2="137.496383" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(923.903993, 126.437330) rotate(-20.000000) translate(-923.903993, -126.437330) "></line>
-                <line x1="929.607318" y1="113.610146" x2="930.514437" y2="137.234752" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(930.060878, 125.422449) rotate(-20.000000) translate(-930.060878, -125.422449) "></line>
-                <line x1="938.151607" y1="118.64368" x2="939.059184" y2="137.316615" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(938.605395, 127.980148) rotate(-20.000000) translate(-938.605395, -127.980148) "></line>
-                <line x1="945.623753" y1="124.187354" x2="946.531875" y2="136.974062" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(946.077814, 130.580708) rotate(-20.000000) translate(-946.077814, -130.580708) "></line>
-                <line x1="953.160874" y1="129.471692" x2="954.141704" y2="136.997576" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(953.651289, 133.234634) rotate(-20.000000) translate(-953.651289, -133.234634) "></line>
-                <line x1="863.06619" y1="118.572095" x2="863.973772" y2="137.198462" id="Path-8-Copy" stroke="#FFFFFF" stroke-width="0.5" transform="translate(863.519981, 127.885278) rotate(-20.000000) translate(-863.519981, -127.885278) "></line>
-                <line x1="845.615387" y1="118.720215" x2="846.52302" y2="136.788314" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(846.069204, 127.754264) rotate(-20.000000) translate(-846.069204, -127.754264) "></line>
-                <line x1="839.989234" y1="124.325869" x2="840.738046" y2="136.586023" id="Path-8-Copy-2" stroke="#FFFFFF" stroke-width="0.5" transform="translate(840.363640, 130.455946) rotate(-20.000000) translate(-840.363640, -130.455946) "></line>
-                <line x1="852.203635" y1="118.485605" x2="853.111193" y2="137.363962" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(852.657414, 127.924783) rotate(-20.000000) translate(-852.657414, -127.924783) "></line>
-                <line x1="858.643595" y1="118.271888" x2="859.551157" y2="137.103859" id="Path-8" stroke="#FFFFFF" stroke-width="0.5" transform="translate(859.097376, 127.687874) rotate(-20.000000) translate(-859.097376, -127.687874) "></line>
-                <polyline id="Path-2" stroke="#FFFFFF" stroke-width="2" points="189.363462 54.151672 219.946185 54.151672 235.260453 57.151672 288.363462 57.151672"></polyline>
-                <polyline id="Path-3" stroke="#FFFFFF" stroke-width="2" points="288.363462 51.151672 293.208481 44.7300932 303.363462 14.151672"></polyline>
-                <line x1="289.363462" y1="50.651672" x2="361.363462" y2="50.651672" id="Path-4" stroke="#FFFFFF" stroke-width="2"></line>
-                <polyline id="Path-14" stroke="#FFFFFF" stroke-width="2" points="838.363462 102.151672 838.363462 221.151672 821.928024 221.151672 814.578002 211.004472 777.976591 199.02138 765.149345 180.788365 716.363462 180.788365"></polyline>
-                <polyline id="Path-15" stroke="#FFFFFF" stroke-width="2" points="729.363462 255.151672 729.363462 207.929495 729.363462 200.663106 707.890417 171.091531 689.144882 171.091531 689.144882 164.810543 683.566055 160.151672 678.872637 167.868517 678.872637 171.091531 660.301558 171.091531 649.706664 164.810543 631.6552 164.810543 614.363462 174.855191"></polyline>
-                <polyline id="Path-16" stroke="#FFFFFF" stroke-width="2" points="729.363462 208.151672 628.363462 208.151672 649.036906 166.151672"></polyline>
-                <path d="M481.142623,260.151672 L484.363462,157.151672 L402.467732,157.151672 L402.467732,189.42119 C397.324057,189.42119 390.9393,189.42119 383.313461,189.42119 C375.687622,189.42119 364.618627,186.84486 350.106477,181.692199 L307.550543,175.964667 L289.587664,175.964667 L289.587664,189.42119 L262.435697,189.42119 L258.528344,197.34917 L248.415951,192.231888 L223.974983,189.42119 L216.172928,192.231888 L216.172928,213.099884 L199.74696,213.099884 L199.74696,192.231888 L177.130669,181.692199 L152.600195,181.692199 L140.967415,201.196475 L120.683763,201.495842 L120.683763,186.272755 L89.3347951,186.272755 L81.559452,165.706812 L78.7650979,165.706812 L76.3888183,168.471857 L76.3888183,178.600444 L71.6149338,178.600444 L71.6149338,165.103011 L62.5588858,165.103011 L60.0541586,168.954501 L60.0541586,178.600444 L54.8245085,178.600444 L54.8245085,165.103011 L46.4456618,165.103011 L44.3034642,168.954501 L44.3034642,178.227559 L38.0769817,178.227559 L38.0769817,165.103011 L31.2107412,165.103011 L29.7301229,168.471857 L23.3634615,168.471857" id="Path-22" stroke="#FFFFFF" stroke-width="2" fill-opacity="0.05" fill="#FFFFFF"></path>
-                <line x1="296.863462" y1="107.151672" x2="296.863462" y2="175.151672" id="Path-23" stroke="#FFFFFF" stroke-width="2"></line>
-                <line x1="326.863462" y1="109.151672" x2="326.863462" y2="178.151672" id="Path-24" stroke="#FFFFFF" stroke-width="2"></line>
-                <line x1="483.863462" y1="107.151672" x2="483.863462" y2="156.151672" id="Path-25" stroke="#FFFFFF" stroke-width="2"></line>
-                <line x1="401.863462" y1="109.151672" x2="401.863462" y2="155.151672" id="Path-26" stroke="#FFFFFF" stroke-width="2"></line>
-                <polyline id="Path-27" stroke="#FFFFFF" stroke-width="2" points="614.363462 101.151672 614.363462 123.245868 604.278164 123.245868 604.278164 134.151672 600.746016 134.151672 600.746016 123.245868 591.076299 123.245868 591.076299 134.151672 587.574657 134.151672 587.574657 123.245868 577.827126 123.245868 577.827126 134.151672 573.029877 134.151672 573.029877 123.245868 564.983235 123.245868 564.983235 134.151672 560.578949 134.151672 560.578949 123.245868 551.401406 123.245868 551.401406 134.151672 547.459466 134.151672 547.459466 123.245868 536.939628 123.245868 536.939628 133.280781 534.079954 133.280781 534.079954 123.245868 525.363462 123.245868"></polyline>
-                <line x1="900.863462" y1="138.151672" x2="900.863462" y2="173.151672" id="Path-28" stroke="#FFFFFF" stroke-width="2"></line>
-                <line x1="912.863462" y1="137.151672" x2="912.863462" y2="199.151672" id="Path-28-Copy" stroke="#FFFFFF" stroke-width="2"></line>
-                <polyline id="Path-28-Copy-2" stroke="#FFFFFF" stroke-width="2" points="952.863462 138.151672 952.863462 173.856752 952.863462 203.151672"></polyline>
-                <path d="M346.41532,180.151672 L385.311603,180.151672 C389.108581,149.472445 382.625868,133.812089 365.863462,133.170604 C349.101055,132.529119 342.618342,148.189475 346.41532,180.151672 Z" id="Path-32" stroke="#FFFFFF" stroke-width="2"></path>
-                <line x1="666.863462" y1="101.151672" x2="666.863462" y2="170.151672" id="Path-94" stroke="#FFFFFF" stroke-width="2"></line>
-                <line x1="21.3634615" y1="61.651672" x2="44.3634615" y2="61.651672" id="Path-95" stroke="#FFFFFF" stroke-width="2"></line>
-                <polyline id="Path-96" stroke="#FFFFFF" stroke-width="2" points="23.3634615 85.151672 35.3985299 85.151672 35.3985299 75.790338 40.5056746 75.790338 40.5056746 67.9886496 45.7539039 67.9886496 45.7539039 59.5922886 50.4963362 59.5922886 50.4963362 52.151672 55.3634615 52.151672"></polyline>
-                <line x1="36.3634615" y1="22.651672" x2="41.3634615" y2="22.651672" id="Path-97" stroke="#FFFFFF" stroke-width="2"></line>
-                <line x1="38.8634615" y1="62.151672" x2="38.8634615" y2="22.151672" id="Path-98" stroke="#FFFFFF" stroke-width="0.5"></line>
-                <path d="M22.3634615,62.151672 C24.2586046,60.7274607 26.5307234,56.8987732 29.1798179,50.6656096 C31.8289125,44.4324459 35.2234604,34.9278 39.3634615,22.151672" id="Path-99" stroke="#FFFFFF" stroke-width="0.5"></path>
-                <line x1="0.363461538" y1="158.651672" x2="19.3634615" y2="158.651672" id="Path-100" stroke="#FFFFFF" stroke-width="2"></line>
-                <polyline id="Path-101" stroke="#FFFFFF" stroke-width="2" points="8.36346154 148.151672 9.36346154 139.151672 10.3634615 148.151672"></polyline>
+                <polyline id="Path-11"
+                          points="0.363461538 202.151672 0.363461538 159.57728 6.56362389 149.086562 13.4820125 149.086562 18.9062808 159.57728 18.9062808 168.625305 22.3558638 168.625305 22.3558638 82.7191515 22.3558638 63.3587761 17.743963 63.3587761 36.8374719 22.9431452 38.5058481 0.151671975 41.4634558 21.3085757 54.6595237 50.058339 53.889444 41.8040863 59.7986602 41.8040863 59.7986602 34.9285588 64.7300062 34.9285588 64.7300062 27.8769887 69.247407 27.8769887 69.247407 20.3625532 71.9835895 20.3625532 71.9835895 11.9240318 74.4301741 7.50651765 73.8608414 4.39624656 76.336285 5.6931846 77.8139175 1.23644453 79.6186545 3.15618276 82.2673165 3.54072758 78.528176 7.50651765 81.4861349 13.5113604 87.283742 13.5113604 87.283742 20.3625532 93.1945944 24.7372906 102.272481 24.7372906 102.272481 32.2626946 108.411557 32.2626946 108.411557 40.301967 113.156129 40.301967 113.156129 46.8248612 118.726117 46.8248612 118.726117 55.1076316 121.369039 55.1076316 121.369039 62.1772995 125.307244 62.1772995 125.307244 58.2621371 193.267344 58.2621371 188.415481 54.6173414 219.512399 54.6173414 234.644904 57.6209975 288.917805 57.4105498 289.065907 51.1633735 360.768857 51.397732 460.951573 51.397732 480.7345 76.6370484 484.363462 108.029233 480.7345 111.774332 297.81909 108.029233 289.065907 51.397732 289.065907 104.410585 121.369039 104.267627 123.892627 71.7500218 116.958388 71.7500218 116.958388 67.1412178 110.720553 67.1412178 110.720553 58.2621371 104.355404 58.2621371 104.355404 50.058339 99.6846242 50.058339 99.6846242 41.8040863 94.5019711 41.8040863 94.5019711 32.9824353 90.0177083 32.9824353 90.0177083 26.6245195 83.8935643 26.6245195 83.8935643 19.3921648 81.4861349 19.3921648 81.4861349 13.5113604"></polyline>
+                <line x1="146.016735" y1="56.4801842" x2="146.016228" y2="104.967393" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(146.016482, 80.723789) rotate(-20.000000) translate(-146.016482, -80.723789) "></line>
+                <line x1="153.552963" y1="56.3725637" x2="153.552451" y2="105.285413" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(153.552707, 80.828988) rotate(-20.000000) translate(-153.552707, -80.828988) "></line>
+                <line x1="160.170877" y1="56.3580418" x2="160.170367" y2="105.117775" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(160.170622, 80.737908) rotate(-20.000000) translate(-160.170622, -80.737908) "></line>
+                <line x1="166.681544" y1="56.2289489" x2="166.681032" y2="105.138933" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(166.681288, 80.683941) rotate(-20.000000) translate(-166.681288, -80.683941) "></line>
+                <line x1="173.232825" y1="56.3790792" x2="173.232315" y2="105.104055" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(173.232570, 80.741567) rotate(-20.000000) translate(-173.232570, -80.741567) "></line>
+                <line x1="180.88433" y1="56.3144297" x2="180.883817" y2="105.349004" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(180.884073, 80.831717) rotate(-20.000000) translate(-180.884073, -80.831717) "></line>
+                <line x1="187.400416" y1="56.2795785" x2="187.399903" y2="105.305704" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(187.400160, 80.792641) rotate(-20.000000) translate(-187.400160, -80.792641) "></line>
+                <line x1="195.072719" y1="56.4077477" x2="195.072206" y2="105.472128" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(195.072462, 80.939938) rotate(-20.000000) translate(-195.072462, -80.939938) "></line>
+                <line x1="200.913464" y1="52.3093249" x2="200.839264" y2="105.36352" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(200.876364, 78.836422) rotate(-20.000000) translate(-200.876364, -78.836422) "></line>
+                <line x1="197.363462" y1="55.151672" x2="216.363462" y2="104.151672" id="Path" stroke="#FFFFFF"
+                      stroke-width="0.5"></line>
+                <line x1="205.363462" y1="55.151672" x2="224.363462" y2="104.151672" id="Path" stroke="#FFFFFF"
+                      stroke-width="0.5"></line>
+                <line x1="212.363462" y1="55.151672" x2="231.363462" y2="104.151672" id="Path" stroke="#FFFFFF"
+                      stroke-width="0.5"></line>
+                <line x1="220.363462" y1="55.151672" x2="239.363462" y2="104.151672" id="Path" stroke="#FFFFFF"
+                      stroke-width="0.5"></line>
+                <line x1="228.363462" y1="57.151672" x2="247.363462" y2="104.151672" id="Path" stroke="#FFFFFF"
+                      stroke-width="0.5"></line>
+                <line x1="235.363462" y1="58.151672" x2="254.363462" y2="104.151672" id="Path" stroke="#FFFFFF"
+                      stroke-width="0.5"></line>
+                <line x1="242.363462" y1="59.151672" x2="261.363462" y2="104.151672" id="Path" stroke="#FFFFFF"
+                      stroke-width="0.5"></line>
+                <line x1="248.363462" y1="58.151672" x2="267.363462" y2="104.151672" id="Path" stroke="#FFFFFF"
+                      stroke-width="0.5"></line>
+                <line x1="256.363462" y1="58.151672" x2="275.363462" y2="104.151672" id="Path" stroke="#FFFFFF"
+                      stroke-width="0.5"></line>
+                <line x1="262.363462" y1="58.151672" x2="281.363462" y2="104.151672" id="Path" stroke="#FFFFFF"
+                      stroke-width="0.5"></line>
+                <line x1="269.363462" y1="58.151672" x2="288.363462" y2="104.151672" id="Path" stroke="#FFFFFF"
+                      stroke-width="0.5"></line>
+                <line x1="276.363462" y1="58.151672" x2="289.363462" y2="89.151672" id="Path" stroke="#FFFFFF"
+                      stroke-width="0.5"></line>
+                <line x1="283.363462" y1="57.151672" x2="289.363462" y2="75.151672" id="Path" stroke="#FFFFFF"
+                      stroke-width="0.5"></line>
+                <line x1="289.363462" y1="56.151672" x2="309.363462" y2="108.151672" id="Path" stroke="#FFFFFF"
+                      stroke-width="0.5"></line>
+                <line x1="295.363462" y1="52.151672" x2="317.363462" y2="108.151672" id="Path" stroke="#FFFFFF"
+                      stroke-width="0.5"></line>
+                <line x1="301.363462" y1="52.151672" x2="323.363462" y2="108.151672" id="Path" stroke="#FFFFFF"
+                      stroke-width="0.5"></line>
+                <line x1="309.363462" y1="52.151672" x2="331.363462" y2="108.151672" id="Path" stroke="#FFFFFF"
+                      stroke-width="0.5"></line>
+                <line x1="316.363462" y1="52.151672" x2="338.363462" y2="109.151672" id="Path" stroke="#FFFFFF"
+                      stroke-width="0.5"></line>
+                <line x1="323.363462" y1="51.151672" x2="345.363462" y2="108.151672" id="Path" stroke="#FFFFFF"
+                      stroke-width="0.5"></line>
+                <line x1="330.363462" y1="52.151672" x2="352.363462" y2="109.151672" id="Path" stroke="#FFFFFF"
+                      stroke-width="0.5"></line>
+                <line x1="336.363462" y1="52.151672" x2="358.363462" y2="109.151672" id="Path" stroke="#FFFFFF"
+                      stroke-width="0.5"></line>
+                <line x1="343.363462" y1="52.151672" x2="365.363462" y2="109.151672" id="Path" stroke="#FFFFFF"
+                      stroke-width="0.5"></line>
+                <line x1="350.363462" y1="52.151672" x2="372.363462" y2="109.151672" id="Path" stroke="#FFFFFF"
+                      stroke-width="0.5"></line>
+                <line x1="358.363462" y1="52.151672" x2="380.363462" y2="109.151672" id="Path" stroke="#FFFFFF"
+                      stroke-width="0.5"></line>
+                <line x1="375.472374" y1="49.289544" x2="375.471727" y2="111.094168" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(375.472051, 80.191856) rotate(-20.000000) translate(-375.472051, -80.191856) "></line>
+                <line x1="381.987197" y1="49.1675713" x2="381.986548" y2="111.131042" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(381.986873, 80.149307) rotate(-20.000000) translate(-381.986873, -80.149307) "></line>
+                <line x1="389.595109" y1="49.1798528" x2="389.594462" y2="111.059523" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(389.594786, 80.119688) rotate(-20.000000) translate(-389.594786, -80.119688) "></line>
+                <line x1="396.168733" y1="48.7426217" x2="396.168073" y2="111.734745" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(396.168403, 80.238683) rotate(-20.000000) translate(-396.168403, -80.238683) "></line>
+                <line x1="403.848134" y1="49.1401078" x2="403.847479" y2="111.670872" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(403.847807, 80.405490) rotate(-20.000000) translate(-403.847807, -80.405490) "></line>
+                <line x1="410.457936" y1="49.273197" x2="410.45728" y2="111.974611" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(410.457608, 80.623904) rotate(-20.000000) translate(-410.457608, -80.623904) "></line>
+                <line x1="417.07123" y1="49.3500459" x2="417.070571" y2="112.35377" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(417.070900, 80.851908) rotate(-20.000000) translate(-417.070900, -80.851908) "></line>
+                <line x1="424.514863" y1="48.9149866" x2="424.514205" y2="111.826855" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(424.514534, 80.370921) rotate(-20.000000) translate(-424.514534, -80.370921) "></line>
+                <line x1="431.157786" y1="48.9233467" x2="431.157121" y2="112.43731" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(431.157454, 80.680328) rotate(-20.000000) translate(-431.157454, -80.680328) "></line>
+                <line x1="438.760053" y1="49.1312678" x2="438.759394" y2="112.139141" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(438.759723, 80.635205) rotate(-20.000000) translate(-438.759723, -80.635205) "></line>
+                <line x1="445.335291" y1="49.0912356" x2="445.334629" y2="112.426062" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(445.334960, 80.758649) rotate(-20.000000) translate(-445.334960, -80.758649) "></line>
+                <line x1="451.904028" y1="49.0303486" x2="451.903362" y2="112.698109" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(451.903695, 80.864229) rotate(-20.000000) translate(-451.903695, -80.864229) "></line>
+                <line x1="459.672806" y1="49.4339042" x2="459.67214" y2="113.11929" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(459.672473, 81.276597) rotate(-20.000000) translate(-459.672473, -81.276597) "></line>
+                <line x1="466.100814" y1="48.9282744" x2="466.100143" y2="113.062757" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(466.100479, 80.995516) rotate(-20.000000) translate(-466.100479, -80.995516) "></line>
+                <line x1="473.849177" y1="52.0780356" x2="473.848564" y2="110.625709" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(473.848871, 81.351872) rotate(-20.000000) translate(-473.848871, -81.351872) "></line>
+                <line x1="479.25759" y1="69.6701628" x2="479.25741" y2="86.8698055" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(479.257500, 78.269984) rotate(-20.000000) translate(-479.257500, -78.269984) "></line>
+                <line x1="139.62435" y1="56.0114852" x2="139.623832" y2="105.530398" id="Path-8-Copy" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(139.624091, 80.770941) rotate(-20.000000) translate(-139.624091, -80.770941) "></line>
+                <line x1="126.127962" y1="83.8508814" x2="126.321664" y2="104.276319" id="Path" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(126.224813, 94.063600) rotate(-20.000000) translate(-126.224813, -94.063600) "></line>
+                <line x1="128.462621" y1="60.127959" x2="128.462149" y2="105.204302" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(128.462385, 82.666131) rotate(-20.000000) translate(-128.462385, -82.666131) "></line>
+                <line x1="134.316295" y1="56.4817826" x2="134.315786" y2="105.132183" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(134.316041, 80.806983) rotate(-20.000000) translate(-134.316041, -80.806983) "></line>
+                <polyline id="Path-11-Copy" stroke="#FFFFFF" stroke-width="2" fill="url(#linearGradient-1)"
+                          points="0.363461538 202.151672 0.363461538 159.57728 6.56362389 149.086562 13.4820125 149.086562 18.9062808 159.57728 18.9062808 168.625305 22.3558638 168.625305 22.3558638 82.7191515 22.3558638 63.3587761 17.743963 63.3587761 36.8374719 22.9431452 38.5058481 0.151671975 41.4634558 21.3085757 54.6595237 50.058339 53.889444 41.8040863 59.7986602 41.8040863 59.7986602 34.9285588 64.7300062 34.9285588 64.7300062 27.8769887 69.247407 27.8769887 69.247407 20.3625532 71.9835895 20.3625532 71.9835895 11.9240318 74.4301741 7.50651765 73.8608414 4.39624656 76.336285 5.6931846 77.8139175 1.23644453 79.6186545 3.15618276 82.2673165 3.54072758 78.528176 7.50651765 81.4861349 13.5113604 87.283742 13.5113604 87.283742 20.3625532 93.1945944 24.7372906 102.272481 24.7372906 102.272481 32.2626946 108.411557 32.2626946 108.411557 40.301967 113.156129 40.301967 113.156129 46.8248612 118.726117 46.8248612 118.726117 55.1076316 121.369039 55.1076316 121.369039 62.1772995 125.307244 62.1772995 125.307244 58.2621371 193.267344 58.2621371 188.69922 55.1076316 191.122828 51.397732 196.056068 37.9544841 211.165809 24.7372906 215.045841 2.47587121 218.877009 23.9843559 230.555735 32.2626946 236.84758 46.362656 240.51466 46.362656 240.51466 39.0072485 248.649785 39.0072485 248.649785 46.362656 252.458503 46.362656 252.458503 39.0072485 259.513017 39.0072485 259.513017 46.8248612 264.171234 46.8248612 264.171234 39.0072485 271.106561 39.0072485 271.106561 46.8248612 275.644601 46.8248612 275.644601 39.0072485 281.766414 39.0072485 285.530561 39.0072485 288.498033 33.7381142 289.065907 21.3085757 294.630081 15.8995497 297.81909 19.3921648 302.256396 13.5113604 303.727221 0.151671975 305.209338 13.5113604 327.961518 13.5113604 330.060521 0.704461169 331.423755 13.5113604 360.768857 51.397732 460.951573 51.397732 480.7345 76.6370484 484.363462 108.029233 480.7345 111.774332 297.81909 108.029233 289.065907 51.397732 289.065907 104.410585 121.369039 104.267627 123.892627 71.7500218 116.958388 71.7500218 116.958388 67.1412178 110.720553 67.1412178 110.720553 58.2621371 104.355404 58.2621371 104.355404 50.058339 99.6846242 50.058339 99.6846242 41.8040863 94.5019711 41.8040863 94.5019711 32.9824353 90.0177083 32.9824353 90.0177083 26.6245195 83.8935643 26.6245195 83.8935643 19.3921648 81.4861349 19.3921648 81.4861349 13.5113604"></polyline>
+                <line x1="192.363462" y1="48.151672" x2="194.363462" y2="54.151672" id="Path-Copy-24" stroke="#FFFFFF"
+                      stroke-width="0.5"></line>
+                <line x1="195.363462" y1="37.151672" x2="201.363462" y2="54.151672" id="Path-Copy-23" stroke="#FFFFFF"
+                      stroke-width="0.5"></line>
+                <line x1="200.363462" y1="33.151672" x2="208.363462" y2="54.151672" id="Path-Copy-22" stroke="#FFFFFF"
+                      stroke-width="0.5"></line>
+                <line x1="205.363462" y1="28.151672" x2="215.363462" y2="53.151672" id="Path-Copy-21" stroke="#FFFFFF"
+                      stroke-width="0.5"></line>
+                <line x1="210.363462" y1="23.151672" x2="223.363462" y2="54.151672" id="Path-Copy-20" stroke="#FFFFFF"
+                      stroke-width="0.5"></line>
+                <line x1="212.363462" y1="14.151672" x2="230.363462" y2="57.151672" id="Path-Copy-19" stroke="#FFFFFF"
+                      stroke-width="0.5"></line>
+                <line x1="228.363462" y1="30.151672" x2="239.363462" y2="56.151672" id="Path-Copy-18" stroke="#FFFFFF"
+                      stroke-width="0.5"></line>
+                <line x1="241.363462" y1="45.151672" x2="246.363462" y2="57.151672" id="Path-Copy-17" stroke="#FFFFFF"
+                      stroke-width="0.5"></line>
+                <line x1="246.363462" y1="38.151672" x2="254.363462" y2="57.151672" id="Path-Copy-16" stroke="#FFFFFF"
+                      stroke-width="0.5"></line>
+                <line x1="252.363462" y1="40.151672" x2="259.363462" y2="58.151672" id="Path-Copy-15" stroke="#FFFFFF"
+                      stroke-width="0.5"></line>
+                <line x1="262.363462" y1="46.151672" x2="266.363462" y2="57.151672" id="Path-Copy-14" stroke="#FFFFFF"
+                      stroke-width="0.5"></line>
+                <line x1="265.363462" y1="38.151672" x2="273.363462" y2="57.151672" id="Path-Copy-13" stroke="#FFFFFF"
+                      stroke-width="0.5"></line>
+                <line x1="275.363462" y1="46.151672" x2="279.363462" y2="57.151672" id="Path-Copy-12" stroke="#FFFFFF"
+                      stroke-width="0.5"></line>
+                <line x1="280.363462" y1="38.151672" x2="287.363462" y2="58.151672" id="Path-Copy-11" stroke="#FFFFFF"
+                      stroke-width="0.5"></line>
+                <line x1="286.363462" y1="38.151672" x2="291.363462" y2="51.151672" id="Path-Copy-10" stroke="#FFFFFF"
+                      stroke-width="0.5"></line>
+                <line x1="289.363462" y1="27.151672" x2="298.363462" y2="50.151672" id="Path-Copy-9" stroke="#FFFFFF"
+                      stroke-width="0.5"></line>
+                <line x1="292.363462" y1="18.151672" x2="305.363462" y2="51.151672" id="Path-Copy-8" stroke="#FFFFFF"
+                      stroke-width="0.5"></line>
+                <polyline id="Path-Copy-7" stroke="#FFFFFF" stroke-width="0.5"
+                          points="298.363462 17.151672 300.029332 21.5085651 311.363462 51.151672"></polyline>
+                <line x1="305.363462" y1="14.151672" x2="319.363462" y2="51.151672" id="Path-Copy-6" stroke="#FFFFFF"
+                      stroke-width="0.5"></line>
+                <line x1="312.363462" y1="14.151672" x2="326.363462" y2="51.151672" id="Path-Copy-5" stroke="#FFFFFF"
+                      stroke-width="0.5"></line>
+                <line x1="318.363462" y1="14.151672" x2="332.363462" y2="51.151672" id="Path-Copy-4" stroke="#FFFFFF"
+                      stroke-width="0.5"></line>
+                <line x1="326.363462" y1="14.151672" x2="340.363462" y2="51.151672" id="Path-Copy-3" stroke="#FFFFFF"
+                      stroke-width="0.5"></line>
+                <line x1="334.363462" y1="17.151672" x2="347.363462" y2="51.151672" id="Path-Copy-2" stroke="#FFFFFF"
+                      stroke-width="0.5"></line>
+                <line x1="347.363462" y1="34.151672" x2="353.363462" y2="51.151672" id="Path-Copy" stroke="#FFFFFF"
+                      stroke-width="0.5"></line>
+                <polyline id="Path-12" stroke="#FFFFFF" stroke-width="2" fill-opacity="0.05" fill="#FFFFFF"
+                          points="410.363462 51.1542145 454.541979 4.23404104 555.5225 4.15167197 616.363462 72.2981356 594.953821 89.151672 484.313277 89.151672"></polyline>
+                <line x1="429.292608" y1="33.822765" x2="429.292422" y2="51.5374387" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(429.292515, 42.680102) rotate(-20.000000) translate(-429.292515, -42.680102) "></line>
+                <line x1="434.84613" y1="28.4493096" x2="434.845888" y2="51.600398" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(434.846009, 40.024854) rotate(-20.000000) translate(-434.846009, -40.024854) "></line>
+                <line x1="441.384171" y1="22.6954717" x2="441.38387" y2="51.4825158" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(441.384020, 37.088994) rotate(-20.000000) translate(-441.384020, -37.088994) "></line>
+                <line x1="446.928961" y1="17.0563683" x2="446.928598" y2="51.7631222" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(446.928779, 34.409745) rotate(-20.000000) translate(-446.928779, -34.409745) "></line>
+                <line x1="452.682715" y1="12.3646944" x2="452.682297" y2="52.2446067" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(452.682506, 32.304651) rotate(-20.000000) translate(-452.682506, -32.304651) "></line>
+                <line x1="461.76125" y1="5.60831681" x2="461.760606" y2="67.0891589" id="Path" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(461.760928, 36.348738) rotate(-20.000000) translate(-461.760928, -36.348738) "></line>
+                <line x1="472.149391" y1="1.52666053" x2="472.14844" y2="92.426511" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(472.148916, 46.976586) rotate(-20.000000) translate(-472.148916, -46.976586) "></line>
+                <line x1="492.645301" y1="1.09969051" x2="492.644349" y2="92.0268984" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(492.644825, 46.563294) rotate(-20.000000) translate(-492.644825, -46.563294) "></line>
+                <line x1="479.7029" y1="1.2145009" x2="479.701946" y2="92.4472333" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(479.702423, 46.830867) rotate(-20.000000) translate(-479.702423, -46.830867) "></line>
+                <line x1="486.206982" y1="1.08367995" x2="486.206025" y2="92.4911587" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(486.206503, 46.787419) rotate(-20.000000) translate(-486.206503, -46.787419) "></line>
+                <line x1="500.382023" y1="1.16441478" x2="500.381065" y2="92.6775116" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(500.381544, 46.920963) rotate(-20.000000) translate(-500.381544, -46.920963) "></line>
+                <line x1="506.852134" y1="1.16457865" x2="506.851179" y2="92.4037944" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(506.851657, 46.784187) rotate(-20.000000) translate(-506.851657, -46.784187) "></line>
+                <line x1="514.435138" y1="1.26220269" x2="514.434187" y2="92.1768345" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(514.434663, 46.719519) rotate(-20.000000) translate(-514.434663, -46.719519) "></line>
+                <line x1="520.912689" y1="1.08011652" x2="520.911736" y2="92.1262358" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(520.912212, 46.603176) rotate(-20.000000) translate(-520.912212, -46.603176) "></line>
+                <line x1="527.511181" y1="1.14991148" x2="527.510225" y2="92.4883422" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(527.510703, 46.819127) rotate(-20.000000) translate(-527.510703, -46.819127) "></line>
+                <line x1="535.063739" y1="1.34526616" x2="535.06279" y2="91.9963533" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(535.063264, 46.670810) rotate(-20.000000) translate(-535.063264, -46.670810) "></line>
+                <line x1="541.66836" y1="1.02057859" x2="541.6674" y2="92.7866002" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(541.667880, 46.903589) rotate(-20.000000) translate(-541.667880, -46.903589) "></line>
+                <line x1="549.154713" y1="1.11470449" x2="549.153761" y2="92.0320371" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(549.154237, 46.573371) rotate(-20.000000) translate(-549.154237, -46.573371) "></line>
+                <line x1="555.782363" y1="1.18290195" x2="555.781407" y2="92.5559652" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(555.781885, 46.869434) rotate(-20.000000) translate(-555.781885, -46.869434) "></line>
+                <line x1="562.222583" y1="1.05138113" x2="562.221629" y2="92.2496739" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(562.222106, 46.650528) rotate(-20.000000) translate(-562.222106, -46.650528) "></line>
+                <line x1="569.51633" y1="1.29094557" x2="569.819736" y2="92.0174077" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(569.668033, 46.654177) rotate(-20.000000) translate(-569.668033, -46.654177) "></line>
+                <line x1="579.560465" y1="14.3879676" x2="578.745179" y2="91.9415469" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(579.152822, 53.164757) rotate(-20.000000) translate(-579.152822, -53.164757) "></line>
+                <line x1="588.225621" y1="28.5880009" x2="588.028692" y2="87.7717241" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(588.127157, 58.179862) rotate(-20.000000) translate(-588.127157, -58.179862) "></line>
+                <line x1="595.23557" y1="39.1477951" x2="595.609941" y2="83.4517559" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(595.422756, 61.299776) rotate(-20.000000) translate(-595.422756, -61.299776) "></line>
+                <line x1="603.404892" y1="52.2842616" x2="603.882598" y2="78.7753211" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(603.643745, 65.529791) rotate(-20.000000) translate(-603.643745, -65.529791) "></line>
+                <line x1="424.547927" y1="38.1113356" x2="424.547792" y2="51.0327571" id="Path" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(424.547859, 44.572046) rotate(-20.000000) translate(-424.547859, -44.572046) "></line>
+                <line x1="415.238229" y1="46.8405909" x2="415.238187" y2="50.8585363" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(415.238208, 48.849564) rotate(-20.000000) translate(-415.238208, -48.849564) "></line>
+                <line x1="420.89665" y1="41.7541069" x2="420.896551" y2="51.2109549" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(420.896600, 46.482531) rotate(-20.000000) translate(-420.896600, -46.482531) "></line>
+                <polygon id="Path-13" stroke="#FFFFFF" stroke-width="2" fill-opacity="0.05" fill="#FFFFFF"
+                         points="581.363462 100.151672 647.87625 46.7369147 782.070744 44.151672 814.813723 76.383469 847.363462 94.7349202 847.363462 100.151672"></polygon>
+                <line x1="588.060184" y1="95.3183638" x2="588.060132" y2="100.344621" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(588.060158, 97.831492) rotate(-20.000000) translate(-588.060158, -97.831492) "></line>
+                <line x1="593.936415" y1="91.284057" x2="593.936316" y2="100.767265" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(593.936365, 96.025661) rotate(-20.000000) translate(-593.936365, -96.025661) "></line>
+                <line x1="599.707364" y1="87.2839067" x2="599.707225" y2="100.577239" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(599.707295, 93.930573) rotate(-20.000000) translate(-599.707295, -93.930573) "></line>
+                <line x1="606.479279" y1="81.9329962" x2="606.479077" y2="101.254647" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(606.479178, 91.593821) rotate(-20.000000) translate(-606.479178, -91.593821) "></line>
+                <line x1="612.306539" y1="78.2269322" x2="612.3063" y2="101.079979" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(612.306420, 89.653455) rotate(-20.000000) translate(-612.306420, -89.653455) "></line>
+                <line x1="619.012061" y1="73.2938018" x2="619.011772" y2="100.974804" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(619.011917, 87.134303) rotate(-20.000000) translate(-619.011917, -87.134303) "></line>
+                <line x1="624.820615" y1="69.0102497" x2="624.820278" y2="101.274799" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(624.820447, 85.142524) rotate(-20.000000) translate(-624.820447, -85.142524) "></line>
+                <line x1="630.586069" y1="64.7193365" x2="630.585686" y2="101.34532" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(630.585877, 83.032328) rotate(-20.000000) translate(-630.585877, -83.032328) "></line>
+                <line x1="637.434145" y1="60.1080835" x2="637.43371" y2="101.701616" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(637.433927, 80.904850) rotate(-20.000000) translate(-637.433927, -80.904850) "></line>
+                <line x1="643.206902" y1="55.801283" x2="643.20642" y2="101.828156" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(643.206661, 78.814719) rotate(-20.000000) translate(-643.206661, -78.814719) "></line>
+                <line x1="649.923119" y1="50.9386826" x2="649.922588" y2="101.711222" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(649.922853, 76.324952) rotate(-20.000000) translate(-649.922853, -76.324952) "></line>
+                <line x1="655.781167" y1="47.0929745" x2="655.780594" y2="101.845367" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(655.780880, 74.469171) rotate(-20.000000) translate(-655.780880, -74.469171) "></line>
+                <line x1="661.96376" y1="45.219163" x2="661.963168" y2="101.791095" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(661.963464, 73.505129) rotate(-20.000000) translate(-661.963464, -73.505129) "></line>
+                <line x1="669.677663" y1="45.4111813" x2="669.67707" y2="102.102099" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(669.677367, 73.756640) rotate(-20.000000) translate(-669.677367, -73.756640) "></line>
+                <line x1="676.110556" y1="45.1136714" x2="676.109963" y2="101.84701" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(676.110260, 73.480341) rotate(-20.000000) translate(-676.110260, -73.480341) "></line>
+                <line x1="683.63439" y1="44.7205697" x2="683.633794" y2="101.698672" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(683.634092, 73.209621) rotate(-20.000000) translate(-683.634092, -73.209621) "></line>
+                <line x1="690.272982" y1="44.7539495" x2="690.272381" y2="102.24302" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(690.272681, 73.498485) rotate(-20.000000) translate(-690.272681, -73.498485) "></line>
+                <line x1="696.776937" y1="44.790019" x2="696.776338" y2="102.044852" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(696.776637, 73.417436) rotate(-20.000000) translate(-696.776637, -73.417436) "></line>
+                <line x1="704.396787" y1="44.7970046" x2="704.396189" y2="102.024058" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(704.396488, 73.410531) rotate(-20.000000) translate(-704.396488, -73.410531) "></line>
+                <line x1="710.781341" y1="44.2806085" x2="710.78074" y2="101.722221" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(710.781041, 73.001415) rotate(-20.000000) translate(-710.781041, -73.001415) "></line>
+                <line x1="718.459951" y1="44.0659731" x2="718.459342" y2="102.245915" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(718.459647, 73.155944) rotate(-20.000000) translate(-718.459647, -73.155944) "></line>
+                <line x1="724.959662" y1="44.0087229" x2="724.959054" y2="102.117745" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(724.959358, 73.063234) rotate(-20.000000) translate(-724.959358, -73.063234) "></line>
+                <line x1="731.467661" y1="43.9014063" x2="731.467053" y2="102.085178" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(731.467357, 72.993292) rotate(-20.000000) translate(-731.467357, -72.993292) "></line>
+                <line x1="739.031329" y1="43.659389" x2="739.030719" y2="102.004651" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(739.031024, 72.832020) rotate(-20.000000) translate(-739.031024, -72.832020) "></line>
+                <line x1="745.616935" y1="43.844039" x2="745.616326" y2="102.106583" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(745.616631, 72.975311) rotate(-20.000000) translate(-745.616631, -72.975311) "></line>
+                <line x1="753.238102" y1="43.7756607" x2="753.237491" y2="102.168382" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(753.237797, 72.972021) rotate(-20.000000) translate(-753.237797, -72.972021) "></line>
+                <line x1="759.671716" y1="43.5747546" x2="759.671106" y2="101.820653" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(759.671411, 72.697704) rotate(-20.000000) translate(-759.671411, -72.697704) "></line>
+                <line x1="766.175098" y1="43.3206462" x2="766.174485" y2="101.909503" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(766.174792, 72.615075) rotate(-20.000000) translate(-766.174792, -72.615075) "></line>
+                <line x1="773.772709" y1="43.0416934" x2="773.772091" y2="102.052423" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(773.772400, 72.547058) rotate(-20.000000) translate(-773.772400, -72.547058) "></line>
+                <line x1="780.261863" y1="42.9583532" x2="780.261246" y2="101.892327" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(780.261554, 72.425340) rotate(-20.000000) translate(-780.261554, -72.425340) "></line>
+                <line x1="787.887535" y1="42.6434834" x2="787.886912" y2="102.225363" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(787.887224, 72.434423) rotate(-20.000000) translate(-787.887224, -72.434423) "></line>
+                <line x1="794.798987" y1="45.1601559" x2="794.798394" y2="101.785919" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(794.798690, 73.473037) rotate(-20.000000) translate(-794.798690, -73.473037) "></line>
+                <line x1="803.280831" y1="55.8871702" x2="803.280351" y2="101.765879" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(803.280591, 78.826525) rotate(-20.000000) translate(-803.280591, -78.826525) "></line>
+                <line x1="812.915515" y1="67.4885885" x2="812.915162" y2="101.222777" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(812.915338, 84.355683) rotate(-20.000000) translate(-812.915338, -84.355683) "></line>
+                <line x1="821.128423" y1="76.9250338" x2="821.128171" y2="101.015433" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(821.128297, 88.970234) rotate(-20.000000) translate(-821.128297, -88.970234) "></line>
+                <line x1="829.736031" y1="82.3025856" x2="829.735835" y2="101.052086" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(829.735933, 91.677336) rotate(-20.000000) translate(-829.735933, -91.677336) "></line>
+                <line x1="836.984394" y1="86.5986251" x2="836.984247" y2="100.684699" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(836.984321, 93.641662) rotate(-20.000000) translate(-836.984321, -93.641662) "></line>
+                <line x1="844.411944" y1="91.6925818" x2="844.411852" y2="100.504068" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(844.411898, 96.098325) rotate(-20.000000) translate(-844.411898, -96.098325) "></line>
+                <polyline id="Path-18" stroke="#FFFFFF" stroke-width="2"
+                          points="961.438965 136.774806 838.363462 136.774806 838.363462 119.37967 910.574971 119.37967 928.179232 114.151672 961.438965 134.989089 1027.13637 134.989089 1027.13637 131.459139 1130.62345 131.459139 1130.62345 124.570381 1155.65879 124.570381 1160.4225 131.459139 1160.4225 140.284015 1178.04675 140.284015 1178.71111 134.989089 1205.90385 134.989089 1211.24434 137.545722 1211.24434 188.775604 1211.24434 202.618431 1234.36346 227.442818 1234.36346 243.151672"></polyline>
+                <line x1="868.577098" y1="118.523871" x2="869.484634" y2="137.644713" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(869.030866, 128.084292) rotate(-20.000000) translate(-869.030866, -128.084292) "></line>
+                <line x1="874.939113" y1="118.323398" x2="875.846695" y2="136.943056" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(875.392904, 127.633227) rotate(-20.000000) translate(-875.392904, -127.633227) "></line>
+                <line x1="882.740986" y1="118.853228" x2="883.64857" y2="137.446662" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(883.194778, 128.149945) rotate(-20.000000) translate(-883.194778, -128.149945) "></line>
+                <line x1="889.212785" y1="118.769441" x2="890.120381" y2="137.231657" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(889.666583, 128.000549) rotate(-20.000000) translate(-889.666583, -128.000549) "></line>
+                <line x1="895.760778" y1="118.546101" x2="896.668322" y2="137.574832" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(896.214550, 128.060467) rotate(-20.000000) translate(-896.214550, -128.060467) "></line>
+                <line x1="903.349594" y1="118.640914" x2="904.257168" y2="137.342456" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(903.803381, 127.991685) rotate(-20.000000) translate(-903.803381, -127.991685) "></line>
+                <line x1="909.912667" y1="118.838597" x2="910.82026" y2="137.347691" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(910.366463, 128.093144) rotate(-20.000000) translate(-910.366463, -128.093144) "></line>
+                <line x1="917.186691" y1="117.028494" x2="918.094121" y2="137.289431" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(917.640406, 127.158962) rotate(-20.000000) translate(-917.640406, -127.158962) "></line>
+                <line x1="923.450364" y1="115.378277" x2="924.357623" y2="137.496383" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(923.903993, 126.437330) rotate(-20.000000) translate(-923.903993, -126.437330) "></line>
+                <line x1="929.607318" y1="113.610146" x2="930.514437" y2="137.234752" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(930.060878, 125.422449) rotate(-20.000000) translate(-930.060878, -125.422449) "></line>
+                <line x1="938.151607" y1="118.64368" x2="939.059184" y2="137.316615" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(938.605395, 127.980148) rotate(-20.000000) translate(-938.605395, -127.980148) "></line>
+                <line x1="945.623753" y1="124.187354" x2="946.531875" y2="136.974062" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(946.077814, 130.580708) rotate(-20.000000) translate(-946.077814, -130.580708) "></line>
+                <line x1="953.160874" y1="129.471692" x2="954.141704" y2="136.997576" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(953.651289, 133.234634) rotate(-20.000000) translate(-953.651289, -133.234634) "></line>
+                <line x1="863.06619" y1="118.572095" x2="863.973772" y2="137.198462" id="Path-8-Copy" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(863.519981, 127.885278) rotate(-20.000000) translate(-863.519981, -127.885278) "></line>
+                <line x1="845.615387" y1="118.720215" x2="846.52302" y2="136.788314" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(846.069204, 127.754264) rotate(-20.000000) translate(-846.069204, -127.754264) "></line>
+                <line x1="839.989234" y1="124.325869" x2="840.738046" y2="136.586023" id="Path-8-Copy-2"
+                      stroke="#FFFFFF" stroke-width="0.5"
+                      transform="translate(840.363640, 130.455946) rotate(-20.000000) translate(-840.363640, -130.455946) "></line>
+                <line x1="852.203635" y1="118.485605" x2="853.111193" y2="137.363962" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(852.657414, 127.924783) rotate(-20.000000) translate(-852.657414, -127.924783) "></line>
+                <line x1="858.643595" y1="118.271888" x2="859.551157" y2="137.103859" id="Path-8" stroke="#FFFFFF"
+                      stroke-width="0.5"
+                      transform="translate(859.097376, 127.687874) rotate(-20.000000) translate(-859.097376, -127.687874) "></line>
+                <polyline id="Path-2" stroke="#FFFFFF" stroke-width="2"
+                          points="189.363462 54.151672 219.946185 54.151672 235.260453 57.151672 288.363462 57.151672"></polyline>
+                <polyline id="Path-3" stroke="#FFFFFF" stroke-width="2"
+                          points="288.363462 51.151672 293.208481 44.7300932 303.363462 14.151672"></polyline>
+                <line x1="289.363462" y1="50.651672" x2="361.363462" y2="50.651672" id="Path-4" stroke="#FFFFFF"
+                      stroke-width="2"></line>
+                <polyline id="Path-14" stroke="#FFFFFF" stroke-width="2"
+                          points="838.363462 102.151672 838.363462 221.151672 821.928024 221.151672 814.578002 211.004472 777.976591 199.02138 765.149345 180.788365 716.363462 180.788365"></polyline>
+                <polyline id="Path-15" stroke="#FFFFFF" stroke-width="2"
+                          points="729.363462 255.151672 729.363462 207.929495 729.363462 200.663106 707.890417 171.091531 689.144882 171.091531 689.144882 164.810543 683.566055 160.151672 678.872637 167.868517 678.872637 171.091531 660.301558 171.091531 649.706664 164.810543 631.6552 164.810543 614.363462 174.855191"></polyline>
+                <polyline id="Path-16" stroke="#FFFFFF" stroke-width="2"
+                          points="729.363462 208.151672 628.363462 208.151672 649.036906 166.151672"></polyline>
+                <path d="M481.142623,260.151672 L484.363462,157.151672 L402.467732,157.151672 L402.467732,189.42119 C397.324057,189.42119 390.9393,189.42119 383.313461,189.42119 C375.687622,189.42119 364.618627,186.84486 350.106477,181.692199 L307.550543,175.964667 L289.587664,175.964667 L289.587664,189.42119 L262.435697,189.42119 L258.528344,197.34917 L248.415951,192.231888 L223.974983,189.42119 L216.172928,192.231888 L216.172928,213.099884 L199.74696,213.099884 L199.74696,192.231888 L177.130669,181.692199 L152.600195,181.692199 L140.967415,201.196475 L120.683763,201.495842 L120.683763,186.272755 L89.3347951,186.272755 L81.559452,165.706812 L78.7650979,165.706812 L76.3888183,168.471857 L76.3888183,178.600444 L71.6149338,178.600444 L71.6149338,165.103011 L62.5588858,165.103011 L60.0541586,168.954501 L60.0541586,178.600444 L54.8245085,178.600444 L54.8245085,165.103011 L46.4456618,165.103011 L44.3034642,168.954501 L44.3034642,178.227559 L38.0769817,178.227559 L38.0769817,165.103011 L31.2107412,165.103011 L29.7301229,168.471857 L23.3634615,168.471857"
+                      id="Path-22" stroke="#FFFFFF" stroke-width="2" fill-opacity="0.05" fill="#FFFFFF"></path>
+                <line x1="296.863462" y1="107.151672" x2="296.863462" y2="175.151672" id="Path-23" stroke="#FFFFFF"
+                      stroke-width="2"></line>
+                <line x1="326.863462" y1="109.151672" x2="326.863462" y2="178.151672" id="Path-24" stroke="#FFFFFF"
+                      stroke-width="2"></line>
+                <line x1="483.863462" y1="107.151672" x2="483.863462" y2="156.151672" id="Path-25" stroke="#FFFFFF"
+                      stroke-width="2"></line>
+                <line x1="401.863462" y1="109.151672" x2="401.863462" y2="155.151672" id="Path-26" stroke="#FFFFFF"
+                      stroke-width="2"></line>
+                <polyline id="Path-27" stroke="#FFFFFF" stroke-width="2"
+                          points="614.363462 101.151672 614.363462 123.245868 604.278164 123.245868 604.278164 134.151672 600.746016 134.151672 600.746016 123.245868 591.076299 123.245868 591.076299 134.151672 587.574657 134.151672 587.574657 123.245868 577.827126 123.245868 577.827126 134.151672 573.029877 134.151672 573.029877 123.245868 564.983235 123.245868 564.983235 134.151672 560.578949 134.151672 560.578949 123.245868 551.401406 123.245868 551.401406 134.151672 547.459466 134.151672 547.459466 123.245868 536.939628 123.245868 536.939628 133.280781 534.079954 133.280781 534.079954 123.245868 525.363462 123.245868"></polyline>
+                <line x1="900.863462" y1="138.151672" x2="900.863462" y2="173.151672" id="Path-28" stroke="#FFFFFF"
+                      stroke-width="2"></line>
+                <line x1="912.863462" y1="137.151672" x2="912.863462" y2="199.151672" id="Path-28-Copy" stroke="#FFFFFF"
+                      stroke-width="2"></line>
+                <polyline id="Path-28-Copy-2" stroke="#FFFFFF" stroke-width="2"
+                          points="952.863462 138.151672 952.863462 173.856752 952.863462 203.151672"></polyline>
+                <path d="M346.41532,180.151672 L385.311603,180.151672 C389.108581,149.472445 382.625868,133.812089 365.863462,133.170604 C349.101055,132.529119 342.618342,148.189475 346.41532,180.151672 Z"
+                      id="Path-32" stroke="#FFFFFF" stroke-width="2"></path>
+                <line x1="666.863462" y1="101.151672" x2="666.863462" y2="170.151672" id="Path-94" stroke="#FFFFFF"
+                      stroke-width="2"></line>
+                <line x1="21.3634615" y1="61.651672" x2="44.3634615" y2="61.651672" id="Path-95" stroke="#FFFFFF"
+                      stroke-width="2"></line>
+                <polyline id="Path-96" stroke="#FFFFFF" stroke-width="2"
+                          points="23.3634615 85.151672 35.3985299 85.151672 35.3985299 75.790338 40.5056746 75.790338 40.5056746 67.9886496 45.7539039 67.9886496 45.7539039 59.5922886 50.4963362 59.5922886 50.4963362 52.151672 55.3634615 52.151672"></polyline>
+                <line x1="36.3634615" y1="22.651672" x2="41.3634615" y2="22.651672" id="Path-97" stroke="#FFFFFF"
+                      stroke-width="2"></line>
+                <line x1="38.8634615" y1="62.151672" x2="38.8634615" y2="22.151672" id="Path-98" stroke="#FFFFFF"
+                      stroke-width="0.5"></line>
+                <path d="M22.3634615,62.151672 C24.2586046,60.7274607 26.5307234,56.8987732 29.1798179,50.6656096 C31.8289125,44.4324459 35.2234604,34.9278 39.3634615,22.151672"
+                      id="Path-99" stroke="#FFFFFF" stroke-width="0.5"></path>
+                <line x1="0.363461538" y1="158.651672" x2="19.3634615" y2="158.651672" id="Path-100" stroke="#FFFFFF"
+                      stroke-width="2"></line>
+                <polyline id="Path-101" stroke="#FFFFFF" stroke-width="2"
+                          points="8.36346154 148.151672 9.36346154 139.151672 10.3634615 148.151672"></polyline>
             </g>
         </g>
     </g>

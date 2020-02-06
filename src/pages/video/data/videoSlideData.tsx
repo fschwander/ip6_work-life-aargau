@@ -1,19 +1,19 @@
-import videoBaden from "../../../res/videos/baden1.mp4";
-import videoBaden2 from "../../../res/videos/baden2.mp4";
-import videoBaden3 from "../../../res/videos/baden3.mp4";
+import castleIcon from "../../../res/icons/castle.svg"
 import videoAarau1 from "../../../res/videos/aarau1.mp4";
 import videoAarau2 from "../../../res/videos/aarau2.mp4";
+import {ReactComponent as svgRoof} from "../../../res/videos/baden1-roof.svg";
+import {ReactComponent as svgRuine} from "../../../res/videos/baden1-ruine.svg";
+import {ReactComponent as svgTower} from "../../../res/videos/baden1-tower.svg";
+import videoBaden from "../../../res/videos/baden1.mp4";
+import {ReactComponent as svgStairs} from "../../../res/videos/baden2-stairways.svg";
+import videoBaden2 from "../../../res/videos/baden2.mp4";
+import videoBaden3 from "../../../res/videos/baden3.mp4";
+import {VideoSlideProps} from "../VideoSlide";
 import {hikingTrails} from "./hikingTrails";
 import {mammut} from "./mammut";
 import {realEstate} from "./realEstate";
-import castleIcon from "../../../res/icons/castle.svg"
-import {ReactComponent as svgRuine} from "../../../res/videos/baden1-ruine.svg";
-import {ReactComponent as svgStairs} from "../../../res/videos/baden2-stairways.svg";
-import {ReactComponent as svgRoof} from "../../../res/videos/baden1-roof.svg";
-import {ReactComponent as svgTower} from "../../../res/videos/baden1-tower.svg";
-import {VideoSlideProps} from "../VideoSlide";
 
-export const videoSlides: Array<VideoSlideProps> = [
+export const videoSlideData: Array<VideoSlideProps> = [
 
   // SEQUENCE 1
   {
@@ -74,9 +74,7 @@ export const videoSlides: Array<VideoSlideProps> = [
     title: 'Die Stadt Baden',
     isMainPoint: false,
     videoSrc: videoBaden2,
-    locationPoints: [
-
-    ],
+    locationPoints: [],
     hoverPoints: [
       {
         title: 'Sport & Freizeit',
@@ -107,9 +105,7 @@ export const videoSlides: Array<VideoSlideProps> = [
     title: 'Die Stadt Baden',
     videoSrc: videoBaden3,
     isMainPoint: true,
-    locationPoints: [
-
-    ],
+    locationPoints: [],
     hoverPoints: [
       {
         title: 'Kultur & Geschichte',
@@ -130,9 +126,7 @@ export const videoSlides: Array<VideoSlideProps> = [
     title: 'Die Stadt Aarau',
     videoSrc: videoAarau1,
     isMainPoint: false,
-    locationPoints: [
-
-    ],
+    locationPoints: [],
     hoverPoints: [
       {
         title: 'Kultur & Geschichte',
@@ -153,9 +147,7 @@ export const videoSlides: Array<VideoSlideProps> = [
     title: 'Die Stadt Aarau',
     isMainPoint: false,
     videoSrc: videoAarau2,
-    locationPoints: [
-
-    ],
+    locationPoints: [],
     hoverPoints: [
       {
         title: 'Kultur & Geschichte',

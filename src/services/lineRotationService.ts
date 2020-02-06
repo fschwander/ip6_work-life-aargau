@@ -63,7 +63,6 @@ export function calcLineStyle(orientation: string, deg: number, lineHeight: numb
     return (orientation === 'left' ? deg : deg + 180) % 360 * -1;
   }
 
-
   const lineTranslate = getLineTransform(orientation, deg, lineHeight);
   const lineTransformOrigin = getTransformOrigin(orientation, deg);
   const realLineRotation = getRealLineRotation(orientation, deg);

@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import {RoundButton} from '../../components/buttons/RoundButton';
-import {VideoOverlayInterface} from './data/VideoOverlayInterface';
 import iconArrowLeft from '../../res/icons/arrow2_left.svg'
 import iconArrowRight from '../../res/icons/arrow2_right.svg'
 import {Constants} from "../../services/Constants";
+import {VideoOverlayInterface} from './data/VideoOverlayInterface';
 
 interface Props {
   data: VideoOverlayInterface

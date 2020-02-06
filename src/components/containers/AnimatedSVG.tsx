@@ -11,7 +11,7 @@ export const AnimatedSVG: React.FC<Props> = props => {
   const SVGImage = props.svgComponent;
 
   const initValuesForAnimation = () => {
-    if(rootRef.current !== null) {
+    if (rootRef.current !== null) {
       const pathElements = Array.prototype.slice.call(rootRef.current.getElementsByTagName('path'))
       const lineElements = Array.prototype.slice.call(rootRef.current.getElementsByTagName('line'))
       const polylineElements = Array.prototype.slice.call(rootRef.current.getElementsByTagName('polyline'))

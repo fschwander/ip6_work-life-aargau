@@ -1,7 +1,7 @@
 import React from 'react';
 import {useHistory} from 'react-router-dom';
-import {AnimatedSVG} from '../../components/containers/AnimatedSVG';
 import {RectButton} from '../../components/buttons/RectButton';
+import {AnimatedSVG} from '../../components/containers/AnimatedSVG';
 import {QuizBox} from '../../components/widgets/QuizBox';
 import bgImage from '../../res/imgs/AT_PSI_VILLIGEN.jpg'
 import {ReactComponent as SVGImage} from '../../res/imgs/AT_PSI_VILLIGEN.svg'

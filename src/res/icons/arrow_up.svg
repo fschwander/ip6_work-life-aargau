@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="8px" height="4px" viewBox="0 0 8 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="8px" height="4px" viewBox="0 0 8 4" version="1.1" xmlns="http://www.w3.org/2000/svg"
+>
     <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
     <title>Path 38</title>
     <desc>Created with Sketch.</desc>
     <g id="Hover-points" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Company" transform="translate(-144.000000, -1015.000000)" stroke="#FFFFFF">
             <g id="Group-13" transform="translate(69.000000, 1003.000000)">
-                <polyline id="Path-38" transform="translate(79.050001, 14.074667) scale(1, -1) translate(-79.050001, -14.074667) " points="76.0500015 12.5 79.0500015 15.6493346 82.0500015 12.5"></polyline>
+                <polyline id="Path-38"
+                          transform="translate(79.050001, 14.074667) scale(1, -1) translate(-79.050001, -14.074667) "
+                          points="76.0500015 12.5 79.0500015 15.6493346 82.0500015 12.5"></polyline>
             </g>
         </g>
     </g>

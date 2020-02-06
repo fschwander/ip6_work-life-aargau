@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="41px" height="33px" viewBox="0 0 41 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="41px" height="33px" viewBox="0 0 41 33" version="1.1" xmlns="http://www.w3.org/2000/svg"
+>
     <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
     <title>weather</title>
     <desc>Created with Sketch.</desc>
@@ -11,20 +12,48 @@
                     <circle id="Oval-Copy-5" stroke="#FFFFFF" cx="31.1999995" cy="22.3999996" r="9.29999983"></circle>
                     <g id="Group-7" fill="#FFFFFF">
                         <circle id="Oval" cx="11.5424797" cy="0.699999988" r="1"></circle>
-                        <circle id="Oval" transform="translate(15.813214, 1.607773) rotate(24.000000) translate(-15.813214, -1.607773) " cx="15.8132144" cy="1.60777267" r="1"></circle>
-                        <circle id="Oval" transform="translate(19.345500, 4.174129) rotate(48.000000) translate(-19.345500, -4.174129) " cx="19.3455002" cy="4.17412856" r="1"></circle>
-                        <circle id="Oval" transform="translate(21.528573, 7.955321) rotate(72.000000) translate(-21.528573, -7.955321) " cx="21.5285729" cy="7.95532142" r="1"></circle>
-                        <circle id="Oval" transform="translate(21.984959, 12.297549) rotate(96.000000) translate(-21.984959, -12.297549) " cx="21.9849594" cy="12.2975487" r="1"></circle>
-                        <circle id="Oval" transform="translate(20.635746, 16.450000) rotate(120.000000) translate(-20.635746, -16.450000) " cx="20.6357463" cy="16.4499997" r="1"></circle>
-                        <circle id="Oval" transform="translate(17.714225, 19.694678) rotate(144.000000) translate(-17.714225, -19.694678) " cx="17.7142247" cy="19.6946781" r="1"></circle>
-                        <circle id="Oval" transform="translate(13.725552, 21.470549) rotate(168.000000) translate(-13.725552, -21.470549) " cx="13.7255524" cy="21.4705494" r="1"></circle>
-                        <circle id="Oval" transform="translate(9.359407, 21.470549) rotate(192.000000) translate(-9.359407, -21.470549) " cx="9.35940697" cy="21.4705494" r="1"></circle>
-                        <circle id="Oval" transform="translate(5.370735, 19.694678) rotate(216.000000) translate(-5.370735, -19.694678) " cx="5.37073464" cy="19.6946781" r="1"></circle>
-                        <circle id="Oval" transform="translate(2.449213, 16.450000) rotate(240.000000) translate(-2.449213, -16.450000) " cx="2.4492131" cy="16.4499997" r="1"></circle>
-                        <circle id="Oval" transform="translate(1.100000, 12.297549) rotate(264.000000) translate(-1.100000, -12.297549) " cx="1.09999996" cy="12.2975487" r="1"></circle>
-                        <circle id="Oval" transform="translate(1.556386, 7.955321) rotate(288.000000) translate(-1.556386, -7.955321) " cx="1.55638644" cy="7.95532142" r="1"></circle>
-                        <circle id="Oval" transform="translate(3.739459, 4.174129) rotate(312.000000) translate(-3.739459, -4.174129) " cx="3.73945915" cy="4.17412856" r="1"></circle>
-                        <circle id="Oval" transform="translate(7.271745, 1.607773) rotate(336.000000) translate(-7.271745, -1.607773) " cx="7.27174501" cy="1.60777267" r="1"></circle>
+                        <circle id="Oval"
+                                transform="translate(15.813214, 1.607773) rotate(24.000000) translate(-15.813214, -1.607773) "
+                                cx="15.8132144" cy="1.60777267" r="1"></circle>
+                        <circle id="Oval"
+                                transform="translate(19.345500, 4.174129) rotate(48.000000) translate(-19.345500, -4.174129) "
+                                cx="19.3455002" cy="4.17412856" r="1"></circle>
+                        <circle id="Oval"
+                                transform="translate(21.528573, 7.955321) rotate(72.000000) translate(-21.528573, -7.955321) "
+                                cx="21.5285729" cy="7.95532142" r="1"></circle>
+                        <circle id="Oval"
+                                transform="translate(21.984959, 12.297549) rotate(96.000000) translate(-21.984959, -12.297549) "
+                                cx="21.9849594" cy="12.2975487" r="1"></circle>
+                        <circle id="Oval"
+                                transform="translate(20.635746, 16.450000) rotate(120.000000) translate(-20.635746, -16.450000) "
+                                cx="20.6357463" cy="16.4499997" r="1"></circle>
+                        <circle id="Oval"
+                                transform="translate(17.714225, 19.694678) rotate(144.000000) translate(-17.714225, -19.694678) "
+                                cx="17.7142247" cy="19.6946781" r="1"></circle>
+                        <circle id="Oval"
+                                transform="translate(13.725552, 21.470549) rotate(168.000000) translate(-13.725552, -21.470549) "
+                                cx="13.7255524" cy="21.4705494" r="1"></circle>
+                        <circle id="Oval"
+                                transform="translate(9.359407, 21.470549) rotate(192.000000) translate(-9.359407, -21.470549) "
+                                cx="9.35940697" cy="21.4705494" r="1"></circle>
+                        <circle id="Oval"
+                                transform="translate(5.370735, 19.694678) rotate(216.000000) translate(-5.370735, -19.694678) "
+                                cx="5.37073464" cy="19.6946781" r="1"></circle>
+                        <circle id="Oval"
+                                transform="translate(2.449213, 16.450000) rotate(240.000000) translate(-2.449213, -16.450000) "
+                                cx="2.4492131" cy="16.4499997" r="1"></circle>
+                        <circle id="Oval"
+                                transform="translate(1.100000, 12.297549) rotate(264.000000) translate(-1.100000, -12.297549) "
+                                cx="1.09999996" cy="12.2975487" r="1"></circle>
+                        <circle id="Oval"
+                                transform="translate(1.556386, 7.955321) rotate(288.000000) translate(-1.556386, -7.955321) "
+                                cx="1.55638644" cy="7.95532142" r="1"></circle>
+                        <circle id="Oval"
+                                transform="translate(3.739459, 4.174129) rotate(312.000000) translate(-3.739459, -4.174129) "
+                                cx="3.73945915" cy="4.17412856" r="1"></circle>
+                        <circle id="Oval"
+                                transform="translate(7.271745, 1.607773) rotate(336.000000) translate(-7.271745, -1.607773) "
+                                cx="7.27174501" cy="1.60777267" r="1"></circle>
                     </g>
                 </g>
             </g>

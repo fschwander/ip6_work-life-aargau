@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="16px" height="14px" viewBox="0 0 16 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="16px" height="14px" viewBox="0 0 16 14" version="1.1" xmlns="http://www.w3.org/2000/svg"
+>
     <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
     <title>arrow_large_right</title>
     <desc>Created with Sketch.</desc>
@@ -8,7 +9,8 @@
             <g id="Group-20" transform="translate(520.000000, 243.000000)">
                 <g id="Group-19" transform="translate(66.000000, 0.000000)">
                     <g id="Group-16" transform="translate(371.000000, 465.000000)">
-                        <g id="arrow_large_right" transform="translate(59.500000, 30.500000) scale(-1, 1) translate(-59.500000, -30.500000) translate(52.000000, 24.000000)">
+                        <g id="arrow_large_right"
+                           transform="translate(59.500000, 30.500000) scale(-1, 1) translate(-59.500000, -30.500000) translate(52.000000, 24.000000)">
                             <polyline id="Path-21" points="6.29999973 12.5999995 0 6.28487167 6.29999973 0"></polyline>
                             <line x1="0.383942424" y1="6.29999973" x2="14.7801644" y2="6.29999973" id="Path-42"></line>
                         </g>
