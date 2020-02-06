@@ -18,7 +18,10 @@ export const InfoLabel: React.FC<InfoLabelProps> = props => {
 
   return (
     <div className={`InfoLabel ${props.className} ${props.orientation}`}
-         style={{...props.hoverPointStyles, left: `${props.posLeftInPct}%`, top: `${props.posTopInPct}%`}}>
+         style={{
+           ...props.hoverPointStyles,
+           left: `${props.posLeftInPct}%`, top: `${props.posTopInPct}%`
+         }}>
 
       <HoverPoint style={props.hoverPointStyles} onClick={() => console.log('clicked')}/>
 

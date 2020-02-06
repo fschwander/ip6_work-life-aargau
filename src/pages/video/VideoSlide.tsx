@@ -50,8 +50,7 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
         <div className={`anim-group-container`}>
 
           {props.locationPoints.map((d, i) => {
-            const hoverPointStyles = getTransitionStyles(i, 0)
-
+            const hoverPointStyles = getTransitionStyles(i, 2)
             return <div className='anim-group' key={i}>
               <AnimatedSVG svgComponent={d.svgComponent}
                            isActive={animationStarted}
@@ -61,14 +60,13 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
           })}
 
           {props.hoverPoints.map((d, i) => {
-            let prevIndex = props.locationPoints.length;
-            const hoverPointStyles = getTransitionStyles(prevIndex + i, 0)
-
+            const index = props.locationPoints.length + i;
+            const hoverPointStyles = getTransitionStyles(index, 2)
             return (
               <div className={`anim-group`} key={d.className + i}>
                 <AnimatedSVG svgComponent={d.svgComponent}
                              isActive={animationStarted}
-                             animationDelay={(prevIndex + i) * animationStaggerInSec}/>
+                             animationDelay={index * animationStaggerInSec}/>
                 <InfoLabel {...d} hoverPointStyles={hoverPointStyles}/>
               </div>
             )

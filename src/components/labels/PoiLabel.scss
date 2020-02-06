@@ -1,35 +1,31 @@
 .PoiLabel {
   position: absolute;
   text-align: left;
+  white-space: nowrap;
 
-  .transition-container {
+  p {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+  }
+
+  h4 {
+    font-size: 0.9rem;
+    border-bottom: $lineThin solid white;
+    font-weight: 800;
+    margin: unset;
+    padding-bottom: 0.2em;
+  }
+
+  .RoundButton {
+    border-width: 1px;
+  }
+
+  .label-line {
     position: absolute;
-    white-space: nowrap;
+    border-bottom: $lineThin solid white;
 
-    p {
-      font-size: 0.8rem;
-      text-transform: uppercase;
-    }
-
-    h4 {
-      font-size: 0.9rem;
-      border-bottom: $lineThin solid white;
-      font-weight: 800;
-      margin: unset;
-      padding-bottom: 0.2em;
-    }
-
-    .RoundButton {
-      border-width: 1px;
-    }
-
-    .label-line {
-      position: absolute;
-      border-bottom: $lineThin solid white;
-
-      &.right {
-        right: 0;
-      }
+    &.right {
+      right: 0;
     }
   }
 }

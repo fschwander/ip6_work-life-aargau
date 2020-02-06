@@ -51,21 +51,22 @@ export const PoiLabel: React.FC<PoiLabelProps> = props => {
 
   return (
     <div className='PoiLabel'
-         style={{left: `${props.posLeftInPct}%`, top: `${props.posTopInPct}%`}}>
+         ref={containerRef}
+         style={{
+           ...props.hoverPointStyles,
+           left: `calc(${props.posLeftInPct}% + ${deltaValues.deltaX}px)`,
+           top: `calc(${props.posTopInPct}% + ${deltaValues.deltaY}px`
+         }}>
 
-      <div className='transition-container' ref={containerRef}
-           style={{...props.hoverPointStyles, left: deltaValues.deltaX, top: deltaValues.deltaY}}>
+      <RoundButton size='2.5em'
+                   borderWidth={1}
+                   icon={props.iconSrc}
+                   onClick={() => console.log('clicked')}/>
 
-        <RoundButton size='2.5em'
-                     borderWidth={1}
-                     icon={props.iconSrc}
-                     onClick={() => console.log('clicked')}/>
-
-        <p>{props.subtitle}</p>
-        <h4>{props.title}</h4>
-        <div className={`label-line ${props.orientation}`}
-             style={lineStyle}/>
-      </div>
+      <p>{props.subtitle}</p>
+      <h4>{props.title}</h4>
+      <div className={`label-line ${props.orientation}`}
+           style={lineStyle}/>
     </div>
   )
 }
