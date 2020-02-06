@@ -1,52 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="1920px" height="1080px" preserveAspectRatio="xMidYMid slice" viewBox="0 0 1920 1080" version="1.1"
-     xmlns="http://www.w3.org/2000/svg">
+<svg width="1920px" height="1080px" viewBox="0 0 1920 1080" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
     <title>baden-short@1x</title>
     <desc>Created with Sketch.</desc>
     <g id="baden-short" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="culture_and_history" transform="translate(1282.000000, 217.000000)" stroke="#FFFFFF">
             <line x1="152.5" y1="111" x2="152.5" y2="151" id="Path-66" stroke-width="0.5" stroke-dasharray="1,1"></line>
-            <line x1="186.5" y1="115" x2="186.5" y2="155" id="Path-66-Copy-2" stroke-width="0.5"
-                  stroke-dasharray="1,1"></line>
-            <line x1="199.5" y1="115" x2="199.5" y2="155" id="Path-66-Copy-3" stroke-width="0.5"
-                  stroke-dasharray="1,1"></line>
-            <line x1="125" y1="116" x2="124" y2="159" id="Path-66-Copy-5" stroke-width="0.5"
-                  stroke-dasharray="1,1"></line>
-            <line x1="133" y1="116" x2="132" y2="159" id="Path-66-Copy-12" stroke-width="0.5"
-                  stroke-dasharray="1,1"></line>
-            <line x1="11.7366968" y1="119" x2="11.2633032" y2="154" id="Path-67-Copy-5" stroke-width="0.5"
-                  stroke-dasharray="1,1"></line>
-            <line x1="46.6183484" y1="120" x2="46.3816516" y2="139" id="Path-67-Copy-7" stroke-width="0.5"
-                  stroke-dasharray="1,1"></line>
-            <line x1="62.5" y1="119" x2="62.5" y2="128" id="Path-67-Copy-8" stroke-width="0.5"
-                  stroke-dasharray="1,1"></line>
-            <line x1="21.5" y1="120" x2="21.5" y2="141" id="Path-67-Copy" stroke-width="0.5"
-                  stroke-dasharray="1,1"></line>
-            <line x1="36.5" y1="120" x2="36.5" y2="141" id="Path-67-Copy-2" stroke-width="0.5"
-                  stroke-dasharray="1,1"></line>
-            <line x1="72.8677207" y1="119" x2="72.1322793" y2="161" id="Path-67-Copy-4" stroke-width="0.5"
-                  stroke-dasharray="1,1"></line>
+            <line x1="186.5" y1="115" x2="186.5" y2="155" id="Path-66-Copy-2" stroke-width="0.5" stroke-dasharray="1,1"></line>
+            <line x1="199.5" y1="115" x2="199.5" y2="155" id="Path-66-Copy-3" stroke-width="0.5" stroke-dasharray="1,1"></line>
+            <line x1="125" y1="116" x2="124" y2="159" id="Path-66-Copy-5" stroke-width="0.5" stroke-dasharray="1,1"></line>
+            <line x1="133" y1="116" x2="132" y2="159" id="Path-66-Copy-12" stroke-width="0.5" stroke-dasharray="1,1"></line>
+            <line x1="11.7366968" y1="119" x2="11.2633032" y2="154" id="Path-67-Copy-5" stroke-width="0.5" stroke-dasharray="1,1"></line>
+            <line x1="46.6183484" y1="120" x2="46.3816516" y2="139" id="Path-67-Copy-7" stroke-width="0.5" stroke-dasharray="1,1"></line>
+            <line x1="62.5" y1="119" x2="62.5" y2="128" id="Path-67-Copy-8" stroke-width="0.5" stroke-dasharray="1,1"></line>
+            <line x1="21.5" y1="120" x2="21.5" y2="141" id="Path-67-Copy" stroke-width="0.5" stroke-dasharray="1,1"></line>
+            <line x1="36.5" y1="120" x2="36.5" y2="141" id="Path-67-Copy-2" stroke-width="0.5" stroke-dasharray="1,1"></line>
+            <line x1="72.8677207" y1="119" x2="72.1322793" y2="161" id="Path-67-Copy-4" stroke-width="0.5" stroke-dasharray="1,1"></line>
             <line x1="138.5" y1="74" x2="138.5" y2="100" id="Path-68"></line>
-            <line x1="96" y1="113" x2="94" y2="167" id="Path-66-Copy-7" stroke-width="0.5"
-                  stroke-dasharray="1,1"></line>
-            <line x1="107" y1="113" x2="105" y2="163" id="Path-66-Copy-11" stroke-width="0.5"
-                  stroke-dasharray="1,1"></line>
-            <line x1="177.5" y1="111" x2="177.5" y2="151" id="Path-66-Copy-9" stroke-width="0.5"
-                  stroke-dasharray="1,1"></line>
-            <line x1="162.5" y1="111" x2="162.5" y2="151" id="Path-66-Copy-10" stroke-width="0.5"
-                  stroke-dasharray="1,1"></line>
-            <path d="M0,126 L54.3580401,126 L90.0751611,123 L124.195911,124.243077 L143.95275,123 L177.331289,123 M177.331289,120.6 L204,120.6"
-                  id="Shape"></path>
-            <path d="M0,133.454545 L54.3580401,133.454545 M67.9155058,132.41933 L90.0751611,130.727273 L124.195911,131.857343 L143.95275,130.727273 L177.331289,130.727273 M177.331289,128.545455 L204,128.545455"
-                  id="Shape" stroke-width="0.5" stroke-dasharray="1,1"></path>
-            <path d="M0,150.454545 L14.8809124,150.454545 M69.6411197,149.287567 L90.0751611,147.727273 L124.195911,148.857343 L143.95275,147.727273 L177.331289,147.727273 M177.331289,145.545455 L204,145.545455"
-                  id="Shape"></path>
-            <path d="M70,158 L89.7284244,156.2244 L123.953023,157.560459 L143.769993,156.2244 L177.250121,156.2244 M177.250121,153.64488 L204,153.64488"
-                  id="Shape" stroke-width="0.5" stroke-dasharray="1,1"></path>
+            <line x1="96" y1="113" x2="94" y2="167" id="Path-66-Copy-7" stroke-width="0.5" stroke-dasharray="1,1"></line>
+            <line x1="107" y1="113" x2="105" y2="163" id="Path-66-Copy-11" stroke-width="0.5" stroke-dasharray="1,1"></line>
+            <line x1="177.5" y1="111" x2="177.5" y2="151" id="Path-66-Copy-9" stroke-width="0.5" stroke-dasharray="1,1"></line>
+            <line x1="162.5" y1="111" x2="162.5" y2="151" id="Path-66-Copy-10" stroke-width="0.5" stroke-dasharray="1,1"></line>
+            <path d="M0,126 L54.3580401,126 L90.0751611,123 L124.195911,124.243077 L143.95275,123 L177.331289,123 M177.331289,120.6 L204,120.6" id="Shape"></path>
+            <path d="M0,133.454545 L54.3580401,133.454545 M67.9155058,132.41933 L90.0751611,130.727273 L124.195911,131.857343 L143.95275,130.727273 L177.331289,130.727273 M177.331289,128.545455 L204,128.545455" id="Shape" stroke-width="0.5" stroke-dasharray="1,1"></path>
+            <path d="M0,150.454545 L14.8809124,150.454545 M69.6411197,149.287567 L90.0751611,147.727273 L124.195911,148.857343 L143.95275,147.727273 L177.331289,147.727273 M177.331289,145.545455 L204,145.545455" id="Shape"></path>
+            <path d="M70,158 L89.7284244,156.2244 L123.953023,157.560459 L143.769993,156.2244 L177.250121,156.2244 M177.250121,153.64488 L204,153.64488" id="Shape" stroke-width="0.5" stroke-dasharray="1,1"></path>
             <line x1="132" y1="81.5" x2="155" y2="81.5" id="Path-70" stroke-width="0.5" stroke-dasharray="1,1"></line>
-            <line x1="132" y1="96.5" x2="139" y2="96.5" id="Path-70-Copy-2" stroke-width="0.5"
-                  stroke-dasharray="1,1"></line>
+            <line x1="132" y1="96.5" x2="139" y2="96.5" id="Path-70-Copy-2" stroke-width="0.5" stroke-dasharray="1,1"></line>
             <line x1="152" y1="109" x2="168" y2="93" id="Path-72" stroke-width="0.5" stroke-dasharray="1,1"></line>
             <line x1="171" y1="109" x2="176" y2="104" id="Path-74" stroke-width="0.5" stroke-dasharray="1,1"></line>
             <line x1="154" y1="99" x2="163" y2="109" id="Path-76" stroke-width="0.5" stroke-dasharray="1,1"></line>
@@ -59,12 +39,10 @@
             <line x1="147.5" y1="74" x2="147.5" y2="92" id="Path-68-Copy"></line>
             <line x1="193.5" y1="115" x2="193.5" y2="155" id="Path-66-Copy-8"></line>
             <line x1="140" y1="114" x2="139" y2="162" id="Path-66-Copy-4"></line>
-            <path d="M0,141.454545 L23.2065726,141.454545 M66.7282967,140.509983 L90.0751611,138.727273 L124.195911,139.857343 L143.95275,138.727273 L177.331289,138.727273 M177.331289,136.545455 L204,136.545455"
-                  id="Shape" stroke-width="0.5" stroke-dasharray="1"></path>
+            <path d="M0,141.454545 L23.2065726,141.454545 M66.7282967,140.509983 L90.0751611,138.727273 L124.195911,139.857343 L143.95275,138.727273 L177.331289,138.727273 M177.331289,136.545455 L204,136.545455" id="Shape" stroke-width="0.5" stroke-dasharray="1"></path>
             <line x1="132" y1="88.5" x2="155" y2="88.5" id="Path-70-Copy"></line>
             <path d="M147,90 L139.213842,101.5 L129,113" id="Path-71" stroke-width="0.5" stroke-dasharray="1"></path>
-            <path d="M154,90 L146.213842,101.5 L136,113" id="Path-71-Copy" stroke-width="0.5"
-                  stroke-dasharray="1"></path>
+            <path d="M154,90 L146.213842,101.5 L136,113" id="Path-71-Copy" stroke-width="0.5" stroke-dasharray="1"></path>
             <line x1="161" y1="109" x2="172" y2="99" id="Path-73"></line>
             <line x1="159" y1="93" x2="171" y2="109" id="Path-75"></line>
             <line x1="150" y1="104" x2="155" y2="109" id="Path-77"></line>
@@ -74,15 +52,12 @@
             <line x1="139" y1="72" x2="137" y2="66" id="Path-81"></line>
             <line x1="145" y1="72" x2="143" y2="66" id="Path-81-Copy" stroke-width="0.5" stroke-dasharray="1"></line>
             <line x1="152" y1="72" x2="150" y2="66" id="Path-81-Copy-2"></line>
-            <line x1="151.392624" y1="28" x2="151.607376" y2="9.9475983e-14" id="Path-82" stroke-width="0.5"
-                  stroke-dasharray="1"></line>
+            <line x1="151.392624" y1="28" x2="151.607376" y2="9.9475983e-14" id="Path-82" stroke-width="0.5" stroke-dasharray="1"></line>
             <line x1="145.362118" y1="28" x2="145.637882" y2="0" id="Path-82-Copy-2" stroke-width="0.5"></line>
             <path d="M144,4.5 L148.354963,4.5 L162,4.5" id="Path-83" stroke-width="0.5" stroke-dasharray="1"></path>
             <polyline id="Path-83-Copy" points="144 9.5 148.672009 9.5 162 9.5"></polyline>
-            <path d="M144,16.5 L148.672009,16.5 L162,16.5" id="Path-83-Copy-2" stroke-width="0.5"
-                  stroke-dasharray="1"></path>
-            <path d="M143,21.5 L148.273269,21.5 L162,21.5" id="Path-83-Copy-3" stroke-width="0.5"
-                  stroke-dasharray="1"></path>
+            <path d="M144,16.5 L148.672009,16.5 L162,16.5" id="Path-83-Copy-2" stroke-width="0.5" stroke-dasharray="1"></path>
+            <path d="M143,21.5 L148.273269,21.5 L162,21.5" id="Path-83-Copy-3" stroke-width="0.5" stroke-dasharray="1"></path>
             <polyline id="Path-83-Copy-4" points="143 26.5 148.273269 26.5 162 26.5"></polyline>
             <line x1="157.366495" y1="28" x2="157.633505" y2="-9.9475983e-14" id="Path-82-Copy"></line>
             <line x1="131" y1="70.5" x2="154" y2="70.5" id="Path-45" stroke-width="0.5" stroke-dasharray="1"></line>

@@ -4,6 +4,7 @@ import videoAarau2 from "../../../res/videos/aarau2.mp4";
 import {ReactComponent as svgRoof} from "../../../res/videos/baden1-roof.svg";
 import {ReactComponent as svgRuine} from "../../../res/videos/baden1-ruine.svg";
 import {ReactComponent as svgTower} from "../../../res/videos/baden1-tower.svg";
+import {ReactComponent as svgBridge} from "../../../res/videos/baden3-bridge.svg";
 import videoBaden from "../../../res/videos/baden1.mp4";
 import {ReactComponent as svgStairs} from "../../../res/videos/baden2-stairways.svg";
 import videoBaden2 from "../../../res/videos/baden2.mp4";
@@ -110,7 +111,7 @@ export const videoSlideData: Array<VideoSlideProps> = [
       {
         title: 'Holzbrücke',
         subtitle: 'lokales Highlight',
-        svgComponent: svgRoof, // todo: add real svg
+        svgComponent: svgBridge,
         iconSrc: castleIcon, // todo: add real icon
         posLeftInPct: 66,
         posTopInPct: 59,
