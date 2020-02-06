@@ -6,12 +6,12 @@ import videoAarau2 from "../../../res/videos/aarau2.mp4";
 import {hikingTrails} from "./hikingTrails";
 import {mammut} from "./mammut";
 import {realEstate} from "./realEstate";
+import castleIcon from "../../../res/icons/castle.svg"
 import {ReactComponent as svgRuine} from "../../../res/videos/baden1-ruine.svg";
 import {ReactComponent as svgStairs} from "../../../res/videos/baden2-stairways.svg";
 import {ReactComponent as svgRoof} from "../../../res/videos/baden1-roof.svg";
 import {ReactComponent as svgTower} from "../../../res/videos/baden1-tower.svg";
 import {VideoSlideProps} from "../VideoSlide";
-import {lafargeHolcim} from "./lafargeHolcim";
 
 export const videoSlides: Array<VideoSlideProps> = [
 
@@ -21,6 +21,19 @@ export const videoSlides: Array<VideoSlideProps> = [
     title: 'Die Stadt Baden',
     videoSrc: videoBaden,
     isMainPoint: false,
+    locationPoints: [
+      {
+        subtitle: 'Lokales Highlight',
+        title: 'Ruine Stein',
+        svgComponent: svgRuine,
+        iconSrc: castleIcon,
+        posLeftInPct: 69,
+        posTopInPct: 33,
+        lineLength: 60,
+        lineRotation: 40,
+        orientation: 'right'
+      }
+    ],
     hoverPoints: [
       {
         title: 'Kultur & Geschichte',
@@ -28,13 +41,9 @@ export const videoSlides: Array<VideoSlideProps> = [
         className: 'culture-and-history',
         overlayData: hikingTrails,
         svgComponent: svgTower,
-        translateX: 390,
-        translateY: 180,
-        hoverPointPosLeft: 40,
-        hoverPointPosTop: -40,
-        lineLength: 85,
-        lineRotation: 70,
-        orientation: 'right',
+        posLeftInPct: 68,
+        posTopInPct: 60,
+        orientation: 'left',
       },
       {
         title: 'Gewerbeimmobilien & Areal',
@@ -42,28 +51,19 @@ export const videoSlides: Array<VideoSlideProps> = [
         className: 'realEstate',
         overlayData: realEstate,
         svgComponent: svgRoof,
-        translateX: -170,
-        translateY: 40,
-        hoverPointPosLeft: 40,
-        hoverPointPosTop: 50,
-        lineLength: 60,
-        lineRotation: 300,
+        posLeftInPct: 26,
+        posTopInPct: 61,
         orientation: 'right'
       },
       {
-        title: 'Ruine Stein',
-        subtitle: 'Lokales Highlight',
-        className: 'hiking-trails',
+        title: 'Kultur & Geschichte',
+        subtitle: 'Historische Highlights',
+        className: 'culture-and-history',
         overlayData: hikingTrails,
         svgComponent: svgRuine,
-        translateX: 210,
-        translateY: -150,
-        hoverPointPosLeft: 50,
-        hoverPointPosTop: -50,
-        lineLength: 60,
-        lineRotation: 70,
+        posLeftInPct: 210,
+        posTopInPct: -150,
         orientation: 'right'
-
       }
     ]
   },
@@ -74,6 +74,9 @@ export const videoSlides: Array<VideoSlideProps> = [
     title: 'Die Stadt Baden',
     isMainPoint: false,
     videoSrc: videoBaden2,
+    locationPoints: [
+
+    ],
     hoverPoints: [
       {
         title: 'Sport & Freizeit',
@@ -81,12 +84,8 @@ export const videoSlides: Array<VideoSlideProps> = [
         className: 'hiking-trails',
         overlayData: hikingTrails,
         svgComponent: svgStairs,
-        translateX: -200,
-        translateY: 40,
-        hoverPointPosLeft: -30,
-        hoverPointPosTop: -40,
-        lineLength: 160,
-        lineRotation: 310,
+        posLeftInPct: 28,
+        posTopInPct: 44,
         orientation: 'right'
       },
       {
@@ -95,12 +94,8 @@ export const videoSlides: Array<VideoSlideProps> = [
         className: 'mammut',
         overlayData: mammut,
         svgComponent: svgStairs,
-        translateX: 230,
-        translateY: -60,
-        hoverPointPosLeft: 160,
-        hoverPointPosTop: -20,
-        lineLength: 170,
-        lineRotation: 235,
+        posLeftInPct: 62,
+        posTopInPct: 47,
         orientation: 'left'
       }
     ]
@@ -112,6 +107,9 @@ export const videoSlides: Array<VideoSlideProps> = [
     title: 'Die Stadt Baden',
     videoSrc: videoBaden3,
     isMainPoint: true,
+    locationPoints: [
+
+    ],
     hoverPoints: [
       {
         title: 'Kultur & Geschichte',
@@ -119,12 +117,8 @@ export const videoSlides: Array<VideoSlideProps> = [
         className: 'culture-and-history',
         overlayData: hikingTrails,
         svgComponent: svgRoof,
-        translateX: 0,
-        translateY: 0,
-        hoverPointPosLeft: 0,
-        hoverPointPosTop: 0,
-        lineLength: 60,
-        lineRotation: 70,
+        posLeftInPct: 0,
+        posTopInPct: 0,
         orientation: 'right'
       },
     ]
@@ -136,6 +130,9 @@ export const videoSlides: Array<VideoSlideProps> = [
     title: 'Die Stadt Aarau',
     videoSrc: videoAarau1,
     isMainPoint: false,
+    locationPoints: [
+
+    ],
     hoverPoints: [
       {
         title: 'Kultur & Geschichte',
@@ -143,12 +140,8 @@ export const videoSlides: Array<VideoSlideProps> = [
         className: 'culture-and-history',
         overlayData: hikingTrails,
         svgComponent: svgRoof,
-        translateX: 0,
-        translateY: 0,
-        hoverPointPosLeft: 0,
-        hoverPointPosTop: 0,
-        lineLength: 60,
-        lineRotation: 70,
+        posLeftInPct: 0,
+        posTopInPct: 0,
         orientation: 'right'
       },
     ]
@@ -160,6 +153,9 @@ export const videoSlides: Array<VideoSlideProps> = [
     title: 'Die Stadt Aarau',
     isMainPoint: false,
     videoSrc: videoAarau2,
+    locationPoints: [
+
+    ],
     hoverPoints: [
       {
         title: 'Kultur & Geschichte',
@@ -167,14 +163,10 @@ export const videoSlides: Array<VideoSlideProps> = [
         className: 'culture-and-history',
         overlayData: hikingTrails,
         svgComponent: svgTower,
-        translateX: 0,
-        translateY: 0,
-        hoverPointPosLeft: 0,
-        hoverPointPosTop: 0,
-        lineLength: 60,
-        lineRotation: 210,
+        posLeftInPct: 0,
+        posTopInPct: 0,
         orientation: 'right'
       },
     ]
   },
-]
+];

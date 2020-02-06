@@ -9,7 +9,7 @@ interface Props {
   data: VideoOverlayInterface
 }
 
-export const VideoOverlay: React.FC<Props> = props => {
+export const PopupOverlay: React.FC<Props> = props => {
   const {data} = props;
 
   const [activeDetail, setActiveDetail] = useState(0);
@@ -25,7 +25,7 @@ export const VideoOverlay: React.FC<Props> = props => {
   }
 
   return (
-    <div className='VideoOverlay horizontal-container'>
+    <div className='PopupOverlay horizontal-container'>
       <div className='box-left vertical-container'>
 
         <div className='header-container'>
