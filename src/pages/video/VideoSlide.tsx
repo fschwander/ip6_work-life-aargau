@@ -4,8 +4,8 @@ import {BackgroundVideo} from '../../components/containers/BackgroundVideo';
 import {CurrentLocationDescription} from '../../components/containers/CurrentLocationDescription';
 import {PopupContainer} from '../../components/containers/PopupContainer';
 import {SlideInContainer} from '../../components/containers/SlideInContainer';
-import {InfoLabel, InfoLabelProps} from "../../components/labels/InfoLabel";
-import {PoiLabel, PoiLabelProps} from "../../components/labels/PoiLabel";
+import {InfoLabel, InfoLabelItem} from "../../components/labels/InfoLabel";
+import {PoiLabel, PoiLabelItem} from "../../components/labels/PoiLabel";
 import {VideoOverlayInterface} from './data/VideoOverlayInterface';
 import {PopupOverlay} from './PopupOverlay';
 
@@ -14,8 +14,8 @@ export interface VideoSlideProps {
   title: string,
   isMainPoint: boolean,
   videoSrc: string,
-  locationPoints: Array<PoiLabelProps>
-  hoverPoints: Array<InfoLabelProps>
+  poiLabelItems: Array<PoiLabelItem>
+  infoLabelItems: Array<InfoLabelItem>
 }
 
 export const VideoSlide: React.FC<VideoSlideProps> = props => {
@@ -59,7 +59,7 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
 
         <div className={`anim-group-container`}>
 
-          {props.locationPoints.map((d, i) => {
+          {props.poiLabelItems.map((d, i) => {
             const styles = getTransitionStyles(i, 2)
             return <div className='anim-group' key={i}>
               <AnimatedSVG svgComponent={d.svgComponent}
@@ -70,8 +70,8 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
             </div>
           })}
 
-          {props.hoverPoints.map((d, i) => {
-            const index = props.locationPoints.length + i;
+          {props.infoLabelItems.map((d, i) => {
+            const index = props.poiLabelItems.length + i;
             const styles = getTransitionStyles(index, 2)
             return (
               <div className={`anim-group`} key={d.className + i}>

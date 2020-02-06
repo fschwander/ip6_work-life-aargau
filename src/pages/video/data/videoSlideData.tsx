@@ -23,7 +23,7 @@ export const videoSlideData: Array<VideoSlideProps> = [
     title: 'Die Stadt Baden',
     videoSrc: videoBaden,
     isMainPoint: false,
-    locationPoints: [
+    poiLabelItems: [
       {
         subtitle: 'Lokales Highlight',
         title: 'Ruine Stein',
@@ -36,7 +36,7 @@ export const videoSlideData: Array<VideoSlideProps> = [
         orientation: 'right'
       }
     ],
-    hoverPoints: [
+    infoLabelItems: [
       {
         title: 'Kultur & Geschichte',
         subtitle: 'Historische Highlights',
@@ -76,8 +76,8 @@ export const videoSlideData: Array<VideoSlideProps> = [
     title: 'Die Stadt Baden',
     isMainPoint: false,
     videoSrc: videoBaden2,
-    locationPoints: [],
-    hoverPoints: [
+    poiLabelItems: [],
+    infoLabelItems: [
       {
         title: 'Sport & Freizeit',
         subtitle: 'Wanderwege',
@@ -107,7 +107,7 @@ export const videoSlideData: Array<VideoSlideProps> = [
     title: 'Die Stadt Baden',
     videoSrc: videoBaden3,
     isMainPoint: true,
-    locationPoints: [
+    poiLabelItems: [
       {
         title: 'Holzbrücke',
         subtitle: 'lokales Highlight',
@@ -120,7 +120,7 @@ export const videoSlideData: Array<VideoSlideProps> = [
         orientation: 'left',
       },
     ],
-    hoverPoints: []
+    infoLabelItems: []
   },
 
   // SEQUENCE 4
@@ -129,8 +129,8 @@ export const videoSlideData: Array<VideoSlideProps> = [
     title: 'Die Stadt Aarau',
     videoSrc: videoAarau1,
     isMainPoint: false,
-    locationPoints: [],
-    hoverPoints: [
+    poiLabelItems: [],
+    infoLabelItems: [
       {
         title: 'Kultur & Geschichte',
         subtitle: 'Historische Highlights',
@@ -150,8 +150,8 @@ export const videoSlideData: Array<VideoSlideProps> = [
     title: 'Die Stadt Aarau',
     isMainPoint: false,
     videoSrc: videoAarau2,
-    locationPoints: [],
-    hoverPoints: [
+    poiLabelItems: [],
+    infoLabelItems: [
       {
         title: 'Kultur & Geschichte',
         subtitle: 'Historische Highlights',

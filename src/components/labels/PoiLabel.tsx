@@ -2,7 +2,7 @@ import React, {createRef, CSSProperties, FunctionComponent, SVGProps, useEffect,
 import {calcLineStyle} from '../../services/lineRotationService';
 import {RoundButton} from "../buttons/RoundButton";
 
-export interface PoiLabelProps {
+export interface PoiLabelItem {
   subtitle: string,
   title: string,
   svgComponent: FunctionComponent<SVGProps<SVGSVGElement>>,
@@ -12,8 +12,11 @@ export interface PoiLabelProps {
   lineLength: number,
   lineRotation: number,
   orientation: string,
-  onClick?: Function,
-  styles?: CSSProperties
+}
+
+interface PoiLabelProps extends PoiLabelItem{
+  onClick: Function,
+  styles: CSSProperties
 }
 
 export const PoiLabel: React.FC<PoiLabelProps> = props => {

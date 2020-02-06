@@ -2,7 +2,7 @@ import React, {CSSProperties, FunctionComponent, SVGProps} from "react";
 import {VideoOverlayInterface} from "../../pages/video/data/VideoOverlayInterface";
 import {HoverPoint} from "../buttons/HoverPoint";
 
-export interface InfoLabelProps {
+export interface InfoLabelItem {
   title: string,
   subtitle: string,
   className: string,
@@ -11,8 +11,11 @@ export interface InfoLabelProps {
   orientation: string,
   posLeftInPct: number,
   posTopInPct: number,
-  onClick?: Function,
-  styles?: CSSProperties
+}
+
+interface InfoLabelProps extends InfoLabelItem{
+  onClick: Function,
+  styles: CSSProperties
 }
 
 export const InfoLabel: React.FC<InfoLabelProps> = props => {
