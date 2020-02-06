@@ -1,4 +1,4 @@
-import React, {createRef, CSSProperties, FunctionComponent, SVGProps, useEffect, useState} from 'react';
+import React, {createRef, CSSProperties, FunctionComponent, SVGProps, useEffect, useRef, useState} from 'react';
 import {calcLineStyle} from '../../services/lineRotationService';
 import {RoundButton} from "../buttons/RoundButton";
 
@@ -18,6 +18,7 @@ export interface PoiLabelProps {
 export const PoiLabel: React.FC<PoiLabelProps> = props => {
   const [deltaValues, setDeltaValues] = useState({deltaX: 0, deltaY: 0})
   const containerRef: React.RefObject<HTMLDivElement> = createRef();
+  const isInitialMount = useRef(true);
 
   const lineHeight = 1;
   const lineStyle = calcLineStyle(props.orientation, props.lineRotation, lineHeight, props.lineLength)
@@ -46,8 +47,11 @@ export const PoiLabel: React.FC<PoiLabelProps> = props => {
   };
 
   useEffect(() => {
-    calcContainerTransition()
-  }, []);
+    if (isInitialMount.current) {
+      isInitialMount.current = false;
+      calcContainerTransition();
+    }
+  });
 
   return (
     <div className='PoiLabel'

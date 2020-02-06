@@ -6,7 +6,7 @@ import {CurrentLocationDescription} from '../../components/containers/CurrentLoc
 import {PoiLabel, PoiLabelProps} from "../../components/labels/PoiLabel";
 import {InfoLabel, InfoLabelProps} from "../../components/labels/InfoLabel";
 import {VideoOverlayInterface} from './data/VideoOverlayInterface';
-import {VideoOverlay} from './VideoOverlay';
+import {PopupOverlay} from './PopupOverlay';
 
 export interface VideoSlideProps {
   className: string,
@@ -28,7 +28,7 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
   }
 
   const openOverlay = (data: VideoOverlayInterface) => {
-    setPopupContainer(<VideoOverlay data={data}/>)
+    setPopupContainer(<PopupOverlay data={data}/>)
   }
 
   const closeOverlay = () => {

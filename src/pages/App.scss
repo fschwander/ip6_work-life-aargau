@@ -24,7 +24,7 @@
 @import '../pages/intro/IntroductionPage.scss';
 @import '../pages/video/VideoPage';
 @import '../pages/video/VideoSlide';
-@import '../pages/video/VideoOverlay.scss';
+@import 'video/PopupOverlay';
 @import '../pages/side/travelingDistance/TravelingDistancePage.scss';
 
 .App {

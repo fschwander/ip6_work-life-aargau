@@ -12,7 +12,7 @@ import {ReactComponent as svgTower} from "../../../res/videos/baden1-tower.svg";
 import {VideoSlideProps} from "../VideoSlide";
 import {lafargeHolcim} from "./lafargeHolcim";
 
-export const videoSlideData: Array<VideoSlideProps> = [
+export const videoSlides: Array<VideoSlideProps> = [
 
   // SEQUENCE 1
   {
