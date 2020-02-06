@@ -12,7 +12,7 @@ export interface PoiLabelProps {
   lineLength: number,
   lineRotation: number,
   orientation: string,
-  hoverPointStyles?: CSSProperties
+  styles?: CSSProperties
 }
 
 export const PoiLabel: React.FC<PoiLabelProps> = props => {
@@ -53,7 +53,7 @@ export const PoiLabel: React.FC<PoiLabelProps> = props => {
     <div className='PoiLabel'
          ref={containerRef}
          style={{
-           ...props.hoverPointStyles,
+           ...props.styles,
            left: `calc(${props.posLeftInPct}% + ${deltaValues.deltaX}px)`,
            top: `calc(${props.posTopInPct}% + ${deltaValues.deltaY}px`
          }}>

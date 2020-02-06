@@ -5,6 +5,8 @@ import {PopupContainer} from '../../components/containers/PopupContainer';
 import {CurrentLocationDescription} from '../../components/containers/CurrentLocationDescription';
 import {PoiLabel, PoiLabelProps} from "../../components/labels/PoiLabel";
 import {InfoLabel, InfoLabelProps} from "../../components/labels/InfoLabel";
+import {VideoOverlayInterface} from './data/VideoOverlayInterface';
+import {VideoOverlay} from './VideoOverlay';
 
 export interface VideoSlideProps {
   className: string,
@@ -25,8 +27,8 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
     setAnimationStarted(true);
   }
 
-  const openOverlay = (overlay: any) => {
-    setPopupContainer(overlay)
+  const openOverlay = (data: VideoOverlayInterface) => {
+    setPopupContainer(<VideoOverlay data={data}/>)
   }
 
   const closeOverlay = () => {
@@ -50,24 +52,25 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
         <div className={`anim-group-container`}>
 
           {props.locationPoints.map((d, i) => {
-            const hoverPointStyles = getTransitionStyles(i, 2)
+            const styles = getTransitionStyles(i, 2)
             return <div className='anim-group' key={i}>
               <AnimatedSVG svgComponent={d.svgComponent}
                            isActive={animationStarted}
                            animationDelay={i * animationStaggerInSec}/>
-              <PoiLabel {...d} hoverPointStyles={hoverPointStyles}/>
+              <PoiLabel {...d} styles={styles}/>
             </div>
           })}
 
           {props.hoverPoints.map((d, i) => {
             const index = props.locationPoints.length + i;
-            const hoverPointStyles = getTransitionStyles(index, 2)
+            const styles = getTransitionStyles(index, 2)
             return (
               <div className={`anim-group`} key={d.className + i}>
                 <AnimatedSVG svgComponent={d.svgComponent}
                              isActive={animationStarted}
                              animationDelay={index * animationStaggerInSec}/>
-                <InfoLabel {...d} hoverPointStyles={hoverPointStyles}/>
+                <InfoLabel {...d} styles={styles}
+                           onClick={() => openOverlay(d.overlayData)}/>
               </div>
             )
           })}
