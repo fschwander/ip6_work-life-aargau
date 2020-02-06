@@ -1,18 +1,18 @@
 import castleIcon from "../../../res/icons/castle.svg"
+import videoAarau1 from "../../../res/videos/aarau1.mp4";
+import videoAarau2 from "../../../res/videos/aarau2.mp4";
+import {ReactComponent as svgRoof} from "../../../res/videos/baden1-roof.svg";
+import {ReactComponent as svgRuine} from "../../../res/videos/baden1-ruine.svg";
+import {ReactComponent as svgTower} from "../../../res/videos/baden1-tower.svg";
 import videoBaden from "../../../res/videos/baden1.mp4";
+import {ReactComponent as svgStairs} from "../../../res/videos/baden2-stairways.svg";
 import videoBaden2 from "../../../res/videos/baden2.mp4";
 import videoBaden3 from "../../../res/videos/baden3.mp4";
 import {VideoSlideProps} from "../VideoSlide";
-import videoAarau1 from "../../../res/videos/aarau1.mp4";
-import videoAarau2 from "../../../res/videos/aarau2.mp4";
 import {culture} from './culture';
 import {hikingTrails} from "./hikingTrails";
 import {mammut} from "./mammut";
 import {realEstate} from "./realEstate";
-import {ReactComponent as svgRuine} from "../../../res/videos/baden1-ruine.svg";
-import {ReactComponent as svgStairs} from "../../../res/videos/baden2-stairways.svg";
-import {ReactComponent as svgRoof} from "../../../res/videos/baden1-roof.svg";
-import {ReactComponent as svgTower} from "../../../res/videos/baden1-tower.svg";
 
 export const videoSlideData: Array<VideoSlideProps> = [
 
@@ -52,7 +52,7 @@ export const videoSlideData: Array<VideoSlideProps> = [
         className: 'realEstate',
         overlayData: realEstate,
         svgComponent: svgRoof,
-        posLeftInPct: 26,
+        posLeftInPct: 21,
         posTopInPct: 61,
         orientation: 'right'
       },
@@ -106,19 +106,20 @@ export const videoSlideData: Array<VideoSlideProps> = [
     title: 'Die Stadt Baden',
     videoSrc: videoBaden3,
     isMainPoint: true,
-    locationPoints: [],
-    hoverPoints: [
+    locationPoints: [
       {
         title: 'Holzbrücke',
         subtitle: 'lokales Highlight',
-        className: 'culture-and-history',
-        overlayData: hikingTrails,
-        svgComponent: svgRoof,
-        posLeftInPct: 100,
-        posTopInPct: 100,
-        orientation: 'right'
+        svgComponent: svgRoof, // todo: add real svg
+        iconSrc: castleIcon, // todo: add real icon
+        posLeftInPct: 66,
+        posTopInPct: 59,
+        lineLength: 100,
+        lineRotation: 140,
+        orientation: 'left',
       },
-    ]
+    ],
+    hoverPoints: []
   },
 
   // SEQUENCE 4
