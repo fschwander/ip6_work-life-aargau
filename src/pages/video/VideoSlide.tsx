@@ -3,6 +3,7 @@ import {AnimatedSVG} from '../../components/containers/AnimatedSVG';
 import {BackgroundVideo} from '../../components/containers/BackgroundVideo';
 import {PopupContainer} from '../../components/containers/PopupContainer';
 import {CurrentLocationDescription} from '../../components/containers/CurrentLocationDescription';
+import {SlideInContainer} from '../../components/containers/SlideInContainer';
 import {PoiLabel, PoiLabelProps} from "../../components/labels/PoiLabel";
 import {InfoLabel, InfoLabelProps} from "../../components/labels/InfoLabel";
 import {VideoOverlayInterface} from './data/VideoOverlayInterface';
@@ -83,6 +84,11 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
         <PopupContainer onCloseButtonClicked={closeOverlay}>
           {popupComponent}
         </PopupContainer> : null}
+
+      <SlideInContainer>
+        sup?
+
+      </SlideInContainer>
 
     </div>
   )
