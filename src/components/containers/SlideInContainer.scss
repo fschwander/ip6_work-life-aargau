@@ -4,6 +4,7 @@
   min-width: 50vw;
   height: 100vh;
   right: 0;
+  animation: 1s slide-in ease-in-out;
 
   .content-container {
     position: relative;
@@ -18,5 +19,15 @@
     position: absolute;
     top: 10vh;
     transform: translateX(-120%);
+  }
+
+  @keyframes slide-in {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+
   }
 }
