@@ -1,11 +1,11 @@
 import React, {CSSProperties, useState} from 'react';
 import {AnimatedSVG} from '../../components/containers/AnimatedSVG';
 import {BackgroundVideo} from '../../components/containers/BackgroundVideo';
-import {PopupContainer} from '../../components/containers/PopupContainer';
 import {CurrentLocationDescription} from '../../components/containers/CurrentLocationDescription';
+import {PopupContainer} from '../../components/containers/PopupContainer';
 import {SlideInContainer} from '../../components/containers/SlideInContainer';
-import {PoiLabel, PoiLabelProps} from "../../components/labels/PoiLabel";
 import {InfoLabel, InfoLabelProps} from "../../components/labels/InfoLabel";
+import {PoiLabel, PoiLabelProps} from "../../components/labels/PoiLabel";
 import {VideoOverlayInterface} from './data/VideoOverlayInterface';
 import {PopupOverlay} from './PopupOverlay';
 
@@ -21,6 +21,7 @@ export interface VideoSlideProps {
 export const VideoSlide: React.FC<VideoSlideProps> = props => {
   const [animationStarted, setAnimationStarted] = useState(false);
   const [popupComponent, setPopupContainer] = useState();
+  const [slideInComponent, setSlideInComponent] = useState();
 
   const animationStaggerInSec: number = 3;
 
@@ -28,12 +29,18 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
     setAnimationStarted(true);
   }
 
-  const openOverlay = (data: VideoOverlayInterface) => {
+  const openPopUpOverlay = (data: VideoOverlayInterface) => {
+    if (slideInComponent !== undefined) {
+      setSlideInComponent(undefined)
+    }
     setPopupContainer(<PopupOverlay data={data}/>)
   }
 
-  const closeOverlay = () => {
-    setPopupContainer(undefined);
+  const openSlideInOverlay = () => {
+    if (popupComponent !== undefined) {
+      setPopupContainer(undefined)
+    }
+    setSlideInComponent(<div>yoyo</div>)
   }
 
   const getTransitionStyles = (i: number, delay: number): CSSProperties => {
@@ -58,7 +65,8 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
               <AnimatedSVG svgComponent={d.svgComponent}
                            isActive={animationStarted}
                            animationDelay={i * animationStaggerInSec}/>
-              <PoiLabel {...d} styles={styles}/>
+              <PoiLabel {...d} styles={styles}
+                        onClick={() => openSlideInOverlay()}/>
             </div>
           })}
 
@@ -71,7 +79,7 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
                              isActive={animationStarted}
                              animationDelay={index * animationStaggerInSec}/>
                 <InfoLabel {...d} styles={styles}
-                           onClick={() => openOverlay(d.overlayData)}/>
+                           onClick={() => openPopUpOverlay(d.overlayData)}/>
               </div>
             )
           })}
@@ -81,14 +89,14 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
       <CurrentLocationDescription title={props.title}/>
 
       {popupComponent !== undefined ?
-        <PopupContainer onCloseButtonClicked={closeOverlay}>
+        <PopupContainer onCloseButtonClicked={() => setPopupContainer(undefined)}>
           {popupComponent}
         </PopupContainer> : null}
 
-      <SlideInContainer>
-        sup?
-
-      </SlideInContainer>
+      {slideInComponent !== undefined ?
+        <SlideInContainer onCloseButtonClicked={() => setSlideInComponent(undefined)}>
+          {slideInComponent}
+        </SlideInContainer> : null}
 
     </div>
   )

@@ -2,11 +2,15 @@ import React from 'react';
 import closeIcon from '../../res/icons/arrow_right.svg';
 import {RoundButton} from '../buttons/RoundButton';
 
-export const SlideInContainer: React.FC = props => {
+interface SlideInContainerProps {
+  onCloseButtonClicked: Function
+}
+
+export const SlideInContainer: React.FC<SlideInContainerProps> = props => {
 
   return(
     <div className='SlideInContainer'>
-      <RoundButton onClick={()=>console.log('will close')} icon={closeIcon}/>
+      <RoundButton onClick={props.onCloseButtonClicked} icon={closeIcon}/>
       <div className='content-container'>
         {props.children}
       </div>

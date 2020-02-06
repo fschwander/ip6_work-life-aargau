@@ -1,7 +1,7 @@
 import React from "react";
 
 interface RoundButtonProps {
-  onClick: Function,
+  onClick?: Function,
   isActive?: boolean,
   icon?: string,
   text?: string,
@@ -19,7 +19,7 @@ export const RoundButton: React.FC<RoundButtonProps> = props => {
   };
 
   const handleClick = () => {
-    if (props.isActive || props.isActive === undefined) {
+    if ((props.isActive || props.isActive !== false) && props.onClick !== undefined) {
       props.onClick()
     }
   };

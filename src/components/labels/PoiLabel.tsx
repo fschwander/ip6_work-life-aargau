@@ -12,6 +12,7 @@ export interface PoiLabelProps {
   lineLength: number,
   lineRotation: number,
   orientation: string,
+  onClick?: Function,
   styles?: CSSProperties
 }
 
@@ -65,7 +66,7 @@ export const PoiLabel: React.FC<PoiLabelProps> = props => {
       <RoundButton size='2.5em'
                    borderWidth={1}
                    icon={props.iconSrc}
-                   onClick={() => console.log('clicked')}/>
+                   onClick={props.onClick}/>
 
       <p>{props.subtitle}</p>
       <h4>{props.title}</h4>
