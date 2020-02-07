@@ -1,0 +1,30 @@
+.SelectionChip {
+  //border: $lineThick white solid;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  margin-right: 1rem;
+
+  p {
+    text-transform: uppercase;
+    margin: 0;
+    color: black;
+    font-size: .8rem;
+    font-weight: bold;
+    padding: .2rem 1rem .2rem 1rem;
+
+  }
+
+  &.is-active {
+    background-color: white;
+  }
+
+  &.inactive {
+    background-color: unset;
+    color: deeppink;
+
+  }
+
+}
