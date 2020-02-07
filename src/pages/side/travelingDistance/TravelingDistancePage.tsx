@@ -4,12 +4,7 @@ import {ReactComponent as MapSVG} from '../../../res/imgs/map.svg';
 import * as d3 from 'd3';
 import citiesData from './citiesData.json'
 
-interface Props {
-  svgComponent: React.FC,
-  animationDuration?: number,
-}
-
-export const TravelingDistancePage: React.FC<Props> = props => {
+export const TravelingDistancePage: React.FC = () => {
   const isInitialMount = useRef(true)
   const svgRef: React.RefObject<SVGSVGElement> = React.createRef();
 
@@ -149,7 +144,7 @@ export const TravelingDistancePage: React.FC<Props> = props => {
         let totalLength = el.getTotalLength().toString();
         el.style.strokeDasharray = totalLength;
         el.style.strokeDashoffset = totalLength;
-        el.style.animationDuration = (props.animationDuration ? props.animationDuration : 4) + 's';
+        el.style.animationDuration = '4s';
       })
     }
   }

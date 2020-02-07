@@ -15,7 +15,6 @@ export const BackgroundVideo: React.FC<FullScreenVideoProps> = props => {
   const updateSize = () => {
     const windowWidth = window.innerWidth;
     const windowHeight = window.innerHeight;
-    console.log(document.documentElement);
 
     const videoRatio = 1920 / 1080;
 

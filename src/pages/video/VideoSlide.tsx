@@ -6,6 +6,7 @@ import {PopupContainer} from '../../components/containers/PopupContainer';
 import {SlideInContainer} from '../../components/containers/SlideInContainer';
 import {InfoLabel, InfoLabelItem} from "../../components/labels/InfoLabel";
 import {PoiLabel, PoiLabelItem} from "../../components/labels/PoiLabel";
+import {TravelingDistancePage} from '../side/travelingDistance/TravelingDistancePage';
 import {VideoOverlayInterface} from './data/VideoOverlayInterface';
 import {PopupOverlay} from './PopupOverlay';
 
@@ -95,7 +96,9 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
 
       {slideInComponent !== undefined ?
         <SlideInContainer onCloseButtonClicked={() => setSlideInComponent(undefined)}>
-          {slideInComponent}
+          {/*{slideInComponent}*/}
+          <TravelingDistancePage/> // todo: replace
+
         </SlideInContainer> : null}
 
     </div>
