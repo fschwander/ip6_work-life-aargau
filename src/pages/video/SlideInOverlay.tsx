@@ -17,6 +17,11 @@ export const SlideInOverlay: React.FC<Props> = props => {
       <div className='image-container'>
         <img src={data.image} alt={data.title}/>
       </div>
+      <div className='facts-container'>
+        <h3>{data.title}</h3>
+        <p>{data.fact1}</p>
+        <p>{data.fact2}</p>
+      </div>
 
     </div>
   )

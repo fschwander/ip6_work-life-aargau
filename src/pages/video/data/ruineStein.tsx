@@ -7,5 +7,9 @@ export const ruineStein: SlideInOverlayInterface = {
   title: "Ruine Stein",
   subtitle: "Die Alten Mauern Badens",
   text: "Hoch oben über der Stadt thront die Ruine Stein. Einst war das Wahrzeichen eine prunkvolle Burg, in der die Grafen von Habsburg wohnten. Heute ist die Ruine ein beliebtes Ausflugsziel. Kein Wunder, denn die Aussicht von oben ist atemberaubend.",
-  image: imageDetails
+
+  image: imageDetails,
+
+  fact1: "Entstehungszeit: vor 1000, 1658–1670",
+  fact2: "Burgentyp: Höhenburg, Festung"
 }
