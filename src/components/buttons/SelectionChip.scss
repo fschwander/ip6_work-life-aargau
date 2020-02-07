@@ -10,7 +10,7 @@
   p {
     text-transform: uppercase;
     margin: 0;
-    color: black;
+    color: #4a5374;
     font-size: .8rem;
     font-weight: bold;
     padding: .2rem 1rem .2rem 1rem;
@@ -19,12 +19,6 @@
 
   &.is-active {
     background-color: white;
-  }
-
-  &.inactive {
-    background-color: unset;
-    color: deeppink;
-
   }
 
 }
