@@ -4,6 +4,11 @@ import {ReactComponent as MapSVG} from '../../../res/imgs/map.svg';
 import * as d3 from 'd3';
 import citiesData from './citiesData.json'
 
+interface Destination {
+  startingPoint: string,
+  time: number
+}
+
 export const TravelingDistancePage: React.FC = () => {
   const isInitialMount = useRef(true)
   const svgRef: React.RefObject<SVGSVGElement> = React.createRef();
@@ -158,14 +163,9 @@ export const TravelingDistancePage: React.FC = () => {
     initValuesForAnimation();
   })
 
-  const getTravelTimesBars = (data: any) => {
+  const getTravelTimesBars = (data: Array<Destination>) => {
 
-    interface Destination {
-      startingPoint: string,
-      time: number
-    }
-
-    const convertTimeToHours = (n: any) => {
+    const convertTimeToHours = (n: number) => {
       if (n > 60) {
         let hours = (n / 60);
         let rhours = Math.floor(hours);
@@ -178,17 +178,18 @@ export const TravelingDistancePage: React.FC = () => {
 
     }
 
-    const calculateMaxTravelTime = (t: any) => {
+    const calculateMaxTravelTime = () => {
 
-      return Math.max.apply(Math, data.map(function(el: any) {
+      return Math.max.apply(Math, data.map((el: Destination) => {
         return el.time;
       }))
     }
 
     return (
-      data.sort((a: any, b: any) => (a.time > b.time) ? 1 : -1)
-        .map((el: Destination, i: Number) => {
-          calculateMaxTravelTime(el.time)
+
+      data.sort((a: Destination, b: Destination) => (a.time > b.time) ? 1 : -1)
+        .map((el: Destination) => {
+          calculateMaxTravelTime()
           if (el.time === 0) {
             return null;
           }
@@ -202,7 +203,7 @@ export const TravelingDistancePage: React.FC = () => {
                   <h4>{convertTimeToHours(el.time)}</h4>
                 </div>
                 <div className='background-bar' style={{backgroundColor: "#5C6587"}}>
-                  <div className='active-bar' style={{width: el.time / calculateMaxTravelTime(el.time) * 100 + "%"}}/>
+                  <div className='active-bar' style={{width: el.time / calculateMaxTravelTime() * 100 + "%"}}/>
                 </div>
               </div>
             </div>
@@ -216,7 +217,8 @@ export const TravelingDistancePage: React.FC = () => {
       <div className='ContentContainer'>
         <h2>Der Aargau is gut vernetzt</h2>
         <p className='SecondaryTitle'><b>DER KANTON, der im Zentrum der Schweiz und Europas liegt.</b></p>
-        <p className='MainContent'>Diese Visualisierung zeigt, dass der Kanton Aargau ein hervorragender Ausgangspunkt zu jeder grösseren Stadt
+        <p className='MainContent'>Diese Visualisierung zeigt, dass der Kanton Aargau ein hervorragender Ausgangspunkt
+          zu jeder grösseren Stadt
           der Schweiz ist.
           Du kannst eine Stadt auswählen und sehen, wie lange die Reise von anderen Städten aus dauert.
           Aarau (Stadt im Aargau) ist immer unter den Schnellsten! </p>
