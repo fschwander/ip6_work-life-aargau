@@ -1,8 +1,13 @@
-import * as d3 from 'd3';
 import React, {useEffect, useRef, useState} from 'react';
-import {ReactComponent as MapSVG} from '../../../res/imgs/map.svg';
-import citiesData from './citiesData.json'
 import {SelectionChip} from './SelectionChip';
+import {ReactComponent as MapSVG} from '../../../res/imgs/map.svg';
+import * as d3 from 'd3';
+import citiesData from './citiesData.json'
+
+interface Destination {
+  startingPoint: string,
+  time: number
+}
 
 export const TravelingDistancePage: React.FC = () => {
   const isInitialMount = useRef(true)
@@ -106,7 +111,7 @@ export const TravelingDistancePage: React.FC = () => {
       .attr('class', 'outer-circle button')
       .on('click', d => setCityActive(d))
       .on('mouseover', d => setCityHovered(d))
-      .on('mouseout', d => setCityHovered(undefined))
+      .on('mouseout', () => setCityHovered(undefined))
 
     cityGroup.append('text')
       .attr('class', 'text-city-active')
@@ -158,14 +163,9 @@ export const TravelingDistancePage: React.FC = () => {
     initValuesForAnimation();
   })
 
-  const getTravelTimesBars = (data: any) => {
+  const getTravelTimesBars = (data: Array<Destination>) => {
 
-    interface Destination {
-      startingPoint: string,
-      time: number
-    }
-
-    const convertTimeToHours = (n: any) => {
+    const convertTimeToHours = (n: number) => {
       if (n > 60) {
         let hours = (n / 60);
         let rhours = Math.floor(hours);
@@ -178,17 +178,18 @@ export const TravelingDistancePage: React.FC = () => {
 
     }
 
-    const calculateMaxTravelTime = (t: any) => {
+    const calculateMaxTravelTime = () => {
 
-      return Math.max.apply(Math, data.map(function(el: any) {
+      return Math.max.apply(Math, data.map((el: Destination) => {
         return el.time;
       }))
     }
 
     return (
-      data.sort((a: any, b: any) => (a.time > b.time) ? 1 : -1)
-        .map((el: Destination, i: Number) => {
-          calculateMaxTravelTime(el.time)
+
+      data.sort((a: Destination, b: Destination) => (a.time > b.time) ? 1 : -1)
+        .map((el: Destination) => {
+          calculateMaxTravelTime()
           if (el.time === 0) {
             return null;
           }
@@ -202,7 +203,7 @@ export const TravelingDistancePage: React.FC = () => {
                   <h4>{convertTimeToHours(el.time)}</h4>
                 </div>
                 <div className='background-bar' style={{backgroundColor: "#5C6587"}}>
-                  <div className='active-bar' style={{width: el.time / calculateMaxTravelTime(el.time) * 100 + "%"}}/>
+                  <div className='active-bar' style={{width: el.time / calculateMaxTravelTime() * 100 + "%"}}/>
                 </div>
               </div>
             </div>
