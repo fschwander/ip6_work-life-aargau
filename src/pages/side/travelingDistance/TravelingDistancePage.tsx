@@ -1,5 +1,5 @@
 import React, {useEffect, useRef, useState} from 'react';
-import {SelectionChip} from './SelectionChip';
+import {SelectionChip} from '../../../components/buttons/SelectionChip';
 import {ReactComponent as MapSVG} from '../../../res/imgs/map.svg';
 import * as d3 from 'd3';
 import citiesData from './citiesData.json'
@@ -215,8 +215,8 @@ export const TravelingDistancePage: React.FC = () => {
   return (
     <div className='TravelingDistancePage'>
       <h2>Der Aargau ist gut vernetzt</h2>
-      <p className='SecondaryTitle'><b>DER KANTON, der im Zentrum der Schweiz und Europas liegt.</b></p>
-      <p className='MainContent'>Diese Visualisierung zeigt, dass der Kanton Aargau ein hervorragender Ausgangspunkt zu
+      <p className='secondary-title'><b>DER KANTON, der im Zentrum der Schweiz und Europas liegt.</b></p>
+      <p className='main-content'>Diese Visualisierung zeigt, dass der Kanton Aargau ein hervorragender Ausgangspunkt zu
         jeder grösseren Stadt
         der Schweiz ist.
         Du kannst eine Stadt auswählen und sehen, wie lange die Reise von anderen Städten aus dauert.
@@ -224,7 +224,7 @@ export const TravelingDistancePage: React.FC = () => {
 
       <h3>Karte Einstellungnen</h3>
 
-      <div className='chipWrapper'>
+      <div className='chip-container'>
         <SelectionChip text={'Zug'}
                        onClick={() => [setTrainsVisible(!trainsVisible), setLegendeTrainActive(!legendeTrainActive)]}/>
         <SelectionChip text={'Autobahn'}
@@ -238,30 +238,30 @@ export const TravelingDistancePage: React.FC = () => {
 
       <div className='map'>
         <MapSVG ref={svgRef}/>
-        <div className='LegendeWrapper'>
-          <div className={`TravelingLegende ${legendeTrainActive ? 'is-active' : ''}`}>
-            <div className='ColorPointTrain color-point'/>
-            <p className='Label'>Zugnetz</p>
+        <div className='legende-container'>
+          <div className={`travelling-legende ${legendeTrainActive ? 'is-active' : ''}`}>
+            <div className='train color-point'/>
+            <p className='legende-label'>Zugnetz</p>
           </div>
-          <div className={`TravelingLegende ${legendeCarActive ? 'is-active' : ''}`}>
-            <div className='ColorPointCar color-point'/>
-            <p className='Label'>Autobahnen</p>
+          <div className={`travelling-legende ${legendeCarActive ? 'is-active' : ''}`}>
+            <div className='car color-point'/>
+            <p className='legende-label'>Autobahnen</p>
           </div>
         </div>
       </div>
 
-      <div className='MapInfo'>
+      <div className='map-info'>
         <div>*<i>Bei der Fahrt mit der Zug wird die schnellste Verbindung angezeigt.<br/> Bei der
           Fahrt mit dem Auto wird der schnellste Route mit dem Auto unter Berücksichtigung der Staufreiheit bei
           Einhaltung der Verkehrsregeln angezeigt.</i></div>
         <p style={{opacity: cityActive ? 0 : 1}}>Wähle eine Stadt aus um die Geschwindigkeit zu vergleichen!</p>
       </div>
 
-      <div className='TravelTimesWrapper'>
-        <div className={`TravelTimesTrain ${trainsVisible ? '' : 'is-hidden'}`}>
+      <div className='travel-times-container'>
+        <div className={`train ${trainsVisible ? '' : 'is-hidden'}`}>
           {cityActive !== undefined ? getTravelTimesBars(cityActive.traveltimes_train) : null}
         </div>
-        <div className={`TravelTimesCar ${motorwaysVisible ? '' : 'is-hidden'}`}>
+        <div className={`car ${motorwaysVisible ? '' : 'is-hidden'}`}>
           {cityActive !== undefined ? getTravelTimesBars(cityActive.traveltimes_car) : null}
         </div>
       </div>
