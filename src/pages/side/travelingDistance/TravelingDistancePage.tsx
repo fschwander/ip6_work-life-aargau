@@ -111,7 +111,7 @@ export const TravelingDistancePage: React.FC = () => {
       .attr('class', 'outer-circle button')
       .on('click', d => setCityActive(d))
       .on('mouseover', d => setCityHovered(d))
-      .on('mouseout', d => setCityHovered(undefined))
+      .on('mouseout', () => setCityHovered(undefined))
 
     cityGroup.append('text')
       .attr('class', 'text-city-active')
