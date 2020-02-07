@@ -7,8 +7,10 @@ import {SlideInContainer} from '../../components/containers/SlideInContainer';
 import {InfoLabel, InfoLabelItem} from "../../components/labels/InfoLabel";
 import {PoiLabel, PoiLabelItem} from "../../components/labels/PoiLabel";
 import {TravelingDistancePage} from '../side/travelingDistance/TravelingDistancePage';
+import {SlideInOverlayInterface} from './data/SlideInOverlayInterface';
 import {VideoOverlayInterface} from './data/VideoOverlayInterface';
 import {PopupOverlay} from './PopupOverlay';
+import {SlideInOverlay} from './SlideInOverlay';
 
 export interface VideoSlideProps {
   className: string,
@@ -37,11 +39,11 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
     setPopupContainer(<PopupOverlay data={data}/>)
   }
 
-  const openSlideInOverlay = () => {
+  const openSlideInOverlay = (data: SlideInOverlayInterface) => {
     if (popupComponent !== undefined) {
       setPopupContainer(undefined)
     }
-    setSlideInComponent(<div>yoyo</div>)
+    setSlideInComponent(<SlideInOverlay data={data}/>)
   }
 
   const getTransitionStyles = (i: number, delay: number): CSSProperties => {
@@ -67,7 +69,7 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
                            isActive={animationStarted}
                            animationDelay={i * animationStaggerInSec}/>
               <PoiLabel {...d} styles={styles}
-                        onClick={() => openSlideInOverlay()}/>
+                        onClick={() => openSlideInOverlay(d.overlayData)}/>
             </div>
           })}
 
@@ -96,8 +98,8 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
 
       {slideInComponent !== undefined ?
         <SlideInContainer onCloseButtonClicked={() => setSlideInComponent(undefined)}>
-          {/*{slideInComponent}*/}
-          <TravelingDistancePage/>
+          {slideInComponent}
+          {/*<TravelingDistancePage/>*/}
 
         </SlideInContainer> : null}
 
