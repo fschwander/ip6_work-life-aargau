@@ -43,4 +43,18 @@
       max-width: 100%;
     }
   }
+
+  .location-container {
+    display: flex;
+    align-items: center;
+    margin-top: -2rem;
+  }
+
+  .description-container {
+    margin-left: 2rem;
+  }
+
+  .facts-container {
+    transform: translateY(-4rem);
+  }
 }

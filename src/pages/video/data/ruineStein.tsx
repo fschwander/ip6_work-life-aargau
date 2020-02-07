@@ -1,6 +1,7 @@
 import React from 'react';
 import {SlideInOverlayInterface} from './SlideInOverlayInterface';
-import imageDetails from '../../../res/imgs/si-ol_ruine-stein.jpg'
+import imageDetails from '../../../res/imgs/si-ol_ruine-stein.jpg';
+import svgDetails from '../../../res/imgs/map_ruine-stein.svg';
 
 export const ruineStein: SlideInOverlayInterface = {
 
@@ -11,5 +12,9 @@ export const ruineStein: SlideInOverlayInterface = {
   image: imageDetails,
 
   fact1: "Entstehungszeit: vor 1000, 1658–1670",
-  fact2: "Burgentyp: Höhenburg, Festung"
+  fact2: "Burgentyp: Höhenburg, Festung",
+
+  map: svgDetails,
+  location_title: "Wegbeschreibung",
+  location_text: "Vom Schlossbergplatz durch den Stadtturm getreten, führt auf der rechten Seite eine steile Treppe hoch zur Ruine Stein: \"Nach der Schlossruine\""
 }
