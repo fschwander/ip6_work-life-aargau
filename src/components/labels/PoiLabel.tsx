@@ -1,4 +1,5 @@
 import React, {createRef, CSSProperties, FunctionComponent, SVGProps, useEffect, useRef, useState} from 'react';
+import {SlideInOverlayInterface} from '../../pages/video/data/SlideInOverlayInterface';
 import {calcLineStyle} from '../../services/lineRotationService';
 import {RoundButton} from "../buttons/RoundButton";
 
@@ -6,6 +7,7 @@ export interface PoiLabelItem {
   subtitle: string,
   title: string,
   svgComponent: FunctionComponent<SVGProps<SVGSVGElement>>,
+  overlayData: SlideInOverlayInterface,
   iconSrc: string,
   posLeftInPct: number,
   posTopInPct: number,
