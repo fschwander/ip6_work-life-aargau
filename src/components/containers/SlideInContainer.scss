@@ -1,6 +1,7 @@
 .SlideInContainer {
   position: absolute;
   width: 60vw;
+  max-width: 800px;
   height: 100vh;
   right: 0;
   animation: 1s slide-in ease-in-out;
