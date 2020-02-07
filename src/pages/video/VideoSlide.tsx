@@ -97,7 +97,7 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
       {slideInComponent !== undefined ?
         <SlideInContainer onCloseButtonClicked={() => setSlideInComponent(undefined)}>
           {/*{slideInComponent}*/}
-          <TravelingDistancePage/> // todo: replace
+          <TravelingDistancePage/>
 
         </SlideInContainer> : null}
 

@@ -1,8 +1,8 @@
-import React, {useEffect, useRef, useState} from 'react';
-import {SelectionChip} from './SelectionChip';
-import {ReactComponent as MapSVG} from '../../../res/imgs/map.svg';
 import * as d3 from 'd3';
+import React, {useEffect, useRef, useState} from 'react';
+import {ReactComponent as MapSVG} from '../../../res/imgs/map.svg';
 import citiesData from './citiesData.json'
+import {SelectionChip} from './SelectionChip';
 
 export const TravelingDistancePage: React.FC = () => {
   const isInitialMount = useRef(true)
@@ -213,53 +213,56 @@ export const TravelingDistancePage: React.FC = () => {
 
   return (
     <div className='TravelingDistancePage'>
-      <div className='ContentContainer'>
-        <h2>Der Aargau is gut vernetzt</h2>
-        <p className='SecondaryTitle'><b>DER KANTON, der im Zentrum der Schweiz und Europas liegt.</b></p>
-        <p className='MainContent'>Diese Visualisierung zeigt, dass der Kanton Aargau ein hervorragender Ausgangspunkt zu jeder grösseren Stadt
-          der Schweiz ist.
-          Du kannst eine Stadt auswählen und sehen, wie lange die Reise von anderen Städten aus dauert.
-          Aarau (Stadt im Aargau) ist immer unter den Schnellsten! </p>
+      <h2>Der Aargau ist gut vernetzt</h2>
+      <p className='SecondaryTitle'><b>DER KANTON, der im Zentrum der Schweiz und Europas liegt.</b></p>
+      <p className='MainContent'>Diese Visualisierung zeigt, dass der Kanton Aargau ein hervorragender Ausgangspunkt zu
+        jeder grösseren Stadt
+        der Schweiz ist.
+        Du kannst eine Stadt auswählen und sehen, wie lange die Reise von anderen Städten aus dauert.
+        Aarau (Stadt im Aargau) ist immer unter den Schnellsten! </p>
 
-        <h3>Karte Einstellungnen</h3>
+      <h3>Karte Einstellungnen</h3>
 
-        <div className='chipWrapper'>
-          <SelectionChip text={'Zug'}
-                         onClick={() => [setTrainsVisible(!trainsVisible), setLegendeTrainActive(!legendeTrainActive)]}/>
-          <SelectionChip text={'Autobahn'}
-                         onClick={() => [setMotorwaysVisible(!motorwaysVisible), setLegendeCarActive(!legendeCarActive)]}/>
-          <SelectionChip text={'Seen'}
-                         onClick={() => setLakesVisible(!lakesVisible)}/>
-          <SelectionChip text={'Kantonen'}
-                         onClick={() => setCantonsVisible(!cantonsVisible)}/>
+      <div className='chipWrapper'>
+        <SelectionChip text={'Zug'}
+                       onClick={() => [setTrainsVisible(!trainsVisible), setLegendeTrainActive(!legendeTrainActive)]}/>
+        <SelectionChip text={'Autobahn'}
+                       onClick={() => [setMotorwaysVisible(!motorwaysVisible), setLegendeCarActive(!legendeCarActive)]}/>
+        <SelectionChip text={'Seen'}
+                       onClick={() => setLakesVisible(!lakesVisible)}/>
+        <SelectionChip text={'Kantonen'}
+                       onClick={() => setCantonsVisible(!cantonsVisible)}/>
+      </div>
 
 
-        </div>
+      <div className='map'>
         <MapSVG ref={svgRef}/>
         <div className='LegendeWrapper'>
           <div className={`TravelingLegende ${legendeTrainActive ? 'is-active' : ''}`}>
-            <div className='ColorPointTrain'/>
+            <div className='ColorPointTrain color-point'/>
             <p className='Label'>Zugnetz</p>
           </div>
           <div className={`TravelingLegende ${legendeCarActive ? 'is-active' : ''}`}>
-            <div className='ColorPointCar'/>
+            <div className='ColorPointCar color-point'/>
             <p className='Label'>Autobahnen</p>
           </div>
         </div>
+      </div>
 
-        <div className='MapInfo'>*<i>Bei der Fahrt mit der Zug wird die schnellste Verbindung angezeigt.<br/> Bei der
+      <div className='MapInfo'>
+        <div>*<i>Bei der Fahrt mit der Zug wird die schnellste Verbindung angezeigt.<br/> Bei der
           Fahrt mit dem Auto wird der schnellste Route mit dem Auto unter Berücksichtigung der Staufreiheit bei
           Einhaltung der Verkehrsregeln angezeigt.</i></div>
+        <p style={{opacity: cityActive ? 0 : 1}}>Wähle eine Stadt aus um die Geschwindigkeit zu vergleichen!</p>
+      </div>
 
-        <div className='TravelTimesWrapper'>
-          <div className={`TravelTimesTrain ${trainsVisible ? '' : 'is-hidden'}`}>
-            {cityActive !== undefined ? getTravelTimesBars(cityActive.traveltimes_train) : null}
-          </div>
-          <div className={`TravelTimesCar ${motorwaysVisible ? '' : 'is-hidden'}`}>
-            {cityActive !== undefined ? getTravelTimesBars(cityActive.traveltimes_car) : null}
-          </div>
+      <div className='TravelTimesWrapper'>
+        <div className={`TravelTimesTrain ${trainsVisible ? '' : 'is-hidden'}`}>
+          {cityActive !== undefined ? getTravelTimesBars(cityActive.traveltimes_train) : null}
         </div>
-
+        <div className={`TravelTimesCar ${motorwaysVisible ? '' : 'is-hidden'}`}>
+          {cityActive !== undefined ? getTravelTimesBars(cityActive.traveltimes_car) : null}
+        </div>
       </div>
 
     </div>
