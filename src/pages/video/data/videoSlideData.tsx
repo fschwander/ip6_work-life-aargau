@@ -14,6 +14,7 @@ import {culture} from './culture';
 import {hikingTrails} from "./hikingTrails";
 import {mammut} from "./mammut";
 import {realEstate} from "./realEstate";
+import {ruineStein} from "./ruineStein";
 
 export const videoSlideData: Array<VideoSlideProps> = [
 
@@ -27,6 +28,7 @@ export const videoSlideData: Array<VideoSlideProps> = [
       {
         subtitle: 'Lokales Highlight',
         title: 'Ruine Stein',
+        overlayData: ruineStein,
         svgComponent: svgRuine,
         iconSrc: castleIcon,
         posLeftInPct: 69,
@@ -50,7 +52,7 @@ export const videoSlideData: Array<VideoSlideProps> = [
       {
         title: 'Gewerbeimmobilien & Areal',
         subtitle: 'Günstige Preise',
-        className: 'realEstate',
+        className: 'real-estate',
         overlayData: realEstate,
         svgComponent: svgRoof,
         posLeftInPct: 21,
@@ -111,6 +113,7 @@ export const videoSlideData: Array<VideoSlideProps> = [
       {
         title: 'Holzbrücke',
         subtitle: 'lokales Highlight',
+        overlayData: ruineStein,
         svgComponent: svgBridge,
         iconSrc: castleIcon, // todo: add real icon
         posLeftInPct: 66,
