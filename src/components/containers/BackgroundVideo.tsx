@@ -13,8 +13,9 @@ export const BackgroundVideo: React.FC<FullScreenVideoProps> = props => {
   const [size, setSize] = useState({videoWidth: 0, videoHeight: 0, translateX: 0, translateY: 0});
 
   const updateSize = () => {
-    const windowWidth = document.documentElement.clientWidth;
-    const windowHeight = document.documentElement.clientHeight;
+    const windowWidth = window.innerWidth;
+    const windowHeight = window.innerHeight;
+    console.log(document.documentElement);
 
     const videoRatio = 1920 / 1080;
 
@@ -57,8 +58,8 @@ export const BackgroundVideo: React.FC<FullScreenVideoProps> = props => {
                        playing={props.playVideo}
                        muted={true}
                        playsinline={true}
-                       width='100%'
-                       height='100%'
+                       width={size.videoWidth}
+                       height={size.videoHeight}
                        onReady={() => setIsBuffering(false)}
                        onEnded={() => props.onVideoEnded()}/>
 
