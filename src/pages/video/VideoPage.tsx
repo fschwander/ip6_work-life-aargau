@@ -18,13 +18,17 @@ export const VideoPage: React.FC = () => {
 
   return (
     <div className='VideoPage'>
+
       {slideComponents[activeIndex]}
-      <Timeline onClick={setActiveIndex}
-                nofIndexes={slideComponents.length}
-                activeIndex={activeIndex}
-                itemsArray={videoSlideData.map((d) => {
-                  return {isMainPoint: d.isMainPoint ? d.isMainPoint : false}
-                })}/>
+
+      <div className={`timeline-container ${slideInComponent !== undefined || popupComponent !== undefined ? 'fade-out' : 'fade-in'}`}>
+        <Timeline onClick={setActiveIndex}
+                  nofIndexes={slideComponents.length}
+                  activeIndex={activeIndex}
+                  itemsArray={videoSlideData.map((d) => {
+                    return {isMainPoint: d.isMainPoint ? d.isMainPoint : false}
+                  })}/>
+      </div>
     </div>
   )
 }

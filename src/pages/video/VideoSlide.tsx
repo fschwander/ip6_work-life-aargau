@@ -6,12 +6,10 @@ import {PopupContainer} from '../../components/containers/PopupContainer';
 import {SlideInContainer} from '../../components/containers/SlideInContainer';
 import {InfoLabel, InfoLabelItem} from "../../components/labels/InfoLabel";
 import {PoiLabel, PoiLabelItem} from "../../components/labels/PoiLabel";
-import {TravelingDistancePage} from '../side/travelingDistance/TravelingDistancePage';
 import {SlideInOverlayInterface} from './data/SlideInOverlayInterface';
 import {VideoOverlayInterface} from './data/VideoOverlayInterface';
 import {PopupOverlay, PopupOverlayProps} from './PopupOverlay';
 import {SlideInOverlay, SlideInOverlayProps} from './SlideInOverlay';
-
 
 export interface VideoSlideItem {
   className: string,
@@ -76,8 +74,11 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
               <AnimatedSVG svgComponent={d.svgComponent}
                            isActive={animationStarted}
                            animationDelay={i * animationStaggerInSec}/>
-              <PoiLabel {...d} styles={styles}
-                        onClick={() => openSlideInOverlay(d.overlayData)}/>
+              <div
+                className={`${slideInComponent !== undefined || popupComponent !== undefined ? 'fade-out' : 'fade-in'}`}>
+                <PoiLabel {...d} styles={styles}
+                          onClick={() => openSlideInOverlay(d.overlayData)}/>
+              </div>
             </div>
           })}
 
@@ -89,8 +90,11 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
                 <AnimatedSVG svgComponent={d.svgComponent}
                              isActive={animationStarted}
                              animationDelay={index * animationStaggerInSec}/>
-                <InfoLabel {...d} styles={styles}
-                           onClick={() => openPopUpOverlay(d.overlayData)}/>
+                <div
+                  className={`${slideInComponent !== undefined || popupComponent !== undefined ? 'fade-out' : 'fade-in'}`}>
+                  <InfoLabel {...d} styles={styles}
+                             onClick={() => openPopUpOverlay(d.overlayData)}/>
+                </div>
               </div>
             )
           })}
