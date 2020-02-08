@@ -8,6 +8,7 @@ import {ReactComponent as svgRuine} from "../../../res/videos/baden1-ruine.svg";
 import {ReactComponent as svgTower} from "../../../res/videos/baden1-tower.svg";
 import {ReactComponent as svgBridge} from "../../../res/videos/baden3-bridge.svg";
 import {ReactComponent as svgBar} from "../../../res/videos/baden3-bar.svg";
+import {ReactComponent as svgLimmat} from "../../../res/videos/baden3-limmat.svg";
 import videoBaden from "../../../res/videos/baden1.mp4";
 import {ReactComponent as svgStairs} from "../../../res/videos/baden2-stairways.svg";
 import videoBaden2 from "../../../res/videos/baden2.mp4";
@@ -120,9 +121,9 @@ export const videoSlideData: Array<VideoSlideItem> = [
         subtitle: 'lokales Highlight',
         overlayData: woodenBridge,
         svgComponent: svgBridge,
-        iconSrc: bridgeIcon, // todo: add real icon
-        posLeftInPct: 66,
-        posTopInPct: 59,
+        iconSrc: bridgeIcon,
+        posLeftInPct: 69,
+        posTopInPct: 55,
         lineLength: 100,
         lineRotation: 140,
         orientation: 'left',
@@ -132,11 +133,23 @@ export const videoSlideData: Array<VideoSlideItem> = [
         subtitle: 'lokales Highlight',
         overlayData: beerBar,
         svgComponent: svgBar,
-        iconSrc: beerIcon, // todo: add real icon
-        posLeftInPct: 67,
+        iconSrc: beerIcon,
+        posLeftInPct: 70,
         posTopInPct: 70,
         lineLength: 80,
         lineRotation: 45,
+        orientation: 'right',
+      },
+      {
+        title: 'Limmat',
+        subtitle: 'lokales Highlight',
+        overlayData: beerBar,
+        svgComponent: svgLimmat,
+        iconSrc: beerIcon,
+        posLeftInPct: 41,
+        posTopInPct: 57,
+        lineLength: 50,
+        lineRotation: 380,
         orientation: 'right',
       }
     ],
