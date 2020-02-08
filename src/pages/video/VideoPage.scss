@@ -1,10 +1,14 @@
 .VideoPage {
 
-  .TimeLine {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin: 0 4rem 2rem 0;
+  .timeline-container {
+    transition: .3s ease-in;
+
+    .TimeLine {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      margin: 0 4rem 2rem 0;
+    }
   }
 }
 

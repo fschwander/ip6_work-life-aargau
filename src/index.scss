@@ -60,6 +60,28 @@ html {
       }
     }
 
+    .secondary-title {
+      margin-bottom: 1rem;
+    }
+
+    .main-content {
+      margin-bottom: 2rem;
+    }
+
+    @media screen and (max-width: 1200px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      h3 {
+        font-size: 1rem;
+      }
+    }
+
     a {
       &:hover {
         font-weight: bolder;
@@ -68,6 +90,7 @@ html {
 
     button, .button {
       background-color: transparent;
+      user-select: none;
 
       &:focus {
         outline: unset;
@@ -127,27 +150,15 @@ html {
       display: flex;
       flex-direction: column;
     }
+  }
 
-    @media screen and (max-width: 1200px) {
-      h1 {
-        font-size: 2rem;
-      }
+  .fade-in {
+    opacity: 1;
+    transition: .3s ease-out;
+  }
 
-      h2 {
-        font-size: 1.5rem;
-      }
-
-      h3 {
-        font-size: 1rem;
-      }
-    }
-
-    .secondary-title {
-      margin-bottom: 1rem;
-    }
-
-    .main-content {
-      margin-bottom: 2rem;
-    }
+  .fade-out {
+    opacity: 0;
+    transition: .3s ease-out;
   }
 }
