@@ -22,7 +22,7 @@ export const SlideInOverlay: React.FC<SlideInOverlayProps> = props => {
         <h3><b>{data.header.title}</b></h3>
       {
         data.facts.items.map (d =>
-          <p key={d.title}><b>{d.title + ': '}</b>{d.text}</p>
+          <p key={d.title}><b>{d.title}</b>{d.text}</p>
         )
       }
       </div>
