@@ -87,8 +87,8 @@ export const videoSlideData: Array<VideoSlideItem> = [
         className: 'hiking-trails',
         overlayData: hikingTrails,
         svgComponent: svgStairs,
-        posLeftInPct: 28,
-        posTopInPct: 44,
+        posLeftInPct: 38,
+        posTopInPct: 60,
         orientation: 'right'
       },
       {
@@ -97,8 +97,8 @@ export const videoSlideData: Array<VideoSlideItem> = [
         className: 'mammut',
         overlayData: mammut,
         svgComponent: svgStairs,
-        posLeftInPct: 62,
-        posTopInPct: 47,
+        posLeftInPct: 57,
+        posTopInPct: 66,
         orientation: 'left'
       }
     ]
