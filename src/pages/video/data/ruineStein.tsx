@@ -16,10 +16,10 @@ export const ruineStein: SlideInOverlayInterface = {
   facts: {
     items: [
       {
-        title: "Entstehungszeit",
+        title: "Entstehungszeit: ",
         text: "vor 1000, 1658–1670"
       }, {
-        title: "Burgentyp",
+        title: "Burgentyp: ",
         text: "Höhenburg, Festung"
       }
     ]

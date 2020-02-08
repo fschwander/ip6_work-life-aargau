@@ -10,7 +10,7 @@ export interface SlideInOverlayInterface {
   image: string,
 
   facts: {
-    items: Array<FactsItem>
+    items: Array<FactsItem >
   },
 
   map: {

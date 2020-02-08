@@ -16,14 +16,14 @@ export const beerBar: SlideInOverlayInterface = {
   facts: {
     items: [
       {
-        title: "Essen & Trinken",
-        text: ""
+        title: "",
+        text: "Essen & Trinken"
       }, {
-        title: "Fondue",
-        text: ""
+        title: "",
+        text: "Fondue"
       }, {
-        title: "Frühstück",
-        text: ""
+        title: "",
+        text: "Frühstück & Brunch"
       }
     ]
   },

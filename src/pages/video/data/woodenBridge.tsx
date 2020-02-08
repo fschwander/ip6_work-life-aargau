@@ -16,10 +16,10 @@ export const woodenBridge: SlideInOverlayInterface = {
   facts: {
     items: [
       {
-        title: "Gesamtlänge",
+        title: "Gesamtlänge: ",
         text: "39 m"
       }, {
-        title: "Baubeginn",
+        title: "Baubeginn: ",
         text: "1809"
       }
     ]
