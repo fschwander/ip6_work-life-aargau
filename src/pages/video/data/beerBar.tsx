@@ -30,7 +30,7 @@ export const beerBar: SlideInOverlayInterface = {
 
   map: {
     svg_map: svgDetails,
-    location_title: "",
-    location_text: ""
+    location_title: "Geschichte",
+    location_text: "Bereits seit einer gefühlten Ewigkeit betreiben wir, Michael Rohrbach und Michelle Huber, als \"Wirtenpaar\" die Triebguet Frischluftbar. Mit Leib und Seele sind wir jede Saison wieder von neuem bemüht, euch mit feinen Drinks, kühlem Bier, leckerem Essen und guter Musik zu verwöhnen. Natürlich würden wir das nicht schaffen ohne die tatkräftige Unterstützung unseres Teams und natürlich auch nicht ohne euch Gäste! "
   }
 }
