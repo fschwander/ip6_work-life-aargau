@@ -1,15 +1,19 @@
 import castleIcon from "../../../res/icons/castle.svg"
+import bridgeIcon from "../../../res/icons/bridge.svg"
+import beerIcon from "../../../res/icons/beer.svg"
 import videoAarau1 from "../../../res/videos/aarau1.mp4";
 import videoAarau2 from "../../../res/videos/aarau2.mp4";
 import {ReactComponent as svgRoof} from "../../../res/videos/baden1-roof.svg";
 import {ReactComponent as svgRuine} from "../../../res/videos/baden1-ruine.svg";
 import {ReactComponent as svgTower} from "../../../res/videos/baden1-tower.svg";
 import {ReactComponent as svgBridge} from "../../../res/videos/baden3-bridge.svg";
+import {ReactComponent as svgBar} from "../../../res/videos/baden3-bar.svg";
 import videoBaden from "../../../res/videos/baden1.mp4";
 import {ReactComponent as svgStairs} from "../../../res/videos/baden2-stairways.svg";
 import videoBaden2 from "../../../res/videos/baden2.mp4";
 import videoBaden3 from "../../../res/videos/baden3.mp4";
 import {VideoSlideItem} from "../VideoSlide";
+import {beerBar} from './beerBar';
 import {culture} from './culture';
 import {hikingTrails} from "./hikingTrails";
 import {mammut} from "./mammut";
@@ -109,20 +113,32 @@ export const videoSlideData: Array<VideoSlideItem> = [
     className: 'baden-slide3',
     title: 'Die Stadt Baden',
     videoSrc: videoBaden3,
-    isMainPoint: true,
+    isMainPoint: false,
     poiLabelItems: [
       {
         title: 'Holzbrücke',
         subtitle: 'lokales Highlight',
         overlayData: woodenBridge,
         svgComponent: svgBridge,
-        iconSrc: castleIcon, // todo: add real icon
+        iconSrc: bridgeIcon, // todo: add real icon
         posLeftInPct: 66,
         posTopInPct: 59,
         lineLength: 100,
         lineRotation: 140,
         orientation: 'left',
       },
+      {
+        title: 'Triebguet Frischluftbar',
+        subtitle: 'lokales Highlight',
+        overlayData: beerBar,
+        svgComponent: svgBar,
+        iconSrc: beerIcon, // todo: add real icon
+        posLeftInPct: 67,
+        posTopInPct: 70,
+        lineLength: 80,
+        lineRotation: 45,
+        orientation: 'right',
+      }
     ],
     infoLabelItems: []
   },
@@ -132,7 +148,7 @@ export const videoSlideData: Array<VideoSlideItem> = [
     className: 'aarau-slide1',
     title: 'Die Stadt Aarau',
     videoSrc: videoAarau1,
-    isMainPoint: false,
+    isMainPoint: true,
     poiLabelItems: [],
     infoLabelItems: [
       {
