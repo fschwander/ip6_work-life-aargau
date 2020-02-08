@@ -1,6 +1,7 @@
 import castleIcon from "../../../res/icons/castle.svg"
 import bridgeIcon from "../../../res/icons/bridge.svg"
 import beerIcon from "../../../res/icons/beer.svg"
+import waterIcon from "../../../res/icons/water.svg"
 import videoAarau1 from "../../../res/videos/aarau1.mp4";
 import videoAarau2 from "../../../res/videos/aarau2.mp4";
 import {ReactComponent as svgRoof} from "../../../res/videos/baden1-roof.svg";
@@ -17,6 +18,7 @@ import {VideoSlideItem} from "../VideoSlide";
 import {beerBar} from './beerBar';
 import {culture} from './culture';
 import {hikingTrails} from "./hikingTrails";
+import {limmat} from './limmat';
 import {mammut} from "./mammut";
 import {realEstate} from "./realEstate";
 import {ruineStein} from "./ruineStein";
@@ -143,9 +145,9 @@ export const videoSlideData: Array<VideoSlideItem> = [
       {
         title: 'Limmat',
         subtitle: 'lokales Highlight',
-        overlayData: beerBar,
+        overlayData: limmat,
         svgComponent: svgLimmat,
-        iconSrc: beerIcon,
+        iconSrc: waterIcon,
         posLeftInPct: 41,
         posTopInPct: 57,
         lineLength: 50,
