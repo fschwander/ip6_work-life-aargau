@@ -10,6 +10,7 @@ import {ReactComponent as svgTower} from "../../../res/videos/baden1-tower.svg";
 import {ReactComponent as svgBridge} from "../../../res/videos/baden3-bridge.svg";
 import {ReactComponent as svgBar} from "../../../res/videos/baden3-bar.svg";
 import {ReactComponent as svgLimmat} from "../../../res/videos/baden3-limmat.svg";
+import {ReactComponent as svgConstruction} from "../../../res/videos/aarau1-construction.svg";
 import videoBaden from "../../../res/videos/baden1.mp4";
 import {ReactComponent as svgStairs} from "../../../res/videos/baden2-stairways.svg";
 import videoBaden2 from "../../../res/videos/baden2.mp4";
@@ -18,6 +19,7 @@ import {VideoSlideItem} from "../VideoSlide";
 import {beerBar} from './beerBar';
 import {culture} from './culture';
 import {hikingTrails} from "./hikingTrails";
+import {lafargeHolcim} from './lafargeHolcim';
 import {limmat} from './limmat';
 import {mammut} from "./mammut";
 import {realEstate} from "./realEstate";
@@ -31,7 +33,7 @@ export const videoSlideData: Array<VideoSlideItem> = [
     className: 'baden-slide1',
     title: 'Die Stadt Baden',
     videoSrc: videoBaden,
-    isMainPoint: false,
+    isMainPoint: true,
     poiLabelItems: [
       {
         subtitle: 'Lokales Highlight',
@@ -124,8 +126,8 @@ export const videoSlideData: Array<VideoSlideItem> = [
         overlayData: woodenBridge,
         svgComponent: svgBridge,
         iconSrc: bridgeIcon,
-        posLeftInPct: 69,
-        posTopInPct: 55,
+        posLeftInPct: 60,
+        posTopInPct: 58,
         lineLength: 100,
         lineRotation: 140,
         orientation: 'left',
@@ -148,8 +150,8 @@ export const videoSlideData: Array<VideoSlideItem> = [
         overlayData: limmat,
         svgComponent: svgLimmat,
         iconSrc: waterIcon,
-        posLeftInPct: 41,
-        posTopInPct: 57,
+        posLeftInPct: 53,
+        posTopInPct: 56,
         lineLength: 50,
         lineRotation: 380,
         orientation: 'right',
@@ -167,14 +169,14 @@ export const videoSlideData: Array<VideoSlideItem> = [
     poiLabelItems: [],
     infoLabelItems: [
       {
-        title: 'Kultur & Geschichte',
-        subtitle: 'Historische Highlights',
+        title: 'Baumaterialen',
+        subtitle: 'Zement, Aggegates',
         className: 'culture-and-history',
-        overlayData: hikingTrails,
-        svgComponent: svgRoof,
-        posLeftInPct: 0,
-        posTopInPct: 0,
-        orientation: 'right'
+        overlayData: lafargeHolcim,
+        svgComponent: svgConstruction,
+        posLeftInPct: 45,
+        posTopInPct: 45,
+        orientation: 'left'
       },
     ]
   },
