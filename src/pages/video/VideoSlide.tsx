@@ -9,10 +9,11 @@ import {PoiLabel, PoiLabelItem} from "../../components/labels/PoiLabel";
 import {TravelingDistancePage} from '../side/travelingDistance/TravelingDistancePage';
 import {SlideInOverlayInterface} from './data/SlideInOverlayInterface';
 import {VideoOverlayInterface} from './data/VideoOverlayInterface';
-import {PopupOverlay} from './PopupOverlay';
-import {SlideInOverlay} from './SlideInOverlay';
+import {PopupOverlay, PopupOverlayProps} from './PopupOverlay';
+import {SlideInOverlay, SlideInOverlayProps} from './SlideInOverlay';
 
-export interface VideoSlideProps {
+
+export interface VideoSlideItem {
   className: string,
   title: string,
   isMainPoint: boolean,
@@ -21,10 +22,17 @@ export interface VideoSlideProps {
   infoLabelItems: Array<InfoLabelItem>
 }
 
+interface VideoSlideProps extends VideoSlideItem {
+  popupComponent: PopupOverlayProps,
+  setPopupComponent: Function,
+  slideInComponent: SlideInOverlayProps,
+  setSlideInComponent: Function
+}
+
 export const VideoSlide: React.FC<VideoSlideProps> = props => {
   const [animationStarted, setAnimationStarted] = useState(false);
-  const [popupComponent, setPopupContainer] = useState();
-  const [slideInComponent, setSlideInComponent] = useState();
+
+  const {popupComponent, setPopupComponent, slideInComponent, setSlideInComponent} = props;
 
   const animationStaggerInSec: number = 3;
 
@@ -36,12 +44,12 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
     if (slideInComponent !== undefined) {
       setSlideInComponent(undefined)
     }
-    setPopupContainer(<PopupOverlay data={data}/>)
+    setPopupComponent(<PopupOverlay data={data}/>)
   }
 
   const openSlideInOverlay = (data: SlideInOverlayInterface) => {
     if (popupComponent !== undefined) {
-      setPopupContainer(undefined)
+      setPopupComponent(undefined)
     }
     setSlideInComponent(<SlideInOverlay data={data}/>)
   }
@@ -92,7 +100,7 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
       <CurrentLocationDescription title={props.title}/>
 
       {popupComponent !== undefined ?
-        <PopupContainer onCloseButtonClicked={() => setPopupContainer(undefined)}>
+        <PopupContainer onCloseButtonClicked={() => setPopupComponent(undefined)}>
           {popupComponent}
         </PopupContainer> : null}
 

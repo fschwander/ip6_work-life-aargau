@@ -5,11 +5,11 @@ import iconArrowRight from '../../res/icons/arrow2_right.svg'
 import {Constants} from "../../services/Constants";
 import {VideoOverlayInterface} from './data/VideoOverlayInterface';
 
-interface Props {
+export interface PopupOverlayProps {
   data: VideoOverlayInterface
 }
 
-export const PopupOverlay: React.FC<Props> = props => {
+export const PopupOverlay: React.FC<PopupOverlayProps> = props => {
   const {data} = props;
 
   const [activeDetail, setActiveDetail] = useState(0);

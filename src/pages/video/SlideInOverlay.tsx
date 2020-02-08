@@ -1,11 +1,11 @@
 import React from 'react';
 import {SlideInOverlayInterface} from './data/SlideInOverlayInterface';
 
-interface Props {
+export interface SlideInOverlayProps {
   data: SlideInOverlayInterface
 }
 
-export const SlideInOverlay: React.FC<Props> = props => {
+export const SlideInOverlay: React.FC<SlideInOverlayProps> = props => {
   const {data} = props;
 
   return (

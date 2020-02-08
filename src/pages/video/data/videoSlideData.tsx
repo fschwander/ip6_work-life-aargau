@@ -9,14 +9,14 @@ import videoBaden from "../../../res/videos/baden1.mp4";
 import {ReactComponent as svgStairs} from "../../../res/videos/baden2-stairways.svg";
 import videoBaden2 from "../../../res/videos/baden2.mp4";
 import videoBaden3 from "../../../res/videos/baden3.mp4";
-import {VideoSlideProps} from "../VideoSlide";
+import {VideoSlideItem} from "../VideoSlide";
 import {culture} from './culture';
 import {hikingTrails} from "./hikingTrails";
 import {mammut} from "./mammut";
 import {realEstate} from "./realEstate";
 import {ruineStein} from "./ruineStein";
 
-export const videoSlideData: Array<VideoSlideProps> = [
+export const videoSlideData: Array<VideoSlideItem> = [
 
   // SEQUENCE 1
   {
