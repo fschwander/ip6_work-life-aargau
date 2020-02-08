@@ -15,6 +15,7 @@ import {hikingTrails} from "./hikingTrails";
 import {mammut} from "./mammut";
 import {realEstate} from "./realEstate";
 import {ruineStein} from "./ruineStein";
+import {woodenBridge} from "./woodenBridge";
 
 export const videoSlideData: Array<VideoSlideItem> = [
 
@@ -113,7 +114,7 @@ export const videoSlideData: Array<VideoSlideItem> = [
       {
         title: 'Holzbrücke',
         subtitle: 'lokales Highlight',
-        overlayData: ruineStein,
+        overlayData: woodenBridge,
         svgComponent: svgBridge,
         iconSrc: castleIcon, // todo: add real icon
         posLeftInPct: 66,
