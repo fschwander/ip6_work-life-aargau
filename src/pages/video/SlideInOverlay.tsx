@@ -11,24 +11,28 @@ export const SlideInOverlay: React.FC<SlideInOverlayProps> = props => {
   return (
     <div className='header-container'>
       <p>LOKALES HIGHLIGHT</p>
-      <h2>{data.title}</h2>
-      <p className='secondary-title'><b>{data.subtitle}</b></p>
-      <p className='main-content'>{data.text}</p>
+      <h2>{data.header.title}</h2>
+      <p className='secondary-title'><b>{data.header.subtitle}</b></p>
+      <p className='main-content'>{data.header.text}</p>
       <div className='image-container'>
-        <img src={data.image} alt={data.title}/>
+        <img src={data.image} alt={data.header.title}/>
       </div>
+
+      {/*TODO: add facts dynamically*/}
       <div className='facts-container'>
-        <h3><b>{data.title}</b></h3>
-        <p>{data.fact1}</p>
-        <p>{data.fact2}</p>
+        <h3><b>{data.header.title}</b></h3>
+        <p>{data.facts.fact1}</p>
+        <p>{data.facts.fact2}</p>
       </div>
+
       <div className='location-container'>
         <div className='map'>
-          <img src={data.map} alt={data.title}/>
+          <img src={data.map.svg_map} alt={data.header.title}/>
         </div>
+
         <div className='description-container'>
-          <h3>{data.location_title}</h3>
-          <p>{data.location_text}</p>
+          <h3><b>{data.map.location_title}</b></h3>
+          <p>{data.map.location_text}</p>
         </div>
       </div>
 
