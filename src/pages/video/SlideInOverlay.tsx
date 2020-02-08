@@ -18,11 +18,13 @@ export const SlideInOverlay: React.FC<SlideInOverlayProps> = props => {
         <img src={data.image} alt={data.header.title}/>
       </div>
 
-      {/*TODO: add facts dynamically*/}
       <div className='facts-container'>
         <h3><b>{data.header.title}</b></h3>
-        <p>{data.facts.fact1}</p>
-        <p>{data.facts.fact2}</p>
+      {
+        data.facts.items.map (d =>
+          <p key={d.title}><b>{d.title + ': '}</b>{d.text}</p>
+        )
+      }
       </div>
 
       <div className='location-container'>

@@ -12,8 +12,15 @@ export const _templateLocalHighlights: SlideInOverlayInterface = {
   image: "",
 
   facts: {
-    fact1: "",
-    fact2: ""
+    items: [
+      {
+        title: "",
+        text: ""
+      }, {
+        title: "",
+        text: ""
+      }
+    ]
   },
 
   map: {

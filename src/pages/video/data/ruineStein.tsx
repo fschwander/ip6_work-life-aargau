@@ -14,8 +14,15 @@ export const ruineStein: SlideInOverlayInterface = {
   image: imageDetails,
 
   facts: {
-    fact1: "Entstehungszeit: vor 1000, 1658–1670",
-    fact2: "Burgentyp: Höhenburg, Festung"
+    items: [
+      {
+        title: "Entstehungszeit",
+        text: "vor 1000, 1658–1670"
+      }, {
+        title: "Burgentyp",
+        text: "Höhenburg, Festung"
+      }
+    ]
   },
 
   map: {

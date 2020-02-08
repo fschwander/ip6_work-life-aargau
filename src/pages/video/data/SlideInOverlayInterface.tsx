@@ -10,8 +10,7 @@ export interface SlideInOverlayInterface {
   image: string,
 
   facts: {
-    fact1: string,
-    fact2: string
+    items: Array<FactsItem>
   },
 
   map: {
@@ -20,4 +19,9 @@ export interface SlideInOverlayInterface {
     location_text: string
   }
 
+}
+
+export interface FactsItem {
+  title: string,
+  text: string
 }
