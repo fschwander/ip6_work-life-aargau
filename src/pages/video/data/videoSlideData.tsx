@@ -3,18 +3,21 @@ import bridgeIcon from "../../../res/icons/bridge.svg"
 import beerIcon from "../../../res/icons/beer.svg"
 import waterIcon from "../../../res/icons/water.svg"
 import churchIcon from "../../../res/icons/church.svg"
+import connectednessIcon from "../../../res/icons/connectedness.svg"
 import videoAarau1 from "../../../res/videos/aarau1.mp4";
 import videoAarau2 from "../../../res/videos/aarau2.mp4";
+import videoAarau3 from "../../../res/videos/aarau3.mp4";
 import {ReactComponent as svgRoof} from "../../../res/videos/baden1-roof.svg";
 import {ReactComponent as svgRuine} from "../../../res/videos/baden1-ruine.svg";
 import {ReactComponent as svgTower} from "../../../res/videos/baden1-tower.svg";
 import {ReactComponent as svgBridge} from "../../../res/videos/baden3-bridge.svg";
 import {ReactComponent as svgBar} from "../../../res/videos/baden3-bar.svg";
-import {ReactComponent as svgLimmat} from "../../../res/videos/baden3-limmat.svg";
-import {ReactComponent as svgPerson} from "../../../res/videos/baden3-person.svg";
+import {ReactComponent as svgAare} from "../../../res/videos/aarau3-river.svg";
+import {ReactComponent as svgConnectivity} from "../../../res/videos/baden3-connectivity.svg";
 import {ReactComponent as svgConstruction} from "../../../res/videos/aarau1-construction.svg";
 import {ReactComponent as svgABridge} from "../../../res/videos/aarau1-bridge.svg";
 import {ReactComponent as svgChurch} from "../../../res/videos/aarau2-church.svg";
+import {ReactComponent as svgInterior} from "../../../res/videos/aarau3-interiors.svg";
 import videoBaden from "../../../res/videos/baden1.mp4";
 import {ReactComponent as svgStairs} from "../../../res/videos/baden2-stairways.svg";
 import videoBaden2 from "../../../res/videos/baden2.mp4";
@@ -25,12 +28,14 @@ import {culture} from './culture';
 import {hikingTrails} from "./hikingTrails";
 import {lafargeHolcim} from './lafargeHolcim';
 import {aarvia} from './aarvia';
+import {aare} from './aare';
 import {mammut} from "./mammut";
-import {pdagPsycho} from './pdagPsycho';
 import {realEstate} from "./realEstate";
 import {ruineStein} from "./ruineStein";
 import {woodenBridge} from "./woodenBridge";
 import {churchAarau} from "./churchAarau";
+import {killer} from "./killer";
+// import {TravelingDistancePage} from "../../../pages/side/travelingDistance/TravelingDistancePage";
 
 export const videoSlideData: Array<VideoSlideItem> = [
 
@@ -139,20 +144,21 @@ export const videoSlideData: Array<VideoSlideItem> = [
         lineLength: 80,
         lineRotation: 45,
         orientation: 'right',
+      },
+      {
+        title: 'Verbundenheit',
+        subtitle: 'lokales Highlight',
+        overlayData: beerBar,
+        svgComponent: svgConnectivity,
+        iconSrc: connectednessIcon,
+        posLeftInPct: 39,
+        posTopInPct: 66,
+        lineLength: 80,
+        lineRotation: 225,
+        orientation: 'left',
       }
     ],
-    infoLabelItems: [
-      {
-        title: 'Psychoterapie',
-        subtitle: 'Aargauer Unternehmen',
-        className: 'padg',
-        overlayData: pdagPsycho,
-        svgComponent: svgPerson,
-        posLeftInPct: 30,
-        posTopInPct: 74,
-        orientation: 'left'
-      },
-    ]
+    infoLabelItems: []
   },
 
   // SEQUENCE 4
@@ -206,5 +212,39 @@ export const videoSlideData: Array<VideoSlideItem> = [
       }
     ],
     infoLabelItems: []
+  },
+
+  // SEQUENCE 6
+  {
+    className: 'aarau-slide3',
+    title: 'Die Stadt Aarau',
+    isMainPoint: false,
+    videoSrc: videoAarau3,
+    poiLabelItems: [
+      {
+        title: 'Aare',
+        subtitle: 'lokales Highlight',
+        overlayData: aare,
+        svgComponent: svgAare,
+        iconSrc: waterIcon,
+        posLeftInPct: 37,
+        posTopInPct: 65,
+        lineLength: 135,
+        lineRotation: 150,
+        orientation: 'left',
+      }
+    ],
+    infoLabelItems: [
+      {
+        title: 'Interiors',
+        subtitle: 'Aargauer Unternehmen',
+        className: 'killer',
+        overlayData: killer,
+        svgComponent: svgInterior,
+        posLeftInPct: 42,
+        posTopInPct: 71,
+        orientation: 'right'
+      }
+    ]
   },
 ];
