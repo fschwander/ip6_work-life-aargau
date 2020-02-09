@@ -2,6 +2,7 @@ import castleIcon from "../../../res/icons/castle.svg"
 import bridgeIcon from "../../../res/icons/bridge.svg"
 import beerIcon from "../../../res/icons/beer.svg"
 import waterIcon from "../../../res/icons/water.svg"
+import churchIcon from "../../../res/icons/church.svg"
 import videoAarau1 from "../../../res/videos/aarau1.mp4";
 import videoAarau2 from "../../../res/videos/aarau2.mp4";
 import {ReactComponent as svgRoof} from "../../../res/videos/baden1-roof.svg";
@@ -11,7 +12,7 @@ import {ReactComponent as svgBridge} from "../../../res/videos/baden3-bridge.svg
 import {ReactComponent as svgBar} from "../../../res/videos/baden3-bar.svg";
 import {ReactComponent as svgLimmat} from "../../../res/videos/baden3-limmat.svg";
 import {ReactComponent as svgConstruction} from "../../../res/videos/aarau1-construction.svg";
-import {ReactComponent as svgCastle} from "../../../res/videos/aarau2-castle.svg";
+import {ReactComponent as svgChurch} from "../../../res/videos/aarau2-church.svg";
 import videoBaden from "../../../res/videos/baden1.mp4";
 import {ReactComponent as svgStairs} from "../../../res/videos/baden2-stairways.svg";
 import videoBaden2 from "../../../res/videos/baden2.mp4";
@@ -194,8 +195,8 @@ export const videoSlideData: Array<VideoSlideItem> = [
         title: 'Stadtkirche Aarau',
         subtitle: 'lokales Highlight',
         overlayData: churchAarau,
-        svgComponent: svgCastle,
-        iconSrc: bridgeIcon,
+        svgComponent: svgChurch,
+        iconSrc: churchIcon,
         posLeftInPct: 42,
         posTopInPct: 46,
         lineLength: 65,
