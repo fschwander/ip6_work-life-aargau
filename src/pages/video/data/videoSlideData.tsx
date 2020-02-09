@@ -11,7 +11,9 @@ import {ReactComponent as svgTower} from "../../../res/videos/baden1-tower.svg";
 import {ReactComponent as svgBridge} from "../../../res/videos/baden3-bridge.svg";
 import {ReactComponent as svgBar} from "../../../res/videos/baden3-bar.svg";
 import {ReactComponent as svgLimmat} from "../../../res/videos/baden3-limmat.svg";
+import {ReactComponent as svgPerson} from "../../../res/videos/baden3-person.svg";
 import {ReactComponent as svgConstruction} from "../../../res/videos/aarau1-construction.svg";
+import {ReactComponent as svgABridge} from "../../../res/videos/aarau1-bridge.svg";
 import {ReactComponent as svgChurch} from "../../../res/videos/aarau2-church.svg";
 import videoBaden from "../../../res/videos/baden1.mp4";
 import {ReactComponent as svgStairs} from "../../../res/videos/baden2-stairways.svg";
@@ -22,8 +24,9 @@ import {beerBar} from './beerBar';
 import {culture} from './culture';
 import {hikingTrails} from "./hikingTrails";
 import {lafargeHolcim} from './lafargeHolcim';
-import {limmat} from './limmat';
+import {aarvia} from './aarvia';
 import {mammut} from "./mammut";
+import {pdagPsycho} from './pdagPsycho';
 import {realEstate} from "./realEstate";
 import {ruineStein} from "./ruineStein";
 import {woodenBridge} from "./woodenBridge";
@@ -54,7 +57,7 @@ export const videoSlideData: Array<VideoSlideItem> = [
     infoLabelItems: [
       {
         title: 'Kultur & Geschichte',
-        subtitle: 'Historische Highlights',
+        subtitle: 'Aargauer Vorteile',
         className: 'culture-and-history',
         overlayData: culture,
         svgComponent: svgTower,
@@ -64,22 +67,12 @@ export const videoSlideData: Array<VideoSlideItem> = [
       },
       {
         title: 'Gewerbeimmobilien & Areal',
-        subtitle: 'Günstige Preise',
+        subtitle: 'Aargauer Vorteile',
         className: 'real-estate',
         overlayData: realEstate,
         svgComponent: svgRoof,
         posLeftInPct: 21,
         posTopInPct: 61,
-        orientation: 'right'
-      },
-      {
-        title: 'Kultur & Geschichte',
-        subtitle: 'Historische Highlights',
-        className: 'culture-and-history',
-        overlayData: hikingTrails,
-        svgComponent: svgRuine,
-        posLeftInPct: 210,
-        posTopInPct: -150,
         orientation: 'right'
       }
     ]
@@ -94,8 +87,8 @@ export const videoSlideData: Array<VideoSlideItem> = [
     poiLabelItems: [],
     infoLabelItems: [
       {
-        title: 'Sport & Freizeit',
-        subtitle: 'Wanderwege',
+        title: 'Wanderwege',
+        subtitle: 'Aargauer Vorteile',
         className: 'hiking-trails',
         overlayData: hikingTrails,
         svgComponent: svgStairs,
@@ -105,7 +98,7 @@ export const videoSlideData: Array<VideoSlideItem> = [
       },
       {
         title: 'Wanderausrüstung',
-        subtitle: 'Rucksäcke, Taschen...',
+        subtitle: 'Aargauer Unternehmen',
         className: 'mammut',
         overlayData: mammut,
         svgComponent: svgStairs,
@@ -146,21 +139,20 @@ export const videoSlideData: Array<VideoSlideItem> = [
         lineLength: 80,
         lineRotation: 45,
         orientation: 'right',
-      },
-      {
-        title: 'Limmat',
-        subtitle: 'lokales Highlight',
-        overlayData: limmat,
-        svgComponent: svgLimmat,
-        iconSrc: waterIcon,
-        posLeftInPct: 53,
-        posTopInPct: 56,
-        lineLength: 50,
-        lineRotation: 380,
-        orientation: 'right',
       }
     ],
-    infoLabelItems: []
+    infoLabelItems: [
+      {
+        title: 'Psychoterapie',
+        subtitle: 'Aargauer Unternehmen',
+        className: 'padg',
+        overlayData: pdagPsycho,
+        svgComponent: svgPerson,
+        posLeftInPct: 30,
+        posTopInPct: 74,
+        orientation: 'left'
+      },
+    ]
   },
 
   // SEQUENCE 4
@@ -173,14 +165,23 @@ export const videoSlideData: Array<VideoSlideItem> = [
     infoLabelItems: [
       {
         title: 'Baumaterialen',
-        subtitle: 'Zement, Aggegates',
-        className: 'culture-and-history',
+        subtitle: 'Aargauer Unternehmen',
+        className: 'lafarge-holcim',
         overlayData: lafargeHolcim,
         svgComponent: svgConstruction,
         posLeftInPct: 45,
         posTopInPct: 45,
         orientation: 'left'
-      },
+      },{
+        title: 'Infrastruktur',
+        subtitle: 'Aargauer Unternehmen',
+        className: 'aarvia',
+        overlayData: aarvia,
+        svgComponent: svgABridge,
+        posLeftInPct: 48,
+        posTopInPct: 71,
+        orientation: 'left'
+      }
     ]
   },
 

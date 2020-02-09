@@ -1,6 +1,6 @@
 import React from 'react';
-import iconArchitecture from '../../../res/icons/architecture.svg'
-import iconBuilding from '../../../res/icons/building.svg'
+import iconConstruction from '../../../res/icons/construction.svg'
+import iconEngineering from '../../../res/icons/engineering.svg'
 import imgDetails from '../../../res/imgs/ol_lafarge-holcim.jpg';
 import imgDetails2 from '../../../res/imgs/ol_lafarge-holcim2.jpg';
 import {Constants} from "../../../services/Constants";
@@ -25,11 +25,11 @@ export const lafargeHolcim: VideoOverlayInterface = {
 
   topics: [
     {
-      icon: iconArchitecture,
+      icon: iconEngineering,
       text: "Bauwesen"
     },
     {
-      icon: iconBuilding,
+      icon: iconConstruction,
       text: "Gebäudeteile"
     }
   ],
