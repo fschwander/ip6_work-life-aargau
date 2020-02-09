@@ -49,8 +49,8 @@ export const lafargeHolcim: VideoOverlayInterface = {
           value: "Holderbank"
         },
         {
-          text: "Entfernung nach Baden",
-          value: "16 Km"
+          text: "Entfernung nach Aarau",
+          value: "13 Km"
         },
         {
           text: "Angestellte",

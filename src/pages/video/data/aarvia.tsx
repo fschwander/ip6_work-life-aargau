@@ -57,8 +57,8 @@ export const aarvia: VideoOverlayInterface = {
           value: "Würenlingen"
         },
         {
-          text: "Entfernung nach Baden",
-          value: "10,5 km"
+          text: "Entfernung nach Aarau",
+          value: "28,4 km"
         },
         {
           text: "Angestellte",
