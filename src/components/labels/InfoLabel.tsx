@@ -1,12 +1,11 @@
-import React, {CSSProperties, FunctionComponent, SVGProps} from "react";
-import {VideoOverlayInterface} from "../../pages/video/data/VideoOverlayInterface";
+import React, {CSSProperties, FunctionComponent, ReactElement, SVGProps} from "react";
 import {HoverPoint} from "../buttons/HoverPoint";
 
 export interface InfoLabelItem {
   title: string,
   subtitle: string,
   className: string,
-  overlayData: VideoOverlayInterface,
+  overlayComponent: ReactElement,
   svgComponent: FunctionComponent<SVGProps<SVGSVGElement>>,
   orientation: string,
   posLeftInPct: number,

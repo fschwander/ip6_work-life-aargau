@@ -1,4 +1,4 @@
-import React, {CSSProperties, useState} from 'react';
+import React, {CSSProperties, ReactElement, useState} from 'react';
 import {AnimatedSVG} from '../../components/containers/AnimatedSVG';
 import {BackgroundVideo} from '../../components/containers/BackgroundVideo';
 import {CurrentLocationDescription} from '../../components/containers/CurrentLocationDescription';
@@ -7,8 +7,7 @@ import {SlideInContainer} from '../../components/containers/SlideInContainer';
 import {InfoLabel, InfoLabelItem} from "../../components/labels/InfoLabel";
 import {PoiLabel, PoiLabelItem} from "../../components/labels/PoiLabel";
 import {SlideInOverlayInterface} from './data/SlideInOverlayInterface';
-import {VideoOverlayInterface} from './data/VideoOverlayInterface';
-import {PopupOverlay, PopupOverlayProps} from './PopupOverlay';
+import {PopupOverlayProps} from './PopupOverlay';
 import {SlideInOverlay, SlideInOverlayProps} from './SlideInOverlay';
 
 export interface VideoSlideItem {
@@ -38,11 +37,11 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
     setAnimationStarted(true);
   }
 
-  const openPopUpOverlay = (data: VideoOverlayInterface) => {
+  const openPopUpOverlay = (component: ReactElement) => {
     if (slideInComponent !== undefined) {
       setSlideInComponent(undefined)
     }
-    setPopupComponent(<PopupOverlay data={data}/>)
+    setPopupComponent(component)
   }
 
   const openSlideInOverlay = (data: SlideInOverlayInterface) => {
@@ -93,7 +92,7 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
                 <div
                   className={`${slideInComponent !== undefined || popupComponent !== undefined ? 'fade-out' : 'fade-in'}`}>
                   <InfoLabel {...d} styles={styles}
-                             onClick={() => openPopUpOverlay(d.overlayData)}/>
+                             onClick={() => openPopUpOverlay(d.overlayComponent)}/>
                 </div>
               </div>
             )

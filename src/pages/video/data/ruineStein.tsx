@@ -1,4 +1,3 @@
-import React from 'react';
 import {SlideInOverlayInterface} from './SlideInOverlayInterface';
 import imageDetails from '../../../res/imgs/si-ol_ruine-stein.jpg';
 import svgDetails from '../../../res/imgs/map_ruine-stein.svg';

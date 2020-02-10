@@ -1,3 +1,4 @@
+import React from 'react';
 import castleIcon from "../../../res/icons/castle.svg"
 import bridgeIcon from "../../../res/icons/bridge.svg"
 import beerIcon from "../../../res/icons/beer.svg"
@@ -22,6 +23,7 @@ import videoBaden from "../../../res/videos/baden1.mp4";
 import {ReactComponent as svgStairs} from "../../../res/videos/baden2-stairways.svg";
 import videoBaden2 from "../../../res/videos/baden2.mp4";
 import videoBaden3 from "../../../res/videos/baden3.mp4";
+import {PopupOverlay} from '../PopupOverlay';
 import {VideoSlideItem} from "../VideoSlide";
 import {beerBar} from './beerBar';
 import {culture} from './culture';
@@ -64,7 +66,7 @@ export const videoSlideData: Array<VideoSlideItem> = [
         title: 'Kultur & Geschichte',
         subtitle: 'Aargauer Vorteile',
         className: 'culture-and-history',
-        overlayData: culture,
+        overlayComponent: <PopupOverlay data={culture}/>,
         svgComponent: svgTower,
         posLeftInPct: 68,
         posTopInPct: 60,
@@ -74,7 +76,7 @@ export const videoSlideData: Array<VideoSlideItem> = [
         title: 'Gewerbeimmobilien & Areal',
         subtitle: 'Aargauer Vorteile',
         className: 'real-estate',
-        overlayData: realEstate,
+        overlayComponent: <PopupOverlay data={realEstate}/>,
         svgComponent: svgRoof,
         posLeftInPct: 21,
         posTopInPct: 61,
@@ -95,7 +97,7 @@ export const videoSlideData: Array<VideoSlideItem> = [
         title: 'Wanderwege',
         subtitle: 'Aargauer Vorteile',
         className: 'hiking-trails',
-        overlayData: hikingTrails,
+        overlayComponent: <PopupOverlay data={hikingTrails}/>,
         svgComponent: svgStairs,
         posLeftInPct: 38,
         posTopInPct: 60,
@@ -105,7 +107,7 @@ export const videoSlideData: Array<VideoSlideItem> = [
         title: 'Wanderausrüstung',
         subtitle: 'Aargauer Unternehmen',
         className: 'mammut',
-        overlayData: mammut,
+        overlayComponent: <PopupOverlay data={mammut}/>,
         svgComponent: svgStairs,
         posLeftInPct: 57,
         posTopInPct: 66,
@@ -173,7 +175,7 @@ export const videoSlideData: Array<VideoSlideItem> = [
         title: 'Baumaterialen',
         subtitle: 'Aargauer Unternehmen',
         className: 'lafarge-holcim',
-        overlayData: lafargeHolcim,
+        overlayComponent: <PopupOverlay data={lafargeHolcim}/>,
         svgComponent: svgConstruction,
         posLeftInPct: 45,
         posTopInPct: 45,
@@ -182,7 +184,7 @@ export const videoSlideData: Array<VideoSlideItem> = [
         title: 'Infrastruktur',
         subtitle: 'Aargauer Unternehmen',
         className: 'aarvia',
-        overlayData: aarvia,
+        overlayComponent: <PopupOverlay data={aarvia}/>,
         svgComponent: svgABridge,
         posLeftInPct: 48,
         posTopInPct: 71,
@@ -239,7 +241,7 @@ export const videoSlideData: Array<VideoSlideItem> = [
         title: 'Interiors',
         subtitle: 'Aargauer Unternehmen',
         className: 'killer',
-        overlayData: killer,
+        overlayComponent: <PopupOverlay data={killer}/>,
         svgComponent: svgInterior,
         posLeftInPct: 42,
         posTopInPct: 71,
