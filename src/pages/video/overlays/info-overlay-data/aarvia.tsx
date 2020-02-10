@@ -4,9 +4,9 @@ import iconInfrastructure from '../../../../res/icons/infrastructure.svg'
 import iconLink from '../../../../res/icons/link.svg';
 import imgDetails from '../../../../res/imgs/ol_aarvia.jpg';
 import {Constants} from '../../../../services/Constants';
-import {PlaceholderChart, VideoOverlayInterface} from "../VideoOverlayInterface";
+import {PlaceholderChart, PopupOverlayInterface} from "../PopupOverlayInterface";
 
-export const aarvia: VideoOverlayInterface = {
+export const aarvia: PopupOverlayInterface = {
   type: Constants.TYPE_WORK,
   header: {
     title: "Aarvia Gruppe",

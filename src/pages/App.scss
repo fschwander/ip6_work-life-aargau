@@ -4,9 +4,9 @@
  * (must be below variables.scss, but after that the order does not matter)
  */
 @import '../index.scss';
-@import '../components/containers/BackgroundVideo';
+@import '../components/containers/BackgroundVideoContainer';
 @import '../components/containers/AnimatedSVG';
-@import '../components/containers/CurrentLocationDescription';
+@import 'video/LocationDescription';
 @import '../components/containers/PopupContainer';
 @import '../components/containers/SlideInContainer';
 @import '../components/buttons/HoverPoint.scss';
@@ -26,9 +26,9 @@
 @import '../pages/intro/IntroductionPage.scss';
 @import '../pages/video/VideoPage';
 @import '../pages/video/VideoSlide';
-@import '../pages/video/PopupOverlay';
-@import '../pages/video/SlideInOverlay';
-@import '../pages/side/travelingDistance/TravelingDistancePage.scss';
+@import 'video/overlays/PopupOverlay';
+@import 'video/overlays/SlideInOverlay';
+@import 'video/overlays/special-overlay-data/TravelingDistancePage';
 
 .App {
   text-align: center;

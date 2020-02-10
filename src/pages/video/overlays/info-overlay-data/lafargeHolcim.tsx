@@ -4,9 +4,9 @@ import iconEngineering from '../../../../res/icons/engineering.svg'
 import imgDetails from '../../../../res/imgs/ol_lafarge-holcim.jpg';
 import imgDetails2 from '../../../../res/imgs/ol_lafarge-holcim2.jpg';
 import {Constants} from "../../../../services/Constants";
-import {PlaceholderChart, VideoOverlayInterface} from "../VideoOverlayInterface";
+import {PlaceholderChart, PopupOverlayInterface} from "../PopupOverlayInterface";
 
-export const lafargeHolcim: VideoOverlayInterface = {
+export const lafargeHolcim: PopupOverlayInterface = {
   type: Constants.TYPE_WORK,
   header: {
     title: "LafargeHolcim",

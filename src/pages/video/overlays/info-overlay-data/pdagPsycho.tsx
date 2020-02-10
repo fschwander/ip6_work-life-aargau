@@ -6,9 +6,9 @@ import imgDetails from '../../../../res/imgs/ol_pdag.jpg'
 import imgDetails2 from '../../../../res/imgs/ol_pdag2.jpg'
 import imgDetails3 from '../../../../res/imgs/ol_pdag3.jpg'
 import {Constants} from '../../../../services/Constants';
-import {PlaceholderChart, VideoOverlayInterface} from "../VideoOverlayInterface";
+import {PlaceholderChart, PopupOverlayInterface} from "../PopupOverlayInterface";
 
-export const pdagPsycho: VideoOverlayInterface = {
+export const pdagPsycho: PopupOverlayInterface = {
   type: Constants.TYPE_WORK,
   header: {
     title: "PDAG",

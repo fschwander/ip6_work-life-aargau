@@ -1,13 +1,13 @@
 import React, {CSSProperties, ReactElement, useState} from 'react';
 import {AnimatedSVG} from '../../components/containers/AnimatedSVG';
-import {BackgroundVideo} from '../../components/containers/BackgroundVideo';
-import {CurrentLocationDescription} from '../../components/containers/CurrentLocationDescription';
+import {BackgroundVideoContainer} from '../../components/containers/BackgroundVideoContainer';
+import {LocationDescription} from './LocationDescription';
 import {PopupContainer} from '../../components/containers/PopupContainer';
 import {SlideInContainer} from '../../components/containers/SlideInContainer';
 import {InfoLabel, InfoLabelItem} from "../../components/labels/InfoLabel";
 import {PoiLabel, PoiLabelItem} from "../../components/labels/PoiLabel";
-import {PopupOverlayProps} from './PopupOverlay';
-import {SlideInOverlayProps} from './SlideInOverlay';
+import {PopupOverlayProps} from './overlays/PopupOverlay';
+import {SlideInOverlayProps} from './overlays/SlideInOverlay';
 
 export interface VideoSlideItem {
   className: string,
@@ -60,9 +60,9 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
 
   return (
     <div className={`VideoSlide ${props.className}`}>
-      <BackgroundVideo source={props.videoSrc}
-                       playVideo={true}
-                       onVideoEnded={onVideoEnded}>
+      <BackgroundVideoContainer source={props.videoSrc}
+                                playVideo={true}
+                                onVideoEnded={onVideoEnded}>
 
         <div className={`anim-group-container`}>
 
@@ -97,9 +97,9 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
             )
           })}
         </div>
-      </BackgroundVideo>
+      </BackgroundVideoContainer>
 
-      <CurrentLocationDescription title={props.title}/>
+      <LocationDescription title={props.title}/>
 
       {popupComponent !== undefined ?
         <PopupContainer onCloseButtonClicked={() => setPopupComponent(undefined)}>

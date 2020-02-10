@@ -1,12 +1,12 @@
 import React, {useState} from 'react';
-import {RoundButton} from '../../components/buttons/RoundButton';
-import iconArrowLeft from '../../res/icons/arrow2_left.svg'
-import iconArrowRight from '../../res/icons/arrow2_right.svg'
-import {Constants} from "../../services/Constants";
-import {VideoOverlayInterface} from './data/VideoOverlayInterface';
+import {RoundButton} from '../../../components/buttons/RoundButton';
+import iconArrowLeft from '../../../res/icons/arrow2_left.svg'
+import iconArrowRight from '../../../res/icons/arrow2_right.svg'
+import {Constants} from "../../../services/Constants";
+import {PopupOverlayInterface} from './PopupOverlayInterface';
 
 export interface PopupOverlayProps {
-  data: VideoOverlayInterface
+  data: PopupOverlayInterface
 }
 
 export const PopupOverlay: React.FC<PopupOverlayProps> = props => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import {SlideInOverlayInterface} from './data/SlideInOverlayInterface';
+import {SlideInOverlayInterface} from './SlideInOverlayInterface';
 
 export interface SlideInOverlayProps {
   data: SlideInOverlayInterface

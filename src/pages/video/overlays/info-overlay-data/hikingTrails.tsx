@@ -6,9 +6,9 @@ import iconHiking from '../../../../res/icons/hiking.svg'
 import imgHikingTrails from '../../../../res/imgs/ol_hikingtrails.jpg'
 import imgHikingTrails2 from '../../../../res/imgs/ol_hikingtrails2.jpg'
 import imgHikingTrails3 from '../../../../res/imgs/ol_hikingtrails3.jpg'
-import {VideoOverlayInterface} from '../VideoOverlayInterface'
+import {PopupOverlayInterface} from '../PopupOverlayInterface'
 
-export const hikingTrails: VideoOverlayInterface = {
+export const hikingTrails: PopupOverlayInterface = {
   type: Constants.TYPE_LIFE,
   header: {
     title: "Wanderwege",

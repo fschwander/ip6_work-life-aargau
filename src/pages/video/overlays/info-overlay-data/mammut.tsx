@@ -5,9 +5,9 @@ import iconLink from '../../../../res/icons/link.svg'
 import imgDetails from '../../../../res/imgs/ol_mammut.svg'
 import imgDetails2 from '../../../../res/imgs/ol_mammut2.jpg'
 import {Constants} from '../../../../services/Constants';
-import {PlaceholderChart, VideoOverlayInterface} from '../VideoOverlayInterface'
+import {PlaceholderChart, PopupOverlayInterface} from '../PopupOverlayInterface'
 
-export const mammut: VideoOverlayInterface = {
+export const mammut: PopupOverlayInterface = {
   type: Constants.TYPE_WORK,
   header: {
     title: "Mammut",

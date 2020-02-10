@@ -5,9 +5,9 @@ import imgRealEstate from '../../../../res/imgs/ol_real-estate.png'
 import imgRealEstate2 from '../../../../res/imgs/ol_real-estate2.png'
 import imgRealEstate3 from '../../../../res/imgs/ol_real-estate3.png'
 import {Constants} from '../../../../services/Constants';
-import {PlaceholderChart, VideoOverlayInterface} from "../VideoOverlayInterface";
+import {PlaceholderChart, PopupOverlayInterface} from "../PopupOverlayInterface";
 
-export const realEstate: VideoOverlayInterface = {
+export const realEstate: PopupOverlayInterface = {
   type: Constants.TYPE_LIFE,
   header: {
     title: "Gewerbeimmobilien & Areale",

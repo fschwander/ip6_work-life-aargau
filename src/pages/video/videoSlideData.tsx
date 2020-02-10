@@ -1,44 +1,44 @@
 import React from 'react';
-import castleIcon from "../../../res/icons/castle.svg"
-import bridgeIcon from "../../../res/icons/bridge.svg"
-import beerIcon from "../../../res/icons/beer.svg"
-import waterIcon from "../../../res/icons/water.svg"
-import churchIcon from "../../../res/icons/church.svg"
-import connectednessIcon from "../../../res/icons/connectedness.svg"
-import videoAarau1 from "../../../res/videos/aarau1.mp4";
-import videoAarau2 from "../../../res/videos/aarau2.mp4";
-import videoAarau3 from "../../../res/videos/aarau3.mp4";
-import {ReactComponent as svgRoof} from "../../../res/videos/baden1-roof.svg";
-import {ReactComponent as svgRuine} from "../../../res/videos/baden1-ruine.svg";
-import {ReactComponent as svgTower} from "../../../res/videos/baden1-tower.svg";
-import {ReactComponent as svgBridge} from "../../../res/videos/baden3-bridge.svg";
-import {ReactComponent as svgBar} from "../../../res/videos/baden3-bar.svg";
-import {ReactComponent as svgAare} from "../../../res/videos/aarau3-river.svg";
-import {ReactComponent as svgConnectivity} from "../../../res/videos/baden3-connectivity.svg";
-import {ReactComponent as svgConstruction} from "../../../res/videos/aarau1-construction.svg";
-import {ReactComponent as svgABridge} from "../../../res/videos/aarau1-bridge.svg";
-import {ReactComponent as svgChurch} from "../../../res/videos/aarau2-church.svg";
-import {ReactComponent as svgInterior} from "../../../res/videos/aarau3-interiors.svg";
-import videoBaden from "../../../res/videos/baden1.mp4";
-import {ReactComponent as svgStairs} from "../../../res/videos/baden2-stairways.svg";
-import videoBaden2 from "../../../res/videos/baden2.mp4";
-import videoBaden3 from "../../../res/videos/baden3.mp4";
-import {TravelingDistancePage} from '../../side/travelingDistance/TravelingDistancePage';
-import {PopupOverlay} from '../PopupOverlay';
-import {SlideInOverlay} from '../SlideInOverlay';
-import {VideoSlideItem} from "../VideoSlide";
-import {beerBar} from './poi-overlay-data/beerBar';
-import {culture} from './info-overlay-data/culture';
-import {hikingTrails} from "./info-overlay-data/hikingTrails";
-import {lafargeHolcim} from './info-overlay-data/lafargeHolcim';
-import {aarvia} from './info-overlay-data/aarvia';
-import {aare} from './poi-overlay-data/aare';
-import {mammut} from "./info-overlay-data/mammut";
-import {realEstate} from "./info-overlay-data/realEstate";
-import {ruineStein} from "./poi-overlay-data/ruineStein";
-import {woodenBridge} from "./poi-overlay-data/woodenBridge";
-import {churchAarau} from "./poi-overlay-data/churchAarau";
-import {killer} from "./info-overlay-data/killer";
+import castleIcon from "../../res/icons/castle.svg"
+import bridgeIcon from "../../res/icons/bridge.svg"
+import beerIcon from "../../res/icons/beer.svg"
+import waterIcon from "../../res/icons/water.svg"
+import churchIcon from "../../res/icons/church.svg"
+import connectednessIcon from "../../res/icons/connectedness.svg"
+import videoAarau1 from "../../res/videos/aarau1.mp4";
+import videoAarau2 from "../../res/videos/aarau2.mp4";
+import videoAarau3 from "../../res/videos/aarau3.mp4";
+import {ReactComponent as svgRoof} from "../../res/videos/baden1-roof.svg";
+import {ReactComponent as svgRuine} from "../../res/videos/baden1-ruine.svg";
+import {ReactComponent as svgTower} from "../../res/videos/baden1-tower.svg";
+import {ReactComponent as svgBridge} from "../../res/videos/baden3-bridge.svg";
+import {ReactComponent as svgBar} from "../../res/videos/baden3-bar.svg";
+import {ReactComponent as svgAare} from "../../res/videos/aarau3-river.svg";
+import {ReactComponent as svgConnectivity} from "../../res/videos/baden3-connectivity.svg";
+import {ReactComponent as svgConstruction} from "../../res/videos/aarau1-construction.svg";
+import {ReactComponent as svgABridge} from "../../res/videos/aarau1-bridge.svg";
+import {ReactComponent as svgChurch} from "../../res/videos/aarau2-church.svg";
+import {ReactComponent as svgInterior} from "../../res/videos/aarau3-interiors.svg";
+import videoBaden from "../../res/videos/baden1.mp4";
+import {ReactComponent as svgStairs} from "../../res/videos/baden2-stairways.svg";
+import videoBaden2 from "../../res/videos/baden2.mp4";
+import videoBaden3 from "../../res/videos/baden3.mp4";
+import {TravelingDistancePage} from './overlays/special-overlay-data/TravelingDistancePage';
+import {PopupOverlay} from './overlays/PopupOverlay';
+import {SlideInOverlay} from './overlays/SlideInOverlay';
+import {VideoSlideItem} from "./VideoSlide";
+import {beerBar} from './overlays/poi-overlay-data/beerBar';
+import {culture} from './overlays/info-overlay-data/culture';
+import {hikingTrails} from "./overlays/info-overlay-data/hikingTrails";
+import {lafargeHolcim} from './overlays/info-overlay-data/lafargeHolcim';
+import {aarvia} from './overlays/info-overlay-data/aarvia';
+import {aare} from './overlays/poi-overlay-data/aare';
+import {mammut} from "./overlays/info-overlay-data/mammut";
+import {realEstate} from "./overlays/info-overlay-data/realEstate";
+import {ruineStein} from "./overlays/poi-overlay-data/ruineStein";
+import {woodenBridge} from "./overlays/poi-overlay-data/woodenBridge";
+import {churchAarau} from "./overlays/poi-overlay-data/churchAarau";
+import {killer} from "./overlays/info-overlay-data/killer";
 
 export const videoSlideData: Array<VideoSlideItem> = [
 

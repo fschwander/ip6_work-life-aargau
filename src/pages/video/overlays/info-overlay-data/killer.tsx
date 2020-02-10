@@ -3,9 +3,9 @@ import iconEngineering from '../../../../res/icons/engineering.svg';
 import iconLink from '../../../../res/icons/link.svg';
 import imgDetails from '../../../../res/imgs/ol_killer.jpg';
 import {Constants} from '../../../../services/Constants';
-import {PlaceholderChart, VideoOverlayInterface} from "../VideoOverlayInterface";
+import {PlaceholderChart, PopupOverlayInterface} from "../PopupOverlayInterface";
 
-export const killer: VideoOverlayInterface = {
+export const killer: PopupOverlayInterface = {
   type: Constants.TYPE_WORK,
   header: {
     title: "Killer",

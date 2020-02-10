@@ -8,7 +8,7 @@ interface FullScreenVideoProps {
   onVideoEnded: Function
 }
 
-export const BackgroundVideo: React.FC<FullScreenVideoProps> = props => {
+export const BackgroundVideoContainer: React.FC<FullScreenVideoProps> = props => {
   const [isBuffering, setIsBuffering] = useState(false);
   const [size, setSize] = useState({videoWidth: 0, videoHeight: 0, translateX: 0, translateY: 0});
 
@@ -42,7 +42,7 @@ export const BackgroundVideo: React.FC<FullScreenVideoProps> = props => {
   }, []);
 
   return (
-    <div className='BackgroundVideo full-screen'>
+    <div className='BackgroundVideoContainer full-screen'>
 
       <div className='outer-container'
            style={{

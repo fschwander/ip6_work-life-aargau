@@ -1,8 +1,8 @@
 import React, {useEffect, useRef, useState} from 'react';
-import {SelectionChip} from '../../../components/buttons/SelectionChip';
-import {ReactComponent as MapSVG} from '../../../res/imgs/map.svg';
+import {SelectionChip} from '../../../../components/buttons/SelectionChip';
+import {ReactComponent as MapSVG} from '../../../../res/imgs/map.svg';
 import * as d3 from 'd3';
-import citiesData from './citiesData.json'
+import citiesData from './travelingDistanceData.json'
 
 interface Destination {
   startingPoint: string,

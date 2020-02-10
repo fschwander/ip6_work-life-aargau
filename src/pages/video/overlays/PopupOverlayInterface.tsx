@@ -1,6 +1,6 @@
 import React, {ReactElement} from 'react';
 
-export interface VideoOverlayInterface {
+export interface PopupOverlayInterface {
   type: string,
   header: {
     title: string,
@@ -40,7 +40,7 @@ interface LinkItem {
 
 /**
  * Placeholder chart for time during implementation
- * todo: remove this component when implementation of data is finished
+ * todo: remove this component when implementation of overlays is finished
  */
 export const PlaceholderChart: React.FC = () => {
   return (

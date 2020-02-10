@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Timeline} from "../../components/widgets/TimeLine";
-import {videoSlideData} from "./data/videoSlideData";
+import {videoSlideData} from "./videoSlideData";
 import {VideoSlide} from './VideoSlide';
 
 export const VideoPage: React.FC = () => {

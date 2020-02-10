@@ -1,7 +1,7 @@
 import React from 'react';
-import {PlaceholderChart, VideoOverlayInterface} from "../VideoOverlayInterface";
+import {PlaceholderChart, PopupOverlayInterface} from "../PopupOverlayInterface";
 
-export const _template: VideoOverlayInterface = {
+export const _template: PopupOverlayInterface = {
   type: "",
   header: {
     title: "",

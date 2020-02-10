@@ -3,7 +3,7 @@ import iconHiking from '../../../../res/icons/hiking.svg';
 import iconMuseum from '../../../../res/icons/museum.svg';
 import iconHistory from '../../../../res/icons/history.svg';
 import {Constants} from '../../../../services/Constants';
-import {PlaceholderChart, VideoOverlayInterface} from "../VideoOverlayInterface";
+import {PlaceholderChart, PopupOverlayInterface} from "../PopupOverlayInterface";
 import iconLink from '../../../../res/icons/link.svg';
 import imgCulture from '../../../../res/imgs/ol_culture.png'
 import imgCulture2 from '../../../../res/imgs/ol_culture2.jpg'
@@ -14,7 +14,7 @@ import imgCulture6 from '../../../../res/imgs/ol_culture6.jpg'
 import imgCulture7 from '../../../../res/imgs/ol_culture7.jpg'
 import imgCulture8 from '../../../../res/imgs/ol_culture8.jpg'
 
-export const culture: VideoOverlayInterface = {
+export const culture: PopupOverlayInterface = {
   type: Constants.TYPE_LIFE,
   header: {
     title: "Kultur & Geschichte",
