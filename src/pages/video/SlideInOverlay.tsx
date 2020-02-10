@@ -9,7 +9,7 @@ export const SlideInOverlay: React.FC<SlideInOverlayProps> = props => {
   const {data} = props;
 
   return (
-    <div className='header-container'>
+    <div className='SlideInOverlay header-container'>
       <p>LOKALES HIGHLIGHT</p>
       <h2>{data.header.title}</h2>
       <p className='secondary-title'><b>{data.header.subtitle}</b></p>
