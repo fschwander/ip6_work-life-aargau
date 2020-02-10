@@ -23,7 +23,9 @@ import videoBaden from "../../../res/videos/baden1.mp4";
 import {ReactComponent as svgStairs} from "../../../res/videos/baden2-stairways.svg";
 import videoBaden2 from "../../../res/videos/baden2.mp4";
 import videoBaden3 from "../../../res/videos/baden3.mp4";
+import {TravelingDistancePage} from '../../side/travelingDistance/TravelingDistancePage';
 import {PopupOverlay} from '../PopupOverlay';
+import {SlideInOverlay} from '../SlideInOverlay';
 import {VideoSlideItem} from "../VideoSlide";
 import {beerBar} from './beerBar';
 import {culture} from './culture';
@@ -37,7 +39,6 @@ import {ruineStein} from "./ruineStein";
 import {woodenBridge} from "./woodenBridge";
 import {churchAarau} from "./churchAarau";
 import {killer} from "./killer";
-// import {TravelingDistancePage} from "../../../pages/side/travelingDistance/TravelingDistancePage";
 
 export const videoSlideData: Array<VideoSlideItem> = [
 
@@ -51,7 +52,7 @@ export const videoSlideData: Array<VideoSlideItem> = [
       {
         subtitle: 'Lokales Highlight',
         title: 'Ruine Stein',
-        overlayData: ruineStein,
+        overlayComponent: <SlideInOverlay data={ruineStein}/>,
         svgComponent: svgRuine,
         iconSrc: castleIcon,
         posLeftInPct: 69,
@@ -126,7 +127,7 @@ export const videoSlideData: Array<VideoSlideItem> = [
       {
         title: 'Holzbrücke',
         subtitle: 'lokales Highlight',
-        overlayData: woodenBridge,
+        overlayComponent: <SlideInOverlay data={woodenBridge}/>,
         svgComponent: svgBridge,
         iconSrc: bridgeIcon,
         posLeftInPct: 60,
@@ -138,7 +139,7 @@ export const videoSlideData: Array<VideoSlideItem> = [
       {
         title: 'Triebguet Frischluftbar',
         subtitle: 'lokales Highlight',
-        overlayData: beerBar,
+        overlayComponent: <SlideInOverlay data={beerBar}/>,
         svgComponent: svgBar,
         iconSrc: beerIcon,
         posLeftInPct: 70,
@@ -150,7 +151,7 @@ export const videoSlideData: Array<VideoSlideItem> = [
       {
         title: 'Verbundenheit',
         subtitle: 'lokales Highlight',
-        overlayData: beerBar,
+        overlayComponent: <TravelingDistancePage/>,
         svgComponent: svgConnectivity,
         iconSrc: connectednessIcon,
         posLeftInPct: 39,
@@ -203,7 +204,7 @@ export const videoSlideData: Array<VideoSlideItem> = [
       {
         title: 'Stadtkirche Aarau',
         subtitle: 'lokales Highlight',
-        overlayData: churchAarau,
+        overlayComponent: <SlideInOverlay data={churchAarau}/>,
         svgComponent: svgChurch,
         iconSrc: churchIcon,
         posLeftInPct: 42,
@@ -226,7 +227,7 @@ export const videoSlideData: Array<VideoSlideItem> = [
       {
         title: 'Aare',
         subtitle: 'lokales Highlight',
-        overlayData: aare,
+        overlayComponent: <SlideInOverlay data={aare}/>,
         svgComponent: svgAare,
         iconSrc: waterIcon,
         posLeftInPct: 37,
