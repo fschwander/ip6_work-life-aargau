@@ -1,10 +1,10 @@
 import React from 'react';
-import iconConstruction from '../../../res/icons/construction.svg'
-import iconEngineering from '../../../res/icons/engineering.svg'
-import imgDetails from '../../../res/imgs/ol_lafarge-holcim.jpg';
-import imgDetails2 from '../../../res/imgs/ol_lafarge-holcim2.jpg';
-import {Constants} from "../../../services/Constants";
-import {PlaceholderChart, VideoOverlayInterface} from "./VideoOverlayInterface";
+import iconConstruction from '../../../../res/icons/construction.svg'
+import iconEngineering from '../../../../res/icons/engineering.svg'
+import imgDetails from '../../../../res/imgs/ol_lafarge-holcim.jpg';
+import imgDetails2 from '../../../../res/imgs/ol_lafarge-holcim2.jpg';
+import {Constants} from "../../../../services/Constants";
+import {PlaceholderChart, VideoOverlayInterface} from "../VideoOverlayInterface";
 
 export const lafargeHolcim: VideoOverlayInterface = {
   type: Constants.TYPE_WORK,

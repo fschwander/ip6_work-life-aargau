@@ -1,6 +1,6 @@
-import {SlideInOverlayInterface} from './SlideInOverlayInterface';
-import imageDetails from '../../../res/imgs/si-ol_ruine-stein.jpg';
-import svgDetails from '../../../res/imgs/map_ruine-stein.svg';
+import {SlideInOverlayInterface} from '../SlideInOverlayInterface';
+import imageDetails from '../../../../res/imgs/si-ol_ruine-stein.jpg';
+import svgDetails from '../../../../res/imgs/map_ruine-stein.svg';
 
 export const ruineStein: SlideInOverlayInterface = {
 

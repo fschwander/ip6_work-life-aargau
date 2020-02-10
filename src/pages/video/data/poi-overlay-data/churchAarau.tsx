@@ -1,6 +1,6 @@
-import {SlideInOverlayInterface} from './SlideInOverlayInterface';
-import imageDetails from '../../../res/imgs/si-ol_church-aarau.jpg';
-import svgDetails from '../../../res/imgs/map_aarau.svg';
+import {SlideInOverlayInterface} from '../SlideInOverlayInterface';
+import imageDetails from '../../../../res/imgs/si-ol_church-aarau.jpg';
+import svgDetails from '../../../../res/imgs/map_aarau.svg';
 
 export const churchAarau: SlideInOverlayInterface = {
 

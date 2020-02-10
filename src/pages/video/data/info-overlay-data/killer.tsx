@@ -1,9 +1,9 @@
 import React from 'react';
-import iconEngineering from '../../../res/icons/engineering.svg';
-import iconLink from '../../../res/icons/link.svg';
-import imgDetails from '../../../res/imgs/ol_killer.jpg';
-import {Constants} from '../../../services/Constants';
-import {PlaceholderChart, VideoOverlayInterface} from "./VideoOverlayInterface";
+import iconEngineering from '../../../../res/icons/engineering.svg';
+import iconLink from '../../../../res/icons/link.svg';
+import imgDetails from '../../../../res/imgs/ol_killer.jpg';
+import {Constants} from '../../../../services/Constants';
+import {PlaceholderChart, VideoOverlayInterface} from "../VideoOverlayInterface";
 
 export const killer: VideoOverlayInterface = {
   type: Constants.TYPE_WORK,

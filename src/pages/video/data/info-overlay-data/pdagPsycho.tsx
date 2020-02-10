@@ -1,12 +1,12 @@
 import React from 'react';
-import iconLink from '../../../res/icons/link.svg';
-import iconHealthcare from '../../../res/icons/healthcare.svg'
-import iconCommunity from '../../../res/icons/community.svg'
-import imgDetails from '../../../res/imgs/ol_pdag.jpg'
-import imgDetails2 from '../../../res/imgs/ol_pdag2.jpg'
-import imgDetails3 from '../../../res/imgs/ol_pdag3.jpg'
-import {Constants} from '../../../services/Constants';
-import {PlaceholderChart, VideoOverlayInterface} from "./VideoOverlayInterface";
+import iconLink from '../../../../res/icons/link.svg';
+import iconHealthcare from '../../../../res/icons/healthcare.svg'
+import iconCommunity from '../../../../res/icons/community.svg'
+import imgDetails from '../../../../res/imgs/ol_pdag.jpg'
+import imgDetails2 from '../../../../res/imgs/ol_pdag2.jpg'
+import imgDetails3 from '../../../../res/imgs/ol_pdag3.jpg'
+import {Constants} from '../../../../services/Constants';
+import {PlaceholderChart, VideoOverlayInterface} from "../VideoOverlayInterface";
 
 export const pdagPsycho: VideoOverlayInterface = {
   type: Constants.TYPE_WORK,

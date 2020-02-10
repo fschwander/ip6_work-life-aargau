@@ -27,18 +27,18 @@ import {TravelingDistancePage} from '../../side/travelingDistance/TravelingDista
 import {PopupOverlay} from '../PopupOverlay';
 import {SlideInOverlay} from '../SlideInOverlay';
 import {VideoSlideItem} from "../VideoSlide";
-import {beerBar} from './beerBar';
-import {culture} from './culture';
-import {hikingTrails} from "./hikingTrails";
-import {lafargeHolcim} from './lafargeHolcim';
-import {aarvia} from './aarvia';
-import {aare} from './aare';
-import {mammut} from "./mammut";
-import {realEstate} from "./realEstate";
-import {ruineStein} from "./ruineStein";
-import {woodenBridge} from "./woodenBridge";
-import {churchAarau} from "./churchAarau";
-import {killer} from "./killer";
+import {beerBar} from './poi-overlay-data/beerBar';
+import {culture} from './info-overlay-data/culture';
+import {hikingTrails} from "./info-overlay-data/hikingTrails";
+import {lafargeHolcim} from './info-overlay-data/lafargeHolcim';
+import {aarvia} from './info-overlay-data/aarvia';
+import {aare} from './poi-overlay-data/aare';
+import {mammut} from "./info-overlay-data/mammut";
+import {realEstate} from "./info-overlay-data/realEstate";
+import {ruineStein} from "./poi-overlay-data/ruineStein";
+import {woodenBridge} from "./poi-overlay-data/woodenBridge";
+import {churchAarau} from "./poi-overlay-data/churchAarau";
+import {killer} from "./info-overlay-data/killer";
 
 export const videoSlideData: Array<VideoSlideItem> = [
 

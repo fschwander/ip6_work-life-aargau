@@ -1,6 +1,6 @@
-import {SlideInOverlayInterface} from './SlideInOverlayInterface';
-import imageDetails from '../../../res/imgs/si-ol_aare.jpg';
-import svgDetails from '../../../res/imgs/map_aare.svg';
+import {SlideInOverlayInterface} from '../SlideInOverlayInterface';
+import imageDetails from '../../../../res/imgs/si-ol_aare.jpg';
+import svgDetails from '../../../../res/imgs/map_aare.svg';
 
 export const aare: SlideInOverlayInterface = {
 

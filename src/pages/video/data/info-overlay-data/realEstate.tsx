@@ -1,11 +1,11 @@
 import React from 'react';
-import iconLink from '../../../res/icons/link.svg';
-import iconRealEstate from '../../../res/icons/realestate.svg'
-import imgRealEstate from '../../../res/imgs/ol_real-estate.png'
-import imgRealEstate2 from '../../../res/imgs/ol_real-estate2.png'
-import imgRealEstate3 from '../../../res/imgs/ol_real-estate3.png'
-import {Constants} from '../../../services/Constants';
-import {PlaceholderChart, VideoOverlayInterface} from "./VideoOverlayInterface";
+import iconLink from '../../../../res/icons/link.svg';
+import iconRealEstate from '../../../../res/icons/realestate.svg'
+import imgRealEstate from '../../../../res/imgs/ol_real-estate.png'
+import imgRealEstate2 from '../../../../res/imgs/ol_real-estate2.png'
+import imgRealEstate3 from '../../../../res/imgs/ol_real-estate3.png'
+import {Constants} from '../../../../services/Constants';
+import {PlaceholderChart, VideoOverlayInterface} from "../VideoOverlayInterface";
 
 export const realEstate: VideoOverlayInterface = {
   type: Constants.TYPE_LIFE,

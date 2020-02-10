@@ -1,11 +1,11 @@
 import React from 'react';
-import iconClimbing from '../../../res/icons/climbing.svg'
-import iconHiking from '../../../res/icons/hiking.svg'
-import iconLink from '../../../res/icons/link.svg'
-import imgDetails from '../../../res/imgs/ol_mammut.svg'
-import imgDetails2 from '../../../res/imgs/ol_mammut2.jpg'
-import {Constants} from '../../../services/Constants';
-import {PlaceholderChart, VideoOverlayInterface} from './VideoOverlayInterface'
+import iconClimbing from '../../../../res/icons/climbing.svg'
+import iconHiking from '../../../../res/icons/hiking.svg'
+import iconLink from '../../../../res/icons/link.svg'
+import imgDetails from '../../../../res/imgs/ol_mammut.svg'
+import imgDetails2 from '../../../../res/imgs/ol_mammut2.jpg'
+import {Constants} from '../../../../services/Constants';
+import {PlaceholderChart, VideoOverlayInterface} from '../VideoOverlayInterface'
 
 export const mammut: VideoOverlayInterface = {
   type: Constants.TYPE_WORK,

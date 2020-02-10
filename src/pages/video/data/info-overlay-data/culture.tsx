@@ -1,18 +1,18 @@
 import React from 'react';
-import iconHiking from '../../../res/icons/hiking.svg';
-import iconMuseum from '../../../res/icons/museum.svg';
-import iconHistory from '../../../res/icons/history.svg';
-import {Constants} from '../../../services/Constants';
-import {PlaceholderChart, VideoOverlayInterface} from "./VideoOverlayInterface";
-import iconLink from '../../../res/icons/link.svg';
-import imgCulture from '../../../res/imgs/ol_culture.png'
-import imgCulture2 from '../../../res/imgs/ol_culture2.jpg'
-import imgCulture3 from '../../../res/imgs/ol_culture3.png'
-import imgCulture4 from '../../../res/imgs/ol_culture4.jpg'
-import imgCulture5 from '../../../res/imgs/ol_culture5.jpg'
-import imgCulture6 from '../../../res/imgs/ol_culture6.jpg'
-import imgCulture7 from '../../../res/imgs/ol_culture7.jpg'
-import imgCulture8 from '../../../res/imgs/ol_culture8.jpg'
+import iconHiking from '../../../../res/icons/hiking.svg';
+import iconMuseum from '../../../../res/icons/museum.svg';
+import iconHistory from '../../../../res/icons/history.svg';
+import {Constants} from '../../../../services/Constants';
+import {PlaceholderChart, VideoOverlayInterface} from "../VideoOverlayInterface";
+import iconLink from '../../../../res/icons/link.svg';
+import imgCulture from '../../../../res/imgs/ol_culture.png'
+import imgCulture2 from '../../../../res/imgs/ol_culture2.jpg'
+import imgCulture3 from '../../../../res/imgs/ol_culture3.png'
+import imgCulture4 from '../../../../res/imgs/ol_culture4.jpg'
+import imgCulture5 from '../../../../res/imgs/ol_culture5.jpg'
+import imgCulture6 from '../../../../res/imgs/ol_culture6.jpg'
+import imgCulture7 from '../../../../res/imgs/ol_culture7.jpg'
+import imgCulture8 from '../../../../res/imgs/ol_culture8.jpg'
 
 export const culture: VideoOverlayInterface = {
   type: Constants.TYPE_LIFE,
