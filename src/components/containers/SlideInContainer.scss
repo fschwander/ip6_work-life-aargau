@@ -9,9 +9,16 @@
   display: flex;
   flex-direction: row;
 
-  & > .content-container {
+  .scroll-container {
     padding: 6rem 2rem 6em 6em;
     overflow-y: scroll;
+
+    .ScrollIndicator {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      margin: 3rem;
+    }
   }
 
   .RoundButton {

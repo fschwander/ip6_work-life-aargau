@@ -1,5 +1,4 @@
 import React from 'react';
-import {ScrollIndicator} from '../../../components/widgets/ScrollIndicator';
 import {SlideInOverlayInterface} from './SlideInOverlayInterface';
 
 export interface SlideInOverlayProps {
@@ -38,8 +37,6 @@ export const SlideInOverlay: React.FC<SlideInOverlayProps> = props => {
           <p>{data.map.location_text}</p>
         </div>
       </div>
-
-      <ScrollIndicator/>
     </div>
   )
 }

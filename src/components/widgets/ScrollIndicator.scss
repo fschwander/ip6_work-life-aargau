@@ -2,10 +2,18 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  animation: 3s blink ease-in-out infinite;
+  opacity: 0;
+
+  &.show {
+    animation: 3s blink ease-in-out infinite;
+  }
+
+  &.hide {
+    animation: unset;
+  }
 
   svg {
-    height: 50px;
+    height: 60px;
   }
 
   h4 {
@@ -15,7 +23,7 @@
 
   @keyframes blink {
     0% {
-      opacity: 0.4;
+      opacity: 0;
     }
     30% {
       opacity: 1;
@@ -24,7 +32,7 @@
       opacity: 1;
     }
     100% {
-      opacity: 0.4;
+      opacity: 0;
     }
   }
 }
