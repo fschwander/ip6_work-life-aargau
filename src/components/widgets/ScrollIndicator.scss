@@ -1,0 +1,30 @@
+.ScrollIndicator {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  animation: 3s blink ease-in-out infinite;
+
+  svg {
+    height: 50px;
+  }
+
+  h4 {
+    margin-top: 0.4rem;
+    font-size: 0.7rem;
+  }
+
+  @keyframes blink {
+    0% {
+      opacity: 0.4;
+    }
+    30% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.4;
+    }
+  }
+}

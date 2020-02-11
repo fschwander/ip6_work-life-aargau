@@ -6,7 +6,6 @@
 @import '../index.scss';
 @import '../components/containers/BackgroundVideoContainer';
 @import '../components/containers/AnimatedSVG';
-@import 'video/LocationDescription';
 @import '../components/containers/PopupContainer';
 @import '../components/containers/SlideInContainer';
 @import '../components/buttons/HoverPoint.scss';
@@ -20,15 +19,17 @@
 @import '../components/widgets/Navigation.scss';
 @import '../components/widgets/PieChart.scss';
 @import '../components/widgets/Slider.scss';
+@import '../components/widgets/ScrollIndicator.scss';
 @import '../components/widgets/Quiz.scss';
 @import '../components/widgets/QuizBox.scss';
 @import '../components/widgets/TimeLine.scss';
 @import '../pages/intro/IntroductionPage.scss';
+@import '../pages/video/LocationDescription';
 @import '../pages/video/VideoPage';
 @import '../pages/video/VideoSlide';
-@import 'video/overlays/PopupOverlay';
-@import 'video/overlays/SlideInOverlay';
-@import 'video/overlays/special-overlay-data/TravelingDistancePage';
+@import '../pages/video/overlays/PopupOverlay';
+@import '../pages/video/overlays/SlideInOverlay';
+@import '../pages/video/overlays/special-overlay-data/TravelingDistancePage';
 
 .App {
   text-align: center;
