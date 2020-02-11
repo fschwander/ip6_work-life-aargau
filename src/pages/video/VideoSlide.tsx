@@ -102,12 +102,12 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
       <LocationDescription title={props.title}/>
 
       {popupComponent !== undefined ?
-        <PopupContainer onCloseButtonClicked={() => setPopupComponent(undefined)}>
+        <PopupContainer onCloseButtonClicked={setPopupComponent}>
           {popupComponent}
         </PopupContainer> : null}
 
       {slideInComponent !== undefined ?
-        <SlideInContainer onCloseButtonClicked={() => setSlideInComponent(undefined)}>
+        <SlideInContainer onCloseButtonClicked={setSlideInComponent}>
           {slideInComponent}
         </SlideInContainer> : null}
 
