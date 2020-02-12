@@ -1,6 +1,7 @@
 import React, {CSSProperties, ReactElement, useState} from 'react';
 import {AnimatedSVG} from '../../components/containers/AnimatedSVG';
 import {BackgroundVideoContainer} from '../../components/containers/BackgroundVideoContainer';
+import {ProgressIndicator} from '../../components/widgets/ProgressIndicator';
 import {LocationDescription} from './LocationDescription';
 import {PopupContainer} from '../../components/containers/PopupContainer';
 import {SlideInContainer} from '../../components/containers/SlideInContainer';
@@ -98,6 +99,8 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
             )
           })}
         </div>
+
+        <ProgressIndicator/>
       </BackgroundVideoContainer>
 
       <LocationDescription title={props.title}/>
