@@ -1,6 +1,14 @@
 .ProgressIndicator {
   animation: .7s fade-in ease-in-out forwards;
   opacity: 0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
 
   svg {
     width: 4rem;
@@ -11,6 +19,23 @@
       stroke: white;
       stroke-width: 2px;
       animation: draw-strokes linear forwards;
+    }
+  }
+
+  .icon {
+    position: absolute;
+    width: 8px;
+    transition: 0.2s ease-in-out;
+
+    &.play {
+      width: 10px;
+    }
+
+    &.show {
+      opacity: 1;
+    }
+    &.hide {
+      opacity: 0;
     }
   }
 

@@ -4,7 +4,6 @@
     <title>progress-indicator</title>
     <desc>Created with Sketch.</desc>
     <g id="progress-indicator" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <circle id="Oval" fill="#FFFFFF" cx="22" cy="22" r="3"></circle>
         <path d="M22,1 C33.5979797,1 43,10.4020203 43,22 C43,33.5979797 33.5979797,43 22,43 C10.4020203,43 1,33.5979797 1,22 C1,10.4020203 10.4020203,1 22,1 Z" id="progress-line" stroke="#FFFFFF" stroke-width="2" fill-rule="nonzero"></path>
         <circle id="fix" stroke-opacity="0.5" stroke="#FFFFFF" cx="22" cy="22" r="21"></circle>
     </g>

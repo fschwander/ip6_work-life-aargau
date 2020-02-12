@@ -1,10 +1,13 @@
 import React, {createRef, RefObject, useEffect, useRef} from 'react';
 import {ReactComponent as IndicatorSVG} from '../../res/icons/progress-indicator.svg';
+import {ReactComponent as PlaySVG} from '../../res/figures/triangle-full.svg';
+import {ReactComponent as StopSVG} from '../../res/figures/square-full.svg';
 
 interface ProgressIndicatorProps {
   animDurationInSec: number,
   animationPaused: boolean,
-  callbackAfterAnimation: Function
+  callbackAfterAnimation: Function,
+  onElementClicked: Function
 }
 
 let timer: Timer;
@@ -12,6 +15,12 @@ let timer: Timer;
 export const ProgressIndicator: React.FC<ProgressIndicatorProps> = props => {
   const indicatorRef: RefObject<SVGSVGElement> = createRef();
   const isInitialMount = useRef(true);
+
+  const onClick = () => {
+    if (props.onElementClicked) {
+      props.onElementClicked()
+    }
+  }
 
   useEffect(() => {
     if (isInitialMount.current) {
@@ -32,8 +41,10 @@ export const ProgressIndicator: React.FC<ProgressIndicatorProps> = props => {
   });
 
   return (
-    <div className={`ProgressIndicator`}>
+    <div className={`ProgressIndicator button`} onClick={onClick}>
       <IndicatorSVG ref={indicatorRef}/>
+      <PlaySVG className={`icon play ${props.animationPaused ? 'show' : 'hide'}`}/>
+      <StopSVG className={`icon stop ${props.animationPaused ? 'hide' : 'show'}`}/>
     </div>
   )
 };

@@ -62,7 +62,7 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
     setPopupComponent(undefined);
   }
 
-  const getFadeInOutClass = ():string => {
+  const getFadeInOutClass = (): string => {
     return slideInComponent !== undefined || popupComponent !== undefined ? 'fade-out' : 'fade-in'
   }
 
@@ -121,7 +121,8 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
         <div className={`progress-indicator-container ${getFadeInOutClass()}`}>
           <ProgressIndicator animDurationInSec={15}
                              animationPaused={slidePaused}
-                             callbackAfterAnimation={props.switchToNextSlide}/>
+                             callbackAfterAnimation={props.switchToNextSlide}
+                             onElementClicked={() => setSlidePaused(!slidePaused)}/>
         </div> : null}
 
       {popupComponent !== undefined ?
