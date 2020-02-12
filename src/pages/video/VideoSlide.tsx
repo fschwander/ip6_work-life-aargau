@@ -62,6 +62,10 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
     setPopupComponent(undefined);
   }
 
+  const getFadeInOutClass = ():string => {
+    return slideInComponent !== undefined || popupComponent !== undefined ? 'fade-out' : 'fade-in'
+  }
+
   const getTransitionStyles = (i: number, delay: number): CSSProperties => {
     return {
       transition: 'opacity 1s ease-in-out',
@@ -85,7 +89,7 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
                            isActive={animationStarted}
                            animationDelay={i * animationStaggerInSec}/>
               <div
-                className={`${slideInComponent !== undefined || popupComponent !== undefined ? 'fade-out' : 'fade-in'}`}>
+                className={`${getFadeInOutClass()}`}>
                 <PoiLabel {...d} styles={styles}
                           onClick={() => openSlideInOverlay(d.overlayComponent)}/>
               </div>
@@ -101,7 +105,7 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
                              isActive={animationStarted}
                              animationDelay={index * animationStaggerInSec}/>
                 <div
-                  className={`${slideInComponent !== undefined || popupComponent !== undefined ? 'fade-out' : 'fade-in'}`}>
+                  className={`${getFadeInOutClass()}`}>
                   <InfoLabel {...d} styles={styles}
                              onClick={() => openPopUpOverlay(d.overlayComponent)}/>
                 </div>
@@ -114,7 +118,7 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
       <LocationDescription title={props.title}/>
 
       {animationStarted ?
-        <div className={`progress-indicator-container ${slideInComponent !== undefined || popupComponent !== undefined ? 'fade-out' : 'fade-in'}`}>
+        <div className={`progress-indicator-container ${getFadeInOutClass()}`}>
           <ProgressIndicator animDurationInSec={15}
                              animationPaused={slidePaused}
                              callbackAfterAnimation={props.switchToNextSlide}/>
