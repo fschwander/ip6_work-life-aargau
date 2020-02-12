@@ -10,20 +10,23 @@ interface TimeLineProps {
 }
 
 export const Timeline: React.FC<TimeLineProps> = props => {
+  const {activeIndex, nofIndexes, itemsArray} = props;
 
   const getTimeLineItems = (): Array<ReactElement> => {
     let items = [];
-    for (let i = 0; i < props.nofIndexes; i++) {
-      let pointClass = props.itemsArray[i].isMainPoint ? 'large-point' : '';
+    for (let i = 0; i < nofIndexes; i++) {
+      let pointClass = itemsArray[i].isMainPoint ? 'large-point' : '';
 
       items.push(
         <div className='item' key={i}>
+          <span
+            className={`horizontal-line${i > activeIndex ? ' transparent' : ''}${i === activeIndex ? ' animate' : ''}`}
+            style={{animationDuration: '3s'}}/>
+
           <div className={`button ${pointClass}`}
                key={i} onClick={() => props.onClick(i)}>
-            <span className={`${i > props.activeIndex ? 'transparent' : ''}`}/>
+            <span className={`${i > activeIndex ? 'transparent' : ''}`}/>
           </div>
-          {i < props.nofIndexes - 1 ?
-            <span className={`horizontal-line ${i >= props.activeIndex ? 'transparent' : ''}`}/> : null}
         </div>)
     }
     return items;
