@@ -8,11 +8,11 @@ export const VideoPage: React.FC = () => {
   const [popupComponent, setPopupComponent] = useState();
   const [slideInComponent, setSlideInComponent] = useState();
 
-  const switchToNextSlide = (activeIndex: number, maxIndex: number): void => {
-    if (activeIndex + 1 < maxIndex) {
+  const switchToNextSlide = (): void => {
+    if (activeIndex + 1 < videoSlideData.length) {
       setActiveIndex(activeIndex + 1)
     }
-  }
+  };
 
   const slideComponents = videoSlideData.map((d, i) => {
     return <VideoSlide key={i} {...videoSlideData[i]}
@@ -20,8 +20,8 @@ export const VideoPage: React.FC = () => {
                        setPopupComponent={setPopupComponent}
                        slideInComponent={slideInComponent}
                        setSlideInComponent={setSlideInComponent}
-                       switchToNextSlide={() => switchToNextSlide(activeIndex, slideComponents.length)}/>
-  })
+                       switchToNextSlide={switchToNextSlide}/>
+  });
 
   return (
     <div className='VideoPage'>

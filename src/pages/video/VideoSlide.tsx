@@ -114,7 +114,7 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
       <LocationDescription title={props.title}/>
 
       {animationStarted ?
-        <ProgressIndicator animDurationInSec={20}
+        <ProgressIndicator animDurationInSec={5}
                            animationPaused={slidePaused}
                            callbackAfterAnimation={props.switchToNextSlide}/> : null}
 
