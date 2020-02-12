@@ -1,12 +1,12 @@
 import React, {CSSProperties, ReactElement, useState} from 'react';
 import {AnimatedSVG} from '../../components/containers/AnimatedSVG';
 import {BackgroundVideoContainer} from '../../components/containers/BackgroundVideoContainer';
-import {ProgressIndicator} from '../../components/widgets/ProgressIndicator';
-import {LocationDescription} from './LocationDescription';
 import {PopupContainer} from '../../components/containers/PopupContainer';
 import {SlideInContainer} from '../../components/containers/SlideInContainer';
 import {InfoLabel, InfoLabelItem} from "../../components/labels/InfoLabel";
 import {PoiLabel, PoiLabelItem} from "../../components/labels/PoiLabel";
+import {ProgressIndicator} from '../../components/widgets/ProgressIndicator';
+import {LocationDescription} from './LocationDescription';
 import {PopupOverlayProps} from './overlays/PopupOverlay';
 import {SlideInOverlayProps} from './overlays/SlideInOverlay';
 
@@ -104,8 +104,9 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
 
       <LocationDescription title={props.title}/>
 
-      <ProgressIndicator animDurationInSec={20}
-                         callbackAfterAnimation={props.switchToNextSlide}/>
+      {animationStarted ?
+        <ProgressIndicator animDurationInSec={20}
+                           callbackAfterAnimation={props.switchToNextSlide}/> : null}
 
       {popupComponent !== undefined ?
         <PopupContainer onCloseButtonClicked={setPopupComponent}>
