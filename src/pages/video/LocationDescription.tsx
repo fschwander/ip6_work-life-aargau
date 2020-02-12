@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import iconWeather from '../../res/icons/location.svg'
+import iconWeather from '../../res/icons/weather.svg'
 import iconTime from '../../res/icons/time.svg'
 import iconWind from '../../res/icons/wind.svg'
 
