@@ -53,11 +53,6 @@ export const culture: PopupOverlayInterface = {
       text: "Freizeit"
     },
     {
-      icon: iconMuseum,
-      text: "Kultur"
-    }
-    ,
-    {
       icon: iconHistory,
       text: "Geschichte"
     }
