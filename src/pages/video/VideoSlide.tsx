@@ -24,7 +24,8 @@ interface VideoSlideProps extends VideoSlideItem {
   popupComponent: PopupOverlayProps,
   setPopupComponent: Function,
   slideInComponent: SlideInOverlayProps,
-  setSlideInComponent: Function
+  setSlideInComponent: Function,
+  switchToNextSlide: Function
 }
 
 export const VideoSlide: React.FC<VideoSlideProps> = props => {
@@ -99,11 +100,12 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
             )
           })}
         </div>
-
-        <ProgressIndicator animationDuration={2}/>
       </BackgroundVideoContainer>
 
       <LocationDescription title={props.title}/>
+
+      <ProgressIndicator animDurationInSec={20}
+                         callbackAfterAnimation={props.switchToNextSlide}/>
 
       {popupComponent !== undefined ?
         <PopupContainer onCloseButtonClicked={setPopupComponent}>

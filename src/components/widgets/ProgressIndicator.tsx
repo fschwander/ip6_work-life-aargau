@@ -2,7 +2,8 @@ import React, {createRef, RefObject, useEffect} from 'react';
 import {ReactComponent as IndicatorSVG} from '../../res/icons/progress-indicator.svg';
 
 interface ProgressIndicatorProps {
-  animationDuration: number
+  animDurationInSec: number,
+  callbackAfterAnimation: Function
 }
 
 export const ProgressIndicator: React.FC<ProgressIndicatorProps> = props => {
@@ -15,8 +16,10 @@ export const ProgressIndicator: React.FC<ProgressIndicatorProps> = props => {
 
       path.style.strokeDasharray = pathLength;
       path.style.strokeDashoffset = pathLength;
-      path.style.animationDuration = props.animationDuration + 's';
+      path.style.animationDuration = props.animDurationInSec + 's';
     }
+
+    setTimeout(props.callbackAfterAnimation, props.animDurationInSec * 1000)
   });
 
   return(

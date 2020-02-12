@@ -10,8 +10,9 @@
   }
 
   .ProgressIndicator {
-    position: fixed;
+    position: absolute;
+    transform: translateX(-50%);
     left: 50vw;
-    bottom: 5vw;
+    bottom: 3vw;
   }
 }
