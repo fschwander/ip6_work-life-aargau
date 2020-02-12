@@ -30,6 +30,7 @@ interface VideoSlideProps extends VideoSlideItem {
 
 export const VideoSlide: React.FC<VideoSlideProps> = props => {
   const [animationStarted, setAnimationStarted] = useState(false);
+  const [slidePaused, setSlidePaused] = useState(false);
 
   const {popupComponent, setPopupComponent, slideInComponent, setSlideInComponent} = props;
 
@@ -44,13 +45,21 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
       setSlideInComponent(undefined)
     }
     setPopupComponent(component)
+    setSlidePaused(true);
   }
 
   const openSlideInOverlay = (component: ReactElement) => {
     if (popupComponent !== undefined) {
       setPopupComponent(undefined)
     }
-    setSlideInComponent(component)
+    setSlideInComponent(component);
+    setSlidePaused(true);
+  }
+
+  const closeOverlay = () => {
+    setSlidePaused(false);
+    setSlideInComponent(undefined);
+    setPopupComponent(undefined);
   }
 
   const getTransitionStyles = (i: number, delay: number): CSSProperties => {
@@ -106,15 +115,16 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
 
       {animationStarted ?
         <ProgressIndicator animDurationInSec={20}
+                           animationPaused={slidePaused}
                            callbackAfterAnimation={props.switchToNextSlide}/> : null}
 
       {popupComponent !== undefined ?
-        <PopupContainer onCloseButtonClicked={setPopupComponent}>
+        <PopupContainer onCloseButtonClicked={closeOverlay}>
           {popupComponent}
         </PopupContainer> : null}
 
       {slideInComponent !== undefined ?
-        <SlideInContainer onCloseButtonClicked={setSlideInComponent}>
+        <SlideInContainer onCloseButtonClicked={closeOverlay}>
           {slideInComponent}
         </SlideInContainer> : null}
 

@@ -3,6 +3,7 @@ import {ReactComponent as IndicatorSVG} from '../../res/icons/progress-indicator
 
 interface ProgressIndicatorProps {
   animDurationInSec: number,
+  animationPaused: boolean,
   callbackAfterAnimation: Function
 }
 
@@ -17,6 +18,7 @@ export const ProgressIndicator: React.FC<ProgressIndicatorProps> = props => {
       path.style.strokeDasharray = pathLength;
       path.style.strokeDashoffset = pathLength;
       path.style.animationDuration = props.animDurationInSec + 's';
+      path.style.animationPlayState = props.animationPaused ? 'paused' : 'running';
     }
 
     setTimeout(props.callbackAfterAnimation, props.animDurationInSec * 1000)
