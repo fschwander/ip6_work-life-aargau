@@ -1,7 +1,11 @@
 import React, {createRef, RefObject, useEffect} from 'react';
 import {ReactComponent as IndicatorSVG} from '../../res/icons/progress-indicator.svg';
 
-export const ProgressIndicator: React.FC = () => {
+interface ProgressIndicatorProps {
+  animationDuration: number
+}
+
+export const ProgressIndicator: React.FC<ProgressIndicatorProps> = props => {
   const indicatorRef:RefObject<SVGSVGElement> = createRef();
 
   useEffect(() => {
@@ -11,6 +15,7 @@ export const ProgressIndicator: React.FC = () => {
 
       path.style.strokeDasharray = pathLength;
       path.style.strokeDashoffset = pathLength;
+      path.style.animationDuration = props.animationDuration + 's';
     }
   });
 

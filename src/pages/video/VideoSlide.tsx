@@ -100,7 +100,7 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
           })}
         </div>
 
-        <ProgressIndicator/>
+        <ProgressIndicator animationDuration={2}/>
       </BackgroundVideoContainer>
 
       <LocationDescription title={props.title}/>
