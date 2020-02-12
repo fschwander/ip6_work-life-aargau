@@ -6,7 +6,7 @@ interface TimeLineProps {
   onClick: Function,
   activeIndex: number,
   nofIndexes: number,
-  itemsArray: Array<{ isMainPoint: boolean }>
+  itemsArray: Array<{ isMainPoint: boolean, animDurationInSec: number }>
 }
 
 export const Timeline: React.FC<TimeLineProps> = props => {
@@ -21,7 +21,7 @@ export const Timeline: React.FC<TimeLineProps> = props => {
         <div className='item' key={i}>
           <span
             className={`horizontal-line${i > activeIndex ? ' transparent' : ''}${i === activeIndex ? ' animate' : ''}`}
-            style={{animationDuration: '3s'}}/>
+            style={{animationDuration: itemsArray[i].animDurationInSec + 's'}}/>
 
           <div className={`button ${pointClass}`}
                key={i} onClick={() => props.onClick(i)}>

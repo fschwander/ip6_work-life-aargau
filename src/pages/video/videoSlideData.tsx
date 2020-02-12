@@ -47,6 +47,7 @@ export const videoSlideData: Array<VideoSlideItem> = [
     className: 'baden-slide1',
     title: 'Die Stadt Baden',
     videoSrc: videoBaden,
+    animDurationInSec: 3,
     isMainPoint: true,
     poiLabelItems: [
       {
@@ -92,6 +93,7 @@ export const videoSlideData: Array<VideoSlideItem> = [
     title: 'Die Stadt Baden',
     isMainPoint: false,
     videoSrc: videoBaden2,
+    animDurationInSec: 10,
     poiLabelItems: [],
     infoLabelItems: [
       {
@@ -122,6 +124,7 @@ export const videoSlideData: Array<VideoSlideItem> = [
     className: 'baden-slide3',
     title: 'Die Stadt Baden',
     videoSrc: videoBaden3,
+    animDurationInSec: 6,
     isMainPoint: false,
     poiLabelItems: [
       {
@@ -169,6 +172,7 @@ export const videoSlideData: Array<VideoSlideItem> = [
     className: 'aarau-slide1',
     title: 'Die Stadt Aarau',
     videoSrc: videoAarau1,
+    animDurationInSec: 14,
     isMainPoint: true,
     poiLabelItems: [],
     infoLabelItems: [
@@ -200,6 +204,7 @@ export const videoSlideData: Array<VideoSlideItem> = [
     title: 'Die Stadt Aarau',
     isMainPoint: false,
     videoSrc: videoAarau2,
+    animDurationInSec: 10,
     poiLabelItems: [
       {
         title: 'Stadtkirche Aarau',
@@ -223,6 +228,7 @@ export const videoSlideData: Array<VideoSlideItem> = [
     title: 'Die Stadt Aarau',
     isMainPoint: false,
     videoSrc: videoAarau3,
+    animDurationInSec: 16,
     poiLabelItems: [
       {
         title: 'Aare',

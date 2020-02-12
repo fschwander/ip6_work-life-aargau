@@ -26,7 +26,8 @@ export const VideoPage: React.FC = () => {
                   nofIndexes={slideComponents.length}
                   activeIndex={activeIndex}
                   itemsArray={videoSlideData.map((d) => {
-                    return {isMainPoint: d.isMainPoint ? d.isMainPoint : false}
+                    return {isMainPoint: d.isMainPoint ? d.isMainPoint : false,
+                    animDurationInSec: d.animDurationInSec}
                   })}/>
       </div>
     </div>

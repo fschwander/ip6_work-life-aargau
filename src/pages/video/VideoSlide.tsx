@@ -14,6 +14,7 @@ export interface VideoSlideItem {
   title: string,
   isMainPoint: boolean,
   videoSrc: string,
+  animDurationInSec: number,
   poiLabelItems: Array<PoiLabelItem>
   infoLabelItems: Array<InfoLabelItem>
 }
