@@ -11,8 +11,7 @@ let timer: Timer;
 
 export const ProgressIndicator: React.FC<ProgressIndicatorProps> = props => {
   const indicatorRef: RefObject<SVGSVGElement> = createRef();
-  const isInitialMount = useRef(true)
-
+  const isInitialMount = useRef(true);
 
   useEffect(() => {
     if (isInitialMount.current) {
