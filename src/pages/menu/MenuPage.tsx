@@ -1,8 +1,10 @@
 import React, {useState} from 'react';
 import {RectButton} from '../../components/buttons/RectButton';
+import {AnimatedSVG} from '../../components/containers/AnimatedSVG';
 import {BackgroundVideoContainer} from '../../components/containers/BackgroundVideoContainer';
 import {SlideInContainer} from '../../components/containers/SlideInContainer';
 import backgroundImage from '../../res/imgs/menu_aargau.jpg';
+import {ReactComponent as backgroundSvg} from '../../res/imgs/menu_aargau.svg';
 import zoomVideo from '../../res/videos/zoomToAargau_final.mp4'
 import {Constants} from '../../services/Constants';
 
@@ -23,8 +25,7 @@ export const MenuPage: React.FC = () => {
         <p className='transparent'>Ein interaktives Abenteuer</p>
         <h2>Finde deinen Aargau</h2>
         <h3 className='large'>Lerne über Unternehmen, Sehenswürdigkeiten und Freizeit</h3>
-        <p>Erlebe den Aargau aus der Vogelperspektive und entdecke den Kanton, wie du ihn noch nie gesehen hast.</p>
-        <p>Einfach entspannen und geniessen!</p>
+        <p>Erlebe den Aargau aus der Vogelperspektive und entdecke den Kanton, wie du ihn noch nie gesehen hast. Einfach entspannen und geniessen!</p>
 
         <div className='choose-container'>
           <h3 className='large'>Welche Region möchtest du dir anschauen?</h3>
@@ -48,11 +49,12 @@ export const MenuPage: React.FC = () => {
         </div> : null}
 
       {!videoIsPlaying ?
-        <SlideInContainer slideInDirection={Constants.SLIDE_FROM_LEFT}>
-          <HomeSlide/>
-        </SlideInContainer> : null}
-
-
+        <div>
+          <AnimatedSVG svgComponent={backgroundSvg} isActive={!videoIsPlaying}/>
+          <SlideInContainer slideInDirection={Constants.SLIDE_FROM_LEFT}>
+            <HomeSlide/>
+          </SlideInContainer>
+        </div> : null}
     </div>
   )
 }
