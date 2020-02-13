@@ -1,46 +1,31 @@
 import React from 'react';
-import castleIcon from "../../res/icons/castle.svg"
-import bridgeIcon from "../../res/icons/bridge.svg"
 import beerIcon from "../../res/icons/beer.svg"
-import waterIcon from "../../res/icons/water.svg"
-import churchIcon from "../../res/icons/church.svg"
+import bridgeIcon from "../../res/icons/bridge.svg"
+import castleIcon from "../../res/icons/castle.svg"
 import connectednessIcon from "../../res/icons/connectedness.svg"
-import videoAarau1 from "../../res/videos/aarau1.mp4";
-import videoAarau2 from "../../res/videos/aarau2.mp4";
-import videoAarau3 from "../../res/videos/aarau3.mp4";
 import {ReactComponent as svgRoof} from "../../res/videos/baden1-roof.svg";
 import {ReactComponent as svgRuine} from "../../res/videos/baden1-ruine.svg";
 import {ReactComponent as svgTower} from "../../res/videos/baden1-tower.svg";
-import {ReactComponent as svgBridge} from "../../res/videos/baden3-bridge.svg";
-import {ReactComponent as svgBar} from "../../res/videos/baden3-bar.svg";
-import {ReactComponent as svgAare} from "../../res/videos/aarau3-river.svg";
-import {ReactComponent as svgConnectivity} from "../../res/videos/baden3-connectivity.svg";
-import {ReactComponent as svgConstruction} from "../../res/videos/aarau1-construction.svg";
-import {ReactComponent as svgABridge} from "../../res/videos/aarau1-bridge.svg";
-import {ReactComponent as svgChurch} from "../../res/videos/aarau2-church.svg";
-import {ReactComponent as svgInterior} from "../../res/videos/aarau3-interiors.svg";
 import videoBaden from "../../res/videos/baden1.mp4";
 import {ReactComponent as svgStairs} from "../../res/videos/baden2-stairways.svg";
 import videoBaden2 from "../../res/videos/baden2.mp4";
+import {ReactComponent as svgBar} from "../../res/videos/baden3-bar.svg";
+import {ReactComponent as svgBridge} from "../../res/videos/baden3-bridge.svg";
+import {ReactComponent as svgConnectivity} from "../../res/videos/baden3-connectivity.svg";
 import videoBaden3 from "../../res/videos/baden3.mp4";
-import {TravelingDistancePage} from './overlays/special-overlay-data/TravelingDistancePage';
-import {PopupOverlay} from './overlays/PopupOverlay';
-import {SlideInOverlay} from './overlays/SlideInOverlay';
-import {VideoSlideItem} from "./VideoSlide";
-import {beerBar} from './overlays/poi-overlay-data/beerBar';
 import {culture} from './overlays/info-overlay-data/culture';
 import {hikingTrails} from "./overlays/info-overlay-data/hikingTrails";
-import {lafargeHolcim} from './overlays/info-overlay-data/lafargeHolcim';
-import {aarvia} from './overlays/info-overlay-data/aarvia';
-import {aare} from './overlays/poi-overlay-data/aare';
 import {mammut} from "./overlays/info-overlay-data/mammut";
 import {realEstate} from "./overlays/info-overlay-data/realEstate";
+import {beerBar} from './overlays/poi-overlay-data/beerBar';
 import {ruineStein} from "./overlays/poi-overlay-data/ruineStein";
 import {woodenBridge} from "./overlays/poi-overlay-data/woodenBridge";
-import {churchAarau} from "./overlays/poi-overlay-data/churchAarau";
-import {killer} from "./overlays/info-overlay-data/killer";
+import {PopupOverlay} from './overlays/PopupOverlay';
+import {SlideInOverlay} from './overlays/SlideInOverlay';
+import {TravelingDistancePage} from './overlays/special-overlay-data/TravelingDistancePage';
+import {VideoSlideItem} from "./VideoSlide";
 
-export const videoSlideData: Array<VideoSlideItem> = [
+export const badenSlideData: Array<VideoSlideItem> = [
 
   // SEQUENCE 1
   {
@@ -165,95 +150,5 @@ export const videoSlideData: Array<VideoSlideItem> = [
       }
     ],
     infoLabelItems: []
-  },
-
-  // SEQUENCE 4
-  {
-    className: 'aarau-slide1',
-    title: 'Die Stadt Aarau',
-    videoSrc: videoAarau1,
-    animDurationInSec: 14,
-    isMainPoint: true,
-    poiLabelItems: [],
-    infoLabelItems: [
-      {
-        title: 'Baumaterialen',
-        subtitle: 'Aargauer Unternehmen',
-        className: 'lafarge-holcim',
-        overlayComponent: <PopupOverlay data={lafargeHolcim}/>,
-        svgComponent: svgConstruction,
-        posLeftInPct: 45,
-        posTopInPct: 45,
-        orientation: 'left'
-      },{
-        title: 'Infrastruktur',
-        subtitle: 'Aargauer Unternehmen',
-        className: 'aarvia',
-        overlayComponent: <PopupOverlay data={aarvia}/>,
-        svgComponent: svgABridge,
-        posLeftInPct: 48,
-        posTopInPct: 71,
-        orientation: 'left'
-      }
-    ]
-  },
-
-  // SEQUENCE 5
-  {
-    className: 'aarau-slide2',
-    title: 'Die Stadt Aarau',
-    isMainPoint: false,
-    videoSrc: videoAarau2,
-    animDurationInSec: 10,
-    poiLabelItems: [
-      {
-        title: 'Stadtkirche Aarau',
-        subtitle: 'lokales Highlight',
-        overlayComponent: <SlideInOverlay data={churchAarau}/>,
-        svgComponent: svgChurch,
-        iconSrc: churchIcon,
-        posLeftInPct: 42,
-        posTopInPct: 46,
-        lineLength: 65,
-        lineRotation: 45,
-        orientation: 'right',
-      }
-    ],
-    infoLabelItems: []
-  },
-
-  // SEQUENCE 6
-  {
-    className: 'aarau-slide3',
-    title: 'Die Stadt Aarau',
-    isMainPoint: false,
-    videoSrc: videoAarau3,
-    animDurationInSec: 16,
-    poiLabelItems: [
-      {
-        title: 'Aare',
-        subtitle: 'lokales Highlight',
-        overlayComponent: <SlideInOverlay data={aare}/>,
-        svgComponent: svgAare,
-        iconSrc: waterIcon,
-        posLeftInPct: 37,
-        posTopInPct: 65,
-        lineLength: 135,
-        lineRotation: 150,
-        orientation: 'left',
-      }
-    ],
-    infoLabelItems: [
-      {
-        title: 'Interiors',
-        subtitle: 'Aargauer Unternehmen',
-        className: 'killer',
-        overlayComponent: <PopupOverlay data={killer}/>,
-        svgComponent: svgInterior,
-        posLeftInPct: 42,
-        posTopInPct: 71,
-        orientation: 'right'
-      }
-    ]
-  },
+  }
 ];

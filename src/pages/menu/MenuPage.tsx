@@ -8,6 +8,7 @@ import backgroundImage from '../../res/imgs/menu_aargau.jpg';
 import {ReactComponent as backgroundSvg} from '../../res/imgs/menu_aargau.svg';
 import zoomVideo from '../../res/videos/zoomToAargau_final.mp4'
 import {Constants} from '../../services/Constants';
+import { useHistory } from 'react-router-dom';
 
 export const MenuPage: React.FC = () => {
   const isInitialMount = useRef(true);
@@ -15,6 +16,7 @@ export const MenuPage: React.FC = () => {
   const [videoIsPlaying, setVideoIsPlaying] = useState(false);
   const [activeSlide, setActiveSlide] = useState({component: <div/>});
 
+  const history = useHistory()
   const videoFadeOutDuration = 2000;
 
   interface MenuSlideInterface {
@@ -61,7 +63,7 @@ export const MenuPage: React.FC = () => {
         <div className='choose-container'>
           <h3 className='large'>Bist du bereit oder möchtest du Filter setzen?</h3>
           <div className='selection-button-container horizontal-container'>
-            <RectButton onClick={() => console.log('losfliegen clicked')} text={'Losfliegen!'}/>
+            <RectButton onClick={() => history.push('/aarau')} text={'Losfliegen!'}/>
             <RectButton onClick={() => console.log('filter clicked')} text={'Filter setzen'} isActive={false}/>
           </div>
         </div>
@@ -79,7 +81,7 @@ export const MenuPage: React.FC = () => {
         <div className='choose-container'>
           <h3 className='large'>Bist du bereit oder möchtest du Filter setzen?</h3>
           <div className='selection-button-container horizontal-container'>
-            <RectButton onClick={() => console.log('losfliegen clicked')} text={'Losfliegen!'}/>
+            <RectButton onClick={() => history.push('/baden')} text={'Losfliegen!'}/>
             <RectButton onClick={() => console.log('filter clicked')} text={'Filter setzen'} isActive={false}/>
           </div>
         </div>

@@ -5,7 +5,8 @@ import App from './pages/App';
 import {IntroductionPage} from './pages/intro/IntroductionPage';
 import {MenuPage} from './pages/menu/MenuPage';
 import {VideoPage} from './pages/video/VideoPage';
-import {videoSlideData} from './pages/video/videoSlideData';
+import {badenSlideData} from './pages/video/badenSlideData';
+import {aarauSlideData} from './pages/video/aarauSlideData';
 
 export const AppRouter: React.FC = () => {
 
@@ -21,9 +22,14 @@ export const AppRouter: React.FC = () => {
       link: '/menu'
     },
     {
-      name: 'Video',
-      component: <VideoPage videoSlideData={videoSlideData}/>,
-      link: '/video'
+      name: 'Baden',
+      component: <VideoPage videoSlideData={badenSlideData}/>,
+      link: '/baden'
+    },
+    {
+      name: 'Aarau',
+      component: <VideoPage videoSlideData={aarauSlideData}/>,
+      link: '/aarau'
     }
   ];
 
