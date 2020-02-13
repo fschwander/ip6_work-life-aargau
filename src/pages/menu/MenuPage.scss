@@ -40,4 +40,13 @@
       opacity: 0;
     }
   }
+
+  .BackToMapButton {
+    p {
+      margin-left: 1rem;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
