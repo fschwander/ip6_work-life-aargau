@@ -33,7 +33,7 @@ export const badenSlideData: Array<VideoSlideItem> = [
     title: 'Die Stadt Baden',
     videoSrc: videoBaden,
     animDurationInSec: 3,
-    isMainPoint: true,
+    isMainPoint: false,
     poiLabelItems: [
       {
         subtitle: 'Lokales Highlight',

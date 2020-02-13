@@ -26,7 +26,7 @@ export const aarauSlideData: Array<VideoSlideItem> = [
     title: 'Die Stadt Aarau',
     videoSrc: videoAarau1,
     animDurationInSec: 17,
-    isMainPoint: true,
+    isMainPoint: false,
     poiLabelItems: [],
     infoLabelItems: [
       {
