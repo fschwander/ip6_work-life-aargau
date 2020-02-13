@@ -3,14 +3,31 @@
   width: 60vw;
   max-width: 800px;
   height: 100vh;
-  right: 0;
-  animation: 1s slide-in ease-out;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.9) 40%);
   display: flex;
   flex-direction: row;
 
+  &.slide-in-from-right {
+    right: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.9) 40%);
+    animation: 1s slide-in-from-right ease-out;
+
+    .scroll-container {
+      padding: 6rem 2rem 6em 6em;
+    }
+  }
+
+  &.slide-in-from-left {
+    left: 0;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.9) 40%);
+    animation: 1s slide-in-from-left ease-out;
+
+    .scroll-container {
+      padding: 6rem 6em 6em 2rem;
+    }
+  }
+
   .scroll-container {
-    padding: 6rem 2rem 6em 6em;
+    position: relative;
     overflow-y: scroll;
 
     .ScrollIndicator {
@@ -26,9 +43,18 @@
     top: 10vh;
   }
 
-  @keyframes slide-in {
+  @keyframes slide-in-from-right {
     from {
       transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slide-in-from-left {
+    from {
+      transform: translateX(-100%);
     }
     to {
       transform: translateX(0);

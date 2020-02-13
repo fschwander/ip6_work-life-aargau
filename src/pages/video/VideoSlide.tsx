@@ -6,6 +6,7 @@ import {SlideInContainer} from '../../components/containers/SlideInContainer';
 import {InfoLabel, InfoLabelItem} from "../../components/labels/InfoLabel";
 import {PoiLabel, PoiLabelItem} from "../../components/labels/PoiLabel";
 import {ProgressIndicator} from '../../components/widgets/ProgressIndicator';
+import {Constants} from '../../services/Constants';
 import {LocationDescription} from './LocationDescription';
 import {PopupOverlayProps} from './overlays/PopupOverlay';
 import {SlideInOverlayProps} from './overlays/SlideInOverlay';
@@ -131,7 +132,8 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
         </PopupContainer> : null}
 
       {slideInComponent !== undefined ?
-        <SlideInContainer onCloseButtonClicked={closeOverlay}>
+        <SlideInContainer onCloseButtonClicked={closeOverlay}
+                          slideInDirection={Constants.SLIDE_FROM_RIGHT}>
           {slideInComponent}
         </SlideInContainer> : null}
 

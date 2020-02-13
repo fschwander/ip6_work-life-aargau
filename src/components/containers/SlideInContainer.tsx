@@ -1,10 +1,11 @@
-import React, {createRef, RefObject, useState} from 'react';
+import React, {createRef, RefObject, useEffect, useState} from 'react';
 import closeIcon from '../../res/icons/arrow_right.svg';
 import {RoundButton} from '../buttons/RoundButton';
 import {ScrollIndicator} from '../widgets/ScrollIndicator';
 
 interface SlideInContainerProps {
-  onCloseButtonClicked: Function
+  slideInDirection: string,
+  onCloseButtonClicked?: Function
 }
 
 export const SlideInContainer: React.FC<SlideInContainerProps> = props => {
@@ -25,9 +26,15 @@ export const SlideInContainer: React.FC<SlideInContainerProps> = props => {
     }
   }
 
+  useEffect(() => {
+    handleScroll()
+  }, [])
+
   return (
-    <div className='SlideInContainer'>
-      <RoundButton onClick={props.onCloseButtonClicked} icon={closeIcon}/>
+    <div className={`SlideInContainer ${props.slideInDirection}`}>
+      {props.onCloseButtonClicked ?
+        <RoundButton onClick={props.onCloseButtonClicked} icon={closeIcon}/> : null}
+
       <div className='scroll-container' onScroll={handleScroll} ref={scrollContainer}>
         {props.children}
         <ScrollIndicator show={showScrollIndicator}/>
