@@ -3,6 +3,7 @@ import {HashRouter, Redirect, Route, Switch} from 'react-router-dom';
 import {Navigation} from './components/widgets/Navigation';
 import App from './pages/App';
 import {IntroductionPage} from './pages/intro/IntroductionPage';
+import {MenuPage} from './pages/menu/MenuPage';
 import {VideoPage} from './pages/video/VideoPage';
 
 export const AppRouter: React.FC = () => {
@@ -12,6 +13,11 @@ export const AppRouter: React.FC = () => {
       name: 'Intro',
       component: IntroductionPage,
       link: '/intro'
+    },
+    {
+      name: 'Menu',
+      component: MenuPage,
+      link: '/menu'
     },
     {
       name: 'Video',
