@@ -2,6 +2,27 @@
   background-size: cover;
   background-position: center;
 
+  .SlideInContainer {
+    display: flex;
+    align-items: center;
+
+    h3 {
+      padding-top: .6rem;
+    }
+
+    .choose-container {
+      margin-top: 3rem;
+
+      .selection-button-container {
+        padding-top: 1rem;
+
+        .RectButton:not(:last-child) {
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+
   .video-fade-container {
     transition: linear;
     background-color: black;
@@ -9,6 +30,7 @@
     &.show {
       opacity: 1;
     }
+
     &.hide {
       opacity: 0;
     }
