@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React, {ReactElement, useEffect, useRef, useState} from 'react';
 import {RectButton} from '../../components/buttons/RectButton';
 import {AnimatedSVG} from '../../components/containers/AnimatedSVG';
 import {BackgroundVideoContainer} from '../../components/containers/BackgroundVideoContainer';
@@ -13,9 +13,13 @@ export const MenuPage: React.FC = () => {
   const isInitialMount = useRef(true);
   const [videoIsVisible, setVideoIsVisible] = useState(true);
   const [videoIsPlaying, setVideoIsPlaying] = useState(false);
-  const [activeSlide, setActiveSlide] = useState();
+  const [activeSlide, setActiveSlide] = useState({component: <div/>});
 
   const videoFadeOutDuration = 2000;
+
+  interface MenuSlideInterface {
+    component: ReactElement
+  }
 
   const HomeSlide = () => {
     return (
@@ -29,8 +33,8 @@ export const MenuPage: React.FC = () => {
         <div className='choose-container'>
           <h3 className='large'>Welche Region möchtest du dir anschauen?</h3>
           <div className={'selection-button-container horizontal-container'}>
-            <RectButton onClick={() => setActiveSlide(slides.aarauSlide)} text={'Aarau'}/>
-            <RectButton onClick={() => setActiveSlide(slides.badenSlide)} text={'Baden'}/>
+            <RectButton onClick={() => setActiveSlide(slides[1])} text={'Aarau'}/>
+            <RectButton onClick={() => setActiveSlide(slides[2])} text={'Baden'}/>
           </div>
         </div>
       </div>
@@ -40,7 +44,7 @@ export const MenuPage: React.FC = () => {
   const BackToMapButton = () => {
     return (
       <div className='BackToMapButton button horizontal-container'
-           onClick={() => setActiveSlide(slides.menuSlide)}>
+           onClick={() => setActiveSlide(slides[0])}>
         <ArrowLeft/>
         <p>zurück zur Karte</p>
       </div>
@@ -88,18 +92,24 @@ export const MenuPage: React.FC = () => {
     window.setTimeout(() => setVideoIsPlaying(false), videoFadeOutDuration);
   };
 
-  const slides = {
-    menuSlide: <HomeSlide/>,
-    aarauSlide: <AarauSlide/>,
-    badenSlide: <BadenSlide/>
-  }
+  const slides:Array<MenuSlideInterface> = [
+    {
+      component: <HomeSlide/>
+    },
+    {
+      component: <AarauSlide/>
+    },
+    {
+      component: <BadenSlide/>
+    }
+  ]
 
   useEffect(() => {
     if (isInitialMount.current) {
       isInitialMount.current = false;
-      setActiveSlide(slides.menuSlide);
+      setActiveSlide(slides[0]);
     }
-  }, [slides.menuSlide])
+  }, [slides])
 
   return (
     <div className={`MenuPage full-screen`} style={{backgroundImage: `url(${backgroundImage})`}}>
@@ -114,7 +124,7 @@ export const MenuPage: React.FC = () => {
         <div>
           <AnimatedSVG svgComponent={backgroundSvg} isActive={!videoIsPlaying}/>
           <SlideInContainer slideInDirection={Constants.SLIDE_FROM_LEFT}>
-            {activeSlide}
+            {activeSlide.component}
           </SlideInContainer>
         </div> : null}
     </div>
