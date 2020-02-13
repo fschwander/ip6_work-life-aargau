@@ -17,7 +17,7 @@ export const SlideWork: React.FC<SlideProps> = props => {
   const rootClass = 'SlideWork slide full-screen ' + (props.isActive ? 'isActive' : '')
 
   const redirectToMainPage = () => {
-    history.push('/video')
+    history.push('/menu')
   }
 
   return (
