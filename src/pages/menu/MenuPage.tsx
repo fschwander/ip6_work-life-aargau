@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import {RectButton} from '../../components/buttons/RectButton';
 import {AnimatedSVG} from '../../components/containers/AnimatedSVG';
 import {BackgroundVideoContainer} from '../../components/containers/BackgroundVideoContainer';
@@ -10,6 +10,7 @@ import zoomVideo from '../../res/videos/zoomToAargau_final.mp4'
 import {Constants} from '../../services/Constants';
 
 export const MenuPage: React.FC = () => {
+  const isInitialMount = useRef(true);
   const [videoIsVisible, setVideoIsVisible] = useState(true);
   const [videoIsPlaying, setVideoIsPlaying] = useState(false);
   const [activeSlide, setActiveSlide] = useState();
@@ -50,7 +51,16 @@ export const MenuPage: React.FC = () => {
     return (
       <div className='AarauSlide'>
         <BackToMapButton/>
-        Aarau
+        <p className='transparent'>Ein interaktives Abenteuer</p>
+        <h2>Aarau entdecken</h2>
+
+        <div className='choose-container'>
+          <h3 className='large'>Bist du bereit oder möchtest du Filter setzen?</h3>
+          <div className='selection-button-container horizontal-container'>
+            <RectButton onClick={() => console.log('losfliegen clicked')} text={'Losfliegen!'}/>
+            <RectButton onClick={() => console.log('filter clicked')} text={'Filter setzen'} isActive={false}/>
+          </div>
+        </div>
       </div>
     )
   }
@@ -59,7 +69,16 @@ export const MenuPage: React.FC = () => {
     return (
       <div className='BadenSlide'>
         <BackToMapButton/>
-        Baden
+        <p className='transparent'>Ein interaktives Abenteuer</p>
+        <h2>Baden entdecken</h2>
+
+        <div className='choose-container'>
+          <h3 className='large'>Bist du bereit oder möchtest du Filter setzen?</h3>
+          <div className='selection-button-container horizontal-container'>
+            <RectButton onClick={() => console.log('losfliegen clicked')} text={'Losfliegen!'}/>
+            <RectButton onClick={() => console.log('filter clicked')} text={'Filter setzen'} isActive={false}/>
+          </div>
+        </div>
       </div>
     )
   }
@@ -76,8 +95,11 @@ export const MenuPage: React.FC = () => {
   }
 
   useEffect(() => {
-    setActiveSlide(slides.menuSlide)
-  }, [])
+    if (isInitialMount.current) {
+      isInitialMount.current = false;
+      setActiveSlide(slides.menuSlide);
+    }
+  }, [slides.menuSlide])
 
   return (
     <div className={`MenuPage full-screen`} style={{backgroundImage: `url(${backgroundImage})`}}>

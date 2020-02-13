@@ -3,9 +3,6 @@
   background-position: center;
 
   .SlideInContainer {
-    display: flex;
-    align-items: center;
-
     h3 {
       max-width: 400px;
       padding-top: .6rem;
@@ -13,6 +10,18 @@
 
     p {
       max-width: 500px;
+    }
+
+    .scroll-container {
+      display: flex;
+
+      .HomeSlide {
+        align-self: center;
+      }
+
+      .BadenSlide, .AarauSlide {
+        align-self: flex-start;
+      }
     }
 
     .choose-container {
@@ -42,9 +51,12 @@
   }
 
   .BackToMapButton {
+    margin-bottom: 5rem;
+
     p {
       margin-left: 1rem;
     }
+
     &:hover {
       text-decoration: underline;
     }
