@@ -78,7 +78,7 @@ export const culture: PopupOverlayInterface = {
       },
       items: [
         {
-          text: "Einblicke in die",
+          text: "Historische Einblicke",
           value: "Geschichte und Forschung des Legionslagers Vindonissa"
         },
         {
