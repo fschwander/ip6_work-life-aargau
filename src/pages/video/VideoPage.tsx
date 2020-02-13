@@ -1,12 +1,17 @@
 import React, {useState} from 'react';
 import {Timeline} from "../../components/widgets/TimeLine";
-import {VideoSlide} from './VideoSlide';
-import {videoSlideData} from "./videoSlideData";
+import {VideoSlide, VideoSlideItem} from './VideoSlide';
 
-export const VideoPage: React.FC = () => {
+interface VideoPageProps {
+  videoSlideData: Array<VideoSlideItem>
+}
+
+export const VideoPage: React.FC<VideoPageProps> = props => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [popupComponent, setPopupComponent] = useState();
   const [slideInComponent, setSlideInComponent] = useState();
+
+  const {videoSlideData} = props;
 
   const switchToNextSlide = (): void => {
     if (activeIndex + 1 < videoSlideData.length) {
