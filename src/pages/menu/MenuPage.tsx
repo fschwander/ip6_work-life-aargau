@@ -1,11 +1,21 @@
-import React, {ReactElement, useEffect, useRef, useState} from 'react';
+import React, {
+  FunctionComponent,
+  ReactElement, SVGProps,
+  useEffect,
+  useRef,
+  useState
+} from 'react';
 import {RectButton} from '../../components/buttons/RectButton';
 import {AnimatedSVG} from '../../components/containers/AnimatedSVG';
 import {BackgroundVideoContainer} from '../../components/containers/BackgroundVideoContainer';
 import {SlideInContainer} from '../../components/containers/SlideInContainer';
 import {ReactComponent as ArrowLeft} from '../../res/icons/arrow_left.svg';
-import backgroundImage from '../../res/imgs/menu_aargau.jpg';
-import {ReactComponent as backgroundSvg} from '../../res/imgs/menu_aargau.svg';
+import aargauImage from '../../res/imgs/menu_aargau.jpg';
+import aarauImage from '../../res/imgs/menu_aarau.jpg';
+import badenImage from '../../res/imgs/menu_baden.jpg';
+import {ReactComponent as aarauSvg} from '../../res/imgs/menu_aarau.svg';
+import {ReactComponent as aargauSvg} from '../../res/imgs/menu_aargau.svg';
+import {ReactComponent as badenSvg} from '../../res/imgs/menu_baden.svg';
 import zoomVideo from '../../res/videos/zoomToAargau_final.mp4'
 import {Constants} from '../../services/Constants';
 import { useHistory } from 'react-router-dom';
@@ -13,14 +23,20 @@ import { useHistory } from 'react-router-dom';
 export const MenuPage: React.FC = () => {
   const isInitialMount = useRef(true);
   const [videoIsVisible, setVideoIsVisible] = useState(true);
-  const [videoIsPlaying, setVideoIsPlaying] = useState(false);
-  const [activeSlide, setActiveSlide] = useState({component: <div/>});
+  const [videoIsPlaying, setVideoIsPlaying] = useState(true);
+  const [activeSlide, setActiveSlide] = useState({
+    component: <div/>,
+    svgComponent: aarauSvg,
+    backgroundImage: aargauImage
+  });
 
   const history = useHistory()
-  const videoFadeOutDuration = 2000;
+  const videoFadeOutDuration = 1000;
 
   interface MenuSlideInterface {
-    component: ReactElement
+    component: ReactElement,
+    svgComponent: FunctionComponent<SVGProps<SVGSVGElement>>,
+    backgroundImage: string
   }
 
   const HomeSlide = () => {
@@ -96,13 +112,19 @@ export const MenuPage: React.FC = () => {
 
   const slides:Array<MenuSlideInterface> = [
     {
-      component: <HomeSlide/>
+      component: <HomeSlide/>,
+      svgComponent: aargauSvg,
+      backgroundImage: aargauImage
     },
     {
-      component: <AarauSlide/>
+      component: <AarauSlide/>,
+      svgComponent: aarauSvg,
+      backgroundImage: aarauImage
     },
     {
-      component: <BadenSlide/>
+      component: <BadenSlide/>,
+      svgComponent: badenSvg,
+      backgroundImage: badenImage
     }
   ]
 
@@ -114,7 +136,7 @@ export const MenuPage: React.FC = () => {
   }, [slides])
 
   return (
-    <div className={`MenuPage full-screen`} style={{backgroundImage: `url(${backgroundImage})`}}>
+    <div className={`MenuPage full-screen`} style={{backgroundImage: `url(${activeSlide.backgroundImage})`}}>
 
       {videoIsPlaying ?
         <div className={`video-fade-container ${videoIsVisible ? 'show' : 'hide'}`}
@@ -124,7 +146,7 @@ export const MenuPage: React.FC = () => {
 
       {!videoIsPlaying ?
         <div>
-          <AnimatedSVG svgComponent={backgroundSvg} isActive={!videoIsPlaying}/>
+          <AnimatedSVG svgComponent={activeSlide.svgComponent} isActive={!videoIsPlaying}/>
           <SlideInContainer slideInDirection={Constants.SLIDE_FROM_LEFT}>
             {activeSlide.component}
           </SlideInContainer>
