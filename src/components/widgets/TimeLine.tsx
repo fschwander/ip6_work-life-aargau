@@ -1,6 +1,7 @@
 import React, {ReactElement} from "react";
 import iconLocation from "../../res/icons/location.svg";
 import {Slider} from "./Slider";
+import { useHistory } from "react-router-dom";
 
 interface TimeLineProps {
   onClick: Function,
@@ -11,6 +12,7 @@ interface TimeLineProps {
 
 export const Timeline: React.FC<TimeLineProps> = props => {
   const {activeIndex, nofIndexes, itemsArray} = props;
+  const history = useHistory()
 
   const getTimeLineItems = (): Array<ReactElement> => {
     let items = [];
@@ -19,14 +21,15 @@ export const Timeline: React.FC<TimeLineProps> = props => {
 
       items.push(
         <div className='item' key={i}>
-          <span
-            className={`horizontal-line${i > activeIndex ? ' transparent' : ''}${i === activeIndex ? ' animate' : ''}`}
-            style={{animationDuration: itemsArray[i].animDurationInSec + 's'}}/>
 
           <div className={`button ${pointClass}`}
                key={i} onClick={() => props.onClick(i)}>
             <span className={`${i > activeIndex ? 'transparent' : ''}`}/>
           </div>
+
+          <span
+            className={`horizontal-line${i > activeIndex ? ' transparent' : ''}${i === activeIndex ? ' animate' : ''}`}
+            style={{animationDuration: itemsArray[i].animDurationInSec + 's'}}/>
         </div>)
     }
     return items;
@@ -34,13 +37,11 @@ export const Timeline: React.FC<TimeLineProps> = props => {
 
   return (
     <div className='TimeLine'>
-      <Slider/>
-
-      <img src={iconLocation} alt='icon'/>
-
       <div className='timeline-items horizontal-container'>
         {getTimeLineItems()}
       </div>
+
+      <img className={'button'} src={iconLocation} alt='icon' onClick={() => history.push('/menu')}/>
     </div>
   )
 };
