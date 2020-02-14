@@ -8,8 +8,10 @@ import {ReactComponent as svgChurch} from "../../res/videos/aarau2-church.svg";
 import videoAarau2 from "../../res/videos/aarau2.mp4";
 import {ReactComponent as svgInterior} from "../../res/videos/aarau3-interiors.svg";
 import {ReactComponent as svgAare} from "../../res/videos/aarau3-river.svg";
+import {ReactComponent as svgEducation} from "../../res/videos/aarau3-education.svg";
 import videoAarau3 from "../../res/videos/aarau3.mp4";
 import {aarvia} from './overlays/info-overlay-data/aarvia';
+import {education} from './overlays/info-overlay-data/education';
 import {killer} from "./overlays/info-overlay-data/killer";
 import {lafargeHolcim} from './overlays/info-overlay-data/lafargeHolcim';
 import {aare} from './overlays/poi-overlay-data/aare';
@@ -105,6 +107,16 @@ export const aarauSlideData: Array<VideoSlideItem> = [
         svgComponent: svgInterior,
         posLeftInPct: 42,
         posTopInPct: 71,
+        orientation: 'right'
+      },
+      {
+        title: 'Bildung & Forschung',
+        subtitle: 'Aargauer Vorteile',
+        className: 'education',
+        overlayComponent: <PopupOverlay data={education}/>,
+        svgComponent: svgEducation,
+        posLeftInPct: 57,
+        posTopInPct: 40,
         orientation: 'right'
       }
     ]
