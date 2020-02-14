@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {Timeline} from "../../components/widgets/TimeLine";
 import {VideoSlide, VideoSlideItem} from './VideoSlide';
+import { useHistory } from 'react-router-dom';
 
 interface VideoPageProps {
   videoSlideData: Array<VideoSlideItem>
@@ -12,10 +13,13 @@ export const VideoPage: React.FC<VideoPageProps> = props => {
   const [slideInComponent, setSlideInComponent] = useState();
 
   const {videoSlideData} = props;
+  const history = useHistory();
 
   const switchToNextSlide = (): void => {
     if (activeIndex + 1 < videoSlideData.length) {
       setActiveIndex(activeIndex + 1)
+    } else {
+      history.push('/menu');
     }
   };
 

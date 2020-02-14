@@ -1,6 +1,5 @@
 import React, {ReactElement} from "react";
 import iconLocation from "../../res/icons/location.svg";
-import {Slider} from "./Slider";
 import { useHistory } from "react-router-dom";
 
 interface TimeLineProps {
