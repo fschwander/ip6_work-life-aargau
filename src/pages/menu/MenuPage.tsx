@@ -1,3 +1,5 @@
+import * as d3 from 'd3';
+import React, {ReactElement, useEffect, useRef, useState} from 'react';
 import React, {
   FunctionComponent,
   ReactElement, SVGProps,
@@ -24,6 +26,8 @@ export const MenuPage: React.FC = () => {
   const isInitialMount = useRef(true);
   const [videoIsVisible, setVideoIsVisible] = useState(true);
   const [videoIsPlaying, setVideoIsPlaying] = useState(true);
+  const [badenVisible, setBadenVisible] = useState(false);
+  const [aarauVisible, setAarauVisible] = useState(false);
   const [activeSlide, setActiveSlide] = useState({
     component: <div/>,
     svgComponent: aarauSvg,
@@ -39,6 +43,19 @@ export const MenuPage: React.FC = () => {
     backgroundImage: string
   }
 
+  const updateMap = () => {
+    const mapSVG = d3.select('#maps')
+
+    mapSVG.select('#Baden')
+      .transition().duration(500)
+      .attr('opacity', badenVisible ? 1 : 0)
+
+    mapSVG.select('#Aarau')
+      .transition().duration(500)
+      .attr('opacity', aarauVisible ? 1 : 0)
+
+  }
+
   const HomeSlide = () => {
     return (
       <div className='HomeSlide'>
@@ -51,8 +68,12 @@ export const MenuPage: React.FC = () => {
         <div className='choose-container'>
           <h3 className='large'>Welche Region möchtest du dir anschauen?</h3>
           <div className={'selection-button-container horizontal-container'}>
-            <RectButton onClick={() => setActiveSlide(slides[1])} text={'Aarau'}/>
-            <RectButton onClick={() => setActiveSlide(slides[2])} text={'Baden'}/>
+            <RectButton className='Aarau' onClick={() => setActiveSlide(slides[1])} text={'Aarau'}
+                        onMouseOver={() => setAarauVisible(true)}
+                        onMouseLeave={() => setAarauVisible(false)}/>
+            <RectButton className='Baden' onClick={() => setActiveSlide(slides[2])} text={'Baden'}
+                        onMouseOver={() => setBadenVisible(!badenVisible)}
+                        onMouseLeave={() => setBadenVisible(false)}/>
           </div>
         </div>
       </div>
@@ -110,7 +131,7 @@ export const MenuPage: React.FC = () => {
     window.setTimeout(() => setVideoIsPlaying(false), videoFadeOutDuration);
   };
 
-  const slides:Array<MenuSlideInterface> = [
+  const slides: Array<MenuSlideInterface> = [
     {
       component: <HomeSlide/>,
       svgComponent: aargauSvg,
@@ -133,6 +154,7 @@ export const MenuPage: React.FC = () => {
       isInitialMount.current = false;
       setActiveSlide(slides[0]);
     }
+    updateMap()
   }, [slides])
 
   return (
