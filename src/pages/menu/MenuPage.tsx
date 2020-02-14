@@ -1,3 +1,4 @@
+import * as d3 from 'd3';
 import React, {ReactElement, useEffect, useRef, useState} from 'react';
 import {RectButton} from '../../components/buttons/RectButton';
 import {AnimatedSVG} from '../../components/containers/AnimatedSVG';
@@ -8,12 +9,14 @@ import backgroundImage from '../../res/imgs/menu_aargau.jpg';
 import {ReactComponent as backgroundSvg} from '../../res/imgs/menu_aargau.svg';
 import zoomVideo from '../../res/videos/zoomToAargau_final.mp4'
 import {Constants} from '../../services/Constants';
-import { useHistory } from 'react-router-dom';
+import {useHistory} from 'react-router-dom';
 
 export const MenuPage: React.FC = () => {
   const isInitialMount = useRef(true);
   const [videoIsVisible, setVideoIsVisible] = useState(true);
   const [videoIsPlaying, setVideoIsPlaying] = useState(false);
+  const [badenVisible, setBadenVisible] = useState(false);
+  const [aarauVisible, setAarauVisible] = useState(false);
   const [activeSlide, setActiveSlide] = useState({component: <div/>});
 
   const history = useHistory()
@@ -21,6 +24,19 @@ export const MenuPage: React.FC = () => {
 
   interface MenuSlideInterface {
     component: ReactElement
+  }
+
+  const updateMap = () => {
+    const mapSVG = d3.select('#maps')
+
+    mapSVG.select('#Baden')
+      .transition().duration(500)
+      .attr('opacity', badenVisible ? 1 : 0)
+
+    mapSVG.select('#Aarau')
+      .transition().duration(500)
+      .attr('opacity', aarauVisible ? 1 : 0)
+
   }
 
   const HomeSlide = () => {
@@ -35,8 +51,12 @@ export const MenuPage: React.FC = () => {
         <div className='choose-container'>
           <h3 className='large'>Welche Region möchtest du dir anschauen?</h3>
           <div className={'selection-button-container horizontal-container'}>
-            <RectButton onClick={() => setActiveSlide(slides[1])} text={'Aarau'}/>
-            <RectButton onClick={() => setActiveSlide(slides[2])} text={'Baden'}/>
+            <RectButton className='Aarau' onClick={() => setActiveSlide(slides[1])} text={'Aarau'}
+                        onMouseOver={() => setAarauVisible(true)}
+                        onMouseLeave={() => setAarauVisible(false)}/>
+            <RectButton className='Baden' onClick={() => setActiveSlide(slides[2])} text={'Baden'}
+                        onMouseOver={() => setBadenVisible(!badenVisible)}
+                        onMouseLeave={() => setBadenVisible(false)}/>
           </div>
         </div>
       </div>
@@ -94,7 +114,7 @@ export const MenuPage: React.FC = () => {
     window.setTimeout(() => setVideoIsPlaying(false), videoFadeOutDuration);
   };
 
-  const slides:Array<MenuSlideInterface> = [
+  const slides: Array<MenuSlideInterface> = [
     {
       component: <HomeSlide/>
     },
@@ -111,6 +131,7 @@ export const MenuPage: React.FC = () => {
       isInitialMount.current = false;
       setActiveSlide(slides[0]);
     }
+    updateMap()
   }, [slides])
 
   return (
