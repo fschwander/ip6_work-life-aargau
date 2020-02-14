@@ -1,26 +1,19 @@
 import * as d3 from 'd3';
-import React, {ReactElement, useEffect, useRef, useState} from 'react';
-import React, {
-  FunctionComponent,
-  ReactElement, SVGProps,
-  useEffect,
-  useRef,
-  useState
-} from 'react';
+import React, {FunctionComponent, ReactElement, SVGProps, useEffect, useRef, useState} from 'react';
+import {useHistory} from 'react-router-dom';
 import {RectButton} from '../../components/buttons/RectButton';
 import {AnimatedSVG} from '../../components/containers/AnimatedSVG';
 import {BackgroundVideoContainer} from '../../components/containers/BackgroundVideoContainer';
 import {SlideInContainer} from '../../components/containers/SlideInContainer';
 import {ReactComponent as ArrowLeft} from '../../res/icons/arrow_left.svg';
-import aargauImage from '../../res/imgs/menu_aargau.jpg';
 import aarauImage from '../../res/imgs/menu_aarau.jpg';
-import badenImage from '../../res/imgs/menu_baden.jpg';
 import {ReactComponent as aarauSvg} from '../../res/imgs/menu_aarau.svg';
+import aargauImage from '../../res/imgs/menu_aargau.jpg';
 import {ReactComponent as aargauSvg} from '../../res/imgs/menu_aargau.svg';
+import badenImage from '../../res/imgs/menu_baden.jpg';
 import {ReactComponent as badenSvg} from '../../res/imgs/menu_baden.svg';
 import zoomVideo from '../../res/videos/zoomToAargau_final.mp4'
 import {Constants} from '../../services/Constants';
-import { useHistory } from 'react-router-dom';
 
 export const MenuPage: React.FC = () => {
   const isInitialMount = useRef(true);
