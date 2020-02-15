@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 interface RectButtonProps {
   className?: string,
@@ -14,7 +14,6 @@ interface RectButtonProps {
 export const RectButton: React.FC<RectButtonProps> = props => {
 
   const buttonIsActive = props.isActive === undefined ? true : props.isActive;
-  const [isHovered, setIsHovered] = useState(false);
 
   const handleClick = () => {
     if (!buttonIsActive) {
@@ -27,14 +26,12 @@ export const RectButton: React.FC<RectButtonProps> = props => {
     if (props.onMouseOver !== undefined) {
       props.onMouseOver();
     }
-    setIsHovered(true)
   }
 
   const onMouseLeave = () => {
     if (props.onMouseLeave !== undefined) {
       props.onMouseLeave();
     }
-    setIsHovered(false)
   }
 
   return (
