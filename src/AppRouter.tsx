@@ -1,5 +1,5 @@
 import React from 'react';
-import {HashRouter, Redirect, Route, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, Redirect, Route, Switch} from 'react-router-dom';
 import {Navigation} from './components/widgets/Navigation';
 import App from './pages/App';
 import {IntroductionPage} from './pages/intro/IntroductionPage';
@@ -47,9 +47,9 @@ export const AppRouter: React.FC = () => {
   );
 
   return (
-    <HashRouter>
+    <Router>
       <App>{pageContent}</App>
       <Navigation navItems={pages}/>
-    </HashRouter>
+    </Router>
   )
 }

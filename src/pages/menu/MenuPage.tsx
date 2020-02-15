@@ -1,6 +1,6 @@
 import * as d3 from 'd3';
 import React, {FunctionComponent, ReactElement, SVGProps, useEffect, useRef, useState} from 'react';
-import {useHistory} from 'react-router-dom';
+import {useHistory, useLocation} from 'react-router-dom';
 import {RectButton} from '../../components/buttons/RectButton';
 import {AnimatedSVG} from '../../components/containers/AnimatedSVG';
 import {BackgroundVideoContainer} from '../../components/containers/BackgroundVideoContainer';
@@ -17,8 +17,13 @@ import {Constants} from '../../services/Constants';
 
 export const MenuPage: React.FC = () => {
   const isInitialMount = useRef(true);
+  const history = useHistory();
+  const location = useLocation();
+
+  const startPlayingIntro = location.state && location.state.playIntroVideo === true;
+
+  const [videoIsPlaying, setVideoIsPlaying] = useState(startPlayingIntro);
   const [videoIsVisible, setVideoIsVisible] = useState(true);
-  const [videoIsPlaying, setVideoIsPlaying] = useState(true);
   const [badenVisible, setBadenVisible] = useState(false);
   const [aarauVisible, setAarauVisible] = useState(false);
   const [activeSlide, setActiveSlide] = useState({
@@ -27,7 +32,6 @@ export const MenuPage: React.FC = () => {
     backgroundImage: aargauImage
   });
 
-  const history = useHistory()
   const videoFadeOutDuration = 1000;
 
   interface MenuSlideInterface {
