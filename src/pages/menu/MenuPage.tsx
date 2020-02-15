@@ -40,6 +40,16 @@ export const MenuPage: React.FC = () => {
     backgroundImage: string
   }
 
+  const goToBadenSlide = () => {
+    setActiveSlide(slides[1])
+    setBadenVisible(false)
+  }
+
+  const goToAarauSlide = () => {
+    setActiveSlide(slides[2]);
+    setAarauVisible(false)
+  }
+
   const HomeSlide = () => {
     return (
       <div className='HomeSlide'>
@@ -52,10 +62,10 @@ export const MenuPage: React.FC = () => {
         <div className='choose-container'>
           <h3 className='large'>Welche Region möchtest du dir anschauen?</h3>
           <div className={'selection-button-container horizontal-container'}>
-            <RectButton className='Aarau' onClick={() => setActiveSlide(slides[1])} text={'Aarau'}
+            <RectButton className='Aarau' onClick={goToAarauSlide} text={'Aarau'}
                         onMouseOver={() => setAarauVisible(true)}
                         onMouseLeave={() => setAarauVisible(false)}/>
-            <RectButton className='Baden' onClick={() => setActiveSlide(slides[2])} text={'Baden'}
+            <RectButton className='Baden' onClick={goToBadenSlide} text={'Baden'}
                         onMouseOver={() => setBadenVisible(!badenVisible)}
                         onMouseLeave={() => setBadenVisible(false)}/>
           </div>
