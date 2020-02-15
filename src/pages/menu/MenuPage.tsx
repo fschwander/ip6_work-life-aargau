@@ -41,12 +41,12 @@ export const MenuPage: React.FC = () => {
   }
 
   const goToBadenSlide = () => {
-    setActiveSlide(slides[1])
+    setActiveSlide(slides[2])
     setBadenVisible(false)
   }
 
   const goToAarauSlide = () => {
-    setActiveSlide(slides[2]);
+    setActiveSlide(slides[1]);
     setAarauVisible(false)
   }
 
