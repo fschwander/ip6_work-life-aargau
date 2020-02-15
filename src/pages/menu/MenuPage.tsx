@@ -40,19 +40,6 @@ export const MenuPage: React.FC = () => {
     backgroundImage: string
   }
 
-  const updateMap = () => {
-    const mapSVG = d3.select('#maps')
-
-    mapSVG.select('#Baden')
-      .transition().duration(500)
-      .attr('opacity', badenVisible ? 1 : 0)
-
-    mapSVG.select('#Aarau')
-      .transition().duration(500)
-      .attr('opacity', aarauVisible ? 1 : 0)
-
-  }
-
   const HomeSlide = () => {
     return (
       <div className='HomeSlide'>
@@ -151,8 +138,21 @@ export const MenuPage: React.FC = () => {
       isInitialMount.current = false;
       setActiveSlide(slides[0]);
     }
+
+    const updateMap = () => {
+      const mapSVG = d3.select('#maps')
+
+      mapSVG.select('#Baden')
+        .transition().duration(500)
+        .attr('opacity', badenVisible ? 1 : 0)
+
+      mapSVG.select('#Aarau')
+        .transition().duration(500)
+        .attr('opacity', aarauVisible ? 1 : 0)
+
+    };
     updateMap()
-  }, [slides])
+  }, [slides, aarauVisible, badenVisible])
 
   return (
     <div className={`MenuPage full-screen`} style={{backgroundImage: `url(${activeSlide.backgroundImage})`}}>
