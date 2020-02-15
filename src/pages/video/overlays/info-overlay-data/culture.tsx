@@ -1,6 +1,5 @@
 import React from 'react';
 import iconHiking from '../../../../res/icons/hiking.svg';
-import iconMuseum from '../../../../res/icons/museum.svg';
 import iconHistory from '../../../../res/icons/history.svg';
 import {Constants} from '../../../../services/Constants';
 import {PlaceholderChart, PopupOverlayInterface} from "../PopupOverlayInterface";
