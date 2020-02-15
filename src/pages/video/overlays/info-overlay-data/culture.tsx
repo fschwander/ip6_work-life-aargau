@@ -3,7 +3,6 @@ import iconHiking from '../../../../res/icons/hiking.svg';
 import iconHistory from '../../../../res/icons/history.svg';
 import {Constants} from '../../../../services/Constants';
 import {PlaceholderChart, PopupOverlayInterface} from "../PopupOverlayInterface";
-import iconLink from '../../../../res/icons/link.svg';
 import imgCulture from '../../../../res/imgs/ol_culture.png'
 import imgCulture2 from '../../../../res/imgs/ol_culture2.jpg'
 import imgCulture3 from '../../../../res/imgs/ol_culture3.png'
@@ -66,10 +65,6 @@ export const culture: PopupOverlayInterface = {
     {
       image: imgCulture,
       title: "Vindonissa Museum",
-      linkIcon: {
-        icon: iconLink,
-        link: 'https://www.ag.ch/en/bks/kultur/museen_schloesser/vindonissa_museum/vindonissa_museum.jsp'
-      },
       items: [
         {
           text: "Historische Einblicke",
@@ -138,24 +133,16 @@ export const culture: PopupOverlayInterface = {
     {
       image: imgCulture5,
       title: "Flamencos en route",
-      linkIcon: {
-        icon: iconLink,
-        link: 'https://www.flamencos-enroute.com/1-0-Aktuell.html'
-      },
       items: [
         {
           text: "Neue Zürcher Zeitung",
-          value: "\"Was die Gruppe Flamencos en route zeigt, ist Flamenco vom Besten ...\""
+          value: "Was die Gruppe Flamencos en route zeigt, ist Flamenco vom Besten..."
         }
       ]
     },
     {
       image: imgCulture6,
       title: "Fantoche Festival",
-      linkIcon: {
-        icon: iconLink,
-        link: 'https://fantoche.ch/de'
-      },
       items: [
         {
           text: "Zweck",
@@ -170,10 +157,6 @@ export const culture: PopupOverlayInterface = {
     {
       image: imgCulture7,
       title: "Argovia philharmonic Orchester",
-      linkIcon: {
-        icon: iconLink,
-        link: 'https://www.argoviaphil.ch/'
-      },
       items: [
         {
           text: "Gründung",
