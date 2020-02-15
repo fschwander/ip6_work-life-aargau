@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
+import {useHistory} from 'react-router-dom';
 import {Timeline} from "../../components/widgets/TimeLine";
 import {VideoSlide, VideoSlideItem} from './VideoSlide';
-import { useHistory } from 'react-router-dom';
 
 interface VideoPageProps {
   videoSlideData: Array<VideoSlideItem>
@@ -44,7 +44,6 @@ export const VideoPage: React.FC<VideoPageProps> = props => {
                   activeIndex={activeIndex}
                   itemsArray={videoSlideData.map((d) => {
                     return {
-                      isMainPoint: d.isMainPoint ? d.isMainPoint : false,
                       animDurationInSec: d.animDurationInSec
                     }
                   })}/>

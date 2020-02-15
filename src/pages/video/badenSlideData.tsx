@@ -33,7 +33,6 @@ export const badenSlideData: Array<VideoSlideItem> = [
     title: 'Die Stadt Baden',
     videoSrc: videoBaden,
     animDurationInSec: 3,
-    isMainPoint: false,
     poiLabelItems: [
       {
         subtitle: 'Lokales Highlight',
@@ -76,7 +75,6 @@ export const badenSlideData: Array<VideoSlideItem> = [
   {
     className: 'baden-slide2',
     title: 'Die Stadt Baden',
-    isMainPoint: false,
     videoSrc: videoBaden2,
     animDurationInSec: 10,
     poiLabelItems: [],
@@ -110,7 +108,6 @@ export const badenSlideData: Array<VideoSlideItem> = [
     title: 'Die Stadt Baden',
     videoSrc: videoBaden3,
     animDurationInSec: 6,
-    isMainPoint: false,
     poiLabelItems: [
       {
         title: 'Verbundenheit',

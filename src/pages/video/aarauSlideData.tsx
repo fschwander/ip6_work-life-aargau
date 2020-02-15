@@ -28,7 +28,6 @@ export const aarauSlideData: Array<VideoSlideItem> = [
     title: 'Die Stadt Aarau',
     videoSrc: videoAarau1,
     animDurationInSec: 17,
-    isMainPoint: false,
     poiLabelItems: [],
     infoLabelItems: [
       {
@@ -57,7 +56,6 @@ export const aarauSlideData: Array<VideoSlideItem> = [
   {
     className: 'aarau-slide2',
     title: 'Die Stadt Aarau',
-    isMainPoint: false,
     videoSrc: videoAarau2,
     animDurationInSec: 10,
     poiLabelItems: [
@@ -81,7 +79,6 @@ export const aarauSlideData: Array<VideoSlideItem> = [
   {
     className: 'aarau-slide3',
     title: 'Die Stadt Aarau',
-    isMainPoint: false,
     videoSrc: videoAarau3,
     animDurationInSec: 16,
     poiLabelItems: [
