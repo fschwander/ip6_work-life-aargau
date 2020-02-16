@@ -19,28 +19,28 @@ export const culture: PopupOverlayInterface = {
     text: "Der Kanton Aargau verfügt über ein reiches historisches Erbe und ein vielfältiges, aktives und stark in den Regionen verankertes Kulturleben.",
     items: [
       {
-        text: "Kultur",
-        value: "UNESCO-Erbe"
+        text: "UNESCO-Erbe",
+        value: ""
       },
       {
-        text: "Geschichte",
-        value: "Schlösser, Museen,.."
+        text: "Schlösser, Museen, Kunsthäuse",
+        value: ""
       },
       {
         text: "Theater & Tanz",
-        value: "Aargauer Tradition"
+        value: ""
       },
       {
-        text: "Film",
-        value: "Fantoche Festival"
+        text: "Fantoche Festival",
+        value: ""
       },
       {
-        text: "Musik",
-        value: "Grosse Musikszene"
+        text: "Grosse Musikszene",
+        value: ""
       },
       {
-        text: "Literatur",
-        value: "Aargau als Inspiration"
+        text: "Aargau als Inspiration in Literatur",
+        value: ""
       }
     ]
   },
