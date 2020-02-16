@@ -35,7 +35,7 @@ export const lafargeHolcim: PopupOverlayInterface = {
   ],
 
   graph: {
-    title: "",
+    title: "Zementproduktionskapazität der LafargeHolcim Ltd. weltweit (Mill. Tonnen)",
     chartComponent: <PlaceholderChart/>
   },
 

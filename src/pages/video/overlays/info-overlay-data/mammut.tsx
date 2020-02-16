@@ -41,7 +41,7 @@ export const mammut: PopupOverlayInterface = {
   ],
 
   graph: {
-    title: "Nettoumsatz der Mammut Sports Group",
+    title: "Nettoumsatz der Mammut Sports Group (Mill. CHF)",
     chartComponent: <PlaceholderChart/>
   },
 

@@ -36,7 +36,7 @@ export const realEstate: PopupOverlayInterface = {
   ],
 
   graph: {
-    title: "",
+    title: "Wohnflächen (Miete ca. 3-Zi-Wohnung)",
     chartComponent: <PlaceholderChart/>
   },
 
