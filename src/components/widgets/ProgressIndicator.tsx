@@ -1,7 +1,7 @@
 import React, {createRef, RefObject, useEffect, useRef} from 'react';
-import {ReactComponent as IndicatorSVG} from '../../res/icons/progress-indicator.svg';
-import {ReactComponent as PlaySVG} from '../../res/figures/triangle-full.svg';
 import {ReactComponent as StopSVG} from '../../res/figures/square-full.svg';
+import {ReactComponent as PlaySVG} from '../../res/figures/triangle-full.svg';
+import {ReactComponent as IndicatorSVG} from '../../res/icons/progress-indicator.svg';
 
 interface ProgressIndicatorProps {
   animDurationInSec: number,
@@ -54,22 +54,32 @@ class Timer {
   start: number;
   remaining: number;
   callback: Function;
+  isPaused: boolean;
 
   constructor(callback: Function, delay: number) {
     this.timerId = window.setTimeout(() => this.callback(), delay);
     this.start = delay;
     this.remaining = delay;
     this.callback = callback;
+    this.isPaused = false;
   }
 
   pause = function(this: Timer) {
-    window.clearTimeout(this.timerId);
-    this.remaining -= Date.now() - this.start;
+    if (!this.isPaused) {
+      this.isPaused = true;
+      window.clearTimeout(this.timerId);
+      this.remaining -= Date.now() - this.start;
+    }
   };
 
   resume = function(this: Timer) {
+    this.isPaused = false;
     this.start = Date.now();
     window.clearTimeout(this.timerId);
     this.timerId = window.setTimeout(() => this.callback(), this.remaining);
   };
+
+  getIsPaused = function(this: Timer) {
+    return this.isPaused;
+  }
 }
