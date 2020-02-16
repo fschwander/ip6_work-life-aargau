@@ -15,16 +15,16 @@ export const hikingTrails: PopupOverlayInterface = {
     text: "Wanderinnen und Wanderer sind auf den gut beschilderten Wegen unterwegs und staunen über die landschaftliche Vielfalt der Region.",
     items: [
       {
-        text: "Anzahl Wanderwege",
-        value: "37+"
+        text: "37+ Wanderwege",
+        value: ""
       },
       {
-        text: "Gesamtlänge",
-        value: "1'656 km"
+        text: "Gesamtlänge mehr als 1'656 km",
+        value: ""
       },
       {
-        text: "Höchster Punkt",
-        value: "908 m ü. M."
+        text: "908 m ü. M. Höchster Punkt",
+        value: ""
       }
     ]
   },
