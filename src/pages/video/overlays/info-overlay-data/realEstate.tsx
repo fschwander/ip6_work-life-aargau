@@ -14,16 +14,16 @@ export const realEstate: PopupOverlayInterface = {
     text: "Ein perfekter Standort für Unternehmen zu vergleichsweise günstigen Preisen. Suchst du Bauland, eine Liegenschaft, Büroräumlichkeiten oder ein sonstiges Miet- oder Kaufobjekt für gewerbliche Zwecke? Die Standortförderung kennt die interessanten Gewerbeflächen im Kanton Aargau.",
     items: [
       {
-        text: "Angebot",
-        value: "Bauland, Liegenschaft, Kaufobjekt"
+        text: "Bauland, Liegenschaft, Kaufobjekt",
+        value: ""
       },
       {
         text: "Bezugsbereite Immobilien",
-        value: "in mehr als 9 Städten"
+        value: ""
       },
       {
         text: "Zukunftsprojekte",
-        value: "mehr als 10"
+        value: ""
       },
     ]
   },
@@ -36,7 +36,7 @@ export const realEstate: PopupOverlayInterface = {
   ],
 
   graph: {
-    title: "",
+    title: "Wohnflächen (Miete ca. 3-Zi-Wohnung)",
     chartComponent: <PlaceholderChart/>
   },
 
