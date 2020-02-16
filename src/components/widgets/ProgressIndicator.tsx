@@ -1,5 +1,5 @@
 import React, {createRef, RefObject, useEffect, useRef} from 'react';
-import {ReactComponent as StopSVG} from '../../res/figures/square-full.svg';
+import {ReactComponent as StopSVG} from '../../res/icons/pause.svg';
 import {ReactComponent as PlaySVG} from '../../res/figures/triangle-full.svg';
 import {ReactComponent as IndicatorSVG} from '../../res/icons/progress-indicator.svg';
 
