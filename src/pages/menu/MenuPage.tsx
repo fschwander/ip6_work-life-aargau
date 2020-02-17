@@ -12,7 +12,9 @@ import badenImage from '../../res/imgs/menu_baden.jpg';
 import {ReactComponent as badenSvg} from '../../res/imgs/menu_baden.svg';
 import zoomVideo from '../../res/videos/zoomToAargau_final.mp4'
 import {Constants} from '../../services/Constants';
+import {AarauFilterSlide} from './AarauFilterSlide';
 import {AarauSlide} from './AarauSlide';
+import {BadenFilterSlide} from './BadenFilterSlide';
 import {BadenSlide} from './BadenSlide';
 import {HomeSlide} from './HomeSlide';
 
@@ -41,12 +43,12 @@ export const MenuPage: React.FC = () => {
   const videoFadeOutDuration = 1000;
 
   const goToBadenSlide = () => {
-    setActiveSlide(slides[2])
+    setActiveSlide(slides[1])
     setBadenVisible(false)
   }
 
   const goToAarauSlide = () => {
-    setActiveSlide(slides[1]);
+    setActiveSlide(slides[3]);
     setAarauVisible(false)
   }
 
@@ -64,14 +66,24 @@ export const MenuPage: React.FC = () => {
       backgroundImage: aargauImage
     },
     {
+      component: <BadenSlide slides={slides} setActiveSlide={setActiveSlide}/>,
+      svgComponent: badenSvg,
+      backgroundImage: badenImage
+    },
+    {
+      component: <BadenFilterSlide slides={slides} setActiveSlide={setActiveSlide}/>,
+      svgComponent: badenSvg,
+      backgroundImage: badenImage
+    },
+    {
       component: <AarauSlide slides={slides} setActiveSlide={setActiveSlide}/>,
       svgComponent: aarauSvg,
       backgroundImage: aarauImage
     },
     {
-      component: <BadenSlide slides={slides} setActiveSlide={setActiveSlide}/>,
-      svgComponent: badenSvg,
-      backgroundImage: badenImage
+      component: <AarauFilterSlide slides={slides} setActiveSlide={setActiveSlide}/>,
+      svgComponent: aarauSvg,
+      backgroundImage: aarauImage
     }
   );
 

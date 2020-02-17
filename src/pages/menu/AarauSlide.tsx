@@ -2,13 +2,14 @@ import React from 'react';
 import {useHistory} from 'react-router-dom';
 import {NavBackButton} from '../../components/buttons/NavBackButton';
 import {RectButton} from '../../components/buttons/RectButton';
+import {MenuSlideInterface} from './MenuPage';
 
 interface AarauSlideProps {
-  slides: Array<any>
+  slides: Array<MenuSlideInterface>
   setActiveSlide: Function
 }
 
-export const AarauSlide:React.FC<AarauSlideProps> = props => {
+export const AarauSlide: React.FC<AarauSlideProps> = props => {
   const history = useHistory();
 
   return (
@@ -21,7 +22,7 @@ export const AarauSlide:React.FC<AarauSlideProps> = props => {
         <h3 className='large'>Bist du bereit oder möchtest du Filter setzen?</h3>
         <div className='selection-button-container horizontal-container'>
           <RectButton onClick={() => history.push('/aarau')} text={'Losfliegen!'}/>
-          <RectButton onClick={() => console.log('filter clicked')} text={'Filter setzen'} isActive={false}/>
+          <RectButton onClick={() => props.setActiveSlide(props.slides[4])} text={'Filter setzen'} />
         </div>
       </div>
     </div>

@@ -20,12 +20,12 @@ export const HomeSlide:React.FC<HomeSlideProps> = props => {
       <div className='choose-container'>
         <h3 className='large'>Welche Region möchtest du dir anschauen?</h3>
         <div className={'selection-button-container horizontal-container'}>
-          <RectButton className='Aarau' onClick={props.goToAarauSlide} text={'Aarau'}
-                      onMouseOver={() => props.setAarauVisible(true)}
-                      onMouseLeave={() => props.setAarauVisible(false)}/>
           <RectButton className='Baden' onClick={props.goToBadenSlide} text={'Baden'}
                       onMouseOver={() => props.setBadenVisible(true)}
                       onMouseLeave={() => props.setBadenVisible(false)}/>
+          <RectButton className='Aarau' onClick={props.goToAarauSlide} text={'Aarau'}
+                      onMouseOver={() => props.setAarauVisible(true)}
+                      onMouseLeave={() => props.setAarauVisible(false)}/>
         </div>
       </div>
     </div>
