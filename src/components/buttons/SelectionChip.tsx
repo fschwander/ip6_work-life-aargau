@@ -2,11 +2,12 @@ import React, {useState} from "react";
 
 interface SelectionChipProps {
   text: string,
-  onClick: Function
+  onClick: Function,
+  isActive?: boolean
 }
 
 export const SelectionChip: React.FC<SelectionChipProps> = props => {
-  const [isActive, setIsActive] = useState(true);
+  const [isActive, setIsActive] = useState(props.isActive !== undefined ? props.isActive : true);
 
   const onClick = () => {
     if (props.onClick !== undefined) {
@@ -16,14 +17,9 @@ export const SelectionChip: React.FC<SelectionChipProps> = props => {
   }
 
   return (
-
-
     <div className={`SelectionChip button chip-button ${isActive ? 'is-active' : ''}`}
          onClick={onClick}>
       <p>{props.text}</p>
     </div>
-
   )
-
-
 }
