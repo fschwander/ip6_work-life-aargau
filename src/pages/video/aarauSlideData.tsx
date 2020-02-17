@@ -24,36 +24,6 @@ export const aarauSlideData: Array<VideoSlideItem> = [
 
   // SEQUENCE 1
   {
-    className: 'aarau-slide1',
-    title: 'Die Stadt Aarau',
-    videoSrc: videoAarau1,
-    animDurationInSec: 17,
-    poiLabelItems: [],
-    infoLabelItems: [
-      {
-        title: 'Baumaterialen',
-        subtitle: 'Aargauer Unternehmen',
-        className: 'lafarge-holcim',
-        overlayComponent: <PopupOverlay data={lafargeHolcim}/>,
-        svgComponent: svgConstruction,
-        posLeftInPct: 45,
-        posTopInPct: 45,
-        orientation: 'left'
-      }, {
-        title: 'Infrastruktur',
-        subtitle: 'Aargauer Unternehmen',
-        className: 'aarvia',
-        overlayComponent: <PopupOverlay data={aarvia}/>,
-        svgComponent: svgABridge,
-        posLeftInPct: 48,
-        posTopInPct: 71,
-        orientation: 'left'
-      }
-    ]
-  },
-
-  // SEQUENCE 2
-  {
     className: 'aarau-slide2',
     title: 'Die Stadt Aarau',
     videoSrc: videoAarau2,
@@ -75,7 +45,7 @@ export const aarauSlideData: Array<VideoSlideItem> = [
     infoLabelItems: []
   },
 
-  // SEQUENCE 3
+  // SEQUENCE 2
   {
     className: 'aarau-slide3',
     title: 'Die Stadt Aarau',
@@ -115,6 +85,36 @@ export const aarauSlideData: Array<VideoSlideItem> = [
         posLeftInPct: 57,
         posTopInPct: 40,
         orientation: 'right'
+      }
+    ]
+  },
+
+  // SEQUENCE 3
+  {
+    className: 'aarau-slide1',
+    title: 'Die Stadt Aarau',
+    videoSrc: videoAarau1,
+    animDurationInSec: 17,
+    poiLabelItems: [],
+    infoLabelItems: [
+      {
+        title: 'Baumaterialen',
+        subtitle: 'Aargauer Unternehmen',
+        className: 'lafarge-holcim',
+        overlayComponent: <PopupOverlay data={lafargeHolcim}/>,
+        svgComponent: svgConstruction,
+        posLeftInPct: 45,
+        posTopInPct: 45,
+        orientation: 'left'
+      }, {
+        title: 'Infrastruktur',
+        subtitle: 'Aargauer Unternehmen',
+        className: 'aarvia',
+        overlayComponent: <PopupOverlay data={aarvia}/>,
+        svgComponent: svgABridge,
+        posLeftInPct: 48,
+        posTopInPct: 71,
+        orientation: 'left'
       }
     ]
   },
