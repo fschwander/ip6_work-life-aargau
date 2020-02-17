@@ -1,11 +1,9 @@
 import * as d3 from 'd3';
 import React, {FunctionComponent, ReactElement, SVGProps, useEffect, useRef, useState} from 'react';
-import {useHistory, useLocation} from 'react-router-dom';
-import {RectButton} from '../../components/buttons/RectButton';
+import {useLocation} from 'react-router-dom';
 import {AnimatedSVG} from '../../components/containers/AnimatedSVG';
 import {BackgroundVideoContainer} from '../../components/containers/BackgroundVideoContainer';
 import {SlideInContainer} from '../../components/containers/SlideInContainer';
-import {ReactComponent as ArrowLeft} from '../../res/icons/arrow_left.svg';
 import aarauImage from '../../res/imgs/menu_aarau.jpg';
 import {ReactComponent as aarauSvg} from '../../res/imgs/menu_aarau.svg';
 import aargauImage from '../../res/imgs/menu_aargau.jpg';
@@ -14,10 +12,18 @@ import badenImage from '../../res/imgs/menu_baden.jpg';
 import {ReactComponent as badenSvg} from '../../res/imgs/menu_baden.svg';
 import zoomVideo from '../../res/videos/zoomToAargau_final.mp4'
 import {Constants} from '../../services/Constants';
+import {AarauSlide} from './AarauSlide';
+import {BadenSlide} from './BadenSlide';
+import {HomeSlide} from './HomeSlide';
+
+export interface MenuSlideInterface {
+  component: ReactElement,
+  svgComponent: FunctionComponent<SVGProps<SVGSVGElement>>,
+  backgroundImage: string
+}
 
 export const MenuPage: React.FC = () => {
   const isInitialMount = useRef(true);
-  const history = useHistory();
   const location = useLocation();
 
   const startPlayingIntro = location.state && location.state.playIntroVideo === true;
@@ -34,12 +40,6 @@ export const MenuPage: React.FC = () => {
 
   const videoFadeOutDuration = 1000;
 
-  interface MenuSlideInterface {
-    component: ReactElement,
-    svgComponent: FunctionComponent<SVGProps<SVGSVGElement>>,
-    backgroundImage: string
-  }
-
   const goToBadenSlide = () => {
     setActiveSlide(slides[2])
     setBadenVisible(false)
@@ -50,98 +50,30 @@ export const MenuPage: React.FC = () => {
     setAarauVisible(false)
   }
 
-  const HomeSlide = () => {
-    return (
-      <div className='HomeSlide'>
-        <p className='transparent'>Ein interaktives Abenteuer</p>
-        <h2>Finde deinen Aargau</h2>
-        <h3 className='large'>Lerne über Unternehmen, Sehenswürdigkeiten und Freizeit</h3>
-        <p>Erlebe den Aargau aus der Vogelperspektive und entdecke den Kanton, wie du ihn noch nie gesehen hast. Einfach
-          entspannen und geniessen!</p>
-
-        <div className='choose-container'>
-          <h3 className='large'>Welche Region möchtest du dir anschauen?</h3>
-          <div className={'selection-button-container horizontal-container'}>
-            <RectButton className='Aarau' onClick={goToAarauSlide} text={'Aarau'}
-                        onMouseOver={() => setAarauVisible(true)}
-                        onMouseLeave={() => setAarauVisible(false)}/>
-            <RectButton className='Baden' onClick={goToBadenSlide} text={'Baden'}
-                        onMouseOver={() => setBadenVisible(!badenVisible)}
-                        onMouseLeave={() => setBadenVisible(false)}/>
-          </div>
-        </div>
-      </div>
-    )
-  }
-
-  const BackToMapButton = () => {
-    return (
-      <div className='BackToMapButton button horizontal-container'
-           onClick={() => setActiveSlide(slides[0])}>
-        <ArrowLeft/>
-        <p>zurück zur Karte</p>
-      </div>
-    )
-  }
-
-  const AarauSlide = () => {
-    return (
-      <div className='AarauSlide'>
-        <BackToMapButton/>
-        <p className='transparent'>Ein interaktives Abenteuer</p>
-        <h2>Aarau entdecken</h2>
-
-        <div className='choose-container'>
-          <h3 className='large'>Bist du bereit oder möchtest du Filter setzen?</h3>
-          <div className='selection-button-container horizontal-container'>
-            <RectButton onClick={() => history.push('/aarau')} text={'Losfliegen!'}/>
-            <RectButton onClick={() => console.log('filter clicked')} text={'Filter setzen'} isActive={false}/>
-          </div>
-        </div>
-      </div>
-    )
-  }
-
-  const BadenSlide = () => {
-    return (
-      <div className='BadenSlide'>
-        <BackToMapButton/>
-        <p className='transparent'>Ein interaktives Abenteuer</p>
-        <h2>Baden entdecken</h2>
-
-        <div className='choose-container'>
-          <h3 className='large'>Bist du bereit oder möchtest du Filter setzen?</h3>
-          <div className='selection-button-container horizontal-container'>
-            <RectButton onClick={() => history.push('/baden')} text={'Losfliegen!'}/>
-            <RectButton onClick={() => console.log('filter clicked')} text={'Filter setzen'} isActive={false}/>
-          </div>
-        </div>
-      </div>
-    )
-  }
-
   const onVideoEnded = () => {
     setVideoIsVisible(false);
     window.setTimeout(() => setVideoIsPlaying(false), videoFadeOutDuration);
   };
 
-  const slides: Array<MenuSlideInterface> = [
+  const slides: Array<MenuSlideInterface> = [];
+  slides.push(
     {
-      component: <HomeSlide/>,
+      component: <HomeSlide goToAarauSlide={goToAarauSlide} setAarauVisible={setAarauVisible}
+                            goToBadenSlide={goToBadenSlide} setBadenVisible={setBadenVisible}/>,
       svgComponent: aargauSvg,
       backgroundImage: aargauImage
     },
     {
-      component: <AarauSlide/>,
+      component: <AarauSlide slides={slides} setActiveSlide={setActiveSlide}/>,
       svgComponent: aarauSvg,
       backgroundImage: aarauImage
     },
     {
-      component: <BadenSlide/>,
+      component: <BadenSlide slides={slides} setActiveSlide={setActiveSlide}/>,
       svgComponent: badenSvg,
       backgroundImage: badenImage
     }
-  ]
+  );
 
   useEffect(() => {
     if (isInitialMount.current) {
