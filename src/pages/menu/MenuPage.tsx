@@ -90,7 +90,7 @@ export const MenuPage: React.FC = () => {
   useEffect(() => {
     if (isInitialMount.current) {
       isInitialMount.current = false;
-      setActiveSlide(slides[0]);
+      setActiveSlide(slides[2]);
     }
 
     const updateMap = () => {
