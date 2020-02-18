@@ -1,8 +1,9 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React, {useState} from 'react';
 import {useHistory} from 'react-router-dom';
 import {NavBackButton} from '../../components/buttons/NavBackButton';
 import {RectButton} from '../../components/buttons/RectButton';
 import {SelectionChip} from '../../components/buttons/SelectionChip';
+import {Constants} from '../../services/Constants';
 import {mapOptionFilters} from './MenuFilterPage';
 import {MenuSlideInterface} from './MenuPage';
 
@@ -12,51 +13,61 @@ interface AarauSlideProps {
 }
 
 export const BadenFilterSlide: React.FC<AarauSlideProps> = props => {
-  const isInitialMount = useRef(true);
   const history = useHistory();
 
   const [enterpriseFilters, setEnterpriseFilters] = useState([
     {
       name: 'alle',
-      isActive: true
+      isActive: true,
+      type: Constants.FILTER_MAJOR
     },
     {
       name: 'Sport',
-      isActive: true
+      isActive: true,
+      type: Constants.FILTER_ENTERPRISE_SPORT
     },
     {
       name: 'Freizeit',
-      isActive: true
+      isActive: true,
+      type: Constants.FILTER_ENTERPRISE_LEISURE
     }
   ]);
   const [poiFilters, setPoiFilters] = useState([
     {
       name: 'alle',
-      isActive: true
+      isActive: true,
+      type: Constants.FILTER_MAJOR
     },
     {
       name: "Freizeit",
-      isActive: true
+      isActive: true,
+      type: Constants.FILTER_POI_LEISURE
     },
     {
       name: "Sport",
-      isActive: true
+      isActive: true,
+      type: Constants.FILTER_POI_SPORT
     },
     {
       name: "Geschichte",
-      isActive: true
+      isActive: true,
+      type: Constants.FILTER_POI_HISTORY
     },
     {
       name: "Immobilien",
-      isActive: true
+      isActive: true,
+      type: Constants.FILTER_POI_REAL_ESTATE
     }
   ]);
 
-  useEffect(() => {
-    if (isInitialMount.current) {
-      isInitialMount.current = false;
-    }
-  })
+  const EnterpriseFiltersChips = () => (
+    <div className='selection-container horizontal-container'>
+      {mapOptionFilters(enterpriseFilters, setEnterpriseFilters)}
+    </div>);
+  const PoiFilterChips = () => (
+    <div className='selection-container horizontal-container'>
+      {mapOptionFilters(poiFilters, setPoiFilters)}
+    </div>);
 
   return (
     <div className='BadenSlide'>
@@ -66,15 +77,11 @@ export const BadenFilterSlide: React.FC<AarauSlideProps> = props => {
 
       <h3>Unternehmensprofile</h3>
       <p>Welche Fachgebiete interessieren dich?</p>
-      <div className='selection-container horizontal-container'>
-        {mapOptionFilters(enterpriseFilters, setEnterpriseFilters)}
-      </div>
+      <EnterpriseFiltersChips/>
 
       <h3>Sehenswürdigkeiten und Fakten</h3>
       <p>Erfahre mehr über den Kanton. Was sind deine Interessen?</p>
-      <div className='selection-container horizontal-container'>
-        {mapOptionFilters(poiFilters, setPoiFilters)}
-      </div>
+      <PoiFilterChips/>
 
       <h3>Lokale Highlights</h3>
       <p>Möchtest du die lokalen Highlights sehen? Dies können z. B. Schlösser, kulturelles Erbe oder berühmte Gebäude
@@ -85,7 +92,7 @@ export const BadenFilterSlide: React.FC<AarauSlideProps> = props => {
       </div>
 
       <h3>Bist du bereit?</h3>
-      <div className='choose-container horizontal-container'>
+      <div className='selection-button-container horizontal-container'>
         <RectButton onClick={() => history.push('/baden')} text={'Losfliegen!'}/>
       </div>
 

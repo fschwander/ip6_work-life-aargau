@@ -3,6 +3,7 @@ import {useHistory} from 'react-router-dom';
 import {NavBackButton} from '../../components/buttons/NavBackButton';
 import {RectButton} from '../../components/buttons/RectButton';
 import {SelectionChip} from '../../components/buttons/SelectionChip';
+import {Constants} from '../../services/Constants';
 import {mapOptionFilters} from './MenuFilterPage';
 import {MenuSlideInterface} from './MenuPage';
 
@@ -17,21 +18,31 @@ export const AarauFilterSlide: React.FC<AarauSlideProps> = props => {
   const [enterpriseFilters, setEnterpriseFilters] = useState([
     {
       name: 'alle',
-      isActive: true
+      isActive: true,
+      type: Constants.FILTER_MAJOR
     },
     {
       name: 'Bauwesen',
-      isActive: true
+      isActive: true,
+      type: Constants.FILTER_ENTERPRISE_CONSTRUCTION
     },
     {
-      name: 'Gebäudeteile',
-      isActive: true
+      name: 'Immobilien',
+      isActive: true,
+      type: Constants.FILTER_ENTERPRISE_REAL_ESTATE
     },
     {
       name: 'Infrastruktur',
-      isActive: true
+      isActive: true,
+      type: Constants.FILTER_ENTERPRISE_INFRASTRUCTURE
     }
   ]);
+
+  const EnterpriseFilterChips = () => (
+    <div className='selection-container horizontal-container'>
+      {mapOptionFilters(enterpriseFilters, setEnterpriseFilters)}
+    </div>
+  )
 
   return (
     <div className='AarauFilterSlide'>
@@ -41,9 +52,7 @@ export const AarauFilterSlide: React.FC<AarauSlideProps> = props => {
 
       <h3>Unternehmensprofile</h3>
       <p>Welche Fachgebiete interessieren dich?</p>
-      <div className='selection-container horizontal-container'>
-        {mapOptionFilters(enterpriseFilters, setEnterpriseFilters)}
-      </div>
+      <EnterpriseFilterChips/>
 
       <h3>Lokale Highlights</h3>
       <p>Möchtest du die lokalen Highlights sehen? Dies können z. B. Schlösser, kulturelles Erbe oder berühmte Gebäude sein.</p>
