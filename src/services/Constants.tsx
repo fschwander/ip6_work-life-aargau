@@ -54,4 +54,11 @@ export class Constants {
   public static get FILTER_ENTERPRISE_INFRASTRUCTURE(): string {
     return 'enterprise-infrastructure-filter';
   }
+
+  public static get FILTER_HIGHLIGHTS_ALL():string {
+    return 'all-highlights-filter';
+  }
+  public static get FILTER_HIGHLIGHTS_NONE():string {
+    return 'none-highlights-filter';
+  }
 }

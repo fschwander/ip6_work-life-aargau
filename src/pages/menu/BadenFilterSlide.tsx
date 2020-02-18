@@ -2,9 +2,8 @@ import React, {useState} from 'react';
 import {useHistory} from 'react-router-dom';
 import {NavBackButton} from '../../components/buttons/NavBackButton';
 import {RectButton} from '../../components/buttons/RectButton';
-import {SelectionChip} from '../../components/buttons/SelectionChip';
 import {Constants} from '../../services/Constants';
-import {getDismissedFilters, mapOptionFilters} from './MenuFilterPage';
+import {getDismissedFilters, mapExclusiveFilters, mapOptionFilters} from './MenuFilterPage';
 import {MenuSlideInterface} from './MenuPage';
 
 interface AarauSlideProps {
@@ -59,6 +58,18 @@ export const BadenFilterSlide: React.FC<AarauSlideProps> = props => {
       type: Constants.FILTER_POI_REAL_ESTATE
     }
   ]);
+  const [highlightFilter, setHighlightFilter] = useState([
+    {
+      name: 'klar!',
+      isActive: true,
+      type: Constants.FILTER_HIGHLIGHTS_ALL
+    },
+    {
+      name: 'nein, danke',
+      isActive: false,
+      type: Constants.FILTER_HIGHLIGHTS_NONE
+    }]
+  )
 
   const EnterpriseFiltersChips = () => (
     <div className='selection-container horizontal-container'>
@@ -68,6 +79,11 @@ export const BadenFilterSlide: React.FC<AarauSlideProps> = props => {
     <div className='selection-container horizontal-container'>
       {mapOptionFilters(poiFilters, setPoiFilters)}
     </div>);
+  const HighlightFilterChips = () => (
+    <div className='selection-container horizontal-container'>
+      {mapExclusiveFilters(highlightFilter, setHighlightFilter)}
+    </div>
+  )
 
   return (
     <div className='BadenSlide'>
@@ -86,15 +102,13 @@ export const BadenFilterSlide: React.FC<AarauSlideProps> = props => {
       <h3>Lokale Highlights</h3>
       <p>Möchtest du die lokalen Highlights sehen? Dies können z. B. Schlösser, kulturelles Erbe oder berühmte Gebäude
         sein.</p>
-      <div className='selection-container horizontal-container'>
-        <SelectionChip text={'klar! :)'} onClick={() => console.log('clicked')}/>
-        <SelectionChip text={'nein, danke'} onClick={() => console.log('clicked')} isActive={false}/>
-      </div>
+      <HighlightFilterChips/>
 
       <h3>Bist du bereit?</h3>
       <div className='selection-button-container horizontal-container'>
-        <RectButton onClick={() => history.push('/baden', getDismissedFilters([enterpriseFilters, poiFilters]))}
-                    text={'Losfliegen!'}/>
+        <RectButton
+          onClick={() => history.push('/baden', getDismissedFilters([enterpriseFilters, poiFilters, highlightFilter]))}
+          text={'Losfliegen!'}/>
       </div>
 
     </div>

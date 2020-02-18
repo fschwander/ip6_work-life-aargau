@@ -18,7 +18,7 @@ export const updateFilters = (filters: Array<OptionFilter>, i: number, setFilter
   }
   if (i > 0 && filters[0].type === Constants.FILTER_MAJOR) {
     let allFiltersActive = true;
-    for(let j = 1; j < filters.length; j++) {
+    for (let j = 1; j < filters.length; j++) {
       if (!filters[j].isActive) {
         allFiltersActive = false;
         break;
@@ -30,11 +30,26 @@ export const updateFilters = (filters: Array<OptionFilter>, i: number, setFilter
   setFilters(newFilters)
 }
 
-export const getDismissedFilters = (arrays:Array<Array<OptionFilter>>):Array<{type: string}> => {
-  const dismissedFilters:Array<{type: string}> = [];
+export const updateExclusiveFilter = (filters: Array<OptionFilter>, i: number, setFilters: Function) => {
+  const newFilterState = !filters[i].isActive;
+  filters.forEach((filter, j) => {
+    if (i === j) {
+      filters[j].isActive = newFilterState;
+    } else {
+      filters[j].isActive = !newFilterState
+    }
+  })
+  const newFilters = [...filters];
+  setFilters(newFilters)
+}
+
+export const getDismissedFilters = (arrays: Array<Array<OptionFilter>>): Array<{ type: string }> => {
+  const dismissedFilters: Array<{ type: string }> = [];
   arrays.forEach(array => {
     array.forEach(filterItem => {
-      if(filterItem.type !== Constants.FILTER_MAJOR && !filterItem.isActive) {
+      if (filterItem.type !== Constants.FILTER_MAJOR
+        && filterItem.type !== Constants.FILTER_HIGHLIGHTS_NONE
+        && !filterItem.isActive) {
         dismissedFilters.push({type: filterItem.type})
       }
     })
@@ -49,6 +64,14 @@ export const mapOptionFilters = (filters: Array<OptionFilter>, setFilters: Funct
                           onClick={() => updateFilters(filters, i, setFilters)}/>
   })
 };
+
+export const mapExclusiveFilters = (filters: Array<OptionFilter>, setFilters: Function) => {
+  return filters.map((filter, i) => {
+    return <SelectionChip text={filter.name} key={filter.name + i}
+                          isActive={filter.isActive}
+                          onClick={() => updateExclusiveFilter(filters, i, setFilters)}/>
+  })
+}
 
 export const MenuFilterPage: React.FC = props => {
   return (
