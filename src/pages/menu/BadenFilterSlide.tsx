@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React, {useState} from 'react';
 import {useHistory} from 'react-router-dom';
 import {NavBackButton} from '../../components/buttons/NavBackButton';
 import {RectButton} from '../../components/buttons/RectButton';
@@ -13,7 +13,6 @@ interface AarauSlideProps {
 }
 
 export const BadenFilterSlide: React.FC<AarauSlideProps> = props => {
-  const isInitialMount = useRef(true);
   const history = useHistory();
 
   const [enterpriseFilters, setEnterpriseFilters] = useState([
@@ -64,18 +63,11 @@ export const BadenFilterSlide: React.FC<AarauSlideProps> = props => {
   const EnterpriseFiltersChips = () => (
     <div className='selection-container horizontal-container'>
       {mapOptionFilters(enterpriseFilters, setEnterpriseFilters)}
-    </div>)
+    </div>);
   const PoiFilterChips = () => (
     <div className='selection-container horizontal-container'>
       {mapOptionFilters(poiFilters, setPoiFilters)}
-    </div>
-  )
-
-  useEffect(() => {
-    if (isInitialMount.current) {
-      isInitialMount.current = false;
-    }
-  })
+    </div>);
 
   return (
     <div className='BadenSlide'>
