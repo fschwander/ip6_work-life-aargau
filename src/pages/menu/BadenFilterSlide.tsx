@@ -3,31 +3,13 @@ import {useHistory} from 'react-router-dom';
 import {NavBackButton} from '../../components/buttons/NavBackButton';
 import {RectButton} from '../../components/buttons/RectButton';
 import {SelectionChip} from '../../components/buttons/SelectionChip';
+import {mapOptionFilters} from './MenuFilterPage';
 import {MenuSlideInterface} from './MenuPage';
 
 interface AarauSlideProps {
   slides: Array<MenuSlideInterface>
   setActiveSlide: Function
 }
-
-export interface OptionFilter {
-  name: string,
-  isActive: boolean
-}
-
-export const updateFilters = (filters: Array<OptionFilter>, i: number, setFilters: Function) => {
-  filters[i].isActive = !filters[i].isActive;
-  const newFilters = [...filters];
-  setFilters(newFilters)
-}
-
-export const mapOptionFilters = (filters: Array<OptionFilter>, setFilters: Function) => {
-  return filters.map((filter, i) => {
-    return <SelectionChip text={filter.name} key={filter.name + i}
-                          isActive={filter.isActive}
-                          onClick={() => updateFilters(filters, i, setFilters)}/>
-  })
-};
 
 export const BadenFilterSlide: React.FC<AarauSlideProps> = props => {
   const isInitialMount = useRef(true);

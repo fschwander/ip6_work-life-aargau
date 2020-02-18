@@ -3,7 +3,7 @@ import {useHistory} from 'react-router-dom';
 import {NavBackButton} from '../../components/buttons/NavBackButton';
 import {RectButton} from '../../components/buttons/RectButton';
 import {SelectionChip} from '../../components/buttons/SelectionChip';
-import {mapOptionFilters} from './BadenFilterSlide';
+import {mapOptionFilters} from './MenuFilterPage';
 import {MenuSlideInterface} from './MenuPage';
 
 interface AarauSlideProps {

@@ -17,6 +17,7 @@ import {AarauSlide} from './AarauSlide';
 import {BadenFilterSlide} from './BadenFilterSlide';
 import {BadenSlide} from './BadenSlide';
 import {HomeSlide} from './HomeSlide';
+import {MenuFilterPage} from './MenuFilterPage';
 
 export interface MenuSlideInterface {
   component: ReactElement,
@@ -71,7 +72,7 @@ export const MenuPage: React.FC = () => {
       backgroundImage: badenImage
     },
     {
-      component: <BadenFilterSlide slides={slides} setActiveSlide={setActiveSlide}/>,
+      component: <MenuFilterPage><BadenFilterSlide slides={slides} setActiveSlide={setActiveSlide}/></MenuFilterPage>,
       svgComponent: badenSvg,
       backgroundImage: badenImage
     },
@@ -81,7 +82,7 @@ export const MenuPage: React.FC = () => {
       backgroundImage: aarauImage
     },
     {
-      component: <AarauFilterSlide slides={slides} setActiveSlide={setActiveSlide}/>,
+      component: <MenuFilterPage><AarauFilterSlide slides={slides} setActiveSlide={setActiveSlide}/></MenuFilterPage>,
       svgComponent: aarauSvg,
       backgroundImage: aarauImage
     }
