@@ -1,8 +1,9 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {useHistory} from 'react-router-dom';
 import {NavBackButton} from '../../components/buttons/NavBackButton';
 import {RectButton} from '../../components/buttons/RectButton';
 import {SelectionChip} from '../../components/buttons/SelectionChip';
+import {mapOptionFilters} from './BadenFilterSlide';
 import {MenuSlideInterface} from './MenuPage';
 
 interface AarauSlideProps {
@@ -13,6 +14,25 @@ interface AarauSlideProps {
 export const AarauFilterSlide: React.FC<AarauSlideProps> = props => {
   const history = useHistory();
 
+  const [enterpriseFilters, setEnterpriseFilters] = useState([
+    {
+      name: 'alle',
+      isActive: true
+    },
+    {
+      name: 'Bauwesen',
+      isActive: true
+    },
+    {
+      name: 'Gebäudeteile',
+      isActive: true
+    },
+    {
+      name: 'Infrastruktur',
+      isActive: true
+    }
+  ]);
+
   return (
     <div className='AarauFilterSlide'>
       <NavBackButton text='zurück zur Karte' onClick={() => props.setActiveSlide(props.slides[3])}/>
@@ -22,17 +42,14 @@ export const AarauFilterSlide: React.FC<AarauSlideProps> = props => {
       <h3>Unternehmensprofile</h3>
       <p>Welche Fachgebiete interessieren dich?</p>
       <div className='selection-container horizontal-container'>
-        <SelectionChip text={'Alle'} onClick={() => console.log('clicked')}/>
-        <SelectionChip text={'Bauwesen'} onClick={() => console.log('clicked')}/>
-        <SelectionChip text={'Gebäudeteile'} onClick={() => console.log('clicked')}/>
-        <SelectionChip text={'Infrastruktur'} onClick={() => console.log('clicked')}/>
+        {mapOptionFilters(enterpriseFilters, setEnterpriseFilters)}
       </div>
 
       <h3>Lokale Highlights</h3>
       <p>Möchtest du die lokalen Highlights sehen? Dies können z. B. Schlösser, kulturelles Erbe oder berühmte Gebäude sein.</p>
       <div className='selection-container horizontal-container'>
         <SelectionChip text={'klar! :)'} onClick={() => console.log('clicked')}/>
-        <SelectionChip text={'nein, danke'} onClick={() => console.log('clicked')}/>
+        <SelectionChip text={'nein, danke'} onClick={() => console.log('clicked')} isActive={false}/>
       </div>
 
       <h3>Bist du bereit?</h3>

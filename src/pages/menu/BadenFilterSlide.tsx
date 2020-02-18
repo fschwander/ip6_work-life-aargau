@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import {useHistory} from 'react-router-dom';
 import {NavBackButton} from '../../components/buttons/NavBackButton';
 import {RectButton} from '../../components/buttons/RectButton';
@@ -10,15 +10,34 @@ interface AarauSlideProps {
   setActiveSlide: Function
 }
 
-interface OptionFilter {
+export interface OptionFilter {
   name: string,
   isActive: boolean
 }
 
+export const updateFilters = (filters: Array<OptionFilter>, i: number, setFilters: Function) => {
+  filters[i].isActive = !filters[i].isActive;
+  const newFilters = [...filters];
+  setFilters(newFilters)
+}
+
+export const mapOptionFilters = (filters: Array<OptionFilter>, setFilters: Function) => {
+  return filters.map((filter, i) => {
+    return <SelectionChip text={filter.name} key={filter.name + i}
+                          isActive={filter.isActive}
+                          onClick={() => updateFilters(filters, i, setFilters)}/>
+  })
+};
+
 export const BadenFilterSlide: React.FC<AarauSlideProps> = props => {
+  const isInitialMount = useRef(true);
   const history = useHistory();
 
-  const enterpriseFilters: Array<OptionFilter> = [
+  const [enterpriseFilters, setEnterpriseFilters] = useState([
+    {
+      name: 'alle',
+      isActive: true
+    },
     {
       name: 'Sport',
       isActive: true
@@ -27,9 +46,12 @@ export const BadenFilterSlide: React.FC<AarauSlideProps> = props => {
       name: 'Freizeit',
       isActive: true
     }
-  ];
-
-  const poiFilters: Array<OptionFilter> = [
+  ]);
+  const [poiFilters, setPoiFilters] = useState([
+    {
+      name: 'alle',
+      isActive: true
+    },
     {
       name: "Freizeit",
       isActive: true
@@ -45,22 +67,14 @@ export const BadenFilterSlide: React.FC<AarauSlideProps> = props => {
     {
       name: "Immobilien",
       isActive: true
-    },
-  ];
+    }
+  ]);
 
-  const mapOptionFilters = (filters: Array<OptionFilter>) => {
-    const f = [
-      {
-        name: 'alle',
-        isActive: true
-      }, ...filters
-    ];
-    return f.map(filter => {
-      return <SelectionChip text={filter.name}
-                            onClick={() => console.log('clicked')}
-                            isActive={filter.isActive}/>
-    })
-  };
+  useEffect(() => {
+    if (isInitialMount.current) {
+      isInitialMount.current = false;
+    }
+  })
 
   return (
     <div className='BadenSlide'>
@@ -71,13 +85,13 @@ export const BadenFilterSlide: React.FC<AarauSlideProps> = props => {
       <h3>Unternehmensprofile</h3>
       <p>Welche Fachgebiete interessieren dich?</p>
       <div className='selection-container horizontal-container'>
-        {mapOptionFilters(enterpriseFilters)}
+        {mapOptionFilters(enterpriseFilters, setEnterpriseFilters)}
       </div>
 
       <h3>Sehenswürdigkeiten und Fakten</h3>
       <p>Erfahre mehr über den Kanton. Was sind deine Interessen?</p>
       <div className='selection-container horizontal-container'>
-        {mapOptionFilters(poiFilters)}
+        {mapOptionFilters(poiFilters, setPoiFilters)}
       </div>
 
       <h3>Lokale Highlights</h3>
@@ -85,7 +99,7 @@ export const BadenFilterSlide: React.FC<AarauSlideProps> = props => {
         sein.</p>
       <div className='selection-container horizontal-container'>
         <SelectionChip text={'klar! :)'} onClick={() => console.log('clicked')}/>
-        <SelectionChip text={'nein, danke'} onClick={() => console.log('clicked')}/>
+        <SelectionChip text={'nein, danke'} onClick={() => console.log('clicked')} isActive={false}/>
       </div>
 
       <h3>Bist du bereit?</h3>
