@@ -38,6 +38,12 @@ export const AarauFilterSlide: React.FC<AarauSlideProps> = props => {
     }
   ]);
 
+  const EnterpriseFilterChips = () => (
+    <div className='selection-container horizontal-container'>
+      {mapOptionFilters(enterpriseFilters, setEnterpriseFilters)}
+    </div>
+  )
+
   return (
     <div className='AarauFilterSlide'>
       <NavBackButton text='zurück zur Karte' onClick={() => props.setActiveSlide(props.slides[3])}/>
@@ -46,9 +52,7 @@ export const AarauFilterSlide: React.FC<AarauSlideProps> = props => {
 
       <h3>Unternehmensprofile</h3>
       <p>Welche Fachgebiete interessieren dich?</p>
-      <div className='selection-container horizontal-container'>
-        {mapOptionFilters(enterpriseFilters, setEnterpriseFilters)}
-      </div>
+      <EnterpriseFilterChips/>
 
       <h3>Lokale Highlights</h3>
       <p>Möchtest du die lokalen Highlights sehen? Dies können z. B. Schlösser, kulturelles Erbe oder berühmte Gebäude sein.</p>

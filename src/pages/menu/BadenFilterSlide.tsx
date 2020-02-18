@@ -61,6 +61,16 @@ export const BadenFilterSlide: React.FC<AarauSlideProps> = props => {
     }
   ]);
 
+  const EnterpriseFiltersChips = () => (
+    <div className='selection-container horizontal-container'>
+      {mapOptionFilters(enterpriseFilters, setEnterpriseFilters)}
+    </div>)
+  const PoiFilterChips = () => (
+    <div className='selection-container horizontal-container'>
+      {mapOptionFilters(poiFilters, setPoiFilters)}
+    </div>
+  )
+
   useEffect(() => {
     if (isInitialMount.current) {
       isInitialMount.current = false;
@@ -75,15 +85,11 @@ export const BadenFilterSlide: React.FC<AarauSlideProps> = props => {
 
       <h3>Unternehmensprofile</h3>
       <p>Welche Fachgebiete interessieren dich?</p>
-      <div className='selection-container horizontal-container'>
-        {mapOptionFilters(enterpriseFilters, setEnterpriseFilters)}
-      </div>
+      <EnterpriseFiltersChips/>
 
       <h3>Sehenswürdigkeiten und Fakten</h3>
       <p>Erfahre mehr über den Kanton. Was sind deine Interessen?</p>
-      <div className='selection-container horizontal-container'>
-        {mapOptionFilters(poiFilters, setPoiFilters)}
-      </div>
+      <PoiFilterChips/>
 
       <h3>Lokale Highlights</h3>
       <p>Möchtest du die lokalen Highlights sehen? Dies können z. B. Schlösser, kulturelles Erbe oder berühmte Gebäude
