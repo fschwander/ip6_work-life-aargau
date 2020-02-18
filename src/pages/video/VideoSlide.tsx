@@ -1,4 +1,5 @@
 import React, {CSSProperties, ReactElement, useState} from 'react';
+import {useLocation} from 'react-router-dom';
 import {AnimatedSVG} from '../../components/containers/AnimatedSVG';
 import {BackgroundVideoContainer} from '../../components/containers/BackgroundVideoContainer';
 import {PopupContainer} from '../../components/containers/PopupContainer';
@@ -29,12 +30,27 @@ interface VideoSlideProps extends VideoSlideItem {
 }
 
 export const VideoSlide: React.FC<VideoSlideProps> = props => {
+  const location = useLocation();
   const [animationStarted, setAnimationStarted] = useState(false);
   const [slidePaused, setSlidePaused] = useState(false);
 
   const {popupComponent, setPopupComponent, slideInComponent, setSlideInComponent} = props;
 
   const animationStaggerInSec: number = 3;
+
+  const getFilteredPoiLabelItems = (itemArray: Array<PoiLabelItem>, dismissedFiltersArray: Array<{ type: string }>): Array<PoiLabelItem> => {
+    const filteredArray:Array<PoiLabelItem> = [];
+    itemArray.forEach(item => {
+      const itemIsDismissed = dismissedFiltersArray.some(dismissedItem => dismissedItem.type === item.type);
+      if(!itemIsDismissed) {
+        itemArray.push(item)
+      }
+    })
+
+    return filteredArray
+  }
+
+  const filteredPoiLabelItems = getFilteredPoiLabelItems(props.poiLabelItems, location.state.dismissedFilters);
 
   const onVideoEnded = () => {
     setAnimationStarted(true);
@@ -82,22 +98,23 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
 
         <div className={`anim-group-container`}>
 
-          {props.poiLabelItems.map((d, i) => {
-            const styles = getTransitionStyles(i, 2)
-            return <div className='anim-group' key={i}>
-              <AnimatedSVG svgComponent={d.svgComponent}
-                           isActive={animationStarted}
-                           animationDelay={i * animationStaggerInSec}/>
-              <div
-                className={`${getFadeInOutClass()}`}>
-                <PoiLabel {...d} styles={styles}
-                          onClick={() => openSlideInOverlay(d.overlayComponent)}/>
+          {filteredPoiLabelItems.map((d, i) => {
+              const styles = getTransitionStyles(i, 2)
+              return <div className='anim-group' key={i}>
+                <AnimatedSVG svgComponent={d.svgComponent}
+                             isActive={animationStarted}
+                             animationDelay={i * animationStaggerInSec}/>
+                <div className={`${getFadeInOutClass()}`}>
+                  <PoiLabel {...d} styles={styles}
+                            onClick={() => openSlideInOverlay(d.overlayComponent)}/>
+                </div>
               </div>
-            </div>
-          })}
+            }
+          )}
+
 
           {props.infoLabelItems.map((d, i) => {
-            const index = props.poiLabelItems.length + i;
+            const index = filteredPoiLabelItems.length + i;
             const styles = getTransitionStyles(index, 2)
             return (
               <div className={`anim-group`} key={d.className + i}>

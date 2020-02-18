@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {useHistory, useLocation} from 'react-router-dom';
+import {useHistory} from 'react-router-dom';
 import {Timeline} from "../../components/widgets/TimeLine";
 import {VideoSlide, VideoSlideItem} from './VideoSlide';
 
@@ -14,8 +14,6 @@ export const VideoPage: React.FC<VideoPageProps> = props => {
 
   const {videoSlideData} = props;
   const history = useHistory();
-  const location = useLocation();
-  console.log(location);
 
   const switchToNextSlide = (): void => {
     if (activeIndex + 1 < videoSlideData.length) {
