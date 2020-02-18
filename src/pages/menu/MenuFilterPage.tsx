@@ -30,6 +30,18 @@ export const updateFilters = (filters: Array<OptionFilter>, i: number, setFilter
   setFilters(newFilters)
 }
 
+export const getDismissedFilters = (arrays:Array<Array<OptionFilter>>):Array<{type: string}> => {
+  const dismissedFilters:Array<{type: string}> = [];
+  arrays.forEach(array => {
+    array.forEach(filterItem => {
+      if(filterItem.type !== Constants.FILTER_MAJOR && !filterItem.isActive) {
+        dismissedFilters.push({type: filterItem.type})
+      }
+    })
+  })
+  return dismissedFilters;
+}
+
 export const mapOptionFilters = (filters: Array<OptionFilter>, setFilters: Function) => {
   return filters.map((filter, i) => {
     return <SelectionChip text={filter.name} key={filter.name + i}

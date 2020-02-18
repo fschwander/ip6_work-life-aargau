@@ -4,7 +4,7 @@ import {NavBackButton} from '../../components/buttons/NavBackButton';
 import {RectButton} from '../../components/buttons/RectButton';
 import {SelectionChip} from '../../components/buttons/SelectionChip';
 import {Constants} from '../../services/Constants';
-import {mapOptionFilters} from './MenuFilterPage';
+import {getDismissedFilters, mapOptionFilters, OptionFilter} from './MenuFilterPage';
 import {MenuSlideInterface} from './MenuPage';
 
 interface AarauSlideProps {
@@ -63,7 +63,7 @@ export const AarauFilterSlide: React.FC<AarauSlideProps> = props => {
 
       <h3>Bist du bereit?</h3>
       <div className='selection-button-container horizontal-container'>
-        <RectButton onClick={() => history.push('/aarau')} text={'Losfliegen!'}/>
+        <RectButton onClick={() => history.push('/aarau', getDismissedFilters([enterpriseFilters]))} text={'Losfliegen!'}/>
       </div>
     </div>
   )
