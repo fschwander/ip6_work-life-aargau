@@ -4,6 +4,7 @@ import {HoverPoint} from "../buttons/HoverPoint";
 export interface InfoLabelItem {
   title: string,
   subtitle: string,
+  type: string,
   className: string,
   overlayComponent: ReactElement,
   svgComponent: FunctionComponent<SVGProps<SVGSVGElement>>,
@@ -12,7 +13,7 @@ export interface InfoLabelItem {
   posTopInPct: number,
 }
 
-interface InfoLabelProps extends InfoLabelItem{
+interface InfoLabelProps extends InfoLabelItem {
   onClick: Function,
   styles: CSSProperties
 }

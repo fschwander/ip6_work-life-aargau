@@ -10,6 +10,7 @@ import {ReactComponent as svgInterior} from "../../res/videos/aarau3-interiors.s
 import {ReactComponent as svgAare} from "../../res/videos/aarau3-river.svg";
 import {ReactComponent as svgEducation} from "../../res/videos/aarau3-education.svg";
 import videoAarau3 from "../../res/videos/aarau3.mp4";
+import {Constants} from '../../services/Constants';
 import {aarvia} from './overlays/info-overlay-data/aarvia';
 import {education} from './overlays/info-overlay-data/education';
 import {killer} from "./overlays/info-overlay-data/killer";
@@ -33,6 +34,7 @@ export const aarauSlideData: Array<VideoSlideItem> = [
       {
         title: 'Baumaterialen',
         subtitle: 'Aargauer Unternehmen',
+        type: Constants.FILTER_ENTERPRISE_CONSTRUCTION,
         className: 'lafarge-holcim',
         overlayComponent: <PopupOverlay data={lafargeHolcim}/>,
         svgComponent: svgConstruction,
@@ -42,6 +44,7 @@ export const aarauSlideData: Array<VideoSlideItem> = [
       }, {
         title: 'Infrastruktur',
         subtitle: 'Aargauer Unternehmen',
+        type: Constants.FILTER_ENTERPRISE_INFRASTRUCTURE,
         className: 'aarvia',
         overlayComponent: <PopupOverlay data={aarvia}/>,
         svgComponent: svgABridge,
@@ -62,6 +65,7 @@ export const aarauSlideData: Array<VideoSlideItem> = [
       {
         title: 'Stadtkirche Aarau',
         subtitle: 'lokales Highlight',
+        type: Constants.FILTER_HIGHLIGHTS_ALL,
         overlayComponent: <SlideInOverlay data={churchAarau}/>,
         svgComponent: svgChurch,
         iconSrc: churchIcon,
@@ -85,6 +89,7 @@ export const aarauSlideData: Array<VideoSlideItem> = [
       {
         title: 'Aare',
         subtitle: 'lokales Highlight',
+        type: Constants.FILTER_HIGHLIGHTS_ALL,
         overlayComponent: <SlideInOverlay data={aare}/>,
         svgComponent: svgAare,
         iconSrc: waterIcon,
@@ -99,6 +104,7 @@ export const aarauSlideData: Array<VideoSlideItem> = [
       {
         title: 'Interiors',
         subtitle: 'Aargauer Unternehmen',
+        type: Constants.FILTER_ENTERPRISE_CONSTRUCTION,
         className: 'killer',
         overlayComponent: <PopupOverlay data={killer}/>,
         svgComponent: svgInterior,
@@ -109,6 +115,7 @@ export const aarauSlideData: Array<VideoSlideItem> = [
       {
         title: 'Bildung & Forschung',
         subtitle: 'Aargauer Vorteile',
+        type: Constants.FILTER_ENTERPRISE_INFRASTRUCTURE,
         className: 'education',
         overlayComponent: <PopupOverlay data={education}/>,
         svgComponent: svgEducation,
