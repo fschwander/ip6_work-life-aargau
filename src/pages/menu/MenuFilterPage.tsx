@@ -3,7 +3,8 @@ import {SelectionChip} from '../../components/buttons/SelectionChip';
 
 export interface OptionFilter {
   name: string,
-  isActive: boolean
+  isActive: boolean,
+  type: string
 }
 
 export const updateFilters = (filters: Array<OptionFilter>, i: number, setFilters: Function) => {

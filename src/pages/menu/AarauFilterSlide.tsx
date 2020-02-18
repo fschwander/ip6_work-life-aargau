@@ -3,6 +3,7 @@ import {useHistory} from 'react-router-dom';
 import {NavBackButton} from '../../components/buttons/NavBackButton';
 import {RectButton} from '../../components/buttons/RectButton';
 import {SelectionChip} from '../../components/buttons/SelectionChip';
+import {Constants} from '../../services/Constants';
 import {mapOptionFilters} from './MenuFilterPage';
 import {MenuSlideInterface} from './MenuPage';
 
@@ -17,19 +18,23 @@ export const AarauFilterSlide: React.FC<AarauSlideProps> = props => {
   const [enterpriseFilters, setEnterpriseFilters] = useState([
     {
       name: 'alle',
-      isActive: true
+      isActive: true,
+      type: Constants.FILTER_MAJOR
     },
     {
       name: 'Bauwesen',
-      isActive: true
+      isActive: true,
+      type: Constants.FILTER_ENTERPRISE_CONSTRUCTION
     },
     {
-      name: 'Gebäudeteile',
-      isActive: true
+      name: 'Immobilien',
+      isActive: true,
+      type: Constants.FILTER_ENTERPRISE_REAL_ESTATE
     },
     {
       name: 'Infrastruktur',
-      isActive: true
+      isActive: true,
+      type: Constants.FILTER_ENTERPRISE_INFRASTRUCTURE
     }
   ]);
 

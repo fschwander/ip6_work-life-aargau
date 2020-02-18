@@ -23,13 +23,13 @@
 
     .choose-container {
       margin-top: 3rem;
+    }
 
-      .selection-button-container {
-        padding-top: 1rem;
+    .selection-button-container {
+      padding-top: 1rem;
 
-        .RectButton:not(:last-child) {
-          margin-right: 1rem;
-        }
+      .RectButton:not(:last-child) {
+        margin-right: 1rem;
       }
     }
 

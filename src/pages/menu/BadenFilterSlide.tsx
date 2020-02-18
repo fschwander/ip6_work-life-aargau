@@ -3,6 +3,7 @@ import {useHistory} from 'react-router-dom';
 import {NavBackButton} from '../../components/buttons/NavBackButton';
 import {RectButton} from '../../components/buttons/RectButton';
 import {SelectionChip} from '../../components/buttons/SelectionChip';
+import {Constants} from '../../services/Constants';
 import {mapOptionFilters} from './MenuFilterPage';
 import {MenuSlideInterface} from './MenuPage';
 
@@ -18,37 +19,45 @@ export const BadenFilterSlide: React.FC<AarauSlideProps> = props => {
   const [enterpriseFilters, setEnterpriseFilters] = useState([
     {
       name: 'alle',
-      isActive: true
+      isActive: true,
+      type: Constants.FILTER_MAJOR
     },
     {
       name: 'Sport',
-      isActive: true
+      isActive: true,
+      type: Constants.FILTER_ENTERPRISE_SPORT
     },
     {
       name: 'Freizeit',
-      isActive: true
+      isActive: true,
+      type: Constants.FILTER_ENTERPRISE_LEISURE
     }
   ]);
   const [poiFilters, setPoiFilters] = useState([
     {
       name: 'alle',
-      isActive: true
+      isActive: true,
+      type: Constants.FILTER_MAJOR
     },
     {
       name: "Freizeit",
-      isActive: true
+      isActive: true,
+      type: Constants.FILTER_POI_LEISURE
     },
     {
       name: "Sport",
-      isActive: true
+      isActive: true,
+      type: Constants.FILTER_POI_SPORT
     },
     {
       name: "Geschichte",
-      isActive: true
+      isActive: true,
+      type: Constants.FILTER_POI_HISTORY
     },
     {
       name: "Immobilien",
-      isActive: true
+      isActive: true,
+      type: Constants.FILTER_POI_REAL_ESTATE
     }
   ]);
 
@@ -85,7 +94,7 @@ export const BadenFilterSlide: React.FC<AarauSlideProps> = props => {
       </div>
 
       <h3>Bist du bereit?</h3>
-      <div className='choose-container horizontal-container'>
+      <div className='selection-button-container horizontal-container'>
         <RectButton onClick={() => history.push('/baden')} text={'Losfliegen!'}/>
       </div>
 
