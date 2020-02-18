@@ -85,6 +85,11 @@ export const BadenFilterSlide: React.FC<AarauSlideProps> = props => {
     </div>
   )
 
+  const goToBadenVideoSlide = () => {
+    const dismissedFilters = getDismissedFilters([enterpriseFilters, poiFilters, highlightFilter]);
+    history.push('/baden', dismissedFilters)
+  }
+
   return (
     <div className='BadenSlide'>
       <NavBackButton text={'zurück zur Karte'} onClick={() => props.setActiveSlide(props.slides[1])}/>
@@ -107,7 +112,7 @@ export const BadenFilterSlide: React.FC<AarauSlideProps> = props => {
       <h3>Bist du bereit?</h3>
       <div className='selection-button-container horizontal-container'>
         <RectButton
-          onClick={() => history.push('/baden', getDismissedFilters([enterpriseFilters, poiFilters, highlightFilter]))}
+          onClick={goToBadenVideoSlide}
           text={'Losfliegen!'}/>
       </div>
 

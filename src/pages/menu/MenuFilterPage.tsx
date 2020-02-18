@@ -43,7 +43,7 @@ export const updateExclusiveFilter = (filters: Array<OptionFilter>, i: number, s
   setFilters(newFilters)
 }
 
-export const getDismissedFilters = (arrays: Array<Array<OptionFilter>>): Array<{ type: string }> => {
+export const getDismissedFilters = (arrays: Array<Array<OptionFilter>>): {dismissedFilters: Array<{ type: string }>} => {
   const dismissedFilters: Array<{ type: string }> = [];
   arrays.forEach(array => {
     array.forEach(filterItem => {
@@ -54,7 +54,7 @@ export const getDismissedFilters = (arrays: Array<Array<OptionFilter>>): Array<{
       }
     })
   })
-  return dismissedFilters;
+  return {'dismissedFilters' : dismissedFilters};
 }
 
 export const mapOptionFilters = (filters: Array<OptionFilter>, setFilters: Function) => {
