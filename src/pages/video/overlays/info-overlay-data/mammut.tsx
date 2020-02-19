@@ -1,11 +1,13 @@
 import React from 'react';
+import {GraphicChart} from '../../../../components/widgets/GraphicChart';
+import {ReactComponent as SVGImage} from '../../../../res/graphics/mammut.svg';
 import iconClimbing from '../../../../res/icons/climbing.svg'
 import iconHiking from '../../../../res/icons/hiking.svg'
 import iconLink from '../../../../res/icons/link.svg'
 import imgDetails from '../../../../res/imgs/ol_mammut.svg'
 import imgDetails2 from '../../../../res/imgs/ol_mammut2.jpg'
 import {Constants} from '../../../../services/Constants';
-import {PlaceholderChart, PopupOverlayInterface} from '../PopupOverlayInterface'
+import {PopupOverlayInterface} from '../PopupOverlayInterface'
 
 export const mammut: PopupOverlayInterface = {
   type: Constants.TYPE_WORK,
@@ -41,8 +43,13 @@ export const mammut: PopupOverlayInterface = {
   ],
 
   graph: {
-    title: "Nettoumsatz der Mammut Sports Group (Mill. CHF)",
-    chartComponent: <PlaceholderChart/>
+    title: "Nettoumsatz der Mammut Sports Group ",
+    chartComponent: <GraphicChart svgComponent={SVGImage}
+                                  data={[
+                                    {name: 'Millionen CHF', value: "232,9"},
+                                    {name: 'Millionen CHF', value: "228,6"},
+                                    {name: 'Millionen CHF', value: "253,4"}]}
+    />
   },
 
   details: [
