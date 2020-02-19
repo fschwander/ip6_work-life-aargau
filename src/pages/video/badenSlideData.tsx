@@ -13,6 +13,7 @@ import {ReactComponent as svgBar} from "../../res/videos/baden3-bar.svg";
 import {ReactComponent as svgBridge} from "../../res/videos/baden3-bridge.svg";
 import {ReactComponent as svgConnectivity} from "../../res/videos/baden3-connectivity.svg";
 import videoBaden3 from "../../res/videos/baden3.mp4";
+import {Constants} from '../../services/Constants';
 import {culture} from './overlays/info-overlay-data/culture';
 import {hikingTrails} from "./overlays/info-overlay-data/hikingTrails";
 import {mammut} from "./overlays/info-overlay-data/mammut";
@@ -37,6 +38,7 @@ export const badenSlideData: Array<VideoSlideItem> = [
       {
         subtitle: 'Lokales Highlight',
         title: 'Ruine Stein',
+        type: Constants.FILTER_HIGHLIGHTS_ALL,
         overlayComponent: <SlideInOverlay data={ruineStein}/>,
         svgComponent: svgRuine,
         iconSrc: castleIcon,
@@ -51,6 +53,7 @@ export const badenSlideData: Array<VideoSlideItem> = [
       {
         title: 'Kultur & Geschichte',
         subtitle: 'Aargauer Vorteile',
+        type: Constants.FILTER_POI_HISTORY,
         className: 'culture-and-history',
         overlayComponent: <PopupOverlay data={culture}/>,
         svgComponent: svgTower,
@@ -61,6 +64,7 @@ export const badenSlideData: Array<VideoSlideItem> = [
       {
         title: 'Gewerbeimmobilien & Areal',
         subtitle: 'Aargauer Vorteile',
+        type: Constants.FILTER_POI_REAL_ESTATE,
         className: 'real-estate',
         overlayComponent: <PopupOverlay data={realEstate}/>,
         svgComponent: svgRoof,
@@ -82,6 +86,7 @@ export const badenSlideData: Array<VideoSlideItem> = [
       {
         title: 'Wanderwege',
         subtitle: 'Aargauer Vorteile',
+        type: Constants.FILTER_POI_LEISURE,
         className: 'hiking-trails',
         overlayComponent: <PopupOverlay data={hikingTrails}/>,
         svgComponent: svgStairs,
@@ -92,6 +97,7 @@ export const badenSlideData: Array<VideoSlideItem> = [
       {
         title: 'Wanderausrüstung',
         subtitle: 'Aargauer Unternehmen',
+        type: Constants.FILTER_ENTERPRISE_LEISURE,
         className: 'mammut',
         overlayComponent: <PopupOverlay data={mammut}/>,
         svgComponent: svgStairs,
@@ -112,6 +118,7 @@ export const badenSlideData: Array<VideoSlideItem> = [
       {
         title: 'Verbundenheit',
         subtitle: 'lokales Highlight',
+        type: Constants.FILTER_HIGHLIGHTS_ALL,
         overlayComponent: <TravelingDistancePage/>,
         svgComponent: svgConnectivity,
         iconSrc: connectednessIcon,
@@ -124,6 +131,7 @@ export const badenSlideData: Array<VideoSlideItem> = [
       {
         title: 'Holzbrücke',
         subtitle: 'lokales Highlight',
+        type: Constants.FILTER_HIGHLIGHTS_ALL,
         overlayComponent: <SlideInOverlay data={woodenBridge}/>,
         svgComponent: svgBridge,
         iconSrc: bridgeIcon,
@@ -136,6 +144,7 @@ export const badenSlideData: Array<VideoSlideItem> = [
       {
         title: 'Triebguet Frischluftbar',
         subtitle: 'lokales Highlight',
+        type: Constants.FILTER_HIGHLIGHTS_ALL,
         overlayComponent: <SlideInOverlay data={beerBar}/>,
         svgComponent: svgBar,
         iconSrc: beerIcon,

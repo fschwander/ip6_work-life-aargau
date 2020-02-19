@@ -14,6 +14,7 @@ import {RoundButton} from "../buttons/RoundButton";
 export interface PoiLabelItem {
   subtitle: string,
   title: string,
+  type: string,
   svgComponent: FunctionComponent<SVGProps<SVGSVGElement>>,
   overlayComponent: ReactElement,
   iconSrc: string,

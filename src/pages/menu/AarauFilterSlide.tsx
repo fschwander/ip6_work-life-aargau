@@ -2,9 +2,8 @@ import React, {useState} from 'react';
 import {useHistory} from 'react-router-dom';
 import {NavBackButton} from '../../components/buttons/NavBackButton';
 import {RectButton} from '../../components/buttons/RectButton';
-import {SelectionChip} from '../../components/buttons/SelectionChip';
 import {Constants} from '../../services/Constants';
-import {mapOptionFilters} from './MenuFilterPage';
+import {getDismissedFilters, mapExclusiveFilters, mapOptionFilters} from './MenuFilterPage';
 import {MenuSlideInterface} from './MenuPage';
 
 interface AarauSlideProps {
@@ -37,12 +36,34 @@ export const AarauFilterSlide: React.FC<AarauSlideProps> = props => {
       type: Constants.FILTER_ENTERPRISE_INFRASTRUCTURE
     }
   ]);
+  const [highlightFilter, setHighlightFilter] = useState([
+    {
+      name: 'klar!',
+      isActive: true,
+      type: Constants.FILTER_HIGHLIGHTS_ALL
+    },
+    {
+      name: 'nein, danke',
+      isActive: false,
+      type: Constants.FILTER_HIGHLIGHTS_NONE
+    }]
+  )
 
   const EnterpriseFilterChips = () => (
     <div className='selection-container horizontal-container'>
       {mapOptionFilters(enterpriseFilters, setEnterpriseFilters)}
     </div>
   )
+  const HighlightFilterChips = () => (
+    <div className='selection-container horizontal-container'>
+      {mapExclusiveFilters(highlightFilter, setHighlightFilter)}
+    </div>
+  )
+
+  const goToAarauVideoSlide = () => {
+    const dismissedFilters = getDismissedFilters([enterpriseFilters, highlightFilter])
+    history.push('/aarau', dismissedFilters)
+  }
 
   return (
     <div className='AarauFilterSlide'>
@@ -55,15 +76,14 @@ export const AarauFilterSlide: React.FC<AarauSlideProps> = props => {
       <EnterpriseFilterChips/>
 
       <h3>Lokale Highlights</h3>
-      <p>Möchtest du die lokalen Highlights sehen? Dies können z. B. Schlösser, kulturelles Erbe oder berühmte Gebäude sein.</p>
-      <div className='selection-container horizontal-container'>
-        <SelectionChip text={'klar! :)'} onClick={() => console.log('clicked')}/>
-        <SelectionChip text={'nein, danke'} onClick={() => console.log('clicked')} isActive={false}/>
-      </div>
+      <p>Möchtest du die lokalen Highlights sehen? Dies können z. B. Schlösser, kulturelles Erbe oder berühmte Gebäude
+        sein.</p>
+      <HighlightFilterChips/>
 
       <h3>Bist du bereit?</h3>
       <div className='selection-button-container horizontal-container'>
-        <RectButton onClick={() => history.push('/aarau')} text={'Losfliegen!'}/>
+        <RectButton onClick={goToAarauVideoSlide}
+                    text={'Losfliegen!'}/>
       </div>
     </div>
   )
