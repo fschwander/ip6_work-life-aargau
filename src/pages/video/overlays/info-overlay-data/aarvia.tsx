@@ -1,10 +1,12 @@
 import React from 'react';
 import iconEngineering from '../../../../res/icons/engineering.svg';
-import iconInfrastructure from '../../../../res/icons/infrastructure.svg'
+import iconInfrastructure from '../../../../res/icons/infrastructure.svg';
+import {ReactComponent as SVGImage} from '../../../../res/graphics/aarvia.svg';
 import iconLink from '../../../../res/icons/link.svg';
 import imgDetails from '../../../../res/imgs/ol_aarvia.jpg';
 import {Constants} from '../../../../services/Constants';
-import {PlaceholderChart, PopupOverlayInterface} from "../PopupOverlayInterface";
+import {PopupOverlayInterface} from "../PopupOverlayInterface";
+import {GraphicChart} from '../../../../components/widgets/GraphicChart';
 
 export const aarvia: PopupOverlayInterface = {
   type: Constants.TYPE_WORK,
@@ -43,8 +45,13 @@ export const aarvia: PopupOverlayInterface = {
   ],
 
   graph: {
-    title: "Nationalstrassenlänge in 2018",
-    chartComponent: <PlaceholderChart/>
+    title: "Nationalstrassenlänge in 2018 (Kilometer)",
+    chartComponent: <GraphicChart svgComponent={SVGImage}
+                                  data={[
+                                    {name: 'Gemischverkehrs-strassen', value: "1'846"},
+                                    {name: 'Autostrassen (2- und 3- spurig)', value: "1'745"},
+                                    {name: 'Autobahnen (4- spurig und mehr)', value: "1'450"}]}
+    />
   },
 
   details: [
