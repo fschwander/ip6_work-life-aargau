@@ -43,7 +43,7 @@ export const aarvia: PopupOverlayInterface = {
   ],
 
   graph: {
-    title: "",
+    title: "Nationalstrassenlänge in 2018",
     chartComponent: <PlaceholderChart/>
   },
 
