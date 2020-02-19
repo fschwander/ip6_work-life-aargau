@@ -30,7 +30,6 @@ export const badenSlideData: Array<VideoSlideItem> = [
 
   // SEQUENCE 1
   {
-    className: 'baden-slide1',
     title: 'Die Stadt Baden',
     videoSrc: videoBaden,
     animDurationInSec: 3,
@@ -77,7 +76,6 @@ export const badenSlideData: Array<VideoSlideItem> = [
 
   // SEQUENCE 2
   {
-    className: 'baden-slide2',
     title: 'Die Stadt Baden',
     videoSrc: videoBaden2,
     animDurationInSec: 10,
@@ -110,7 +108,6 @@ export const badenSlideData: Array<VideoSlideItem> = [
 
   // SEQUENCE 3
   {
-    className: 'baden-slide3',
     title: 'Die Stadt Baden',
     videoSrc: videoBaden3,
     animDurationInSec: 6,

@@ -13,7 +13,6 @@ import {PopupOverlayProps} from './overlays/PopupOverlay';
 import {SlideInOverlayProps} from './overlays/SlideInOverlay';
 
 export interface VideoSlideItem {
-  className: string,
   title: string,
   videoSrc: string,
   animDurationInSec: number,
@@ -109,7 +108,7 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
   }
 
   return (
-    <div className={`VideoSlide ${props.className}`}>
+    <div className={`VideoSlide`}>
       <BackgroundVideoContainer source={props.videoSrc}
                                 playVideo={true}
                                 onVideoEnded={onVideoEnded}>
