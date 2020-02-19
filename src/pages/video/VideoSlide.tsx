@@ -35,22 +35,40 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
   const [slidePaused, setSlidePaused] = useState(false);
 
   const {popupComponent, setPopupComponent, slideInComponent, setSlideInComponent} = props;
-
   const animationStaggerInSec: number = 3;
 
   const getFilteredPoiLabelItems = (itemArray: Array<PoiLabelItem>, dismissedFiltersArray: Array<{ type: string }>): Array<PoiLabelItem> => {
-    const filteredArray:Array<PoiLabelItem> = [];
-    itemArray.forEach(item => {
-      const itemIsDismissed = dismissedFiltersArray.some(dismissedItem => dismissedItem.type === item.type);
-      if(!itemIsDismissed) {
-        itemArray.push(item)
-      }
-    })
+    if (dismissedFiltersArray === undefined || dismissedFiltersArray.length === 0) {
+      return itemArray
+    } else {
+      const filteredArray: Array<PoiLabelItem> = [];
+      itemArray.forEach(item => {
+        const itemIsDismissed = dismissedFiltersArray.some(dismissedItem => dismissedItem.type === item.type);
+        if (!itemIsDismissed) {
+          filteredArray.push(item)
+        }
+      })
+      return filteredArray
+    }
+  };
 
-    return filteredArray
-  }
+  const getFilteredInfoLabelItems = (itemArray: Array<InfoLabelItem>, dismissedFiltersArray: Array<{ type: string }>): Array<InfoLabelItem> => {
+    if (dismissedFiltersArray === undefined || dismissedFiltersArray.length === 0) {
+      return itemArray
+    } else {
+      const filteredArray: Array<InfoLabelItem> = [];
+      itemArray.forEach(item => {
+        const itemIsDismissed = dismissedFiltersArray.some(dismissedItem => dismissedItem.type === item.type);
+        if (!itemIsDismissed) {
+          filteredArray.push(item)
+        }
+      })
+      return filteredArray
+    }
+  };
 
   const filteredPoiLabelItems = getFilteredPoiLabelItems(props.poiLabelItems, location.state.dismissedFilters);
+  const filteredInfoLabelItems = getFilteredInfoLabelItems(props.infoLabelItems, location.state.dismissedFilters)
 
   const onVideoEnded = () => {
     setAnimationStarted(true);
@@ -113,7 +131,7 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
           )}
 
 
-          {props.infoLabelItems.map((d, i) => {
+          {filteredInfoLabelItems.map((d, i) => {
             const index = filteredPoiLabelItems.length + i;
             const styles = getTransitionStyles(index, 2)
             return (
