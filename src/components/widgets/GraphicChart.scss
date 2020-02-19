@@ -1,0 +1,42 @@
+.GraphicChart {
+
+
+  .label-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: unset;
+    list-style: none;
+
+    li {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        left: -1.3rem;
+        content: "\2022";
+      }
+
+      h2 {
+        margin: unset;
+      }
+
+      &.is-active {
+        &::before {
+          color: white;
+          font-size: 1.6rem;
+          font-weight: bolder;
+        }
+      }
+
+      &.is-inactive {
+        color: white;
+        opacity: $defaultOpacity;
+
+        h2 {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
