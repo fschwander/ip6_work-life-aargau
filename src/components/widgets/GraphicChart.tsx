@@ -17,22 +17,20 @@ export const GraphicChart: React.FC<GraphicChartProps> = props => {
   const SVGImage = props.svgComponent
   const isInitialMount = useRef(true);
 
-
   const updateMap = () => {
 
     d3.select(rootRef.current).select('#graphics')
       .selectAll('g')
-      .classed('is-active',(d,i) => i === activeIndex)
-      .on('click', (d,i) => setActiveIndex(i))
-      .attr('stroke','white')
-      .attr('opacity', (d,i) => `${activeIndex === i ? '1' : '0.4'}`)
+      .classed('is-active', (d, i) => i === activeIndex)
+      .on('click', (d, i) => setActiveIndex(i))
+      .attr('stroke', 'white')
+      .attr('opacity', (d, i) => `${activeIndex === i ? '1' : '0.4'}`)
 
   }
 
   useEffect(() => {
     if (isInitialMount.current) {
       isInitialMount.current = false;
-      // initChart();
     }
     updateMap();
 
@@ -43,22 +41,19 @@ export const GraphicChart: React.FC<GraphicChartProps> = props => {
       <div className='chart-container' ref={rootRef}>
         <SVGImage/>
       </div>
-        <ul className='label-container'>
-          {props.data.map((d, i) => {
-            return (
-              <li key={d.name + i}
-                  className={`button ${activeIndex === i ? 'is-active' : 'is-inactive'}`}
-                  onClick={() => setActiveIndex(i)}>
-                <div>
-                  <h2>{d.value}</h2>
-                  <p>{d.name}</p>
-                </div>
-              </li>)
-          })}
-        </ul>
-
-
-
+      <ul className='label-container'>
+        {props.data.map((d, i) => {
+          return (
+            <li key={d.name + i}
+                className={`button ${activeIndex === i ? 'is-active' : 'is-inactive'}`}
+                onClick={() => setActiveIndex(i)}>
+              <div>
+                <h2>{d.value}</h2>
+                <p>{d.name}</p>
+              </div>
+            </li>)
+        })}
+      </ul>
     </div>
   )
 }
