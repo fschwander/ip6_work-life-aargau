@@ -1,4 +1,6 @@
 import React from 'react';
+import {GraphicChart} from '../../../../components/widgets/GraphicChart';
+import {ReactComponent as SVGImage} from '../../../../res/graphics/education.svg';
 import iconCommunity from '../../../../res/icons/community.svg';
 import iconResearch from '../../../../res/icons/research.svg';
 import {Constants} from '../../../../services/Constants';
@@ -6,7 +8,7 @@ import iconEducation from '../../../../res/icons/education.svg'
 import imgEducation from '../../../../res/imgs/ol_education.jpg'
 import imgEducation2 from '../../../../res/imgs/ol_education2.jpg'
 import imgEducation3 from '../../../../res/imgs/ol_education3.jpg'
-import {PlaceholderChart, PopupOverlayInterface} from "../PopupOverlayInterface";
+import {PopupOverlayInterface} from "../PopupOverlayInterface";
 
 export const education: PopupOverlayInterface = {
   type: Constants.TYPE_LIFE,
@@ -45,8 +47,14 @@ export const education: PopupOverlayInterface = {
   ],
 
   graph: {
-    title: "",
-    chartComponent: <PlaceholderChart/>
+    title: "Bildungsstand in Aargau (2017)",
+    chartComponent: <GraphicChart svgComponent={SVGImage}
+                                  data={[
+                                    {name: 'Ohne Weiterbildung', value: '18.1%'},
+                                    {name: 'Sekundarstufe II',value: '49.9%'},
+                                    {name: 'Tertiärstufe',value: '32.0%'},
+                                    {name: 'Hochschulabschlussquote',value: '22.7%'}]}
+    />
   },
 
   details: [
