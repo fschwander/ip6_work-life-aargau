@@ -43,8 +43,8 @@ export const hikingTrails: PopupOverlayInterface = {
     title: "Grafische Darstellung der Oberflächenstruktur",
     chartComponent: <GraphicChart svgComponent={SVGImage}
                                   data={[
-                                    {name: 'Naturbelag', value: '30.4%'},
-                                    {name: 'Hartbelag', value: '69.6%'}]}
+                                    {name: 'Naturbelag', value: '69.6%'},
+                                    {name: 'Hartbelag', value: '30.4%'}]}
     />
   },
   details: [
