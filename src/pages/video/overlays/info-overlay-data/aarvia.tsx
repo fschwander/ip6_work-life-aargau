@@ -48,9 +48,9 @@ export const aarvia: PopupOverlayInterface = {
     title: "Nationalstrassenlänge in 2018 (Kilometer)",
     chartComponent: <GraphicChart svgComponent={SVGImage}
                                   data={[
-                                    {name: 'Gemischverkehrs-strassen', value: "1'846"},
-                                    {name: 'Autostrassen (2- und 3- spurig)', value: "1'745"},
-                                    {name: 'Autobahnen (4- spurig und mehr)', value: "1'450"}]}
+                                    {name: 'Gemischverkehr', value: "1'846"},
+                                    {name: 'Autostrassen', value: "1'745"},
+                                    {name: 'Autobahnen', value: "1'450"}]}
     />
   },
 
