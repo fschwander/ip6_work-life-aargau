@@ -10,6 +10,12 @@
 
     li {
       position: relative;
+      margin-bottom: .3rem;
+
+      .value {
+        display: flex;
+        align-items: baseline;
+      }
 
       &::before {
         position: absolute;

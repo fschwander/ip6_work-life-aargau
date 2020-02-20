@@ -7,12 +7,13 @@ interface GraphicChartProps {
 }
 
 interface DataInterface {
-  name: string,
+  name?: string,
+  unit?: string,
   value: string
 }
 
 export const GraphicChart: React.FC<GraphicChartProps> = props => {
-  const [activeIndex, setActiveIndex] = useState(1);
+  const [activeIndex, setActiveIndex] = useState(0);
   const rootRef: React.RefObject<HTMLDivElement> = React.createRef();
   const SVGImage = props.svgComponent
   const isInitialMount = useRef(true);
@@ -44,11 +45,13 @@ export const GraphicChart: React.FC<GraphicChartProps> = props => {
       <ul className='label-container'>
         {props.data.map((d, i) => {
           return (
-            <li key={d.name + i}
+            <li key={d.value + i}
                 className={`button ${activeIndex === i ? 'is-active' : 'is-inactive'}`}
                 onClick={() => setActiveIndex(i)}>
               <div>
-                <h2>{d.value}</h2>
+                <div className='value'>
+                  <h2>{d.value}</h2>{d.unit !== undefined ? <h3>{"\u00a0" + d.unit}</h3> : null}
+                </div>
                 <p>{d.name}</p>
               </div>
             </li>)
