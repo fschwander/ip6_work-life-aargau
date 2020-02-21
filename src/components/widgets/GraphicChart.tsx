@@ -1,5 +1,5 @@
 import * as d3 from 'd3';
-import React, {useEffect, useRef, useState} from 'react';
+import React, {useEffect, useState} from 'react';
 
 interface GraphicChartProps {
   svgComponent: React.FC,
@@ -16,7 +16,6 @@ export const GraphicChart: React.FC<GraphicChartProps> = props => {
   const [activeIndex, setActiveIndex] = useState(0);
   const rootRef: React.RefObject<HTMLDivElement> = React.createRef();
   const SVGImage = props.svgComponent
-  const isInitialMount = useRef(true);
 
   const updateMap = () => {
 
@@ -26,15 +25,10 @@ export const GraphicChart: React.FC<GraphicChartProps> = props => {
       .on('click', (d, i) => setActiveIndex(i))
       .attr('stroke', 'white')
       .attr('opacity', (d, i) => `${activeIndex === i ? '1' : '0.4'}`)
-
   }
 
   useEffect(() => {
-    if (isInitialMount.current) {
-      isInitialMount.current = false;
-    }
     updateMap();
-
   })
 
   return (
