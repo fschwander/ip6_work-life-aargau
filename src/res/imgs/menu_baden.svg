@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="1920px" height="1080px" preserveAspectRatio="xMidYMid slice"  viewBox="0 0 1920 1080" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="1920px" height="1080px" preserveAspectRatio="xMidYMid slice" viewBox="0 0 1920 1080" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
     <title>Baden Copy</title>
     <desc>Created with Sketch.</desc>
@@ -20,6 +20,11 @@
     <g id="Baden-Copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <path d="M566.967726,813.755555 C596.345248,817.049182 626.038881,820.630664 656.048624,824.5 C729.539059,833.975562 911.681267,900.741367 1014.72276,907.298959 C1035.88762,908.645898 1065.3657,893.212243 1076.52276,864.5 C1088.007,834.945785 1080.96726,791.891575 1088.7,779.1202 C1099.40851,761.434055 1128.42751,748.744571 1159.54455,756.325539 C1195.49627,765.084368 1224.85719,793.64296 1250,800.56357 C1331.29347,822.939762 1417.98268,828.250476 1443.78748,793.64296 C1466.99199,762.52276 1437.1734,739.313953 1443.78748,695.514149 C1451.13831,646.835389 1479.82818,598.986405 1501.5,575 C1539.6922,532.728806 1566.02138,474.39032 1570.73975,448.52276 C1572.97213,436.284176 1574.15131,416.229253 1570.73975,391.5 C1569.02528,379.072371 1564.2604,357.405705 1556.44512,326.5" id="flying-path" stroke="url(#linearGradient-1)" stroke-width="11" opacity="0.5" stroke-linecap="round"></path>
         <g id="poi-real-estate-filter" transform="translate(1343.000000, 638.000000)">
+            <circle id="Oval" fill="#FFFFFF" opacity="0.400000006" cx="22.8214799" cy="22.8214799" r="22.8214799"></circle>
+            <circle id="Oval-Copy-6" fill="#FFFFFF" cx="22.8214799" cy="22.8214799" r="8.29871995"></circle>
+            <circle id="Oval-Copy-11" fill="#FFC500" cx="22.87276" cy="22.87276" r="3.85"></circle>
+        </g>
+        <g id="poi-leisure-filter" transform="translate(1487.000000, 182.000000)">
             <circle id="Oval" fill="#FFFFFF" opacity="0.400000006" cx="22.8214799" cy="22.8214799" r="22.8214799"></circle>
             <circle id="Oval-Copy-6" fill="#FFFFFF" cx="22.8214799" cy="22.8214799" r="8.29871995"></circle>
             <circle id="Oval-Copy-11" fill="#FFC500" cx="22.87276" cy="22.87276" r="3.85"></circle>

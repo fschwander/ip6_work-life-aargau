@@ -33,6 +33,11 @@ export const BadenFilterSlide: React.FC<AarauSlideProps> = props => {
       type: Constants.FILTER_POI_HISTORY
     },
     {
+      name: "Freizeit",
+      isActive: true,
+      type: Constants.FILTER_POI_LEISURE
+    },
+    {
       name: "Immobilien",
       isActive: true,
       type: Constants.FILTER_POI_REAL_ESTATE
