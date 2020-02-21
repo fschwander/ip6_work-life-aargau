@@ -66,7 +66,7 @@ export const hideDismissedLabels = (arrays: Array<Array<OptionFilter>>) => {
 
   filterList.dismissedFilters.forEach(f => {
     const label = svg.selectAll('#' + f.type)
-    label.attr('opacity', 0)
+    label.transition().duration(500).attr('opacity', 0)
   })
 }
 
