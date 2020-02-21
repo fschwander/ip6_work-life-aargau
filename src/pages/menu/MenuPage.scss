@@ -2,6 +2,23 @@
   background-size: cover;
   background-position: center;
 
+  svg {
+    #subgroup {
+      animation: linear infinite rotate 10s;
+      transform-origin: center;
+      transform-box: fill-box;
+    }
+
+    @keyframes rotate {
+      from {
+        transform: rotate(0);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  }
+
   .SlideInContainer {
     h3 {
       max-width: 400px;
