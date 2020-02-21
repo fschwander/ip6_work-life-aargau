@@ -70,7 +70,7 @@ export const aarauSlideData: Array<VideoSlideItem> = [
       {
         title: 'Interiors',
         subtitle: 'Aargauer Unternehmen',
-        type: Constants.FILTER_ENTERPRISE_INFRASTRUCTURE,
+        type: Constants.FILTER_ENTERPRISE_INTERIORS,
         className: 'killer',
         overlayComponent: <PopupOverlay data={killer}/>,
         svgComponent: svgInterior,
@@ -81,7 +81,7 @@ export const aarauSlideData: Array<VideoSlideItem> = [
       {
         title: 'Bildung & Forschung',
         subtitle: 'Aargauer Vorteile',
-        type: Constants.FILTER_POI_REAL_ESTATE,
+        type: Constants.FILTER_POI_EDUCATION,
         className: 'education',
         overlayComponent: <PopupOverlay data={education}/>,
         svgComponent: svgEducation,

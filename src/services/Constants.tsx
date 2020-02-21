@@ -47,7 +47,12 @@ export class Constants {
   public static get FILTER_ENTERPRISE_CONSTRUCTION(): string {
     return 'enterprise-construction-filter';
   }
-
+  public static get FILTER_ENTERPRISE_INTERIORS(): string {
+    return 'enterprise-interiors-filter';
+  }
+  public static get FILTER_POI_EDUCATION(): string {
+    return 'poi-education-filter';
+  }
   public static get FILTER_ENTERPRISE_REAL_ESTATE(): string {
     return 'enterprise-real-estate-filter';
   }
