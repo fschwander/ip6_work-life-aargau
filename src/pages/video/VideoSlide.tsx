@@ -66,8 +66,9 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
     }
   };
 
-  const filteredPoiLabelItems = getFilteredPoiLabelItems(props.poiLabelItems, location.state.dismissedFilters);
-  const filteredInfoLabelItems = getFilteredInfoLabelItems(props.infoLabelItems, location.state.dismissedFilters)
+  const dismissedFilters = location.state === undefined || location.state.dismissedFilters === undefined ? [] : location.state.dismissedFilters;
+  const filteredPoiLabelItems = getFilteredPoiLabelItems(props.poiLabelItems, dismissedFilters);
+  const filteredInfoLabelItems = getFilteredInfoLabelItems(props.infoLabelItems, dismissedFilters)
 
   const onVideoEnded = () => {
     setAnimationStarted(true);
