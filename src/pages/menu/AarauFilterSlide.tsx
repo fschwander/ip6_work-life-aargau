@@ -1,9 +1,9 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {useHistory} from 'react-router-dom';
 import {NavBackButton} from '../../components/buttons/NavBackButton';
 import {RectButton} from '../../components/buttons/RectButton';
 import {Constants} from '../../services/Constants';
-import {getDismissedFilters, mapExclusiveFilters, mapOptionFilters} from './MenuFilterPage';
+import {getDismissedFilters, hideDismissedLabels, mapExclusiveFilters, mapOptionFilters} from './MenuFilterPage';
 import {MenuSlideInterface} from './MenuPage';
 
 interface AarauSlideProps {
@@ -64,6 +64,10 @@ export const AarauFilterSlide: React.FC<AarauSlideProps> = props => {
     const dismissedFilters = getDismissedFilters([enterpriseFilters, highlightFilter])
     history.push('/aarau', dismissedFilters)
   }
+
+  useEffect(() => {
+    hideDismissedLabels([enterpriseFilters, highlightFilter])
+  })
 
   return (
     <div className='AarauFilterSlide'>
