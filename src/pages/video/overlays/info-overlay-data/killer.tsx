@@ -1,7 +1,7 @@
 import React from 'react';
 import {GraphicChart} from '../../../../components/widgets/GraphicChart';
 import {ReactComponent as SVGImage} from '../../../../res/graphics/killer.svg';
-import iconEngineering from '../../../../res/icons/engineering.svg';
+import iconInterior from '../../../../res/icons/interior.svg';
 import iconLink from '../../../../res/icons/link.svg';
 import imgDetails from '../../../../res/imgs/ol_killer.jpg';
 import {Constants} from '../../../../services/Constants';
@@ -32,8 +32,8 @@ export const killer: PopupOverlayInterface = {
 
   topics: [
     {
-      icon: iconEngineering,
-      text: "Bauwesen"
+      icon: iconInterior,
+      text: "Interior"
     }
   ],
 
