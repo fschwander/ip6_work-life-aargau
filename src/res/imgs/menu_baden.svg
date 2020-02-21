@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="1920px" height="1080px" preserveAspectRatio="xMidYMid slice" viewBox="0 0 1920 1080" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="1920px" height="1080px" preserveAspectRatio="xMidYMid slice"  viewBox="0 0 1920 1080" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
     <title>Baden Copy</title>
     <desc>Created with Sketch.</desc>
@@ -13,7 +13,7 @@
             <stop stop-color="#000000" offset="0%"></stop>
             <stop stop-color="#000000" offset="100%"></stop>
         </linearGradient>
-        <filter x="-10.9%" y="-352.9%" width="121.9%" height="805.9%" filterUnits="objectBoundingBox" id="filter-3">
+        <filter x="-9.9%" y="-352.9%" width="119.7%" height="805.9%" filterUnits="objectBoundingBox" id="filter-3">
             <feGaussianBlur stdDeviation="20" in="SourceGraphic"></feGaussianBlur>
         </filter>
     </defs>
@@ -73,22 +73,22 @@
         <path id="Path-4" d="M810.303571,888.046279 C821.936324,891.713888 830.183959,894.327214 835.04741,895.886555 C837.637443,896.716983 840.875435,897.659794 844.75126,898.71208 L845.441849,898.898914 L853.353,900.942 L846.174833,894.049697 C845.807135,893.696575 845.767943,893.13002 846.064975,892.731642 L846.146242,892.635773 C846.499364,892.268074 847.065919,892.228883 847.464297,892.525915 L847.560167,892.607182 L857.490566,902.143935 L858.772802,903.375343 L857.054592,903.831686 L843.747752,907.365879 C843.213973,907.507647 842.666334,907.189858 842.524566,906.656079 C842.392925,906.160427 842.657533,905.652824 843.12338,905.469331 L843.234366,905.432893 L852.851,902.878 L844.931446,900.832661 C840.710084,899.694627 837.212471,898.681013 834.436779,897.791058 C829.577223,896.232965 821.332048,893.620419 809.702186,889.953721 C809.175461,889.787654 808.88309,889.226034 809.049157,888.699308 C809.215225,888.172582 809.776845,887.880211 810.303571,888.046279 Z" fill="#FFFFFF" fill-rule="nonzero"></path>
         <path id="Path-5" d="M1121.84639,722.645117 L1121.95685,722.683117 L1134.69664,727.904242 L1136.34163,728.578405 L1134.91127,729.634129 L1123.83368,737.810283 C1123.38932,738.138254 1122.76323,738.043905 1122.43526,737.599548 C1122.13251,737.189372 1122.18962,736.624342 1122.54969,736.281883 L1122.64599,736.201124 L1130.652,730.291 L1122.66224,731.282643 C1117.08463,732.176847 1112.24987,733.311085 1108.15985,734.68308 C1103.65557,736.194036 1094.2901,740.038302 1089.96722,742.241115 C1089.47514,742.491865 1088.87295,742.296228 1088.6222,741.804148 C1088.37145,741.312068 1088.56709,740.709885 1089.05917,740.459135 C1093.47498,738.208967 1102.9306,734.327701 1107.52378,732.786921 C1111.50451,731.45159 1116.1477,730.341164 1121.48486,729.449455 L1122.38081,729.302861 L1130.406,728.307 L1121.19842,724.533732 C1120.72388,724.339256 1120.47918,723.821766 1120.61432,723.339669 L1120.65232,723.229208 C1120.8468,722.754677 1121.36429,722.509969 1121.84639,722.645117 Z" fill="#FFFFFF" fill-rule="nonzero"></path>
         <path id="Path-6" d="M1475.81136,737.865117 L1476.889,739.279047 L1485.23483,750.229367 C1485.56961,750.668619 1485.48492,751.296094 1485.04567,751.630872 C1484.6402,751.939898 1484.07436,751.891504 1483.7264,751.536747 L1483.64416,751.441705 L1477.612,743.527 L1478.7346,751.560229 C1479.29881,756.453897 1479.58139,760.58702 1479.58139,763.963738 C1479.58139,769.642114 1478.78184,777.468774 1477.18492,787.457348 C1477.09773,788.002707 1476.58495,788.374127 1476.03959,788.286938 C1475.49423,788.199749 1475.12281,787.686968 1475.21,787.141609 C1476.79166,777.248463 1477.58139,769.517963 1477.58139,763.963738 C1477.58139,760.845231 1477.33229,757.037645 1476.83584,752.564794 L1476.75081,751.813163 L1475.631,743.803 L1472.00046,753.068849 C1471.81331,753.546319 1471.29965,753.79897 1470.81553,753.671264 L1470.7045,753.634971 C1470.22703,753.447828 1469.97438,752.934169 1470.10208,752.450048 L1470.13838,752.339014 L1475.16262,739.520299 L1475.81136,737.865117 Z" fill="#FFFFFF" fill-rule="nonzero"></path>
-        <g id="legend" transform="translate(1283.000000, 1015.000000)">
-            <rect id="legend_bg" fill="url(#linearGradient-2)" filter="url(#filter-3)" x="0" y="0" width="549" height="17"></rect>
+        <g id="legend" transform="translate(1223.000000, 1015.000000)">
+            <rect id="legend_bg" fill="url(#linearGradient-2)" filter="url(#filter-3)" x="0" y="0" width="609" height="17"></rect>
             <g id="highlights">
                 <circle id="Oval" stroke="#FFFFFF" cx="5" cy="9" r="4.5"></circle>
                 <rect id="Rectangle" stroke="#FFFFFF" x="4" y="8" width="2" height="2"></rect>
-                <text id="HIGHLIGHTS" font-family="OpenSans-Regular, Open Sans" font-size="12" font-weight="normal" letter-spacing="1.875" fill="#FFFFFF">
-                    <tspan x="18" y="13">HIGHLIGHTS</tspan>
+                <text id="LOKALE-HIGHLIGHTS" font-family="OpenSans-Regular, Open Sans" font-size="12" font-weight="normal" letter-spacing="1.875" fill="#FFFFFF">
+                    <tspan x="18" y="13">LOKALE HIGHLIGHTS</tspan>
                 </text>
             </g>
-            <g id="companies" transform="translate(123.000000, 0.000000)">
+            <g id="companies" transform="translate(183.000000, 0.000000)">
                 <circle id="Oval-Copy-8" fill="#FF0000" cx="5" cy="9" r="5"></circle>
                 <text id="UNTERNEHMEN" font-family="OpenSans-Regular, Open Sans" font-size="12" font-weight="normal" letter-spacing="1.875" fill="#FFFFFF">
                     <tspan x="18" y="13">UNTERNEHMEN</tspan>
                 </text>
             </g>
-            <g id="POIs" transform="translate(268.000000, 0.000000)">
+            <g id="POIs" transform="translate(328.000000, 0.000000)">
                 <circle id="Oval-Copy-8" fill="#FFC500" cx="5" cy="9" r="5"></circle>
                 <text id="sehenswürdigkeiten-U" font-family="OpenSans-Regular, Open Sans" font-size="12" font-weight="normal" letter-spacing="1.875" fill="#FFFFFF">
                     <tspan x="18" y="13">SEHENSWÜRDIGKEITEN UND FAKTEN</tspan>
