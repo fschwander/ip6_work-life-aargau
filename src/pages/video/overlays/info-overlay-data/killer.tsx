@@ -1,9 +1,11 @@
 import React from 'react';
+import {GraphicChart} from '../../../../components/widgets/GraphicChart';
+import {ReactComponent as SVGImage} from '../../../../res/graphics/killer.svg';
 import iconEngineering from '../../../../res/icons/engineering.svg';
 import iconLink from '../../../../res/icons/link.svg';
 import imgDetails from '../../../../res/imgs/ol_killer.jpg';
 import {Constants} from '../../../../services/Constants';
-import {PlaceholderChart, PopupOverlayInterface} from "../PopupOverlayInterface";
+import {PopupOverlayInterface} from "../PopupOverlayInterface";
 
 export const killer: PopupOverlayInterface = {
   type: Constants.TYPE_WORK,
@@ -36,8 +38,15 @@ export const killer: PopupOverlayInterface = {
   ],
 
   graph: {
-    title: "",
-    chartComponent: <PlaceholderChart/>
+    title: "Der Leistungsablauf",
+    chartComponent: <GraphicChart svgComponent={SVGImage}
+                                  data={[
+                                    {value: 'Konzeption'},
+                                    {value: 'Plannung'},
+                                    {value: 'Produktion'},
+                                    {value: 'Logistik'},
+                                    {value: 'Montage'}]}
+    />
   },
 
   details: [

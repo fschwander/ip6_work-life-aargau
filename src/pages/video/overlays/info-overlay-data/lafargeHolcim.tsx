@@ -1,10 +1,12 @@
 import React from 'react';
+import {GraphicChart} from '../../../../components/widgets/GraphicChart';
+import {ReactComponent as SVGImage} from '../../../../res/graphics/holcim.svg';
 import iconConstruction from '../../../../res/icons/construction.svg'
 import iconEngineering from '../../../../res/icons/engineering.svg'
 import imgDetails from '../../../../res/imgs/ol_lafarge-holcim.jpg';
 import imgDetails2 from '../../../../res/imgs/ol_lafarge-holcim2.jpg';
 import {Constants} from "../../../../services/Constants";
-import {PlaceholderChart, PopupOverlayInterface} from "../PopupOverlayInterface";
+import {PopupOverlayInterface} from "../PopupOverlayInterface";
 
 export const lafargeHolcim: PopupOverlayInterface = {
   type: Constants.TYPE_WORK,
@@ -36,7 +38,13 @@ export const lafargeHolcim: PopupOverlayInterface = {
 
   graph: {
     title: "Zementproduktionskapazität der LafargeHolcim Ltd. weltweit (Mill. Tonnen)",
-    chartComponent: <PlaceholderChart/>
+    chartComponent: <GraphicChart svgComponent={SVGImage}
+                                  data={[
+                                    {value: '374', unit: 'Tonnen'},
+                                    {value: '353,3', unit: 'Tonnen'},
+                                    {value: '318,4', unit: 'Tonnen'},
+                                    {value: '312,9', unit: 'Tonnen'}]}
+    />
   },
 
   details: [

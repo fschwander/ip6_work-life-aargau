@@ -1,11 +1,13 @@
 import React from 'react';
+import {GraphicChart} from '../../../../components/widgets/GraphicChart';
+import {ReactComponent as SVGImage} from '../../../../res/graphics/real-estate.svg';
 import iconLink from '../../../../res/icons/link.svg';
 import iconRealEstate from '../../../../res/icons/realestate.svg'
 import imgRealEstate from '../../../../res/imgs/ol_real-estate.png'
 import imgRealEstate2 from '../../../../res/imgs/ol_real-estate2.png'
 import imgRealEstate3 from '../../../../res/imgs/ol_real-estate3.png'
 import {Constants} from '../../../../services/Constants';
-import {PlaceholderChart, PopupOverlayInterface} from "../PopupOverlayInterface";
+import {PopupOverlayInterface} from "../PopupOverlayInterface";
 
 export const realEstate: PopupOverlayInterface = {
   type: Constants.TYPE_LIFE,
@@ -37,7 +39,14 @@ export const realEstate: PopupOverlayInterface = {
 
   graph: {
     title: "Wohnflächen (Miete ca. 3-Zi-Wohnung)",
-    chartComponent: <PlaceholderChart/>
+    chartComponent: <GraphicChart svgComponent={SVGImage}
+                                  data={[
+                                    {value: "1'220", unit: 'CHF'},
+                                    {value: "1'400", unit: 'CHF'},
+                                    {value: "1'420", unit: 'CHF'},
+                                    {value: "1'720", unit: 'CHF'},
+                                    {value: "1'850", unit: 'CHF'}]}
+    />
   },
 
   details: [

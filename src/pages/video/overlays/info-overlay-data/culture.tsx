@@ -1,8 +1,10 @@
 import React from 'react';
+import {GraphicChart} from '../../../../components/widgets/GraphicChart';
+import {ReactComponent as SVGImage} from '../../../../res/graphics/culture.svg';
 import iconHiking from '../../../../res/icons/hiking.svg';
 import iconHistory from '../../../../res/icons/history.svg';
 import {Constants} from '../../../../services/Constants';
-import {PlaceholderChart, PopupOverlayInterface} from "../PopupOverlayInterface";
+import {PopupOverlayInterface} from "../PopupOverlayInterface";
 import imgCulture from '../../../../res/imgs/ol_culture.png'
 import imgCulture2 from '../../../../res/imgs/ol_culture2.jpg'
 import imgCulture3 from '../../../../res/imgs/ol_culture3.png'
@@ -57,8 +59,14 @@ export const culture: PopupOverlayInterface = {
   ],
 
   graph: {
-    title: "",
-    chartComponent: <PlaceholderChart/>
+    title: "Museen, Kinos, Bibliotheken und Bäder in Aargau (2015)",
+    chartComponent: <GraphicChart svgComponent={SVGImage}
+                                  data={[
+                                    {name: 'Museen', value: '88'},
+                                    {name: 'Kinos',value: '23'},
+                                    {name: 'Bibliotheken',value: '92'},
+                                    {name: 'Bäder',value: '81'}]}
+    />
   },
 
   details: [
