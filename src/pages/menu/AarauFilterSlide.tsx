@@ -21,19 +21,26 @@ export const AarauFilterSlide: React.FC<AarauSlideProps> = props => {
       type: Constants.FILTER_MAJOR
     },
     {
+      name: 'Interior',
+      isActive: true,
+      type: Constants.FILTER_ENTERPRISE_INTERIORS
+    },
+    {
       name: 'Bauwesen',
       isActive: true,
       type: Constants.FILTER_ENTERPRISE_CONSTRUCTION
     },
     {
-      name: 'Immobilien',
-      isActive: true,
-      type: Constants.FILTER_ENTERPRISE_REAL_ESTATE
-    },
-    {
       name: 'Infrastruktur',
       isActive: true,
       type: Constants.FILTER_ENTERPRISE_INFRASTRUCTURE
+    }
+  ]);
+  const [poiFilters, setPoiFilters] = useState([
+    {
+      name: "Bildung",
+      isActive: true,
+      type: Constants.FILTER_POI_EDUCATION
     }
   ]);
   const [highlightFilter, setHighlightFilter] = useState([
@@ -54,6 +61,10 @@ export const AarauFilterSlide: React.FC<AarauSlideProps> = props => {
       {mapOptionFilters(enterpriseFilters, setEnterpriseFilters)}
     </div>
   )
+  const PoiFilterChips = () => (
+    <div className='selection-container horizontal-container'>
+      {mapOptionFilters(poiFilters, setPoiFilters)}
+    </div>);
   const HighlightFilterChips = () => (
     <div className='selection-container horizontal-container'>
       {mapExclusiveFilters(highlightFilter, setHighlightFilter)}
@@ -61,7 +72,7 @@ export const AarauFilterSlide: React.FC<AarauSlideProps> = props => {
   )
 
   const goToAarauVideoSlide = () => {
-    const dismissedFilters = getDismissedFilters([enterpriseFilters, highlightFilter])
+    const dismissedFilters = getDismissedFilters([enterpriseFilters, poiFilters, highlightFilter])
     history.push('/aarau', dismissedFilters)
   }
 
@@ -78,6 +89,10 @@ export const AarauFilterSlide: React.FC<AarauSlideProps> = props => {
       <h3>Unternehmensprofile</h3>
       <p>Welche Fachgebiete interessieren dich?</p>
       <EnterpriseFilterChips/>
+
+      <h3>Sehenswürdigkeiten und Fakten</h3>
+      <p>Erfahre mehr über den Kanton. Was sind deine Interessen?</p>
+      <PoiFilterChips/>
 
       <h3>Lokale Highlights</h3>
       <p>Möchtest du die lokalen Highlights sehen? Dies können z. B. Schlösser, kulturelles Erbe oder berühmte Gebäude
