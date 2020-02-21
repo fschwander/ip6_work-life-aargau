@@ -77,7 +77,7 @@ export const AarauFilterSlide: React.FC<AarauSlideProps> = props => {
   }
 
   useEffect(() => {
-    hideDismissedLabels([enterpriseFilters, highlightFilter])
+    hideDismissedLabels([enterpriseFilters, poiFilters, highlightFilter])
   })
 
   return (
