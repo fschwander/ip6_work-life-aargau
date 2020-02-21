@@ -18,7 +18,7 @@ export const BadenFilterSlide: React.FC<AarauSlideProps> = props => {
     {
       name: 'Sport',
       isActive: true,
-      type: Constants.FILTER_ENTERPRISE_SPORT
+      type: Constants.FILTER_ENTERPRISE_LEISURE
     }
   ]);
   const [poiFilters, setPoiFilters] = useState([
@@ -26,11 +26,6 @@ export const BadenFilterSlide: React.FC<AarauSlideProps> = props => {
       name: 'alle',
       isActive: true,
       type: Constants.FILTER_MAJOR
-    },
-    {
-      name: "Freizeit",
-      isActive: true,
-      type: Constants.FILTER_ENTERPRISE_LEISURE
     },
     {
       name: "Geschichte",
