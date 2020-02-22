@@ -133,14 +133,14 @@
         .bottom-element {
           &.text-container {
             opacity: 1;
-            animation: fade-out 1s ease-out 9s forwards;
+            animation: fade-out 1s ease-out 5s forwards;
           }
 
           &.go-to-main-button {
             text-transform: uppercase;
             opacity: 0;
             padding: 0.5rem 3.5rem;
-            animation: fade-in 1s ease-in 11s forwards;
+            animation: fade-in 1s ease-in 7s forwards;
 
             p {
               font-size: 1rem;
