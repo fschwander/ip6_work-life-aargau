@@ -34,8 +34,13 @@
       max-width: 500px;
     }
 
+    .scroll-container::-webkit-scrollbar {
+      display: none;
+    }
+
     .scroll-container {
       display: flex;
+      -ms-overflow-style: none;
 
       .HomeSlide {
         align-self: center;
