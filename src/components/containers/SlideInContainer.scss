@@ -8,7 +8,7 @@
 
   &.slide-in-from-right {
     right: 0;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.9) 40%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.8) 40%);
     animation: 1s slide-in-from-right ease-out;
 
     .scroll-container {
@@ -18,7 +18,7 @@
 
   &.slide-in-from-left {
     left: 0;
-    background: linear-gradient(to left, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.9) 40%);
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.8) 40%);
     animation: 1s slide-in-from-left ease-out;
 
     .scroll-container {

@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router, Redirect, Route, Switch} from 'react-router-dom';
+import {HashRouter as Router, Redirect, Route, Switch} from 'react-router-dom';
 import {Navigation} from './components/widgets/Navigation';
 import App from './pages/App';
 import {IntroductionPage} from './pages/intro/IntroductionPage';
