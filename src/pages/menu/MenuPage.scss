@@ -52,10 +52,14 @@
     }
 
     .selection-button-container {
-      padding-top: 1rem;
+      max-width: 500px;
+      flex-wrap: wrap;
+      margin-top: 1rem;
 
-      .RectButton:not(:last-child) {
-        margin-right: 1rem;
+      .RectButton {
+        &:not(:last-child) {
+          margin-right: 1rem;
+        }
       }
     }
 
