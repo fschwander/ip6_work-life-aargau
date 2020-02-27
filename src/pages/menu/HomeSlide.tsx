@@ -28,6 +28,14 @@ export const HomeSlide:React.FC<HomeSlideProps> = props => {
                       onClick={props.goToBadenSlide} text={'Baden'}
                       onMouseOver={() => props.setBadenVisible(true)}
                       onMouseLeave={() => props.setBadenVisible(false)}/>
+          <RectButton onClick={() => {}} text={'Brugg'} isActive={false}/>
+        </div>
+        <div className={'selection-button-container horizontal-container'}>
+          <RectButton onClick={() => {}} text={'Lenzburg'} isActive={false}/>
+          <RectButton onClick={() => {}} text={'Wohlen'} isActive={false}/>
+        </div>
+        <div className={'selection-button-container horizontal-container'}>
+          <RectButton onClick={() => {}} text={'...'} isActive={false}/>
         </div>
       </div>
     </div>
