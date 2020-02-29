@@ -39,12 +39,20 @@ export const IntroductionPage: React.FC = () => {
     })
   }
 
+  const AboutUsButton = () => {
+    return <div className={'AboutUsButton button'}>
+      <h3>Über uns<br/>& Credits</h3>
+    </div>
+  }
+
   return (
     <div className='IntroductionPage full-screen'>
 
       <div className='slides-container'>
         {getAllSlides()}
       </div>
+
+      <AboutUsButton/>
 
       <div className='slide-navigation'>
         <RoundButton onClick={previous}

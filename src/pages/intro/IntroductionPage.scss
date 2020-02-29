@@ -2,6 +2,35 @@
   overflow: hidden;
   position: relative;
 
+  .AboutUsButton {
+    position: absolute;
+    left: 4%;
+    bottom: 8%;
+    background-color: $clrDarkGrey;
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: glow 2s alternate-reverse infinite ease-in-out;
+
+    h3 {
+      transform: rotate(20deg);
+    }
+
+    @keyframes glow {
+      from {
+        transform: scale(1);
+        box-shadow: .5rem 1rem 1rem #0008;
+      }
+      to {
+        transform: scale(1.02);
+        box-shadow: .7rem 1.3rem 1rem #0006;
+      }
+    }
+  }
+
   .page-headline {
     position: absolute;
     left: 50%;
