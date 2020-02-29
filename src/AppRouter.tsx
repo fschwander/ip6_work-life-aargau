@@ -1,6 +1,7 @@
 import React from 'react';
 import {HashRouter as Router, Redirect, Route, Switch} from 'react-router-dom';
 import {Navigation} from './components/widgets/Navigation';
+import {AboutPage} from './pages/about/AboutPage';
 import App from './pages/App';
 import {IntroductionPage} from './pages/intro/IntroductionPage';
 import {MenuPage} from './pages/menu/MenuPage';
@@ -15,6 +16,11 @@ export const AppRouter: React.FC = () => {
       name: 'Intro',
       component: <IntroductionPage/>,
       link: '/intro'
+    },
+    {
+      name: 'About',
+      component: <AboutPage/>,
+      link: '/about'
     },
     {
       name: 'Menu',
