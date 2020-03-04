@@ -4,7 +4,7 @@ import {ReactComponent as IndicatorSVG} from '../../res/icons/progress-indicator
 
 interface ProgressIndicatorProps {
   animDurationInSec: number,
-  animationPaused?: boolean,
+  animationPaused: boolean,
   callbackAfterAnimation?: Function,
   onElementClicked: Function
 }
@@ -37,7 +37,7 @@ export const ProgressIndicator: React.FC<ProgressIndicatorProps> = props => {
 
   return (
     <div className={`ProgressIndicator button`} onClick={onClick}>
-      <IndicatorSVG ref={indicatorRef}/>
+      <IndicatorSVG ref={indicatorRef} className={props.animationPaused ? 'hide' : 'show'}/>
       <SkipSVG className={`icon`}/>
     </div>
   )

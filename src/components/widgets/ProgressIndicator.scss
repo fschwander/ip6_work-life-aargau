@@ -1,6 +1,4 @@
 .ProgressIndicator {
-  animation: .7s fade-in ease-in-out forwards;
-  opacity: 0;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -15,6 +13,10 @@
     height: 4rem;
     pointer-events: none;
 
+    &.hide path {
+      opacity: 0;
+    }
+
     path {
       stroke: white;
       stroke-width: 2px;
@@ -28,17 +30,11 @@
   }
 
   @keyframes draw-strokes {
-    to {
+    0% {
+      //stroke: deeppink;
+    }
+    100% {
       stroke-dashoffset: 0;
-    }
-  }
-
-  @keyframes fade-in {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
     }
   }
 }

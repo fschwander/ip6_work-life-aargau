@@ -31,7 +31,6 @@ interface VideoSlideProps extends VideoSlideItem {
 export const VideoSlide: React.FC<VideoSlideProps> = props => {
   const location = useLocation();
   const [animationStarted, setAnimationStarted] = useState(false);
-  const [slidePaused, setSlidePaused] = useState(false);
 
   const {popupComponent, setPopupComponent, slideInComponent, setSlideInComponent} = props;
   const animationStaggerInSec: number = 3;
@@ -79,7 +78,6 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
       setSlideInComponent(undefined)
     }
     setPopupComponent(component)
-    setSlidePaused(true);
   }
 
   const openSlideInOverlay = (component: ReactElement) => {
@@ -87,11 +85,9 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
       setPopupComponent(undefined)
     }
     setSlideInComponent(component);
-    setSlidePaused(true);
   }
 
   const closeOverlay = () => {
-    setSlidePaused(false);
     setSlideInComponent(undefined);
     setPopupComponent(undefined);
   }
@@ -152,12 +148,11 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
 
       <LocationDescription title={props.title}/>
 
-      {animationStarted ?
         <div className={`progress-indicator-container ${getFadeInOutClass()}`}>
           <ProgressIndicator animDurationInSec={(filteredInfoLabelItems.length + filteredPoiLabelItems.length) * animationStaggerInSec}
-                             animationPaused={slidePaused}
+                             animationPaused={!animationStarted}
                              onElementClicked={props.switchToNextSlide}/>
-        </div> : null}
+        </div>
 
       {popupComponent !== undefined ?
         <PopupContainer onCloseButtonClicked={closeOverlay}>
