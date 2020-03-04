@@ -17,7 +17,7 @@ import imgCulture8 from '../../../../res/imgs/ol_culture8.jpg'
 export const culture: PopupOverlayInterface = {
   type: Constants.TYPE_LIFE,
   header: {
-    title: "Kultur & Geschichte",
+    title: "Im Aargau findest du",
     text: "Der Kanton Aargau verfügt über ein reiches historisches Erbe und ein vielfältiges, aktives und stark in den Regionen verankertes Kulturleben.",
     items: [
       {
