@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+// import {useHistory} from 'react-router-dom';
 import {PaginationList} from '../../components/buttons/PaginationList';
 import {RoundButton} from '../../components/buttons/RoundButton';
 import iconArrowLeft from '../../res/icons/arrow_left.svg'
@@ -8,6 +9,8 @@ import {SlideLife} from './SlideLife';
 import {SlideWork} from './SlideWork';
 
 export const IntroductionPage: React.FC = () => {
+  // const history = useHistory();
+
   const [activeIndex, setActiveIndex] = useState(0);
 
   // TODO: add keys dynamically?
@@ -45,6 +48,11 @@ export const IntroductionPage: React.FC = () => {
       <div className='slides-container'>
         {getAllSlides()}
       </div>
+
+      {/*<div className={`AboutUsButton button ${activeIndex === 0 ? 'slide-in' : 'slide-out'}`}*/}
+      {/*     onClick={() => history.push('/about')}>*/}
+      {/*  <h3>Über uns<br/>& Credits</h3>*/}
+      {/*</div>*/}
 
       <div className='slide-navigation'>
         <RoundButton onClick={previous}

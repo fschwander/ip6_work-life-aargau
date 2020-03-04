@@ -17,7 +17,7 @@ export const SelectionChip: React.FC<SelectionChipProps> = props => {
   }
 
   return (
-    <div className={`SelectionChip button chip-button ${isActive ? 'is-active' : ''}`}
+    <div className={`SelectionChip button chip-button ${isActive ? 'is-active' : 'is-inactive'}`}
          onClick={onClick}>
       <p>{props.text}</p>
     </div>
