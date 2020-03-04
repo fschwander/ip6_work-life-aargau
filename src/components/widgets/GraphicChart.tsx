@@ -26,8 +26,8 @@ export const GraphicChart: React.FC<GraphicChartProps> = props => {
       .attr('opacity', (d, i) => `${activeIndex === i ? '1' : '0.4'}`)
 
       .append('rect')
-      .attr('width', 70)
-      .attr('height', 70)
+      .attr('width', 150)
+      .attr('height', 150)
       .attr('fill', 'deeppink')
       .attr('opacity', 0)
       .attr('class', 'button')
