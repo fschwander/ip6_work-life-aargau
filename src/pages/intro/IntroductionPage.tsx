@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {useHistory} from 'react-router-dom';
+// import {useHistory} from 'react-router-dom';
 import {PaginationList} from '../../components/buttons/PaginationList';
 import {RoundButton} from '../../components/buttons/RoundButton';
 import iconArrowLeft from '../../res/icons/arrow_left.svg'
@@ -9,7 +9,7 @@ import {SlideLife} from './SlideLife';
 import {SlideWork} from './SlideWork';
 
 export const IntroductionPage: React.FC = () => {
-  const history = useHistory();
+  // const history = useHistory();
 
   const [activeIndex, setActiveIndex] = useState(0);
 
