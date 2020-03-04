@@ -11,31 +11,30 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: glow 2s alternate-reverse infinite ease-in-out;
-    left: 4%;
-    bottom: 8%;
-    transition: 2s ease-in-out;
+    box-shadow: .5rem 1rem 1rem #0008;
 
     h3 {
       transform: rotate(20deg);
     }
 
     &.slide-in {
-      opacity: 1;
+      animation: 2s slide-in ease-in-out forwards;
     }
 
     &.slide-out {
-      opacity: 0;
+      animation: 2s slide-in reverse ease-in-out forwards;
     }
 
-    @keyframes glow {
+    @keyframes slide-in {
       from {
-        transform: scale(1);
-        box-shadow: .5rem 1rem 1rem #0008;
+        opacity: 0;
+        left: -100%;
+        bottom: -100%;
       }
       to {
-        transform: scale(1.03);
-        box-shadow: .7rem 1.3rem 1rem #0006;
+        opacity: 1;
+        left: 4%;
+        bottom: 8%;
       }
     }
   }

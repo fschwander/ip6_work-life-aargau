@@ -42,13 +42,6 @@ export const IntroductionPage: React.FC = () => {
     })
   }
 
-  const AboutUsButton = () => {
-    return <div className={`AboutUsButton button ${activeIndex === 0 ? 'slide-in' : 'slide-out'}`}
-                onClick={() => history.push('/about')}>
-      <h3>Über uns<br/>& Credits</h3>
-    </div>
-  }
-
   return (
     <div className='IntroductionPage full-screen'>
 
@@ -56,7 +49,10 @@ export const IntroductionPage: React.FC = () => {
         {getAllSlides()}
       </div>
 
-      <AboutUsButton/>
+      <div className={`AboutUsButton button ${activeIndex === 0 ? 'slide-in' : 'slide-out'}`}
+           onClick={() => history.push('/about')}>
+        <h3>Über uns<br/>& Credits</h3>
+      </div>
 
       <div className='slide-navigation'>
         <RoundButton onClick={previous}
