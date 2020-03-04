@@ -60,7 +60,7 @@ export const questions: Questions = {
       {text: "Keine", isCorrect: false},
       {text: "Alle", isCorrect: false},
       {text: "Fachkräfte", isCorrect: true},
-      {text: "Du", isCorrect: true}
+      {text: "Ich", isCorrect: true}
     ],
     answer: "Richtig, der Kanton Aargau braucht Dich! Durch den Fachkräftemangel hast du die Qual der Wahl."
   }
