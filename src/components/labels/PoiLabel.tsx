@@ -77,7 +77,7 @@ export const PoiLabel: React.FC<PoiLabelProps> = props => {
            top: `calc(${props.posTopInPct}% + ${deltaValues.deltaY}px`
          }}>
 
-      <RoundButton size='2.5em'
+      <RoundButton size='40px'
                    borderWidth={1}
                    icon={props.iconSrc}
                    onClick={props.onClick}/>

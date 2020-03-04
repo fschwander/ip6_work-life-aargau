@@ -72,7 +72,7 @@ export const PopupOverlay: React.FC<PopupOverlayProps> = props => {
               data.details[activeDetail].linkIcon !== undefined ?
                 <RoundButton onClick={() => window.open(data.details[activeDetail].linkIcon!.link, '_blank')}
                              icon={data.details[activeDetail].linkIcon!.icon}
-                             size='1.4rem'/> : null
+                             size='22px'/> : null
             }
           </div>
           {
@@ -91,7 +91,7 @@ export const PopupOverlay: React.FC<PopupOverlayProps> = props => {
               {d.linkIcon !== undefined ?
                 <RoundButton onClick={() => window.open(d.linkIcon!.link, '_blank')}
                              icon={d.linkIcon.icon}
-                             size='1.4rem'/> : null}
+                             size='22px'/> : null}
             </div>
           )}
       </div>
