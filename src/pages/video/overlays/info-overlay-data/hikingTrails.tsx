@@ -12,7 +12,7 @@ import {GraphicChart} from '../../../../components/widgets/GraphicChart';
 export const hikingTrails: PopupOverlayInterface = {
   type: Constants.TYPE_LIFE,
   header: {
-    title: "Wanderwege",
+    title: "Im Aargau findest du",
     text: "Wanderinnen und Wanderer sind auf den gut beschilderten Wegen unterwegs und staunen über die landschaftliche Vielfalt der Region.",
     items: [
       {
@@ -40,7 +40,7 @@ export const hikingTrails: PopupOverlayInterface = {
     }
   ],
   graph: {
-    title: "Grafische Darstellung der Oberflächenstruktur",
+    title: "Oberflächenstruktur der Wanderwege im Aargau ",
     chartComponent: <GraphicChart svgComponent={SVGImage}
                                   data={[
                                     {name: 'Naturbelag', value: '69.6%'},

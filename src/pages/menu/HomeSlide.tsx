@@ -13,7 +13,6 @@ export const HomeSlide:React.FC<HomeSlideProps> = props => {
     <div className='HomeSlide'>
       <p className='transparent'>Ein interaktives Abenteuer</p>
       <h2>Finde deinen Aargau</h2>
-      <h3 className='large'>Lerne über Unternehmen, Sehenswürdigkeiten und Freizeit</h3>
       <p>Erlebe den Aargau aus der Vogelperspektive und entdecke den Kanton, wie du ihn noch nie gesehen hast. Einfach
         entspannen und geniessen!</p>
 

@@ -222,7 +222,7 @@ export const TravelingDistancePage: React.FC = () => {
         Du kannst eine Stadt auswählen und sehen, wie lange die Reise von anderen Städten aus dauert.
         Aarau (Stadt im Aargau) ist immer unter den Schnellsten! </p>
 
-      <h3>Karte Einstellungnen</h3>
+      <h3>Karteneinstellungnen</h3>
 
       <div className='chip-container'>
         <SelectionChip text={'Zug'}

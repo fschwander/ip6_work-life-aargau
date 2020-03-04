@@ -13,7 +13,7 @@ import {PopupOverlayInterface} from "../PopupOverlayInterface";
 export const education: PopupOverlayInterface = {
   type: Constants.TYPE_LIFE,
   header: {
-    title: "Bildung & Forschung",
+    title: "Im Aargau findest du",
     text: "Der Aargau ist ein Bildungs- und Forschungskanton. Schon vor der Kantonsgründung wurde das erste weltliche Gymnasium der Schweiz in Aarau gegründet. Heute investiert der Kanton Aargau rund einen Drittel seiner Ausgaben in die Entwicklung und Weiterentwicklung seiner innovativen Bildungs- und Forschungslandschaft.",
     items: [
       {
