@@ -8,12 +8,11 @@ export const AboutPage:React.FC = () => {
 
   return (
     <div className={'AboutPage full-screen'}>
-      <h4>Fachhochschule Nordwestschweiz FHNW</h4>
+      <h4>Fachhochschule Nordwestschweiz</h4>
       <h2>Bachelor-Thesis</h2>
 
       <h3>Konzept, Code & Design</h3>
-      <h1>Fabian Schwander</h1>
-      <h1>Matej Zmitko</h1>
+      <h1>Fabian Schwander <br/> Matej Zmitko</h1>
 
       <h3>Betreuung</h3>
       <h4>Prof. Dr. Doris Agotai</h4>

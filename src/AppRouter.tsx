@@ -55,7 +55,7 @@ export const AppRouter: React.FC = () => {
   return (
     <Router>
       <App>{pageContent}</App>
-      <Navigation navItems={pages}/>
+      {/*<Navigation navItems={pages}/>*/}
     </Router>
   )
 }
