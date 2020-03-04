@@ -154,7 +154,7 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
 
       {animationStarted ?
         <div className={`progress-indicator-container ${getFadeInOutClass()}`}>
-          <ProgressIndicator animDurationInSec={30}
+          <ProgressIndicator animDurationInSec={(filteredInfoLabelItems.length + filteredPoiLabelItems.length) * animationStaggerInSec}
                              animationPaused={slidePaused}
                              onElementClicked={props.switchToNextSlide}/>
         </div> : null}
