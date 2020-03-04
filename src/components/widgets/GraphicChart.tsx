@@ -22,9 +22,16 @@ export const GraphicChart: React.FC<GraphicChartProps> = props => {
     d3.select(rootRef.current).select('#graphics')
       .selectAll('g')
       .classed('is-active', (d, i) => i === activeIndex)
-      .on('click', (d, i) => setActiveIndex(i))
       .attr('stroke', 'white')
       .attr('opacity', (d, i) => `${activeIndex === i ? '1' : '0.4'}`)
+
+      .append('rect')
+      .attr('width', 70)
+      .attr('height', 70)
+      .attr('fill', 'deeppink')
+      .attr('opacity', 0)
+      .attr('class', 'button')
+      .on('click', (d, i) => setActiveIndex(i))
   }
 
   useEffect(() => {
