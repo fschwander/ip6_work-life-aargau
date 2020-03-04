@@ -156,8 +156,7 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
         <div className={`progress-indicator-container ${getFadeInOutClass()}`}>
           <ProgressIndicator animDurationInSec={15}
                              animationPaused={slidePaused}
-                             callbackAfterAnimation={props.switchToNextSlide}
-                             onElementClicked={() => setSlidePaused(!slidePaused)}/>
+                             onElementClicked={props.switchToNextSlide}/>
         </div> : null}
 
       {popupComponent !== undefined ?

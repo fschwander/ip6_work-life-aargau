@@ -24,19 +24,7 @@
 
   .icon {
     position: absolute;
-    width: 8px;
-    transition: 0.2s ease-in-out;
-
-    &.play {
-      width: 10px;
-    }
-
-    &.show {
-      opacity: 1;
-    }
-    &.hide {
-      opacity: 0;
-    }
+    width: 12px;
   }
 
   @keyframes draw-strokes {
