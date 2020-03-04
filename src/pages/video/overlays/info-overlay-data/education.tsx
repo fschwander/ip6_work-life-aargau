@@ -2,6 +2,7 @@ import React from 'react';
 import {GraphicChart} from '../../../../components/widgets/GraphicChart';
 import {ReactComponent as SVGImage} from '../../../../res/graphics/education.svg';
 import iconCommunity from '../../../../res/icons/community.svg';
+import iconLink from '../../../../res/icons/link.svg';
 import iconResearch from '../../../../res/icons/research.svg';
 import {Constants} from '../../../../services/Constants';
 import iconEducation from '../../../../res/icons/education.svg'
@@ -61,6 +62,10 @@ export const education: PopupOverlayInterface = {
     {
       image: imgEducation,
       title: "Hightech Aargau",
+      linkIcon: {
+        icon: iconLink,
+        link: 'https://www.ag.ch/de/dvi/ueber_uns_dvi/dossiers___projekte/hightech_aargau/hightech_aargau.jsp'
+      },
       items: [
         {
           text: "Kernstück",
@@ -71,6 +76,10 @@ export const education: PopupOverlayInterface = {
     {
       image: imgEducation2,
       title: "Campus Brugg-Windisch",
+      linkIcon: {
+        icon: iconLink,
+        link: 'https://www.fhnw.ch/de/startseite'
+      },
       items: [
         {
           text: "Studiengebiete",
@@ -89,6 +98,10 @@ export const education: PopupOverlayInterface = {
     {
       image: imgEducation3,
       title: "Forschungsstandort",
+      linkIcon: {
+        icon: iconLink,
+        link: 'https://www.psi.ch/'
+      },
       items: [
         {
           text: "Forschungsgebiete",

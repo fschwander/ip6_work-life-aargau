@@ -1,4 +1,5 @@
 import React from 'react';
+import iconLink from '../../../../res/icons/link.svg';
 import {Constants} from '../../../../services/Constants';
 import iconClimbing from '../../../../res/icons/climbing.svg'
 import iconHiking from '../../../../res/icons/hiking.svg'
@@ -51,6 +52,10 @@ export const hikingTrails: PopupOverlayInterface = {
     {
       image: imgHikingTrails,
       title: "Wein-Wanderung",
+      linkIcon: {
+        icon: iconLink,
+        link: 'https://aargautourismus.ch/erleben/wandern/wein-wanderweg'
+      },
       items: [
         {
           text: "Strecke",
@@ -65,6 +70,10 @@ export const hikingTrails: PopupOverlayInterface = {
     {
       image: imgHikingTrails2,
       title: "Habsburger Weg: Wildegg - Brugg",
+      linkIcon: {
+        icon: iconLink,
+        link: 'https://aargautourismus.ch/erleben/wandern/habsburger-weg-wildegg-brugg'
+      },
       items: [
         {
           text: "Strecke",
@@ -79,6 +88,10 @@ export const hikingTrails: PopupOverlayInterface = {
     {
       image: imgHikingTrails3,
       title: "Natur- und Kulturweg Linn",
+      linkIcon: {
+        icon: iconLink,
+        link: 'https://aargautourismus.ch/erleben/wandern/natur-und-kulturweg-linn'
+      },
       items: [
         {
           text: "Strecke",
