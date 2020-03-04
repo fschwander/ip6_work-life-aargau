@@ -38,7 +38,6 @@ export const Quiz: React.FC<QuizProps> = props => {
       'Wie Donald Trump gerne sagt: WROOOOOOONG!',
       'Netter Versuch - aber trozdem falsch.',
       'Jaaaa, also... Ähm, nein. Einfach nein.',
-      'Falsch. Habt ihr so was nicht in der Schule gelernt?',
       '¯\\_(ツ)_/¯ Falsch!'
     ]
 
