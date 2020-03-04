@@ -49,10 +49,10 @@ export const IntroductionPage: React.FC = () => {
         {getAllSlides()}
       </div>
 
-      <div className={`AboutUsButton button ${activeIndex === 0 ? 'slide-in' : 'slide-out'}`}
-           onClick={() => history.push('/about')}>
-        <h3>Über uns<br/>& Credits</h3>
-      </div>
+      {/*<div className={`AboutUsButton button ${activeIndex === 0 ? 'slide-in' : 'slide-out'}`}*/}
+      {/*     onClick={() => history.push('/about')}>*/}
+      {/*  <h3>Über uns<br/>& Credits</h3>*/}
+      {/*</div>*/}
 
       <div className='slide-navigation'>
         <RoundButton onClick={previous}

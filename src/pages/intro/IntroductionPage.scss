@@ -18,20 +18,33 @@
     }
 
     &.slide-in {
-      animation: 2s slide-in ease-in-out forwards;
+      animation: 1s slide-in ease-in-out forwards;
     }
 
     &.slide-out {
-      animation: 2s slide-in reverse ease-in-out forwards;
+      animation: 1s slide-out ease-in-out forwards;
     }
 
     @keyframes slide-in {
       from {
         opacity: 0;
-        left: -100%;
+        left: -20%;
         bottom: -100%;
       }
       to {
+        opacity: 1;
+        left: 4%;
+        bottom: 8%;
+      }
+    }
+
+    @keyframes slide-out {
+      to {
+        opacity: 0;
+        left: -20%;
+        bottom: -100%;
+      }
+      from {
         opacity: 1;
         left: 4%;
         bottom: 8%;
