@@ -8,6 +8,12 @@
     background: rgba(255, 255, 255, 0.2);
   }
 
+  &.glow {
+    transition: opacity 1s linear;
+    opacity: .5;
+    animation: glow ease-in-out 1.5s 1s alternate infinite;
+  }
+
   svg {
     width: 4rem;
     height: 4rem;
@@ -29,11 +35,19 @@
     width: 12px;
   }
 
-  @keyframes draw-strokes {
-    0% {
-      //stroke: deeppink;
+  @keyframes glow {
+    from {
+      opacity: 0.5;
     }
-    100% {
+    to {
+      opacity: 1;
+      transform: scale(1.04);
+      box-shadow: 0 0 6px 6px #fff2;
+    }
+  }
+
+  @keyframes draw-strokes {
+    to {
       stroke-dashoffset: 0;
     }
   }

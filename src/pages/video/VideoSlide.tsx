@@ -104,6 +104,8 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
     }
   }
 
+  const animationDurationInSec = (filteredInfoLabelItems.length + filteredPoiLabelItems.length) * animationStaggerInSec + 2;
+
   return (
     <div className={`VideoSlide`}>
       <BackgroundVideoContainer source={props.videoSrc}
@@ -148,8 +150,8 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
 
       <LocationDescription title={props.title}/>
 
-        <div className={`progress-indicator-container ${getFadeInOutClass()}`}>
-          <ProgressIndicator animDurationInSec={(filteredInfoLabelItems.length + filteredPoiLabelItems.length) * animationStaggerInSec}
+        <div className={`progress-indicator-container ${getFadeInOutClass()} ${!animationStarted ? 'not-started' : ''}`}>
+          <ProgressIndicator animDurationInSec={animationDurationInSec}
                              animationPaused={!animationStarted}
                              onElementClicked={props.switchToNextSlide}/>
         </div>
