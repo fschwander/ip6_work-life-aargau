@@ -36,8 +36,9 @@ export const QuizBox: React.FC<QuizBoxProps> = (props) => {
         <EntryLabel text={props.question.title}
                     lineLength={props.lineLength}
                     lineRotation={props.lineRotationInDeg}
-                    orientation={orientation}/>
-        <HoverPoint onMouseEnter={() => setIsOpen(true)}/>
+                    orientation={orientation}
+                    onMouseEnter={() => setIsOpen(true)}/>
+        <HoverPoint onMouseEnter={() => setIsOpen(true)} onClick={() => setIsOpen((!isOpen))}/>
       </div>
       <Quiz question={props.question}
             className={isOpen ? 'open' : 'closed'}
