@@ -14,7 +14,7 @@
     transform: translateX(-50%);
     left: 50vw;
     bottom: 3vw;
-    transition: opacity ease-in-out 1s;
+    transition: opacity ease-in-out .3s;
 
     &.not-started {
       opacity: 0.7;

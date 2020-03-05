@@ -148,7 +148,8 @@ export const VideoSlide: React.FC<VideoSlideProps> = props => {
         </div>
       </BackgroundVideoContainer>
 
-      <LocationDescription title={props.title}/>
+      {popupComponent == undefined && slideInComponent == undefined ?
+        <LocationDescription title={props.title}/> : null}
 
         <div className={`progress-indicator-container ${getFadeInOutClass()} ${!animationStarted ? 'not-started' : ''}`}>
           <ProgressIndicator animDurationInSec={animationDurationInSec}

@@ -10,7 +10,7 @@
 
   &.glow {
     transition: opacity 1s linear;
-    opacity: .5;
+    opacity: .8;
     animation: glow ease-in-out 1.5s 1s alternate infinite;
   }
 
@@ -36,13 +36,10 @@
   }
 
   @keyframes glow {
-    from {
-      opacity: 0.5;
-    }
     to {
       opacity: 1;
       transform: scale(1.04);
-      box-shadow: 0 0 6px 6px #fff2;
+      box-shadow: 0 0 8px 8px #fff3;
     }
   }
 
