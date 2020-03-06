@@ -19,10 +19,10 @@ export const AarauSlide: React.FC<AarauSlideProps> = props => {
       <h2>Aarau entdecken</h2>
       <p>Schaue deine Flugroute an und entscheide, was du auf deinem Weg sehen möchtest!</p>
       <div className='choose-container'>
-        <h3 className='large'>Bist du bereit oder möchtest du Filter setzen?</h3>
+        <h3 className='large'>Möchtest du direkt starten oder zuerst deine Flugroute anpassen?</h3>
         <div className='selection-button-container horizontal-container'>
           <RectButton onClick={() => history.push('/aarau')} text={'Losfliegen!'}/>
-          <RectButton onClick={() => props.setActiveSlide(props.slides[4])} text={'Filter setzen'} />
+          <RectButton onClick={() => props.setActiveSlide(props.slides[4])} text={'Flugroute filtern'} />
         </div>
       </div>
     </div>
