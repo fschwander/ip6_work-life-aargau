@@ -1,5 +1,6 @@
 .SlideInContainer {
   position: absolute;
+  top: 0;
   width: 60vw;
   max-width: 700px;
   height: 100vh;
@@ -12,7 +13,7 @@
     animation: 1s slide-in-from-right ease-out;
 
     .scroll-container {
-      padding: 6rem 2rem 6em 6em;
+      padding: 10vh 2rem 6em 6em;
     }
   }
 
@@ -22,7 +23,7 @@
     animation: 1s slide-in-from-left ease-out;
 
     .scroll-container {
-      padding: 6rem 6em 6em 2rem;
+      padding: 10vh 0 6em 10rem;
     }
   }
 
@@ -41,6 +42,10 @@
   .RoundButton {
     position: absolute;
     top: 10vh;
+  }
+  &.slide-in-from-left .RoundButton {
+    left: 5vw;
+    transform: rotate(180deg);
   }
 
   @keyframes slide-in-from-right {
