@@ -5,6 +5,7 @@ export interface PopupOverlayInterface {
   header: {
     title: string,
     text: string,
+    items_title: string,
     items: Array<TextItem>
   }
   topics: Array<ImageItem>,

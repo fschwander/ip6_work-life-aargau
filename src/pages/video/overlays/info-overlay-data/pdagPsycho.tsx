@@ -1,4 +1,6 @@
 import React from 'react';
+import {GraphicChart} from '../../../../components/widgets/GraphicChart';
+import {ReactComponent as SVGImage} from '../../../../res/graphics/real-estate.svg';
 import iconLink from '../../../../res/icons/link.svg';
 import iconHealthcare from '../../../../res/icons/healthcare.svg'
 import iconCommunity from '../../../../res/icons/community.svg'
@@ -6,13 +8,14 @@ import imgDetails from '../../../../res/imgs/ol_pdag.jpg'
 import imgDetails2 from '../../../../res/imgs/ol_pdag2.jpg'
 import imgDetails3 from '../../../../res/imgs/ol_pdag3.jpg'
 import {Constants} from '../../../../services/Constants';
-import {PlaceholderChart, PopupOverlayInterface} from "../PopupOverlayInterface";
+import {PopupOverlayInterface} from "../PopupOverlayInterface";
 
 export const pdagPsycho: PopupOverlayInterface = {
   type: Constants.TYPE_WORK,
   header: {
     title: "PDAG",
     text: "Die Psychiatrischen Dienste Aargau AG untersuchen, behandeln und betreuen psychisch erkrankte Menschen aller Altersgruppen mit sämtlichen psychiatrischen Krankheitsbildern.",
+    items_title: "Im Aargau findest du",
     items: [
       {
         text: "Mitarbeiter‎",
@@ -21,7 +24,7 @@ export const pdagPsycho: PopupOverlayInterface = {
       {
         text: "Betten",
         value: "394"
-      },{
+      }, {
         text: "Offene Stellen",
         value: "31",
         linkIcon: {
@@ -45,7 +48,11 @@ export const pdagPsycho: PopupOverlayInterface = {
 
   graph: {
     title: "",
-    chartComponent: <PlaceholderChart/>
+    chartComponent: <GraphicChart svgComponent={SVGImage}
+                                  data={[
+                                    {value: "", unit: ''},
+                                  ]}
+    />
   },
 
   details: [

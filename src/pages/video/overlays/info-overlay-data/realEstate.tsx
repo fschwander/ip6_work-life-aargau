@@ -12,8 +12,9 @@ import {PopupOverlayInterface} from "../PopupOverlayInterface";
 export const realEstate: PopupOverlayInterface = {
   type: Constants.TYPE_LIFE,
   header: {
-    title: "Im Aargau findest du",
+    title: "Gewerbeimmobilien & Areale",
     text: "Ein perfekter Standort für Unternehmen zu vergleichsweise günstigen Preisen. Suchst du Bauland, eine Liegenschaft, Büroräumlichkeiten oder ein sonstiges Miet- oder Kaufobjekt für gewerbliche Zwecke? Die Standortförderung kennt die interessanten Gewerbeflächen im Kanton Aargau.",
+    items_title: "Im Aargau findest du",
     items: [
       {
         text: "Bauland, Liegenschaft, Kaufobjekt",

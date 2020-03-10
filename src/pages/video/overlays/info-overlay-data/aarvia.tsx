@@ -13,6 +13,7 @@ export const aarvia: PopupOverlayInterface = {
   header: {
     title: "Aarvia Gruppe",
     text: "Die Aarvia Gruppe ist mit rund 350 Mitarbeitenden eine der führenden Bauunternehmungen im Kanton Aargau. Aarvia bietet Ihnen ein Komplettangebot, das sämtliche Aufgaben und Technologien in den Bereichen Strassen- und Tiefbau, Unterhalts-, Belags- und Infrastrukturbau, Erd- und Spezialtiefbau, Baulogistik, Transport und Baustoffe abdeckt.\n",
+    items_title: "Unternehmen Details",
     items: [
       {
         text: "Angestellte",

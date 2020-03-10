@@ -13,8 +13,9 @@ import {GraphicChart} from '../../../../components/widgets/GraphicChart';
 export const hikingTrails: PopupOverlayInterface = {
   type: Constants.TYPE_LIFE,
   header: {
-    title: "Im Aargau findest du",
+    title: "Wanderwege",
     text: "Wanderinnen und Wanderer sind auf den gut beschilderten Wegen unterwegs und staunen über die landschaftliche Vielfalt der Region.",
+    items_title: "Im Aargau findest du",
     items: [
       {
         text: "37+ Wanderwege",

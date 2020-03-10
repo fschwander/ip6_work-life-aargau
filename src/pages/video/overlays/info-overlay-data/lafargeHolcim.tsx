@@ -14,6 +14,7 @@ export const lafargeHolcim: PopupOverlayInterface = {
   header: {
     title: "LafargeHolcim",
     text: "Innovation, Nachhaltigkeit und Partnerschaft bilden Boden, Pfeiler und Dach von Holcim, die sich darauf konzentriert, in ihrer Branche und im direkten Umfeld Herausragendes zu leisten.",
+    items_title: "Unternehmen Details",
     items: [
       {
         text: "Angestellte",
