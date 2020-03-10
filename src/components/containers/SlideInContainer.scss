@@ -1,7 +1,7 @@
 .SlideInContainer {
   position: absolute;
   top: 0;
-  width: 60vw;
+  width: 70vw;
   max-width: 700px;
   height: 100vh;
   display: flex;
@@ -9,7 +9,8 @@
 
   &.slide-in-from-right {
     right: 0;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.8) 40%);
+    padding-left: 5rem;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.8) 90%);
     animation: 1s slide-in-from-right ease-out;
 
     .scroll-container {
@@ -19,11 +20,12 @@
 
   &.slide-in-from-left {
     left: 0;
-    background: linear-gradient(to left, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.8) 40%);
+    padding-right: 5rem;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.8) 90%);
     animation: 1s slide-in-from-left ease-out;
 
     .scroll-container {
-      padding: 10vh 0 6em 10rem;
+      padding: 6rem 6em 6em 2rem;
     }
   }
 
