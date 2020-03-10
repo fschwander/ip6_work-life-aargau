@@ -196,6 +196,7 @@
             padding: 0.5rem 3.5rem;
             animation: fade-in 1s ease-in 6s forwards;
             transform: translateY(1.5rem);
+            animation-iteration-count: 1, infinite;
 
             p {
               font-size: 1rem;

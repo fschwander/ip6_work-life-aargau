@@ -39,6 +39,7 @@ export const SlideWork: React.FC<SlideProps> = props => {
       <RectButton className='bottom-element go-to-main-button'
                   text='Abenteuer starten'
                   isActive={true}
+                  isGlowing={true}
                   onClick={redirectToMainPage}/>
     </div>
   )

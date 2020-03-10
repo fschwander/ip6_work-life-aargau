@@ -8,7 +8,8 @@ interface RectButtonProps {
   isActive?: boolean,
   text: string,
   width?: string,
-  height?: string
+  height?: string,
+  isGlowing?: boolean
 }
 
 export const RectButton: React.FC<RectButtonProps> = props => {
@@ -35,11 +36,13 @@ export const RectButton: React.FC<RectButtonProps> = props => {
   }
 
   return (
-    <div className={`RectButton ${props.className} button border-button ${buttonIsActive ? 'enabled' : 'disabled'}`}
+    <div className={`RectButton ${props.className}`}
          onClick={handleClick}
          onMouseOver={onMouseOver}
          onMouseLeave={onMouseLeave}>
-      <p>{props.text}</p>
+      <div className={`button border-button ${buttonIsActive ? 'enabled' : 'disabled'} ${props.isGlowing ? 'glow' : ''}`}>
+        <p>{props.text}</p>
+      </div>
     </div>
   )
 }

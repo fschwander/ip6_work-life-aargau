@@ -1,8 +1,15 @@
 .RectButton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0.5rem 2rem;
+
+  .border-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 2rem;
+
+    &.glow {
+      animation: glow ease-in-out 1.5s alternate infinite;
+    }
+  }
 
   p {
     font-size: 14px;
