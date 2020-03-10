@@ -26,9 +26,14 @@
     }
   }
 
+  .scroll-container::-webkit-scrollbar {
+    display: none;
+  }
+  
   .scroll-container {
     position: relative;
     overflow-y: scroll;
+    -ms-overflow-style: none;
 
     .ScrollIndicator {
       position: fixed;
