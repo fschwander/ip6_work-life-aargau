@@ -19,11 +19,11 @@ export const SlideLife: React.FC<SlideProps> = props => {
       <AnimatedSVG svgComponent={lenzburgSvg} isActive={props.isActive}/>
 
       <QuizBox className="quiz-reputation" question={questions.reputation}
-               lineLength={140} lineRotationInDeg={300} orientation='left'/>
+               lineLength={160} lineRotationInDeg={300} orientation='left'/>
       <QuizBox className="quiz-history" question={questions.history}
-               lineLength={130} lineRotationInDeg={235} orientation='left'/>
+               lineLength={170} lineRotationInDeg={250} orientation='left'/>
       <QuizBox className="quiz-sport" question={questions.sport}
-               lineLength={80} lineRotationInDeg={40} orientation='right'/>
+               lineLength={90} lineRotationInDeg={30} orientation='right'/>
 
       <div className='bottom-element'>
         <p>Du möchtest mehr wissen über das <b>Leben</b> im Kanton Aargau?</p>

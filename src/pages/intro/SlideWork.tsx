@@ -27,7 +27,7 @@ export const SlideWork: React.FC<SlideProps> = props => {
       <AnimatedSVG svgComponent={SVGImage} isActive={props.isActive}/>
 
       <QuizBox className="quiz-companies" question={questions.companies}
-               lineLength={100} lineRotationInDeg={320} orientation='right'/>
+               lineLength={130} lineRotationInDeg={300} orientation='right'/>
       <QuizBox className="quiz-jobs" question={questions.jobs}
                lineLength={200} lineRotationInDeg={235} orientation='left'/>
 

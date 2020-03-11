@@ -13,7 +13,6 @@ export const IntroductionPage: React.FC = () => {
 
   const [activeIndex, setActiveIndex] = useState(0);
 
-  // TODO: add keys dynamically?
   const items = [
     <SlideLanding key='0' isActive={activeIndex === 0}/>,
     <SlideLife key='1' isActive={activeIndex === 1}/>,
@@ -49,9 +48,8 @@ export const IntroductionPage: React.FC = () => {
         {getAllSlides()}
       </div>
 
-      <div className={`AboutUsButton button ${activeIndex === 0 ? 'slide-in' : 'slide-out'}`}
-           onClick={() => history.push('/about')}>
-        <h3>Über uns<br/>& Credits</h3>
+      <div className={`about-us-container ${activeIndex === 0 ? 'show' : 'hide'}`}>
+        <h2 className={`button`} onClick={() => history.push('/about')}>About us</h2>
       </div>
 
       <div className='slide-navigation'>
