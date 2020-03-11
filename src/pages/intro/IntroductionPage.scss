@@ -2,52 +2,24 @@
   overflow: hidden;
   position: relative;
 
-  .AboutUsButton {
+  .about-us-container {
     position: absolute;
-    background-color: $clrDarkGrey;
-    border-radius: 50%;
-    width: 10rem;
-    height: 10rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: .5rem 1rem 1rem #0008;
+    top: 0;
+    right: 0;
+    padding: 1rem 3rem;
+    pointer-events: none;
+    transform: translateX(100%);
+    transition: ease-in-out .5s;
 
-    h3 {
-      transform: rotate(20deg);
+    &.show {
+      pointer-events: all;
+      transform: translateX(0);
     }
 
-    &.slide-in {
-      animation: 1s slide-in ease-in-out forwards;
-    }
+    h2 {
 
-    &.slide-out {
-      animation: 1s slide-out ease-in-out forwards;
-    }
-
-    @keyframes slide-in {
-      from {
-        opacity: 0;
-        left: -20%;
-        bottom: -100%;
-      }
-      to {
-        opacity: 1;
-        left: 4%;
-        bottom: 8%;
-      }
-    }
-
-    @keyframes slide-out {
-      to {
-        opacity: 0;
-        left: -20%;
-        bottom: -100%;
-      }
-      from {
-        opacity: 1;
-        left: 4%;
-        bottom: 8%;
+      &:hover {
+        border-bottom: 2px $clrHighlight solid;
       }
     }
   }

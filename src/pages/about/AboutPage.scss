@@ -19,9 +19,10 @@
 
   a {
     text-decoration: unset;
+    color: $clrHighlight;
 
     &:hover {
-      font-weight: unset;
+      font-weight: bolder;
       border-bottom: 2px $clrHighlight;
     }
   }
