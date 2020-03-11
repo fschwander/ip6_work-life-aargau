@@ -1,11 +1,14 @@
 import React from 'react';
-import {PlaceholderChart, PopupOverlayInterface} from "../PopupOverlayInterface";
+import {GraphicChart} from '../../../../components/widgets/GraphicChart';
+import {ReactComponent as SVGImage} from '../../../../res/graphics/real-estate.svg';
+import {PopupOverlayInterface} from "../PopupOverlayInterface";
 
 export const _template: PopupOverlayInterface = {
   type: "",
   header: {
     title: "",
     text: "",
+    items_title: "",
     items: [
       {
         text: "",
@@ -31,7 +34,11 @@ export const _template: PopupOverlayInterface = {
 
   graph: {
     title: "",
-    chartComponent: <PlaceholderChart/>
+    chartComponent: <GraphicChart svgComponent={SVGImage}
+                                  data={[
+                                    {value: "", unit: ''},
+                                   ]}
+    />
   },
 
   details: [

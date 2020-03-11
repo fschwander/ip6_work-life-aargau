@@ -3,6 +3,7 @@ import {GraphicChart} from '../../../../components/widgets/GraphicChart';
 import {ReactComponent as SVGImage} from '../../../../res/graphics/holcim.svg';
 import iconConstruction from '../../../../res/icons/construction.svg'
 import iconEngineering from '../../../../res/icons/engineering.svg'
+import iconLink from '../../../../res/icons/link.svg';
 import imgDetails from '../../../../res/imgs/ol_lafarge-holcim.jpg';
 import imgDetails2 from '../../../../res/imgs/ol_lafarge-holcim2.jpg';
 import {Constants} from "../../../../services/Constants";
@@ -13,6 +14,7 @@ export const lafargeHolcim: PopupOverlayInterface = {
   header: {
     title: "LafargeHolcim",
     text: "Innovation, Nachhaltigkeit und Partnerschaft bilden Boden, Pfeiler und Dach von Holcim, die sich darauf konzentriert, in ihrer Branche und im direkten Umfeld Herausragendes zu leisten.",
+    items_title: "Unternehmen Details",
     items: [
       {
         text: "Angestellte",
@@ -21,6 +23,14 @@ export const lafargeHolcim: PopupOverlayInterface = {
       {
         text: "Standorte",
         value: "in 80 Ländern"
+      },
+      {
+        text: "Offene Stellen",
+        value: "2",
+        linkIcon: {
+          icon: iconLink,
+          link: 'https://www.holcim.ch/de/offene-stellen'
+        }
       }
     ]
   },

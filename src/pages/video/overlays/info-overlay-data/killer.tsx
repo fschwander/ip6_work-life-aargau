@@ -12,6 +12,7 @@ export const killer: PopupOverlayInterface = {
   header: {
     title: "Killer",
     text: "Wir verstehen uns als Ladenbaupartner und Spezialist für hochwertige Inneneinrichtungen in den Segmenten:, Detailhandelsketten, Apotheken und Drogerien, Kosmetikmarken und Individueller Innenausbau",
+    items_title: "Unternehmen Details",
     items: [
       {
         text: "Angestellte",

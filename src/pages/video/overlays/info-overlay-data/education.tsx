@@ -2,6 +2,7 @@ import React from 'react';
 import {GraphicChart} from '../../../../components/widgets/GraphicChart';
 import {ReactComponent as SVGImage} from '../../../../res/graphics/education.svg';
 import iconCommunity from '../../../../res/icons/community.svg';
+import iconLink from '../../../../res/icons/link.svg';
 import iconResearch from '../../../../res/icons/research.svg';
 import {Constants} from '../../../../services/Constants';
 import iconEducation from '../../../../res/icons/education.svg'
@@ -13,8 +14,9 @@ import {PopupOverlayInterface} from "../PopupOverlayInterface";
 export const education: PopupOverlayInterface = {
   type: Constants.TYPE_LIFE,
   header: {
-    title: "Im Aargau findest du",
+    title: "Bildung & Forschung",
     text: "Der Aargau ist ein Bildungs- und Forschungskanton. Schon vor der Kantonsgründung wurde das erste weltliche Gymnasium der Schweiz in Aarau gegründet. Heute investiert der Kanton Aargau rund einen Drittel seiner Ausgaben in die Entwicklung und Weiterentwicklung seiner innovativen Bildungs- und Forschungslandschaft.",
+    items_title: "Im Aargau findest du",
     items: [
       {
         text: "Shulen & Berufsbildung",
@@ -61,6 +63,10 @@ export const education: PopupOverlayInterface = {
     {
       image: imgEducation,
       title: "Hightech Aargau",
+      linkIcon: {
+        icon: iconLink,
+        link: 'https://www.ag.ch/de/dvi/ueber_uns_dvi/dossiers___projekte/hightech_aargau/hightech_aargau.jsp'
+      },
       items: [
         {
           text: "Kernstück",
@@ -71,6 +77,10 @@ export const education: PopupOverlayInterface = {
     {
       image: imgEducation2,
       title: "Campus Brugg-Windisch",
+      linkIcon: {
+        icon: iconLink,
+        link: 'https://www.fhnw.ch/de/startseite'
+      },
       items: [
         {
           text: "Studiengebiete",
@@ -89,6 +99,10 @@ export const education: PopupOverlayInterface = {
     {
       image: imgEducation3,
       title: "Forschungsstandort",
+      linkIcon: {
+        icon: iconLink,
+        link: 'https://www.psi.ch/'
+      },
       items: [
         {
           text: "Forschungsgebiete",

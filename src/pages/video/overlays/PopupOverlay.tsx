@@ -83,7 +83,7 @@ export const PopupOverlay: React.FC<PopupOverlayProps> = props => {
       </div>
 
       <div className={`box-explanation ${data.type}`}>
-        <h3>{data.header.title}</h3>
+        <h3>{data.header.items_title}</h3>
         {
           data.header.items.map(d =>
             <div className='horizontal-container' key={d.text}>

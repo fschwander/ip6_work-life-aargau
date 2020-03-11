@@ -14,6 +14,7 @@ export const mammut: PopupOverlayInterface = {
   header: {
     title: "Mammut",
     text: "Bei Mammut erwarten dich Begeisterung und Leidenschaft für den Bergsport. Wir wissen aus eigener Erfahrung, welchen Anforderungen Outdoor-Produkte gerecht werden müssen.",
+    items_title: "Unternehmen Details",
     items: [
       {
         text: "Angestellte",
