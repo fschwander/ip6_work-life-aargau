@@ -82,7 +82,7 @@ export const AarauFilterSlide: React.FC<AarauSlideProps> = props => {
 
   return (
     <div className='AarauFilterSlide'>
-      <NavBackButton text='zurück zur Karte' onClick={() => props.setActiveSlide(props.slides[3])}/>
+      <NavBackButton text='zurück' onClick={() => props.setActiveSlide(props.slides[3])}/>
       <p className='transparent'>Du bestimmst, was du sehen möchtest</p>
       <h2>Flugweg über Aarau anpassen</h2>
 

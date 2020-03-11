@@ -14,7 +14,7 @@ export const AarauSlide: React.FC<AarauSlideProps> = props => {
 
   return (
     <div className='AarauSlide'>
-      <NavBackButton text='zurück zur Karte' onClick={() => props.setActiveSlide(props.slides[0])}/>
+      <NavBackButton text='zurück' onClick={() => props.setActiveSlide(props.slides[0])}/>
       <p className='transparent'>Ein interaktives Abenteuer</p>
       <h2>Aarau entdecken</h2>
       <p>Schaue deine Flugroute an und entscheide, was du auf deinem Weg sehen möchtest!</p>
