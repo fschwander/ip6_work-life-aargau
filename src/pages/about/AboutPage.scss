@@ -17,7 +17,20 @@
     }
   }
 
+  a {
+    color: $clrHighlight;
+    text-decoration: unset;
+    &:hover {
+      font-weight: unset;
+      color: white;
+    }
+  }
+
   .scroll-container {
     padding: 10vh 0 6em 10rem !important;
+
+    .RoundButton {
+      margin-left: .5rem;
+    }
   }
 }

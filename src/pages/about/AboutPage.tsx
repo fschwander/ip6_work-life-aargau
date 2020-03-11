@@ -12,6 +12,7 @@ export const AboutPage:React.FC = () => {
   const kroniLink = 'https://www.youtube.com/watch?v=sIo0sAVSjIs&list=PLPBn2ZW8uriFux3rYdZSFm-lmIm6e8xNz&index=8&t=0s';
   const swissdroneLink = 'https://www.youtube.com/watch?v=_FTL9_vCh6Q&t=31s';
   const tourismLink = 'https://aargautourismus.ch/';
+  const gitLink = 'https://gitlab.fhnw.ch/ipole-ip6/ip6';
 
   return (
     <div className={'AboutPage full-screen'} style={{backgroundImage: `url(${bgImage})`}}>
@@ -27,13 +28,17 @@ export const AboutPage:React.FC = () => {
         <h4>Prof. Dr. Arzu Çöltekin</h4>
 
         <h3>Bilder</h3>
-        <h4>Michel Jaussi <a href={jaussiLink}>link</a></h4>
-        <h4><span>Zur Verfügung gestellt von</span> Aargau Tourismus <a href={tourismLink}>link</a></h4>
+        <h4>Michel Jaussi <a href={jaussiLink} target={'_blank'}>></a></h4>
+        <h4><span>Zur Verfügung gestellt von</span> Aargau Tourismus <a href={tourismLink}>></a></h4>
 
         <h3>Videos</h3>
-        <h4>Georg Fietz <a href={fiezLink}>link</a></h4>
-        <h4>Nicolas Kröni <a href={kroniLink}>link</a></h4>
-        <h4>Swissdrone <a href={swissdroneLink}>link</a></h4>
+        <h4>Georg Fietz <a href={fiezLink} target={'_blank'}>></a></h4>
+        <h4>Nicolas Kröni <a href={kroniLink} target={'_blank'}>></a></h4>
+        <h4>Swissdrone <a href={swissdroneLink} target={'_blank'}>></a></h4>
+
+        <h3>Source Code</h3>
+        <h4><span>Originalcode auf </span>Gitlab <a href={gitLink} target={'_blank'}>></a></h4>
+
       </SlideInContainer>
     </div>
   )
