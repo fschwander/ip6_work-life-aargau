@@ -6,6 +6,7 @@ import {BackgroundVideoContainer} from '../../components/containers/BackgroundVi
 import {SlideInContainer} from '../../components/containers/SlideInContainer';
 import aarauImage from '../../res/imgs/menu_aarau.jpg';
 import {ReactComponent as aarauSvg} from '../../res/imgs/menu_aarau.svg';
+import {ReactComponent as legendSvg} from '../../res/imgs/menu_legend.svg';
 import aargauImage from '../../res/imgs/menu_aargau.jpg';
 import {ReactComponent as aargauSvg} from '../../res/imgs/menu_aargau.svg';
 import badenImage from '../../res/imgs/menu_baden.jpg';
@@ -22,12 +23,14 @@ import {MenuFilterPage} from './MenuFilterPage';
 export interface MenuSlideInterface {
   component: ReactElement,
   svgComponent: FunctionComponent<SVGProps<SVGSVGElement>>,
-  backgroundImage: string
+  backgroundImage: string,
 }
 
 export const MenuPage: React.FC = () => {
   const isInitialMount = useRef(true);
   const location = useLocation();
+
+  const LegendSvg = legendSvg;
 
   const startPlayingIntro = location.state && location.state.playIntroVideo === true;
 
@@ -107,7 +110,7 @@ export const MenuPage: React.FC = () => {
 
     };
     updateMap()
-  }, [slides, aarauVisible, badenVisible])
+  }, [activeSlide, slides, aarauVisible, badenVisible])
 
   return (
     <div className={`MenuPage full-screen`} style={{backgroundImage: `url(${activeSlide.backgroundImage})`}}>
@@ -124,6 +127,8 @@ export const MenuPage: React.FC = () => {
           <SlideInContainer slideInDirection={Constants.SLIDE_FROM_LEFT}>
             {activeSlide.component}
           </SlideInContainer>
+
+          {activeSlide.svgComponent !== slides[0].svgComponent ? <LegendSvg className={'legend-svg'}/> : null}
         </div> : null}
     </div>
   )

@@ -23,7 +23,7 @@ The goal is not to find out why people do not want to work in the canton of Aarg
 
 ## Coaches
 - Prof. Dr. Doris Agotai
-- Dr. Arzu Çöltekin
+- Prof. Dr. Arzu Çöltekin
 
 ## Customer
 [Work - Life - Aargau](https://www.ag.ch/de/verwaltung/dvi/wirtschaft_arbeit/aargau_services_neu/fachkraefte_1/work_life_aargau_fuer_aargauer_unternehmen/departement_detailseite_95.jsp)
