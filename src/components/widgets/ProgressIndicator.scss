@@ -11,7 +11,7 @@
   &.glow {
     transition: opacity 1s linear;
     opacity: .8;
-    animation: glow ease-in-out 1.5s 1s alternate infinite;
+    animation: glow-strong ease-in-out 1.5s 1s alternate infinite;
   }
 
   svg {

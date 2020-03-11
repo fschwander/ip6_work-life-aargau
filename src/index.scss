@@ -178,4 +178,12 @@ html {
       box-shadow: 0 0 8px 6px #fff3;
     }
   }
+
+  @keyframes glow-strong {
+    to {
+      opacity: 1;
+      transform: scale(1.06);
+      box-shadow: 0 0 10px 8px #fff3;
+    }
+  }
 }
