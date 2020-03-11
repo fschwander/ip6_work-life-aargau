@@ -11,21 +11,29 @@ export interface OptionFilter {
 
 export const updateFilters = (filters: Array<OptionFilter>, i: number, setFilters: Function) => {
   const newFilterState = !filters[i].isActive;
-  filters[i].isActive = newFilterState;
-  if (i === 0 && filters[0].type === Constants.FILTER_MAJOR) {
+  if (filters[i].isActive && filters[0].isActive && i !== 0) {
     for (let j = 1; j < filters.length; j++) {
-      filters[j].isActive = newFilterState;
+      filters[j].isActive = false;
     }
-  }
-  if (i > 0 && filters[0].type === Constants.FILTER_MAJOR) {
-    let allFiltersActive = true;
-    for (let j = 1; j < filters.length; j++) {
-      if (!filters[j].isActive) {
-        allFiltersActive = false;
-        break;
+    filters[0].isActive = false;
+    filters[i].isActive = true;
+  } else {
+    filters[i].isActive = newFilterState;
+    if (i === 0 && filters[0].type === Constants.FILTER_MAJOR) {
+      for (let j = 1; j < filters.length; j++) {
+        filters[j].isActive = newFilterState;
       }
     }
-    filters[0].isActive = allFiltersActive;
+    if (i > 0 && filters[0].type === Constants.FILTER_MAJOR) {
+      let allFiltersActive = true;
+      for (let j = 1; j < filters.length; j++) {
+        if (!filters[j].isActive) {
+          allFiltersActive = false;
+          break;
+        }
+      }
+      filters[0].isActive = allFiltersActive;
+    }
   }
   const newFilters = [...filters];
   setFilters(newFilters)
