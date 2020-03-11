@@ -18,11 +18,34 @@
   }
 
   a {
-    color: $clrHighlight;
     text-decoration: unset;
+
     &:hover {
       font-weight: unset;
-      color: white;
+      border-bottom: 2px $clrHighlight;
+    }
+  }
+
+  .authors-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 3rem 5rem;
+    animation: 1s move-in ease-in-out 3s forwards;
+    transform: translateY(150%);
+
+    .authors-svg {
+      width: 20vw;
+    }
+
+    @keyframes move-in {
+      to {
+        transform: translateY(0);
+
+      }
     }
   }
 
@@ -32,5 +55,9 @@
     .RoundButton {
       margin-left: .5rem;
     }
+  }
+
+  .ScrollIndicator {
+    display: none;
   }
 }

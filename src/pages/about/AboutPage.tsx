@@ -1,10 +1,11 @@
 import React from 'react';
-import {SlideInContainer} from '../../components/containers/SlideInContainer';
-import {Constants} from '../../services/Constants';
 import {useHistory} from 'react-router-dom';
+import {SlideInContainer} from '../../components/containers/SlideInContainer';
+import {ReactComponent as AuthorsSvg} from '../../res/graphics/authors.svg';
 import bgImage from '../../res/imgs/AT_LAUFENBURG.jpg'
+import {Constants} from '../../services/Constants';
 
-export const AboutPage:React.FC = () => {
+export const AboutPage: React.FC = () => {
   const history = useHistory();
 
   const jaussiLink = 'http://www.jaussi.com/';
@@ -40,6 +41,11 @@ export const AboutPage:React.FC = () => {
         <h4><span>Originalcode auf </span>Gitlab <a href={gitLink} target={'_blank'}>></a></h4>
 
       </SlideInContainer>
+
+      <div className={'authors-container'}>
+        <AuthorsSvg className={`authors-svg move-in`}/>
+        <h4>"Yep. It's awesome."</h4>
+      </div>
     </div>
   )
 }
