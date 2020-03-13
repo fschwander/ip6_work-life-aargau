@@ -49,7 +49,7 @@ export const IntroductionPage: React.FC = () => {
       </div>
 
       <div className={`about-us-container ${activeIndex === 0 ? 'show' : 'hide'}`}>
-        <h2 className={`button`} onClick={() => history.push('/about')}>About us</h2>
+        <h2 className={`about-us button`} onClick={() => history.push('/about')}>About us</h2>
       </div>
 
       <div className='slide-navigation'>

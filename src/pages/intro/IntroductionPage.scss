@@ -4,12 +4,21 @@
 
   .about-us-container {
     position: absolute;
-    top: 0;
-    right: 0;
+    bottom: 0;
+    left: 0;
     padding: 1rem 3rem;
     pointer-events: none;
     transform: translateX(100%);
     transition: ease-in-out .5s;
+    font-family: Merriweather, serif;
+
+    .about-us {
+      font-family: Merriweather, serif;
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: .3rem;
+      opacity: .8;
+    }
 
     &.show {
       pointer-events: all;
@@ -20,6 +29,7 @@
 
       &:hover {
         border-bottom: 2px $clrHighlight solid;
+        opacity: 1;
       }
     }
   }
