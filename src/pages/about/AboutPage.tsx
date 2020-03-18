@@ -44,7 +44,7 @@ export const AboutPage: React.FC = () => {
 
       <div className={'authors-container'}>
         <AuthorsSvg className={`authors-svg move-in`}/>
-        <h4>"Yep. It's awesome."</h4>
+        <h4>"The collaboration was amazing!"</h4>
       </div>
     </div>
   )
