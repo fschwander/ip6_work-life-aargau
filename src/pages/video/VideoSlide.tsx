@@ -15,6 +15,7 @@ import {SlideInOverlayProps} from './overlays/SlideInOverlay';
 export interface VideoSlideItem {
   title: string,
   videoSrc: string,
+  backgroundImg: string,
   animDurationInSec: number,
   poiLabelItems: Array<PoiLabelItem>
   infoLabelItems: Array<InfoLabelItem>

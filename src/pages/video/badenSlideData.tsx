@@ -6,7 +6,7 @@ import connectednessIcon from "../../res/icons/connectedness.svg"
 import {ReactComponent as svgRoof} from "../../res/videos/baden1-roof.svg";
 import {ReactComponent as svgRuine} from "../../res/videos/baden1-ruine.svg";
 import {ReactComponent as svgTower} from "../../res/videos/baden1-tower.svg";
-import videoBaden from "../../res/videos/baden1.mp4";
+import videoBaden1 from "../../res/videos/baden1.mp4";
 import {ReactComponent as svgStairs} from "../../res/videos/baden2-stairways.svg";
 import videoBaden2 from "../../res/videos/baden2.mp4";
 import {ReactComponent as svgBar} from "../../res/videos/baden3-bar.svg";
@@ -25,13 +25,17 @@ import {PopupOverlay} from './overlays/PopupOverlay';
 import {SlideInOverlay} from './overlays/SlideInOverlay';
 import {TravelingDistancePage} from './overlays/special-overlay-data/TravelingDistancePage';
 import {VideoSlideItem} from "./VideoSlide";
+import bgImgBaden1 from "../../res/videos/baden1.jpg";
+import bgImgBaden2 from "../../res/videos/baden2.jpg";
+import bgImgBaden3 from "../../res/videos/baden3.jpg";
 
 export const badenSlideData: Array<VideoSlideItem> = [
 
   // SEQUENCE 1
   {
     title: 'Die Stadt Baden',
-    videoSrc: videoBaden,
+    videoSrc: videoBaden1,
+    backgroundImg: bgImgBaden1,
     animDurationInSec: 3,
     poiLabelItems: [
       {
@@ -78,6 +82,7 @@ export const badenSlideData: Array<VideoSlideItem> = [
   {
     title: 'Die Stadt Baden',
     videoSrc: videoBaden2,
+    backgroundImg: bgImgBaden2,
     animDurationInSec: 10,
     poiLabelItems: [],
     infoLabelItems: [
@@ -110,6 +115,7 @@ export const badenSlideData: Array<VideoSlideItem> = [
   {
     title: 'Die Stadt Baden',
     videoSrc: videoBaden3,
+    backgroundImg: bgImgBaden3,
     animDurationInSec: 6,
     poiLabelItems: [
       {

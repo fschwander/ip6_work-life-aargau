@@ -1,5 +1,11 @@
 .VideoPage {
 
+  .background-image {
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+  }
+
   .timeline-container {
     transition: .3s ease-in;
 

@@ -47,7 +47,7 @@ export const AppRouter: React.FC = () => {
     <Switch>
       {routeElements}
 
-      <Redirect from='/' to='/intro'/>
+      <Redirect to='/intro'/>
     </Switch>
   );
 

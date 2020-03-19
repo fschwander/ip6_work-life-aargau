@@ -4,6 +4,9 @@ import waterIcon from "../../res/icons/water.svg"
 import {ReactComponent as svgABridge} from "../../res/videos/aarau1-bridge.svg";
 import {ReactComponent as svgConstruction} from "../../res/videos/aarau1-construction.svg";
 import videoAarau1 from "../../res/videos/aarau1.mp4";
+import bgImgAarau1 from "../../res/videos/aarau1.jpg";
+import bgImgAarau2 from "../../res/videos/aarau2.jpg";
+import bgImgAarau3 from "../../res/videos/aarau3.jpg";
 import {ReactComponent as svgChurch} from "../../res/videos/aarau2-church.svg";
 import videoAarau2 from "../../res/videos/aarau2.mp4";
 import {ReactComponent as svgInterior} from "../../res/videos/aarau3-interiors.svg";
@@ -27,6 +30,7 @@ export const aarauSlideData: Array<VideoSlideItem> = [
   {
     title: 'Die Stadt Aarau',
     videoSrc: videoAarau2,
+    backgroundImg: bgImgAarau2,
     animDurationInSec: 10,
     poiLabelItems: [
       {
@@ -50,6 +54,7 @@ export const aarauSlideData: Array<VideoSlideItem> = [
   {
     title: 'Die Stadt Aarau',
     videoSrc: videoAarau3,
+    backgroundImg: bgImgAarau3,
     animDurationInSec: 16,
     poiLabelItems: [
       {
@@ -96,6 +101,7 @@ export const aarauSlideData: Array<VideoSlideItem> = [
   {
     title: 'Die Stadt Aarau',
     videoSrc: videoAarau1,
+    backgroundImg: bgImgAarau1,
     animDurationInSec: 17,
     poiLabelItems: [],
     infoLabelItems: [
