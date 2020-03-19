@@ -43,7 +43,7 @@ export const VideoPage: React.FC<VideoPageProps> = props => {
 
   return (
     <div className='VideoPage'>
-      <div className={'background-image full-screen transparent-filter'}
+      <div className={`background-image full-screen ${activeIndex !== activeBackgroundImageIndex ? 'transparent-filter':''}`}
            style={{backgroundImage: `url(${videoSlideData[activeBackgroundImageIndex].backgroundImg})`}}/>
 
       {slideComponents[activeIndex]}
