@@ -1,4 +1,3 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import {AppRouter} from './AppRouter';
 import * as serviceWorker from './services/serviceWorker';

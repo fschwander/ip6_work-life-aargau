@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react';
 import ReactPlayer from 'react-player';
-import {Spinner} from 'reactstrap';
 
 interface FullScreenVideoProps {
   source: string,
@@ -68,7 +67,6 @@ export const BackgroundVideoContainer: React.FC<FullScreenVideoProps> = props =>
       </div>
 
       <div className='loading-indicator' style={{opacity: isBuffering ? 1 : 0}}>
-        <Spinner color='light'/>
         <p>Einen Moment, bitte...</p>
       </div>
     </div>
