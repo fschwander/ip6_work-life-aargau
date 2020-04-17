@@ -11,7 +11,7 @@ export const LocationDescription: React.FC<LocationLabelProps> = props => {
 
   const getLocalTime = (): string => {
     let date = new Date();
-    return date.getUTCHours() + 1 + ':' + ('0' + date.getUTCMinutes()).slice(-2)
+    return date.getUTCHours() + 2 + ':' + ('0' + date.getUTCMinutes()).slice(-2)
   }
 
   const [time, setTime] = useState(getLocalTime);
